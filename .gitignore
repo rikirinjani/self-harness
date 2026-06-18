@@ -1,0 +1,18 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp
+*.swo
+*~
+
+# Temp
+/tmp/
+
+# Logs
+*.log
+
+# Generated
+node_modules/
+.env
