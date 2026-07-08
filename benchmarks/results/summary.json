@@ -1,17 +1,26 @@
 {
   "last_updated": "2026-07-08",
   "total_benchmarks": 20,
-  "completed": 15,
+  "completed": 20,
   "pass_rate": 100.0,
-  "passed": 15,
+  "passed": 20,
   "failed": 0,
   "avg_scores": {
     "research": 4.88,
-    "coding": 0.0,
+    "coding": 4.98,
     "planning": 4.88,
     "operational": 4.9
   },
   "weaknesses": [
+    "Self-test script uses hardcoded path instead of accepting CLI argument",
+    "Category breakdown always returns 4 entries even when category has no results (design choice, but could be configurable)",
+    "Fix also uncovered secondary encoding bug (open without encoding=utf-8) which was fixed as part of regression check",
+    "Test only validates one aspect (total_benchmarks), not full correctness",
+    "Removed 'completed' variable entirely; changed semantics from 'result files that parsed OK' to 'total result files' (minimal, both were identical in practice)",
+    "utils.py was already created in C-01, not in this benchmark (3rd file touch is test file, not a source module)",
+    "Should add --json output option for --stats for programmatic consumption",
+    "Script hardcodes expected=20 gates; should read from catalog",
+    "JSON output mode is minimal (no per-benchmark detail)",
     "Report is Python stdout, not a saved markdown/text file",
     "Could include trend data vs past reports",
     "Diagnostic script uses a bash workaround to avoid PS quoting issues -- should be a single runnable .py file",
@@ -22,16 +31,7 @@
     "Estimates are too coarse (HIGH/MEDIUM) - should use hours with error bars like '20 min +/- 5'",
     "Parallelization is theoretical as single agent can't truly parallelize",
     "Second-order risks could be more developed (only 1 sentence each)",
-    "Evaluation criteria could be quantified (1-5 scale) instead of qualitative labels",
-    "Plan has 0 buffer â€” any delay forces quality trade-offs immediately",
-    "Retrospective is about Phase 2 execution process, not a specific 'failure event' as specified",
-    "Timeline estimates are approximate (not measured)",
-    "Pattern description could be more precise/scoped",
-    "Could include quantitative evidence (e.g., measured read times for JSON vs SQLite at various scales)",
-    "Some failures have corrupted JSON and couldn't be read -- 7 parse errors may skew cluster counts",
-    "Efficiency lower due to manual file reading; would be faster with automated analysis script",
-    "Missing --score flag from plans",
-    "score.py helper script undocumented"
+    "Evaluation criteria could be quantified (1-5 scale) instead of qualitative labels"
   ],
-  "weakness_count": 22
+  "weakness_count": 31
 }

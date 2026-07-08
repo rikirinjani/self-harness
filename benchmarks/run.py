@@ -14,6 +14,7 @@ import argparse
 import json
 import os
 import sys
+from pathlib import Path
 
 # Reconfigure stdout to UTF-8 to handle Unicode characters on Windows
 if hasattr(sys.stdout, "reconfigure"):
@@ -223,13 +224,19 @@ def interactive_score(benchmark):
     return result
 
 
+def _benchmark_category(benchmark_id):
+    """Map BENCH-X-NNN format to category name."""
+    cat_map = {"r": "research", "c": "coding", "p": "planning", "o": "operational"}
+    letter = benchmark_id.split("-")[1].lower() if "-" in benchmark_id else ""
+    return cat_map.get(letter, "unknown")
+
+
 def update_summary():
     """Regenerate the summary dashboard."""
     results = list(RESULTS_DIR.glob("BENCH-*.json"))
     summary_file = RESULTS_DIR / "summary.json"
 
     total = len(results)
-    completed = len([r for r in results if True])  # all files = completed
     passed = 0
     failed = 0
     all_scores = {"research": [], "coding": [], "planning": [], "operational": []}
@@ -237,15 +244,13 @@ def update_summary():
 
     for rf in results:
         try:
-            with open(rf) as f:
+            with open(rf, encoding="utf-8") as f:
                 data = json.load(f)
             if data.get("execution", {}).get("outcome") == "pass":
                 passed += 1
             else:
                 failed += 1
-            cat_letter = data.get("benchmark_id", "").split("-")[1].lower()
-            cat_map = {"r": "research", "c": "coding", "p": "planning", "o": "operational"}
-            cat = cat_map.get(cat_letter, cat_letter)
+            cat = _benchmark_category(data.get("benchmark_id", ""))
             avg = data.get("scores", {}).get("average")
             if avg and cat in all_scores:
                 all_scores[cat].append(avg)
@@ -255,8 +260,8 @@ def update_summary():
 
     summary = {
         "last_updated": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
-        "total_benchmarks": 20,
-        "completed": completed,
+        "total_benchmarks": total,
+        "completed": total,
         "pass_rate": round(passed / total * 100, 1) if total > 0 else 0,
         "passed": passed,
         "failed": failed,
@@ -271,7 +276,7 @@ def update_summary():
     with open(summary_file, "w", encoding="utf-8") as f:
         json.dump(summary, f, indent=2, ensure_ascii=False)
 
-    print(f"Summary updated: {completed}/20 benchmarks, "
+    print(f"Summary updated: {total}/{len(results)} benchmarks, "
           f"{passed} pass, {failed} fail, "
           f"{len(all_weaknesses)} weaknesses")
 
@@ -281,7 +286,7 @@ def print_summary():
     if not SUMMARY_FILE.exists():
         print("No summary yet. Run some benchmarks first.")
         return
-    with open(SUMMARY_FILE) as f:
+    with open(SUMMARY_FILE, encoding="utf-8") as f:
         summary = json.load(f)
     print(json.dumps(summary, indent=2))
 
@@ -295,6 +300,7 @@ def main():
     parser.add_argument("--dry-run", action="store_true", help="Preview task without executing")
     parser.add_argument("--summary", action="store_true", help="Show summary dashboard")
     parser.add_argument("--json", action="store_true", help="JSON output for listing")
+    parser.add_argument("--stats", action="store_true", help="Show aggregate statistics across all benchmarks")
 
     args = parser.parse_args()
     benchmarks = load_benchmarks()
@@ -302,6 +308,25 @@ def main():
     # Summary
     if args.summary:
         print_summary()
+        return
+
+    # Stats
+    if args.stats:
+        from utils import compute_aggregate_stats
+        stats = compute_aggregate_stats(RESULTS_DIR)
+        print(f"\n{'='*50}")
+        print(f"  BENCHMARK AGGREGATE STATISTICS")
+        print(f"{'='*50}")
+        print(f"  Total benchmarks: {stats['total_benchmarks']}")
+        print(f"  Average score:    {stats['avg_score']:.2f}")
+        print(f"  Highest:          {stats['highest']['id']} ({stats['highest']['score']:.2f})")
+        print(f"  Lowest:           {stats['lowest']['id']} ({stats['lowest']['score']:.2f})")
+        print(f"  Pass rate:        {stats['pass_rate']}%")
+        print(f"\n  Category breakdown:")
+        for cat in stats["category_breakdown"]:
+            print(f"    {cat['category']:12s} {cat['count']:2d} benchmarks, "
+                  f"avg score {cat['avg_score']:.2f}, avg duration {cat['avg_duration']:.0f}s")
+        print(f"{'='*50}\n")
         return
 
     # List all or by category

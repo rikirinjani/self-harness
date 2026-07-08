@@ -1,0 +1,35 @@
+{
+  "result_id": "BENCH-C-01-20260708",
+  "benchmark_id": "BENCH-C-01",
+  "timestamp": "2026-07-08T04:20:19.010812+00:00",
+  "agent_type": "fixer",
+  "task": "Bounded Implementation",
+  "execution": {
+    "duration_s": 300,
+    "tool_calls": 8,
+    "outcome": "pass",
+    "output_path": "C:\\Users\\think\\AppData\\Local\\Temp\\self-harness-sync\\benchmarks\\outputs\\utils.py"
+  },
+  "scores": {
+    "correctness": 5,
+    "completeness": 5,
+    "clarity": 5,
+    "reasoning": 5,
+    "precision": 5,
+    "efficiency": 5,
+    "actionability": 5,
+    "faithfulness": 5,
+    "average": 5.0
+  },
+  "pass_criteria": {
+    "compiles": true,
+    "tests_pass": true,
+    "no_new_deps": true,
+    "follows_style": true
+  },
+  "weaknesses": [
+    "Self-test script uses hardcoded path instead of accepting CLI argument",
+    "Category breakdown always returns 4 entries even when category has no results (design choice, but could be configurable)"
+  ],
+  "trace_ref": "trace-20260708-bench-bench-c-01"
+}
