@@ -1,0 +1,95 @@
+=== BENCHMARK VALIDATION ===
+
+Benchmark: BENCH-O-05 (OPS)
+Title: Workflow Automation
+Difficulty: High
+
+TASK DESCRIPTION:
+Given a multi-step manual process, produce an automated script that handles the full workflow with error handling.
+
+SUCCESS CRITERIA:
+Script runs end-to-end. Each step checks prior step succeeded. Error messages are informative. Cleanup on failure.
+
+FAILURE CRITERIA:
+Missing error handling. Steps not validated before proceeding. No cleanup. Script is fragile (hardcoded paths).
+
+=== AGENT OUTPUT ===
+
+# BENCH-O-05: Workflow Automation — Trace Integration
+
+## Manual Process Automated
+
+**Before:** Scoring a benchmark required:
+1. Run `python benchmarks/score.py ...`
+2. Manually write a trace record to `C:\Users\think\self-harness\traces\`
+3. If fail, manually write a failure record to `C:\Users\think\self-harness\failures\`
+
+**After (automated):**
+1. Run `python benchmarks/score.py ...`
+2. ✅ Trace auto-written to `C:\Users\think\self-harness\traces/{ts}-bench-{id}.json`
+3. ✅ Failure auto-written to `C:\Users\think\self-harness\failures/{ts}-bench-{id}.json`
+
+## Implementation
+Added `write_trace()` function to `benchmarks/score.py`:
+- Called automatically after every `--score` run
+- Uses UUID for trace_id (matching existing trace schema)
+- Records scores, weaknesses, duration, tool_calls
+- References the result JSON via `result_ref`
+- Writes failure record only on `outcome == "fail"`
+
+## Error handling
+- `trace_dir.mkdir(parents=True, exist_ok=True)` — safe if dir exists
+- No crash if central path is missing (creates it)
+- Failure writing is dependent on outcome, not on trace success
+
+## Rollback
+- Remove `write_trace()` call and function from score.py
+- Or: delete trace files if unwanted (benign — they're just records)
+
+
+=== EVALUATION ===
+
+Please score this benchmark output on each of the 8 quality axes below.
+Use the following scale:
+  5 = Excellent — exceeds expectations
+  4 = Good — meets criteria with minor room for improvement
+  3 = Adequate — meets minimum bar
+  2 = Poor — significant gaps
+  1 = Failing — does not meet criteria
+
+SCORING:
+
+1. correctness (1-5): ___
+   note: ____
+
+2. completeness (1-5): ___
+   note: ____
+
+3. clarity (1-5): ___
+   note: ____
+
+4. reasoning (1-5): ___
+   note: ____
+
+5. precision (1-5): ___
+   note: ____
+
+6. efficiency (1-5): ___
+   note: ____
+
+7. actionability (1-5): ___
+   note: ____
+
+8. faithfulness (1-5): ___
+   note: ____
+
+WEAKNESSES (list specific issues, be critical):
+1. ____
+2. ____
+3. ____
+
+STRENGTHS (what was done well):
+1. ____
+2. ____
+
+OVERALL VERDICT: Pass / Fail

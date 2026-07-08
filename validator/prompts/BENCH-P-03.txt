@@ -1,0 +1,152 @@
+=== BENCHMARK VALIDATION ===
+
+Benchmark: BENCH-P-03 (PLN)
+Title: Architecture Decision
+Difficulty: High
+
+TASK DESCRIPTION:
+Given a technical decision with trade-offs, produce a structured ADR with context, options, decision, and consequences.
+
+SUCCESS CRITERIA:
+All options evaluated on same criteria. Decision rationale explicit. Consequences include positives AND negatives.
+
+FAILURE CRITERIA:
+Missing options. Biased evaluation. No consequences. Decision not tied to requirements.
+
+=== AGENT OUTPUT ===
+
+# ADR-001: Benchmark Execution Mode
+
+## Status
+Accepted (2026-07-08)
+
+## Context
+The benchmark runner supports 20 benchmarks across 4 categories. Currently, each benchmark must be run individually: print task → execute → score. For Phase 2, benchmarks are being executed manually. For Phase 4 (Weakness Miner), repeatability matters — benchmarks may need to be re-run in bulk.
+
+## Decision
+Remain single-benchmark-at-a-time for Phase 2. Add `--batch` only if Phase 4 requires bulk re-execution.
+
+## Options Considered
+
+### Option A: Single-benchmark-at-a-time (current)
+Run one benchmark, score, record, proceed to next. Manual execution flow.
+
+**Pros:**
+- Agent can adapt approach per benchmark
+- Scoring is context-aware (agent knows what it did)
+- No automation complexity for edge cases
+- Works with current architecture (score.py per-benchmark)
+
+**Cons:**
+- Slow for 20 benchmarks (manual)
+- Not repeatable without re-running manually
+- Phase 4 can't auto-re-run benchmarks easily
+
+### Option B: Batch mode (`--batch`)
+Runner executes all benchmarks in a category sequentially, auto-recording timing and output, then prompting for scores at end.
+
+**Pros:**
+- Faster execution (no context switching between score/run)
+- Consistent timing data
+- Repeatable — `--batch coding` always runs C-01 through C-05
+- Phase 4 could trigger batch re-runs
+
+**Cons:**
+- Scoring loses granularity — hard to score 5 benchmarks from memory
+- Agent can't adapt approach mid-batch
+- Complex error handling (what if C-03 breaks?)
+- Significant code addition (~150 lines)
+
+### Option C: Headless mode (`--auto`)
+Benchmarks run fully automated: task → execute → score with AI evaluation. No human-in-loop.
+
+**Pros:**
+- Fully repeatable
+- Scales to any number of benchmarks
+- Phase 4 can run nightly
+
+**Cons:**
+- Hardest to build (need automated scoring logic)
+- AI self-scoring is unreliable (confirmation bias)
+- No human judgment for edge cases
+- Risk of "gaming" scores
+
+## Evaluation Criteria
+
+| Criterion | Option A | Option B | Option C |
+|-----------|----------|----------|----------|
+| Build cost | 0 (done) | MEDIUM | HIGH |
+| Execution speed | Slow | Medium | Fast |
+| Scoring quality | HIGH | MEDIUM | LOW |
+| Reusability (Phase 4) | LOW | MEDIUM | HIGH |
+| Error recovery | Easy | Medium | Hard |
+| Complexity | LOW | MEDIUM | HIGH |
+
+## Rationale
+Phase 2 requires accurate scoring with human oversight. Option A's manual flow produces the highest quality scores. The total cost of running 20 benchmarks manually (~3 hours) is acceptable for Phase 2. Phase 4 may justify Option B if automated re-runs are needed.
+
+## Consequences
+
+**Positive:**
+- Highest quality scores for each benchmark
+- Agent can adapt approach per benchmark
+- Zero additional code to build
+- Easy error recovery (fix → re-score)
+
+**Negative:**
+- Takes longer wall-clock (~3h vs ~1h for batch)
+- Not repeatable without manual effort
+- Timing comparisons across runs may vary due to human factors
+- Phase 4 cannot auto-trigger benchmark re-runs
+
+## Related
+- If Phase 4 adopts Option B, `--batch` should be adding `--no-score` flag that just records timing/output without evaluation
+- Scoring could be automated later with LLM-based evaluation (Option C-light)
+
+
+=== EVALUATION ===
+
+Please score this benchmark output on each of the 8 quality axes below.
+Use the following scale:
+  5 = Excellent — exceeds expectations
+  4 = Good — meets criteria with minor room for improvement
+  3 = Adequate — meets minimum bar
+  2 = Poor — significant gaps
+  1 = Failing — does not meet criteria
+
+SCORING:
+
+1. correctness (1-5): ___
+   note: ____
+
+2. completeness (1-5): ___
+   note: ____
+
+3. clarity (1-5): ___
+   note: ____
+
+4. reasoning (1-5): ___
+   note: ____
+
+5. precision (1-5): ___
+   note: ____
+
+6. efficiency (1-5): ___
+   note: ____
+
+7. actionability (1-5): ___
+   note: ____
+
+8. faithfulness (1-5): ___
+   note: ____
+
+WEAKNESSES (list specific issues, be critical):
+1. ____
+2. ____
+3. ____
+
+STRENGTHS (what was done well):
+1. ____
+2. ____
+
+OVERALL VERDICT: Pass / Fail

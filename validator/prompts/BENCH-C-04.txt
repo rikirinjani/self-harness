@@ -1,0 +1,127 @@
+=== BENCHMARK VALIDATION ===
+
+Benchmark: BENCH-C-04 (COD)
+Title: Multi-File Feature Addition
+Difficulty: High
+
+TASK DESCRIPTION:
+Given a project with established patterns, add a feature that touches 3+ files following existing conventions.
+
+SUCCESS CRITERIA:
+Feature works. Follows existing patterns. Tests pass. No unrelated changes.
+
+FAILURE CRITERIA:
+Breaks existing functionality. Ignores project conventions. Missing tests. Changes unrelated files.
+
+=== AGENT OUTPUT ===
+
+"""BENCH-C-04: Multi-File Feature Test — --stats flag.
+
+Tests:
+1. compute_aggregate_stats returns expected structure
+2. --stats CLI works (integration smoke test)
+"""
+import sys
+import json
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from utils import compute_aggregate_stats
+
+results_dir = Path(__file__).resolve().parent.parent / "results"
+stats = compute_aggregate_stats(results_dir)
+
+# Test 1: Structure
+assert isinstance(stats, dict), "stats should be a dict"
+assert "total_benchmarks" in stats
+assert "avg_score" in stats
+assert "highest" in stats
+assert "lowest" in stats
+assert "pass_rate" in stats
+assert "category_breakdown" in stats
+print("[PASS] Structure: all keys present")
+
+# Test 2: Types
+assert isinstance(stats["total_benchmarks"], int)
+assert isinstance(stats["avg_score"], float)
+assert isinstance(stats["highest"], dict)
+assert isinstance(stats["lowest"], dict)
+assert isinstance(stats["pass_rate"], float)
+assert isinstance(stats["category_breakdown"], list)
+assert len(stats["category_breakdown"]) == 4
+print("[PASS] Types: correct")
+
+# Test 3: Consistency
+assert stats["total_benchmarks"] > 0, "at least one benchmark"
+assert stats["highest"]["score"] >= stats["lowest"]["score"]
+assert 0 <= stats["pass_rate"] <= 100
+assert len(stats["category_breakdown"]) == 4
+print("[PASS] Consistency: highest >= lowest, pass_rate in range")
+
+# Test 4: Category breakdown has expected fields
+for cat in stats["category_breakdown"]:
+    assert "category" in cat
+    assert "count" in cat
+    assert "avg_score" in cat
+    assert "avg_duration" in cat
+print("[PASS] Category breakdown structure")
+
+# Test 5: Smoke test — CLI runs without error
+import subprocess
+result = subprocess.run(
+    [sys.executable, str(Path(__file__).resolve().parent.parent / "run.py"), "--stats"],
+    capture_output=True, text=True
+)
+assert result.returncode == 0, f"CLI exited with {result.returncode}"
+assert "BENCHMARK AGGREGATE STATISTICS" in result.stdout
+print("[PASS] CLI --stats smoke test")
+
+print(f"\nAll 5 tests passed ({stats['total_benchmarks']} benchmarks)")
+
+
+=== EVALUATION ===
+
+Please score this benchmark output on each of the 8 quality axes below.
+Use the following scale:
+  5 = Excellent — exceeds expectations
+  4 = Good — meets criteria with minor room for improvement
+  3 = Adequate — meets minimum bar
+  2 = Poor — significant gaps
+  1 = Failing — does not meet criteria
+
+SCORING:
+
+1. correctness (1-5): ___
+   note: ____
+
+2. completeness (1-5): ___
+   note: ____
+
+3. clarity (1-5): ___
+   note: ____
+
+4. reasoning (1-5): ___
+   note: ____
+
+5. precision (1-5): ___
+   note: ____
+
+6. efficiency (1-5): ___
+   note: ____
+
+7. actionability (1-5): ___
+   note: ____
+
+8. faithfulness (1-5): ___
+   note: ____
+
+WEAKNESSES (list specific issues, be critical):
+1. ____
+2. ____
+3. ____
+
+STRENGTHS (what was done well):
+1. ____
+2. ____
+
+OVERALL VERDICT: Pass / Fail

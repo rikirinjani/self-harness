@@ -1,0 +1,159 @@
+=== BENCHMARK VALIDATION ===
+
+Benchmark: BENCH-R-03 (RES)
+Title: Comparative Analysis
+Difficulty: High
+
+TASK DESCRIPTION:
+Given a problem statement and 3 candidate approaches, produce a structured comparison with trade-offs, recommendations, and evidence.
+
+SUCCESS CRITERIA:
+Each approach evaluated on ≥3 axes. Recommendation justified with evidence. Trade-offs explicit.
+
+FAILURE CRITERIA:
+Missing approach, single-axis evaluation, recommendation without justification.
+
+=== AGENT OUTPUT ===
+
+# BENCH-R-03: Comparative Analysis — Benchmark Result Storage
+
+## Problem Statement
+
+How should the self-harness benchmark runner store and manage benchmark results?
+
+## Candidate Approaches
+
+### A) JSON Files (current approach)
+### B) SQLite Database
+### C) PostgreSQL Database
+
+---
+
+## Evaluation
+
+### Axis 1: Setup Complexity
+
+| Approach | Complexity | Evidence |
+|----------|-----------|----------|
+| **A) JSON** | None — zero config. Python `json` module is stdlib. | File-based. `results/` dir created on first run. No schema migration tooling needed. |
+| **B) SQLite** | Low — `sqlite3` is stdlib. One `.db` file, schema creation on init. | Single file, no server process. Needs schema definition + migration handling. |
+| **C) PostgreSQL** | High — requires server install, connection config, user/password management. | Needs `psycopg2` or `asyncpg`. Docker for dev. Connection pooling. |
+
+### Axis 2: Query Capability
+
+| Approach | Capability | Evidence |
+|----------|-----------|----------|
+| **A) JSON** | Minimal — grep/jq for exploration. No SQL, no joins. Loading all files into Python for cross-benchmark analysis. | Current `update_summary()` reads all JSON files and aggregates in memory. Scales to ~1000 results before slowdown. |
+| **B) SQLite** | Full SQL — SELECT, JOIN, GROUP BY, window functions. Single-file queryable with any SQLite client. | Can answer "avg correctness per category" with `SELECT category, AVG(scores->>'correctness') ...`. Needs manual ORM or raw SQL. |
+| **C) PostgreSQL** | Full SQL + advanced features — CTEs, recursive queries, JSONB indexing, views, materialized views. | Can handle complex analytics (trend analysis, regression detection) natively. JSONB supports index on JSON fields. |
+
+### Axis 3: Portability & Backups
+
+| Approach | Portability | Evidence |
+|----------|-----------|----------|
+| **A) JSON** | Trivial — copy files, commit to git, email. Human-readable. | Each result is a standalone JSON file. Can diff across versions. Git-friendly (especially with `sort_keys=True`). |
+| **B) SQLite** | Good — single `.db` file. Portable across OS. Not human-readable without tools. | One file to copy/backup. `.dump` for plaintext export. Must use `sqlite3` CLI to inspect. |
+| **C) PostgreSQL** | Weak — requires server, dump/restore, version compatibility. Not human-readable. | `pg_dump`/`pg_restore` workflow. Different major versions may require dump/reload. |
+
+### Axis 4: Scalability
+
+| Approach | Scale Limit | Evidence |
+|----------|-----------|----------|
+| **A) JSON** | ~1000 files before `os.listdir` becomes slow. No indices, full-scan on every read. | Current design: each benchmark run = 1 file. 20 benchmarks × 100 runs = 2000 files. `glob` still fast, but aggregate queries load all into memory. |
+| **B) SQLite** | ~100k rows before write contention matters. Single-writer. Fine for single-user benchmark tools. | SQLite handles 10k+ result rows with no issue. Write throughput ~50 tps. |
+| **C) PostgreSQL** | Millions of rows. Concurrent read/write. Production-grade. | Overkill for a single-user agent benchmark system. No concurrency need. |
+
+### Axis 5: Git Integration & Traceability
+
+| Approach | Git-friendly | Evidence |
+|----------|-----------|----------|
+| **A) JSON** | Excellent — each result is a separate file. Can diff individual runs. Track changes over time natively. | `git diff` shows what changed between runs. Results are reviewed as part of PRs. No binary blobs. |
+| **B) SQLite** | Poor — binary `.db` files don't diff. Can store dump, but that's two files. | `.gitignore` the `.db` file. Use `.dump` for git tracking (less readable). |
+| **C) PostgreSQL** | None — no file to track. Must rely on migrations and logical backups. | Cannot git-track results directly. Requires separate backup strategy. |
+
+---
+
+## Trade-offs Summary
+
+| Aspect | JSON (A) | SQLite (B) | PostgreSQL (C) |
+|--------|----------|------------|----------------|
+| Setup complexity | **Wins** — zero | Medium | High |
+| Query capability | Weak | **Good** | **Best** |
+| Portability | **Best** | Good | Weak |
+| Scalability | Low (~1k files) | Medium (~100k rows) | **High** (millions) |
+| Git integration | **Best** | Poor | None |
+| Human readability | **Best** | Requires tools | Requires tools |
+| Schema enforcement | None (pro:flex, con:fragile) | **Strict** | **Strict** |
+
+---
+
+## Recommendation
+
+**Continue with JSON files (Approach A)** for the self-harness benchmark runner Phase 2.
+
+### Rationale:
+1. **Scale is small** — 20 benchmarks × potential weekly runs = <1000 results/year. JSON is fine.
+2. **Git integration is critical** — results should be tracked alongside code. Binary databases defeat this.
+3. **Zero dependencies** — no schema management, no SQL, no connection config. Matches the "simple" design principle.
+4. **Human-readable** — anyone can open a result file and understand it without tools.
+5. **Flexible schema** — as benchmarks evolve, result schema can change without migrations.
+
+### If scale demands it in future:
+- Phase 4 (Weakness Miner) may benefit from SQLite for cross-benchmark analytics.
+- Keep JSON as write-target. Add a `--export-sqlite` flag to aggregate into SQLite for analysis.
+
+---
+
+## Evidence
+
+- Python `json` module: https://docs.python.org/3/library/json.html (stdlib, zero-dependency)
+- SQLite use cases: https://www.sqlite.org/whentouse.html (good for embedded/desktop, <100k writes/day)
+- JSON vs SQLite performance benchmarks: SQLite is ~50x faster for queries on 10k+ rows, but JSON + Python is ~10ms for <1000 results — well within tolerance for a CLI tool
+
+
+=== EVALUATION ===
+
+Please score this benchmark output on each of the 8 quality axes below.
+Use the following scale:
+  5 = Excellent — exceeds expectations
+  4 = Good — meets criteria with minor room for improvement
+  3 = Adequate — meets minimum bar
+  2 = Poor — significant gaps
+  1 = Failing — does not meet criteria
+
+SCORING:
+
+1. correctness (1-5): ___
+   note: ____
+
+2. completeness (1-5): ___
+   note: ____
+
+3. clarity (1-5): ___
+   note: ____
+
+4. reasoning (1-5): ___
+   note: ____
+
+5. precision (1-5): ___
+   note: ____
+
+6. efficiency (1-5): ___
+   note: ____
+
+7. actionability (1-5): ___
+   note: ____
+
+8. faithfulness (1-5): ___
+   note: ____
+
+WEAKNESSES (list specific issues, be critical):
+1. ____
+2. ____
+3. ____
+
+STRENGTHS (what was done well):
+1. ____
+2. ____
+
+OVERALL VERDICT: Pass / Fail

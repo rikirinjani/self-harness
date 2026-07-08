@@ -1,0 +1,100 @@
+=== BENCHMARK VALIDATION ===
+
+Benchmark: BENCH-C-02 (COD)
+Title: Bug Fix with Regression Check
+Difficulty: Medium
+
+TASK DESCRIPTION:
+Given a failing test and source code, fix the bug such that the failing test passes AND all existing tests still pass.
+
+SUCCESS CRITERIA:
+Bug test passes. All other tests pass. Fix is minimal (changes only what's needed).
+
+FAILURE CRITERIA:
+Breaks existing tests. Overly broad fix. Fix introduces new bug.
+
+=== AGENT OUTPUT ===
+
+"""BENCH-C-02: Bug Fix Test — total_benchmarks should not be hardcoded.
+
+Existing behavior: summary.json reports total_benchmarks=20 even when
+only 15 result files exist. This inflates completion % artificially.
+
+Expected: total_benchmarks should equal len(result_files).
+"""
+import json
+from pathlib import Path
+
+# Read summary
+results_dir = Path(__file__).resolve().parent.parent / "results"
+summary_file = results_dir / "summary.json"
+summary = json.loads(summary_file.read_text(encoding="utf-8"))
+
+# Count actual result files
+result_files = list(results_dir.glob("BENCH-*.json"))
+# Exclude summary.json itself
+result_files = [f for f in result_files if f.name != "summary.json"]
+
+actual_count = len(result_files)
+reported_total = summary["total_benchmarks"]
+completed = summary["completed"]
+
+print(f"Result files found: {actual_count}")
+print(f"Reported total_benchmarks: {reported_total}")
+print(f"Completed: {completed}")
+
+# This should fail before bug fix
+assert reported_total == actual_count, (
+    f"BUG: total_benchmarks={reported_total} is hardcoded, "
+    f"but actual result files count = {actual_count}."
+)
+
+print("[PASS] total_benchmarks matches actual result file count")
+
+
+=== EVALUATION ===
+
+Please score this benchmark output on each of the 8 quality axes below.
+Use the following scale:
+  5 = Excellent — exceeds expectations
+  4 = Good — meets criteria with minor room for improvement
+  3 = Adequate — meets minimum bar
+  2 = Poor — significant gaps
+  1 = Failing — does not meet criteria
+
+SCORING:
+
+1. correctness (1-5): ___
+   note: ____
+
+2. completeness (1-5): ___
+   note: ____
+
+3. clarity (1-5): ___
+   note: ____
+
+4. reasoning (1-5): ___
+   note: ____
+
+5. precision (1-5): ___
+   note: ____
+
+6. efficiency (1-5): ___
+   note: ____
+
+7. actionability (1-5): ___
+   note: ____
+
+8. faithfulness (1-5): ___
+   note: ____
+
+WEAKNESSES (list specific issues, be critical):
+1. ____
+2. ____
+3. ____
+
+STRENGTHS (what was done well):
+1. ____
+2. ____
+
+OVERALL VERDICT: Pass / Fail
