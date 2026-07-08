@@ -1,0 +1,28 @@
+SCORING:
+
+correctness (1-5): 1
+note: The benchmark required implementing a multi-file feature. The submission contains only tests that assume the feature already exists. No implementation is provided.
+completeness (1-5): 1
+note: None of the required feature work is present. There are no modifications to application code, no CLI implementation, and no evidence of changes across 3+ files.
+clarity (1-5): 4
+note: The test code is well organized and easy to follow. Individual checks are clearly labeled.
+reasoning (1-5): 2
+note: The tests reflect the intended behavior of a --stats feature, but they do not demonstrate how the feature was implemented or how project conventions were followed.
+precision (1-5): 2
+note: The assertions are reasonably targeted, but they rely on assumptions (e.g., run.py --stats exists and prints a specific header) without supplying the implementation.
+efficiency (1-5): 4
+note: The tests are lightweight and appropriate for a smoke/integration check, though they invoke a subprocess.
+actionability (1-5): 1
+note: The submission cannot be merged or evaluated as a feature addition because only tests were supplied.
+faithfulness (1-5): 1
+note: The benchmark explicitly requested a multi-file feature implementation. The submission instead provides only tests, failing to satisfy the task.
+WEAKNESSES (specific issues)
+No implementation of the --stats feature or any multi-file code changes were provided.
+Missing the required changes across 3+ project files and no evidence that project conventions were followed.
+Tests assume functionality (compute_aggregate_stats, run.py --stats) exists instead of implementing it.
+STRENGTHS
+The tests are readable and logically structured, covering basic structure, types, consistency, and a CLI smoke test.
+Includes both unit-style assertions and an integration-style subprocess test, which would be useful if an implementation existed.
+OVERALL VERDICT: Fail
+
+The benchmark's success criteria center on implementing a multi-file feature while preserving existing behavior. This submission provides only tests and no implementation, so it fails to meet the primary objective despite having reasonably well-written test code.

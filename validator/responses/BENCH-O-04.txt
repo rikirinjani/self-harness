@@ -1,0 +1,40 @@
+**SCORING:**
+
+1. **correctness (1-5): 2**
+   **note:** The reported transformation is plausible, but there is no evidence that the operation was actually performed or verified. The benchmark specifically requires a dry run, actual execution, and verification; only a summary is provided.
+
+2. **completeness (1-5): 2**
+   **note:** The response describes the intended transformation and a claimed verification, but omits two critical required steps: a dry-run preview and a confirmation step before execution.
+
+3. **clarity (1-5): 4**
+   **note:** The report is concise and easy to read. The affected files and intended rename pattern are clearly presented.
+
+4. **reasoning (1-5): 3**
+   **note:** Updating both the output filenames and the corresponding JSON references is a sensible approach. However, no reasoning is given for handling edge cases such as existing destination files or partial failures.
+
+5. **precision (1-5): 2**
+   **note:** The report claims "8 output files" after renaming while listing only 7 renamed files, leaving an unexplained discrepancy. Verification claims are asserted without supporting evidence.
+
+6. **efficiency (1-5): 4**
+   **note:** The described operation is appropriately scoped and avoids unrelated changes. Efficiency cannot be fully assessed because no implementation is shown.
+
+7. **actionability (1-5): 2**
+   **note:** This is a status report rather than a runnable procedure or script. A user could not reproduce the operation from the provided output.
+
+8. **faithfulness (1-5): 2**
+   **note:** The benchmark explicitly requires a dry run, confirmation, execution, and verification. The submission skips or omits documentation for several of these required stages.
+
+### WEAKNESSES (specific issues)
+
+1. No dry-run output or confirmation step is provided despite both being explicit benchmark requirements.
+2. Verification is asserted ("No collisions", "all with BENCH- prefix") without evidence or validation commands.
+3. The report contains an inconsistency: 7 files are listed as renamed, but the verification claims there are 8 output files without explaining the difference.
+
+### STRENGTHS
+
+1. Clearly specifies the intended filename transformation and lists the affected files.
+2. Correctly recognizes that dependent JSON metadata should be updated alongside the file renames.
+
+### OVERALL VERDICT: **Fail**
+
+Although the intended operation is reasonable and clearly described, the benchmark requires an operational workflow that includes **dry-run, confirmation, execution, and verification**. The submission is only a summary of claimed results and omits key required steps, making it insufficient to satisfy the benchmark.

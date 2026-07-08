@@ -21,14 +21,18 @@ from pathlib import Path
 from collections import defaultdict
 
 
-def compute_aggregate_stats(results_dir):
+def compute_aggregate_stats(results_dir: Path) -> dict:
     """Compute aggregate statistics from benchmark result files.
 
     Args:
         results_dir: Path to directory containing BENCH-*.json result files.
 
     Returns:
-        dict with aggregate statistics as specified.
+        dict with total_benchmarks, avg_score, highest (id+score+title),
+        lowest (id+score+title), pass_rate, category_breakdown.
+
+    Assumes result files follow the schema produced by benchmarks/score.py.
+    Malformed files are silently skipped.
     """
     results_dir = Path(results_dir)
     result_files = sorted(results_dir.glob("BENCH-*.json"))
@@ -68,17 +72,18 @@ def compute_aggregate_stats(results_dir):
         if outcome == "pass":
             passes += 1
 
+        entry = {"id": bid, "score": avg, "title": title}
         if highest is None or avg > highest["score"]:
-            highest = {"id": bid, "score": avg}
+            highest = dict(entry)
         if lowest is None or avg < lowest["score"]:
-            lowest = {"id": bid, "score": avg}
+            lowest = dict(entry)
 
     if not scores:
         return {
             "total_benchmarks": 0,
             "avg_score": 0.0,
-            "highest": {"id": "", "score": 0.0},
-            "lowest": {"id": "", "score": 0.0},
+            "highest": {"id": "", "score": 0.0, "title": ""},
+            "lowest": {"id": "", "score": 0.0, "title": ""},
             "pass_rate": 0.0,
             "category_breakdown": [
                 {"category": c, "count": 0, "avg_score": 0.0, "avg_duration": 0.0}

@@ -301,6 +301,10 @@ def main():
     parser.add_argument("--summary", action="store_true", help="Show summary dashboard")
     parser.add_argument("--json", action="store_true", help="JSON output for listing")
     parser.add_argument("--stats", action="store_true", help="Show aggregate statistics across all benchmarks")
+    parser.add_argument("--validate", metavar="RESULT_FILE",
+                        help="Export blind validation prompt from result JSON (e.g. results/BENCH-R-01-20260708.json)")
+    parser.add_argument("--import-validation", nargs=2, metavar=("RESULT", "RESPONSE"),
+                        help="Import GPT validation response into result JSON")
 
     args = parser.parse_args()
     benchmarks = load_benchmarks()
@@ -365,6 +369,28 @@ def main():
             sys.exit(1)
         bench = find_benchmark(benchmarks, args.benchmark)
         print_task(bench)
+        return
+
+    # Validate
+    if args.validate:
+        from validator import export_validation_prompt
+        export_validation_prompt(Path(args.validate))
+        return
+
+    # Import validation
+    if args.import_validation:
+        from validator import import_validation
+        result_path, response_path = args.import_validation
+        val = import_validation(Path(result_path), Path(response_path))
+        if val:
+            bid = Path(result_path).stem
+            print(f"\nValidation imported for {bid}:")
+            print(f"  Executor avg: {val['executor_average']}")
+            print(f"  GPT avg:      {val['gpt_average']}")
+            print(f"  Divergence:   {val['overall_divergence']}")
+            if val.get('overall_divergence', 0) > 1.5:
+                print(f"  *** FLAGGED: divergence > 1.5 ***")
+            print(f"  GPT verdict:  {val.get('gpt_verdict', '?')}")
         return
 
     # Run single benchmark

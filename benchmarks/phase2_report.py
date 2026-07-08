@@ -15,7 +15,7 @@ from pathlib import Path
 
 THIS_DIR = Path(__file__).resolve().parent
 RESULTS_DIR = THIS_DIR / "results"
-OUTPUTS_DIR = THIS_DIR / "outputs"
+CATALOG_FILE = THIS_DIR.parent / "benchmark_catalog.md"
 
 
 def collect_results(results_dir):
@@ -39,18 +39,31 @@ def collect_results(results_dir):
     return results, errors
 
 
-def check_gate(results, total_expected=20):
+def _count_expected_benchmarks():
+    """Read catalog to determine how many benchmarks exist."""
+    try:
+        import re
+        text = CATALOG_FILE.read_text(encoding="utf-8")
+        return len(re.findall(r"^### BENCH-", text, re.MULTILINE))
+    except Exception:
+        return 20
+
+
+def check_gate(results, total_expected=None):
     """Check Phase 2 exit gate conditions."""
+    if total_expected is None:
+        total_expected = _count_expected_benchmarks()
     gates = {
         "Runner script exists": Path(THIS_DIR / "run.py").exists(),
-        "All 20 benchmarks executed": len(results) >= total_expected,
+        f"All {total_expected} benchmarks executed": len(results) >= total_expected,
         ">=5 weaknesses identified": (
             sum(len(r.get("weaknesses", [])) for r in results) >= 5
         ),
         "Results recorded": len(results) > 0,
     }
-    gates["All results have trace references"] = all(
-        r.get("trace_ref") for r in results if r.get("trace_ref")
+    with_traces = [r for r in results if r.get("trace_ref")]
+    gates["All results have trace references"] = (
+        len(with_traces) == len(results) if results else False
     )
 
     passed = sum(1 for v in gates.values() if v)

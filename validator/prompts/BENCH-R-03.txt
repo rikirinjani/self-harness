@@ -1,17 +1,8 @@
-=== BENCHMARK VALIDATION ===
+=== BLIND BENCHMARK VALIDATION ===
 
-Benchmark: BENCH-R-03 (RES)
+Benchmark: BENCH-R-03
 Title: Comparative Analysis
-Difficulty: High
-
-TASK DESCRIPTION:
-Given a problem statement and 3 candidate approaches, produce a structured comparison with trade-offs, recommendations, and evidence.
-
-SUCCESS CRITERIA:
-Each approach evaluated on ≥3 axes. Recommendation justified with evidence. Trade-offs explicit.
-
-FAILURE CRITERIA:
-Missing approach, single-axis evaluation, recommendation without justification.
+Category: oracle
 
 === AGENT OUTPUT ===
 
@@ -113,15 +104,7 @@ How should the self-harness benchmark runner store and manage benchmark results?
 
 === EVALUATION ===
 
-Please score this benchmark output on each of the 8 quality axes below.
-Use the following scale:
-  5 = Excellent — exceeds expectations
-  4 = Good — meets criteria with minor room for improvement
-  3 = Adequate — meets minimum bar
-  2 = Poor — significant gaps
-  1 = Failing — does not meet criteria
-
-SCORING:
+Score each axis 1-5 (5=excellent, 3=adequate, 1=poor):
 
 1. correctness (1-5): ___
    note: ____
@@ -154,6 +137,5 @@ WEAKNESSES (list specific issues, be critical):
 
 STRENGTHS (what was done well):
 1. ____
-2. ____
 
 OVERALL VERDICT: Pass / Fail

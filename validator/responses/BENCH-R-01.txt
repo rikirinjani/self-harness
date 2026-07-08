@@ -1,0 +1,40 @@
+**SCORING:**
+
+1. **correctness (1-5): 1**
+   **note:** No codebase analysis or file list was provided, so correctness cannot be established.
+
+2. **completeness (1-5): 1**
+   **note:** The benchmark required locating relevant files and summarizing their functions. No output was submitted.
+
+3. **clarity (1-5): 1**
+   **note:** There is no report or analysis to evaluate.
+
+4. **reasoning (1-5): 1**
+   **note:** No evidence of pattern discovery, file identification, or reasoning was provided.
+
+5. **precision (1-5): 1**
+   **note:** No findings were produced, so precision cannot be assessed.
+
+6. **efficiency (1-5): 1**
+   **note:** Efficiency of the search process cannot be evaluated because no implementation or results exist.
+
+7. **actionability (1-5): 1**
+   **note:** There is no usable output that could guide further work.
+
+8. **faithfulness (1-5): 1**
+   **note:** The submission does not satisfy the benchmark objective. The required deliverable is entirely absent.
+
+### WEAKNESSES (specific issues)
+
+1. No output file or analysis was provided.
+2. No file list or functional summaries were produced.
+3. No evidence of searching the codebase or identifying matching patterns.
+
+### STRENGTHS
+
+1. None evident from the submitted output.
+2. N/A.
+
+### OVERALL VERDICT: **Fail**
+
+The benchmark requires a complete codebase pattern discovery report. Because **no output was provided**, none of the success criteria can be evaluated or considered satisfied.
