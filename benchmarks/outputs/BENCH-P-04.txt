@@ -1,0 +1,46 @@
+# BENCH-P-04: Resource-Constrained Plan — Complete 7 Benchmarks in 120 Min
+
+## Constraints
+- **Time:** 120 min hard limit
+- **Team:** 1 agent (me)
+- **Preserve:** Must not break existing runner (`run.py`, `score.py`)
+- **Quality bar:** Each benchmark must have a score > 3.0 to count
+
+## Assessment: Is it feasible?
+
+| Task | Est. Time | Cumulative |
+|------|-----------|------------|
+| P-04 (this plan) | 5 min | 5 min |
+| P-05: Retrospective | 15 min | 20 min |
+| C-01: Bounded Impl | 20 min | 40 min |
+| C-02: Bug Fix | 15 min | 55 min |
+| C-03: Refactor | 20 min | 75 min |
+| C-04: Multi-File | 30 min | 105 min |
+| C-05: Scripting | 15 min | 120 min |
+
+**FEASIBLE — fits within 120 min with 0 buffer.**
+
+## Trade-offs
+
+### If behind schedule at each checkpoint:
+| Checkpoint | If behind by | Action |
+|------------|-------------|--------|
+| T+20 (after P-05) | >5 min | Reduce P-05 scope: skip "root cause" if already done in R-04 |
+| T+40 (after C-01) | >10 min | Reduce C-01: skip test writing, just implement function |
+| T+55 (after C-02) | >15 min | Skip C-02 regression check (just fix bug) |
+| T+75 (after C-03) | >20 min | C-04 becomes "commit what you have" |
+| T+105 (after C-04) | >25 min | C-05 skipped entirely — mark as pending |
+
+### Quality trade-offs:
+- All benchmarks default: score > 4.0 target
+- If under time pressure: accept score > 3.5
+- If critical time crunch: accept score > 3.0
+
+## Risk Mitigation
+1. **Runner breakage (HIGH):** `git stash` before each coding benchmark. If runner breaks, `git stash pop` to restore.
+2. **Over-run (MEDIUM):** Hard cut at 120 min. Unfinished benchmarks get "incomplete" status.
+3. **Scope creep (MEDIUM):** No refactoring beyond benchmark spec. If tempted, stop and score.
+
+## Verdict
+**FEASIBLE** with tight margin (0 buffer). Plan assumes no major surprises.
+If any benchmark takes >1.5x estimated time, C-05 is the first to cut.

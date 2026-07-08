@@ -1,0 +1,19 @@
+# BENCH-O-04: Bulk File Operation - Rename output files to full benchmark IDs
+
+## Transformation
+Rename `outputs/{category}-{nn}.{ext}` → `outputs/BENCH-{CATEGORY}-{NN}.{ext}`
+
+## Files affected: 7
+- O-01.py → BENCH-O-01.py
+- O-02_diagnostic.py → BENCH-O-02_diagnostic.py
+- O-03.txt → BENCH-O-03.txt
+- R-02.txt → BENCH-R-02.txt
+- R-03.txt → BENCH-R-03.txt
+- R-04.txt → BENCH-R-04.txt
+- R-05.txt → BENCH-R-05.txt
+
+## Result JSON paths updated: 8 files
+All result JSON files had their execution.output_path updated to match.
+
+## Verification
+After rename: 8 output files, all with BENCH- prefix pattern. No collisions.
