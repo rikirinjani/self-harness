@@ -1,0 +1,15 @@
+﻿{
+    "total_benchmarks":  20,
+    "weaknesses":  [
+
+                   ],
+    "avg_scores":  {
+                       "planning":  null,
+                       "operational":  null,
+                       "coding":  null,
+                       "research":  null
+                   },
+    "completed":  0,
+    "pass_rate":  0,
+    "last_updated":  "2026-07-08"
+}
