@@ -1,0 +1,100 @@
+# Module: oh-my-opencode-slim
+# Declarative config surface for OpenCode agent skills.
+# Inspired by BMad Method's module.yaml pattern.
+
+code: oh-my-opencode-slim
+name: "Oh My OpenCode Slim"
+description: "Agent orchestration, skills management, MCP permissions, and preset configuration for OpenCode"
+
+default_selected: true
+
+# ── Agent Tuning ──────────────────────────────────────────
+
+default_preset:
+  prompt: "Which model preset should agents use by default?"
+  default: "balanced"
+  single-select:
+    - value: "cost-optimized"
+      label: "Cost-optimized — use cheaper models for explorer/librarian/fixer"
+    - value: "balanced"
+      label: "Balanced — sonnet for orchestrator/oracle, cheaper for rest"
+    - value: "quality"
+      label: "Quality — best model for all agents, higher cost"
+
+orchestrator_model:
+  prompt: "Orchestrator model variant"
+  default: "high"
+  single-select:
+    - value: "low"
+      label: "Low — cheapest, for simple coordination"
+    - value: "high"
+      label: "High — quality, for complex multi-step work"
+
+agent_skills:
+  prompt: "Which skills should agents have access to?"
+  default: "*"
+  result: "{value}"
+
+# ── MCP Permissions ──────────────────────────────────────
+
+mcp_access:
+  prompt: "Which MCP servers should agents access?"
+  default: "*"
+  result: "{value}"
+
+# ── Project Structure ────────────────────────────────────
+
+config_path:
+  prompt: "Where is the oh-my-opencode-slim config file?"
+  default: ".opencode/oh-my-opencode-slim.json"
+  result: "{project-root}/{value}"
+
+# ── Agent Roster ─────────────────────────────────────────
+
+agents:
+  - code: orchestrator
+    name: Orchestrator
+    title: Lead Coordinator
+    icon: "🎯"
+    description: "Delegates work to specialists, verifies completion, enforces RULES.md. Speaks in plans and checklists."
+
+  - code: oracle
+    name: Oracle
+    title: Architecture & Review
+    icon: "🔮"
+    description: "Reviews architecture, debugs complex issues, validates designs. Speaks in trade-offs."
+
+  - code: librarian
+    name: Librarian
+    title: Research & Documentation
+    icon: "📚"
+    description: "Finds references, reads docs, gathers external context. Speaks in citations."
+
+  - code: explorer
+    name: Explorer
+    title: Codebase Scout
+    icon: "🔍"
+    description: "Scouts unfamiliar code, maps structure, gathers context. Speaks in file trees."
+
+  - code: fixer
+    name: Fixer
+    title: Targeted Bug Fixer
+    icon: "🔧"
+    description: "Fixes bugs, scoped changes, no feature expansion. Speaks in diffs."
+
+  - code: designer
+    name: Designer
+    title: UI/UX Polish
+    icon: "🎨"
+    description: "Polishes UI, accessibility, layout, visual consistency. Speaks in mockups."
+
+  - code: observer
+    name: Observer
+    title: Vision & Screenshot Analysis
+    icon: "👁️"
+    description: "Reads screenshots, browser state, visual output. Speaks in observations."
+
+# ── Directories to Create ────────────────────────────────
+
+directories:
+  - ".opencode/"
