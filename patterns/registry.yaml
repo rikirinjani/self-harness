@@ -1,0 +1,234 @@
+# Skill Registry — machine-readable index
+# Generated: 2026-07-13
+# Usage: python -c "import yaml; r=yaml.safe_load(open('patterns/registry.yaml')); print(len(r['skills']), 'skills')"
+
+skills:
+  - name: using-agent-skills
+    description: Discovers and invokes agent skills. Meta-skill for skill discovery.
+    triggers: [start session, discover skill, what skill applies]
+    source: ~/.config/opencode/skills/using-agent-skills/SKILL.md
+
+  - name: context-engineering
+    description: Optimizes agent context setup for quality and focus.
+    triggers: [degrading quality, new project, context too large]
+    source: ~/.config/opencode/skills/context-engineering/SKILL.md
+
+  - name: spec-driven-development
+    description: Creates specs before coding. Requirements and acceptance criteria.
+    triggers: [new feature, unclear requirements, no spec]
+    source: ~/.config/opencode/skills/spec-driven-development/SKILL.md
+
+  - name: incremental-implementation
+    description: Delivers changes in thin vertical slices, test each before expanding.
+    triggers: [multi-file change, large feature, risky refactor]
+    source: ~/.config/opencode/skills/incremental-implementation/SKILL.md
+
+  - name: test-driven-development
+    description: Failing test first, then make it pass.
+    triggers: [implement logic, fix bug, change behavior]
+    source: ~/.config/opencode/skills/test-driven-development/SKILL.md
+
+  - name: debugging-and-error-recovery
+    description: Systematic root-cause debugging when things break.
+    triggers: [test fails, build breaks, unexpected behavior]
+    source: ~/.config/opencode/skills/debugging-and-error-recovery/SKILL.md
+
+  - name: code-review-and-quality
+    description: Multi-axis code review before merging.
+    triggers: [before merge, review code, assess quality]
+    source: ~/.config/opencode/skills/code-review-and-quality/SKILL.md
+
+  - name: code-simplification
+    description: Reduces unnecessary complexity without changing behavior.
+    triggers: [too complex, refactor for clarity, reduce tech debt]
+    source: ~/.config/opencode/skills/code-simplification/SKILL.md
+
+  - name: security-and-hardening
+    description: Hardens code against vulnerabilities.
+    triggers: [user input, auth, data storage, external integration]
+    source: ~/.config/opencode/skills/security-and-hardening/SKILL.md
+
+  - name: git-workflow-and-versioning
+    description: Structured git workflow practices.
+    triggers: [commit, branch, resolve conflict, organize work]
+    source: ~/.config/opencode/skills/git-workflow-and-versioning/SKILL.md
+
+  - name: api-and-interface-design
+    description: Stable API and interface design with clear contracts.
+    triggers: [design API, module boundary, type contract]
+    source: ~/.config/opencode/skills/api-and-interface-design/SKILL.md
+
+  - name: qms-recorder
+    description: Records QMS evidence — NCRs, verifications, requirements, CAPAs.
+    triggers: [failure recorded, test passes, spec created, trace written]
+    source: ~/.config/opencode/skills/qms-recorder/SKILL.md
+
+  - name: oh-my-opencode-slim
+    description: Configure agents, models, prompts, skills, MCPs, presets.
+    triggers: [tune agent, change model, add skill, config improvement]
+    source: ~/.config/opencode/skills/oh-my-opencode-slim/SKILL.md
+
+  - name: frontend-ui-engineering
+    description: Production-quality UI with accessibility.
+    triggers: [build UI, modify interface, polish component]
+    source: ~/.config/opencode/skills/frontend-ui-engineering/SKILL.md
+
+  - name: planning-and-task-breakdown
+    description: Decomposes work into small, verifiable tasks.
+    triggers: [task too large, estimate scope, parallel work]
+    source: ~/.config/opencode/skills/planning-and-task-breakdown/SKILL.md
+
+  - name: doubt-driven-development
+    description: Adversarial fresh-context review of every non-trivial decision.
+    triggers: [correctness critical, unfamiliar code, high stakes]
+    source: ~/.config/opencode/skills/doubt-driven-development/SKILL.md
+
+  - name: source-driven-development
+    description: Grounds implementation in official documentation.
+    triggers: [framework usage, library integration, need authoritative source]
+    source: ~/.config/opencode/skills/source-driven-development/SKILL.md
+
+  - name: documentation-and-adrs
+    description: Records decisions and documentation for future engineers.
+    triggers: [architectural decision, public API change, ship feature]
+    source: ~/.config/opencode/skills/documentation-and-adrs/SKILL.md
+
+  - name: ci-cd-and-automation
+    description: Automates build and deployment pipelines.
+    triggers: [setup CI, modify pipeline, configure quality gates]
+    source: ~/.config/opencode/skills/ci-cd-and-automation/SKILL.md
+
+  - name: shipping-and-launch
+    description: Prepares production launches with checklist and rollback plan.
+    triggers: [deploy to production, pre-launch, staged rollout]
+    source: ~/.config/opencode/skills/shipping-and-launch/SKILL.md
+
+  - name: performance-optimization
+    description: Optimizes application performance.
+    triggers: [performance requirements, regression, slow load, bottleneck]
+    source: ~/.config/opencode/skills/performance-optimization/SKILL.md
+
+  - name: observability-and-instrumentation
+    description: Instruments code with logging, metrics, tracing, alerting.
+    triggers: [add logging, ship production feature, troubleshoot prod]
+    source: ~/.config/opencode/skills/observability-and-instrumentation/SKILL.md
+
+  - name: deprecation-and-migration
+    description: Removes old systems and migrates users safely.
+    triggers: [remove API, sunset feature, migrate implementation]
+    source: ~/.config/opencode/skills/deprecation-and-migration/SKILL.md
+
+  - name: interview-me
+    description: Extracts user intent through structured questioning.
+    triggers: [underspecified ask, ambiguous requirements, surface intent]
+    source: ~/.config/opencode/skills/interview-me/SKILL.md
+
+  - name: idea-refine
+    description: Refines raw ideas through divergent then convergent thinking.
+    triggers: [vague idea, stress-test assumption, expand options]
+    source: ~/.config/opencode/skills/idea-refine/SKILL.md
+
+  - name: peer-review
+    description: Simulates academic peer review with EIC + 3 reviewers.
+    triggers: [peer review, journal feedback, readiness assessment]
+    source: ~/.config/opencode/skills/peer-review/SKILL.md
+
+  - name: hypothesis
+    description: Generates falsifiable research hypotheses from notes.
+    triggers: [brainstorm hypotheses, research questions, testable predictions]
+    source: ~/.config/opencode/skills/hypothesis/SKILL.md
+
+  - name: validation
+    description: Designs experimental protocols to validate hypotheses.
+    triggers: [design experiment, plan study, propose validation]
+    source: ~/.config/opencode/skills/validation/SKILL.md
+
+  - name: draft
+    description: Writes complete IMRaD academic paper drafts.
+    triggers: [write paper, create manuscript, generate draft]
+    source: ~/.config/opencode/skills/draft/SKILL.md
+
+  - name: stats
+    description: Detects statistical errors and methodological fallacies.
+    triggers: [validate statistics, audit methodology, check quantitative claims]
+    source: ~/.config/opencode/skills/stats/SKILL.md
+
+  - name: counterargument
+    description: Generates devil's advocate critiques of research claims.
+    triggers: [stress-test assumptions, find weaknesses, anticipate objections]
+    source: ~/.config/opencode/skills/counterargument/SKILL.md
+
+  - name: synthesis
+    description: Surfaces cross-cutting themes across research notes.
+    triggers: [overview, thematic analysis, find patterns across notes]
+    source: ~/.config/opencode/skills/synthesis/SKILL.md
+
+  - name: figure
+    description: Generates publication-quality visualization code.
+    triggers: [chart, graph, visualization, diagram, figure]
+    source: ~/.config/opencode/skills/figure/SKILL.md
+
+  - name: wiki-sync
+    description: Organizes research notes into structured wiki knowledge base.
+    triggers: [build wiki, organize notes, create knowledge base]
+    source: ~/.config/opencode/skills/wiki-sync/SKILL.md
+
+  - name: paper-review
+    description: Multi-reviewer peer review with parallel subagents and meta-review.
+    triggers: [peer review paper, critique PDF, meta-review manuscript]
+    source: ~/.config/opencode/skills/ai-peer-review/SKILL.md
+
+  - name: paper-redteam
+    description: Red-team own draft or review someone else's paper. Two modes.
+    triggers: [red-team draft, review paper, predict reviewer feedback]
+    source: ~/.config/opencode/skills/meet-reviewer-2/SKILL.md
+
+  - name: codemap
+    description: Generates comprehensive hierarchical codemaps for unfamiliar repos.
+    triggers: [unfamiliar repo, codebase documentation, initial mapping]
+    source: ~/.config/opencode/skills/codemap/SKILL.md
+
+  - name: reflect
+    description: Reviews recent work, finds patterns, suggests improvements.
+    triggers: [learn from past sessions, improve workflow, identify patterns]
+    source: ~/.config/opencode/skills/reflect/SKILL.md
+
+  - name: deepwork
+    description: Heavy coding sessions with planning, review gates, progress tracking.
+    triggers: [complex work, multi-phase implementation, risky refactor]
+    source: ~/.config/opencode/skills/deepwork/SKILL.md
+
+  - name: image-prompting
+    description: Generates effective prompts for image/video AI models.
+    triggers: [create image prompt, refine prompt, video generation]
+    source: ~/.config/opencode/skills/image-prompting/SKILL.md
+
+  - name: token-efficiency
+    description: Minimizes token waste in all operations.
+    triggers: [token waste, high cost, long context, slow agent]
+    source: ~/.config/opencode/skills/token-efficiency/SKILL.md
+
+  - name: token-optimization
+    description: Reduces token usage and API cost across the agent loop.
+    triggers: [reduce tokens, save cost, fit context, shrink prompt]
+    source: ~/.config/opencode/skills/token-optimization/SKILL.md
+
+  - name: browser-testing-with-devtools
+    description: Tests in real browsers via Chrome DevTools MCP.
+    triggers: [browser test, inspect DOM, debug UI, capture console errors]
+    source: ~/.config/opencode/skills/browser-testing-with-devtools/SKILL.md
+
+  - name: memory-manage
+    description: Manage agent memory stored as files. Record, recall, search, update.
+    triggers: [record memory, recall memory, search knowledge graph]
+    source: ~/.config/opencode/skills/memory-manage/SKILL.md
+
+  - name: clonedeps
+    description: Clone dependency source into workspace for library inspection.
+    triggers: [inspect library internals, debug dependency, understand SDK source]
+    source: ~/.config/opencode/skills/clonedeps/SKILL.md
+
+  - name: worktrees
+    description: Manage git worktrees as isolated coding lanes.
+    triggers: [parallel work, risky change isolate, worktree management]
+    source: ~/.config/opencode/skills/worktrees/SKILL.md

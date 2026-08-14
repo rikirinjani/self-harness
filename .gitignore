@@ -16,3 +16,7 @@ __pycache__/
 # Temp
 *.tmp
 *.bak
+
+# Node
+web-bundles/
+node_modules/

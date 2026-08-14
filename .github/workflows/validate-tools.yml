@@ -1,0 +1,26 @@
+name: Validate tools & skills
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'tools/**'
+  pull_request:
+    branches: [master]
+    paths:
+      - 'tools/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pyyaml
+      - name: Syntax check
+        run: |
+          python -c "import ast; ast.parse(open('tools/validate_skills.py').read()); print('validate_skills: OK')"
+          python -c "import ast; ast.parse(open('tools/bundle_web.py').read()); print('bundle_web: OK')"
+          python -c "import yaml; yaml.safe_load(open('tools/module.yaml')); print('module.yaml: OK')"
