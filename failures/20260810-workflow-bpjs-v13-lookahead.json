@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-08-10T10:45:00Z",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "category": "workflow",
+  "severity": "medium",
+  "summary": "bpjs.py v1.3 Part B '09:15 ENTRY-TIMED VARIANT' combined 4-criteria filter (60% win / +1.26% mean / +0.94% excess, 147 ticker-days) was contaminated by lookahead: two of the four criteria used data not knowable at 09:15 entry — _vol5 (morning_vol_ratio5) is built on FULL 09:00-12:00 session volume (bpjs.py line 247, 540), and _approx (approx_value_idr) is FULL-DAY transaction-value proxy. Only gap_pct and first15_ret were genuinely knowable at entry. Result would have misled the user into believing a tradeable edge exists. Caught by orchestrator code review (grep + read of bpjs.py:535-609, 690-739) BEFORE reporting to user.",
+  "root_cause": "Spec ambiguity by orchestrator: the v1.3 task declared 'no lookahead' for the entry-timed variant but defined vol_ratio on the full morning session and value on full-day bars, without the explicit per-metric constraint 'only data available at 09:15 may enter the filter'. Fixer implemented the spec faithfully. Missing constraint: each Part B filter must be computable from bars with time <= 09:15. Also, the mentor's key criterion (first15_ret 2-5%) was only measured on the full-day (ex-post) basis in Part A, not on the 09:15-entry basis.",
+  "trace_id": "bpjs-afternoon-variant",
+  "corrective_action": "v1.4: add no-lookahead analogs — first15_vol_ratio5 (first-bar 09:00-09:15 volume / avg first-bar volume prior 5 days) and first15_value_idr (first-bar volume x typical price); rebuild Part B combined filter from knowable-at-09:15 criteria only; add first15_ret [2%,5%] band on entry15 basis; relabel Part A as diagnostic with ex-post markers; full Mac re-run and regression check."
+}

@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-refresh-runner-checkpoint-discrepancy",
+  "timestamp": "2026-08-07T13:51:06.099796+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 420,
+  "tool_calls": 5,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\drug-quantification-framework\\rag-queries\\run_lancedb_refresh.ps1",
+    "C:\\Users\\think\\Project_v2\\drug-quantification-framework\\rag-queries\\refresh_logs\\done.txt",
+    "C:\\Users\\think\\Project_v2\\drug-quantification-framework\\rag-queries\\refresh_logs\\class_NSAID.log",
+    "C:\\Users\\think\\Project_v2\\drug-quantification-framework\\rag-queries\\refresh_logs\\class_Statin.log",
+    "C:\\Users\\think\\Project_v2\\drug-quantification-framework\\rag-queries\\refresh_logs\\class_PPI.log"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-refresh-runner-checkpoint-discrepancy",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-..........--...--........-.--...-........--.-..-.........................................-.--...-",
+  "action": "Refresh update: batch2 stopped during PPI after esomeprazole A2. NSAID and Statin class logs contain complete summaries (80/80 and 40/40 queries OK, all files refreshed) but done.txt was not updated, so runner checkpoint/exit handling is unreliable. No active backfill process. PPI incomplete; no full-completion claim."
+}

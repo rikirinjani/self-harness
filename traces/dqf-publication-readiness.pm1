@@ -1,0 +1,38 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-publication-readiness",
+  "timestamp": "2026-07-16T03:50:32.029855+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 45,
+  "key_files": [
+    "drug-quantification-framework/methodology/evidence-hierarchy.md",
+    "drug-quantification-framework/methodology/framework-ontology.md",
+    "drug-quantification-framework/methodology/search-protocol.md",
+    "drug-quantification-framework/methodology/limitations.md",
+    "drug-quantification-framework/profiles/ibuprofen.md",
+    "drug-quantification-framework/profiles/diclofenac.md",
+    "drug-quantification-framework/profiles/celecoxib.md",
+    "drug-quantification-framework/profiles/paracetamol.md",
+    "drug-quantification-framework/comparison.md",
+    "drug-quantification-framework/INDEX.md",
+    "drug-quantification-framework/CONCLUSION.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-publication-readiness",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........--.-..-.........................................-.--...-",
+  "action": "DQF publication-readiness: wrote 4 methodology docs, fixed all 4 profiles (PMIDs, overclaims, language), fixed comparison/index/conclusion, archived RAG raw dir, final consistency pass"
+}

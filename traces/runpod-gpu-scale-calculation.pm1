@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "runpod-gpu-scale-calculation",
+  "timestamp": "2026-08-14T00:28:49.616138+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 2,
+  "key_files": [
+    "scripts/runpod_launch.py",
+    "scripts/stream_embed.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "runpod-gpu-scale-calculation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................-.--...-........-.--...-........................................-.--...-",
+  "action": "Queried current RunPod GPU catalog: B300 is largest at 288GB, H200/H200 NVL are practical high-memory options; prepared PMC full-corpus time/cost scenarios from measured 118 rows/s baseline"
+}

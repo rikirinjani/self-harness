@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-lancedb-direct-probe",
+  "timestamp": "2026-08-07T01:11:36.513099+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 8,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\probe_lancedb_task.py",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\probe_lancedb_task2.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-lancedb-direct-probe",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Tested direct LanceDB path for own task per MemPalace recipe: connection OK (28.4M rows), full abstracts confirmed (1744/529 chars >512); short texts are genuinely abstract-less records; no reranker (only _distance); S3 throttling on filter/scan; cred expiry 01:13:33Z binding"
+}

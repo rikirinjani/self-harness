@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "pubmed-reembed-v8-monitoring",
+  "timestamp": "2026-08-06T00:07:55.287313+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 32400,
+  "tool_calls": 40,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\sagemaker\\code\\run_reembed.sh",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\sagemaker\\code\\inference.py",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\sagemaker\\code\\download_metadata.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pubmed-reembed-v8-monitoring",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........-.--...-........................................-.--...-",
+  "action": "Deployed v8 optimized run (tokenizer parallel, encode 512, 20h cap) after fixing transformers/numpy dep incompatibilities. Monitored through AFK: 43 batches (~10.2M rows, 39%) at ~350 rows/s. Staged v9 resume variant (28h cap). Confirmed A100 p4d quota=0, A10G is the ceiling. Run self-terminates on completion/failure; safe to leave unattended."
+}

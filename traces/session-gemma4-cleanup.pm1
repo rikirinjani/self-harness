@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "session-gemma4-cleanup",
+  "timestamp": "2026-07-20T19:22:27.975381+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 20,
+  "key_files": [
+    "bonsai-gateway.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "session-gemma4-cleanup",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................--.-..-.........-.--...-........................................-.--...-",
+  "action": "Cleaned up Gemma 4 12B Q4 from Mac Mini. Removed model files (~10 GB freed), killed VLM server, removed gateway entry, restored Bonsai text server. Gateway now has Bonsai Text + Bonsai Image + Music Gen placeholder. Updated knowledge graph."
+}

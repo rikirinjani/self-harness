@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "orchestrator-dqf-override-final",
+  "timestamp": "2026-08-10T03:47:44.003084+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 14,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\drug-quantification-framework\\rag-queries\\extract_l3.py",
+    "C:\\Users\\think\\Project_v2\\drug-quantification-framework\\api\\drugs.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "orchestrator-dqf-override-final",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Finalized candidate C override rule in _score_risk (mit+neg > pure_pos+int), reparsed 20 drug profiles, merged 88/88 into drugs.json; verified 20 score corrections with 0 mismatches and bp_reduction=3 across all 33 antihypertensives"
+}

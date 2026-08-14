@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "ocr-claim-pdf-verification",
+  "timestamp": "2026-08-05T20:53:21.669772+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 8,
+  "key_files": [
+    "Agentic Layer/qms/records/verifications/20260806-pass-ocr-claim-pdf-verification.json",
+    "self-harness/failures/20260806-external-mempalace-ocr-claim-verification.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ocr-claim-pdf-verification",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Read all five source PDFs as page images, located the target BPJS forms, extracted card numbers, names, and diagnoses, and compared the claimed card/name values."
+}

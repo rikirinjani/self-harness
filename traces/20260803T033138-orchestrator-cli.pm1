@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260803T033138-orchestrator-cli",
+  "timestamp": "2026-08-03T03:31:38.385576+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 9,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260803T033138-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Checked paper trade status on Mac: 90 trades (46 open, 44 closed: 43 expired @0, AMMN verified +50k IDR), simulated executor (10 lots @5000 IDR, +/-1%); found shareholder-change signals PURE/BIKE verified with 0 trades - executor only opens from 'open' signals, lab verifies them first (sequencing gap)"
+}

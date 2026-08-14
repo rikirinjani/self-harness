@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-08-12T05:30:00Z",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "category": "process",
+  "severity": "low",
+  "summary": "Initial deck verification exposed an incorrect agenda date and the generated checker failed to release a temporary PPTX handle.",
+  "root_cause": "The design lane copied an unrelated date into the agenda slide; the checker script unlinks its temporary file while a python-pptx package handle is still open on Windows.",
+  "trace_id": "webinar-2026-14-deck"
+}

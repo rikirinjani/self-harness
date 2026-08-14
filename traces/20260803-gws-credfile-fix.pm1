@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260803-gws-credfile-fix",
+  "timestamp": "2026-08-03T02:04:31.632901+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1500,
+  "tool_calls": 24,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260803-gws-credfile-fix",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........................................................-.--...-",
+  "action": "MemPalace restart check: palace healthy (5705 drawers, sqlite integrity OK), all filed drawers survived. Diagnosed persistent google-workspace MCP 'missing refresh_token': desktop app does not pass config env to spawned servers. Fix: wrote cred file C:\\Users\\think\\.google_workspace_mcp\\credentials\\joker.balade@gmail.com.json (script checks it FIRST, env-independent) with per-service tokens + scopes:null (per-token scope); verified gmail 201 msgs + drive OK with NO env. Killed stale MCP server PIDs 9196/21520/21932; tools not auto-respawned in-session (may need app restart)"
+}

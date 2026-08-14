@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-all88-backfill-reconcile",
+  "timestamp": "2026-07-31T10:54:36.821652+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "rag-queries/backfill_all_queries.py",
+    "rag-queries/backfill_all_summary_A.json",
+    "rag-queries/backfill_all_summary_B.json",
+    "qms/records/verifications/20260731-all88-backfill-verification.json",
+    "qms/trace-matrix.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-all88-backfill-reconcile",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................--.-..-.........................................-.--...-",
+  "action": "Reconciled fix-2 all-88 Lane B (43 drugs, 344 files, 260/260 OK); audited 706 backfill files (0 invalid, 0 empty, no _N dupes); dispatched fix-1 to merge canonical all-88 backfill_all_queries.py (9 classes, 88 drugs, dry-run OK, py_compile PASS); wrote VER-2026-018 + CHAIN-2026-016 update"
+}

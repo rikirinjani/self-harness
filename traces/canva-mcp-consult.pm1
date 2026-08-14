@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "canva-mcp-consult",
+  "timestamp": "2026-08-12T04:25:31.870939+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 240,
+  "tool_calls": 4,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "canva-mcp-consult",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Advised on Canva MCP (waitlist-gated, OAuth, Pro+ for lossless export) vs local HTML flyer pipeline; user was only asking, no build requested"
+}

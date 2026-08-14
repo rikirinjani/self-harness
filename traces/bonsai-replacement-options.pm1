@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "bonsai-replacement-options",
+  "timestamp": "2026-08-13T00:25:36.577742+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 4,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "bonsai-replacement-options",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Inventoried Mac mini M4/16GB local-model capacity: 89GB free, existing Bonsai 4B/8B GGUF and 27B MLX; researched practical MLX replacements for 16GB Apple Silicon"
+}

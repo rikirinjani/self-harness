@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "session-macmini-setup-bonsai-image",
+  "timestamp": "2026-07-20T03:28:53.761366+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 20,
+  "key_files": [
+    "mac-mini-setup.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "session-macmini-setup-bonsai-image",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................--.-..-.........-.--...-........................................-.--...-",
+  "action": "Verified Xcode 26.6 installed on Mac Mini, activated xcode-select, diagnosed Metal Toolchain download failure, reran after download completed, re-ran Bonsai setup.sh successfully, launched image backend on :8001 (port 8000 occupied by dashboard_app), verified backend healthy (bonsai-ternary MLX). Updated knowledge graph with image service details."
+}

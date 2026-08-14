@@ -1,0 +1,35 @@
+{
+  "pm1_version": 1,
+  "session_id": "webinar-2026-14-session-wrap",
+  "timestamp": "2026-08-12T05:26:59.614736+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 420,
+  "tool_calls": 18,
+  "key_files": [
+    "C:\\Users\\think\\Downloads\\Webinar_2026-14_Tepat_Pilih_Tepat_Pakai.pptx",
+    "C:\\Users\\think\\Downloads\\build_webinar_deck.py",
+    "C:\\Users\\think\\Downloads\\check_pptx.py",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\requirements\\20260812-webinar-slide-deck-timed.json",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\20260812-pass-webinar-slide-deck.json",
+    "C:\\Users\\think\\Agentic Layer\\qms\\trace-matrix.json",
+    "C:\\Users\\think\\self-harness\\failures\\20260812-process-slide-deck-date-and-checker.json",
+    "C:\\Users\\think\\.opencode\\skills\\STATE.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "webinar-2026-14-session-wrap",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Completed and verified the Webinar 2026-14 PPTX; corrected the agenda date and SKP value, validated 12 slides/notes/timer cues and ZIP integrity, and wrote QMS plus failure records"
+}

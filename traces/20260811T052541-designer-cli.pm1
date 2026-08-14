@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260811T052541-designer-cli",
+  "timestamp": "2026-08-11T05:25:41.670925+00:00",
+  "agent": "designer",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 10,
+  "key_files": [
+    "src/app/ask/content.tsx",
+    "src/app/page.tsx",
+    "src/app/globals.css"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260811T052541-designer-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........----............................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Fixed two bugs. Bug 1 (broken search flow): added useEffect auto-submit in ask/content.tsx — when initialQuery is present from URL, auto-runs runSearch on mount via useRef guard. Extracted runSearch as useCallback with cache-first strategy. Landing page now pre-fetches API and caches before navigating, so ask page reads from sessionStorage instantly. Changed submittedQuery init from initialQuery to empty string for correct empty-state display. Bug 2 (search bar frame spill): replaced transition-all with transition-colors transition-shadow on both search bar containers, added overflow-hidden, added appearance-none + autoComplete=off to inputs, added -webkit-autofill CSS reset in globals.css to prevent browser autofill background frames. Build passes clean — 7 routes, exit 0. Zero design changes."
+}

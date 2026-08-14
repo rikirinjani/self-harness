@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "recap-20260810",
+  "timestamp": "2026-08-10T04:00:31.649976+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 480,
+  "tool_calls": 12,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\morse\\RECAP.md",
+    "C:\\Users\\think\\Agentic Layer\\pm-adapter\\pyproject.toml",
+    "C:\\Users\\think\\Agentic Layer\\pm-adapter\\pm_adapter\\__init__.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "recap-20260810",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-..........--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "PM-1 recap: saved RECAP.md to pro-memoria repo (pushed), bumped pm-adapter 0.1.0->1.0.0 with __version__ (tests 12/12 pass, pushed 836827c). MemPalace filing blocked by peer writer lock (-32001, same as ocr-claim-verification-mempalace-lock); recap content preserved in repo."
+}

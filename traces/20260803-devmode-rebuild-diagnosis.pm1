@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260803-devmode-rebuild-diagnosis",
+  "timestamp": "2026-08-03T04:21:24.739288+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 3,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260803-devmode-rebuild-diagnosis",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Diagnosed user's 500: Dev Mode toggle triggered container rebuild, Space stage RUNNING_BUILDING (devMode=True). SSH rejected during build (expected). Search endpoint still serves HTTP 200 'Still loading'. Key open question: whether rebuild wiped ~/.cache/huggingface download (progress preserved vs restarted). Next: wait for stage RUNNING, then Dev Mode SSH du -sh to verify cache."
+}

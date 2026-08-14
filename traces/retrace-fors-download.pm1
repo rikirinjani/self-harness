@@ -1,0 +1,39 @@
+{
+  "pm1_version": 1,
+  "session_id": "retrace-fors-download",
+  "timestamp": "2026-07-25T01:52:57.784307+00:00",
+  "agent": "general",
+  "outcome": "pass",
+  "duration_s": 3600,
+  "tool_calls": 20,
+  "key_files": [
+    "repro_fors/kaggle/download_v9.py",
+    "repro_fors/kaggle/download_v9_api.py",
+    "repro_fors/kaggle/download_v9_clean.py",
+    "repro_fors/kaggle/download_v9_log.py",
+    "repro_fors/kaggle/downloaded/done.txt",
+    "repro_fors/kaggle/downloaded/v9_log_clean.txt",
+    "repro_fors/kaggle/find_kaggle_api.py",
+    "repro_fors/kaggle/fors_celeba_script.py",
+    "repro_fors/kaggle/kernel_dir/fors_v6_script.py",
+    "repro_fors/kaggle/kernel_dir/fors_v7_diag.py",
+    "repro_fors/kaggle/kernel_dir/fors_v8_full.py",
+    "repro_fors/kaggle_output/output.html"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "retrace-fors-download",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-.--...-.........................-.-.-.-........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Retroactive: Built Kaggle FORS download pipeline (v9 scripts, kernel scripts, output)"
+}

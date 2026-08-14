@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-l3-rag-investigation",
+  "timestamp": "2026-07-31T03:55:49.601471+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 25,
+  "key_files": [
+    "Project_v2/drug-quantification-framework/rag-queries/extract_l3.py",
+    "Project_v2/drug-quantification-framework/rag-queries/l3_query_templates.json",
+    "Project_v2/drug-quantification-framework/rag-queries/l3_output/glyburide/glyburide_sglt2_glp1_metformin_insulin_mechanism_action.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-l3-rag-investigation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "RAG agent investigation: reproduced DQF L3 relevance ticket live; root-caused generic semantic endpoint (concept not drug anchored) + broken EUtils fallback query shape; recommended drug-anchored queries + relevance filter"
+}

@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "commentary-overheard",
+  "timestamp": "2026-07-26T23:53:42.012454+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 12,
+  "key_files": [
+    "articles/commentary-overheard.md",
+    "scripts/publish.mjs",
+    "substack-knowledge.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "commentary-overheard",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---.........................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Wrote and published commentary article 'I Was Overheard' — responding to external agent's critique via Real Drive, Mary's Room, and Kearifan Lokal (id=208619975, slug=i-was-overheard)"
+}

@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260806-vlm-oom-fail",
+  "timestamp": "2026-08-05T23:33:59.818985+00:00",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "duration_s": 1800,
+  "tool_calls": 5,
+  "key_files": [
+    "C:\\Users\\think\\KLAIM 2026\\kaggle\\klaim_vlm_pass.py"
+  ],
+  "failure": {
+    "category": "tool",
+    "severity": "high"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260806-vlm-oom-fail",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................-.--...-........---..-..........-.--...-........-.--...-........-.--...-.........--...--........-.--...-",
+  "action": "Analyzed vlm_results.zip: 444/444 failed, all CUDA OOM (Qwen2.5-VL-7B 4-bit + 200dpi pages tried to allocate ~23GB on 16GB T4). Fixed notebook: 3B-Instruct model, attn_implementation=sdpa, max_pixels=1280*28*28, rasterize capped at 1400px/150dpi. Re-run needed."
+}

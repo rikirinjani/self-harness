@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "l3-phantom-adjudication-5fields",
+  "timestamp": "2026-07-31T06:23:47.042741+00:00",
+  "agent": "oracle",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 6,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\l2b_digests\\hydralazine.json",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\l2b_digests\\methyldopa.json",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\audit_l3_script.py",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\phantom_digest.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "l3-phantom-adjudication-5fields",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........-.-.-.-.........................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Adjudicated 5 L3 phantom fields for DQF: hydralazine electrolyte_risk KEEP 1, hydralazine ddi_risk KEEP 1, methyldopa renal_protection KEEP 1, methyldopa metabolic_effect KEEP 2, methyldopa electrolyte_risk KEEP 1. All verified against FIELD_SCHEMA definitions, evidence pool digests, and consistency anchors."
+}

@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "fixer-dqf-l3-client-fixes",
+  "timestamp": "2026-07-31T11:29:31.149625+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "Project_v2/drug-quantification-framework/rag-queries/extract_l3.py",
+    "Project_v2/drug-quantification-framework/rag-queries/build_l2b_digests.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "fixer-dqf-l3-client-fixes",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................................................-.--...-........................................-.--...-",
+  "action": "Implemented 6 client-side fixes for DQF L3 RAG pipeline: (A) removed text[:300] truncation in extract_l3_profile findings; (B) PMID dedup in findings with dup_pmids_skipped evidence counter; (C) co-mention relevance gate (title OR single-mention+other-drug co-occurrence OR >=2 mentions) with lazy OTHER_DRUG_NAMES from load_drugs in both files; (D) fetch_rag retry x2 with 5s backoff on 'Still loading' errors, returns None on persist; (E) CONFUSABLE_TOKENS methylphenidate/methylone/mdma/methyl-dopa confusable-decides filter in both files; (F) schema docstring note + --eutils-first alias for --pubmed-only. Verified: py_compile OK both files, digests rebuilt (Wrote 61 digests), contamination still 0, synthetic co-mention RCT test kept=True, eutils-first dry-run OK."
+}

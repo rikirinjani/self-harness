@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260801-pubmed-reindex-host-cleaner-confirmed",
+  "timestamp": "2026-08-01T02:00:29.770340+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 240,
+  "tool_calls": 3,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260801-pubmed-reindex-host-cleaner-confirmed",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Analyzed pod tmpfiles/cron/systemctl-timers diagnostic output: in-container fully exonerated (only rule = /tmp 30d age; no cron/tmpreaper; no active systemd timer) -> host-side RunPod cleaner confirmed by elimination, uncontrollable from inside; fixed script mkdir guard + abort gate is the only viable mitigation; advised immediate lossless restart+swap while at keyboard"
+}

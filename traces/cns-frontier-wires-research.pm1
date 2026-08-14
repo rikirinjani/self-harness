@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "cns-frontier-wires-research",
+  "timestamp": "2026-08-06T03:29:30.192638+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 480,
+  "tool_calls": 8,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "cns-frontier-wires-research",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--..........................--...--........-.--...-........................................................-.--...-",
+  "action": "Researched CNS frontier wires (optic nerve, spinal cord regeneration+Nogo, brain-motor stroke/BCI, PNS repair, eSCS+regeneration combinations). Verdict: PARTIAL - wiring lever works in PNS and for eSCS activation, but CNS regeneration fails/missing human efficacy. Compiled per-wire brief."
+}

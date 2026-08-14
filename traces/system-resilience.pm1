@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "system-resilience",
+  "timestamp": "2026-07-18T20:50:06.333605+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 12,
+  "key_files": [
+    "/Users/ptpakdefarma/Library/LaunchAgents/com.bonsai.server.plist",
+    "/Users/ptpakdefarma/Library/LaunchAgents/com.t5pipeline.daily.plist",
+    "/Users/ptpakdefarma/Library/LaunchAgents/com.t5pipeline.dashboard.plist"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "system-resilience",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "System hardened: fixed Bonsai plist XML (unquoted attrs), ensured logs/ dir, reloaded all 3 launchd plists. All services auto-start on boot: Bonsai (KeepAlive), Dashboard (KeepAlive), Pipeline (Mon-Fri 17:00)."
+}

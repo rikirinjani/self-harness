@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "retrace-repro-samsps",
+  "timestamp": "2026-07-20T12:45:02.827174+00:00",
+  "agent": "general",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "repro_samsps/numpy_exps/loss.py",
+    "repro_samsps/numpy_exps/methods.py",
+    "repro_samsps/numpy_exps/methods_ada.py",
+    "repro_samsps/pubspace/logbook.css",
+    "repro_samsps/pubspace/logbook.js",
+    "repro_samsps/sam_sps/sam_sps.py",
+    "repro_samsps/setup.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "retrace-repro-samsps",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-.--...-........................................................--.-..-.........................................-.--...-",
+  "action": "Retroactive: created SAMS/SPS reproduction (numpy exps, SAM-SPS integration)"
+}

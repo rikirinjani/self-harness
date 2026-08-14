@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "session-wrap-qa-v3",
+  "timestamp": "2026-07-24T07:16:32.433342+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 8,
+  "key_files": [
+    "rag-service/kaggle/qa_v3_pipeline.py",
+    "rag-service/runpod/qa_v3_runpod.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "session-wrap-qa-v3",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---.........................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Session wrap: pipeline scripts written/uploaded, compute options evaluated, awaiting Kaggle quota reset"
+}

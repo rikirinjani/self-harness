@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-l3-session-wrap",
+  "timestamp": "2026-07-31T06:32:22.376436+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3600,
+  "tool_calls": 40,
+  "key_files": [
+    "api/drugs.json",
+    "rag-queries/l2b_overrides.json",
+    "Agentic Layer/qms/trace-matrix.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-l3-session-wrap",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........-.--...-........................................-.--...-",
+  "action": "Session wrap: L3 phantom-field adjudication completed and closed - 20 verdicts (17 KEEP / 3 CHANGE: olmesartan electrolyte 1->2, glimepiride+glyburide ddi 1->2), applied to api/drugs.json with backup, manifest phantom_adjudication merged, audit harness patched (l4_phantom vs l4_adjudicated), re-audit 27->7 phantom, traces written (orchestrator x2, ora-6, ora-7, retrace ora-5), VER-2026-005 QMS record, trace-matrix chained, MemPalace payload delivered via file (MCP writer lock). L4 quantification unblocked."
+}

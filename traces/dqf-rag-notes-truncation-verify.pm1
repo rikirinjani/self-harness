@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-rag-notes-truncation-verify",
+  "timestamp": "2026-07-31T11:09:00.536421+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 240,
+  "tool_calls": 8,
+  "key_files": [
+    "rag-queries/RAG_QUALITY_NOTES.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-rag-notes-truncation-verify",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Measured RAG truncation across all-88 pool (1716/2118 at exactly 512 chars, 77.8% cut mid-sentence), found cross-angle PMID duplication (275 PMIDs in >1 file, worst 28), corrected cap from ~513 to exactly 512, added finding #10 to RAG_QUALITY_NOTES.md"
+}

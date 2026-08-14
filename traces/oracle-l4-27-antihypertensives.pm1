@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "oracle-l4-27-antihypertensives",
+  "timestamp": "2026-07-31T08:41:33.086727+00:00",
+  "agent": "oracle",
+  "outcome": "pass",
+  "duration_s": 420,
+  "tool_calls": 75,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "oracle-l4-27-antihypertensives",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........-.-.-.-.........................--...--.........--...--........................................................-.--...-",
+  "action": "Researched 27 antihypertensive drug L4 clinical outcomes from 14 digest files + reference schema from drugs.json. Synthesized NNT, success_rate, onset_min, indications with evidence-level flags. Class-consistent anchors. 13 high/8 moderate/6 low evidence quality."
+}

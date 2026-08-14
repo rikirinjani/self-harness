@@ -1,0 +1,14 @@
+{
+  "trace_id": "pm1-failsafe-20260802T042357+0000",
+  "timestamp": "2026-08-02T04:23:57.356007+00:00",
+  "category": "process",
+  "severity": "low",
+  "agent": "opencode",
+  "slug": "pm1-failsafe-hamming_corrected-20260802T042357+0000",
+  "error_type": "hamming_corrected",
+  "session_id": "pm-adapter",
+  "details": {
+    "encoded": "-.......-.--...-........--.-..-.........",
+    "n_corrected": 1
+  }
+}

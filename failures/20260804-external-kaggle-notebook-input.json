@@ -1,0 +1,10 @@
+﻿{
+    "severity":  "medium",
+    "timestamp":  "2026-08-05T08:22:13Z",
+    "trace_id":  "20260804-kaggle-verify-error",
+    "category":  "external",
+    "summary":  "Kaggle kernel rikirinjani/notebook7d73bc48b5 ended in ERROR: no input zip found under /kaggle/input/ (dataset not attached to notebook).",
+    "outcome":  "fail",
+    "agent":  "orchestrator",
+    "root_cause":  "User uploaded dataset rikirinjani/klaim2026 (2.1GB, klaim.zip) but did not attach it to the notebook via \u0027+ Add Input\u0027 — Kaggle notebooks can only see attached datasets under /kaggle/input/. Notebook\u0027s input-glob found nothing and raised SystemExit before any extraction ran."
+}

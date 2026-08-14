@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "hf-docker-space-pro-followup",
+  "timestamp": "2026-08-03T04:48:55.064191+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 150,
+  "tool_calls": 4,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "hf-docker-space-pro-followup",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--.........................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Verified ZeroGPU is Gradio-only (official docs); Docker Spaces require PRO, CPU-basic 2vCPU/16GB/50GB, 48h sleep on free hardware vs always-on only on paid hardware; confirmed inference credits are account-level (apply to bot backend calls); flagged unconfirmed concurrency limits"
+}

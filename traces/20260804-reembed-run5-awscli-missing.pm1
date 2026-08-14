@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260804-reembed-run5-awscli-missing",
+  "timestamp": "2026-08-04T17:17:39.196643+00:00",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "duration_s": 900,
+  "tool_calls": 10,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\reembed-bootstrap.sh"
+  ],
+  "failure": {
+    "category": "tool",
+    "severity": "high"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260804-reembed-run5-awscli-missing",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................-.--...-........---..-..........--.-..-.........-.--...-........-.--...-.........--...--........-.--...-",
+  "action": "Run 5 (i-0f11e5f5e6c77f064) failed at bootstrap: 'aws: command not found' at line 69 (script fetch). Root cause: v4 put hf_transfer in the same pip install as awscli; a hf_transfer build issue likely aborted the batch, leaving awscli absent. Fixed: core pip (no hf_transfer) + separate tolerated hf_transfer + AWS CLI v2 official bundle (deterministic /usr/local/bin/aws). Relaunched i-0b96556c6c704ccba"
+}

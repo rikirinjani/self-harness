@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-ticket005-l4-merge",
+  "timestamp": "2026-07-31T08:58:11.429947+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 22,
+  "key_files": [
+    "api\\drugs.json",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\l4_diabetes.json",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\l4_antihypertensive.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-ticket005-l4-merge",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "TICKET-005 merged l4_clinical for 49 drugs (27 AH ora-5 + 22 diabetes ora-2) into drugs.json stripping _evidence_*; schema-validated 88/88; oracle spot-check ora-6 APPROVE 10 drugs"
+}

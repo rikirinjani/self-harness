@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "cokro-rythm-revert",
+  "timestamp": "2026-08-04T08:15:31.719507+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 8,
+  "key_files": [
+    "Project_v2\\COKRO\\cokro-pitch-revised.html"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "cokro-rythm-revert",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Reverted all 8 Rythm Health edits from COKRO deck; verified pure care platform (296/296 divs, 10 sections, no stale lab/Rythm refs)"
+}

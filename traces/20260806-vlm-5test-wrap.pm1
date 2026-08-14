@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260806-vlm-5test-wrap",
+  "timestamp": "2026-08-08T04:21:19.007521+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 6,
+  "key_files": [
+    "C:\\Users\\think\\KLAIM 2026\\kaggle\\vlm_results.jsonl",
+    "C:\\Users\\think\\KLAIM 2026\\kaggle\\run_vlm_openai.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260806-vlm-5test-wrap",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Wrapped 5-test OCR batch (gpt-5.6-luna): 5/5 ok after prompt fixes (tgl_lahir separate, status box raw content, kelamin L/P box, faskes exact, no ICD invention) + max_completion_tokens 1500 fixed empty-output. Test results saved vlm_results.jsonl + vlm-test-results.md. Full 444-run pending user confirmation. Bonsai/Mac-mini unreachable."
+}

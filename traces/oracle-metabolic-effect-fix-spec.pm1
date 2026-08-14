@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "oracle-metabolic-effect-fix-spec",
+  "timestamp": "2026-08-10T04:05:29.252934+00:00",
+  "agent": "oracle",
+  "outcome": "partial",
+  "duration_s": 900,
+  "tool_calls": 14,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\bb_check.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "oracle-metabolic-effect-fix-spec",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........-.-.-.-........--.-..-.........---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Designed metabolic_effect keyword-model fix spec. Recommended: default 2->1, expanded mitigators (new-onset diabetes, diabetes mellitus, gout, glucose dysregulation, frequency-attribution phrases), PK contexts for mechanistic filtering. Honest about limitations: config-only fix cannot fully address HCTZ/atenolol/metoprolol due to noise-sentence inflation of keyword counts. Flagged 5 ARB/CCB regressions from default change. Recommended follow-up code change for adverse_context_terms parameter."
+}

@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "scanner-final",
+  "timestamp": "2026-07-25T05:14:51.304165+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 14400,
+  "tool_calls": 85,
+  "key_files": [
+    "shareholder_discovery.py",
+    "automation.py",
+    "_weekly_full_scan.sh",
+    "_run_first_full_scan.py",
+    "_check_scan_progress.py",
+    "_verify_phase1_and_phase2.py",
+    "_setup_phase2.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "scanner-final",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "Completed 900-ticker scanner: fixed IDX rate limit (120s batch delay), ran first full 963-company scan (3.2h), deployed Phase 2 hybrid strategy (daily incremental + weekly full via launchd), verified DB completeness and quality"
+}

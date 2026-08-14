@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "phase2-dispatcher-budget-fix",
+  "timestamp": "2026-08-13T03:45:06.648286+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 10,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\morse\\context_assembly\\dispatch.py",
+    "C:\\Users\\think\\Agentic Layer\\morse\\context_assembly\\run_luna_check.py",
+    "C:\\Users\\think\\Agentic Layer\\morse\\context_assembly\\luna_check_result.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "phase2-dispatcher-budget-fix",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Phase-2 item 1: dispatcher completion-budget fix. Created dispatch.py (model-aware resolve_completion_budget: reasoning models get output+50% overhead, min 2048, cap 32768; dispatch_with_retry doubles budget on length-truncated empty content, max 3 retries). Rewired run_luna_check.py. Verified: normal run works attempt 1 (2048 budget, 494 reasoning tok, stop, 5334-char report); forced 256 budget triggers 256/512/1024 length-truncations then 2048 stop with 5818-char answer - full recovery proven"
+}

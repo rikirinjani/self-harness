@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "session-wrap-20260715-lab",
+  "timestamp": "2026-07-15T08:31:47.606840+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 25,
+  "key_files": [
+    "t5-pipeline/t5_pipeline/lab.py",
+    "t5-pipeline/t5_pipeline/parser.py",
+    "t5-pipeline/t5_pipeline/cli.py",
+    "t5-pipeline/t5_pipeline/automation.py",
+    "t5-pipeline/dashboard_app.py",
+    "t5-pipeline/templates/dashboard.html",
+    "t5-pipeline/config.yaml"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "session-wrap-20260715-lab",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Built lab module (paper trading + signal tracking), fixed KSEI parser to preserve investor-type columns + diversity score, generated 90 LQ45 signals, fixed YAML webhook config, verified dry run OK"
+}

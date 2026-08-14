@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "lib-nmj-agrin-pipeline",
+  "timestamp": "2026-08-06T03:13:27.216771+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 10,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "lib-nmj-agrin-pipeline",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--.........................---..-..........--.-..-.........................................................-.--...-",
+  "action": "Researched NMJ agrin/LRP4/MuSK pipeline: MuSK agonist antibodies druggable, argenx ARGX-119 Ph1b DOK7-CMS + ALS Ph2a, ActR-Fc-nLG3 myostatin+agrin fusion beats myostatin alone (PMID 37548943), AAV-mini-agrin rescues sarcopenia, Dok-7 AAV platform early; no clinical 3-leg combination studies"
+}

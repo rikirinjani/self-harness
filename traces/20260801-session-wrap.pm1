@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260801-session-wrap",
+  "timestamp": "2026-08-01T02:23:41.788399+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3600,
+  "tool_calls": 45,
+  "key_files": [
+    "C:\\Users\\think\\.config\\opencode\\credentials.md",
+    "C:\\Users\\think\\.local\\share\\opencode\\opencode.db"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260801-session-wrap",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........-.--...-........................................-.--...-",
+  "action": "Session wrap: pruned credentials wing (dead HF/DS/OpenRouter keys removed, per-service drawers created, mirror synced); verified MemPalace MCP writer lock free (7 concurrent OpenCode desktop sessions = -32001 root cause, file-based byte-range lock, self-healing); confirmed IDX Whale sessions intact post-corruption (0 bad rows of 183k, no backups exist, restore = reopen from sidebar); traced all tasks"
+}

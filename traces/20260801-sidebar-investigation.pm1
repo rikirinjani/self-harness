@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260801-sidebar-investigation",
+  "timestamp": "2026-08-01T01:58:40.539693+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 6,
+  "key_files": [
+    "C:\\Users\\think\\.local\\share\\opencode\\opencode.db"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260801-sidebar-investigation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Investigated why OpenCode sidebar unchanged: queried opencode.db session/project tables; found 212 sessions grouped by directory; 'Live wake test after OPENCODE_BIN fix' (7/31 13:05) still unarchived and listed; 'List OpenCode projects in folder' = current session (C:/Users/think); desktop app restores prior sessions/tabs on launch, so sidebar renders identically to yesterday's screenshot; confirmed 7 concurrent OpenCode.exe processes restarted 8:51 AM today"
+}

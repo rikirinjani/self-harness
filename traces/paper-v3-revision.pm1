@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "paper-v3-revision",
+  "timestamp": "2026-07-28T15:02:20.026133+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\morse\\paper\\pro-memoria.md",
+    "C:\\Users\\think\\Agentic Layer\\morse\\paper\\pro-memoria-new.pdf"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "paper-v3-revision",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Paper revision v3: added failure semantics (fail-stop/fail-soft), reliability vs integrity (§5.3), use cases + adapter pattern (§5.8), fixed §5 numbering chain, regenned PDF (locked, saved to pro-memoria-new.pdf)"
+}

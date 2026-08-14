@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "phase1-statin-assembly",
+  "timestamp": "2026-07-16T07:20:57.316469+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 12,
+  "key_files": [
+    "profiles-statins/atorvastatin.md",
+    "profiles-statins/rosuvastatin.md",
+    "profiles-statins/simvastatin.md",
+    "profiles-statins/pravastatin.md",
+    "profiles-statins/pitavastatin.md",
+    "profiles-statins/comparison.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "phase1-statin-assembly",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Completed Phase 1 statin PoC data assembly: wrote 5 L1-L4 profiles (178-207 lines each) + cross-comparison table (158 lines) for atorvastatin, rosuvastatin, simvastatin, pravastatin, pitavastatin. Framework generalizability confirmed — all 4 levels transfer to statins, but differentiation power is lower than NSAIDs"
+}

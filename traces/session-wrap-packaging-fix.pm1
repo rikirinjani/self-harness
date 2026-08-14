@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "session-wrap-packaging-fix",
+  "timestamp": "2026-08-02T04:33:31.267646+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\morse\\pro_memoria\\__init__.py",
+    "C:\\Users\\think\\Agentic Layer\\pm-adapter\\pm_adapter\\adapter.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "session-wrap-packaging-fix",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Session wrap: wheel packaging fix (pro-memoria now importable from pip install), pm-adapter pushed (ECC mode, renamed to_semantic, git dep, 12 tests), both repos live."
+}

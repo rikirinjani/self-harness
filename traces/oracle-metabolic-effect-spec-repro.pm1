@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "oracle-metabolic-effect-spec-repro",
+  "timestamp": "2026-08-10T04:09:25.591771+00:00",
+  "agent": "oracle",
+  "outcome": "pass",
+  "duration_s": 240,
+  "tool_calls": 3,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\drug-quantification-framework\\rag-queries\\extract_l3.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "oracle-metabolic-effect-spec-repro",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........-.-.-.-........................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Reproduced complete metabolic_effect fix spec from prior analysis: exact config change (default 2->1, expanded mitigators, PK contexts), false-positive analysis per phrase, 3 ARB/CCB regressions with acceptance rationale, expected scores for 5 flagged drugs, adverse_context_terms code change spec (hook point + placement rationale), verification steps. Scope: single call site at line 658-663, Antihypertensive-only."
+}

@@ -1,0 +1,42 @@
+{
+  "pm1_version": 1,
+  "session_id": "retrace-drug-quantification-framework",
+  "timestamp": "2026-07-20T02:56:29.385174+00:00",
+  "agent": "general",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "drug-quantification-framework/build_pdf.py",
+    "drug-quantification-framework/debug_l3.py",
+    "drug-quantification-framework/figures/figure1_architecture.py",
+    "drug-quantification-framework/figures/figure3_pk_comparison.py",
+    "drug-quantification-framework/figures/figure4_nnt_forest.py",
+    "drug-quantification-framework/figures/figure6_pk_disconnect.py",
+    "drug-quantification-framework/rag-queries/raw/celecoxib-cox-bind.json",
+    "drug-quantification-framework/rag-queries/raw/celecoxib-cv.json",
+    "drug-quantification-framework/rag-queries/raw/celecoxib-pk.json",
+    "drug-quantification-framework/rag-queries/raw/diclofenac-cox-bind.json",
+    "drug-quantification-framework/rag-queries/raw/diclofenac-nnt.json",
+    "drug-quantification-framework/rag-queries/raw/diclofenac-p2x3.json",
+    "drug-quantification-framework/rag-queries/raw/diclofenac-sr.json",
+    "drug-quantification-framework/rag-queries/raw/diclofenac-trpa.json",
+    "drug-quantification-framework/rag-queries/raw/ibuprofen-asic.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "retrace-drug-quantification-framework",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-.--...-.........................................................--...--........................................-.--...-",
+  "action": "Retroactive: Drug quantification framework - build_pdf, figures, RAG queries"
+}

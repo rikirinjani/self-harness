@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "session-reconciled-20260730",
+  "timestamp": "2026-07-30T04:30:28.224302+00:00",
+  "agent": "explorer",
+  "outcome": "pass",
+  "duration_s": 30,
+  "tool_calls": 4,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "session-reconciled-20260730",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........---..-..........................-.--...-........-.--...-........................................................-.--...-",
+  "action": "Session wrap: audit results reconciled — 12 drug entries merged, 2 class templates created, L3 extraction scoring logic finalized. Retrace scan clean, crash log clean."
+}

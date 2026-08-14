@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "quota-script-update",
+  "timestamp": "2026-07-31T12:43:56.934558+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 8,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\scripts\\check_hf_quota.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "quota-script-update",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Updated check_hf_quota.py: env-var-first token resolution, real dataset listing, accurate text-array-only reindex estimate (82GB), current HF storage policy table"
+}

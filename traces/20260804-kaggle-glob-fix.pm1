@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260804-kaggle-glob-fix",
+  "timestamp": "2026-08-05T01:24:43.770550+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 4,
+  "key_files": [
+    "C:\\Users\\think\\KLAIM 2026\\kaggle\\klaim_extract_kaggle.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260804-kaggle-glob-fix",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Root cause of Kaggle ERROR: zip was at /kaggle/input/datasets/rikirinjani/klaim2026/KLAIM 2026.ZIP (4 levels deep) but input glob only searched 2 levels (/kaggle/input/*/*.zip) — dataset WAS attached, glob too shallow. Fixed: recursive glob /kaggle/input/**/*.zip case-insensitive + full input-dir listing on failure. Verified deep-path sim: found zip, extracted PDFs (zip wraps KLAIM 2026/ root). User must re-upload updated .py before Save & Run All."
+}

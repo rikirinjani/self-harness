@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "mempalace-ego-lite",
+  "timestamp": "2026-08-12T04:39:57.746175+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 4,
+  "key_files": [
+    "mempalace/tools/ego-lite.md",
+    "mempalace/memory-inventory.csv"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "mempalace-ego-lite",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Filed ego-lite findings into MemPalace (drawer tools/ego-lite.md + inventory row) via direct disk write since MCP severed"
+}

@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "luna-dispatch-empty-first",
+  "timestamp": "2026-08-13T03:25:09.319014+00:00",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "duration_s": 120,
+  "tool_calls": 4,
+  "key_files": [],
+  "failure": {
+    "category": "tool",
+    "severity": "low"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "luna-dispatch-empty-first",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................-.--...-........--.-..-.........-.--...-........................-.--...-........-.--...-........-.--...-",
+  "action": "First real Luna dispatch returned empty content (completion_tokens=1200, content='')"
+}

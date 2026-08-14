@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "oracle-dqf-ddi_risk-adjudication",
+  "timestamp": "2026-07-31T06:19:41.776581+00:00",
+  "agent": "oracle",
+  "outcome": "pass",
+  "duration_s": 240,
+  "tool_calls": 7,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\l2b_digests\\canagliflozin.json",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\l2b_digests\\liraglutide.json",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\l2b_digests\\dulaglutide.json",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\l2b_digests\\vildagliptin.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "oracle-dqf-ddi_risk-adjudication",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........-.-.-.-........................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Adjudicated 4 phantom ddi_risk fields for DQF L3 audit: all KEEP at value 1. Canagliflozin/SGLT2i (DDI-neutral), liraglutide/GLP-1 RA (gastric-emptying effect is minor/attenuates, not moderate), dulaglutide/GLP-1 RA (same class, Fc-fusion protein), vildagliptin/DPP-4i (clearest DDI-neutral). No raw evidence pool files exist for any drug's ddi_risk. Pharmacological analysis confirms defaults are correct despite being phantom fields."
+}

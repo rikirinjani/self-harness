@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "session-wrap-bpjs-filter-layer",
+  "timestamp": "2026-08-10T03:37:32.113177+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 5400,
+  "tool_calls": 24,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "session-wrap-bpjs-filter-layer",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-........--.-..-.........................................................-.--...-",
+  "action": "Session wrap: BPJS strategy validation (v1.3->v1.4). Built bpjs.py (924 lines) via fixer, ran full 64-ticker journal on Mac, caught + corrected lookahead defect (v1.3 60%/1.26% was full-morning/full-day artifact), honest v1.4 verdict: mentor checklist = 51 rows 47% win +0.25% vs 41% baseline — no tradeable edge; gap cap only defensively useful. Records: failure 20260810-workflow-bpjs-v13-lookahead.json, VER-2026-005, MemPalace idx-whale drawers + diary. Tool deployed Mac /Users/ptpakdefarma/t5-pipeline/bpjs.py, backups v11-v13 preserved."
+}

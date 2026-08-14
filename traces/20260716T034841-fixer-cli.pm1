@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260716T034841-fixer-cli",
+  "timestamp": "2026-07-16T03:48:41.243381+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 45,
+  "tool_calls": 6,
+  "key_files": [
+    "C:\\Users\\think\\Project\\drug-quantification-framework\\profiles\\ibuprofen.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260716T034841-fixer-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................-.--...-........-.--...-........-.--...-........................................-.--...-",
+  "action": "Applied 7 publication-readiness fixes to ibuprofen profile: resolved COX-1 reversible/irreversible contradiction, reworded takeaway 2, removed diclofenac cross-contamination from sources, removed PMID:32760273 from L3 RAG, added 2 Cochrane PMIDs to reference table, added Deranged Physiology citation, verified evidence levels already consistent"
+}

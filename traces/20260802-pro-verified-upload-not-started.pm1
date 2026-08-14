@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260802-pro-verified-upload-not-started",
+  "timestamp": "2026-08-02T05:26:18.228083+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 2,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260802-pro-verified-upload-not-started",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Verified balade PRO upgrade via whoami-v2 (isPro=True, canPay=True, periodEnd 2026-09-01). Re-checked dataset tree: upload not yet started, repo still 26.42GB/26 files (old build). Confirmed no new recent_* files landed. Standing by for pod upload (~06:00 UTC)."
+}

@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "librarian-bge-large-specs",
+  "timestamp": "2026-08-12T05:02:13.599874+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 7,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "librarian-bge-large-specs",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--.........................................-.--...-........................................................-.--...-",
+  "action": "Researched BAAI/bge-large-en-v1.5 vs bge-base-en-v1.5 specs (335M/109M params, 1024/768 dims, 1.34GB/0.44GB files) plus embedding throughput benchmarks on RTX 3090/4060/4070/5090, A100, T4, Qualcomm Cloud AI 100"
+}

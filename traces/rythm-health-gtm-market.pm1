@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "rythm-health-gtm-market",
+  "timestamp": "2026-08-03T12:44:31.672865+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 9,
+  "key_files": [
+    "Project_v2/Drug Platform/Rythm-Health/Go-To-Market-Differentiation.md",
+    "Project_v2/Drug Platform/Rythm-Health/Indonesia-Market-Deep-Dive.md",
+    "Project_v2/Drug Platform/Rythm-Health/README.md",
+    "Project_v2/Drug Platform/Rythm-Health/Sample-Stability-Indonesia.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "rythm-health-gtm-market",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........-.--...-........-.--...-........................................-.--...-",
+  "action": "Saved GTM differentiation brief + Indonesia market deep-dive into Rythm-Health folder; corrected regulatory reference (PMK 24/2022=EMR not telemedicine); dispatched librarian for market data; enforced missing-trace gate (lib-3 sent back to record PM-1 trace)"
+}

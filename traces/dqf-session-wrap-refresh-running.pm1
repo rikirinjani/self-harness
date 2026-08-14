@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-session-wrap-refresh-running",
+  "timestamp": "2026-08-07T02:25:04.080051+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1500,
+  "tool_calls": 20,
+  "key_files": [
+    "C:\\Users\\think\\.opencode\\STATE.md",
+    "C:\\Users\\think\\Project_v2\\drug-quantification-framework\\rag-queries\\run_lancedb_refresh.ps1"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-session-wrap-refresh-running",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Session wrap: permanent creds confirmed (MemPalace + .env), perf fix c24fe5d (cache model/table singletons), full 88-drug LanceDB refresh launched as detached per-class batch (run_lancedb_refresh.ps1, done.txt resume); Antihypertensive done, on Diabetes at wrap; STATE.md updated"
+}

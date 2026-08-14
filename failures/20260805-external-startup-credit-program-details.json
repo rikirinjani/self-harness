@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-08-05T00:20:00Z",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "category": "external",
+  "severity": "low",
+  "summary": "Some startup-credit programs publish promotional ceilings while eligibility and exact amounts vary by funding stage, region, or provider referral.",
+  "root_cause": "Provider programs change frequently and several official pages do not expose a single universal credit amount.",
+  "trace_id": "startup-credit-landscape"
+}

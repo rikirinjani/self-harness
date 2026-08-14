@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-ticket-003-parser-gate",
+  "timestamp": "2026-07-31T06:46:01.054066+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1200,
+  "tool_calls": 15,
+  "key_files": [
+    "Project_v2/drug-quantification-framework/rag-queries/build_l2b_digests.py",
+    "Project_v2/drug-quantification-framework/rag-queries/_sweep_crossdrug.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-ticket-003-parser-gate",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "TICKET-003: applied drug-relevance gate to build_l2b_digests.py load_pool (copied to repo from %TEMP%), rebuilt 61 digests, methyldopa pure-clonidine 20->0, 0 pure cross-drug contamination across all digests, reported done via mesh"
+}

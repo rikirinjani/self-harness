@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "wrap-backtest-session",
+  "timestamp": "2026-08-10T02:10:11.896780+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 6,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\IDX Whale\\t5-pipeline\\backtest.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "wrap-backtest-session",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Session wrap: full-signal backtest run (130 signals/64 tickers, horizons 3/5/20d vs ^JKSE) via curl_cffi data layer. Results: t5_direction/sid_change ~3.4% fwd return but ~zero excess (win 34-44%); shareholder_change 3d n=5 excess -3.25%; 20d unmeasurable (journal too young, signals 07-27..08-05). QMS VER-2026-001 + MemPalace idx-whale/backtest filed. exp-1/lib-1 reconciled (results consumed)."
+}

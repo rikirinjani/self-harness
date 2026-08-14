@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260731-opencode-db-creds",
+  "timestamp": "2026-07-31T12:14:30.366955+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 12,
+  "key_files": [
+    ".config/opencode/credentials.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260731-opencode-db-creds",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Scanned opencode.db (8.7GB, 36,961 messages, 144,225 parts) for HF/Kaggle/RunPod/Replicate creds: credential table empty; found 5 real HF tokens + 1 Replicate token (matches env) in chat parts; Kaggle/RunPod absent; also 12 sk- LLM keys. Filed credentials/huggingface + credentials/llm-providers drawers; updated local credentials.md mirror"
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-08-13T07:20:00Z",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "category": "execution",
+  "severity": "medium",
+  "summary": "Bonsai remained unresponsive after context-limit configuration because OpenCode still sent a 91848-token request.",
+  "root_cause": "The configured model limit is advisory/compaction metadata in this OpenCode build and does not remove the large MCP and skill schemas from the request. Mac logs show prompt processing at 4096/91848 tokens while the client waits.",
+  "trace_id": "bonsai-context-cap-staged"
+}

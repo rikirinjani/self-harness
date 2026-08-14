@@ -1,0 +1,10 @@
+{
+    "severity":  "high",
+    "timestamp":  "2026-08-04T17:00:32.1294926Z",
+    "trace_id":  "20260804-reembed-download-stall",
+    "category":  "external",
+    "summary":  "HF snapshot_download of the 102GB metadata_texts.npy hard-stalled mid-transfer on EC2 (zero EBS writes 20+ min, CPU 6%, ~1-13KB/5min network). Small files downloaded fine; the huge texts file hangs — same signature as the HF Space\u0027s \u0027Fetching 26 files\u0027 stall.",
+    "outcome":  "fail",
+    "agent":  "orchestrator",
+    "root_cause":  "huggingface_hub snapshot_download stalls on very large files; the connection dies mid-transfer and does not resume within a reasonable window. The default downloader lacks aggressive stall detection. Fixed by decoupling download into its own phase with hf_transfer (Rust, retries+resume) and a stall-kill-resume watchdog."
+}

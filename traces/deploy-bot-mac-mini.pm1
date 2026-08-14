@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "deploy-bot-mac-mini",
+  "timestamp": "2026-08-10T02:33:18.047320+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 5400,
+  "tool_calls": 60,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\.env",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\mac\\com.pubmedrag.telegram-bot.plist",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\mac\\hash_token.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "deploy-bot-mac-mini",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........-.--...-........................................-.--...-",
+  "action": "Deployed @MedQuerriesBot to Mac mini (192.168.1.103): copied rag-service + venv via uv, launchd LaunchAgent com.pubmedrag.telegram-bot (RunAtLoad+KeepAlive+PYTHONUNBUFFERED), fixed .env token corruption via base64 transfer (hash verified 3925BF...), resolved 409 polling conflict by stopping Windows bot + killing watchdogs + disabling startup VBS, verified live E2E query answered with sources"
+}

@@ -1,0 +1,10 @@
+﻿{
+    "timestamp":  "2026-08-08T04:59:08.3361178+07:00",
+    "agent":  "orchestrator",
+    "outcome":  "fail",
+    "category":  "workflow",
+    "severity":  "medium",
+    "summary":  "Detached refresh runner stopped during PPI and failed to checkpoint completed NSAID/Statin classes",
+    "root_cause":  "The timeout/child-process wrapper classified completed class invocations as non-success and the detached wrapper disappeared during the PPI retry; exact child exit handling remains unresolved.",
+    "trace_id":  "dqf-refresh-runner-checkpoint-discrepancy"
+}

@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-wrap",
+  "timestamp": "2026-07-16T03:24:38.915946+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 35,
+  "key_files": [
+    "C:\\Users\\think\\Project\\drug-quantification-framework\\CONCLUSION.md",
+    "C:\\Users\\think\\Project\\drug-quantification-framework\\INDEX.md",
+    "C:\\Users\\think\\Project\\drug-quantification-framework\\comparison.md",
+    "C:\\Users\\think\\Project\\drug-quantification-framework\\profiles\\*.md",
+    "C:\\Users\\think\\Project\\drug-quantification-framework\\rag-queries\\README.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-wrap",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........--.-..-.........................................-.--...-",
+  "action": "DQF PoC complete. 4 drug profiles across 4 levels using MedQuery RAG. Conclusion: framework viable, rank requires context-dependent weights, no universal score possible."
+}

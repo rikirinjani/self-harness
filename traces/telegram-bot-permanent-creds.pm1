@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "telegram-bot-permanent-creds",
+  "timestamp": "2026-08-07T01:36:42.850849+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1500,
+  "tool_calls": 22,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\.env",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\restart_bot.ps1",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\telegram_bot.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "telegram-bot-permanent-creds",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Option A permanent AWS creds: created IAM user pubmed-rag-bot (read-only inline policy on one bucket), generated static key, verified standalone (s3 ls OK) and full pipeline (HITS:3, no ExpiredToken), wrote key to .env, simplified restart_bot.ps1 (dropped session minting), restarted bot PID 9912, polling confirmed via getUpdates 409. Fixed pmid_ prefix display in telegram_bot.py:119. Reconciled lib-2 (research) + lib-3 (trace write)"
+}

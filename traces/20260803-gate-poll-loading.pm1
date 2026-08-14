@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260803-gate-poll-loading",
+  "timestamp": "2026-08-03T05:31:47.975073+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 2,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260803-gate-poll-loading",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Gate poll: Space RUNNING, sha 5031b537, cpu-basic, devMode off; /search 200 'Still loading' - load in progress, throttling expected (mmap 102GB on 16GB RAM). No action needed; phase 0 gate is a pure wait. Next trigger: /search stops returning 'Still loading'."
+}

@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "oracle-metabolic-spec-to-file",
+  "timestamp": "2026-08-10T04:13:23.072044+00:00",
+  "agent": "oracle",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 2,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dqf_metabolic_fix_spec.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "oracle-metabolic-spec-to-file",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........-.-.-.-........................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Wrote complete metabolic_effect fix spec to file: dqf_metabolic_fix_spec.md. 8 parts covering exact config change (default 2->1, expanded mitigators, PK contexts), false-positive analysis, 3 ARB/CCB regressions with acceptance rationale, expected scores for 5 flagged drugs, adverse_context_terms code change spec with hook point and placement rationale, verification steps, and score-delta summary table."
+}

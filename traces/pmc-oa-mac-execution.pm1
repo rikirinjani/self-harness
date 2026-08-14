@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "pmc-oa-mac-execution",
+  "timestamp": "2026-07-21T07:24:29.076867+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 2400,
+  "tool_calls": 28,
+  "key_files": [
+    "C:\\Users\\think\\LocalNotebook\\rag-service\\scripts\\filter_articles.py",
+    "C:\\Users\\think\\LocalNotebook\\rag-service\\scripts\\stream_embed.py",
+    "C:\\Users\\think\\LocalNotebook\\rag-service\\scripts\\build_faiss.py",
+    "C:\\Users\\think\\LocalNotebook\\rag-service\\scripts\\push_to_hf.py",
+    "C:\\Users\\think\\LocalNotebook\\rag-service\\scripts\\run_pmc_oa.sh",
+    "C:\\Users\\think\\LocalNotebook\\rag-service\\PMC_OA_STEP1_MAC.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pmc-oa-mac-execution",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........---..-..........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Wrote PMC OA pipeline scripts to Mac, SCP'd 5 scripts, tested filter_articles.py - NCBI API (eSearch/efetch) unreliable for getting 8M OA IDs. Scripts ready on Mac, need alternative ID source."
+}

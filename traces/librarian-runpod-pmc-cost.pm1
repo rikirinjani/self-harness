@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "librarian-runpod-pmc-cost",
+  "timestamp": "2026-08-12T02:24:07.475122+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 6,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "librarian-runpod-pmc-cost",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--.........................................-.--...-........................................................-.--...-",
+  "action": "Retroactive (lib-4, ses_00c38d1e2ffeZNomff0U8jSZeJ): RunPod cost/time for full PMC OA embedding. Anchor: measured T4 90-186K tok/s (29.1M abstracts in 13-27h). Corpus ~3.5-4M articles / ~30B tokens / ~59M 512-tok chunks. RunPod on-demand: H100 .69/hr ~0.36d ~; A100 .19 ~0.76d ~; RTX 4090 .34 ~1.0d ~; RTX 3090 .22 ~1.3d ~; T4 dropped from catalog. 707K abstract backfill: ~.06-0.17, minutes, any GPU. Verdict: .18 credit fits backfill guaranteed; full corpus only via spot/preemptible or 3090/4090 on-demand at edge (-16 range); H100 for speed at . Benchmarks: prices verified vs gpurentalprices.com; GPU multipliers estimated not measured."
+}

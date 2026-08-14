@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260804-vis1-klaim-sep-assessment",
+  "timestamp": "2026-08-04T08:01:43.549280+00:00",
+  "agent": "general",
+  "outcome": "pass",
+  "duration_s": 240,
+  "tool_calls": 6,
+  "key_files": [
+    "C:\\Users\\think\\KLAIM 2026\\KLAIM FEB 2026\\04\\0194B0370226P000033_087_04022026.pdf"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260804-vis1-klaim-sep-assessment",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-.--...-........................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Vision subagent (vis-1, gpt-5.6-luna) assessed KLAIM claim PDF: 5 pages (Faktur/Resep/SEP/Rujukan Balik/Kunjungan), transcribed all SEP page-3 fields, confirmed page 1 has text layer, pages 2-5 image-only. Retroactive record for vis-1 (unreconciled)."
+}

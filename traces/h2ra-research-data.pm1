@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "h2ra-research-data",
+  "timestamp": "2026-07-25T15:42:58.278357+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 480,
+  "tool_calls": 8,
+  "key_files": [
+    "profiles/H2RA_Research_Data.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "h2ra-research-data",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--..........................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Researched H2RA drugs (cimetidine, ranitidine, famotidine) across L1-L4 DQF levels: compiled binding Ki/IC50, CYP inhibition profiles, PK parameters, systems response (tolerance, pH>4 holding time), clinical outcomes (healing rates, NNT, NNH), anti-inflammatory effects, NDMA history, and key differentiators. Saved structured data to profiles/H2RA_Research_Data.md with PMID references."
+}

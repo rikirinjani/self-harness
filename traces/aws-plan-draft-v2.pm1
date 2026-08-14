@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "aws-plan-draft-v2",
+  "timestamp": "2026-08-11T08:36:47.618390+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 12,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\docs\\aws-domain-email-plan-20260811.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "aws-plan-draft-v2",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................--.-..-.........-.--...-........................................-.--...-",
+  "action": "Drafted AWS domain+email+Activate plan v2 for Cokro (docs/aws-domain-email-plan-20260811.md): decisions incorporated (cokro.pl via NASK reseller since Route53 can't register .pl, query@cokro.pl on Zoho Mail Free, SES deferred, Activate Founders). Key verified facts: WorkMail closed to new customers Apr 30 2026/shutdown Mar 31 2027, cokro.pl available per NASK RDAP, .pl ~50-99 PLN/yr no residency req, Activate resale-of-credit-funded-usage terms ambiguous (drafted AWS support email for written confirmation). Draft awaits founder review before execution."
+}

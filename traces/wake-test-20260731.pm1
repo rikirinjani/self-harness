@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "wake-test-20260731",
+  "timestamp": "2026-07-31T06:06:48.125208+00:00",
+  "agent": "general",
+  "outcome": "pass",
+  "duration_s": 30,
+  "tool_calls": 3,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "wake-test-20260731",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-.--...-........................-.--...-........-.--...-........................................................-.--...-",
+  "action": "LIVE-WAKE-TEST: responded from real CLI (opencode.exe, PID 15124) confirming waker spawn path via OPENCODE_BIN"
+}

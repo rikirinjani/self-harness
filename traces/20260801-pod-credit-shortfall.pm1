@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260801-pod-credit-shortfall",
+  "timestamp": "2026-08-01T09:36:26.294433+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260801-pod-credit-shortfall",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................................................................-.--...-",
+  "action": "Budget analysis for user: credit .35 = 18h runway vs ~30-31h work remaining => ~-8 shortfall; warned /tmp/full_rebuild (progress.json + 32GB raw bins + indexes) is ephemeral - credit exhaustion stops pod, destroys instance, wipes /tmp = full rebuild from scratch (~+), not just a resume; recommended topping up ~ to ~.35 (~35h runway) so laptop can be turned off; advised confirming actual hourly rate on RunPod dashboard"
+}

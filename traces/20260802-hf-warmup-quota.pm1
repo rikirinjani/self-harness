@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260802-hf-warmup-quota",
+  "timestamp": "2026-08-02T05:16:12.300341+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 12,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\space_snapshot\\app.py",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\app_fixed.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\scripts\\build_full_rebuild_1995_2026.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260802-hf-warmup-quota",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "HF warm-up: verified token (balade/opencode3) + repo balade/pubmed-faiss-index (26.42 GB tree, 39.73 GB usedStorage); discovered recent-file naming mismatch (script recent_* vs Space app faiss_recent/metadata_recent_*); user chose update bot to new names, leave junk siblings; prepared fixed app.py (recent_* names, py_compile OK); librarian confirmed free tier no hard cap but ~165GB peak likely triggers 403 abuse mitigation, PRO 10TB; computed new upload 125.29GB -> ~165GB peak; account total 43.23GB"
+}

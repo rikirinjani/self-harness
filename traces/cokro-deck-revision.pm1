@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "cokro-deck-revision",
+  "timestamp": "2026-08-04T07:00:15.209836+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 22,
+  "key_files": [
+    "Project_v2/COKRO/cokro-pitch-revised.html"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "cokro-deck-revision",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Revised COKRO pitch deck (cokro-pitch-revised.html, 10 slides) applying all 6 MUST-fixes + SHOULD-fixes: M1 three legal drug tiers (Nicorette Tier-1 pharmacist-owned, varenicline/GLP-1 Tier-2 doctor-Rx via telemedicine, referral-out) in S3/S5/S6; M2 GLP-1 present-tense (Wegovy/Mounjaro approved 2026, anti-counterfeit channel); M3 demographic split 65% GATS 2021 + TAM/SAM/SOM row in S4; M4 MEDVi corrected in S7; M5 completion vs quit metrics (60-70% completion, 25-35% CO-verified quit @12wk) in S5/S8; M6 full ask (US.5M, 18-mo runway, M3/M6/M9/M12 milestones, use-of-funds %, two-tranche structure) in S1/S9; S1 new team slide 10; S2 unit economics table + Rp2.4B pilot math in S8; S3 traction on slide 10; S4 competitor whitespace table in S7; S5 regulatory posture on slide 10; S6 philosophy compressed. Verified HTML structure 10/10 sections balanced."
+}

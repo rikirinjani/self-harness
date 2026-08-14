@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260721-pubmed-rag-cultural-layer-epicure",
+  "timestamp": "2026-07-21T11:53:54.013782+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 5400,
+  "tool_calls": 65,
+  "key_files": [
+    "space_app/app.py",
+    "space_app/food_drug_interactions.json",
+    "space_app/CULTURAL_LAYER_FDA.md",
+    "space_app/epicure_substitutes.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260721-pubmed-rag-cultural-layer-epicure",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---.........................-.-.-.-.........--...--........-.--...-........................................-.--...-",
+  "action": "Cultural layer revamped (14 entries, PubMed-mined, FDA-style), Epicure substitutes (23K foods batch-computed on Mac), all integrated into app.py"
+}

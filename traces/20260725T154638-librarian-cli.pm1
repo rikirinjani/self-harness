@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260725T154638-librarian-cli",
+  "timestamp": "2026-07-25T15:46:38.607958+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 10,
+  "key_files": [
+    "profiles/Antacid_Research_Data.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260725T154638-librarian-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--.........................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Researched and compiled L1-L4 drug quantification profiling for 3 antacid drugs (Al(OH)3/Mg(OH)2, CaCO3, sodium alginate) with PMID references — saved to profiles/Antacid_Research_Data.md"
+}

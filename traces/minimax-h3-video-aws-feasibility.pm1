@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "minimax-h3-video-aws-feasibility",
+  "timestamp": "2026-08-05T01:57:22.683309+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 1,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "minimax-h3-video-aws-feasibility",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Verified MiniMax H3 video deployment path: G6e L40S target, H3-Base local limits, API-only 2K stages, and AWS credit feasibility"
+}

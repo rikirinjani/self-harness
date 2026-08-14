@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "usb-mouse-diagnostic",
+  "timestamp": "2026-08-09T21:54:13.224024+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 240,
+  "tool_calls": 6,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "usb-mouse-diagnostic",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Diagnosed USB wireless mouse (VID_3151 PID_1020): Windows enumerates device + driver OK, live GetCursorPos test showed zero pointer input over 10s while user moved mouse. Root cause: mouse-to-receiver link (pairing/battery). Provided fix checklist."
+}

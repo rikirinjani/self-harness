@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "webinar-green-vb",
+  "timestamp": "2026-07-21T06:00:29.576083+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 480,
+  "tool_calls": 16,
+  "key_files": [
+    "ImaGen/flyer_output/webinar-green-style.html",
+    "ImaGen/flyer_output/webinar-green-vb.png"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "webinar-green-vb",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Adapted VB RM green institutional style to webinar zoom background: mint blue teal gradient, large logo badge with Hisfarma+Fahrenheit, golden accents, no URL footer"
+}

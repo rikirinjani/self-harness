@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "ppi-research-comprehensive",
+  "timestamp": "2026-07-25T15:40:03.978509+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 8,
+  "key_files": [
+    "profiles/PPI_Research_Data.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ppi-research-comprehensive",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--.........................---..-..........-.--...-........-.--...-........................................-.--...-",
+  "action": "Researched 5 PPI drugs (omeprazole, pantoprazole, esomeprazole, lansoprazole, rabeprazole) across L1-L4 DQF levels: binding chemistry (pKa, cysteine targets, Ki), PK (bioavailability, half-life, CYP metabolism), systems response (pH holding time, hypergastrinemia, anti-inflammatory effects), and clinical outcomes (EE healing rates, H. pylori eradication, safety NNH data). Compiled structured research document with PMID references."
+}

@@ -1,0 +1,7 @@
+{
+  "category": "tool-usage",
+  "severity": "low",
+  "root_cause": "Used a Python namespace key with a function call suffix and POSIX || syntax in PowerShell.",
+  "what_was_done_wrong": "The first focused-check command failed before executing the intended assertions. No project files were modified.",
+  "corrective_action": "Re-ran with the proper function lookup and PowerShell-compatible command syntax."
+}

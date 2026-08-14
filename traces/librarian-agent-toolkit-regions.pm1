@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "librarian-agent-toolkit-regions",
+  "timestamp": "2026-08-03T03:24:51.312112+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 480,
+  "tool_calls": 12,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "librarian-agent-toolkit-regions",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--..........................--...--........--.-..-.........................................................-.--...-",
+  "action": "Researched AWS Agent Toolkit regional constraints (us-east-1-only control plane, MCP Server us-east-1+eu-central-1), confirmed S3/Lambda/API Gateway availability in ap-southeast-1 and ap-southeast-3, pulled S3 Standard pricing from AWS price list API (us-east-1 .023, Singapore+Jakarta .025/GB), and latency references for Indonesia"
+}

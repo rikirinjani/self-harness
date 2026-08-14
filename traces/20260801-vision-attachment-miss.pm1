@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260801-vision-attachment-miss",
+  "timestamp": "2026-08-01T01:33:32.077905+00:00",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "duration_s": 10,
+  "tool_calls": 1,
+  "key_files": [],
+  "failure": {
+    "category": "external",
+    "severity": "low"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260801-vision-attachment-miss",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................-.--...-........-.--...-........-.--...-........................................-.--...-........-.--...-",
+  "action": "Delegated screenshot inspection to vision agent, but the agent reported no screenshot attachment was available; coordinator reconciled using the image visible in the conversation"
+}

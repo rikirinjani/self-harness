@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260804-kaggle-vlm-pass-built",
+  "timestamp": "2026-08-05T21:07:27.271746+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3600,
+  "tool_calls": 10,
+  "key_files": [
+    "C:\\Users\\think\\KLAIM 2026\\kaggle\\klaim_vlm_pass.py",
+    "C:\\Users\\think\\KLAIM 2026\\kaggle\\merge_vlm_results.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260804-kaggle-vlm-pass-built",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Built VLM re-extraction pass (Option 1): kaggle/klaim_vlm_pass.py embeds 444 flagged claims (414 kunjungan + 30 page-not-found) line-safe (<=90 char chunks, newline pieces), runs Qwen2.5-VL-7B 4-bit on T4 to extract fields from known target page (all-pages fallback for the 30), writes vlm_results.jsonl. Fixed embed newline bug (byte-identical module, imports OK). merge_vlm_results.py locally merges VLM fields, re-runs QC, regenerates exports. Synthetic test: 2 merged + review cleared, 1 failed kept, review 444->1 correct."
+}

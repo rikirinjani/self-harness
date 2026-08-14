@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "macmini-ssh-blocked",
+  "timestamp": "2026-08-06T02:13:18.560416+00:00",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "duration_s": 150,
+  "tool_calls": 8,
+  "key_files": [],
+  "failure": {
+    "category": "external",
+    "severity": "medium"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "macmini-ssh-blocked",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................-.--...-........--.-..-.........-.--...-........................................--.-..-.........-.--...-",
+  "action": "Attempted SSH survey of Mac mini (100.83.28.83, pts-mac-mini.tail53650c.ts.net) — connection timed out; Tailscale daemon in NoState, coordination server unreachable"
+}

@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260801-pod-health-snapshot-0456",
+  "timestamp": "2026-08-01T04:57:14.303312+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260801-pod-health-snapshot-0456",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................................................................-.--...-",
+  "action": "Interpreted pod health snapshot at 04:56: elapsed 2h24m (catch-up ~2h12m in, ~49% of 7.8M, ETA ~07:10); GPU 0% util is expected CPU-phase gap (reading 19.7GB raw bins + tokenization between embed forwards), GPU mem rising 6870->7130MiB + CPU 248% + stable RSS prove active work; told user the decisive check is tail -20 rebuild.log (frozen at 'Trained both indexes' = in catch-up, which needs no internet; 'Recovered committed state' = main loop, download/parse failures from earlier blip are harmless and retried on resume); gave GPU-oscillation loop to rule out hang"
+}

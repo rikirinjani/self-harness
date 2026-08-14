@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "disk-capacity-warning",
+  "timestamp": "2026-08-13T08:47:12.874271+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "scripts/runpod_launch.py",
+    "scripts/runpod_reembed_large.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "disk-capacity-warning",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Interpreted observed 100GB disk growth as expected full metadata download; flagged 200GB as unsafe for full 1024-dimension output and recommended 300-400GB disk"
+}

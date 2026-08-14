@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260801-topup-complete-1793",
+  "timestamp": "2026-08-01T19:01:06.774463+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260801-topup-complete-1793",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................................................................-.--...-",
+  "action": "Confirmed user top-up: .20 +  = .93; at ~.567/h = ~31.6h runway -> ~Aug 3 02:36 UTC vs job completion Aug 2 ~15:05 UTC = ~11-12h margin; credit-exhaustion /tmp wipe risk eliminated; pod can run unattended to DONE!; unused credits persist in account so over-top is not wasted"
+}

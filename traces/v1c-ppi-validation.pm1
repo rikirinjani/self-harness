@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "v1c-ppi-validation",
+  "timestamp": "2026-07-30T03:15:01.782751+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 25,
+  "key_files": [
+    "validation/V1c-ppi-l3-risk-concordance.md",
+    "rag-queries/l3_output/_check_ppi_merge.py",
+    "rag-queries/l3_output/_show_ppis.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v1c-ppi-validation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "V1 PPI L3 risk-score validation: compiled ACG/AGA guideline evidence, built concordance report at validation/V1c-ppi-l3-risk-concordance.md. Found CDI scoring inverted vs ACG OR data, DDI scoring uniformly 3/3 misses clinical differerences, 4/7 L3 dimensions are null for all PPIs."
+}

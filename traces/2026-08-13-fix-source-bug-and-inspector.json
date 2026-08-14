@@ -1,0 +1,15 @@
+{
+  "agent": "coordinator",
+  "outcome": "pass",
+  "action": "Fixed source=? bug in Decision store, added state inspector CLI, B4 validator, credential test",
+  "duration_s": 120,
+  "tool_calls": 15,
+  "key_files": [
+    "pm_adapter/decision_store.py",
+    "pm_adapter/status.py",
+    "scripts/check_decisions.py",
+    "scripts/test_credentials.py"
+  ],
+  "slug": "fix-source-bug-and-inspector",
+  "timestamp": "2026-08-13T20:05:00Z"
+}

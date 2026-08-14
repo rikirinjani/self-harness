@@ -1,0 +1,40 @@
+{
+  "pm1_version": 1,
+  "session_id": "reconciliation-final-close-t5-pipeline-to-shareholder-discovery",
+  "timestamp": "2026-07-24T21:33:19.186014+00:00",
+  "agent": "explorer",
+  "outcome": "pass",
+  "duration_s": 30,
+  "tool_calls": 3,
+  "key_files": [
+    "t5-pipeline/t5_pipeline/discovery.py",
+    "t5-pipeline/t5_pipeline/scraper.py",
+    "t5-pipeline/t5_pipeline/parser.py",
+    "t5-pipeline/t5_pipeline/aggregator.py",
+    "t5-pipeline/t5_pipeline/converters.py",
+    "t5-pipeline/t5_pipeline/executor.py",
+    "t5-pipeline/t5_pipeline/config.py",
+    "t5-pipeline/t5_pipeline/cli.py",
+    "t5-pipeline/t5_pipeline/alerter.py",
+    "t5-pipeline/t5_pipeline/analyst.py",
+    "t5-pipeline/t5_pipeline/idx_browser.py",
+    "t5-pipeline/t5_pipeline/notifier.py",
+    "t5-pipeline/t5_pipeline/lab.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "reconciliation-final-close-t5-pipeline-to-shareholder-discovery",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........---..-..........................-.--...-........-.--...-........--.-..-.........................................-.--...-",
+  "action": "RECONCILIATION FINAL: t5_pipeline codebase analysis (all 13 modules, 11 file roles, all data flows and integration points) confirmed fully consumed as foundation for shareholder_discovery.py. Retrace scanner: 0 untraced. All prior reconcile traces exist and are superseded by this final close. No further actions. Topic permanently closed."
+}

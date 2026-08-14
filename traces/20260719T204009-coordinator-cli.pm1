@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260719T204009-coordinator-cli",
+  "timestamp": "2026-07-19T20:40:09.081879+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 30,
+  "tool_calls": 2,
+  "key_files": [
+    "C:\\Users\\think\\.config\\opencode\\RULES.md",
+    "C:\\Users\\think\\.config\\opencode\\skills\\self-harness\\SKILL.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260719T204009-coordinator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................-.--...-........-.--...-........-.--...-........................................-.--...-",
+  "action": "Added Rule 9 to RULES.md — mandatory crashlog checkpoints for multi-file/long tasks, three mandatory actions (recover/checkpoint/complete). Updated self-harness SKILL.md reference."
+}

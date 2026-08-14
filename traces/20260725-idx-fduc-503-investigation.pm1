@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260725-idx-fduc-503-investigation",
+  "timestamp": "2026-07-24T20:45:34.834693+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1200,
+  "tool_calls": 25,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260725-idx-fduc-503-investigation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........................................................-.--...-",
+  "action": "Investigated IDX FDUc 503: probed 50+ endpoints, discovered GetCompanyProfilesDetail shareholder data as alternative. Summarized project history for user."
+}

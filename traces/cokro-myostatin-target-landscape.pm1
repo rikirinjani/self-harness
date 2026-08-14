@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "cokro-myostatin-target-landscape",
+  "timestamp": "2026-08-06T02:14:55.474655+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1200,
+  "tool_calls": 10,
+  "key_files": [
+    "Project_v2\\Drug Platform\\Exercise-Mimetic\\Myostatin_Target_Landscape.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "cokro-myostatin-target-landscape",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Dispatched 2 librarian lanes (post-stroke, paralysis/SCI); reconciled: post-stroke myostatin rise + PINTA745 MCAO proof + 42-50% sarcopenia, muSRK-015P contusion SCI positive, ActRIIB rescues disuse not denervation, zero clinical trials in SCI/stroke; wrote Myostatin_Target_Landscape.md with ranked target map"
+}

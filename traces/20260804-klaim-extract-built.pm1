@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260804-klaim-extract-built",
+  "timestamp": "2026-08-04T15:14:57.573727+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 7200,
+  "tool_calls": 40,
+  "key_files": [
+    "C:\\Users\\think\\KLAIM 2026\\extract_sep.py",
+    "C:\\Users\\think\\KLAIM 2026\\runpod\\Dockerfile",
+    "C:\\Users\\think\\KLAIM 2026\\runpod\\requirements.txt",
+    "C:\\Users\\think\\KLAIM 2026\\runpod\\run_batch.sh",
+    "C:\\Users\\think\\KLAIM 2026\\runpod\\upload_back.sh"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260804-klaim-extract-built",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "Built+tested KLAIM batch extraction: dual page-kind detection (SEP + Data Kunjungan), rotation-invariant OCR (RapidOCR local / PaddleOCR Runpod), column-band field parser, MR split, QC flags, resume/checkpointing, multiprocessing (fixed Windows spawn init), trailing-space folder fix, CSV/JSONL/review_queue exports, Runpod Dockerfile+entrypoints. 10-PDF stratified sample: 0 errors, SEP pages excellent, kunjungan ~50% flagged to review queue per user ship-as-is decision."
+}

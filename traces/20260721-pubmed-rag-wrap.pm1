@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260721-pubmed-rag-wrap",
+  "timestamp": "2026-07-21T12:17:24.640866+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 7200,
+  "tool_calls": 80,
+  "key_files": [
+    "space_app/app.py",
+    "space_app/food_drug_interactions.json",
+    "space_app/CULTURAL_LAYER_FDA.md",
+    "BUSINESS_MODEL.md",
+    "COST_ANALYSIS.md",
+    "TODO.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260721-pubmed-rag-wrap",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---.........................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "Cultural layer revamped (14 herbs), Epicure substitutes (23K foods batch-computed), PMC API, all integrated. Complex clinical case tested — gaps identified (partial name matching, drug combo lookup)"
+}

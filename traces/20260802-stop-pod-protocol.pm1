@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260802-stop-pod-protocol",
+  "timestamp": "2026-08-02T05:30:24.392980+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 30,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260802-stop-pod-protocol",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................-.--...-........................................................................-.--...-",
+  "action": "Confirmed stop-pod protocol with user: orchestrator monitors HF repo via API, tells user to stop pod only after all 12 files verified in balade/pubmed-faiss-index; early stop wipes /tmp/full_rebuild and forces full rebuild. Repo still 26.42GB, upload not started."
+}

@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "telegram-bot-watchdog",
+  "timestamp": "2026-08-07T02:49:11.797109+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "Project_v2/LocalNotebook/rag-service/watchdog_bot.ps1",
+    "Project_v2/LocalNotebook/rag-service/watchdog_loop.ps1",
+    "Project_v2/LocalNotebook/rag-service/telegram_bot.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "telegram-bot-watchdog",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Implemented + verified reboot-surviving watchdog for @MedQuerriesBot: watchdog_bot.ps1 (idempotent check+launch), watchdog_loop.ps1 (10-min heal loop), start_watchdog.vbs in Startup folder (hidden at logon). Task Scheduler unusable (Access denied, non-admin). Test: killed bot 9912 -> watchdog relaunched PID 3592, warmup 199/199. Idempotency: exit 0, no duplicate."
+}

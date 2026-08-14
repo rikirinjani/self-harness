@@ -1,0 +1,22 @@
+{
+  "pm1_version": 1,
+  "session_id": "session-move-cognita",
+  "timestamp": "2026-07-14T19:59:42.608012+00:00",
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "session-move-cognita",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---.........................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Moved Cognita operations to Project dir: remade interact MCP, published Day 9, updated knowledge base",
+  "agent": "unlabeled",
+  "outcome": "unknown"
+}

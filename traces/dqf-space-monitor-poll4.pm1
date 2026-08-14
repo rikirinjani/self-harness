@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-space-monitor-poll4",
+  "timestamp": "2026-08-03T12:53:53.586122+00:00",
+  "agent": "orchestrator",
+  "outcome": "unknown",
+  "duration_s": 60,
+  "tool_calls": 2,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-space-monitor-poll4",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................--...--........--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Re-check on user ask: endpoint still 'Still loading'; sha unchanged 5031b537, no runtime error, cpu-basic. Still RAG-agent-side blocker"
+}

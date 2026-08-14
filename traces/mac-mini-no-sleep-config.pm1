@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "mac-mini-no-sleep-config",
+  "timestamp": "2026-08-11T03:13:30.000284+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 3,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "mac-mini-no-sleep-config",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Hardened Mac mini power settings via Tailscale SSH: confirmed sleep already 0; applied displaysleep 0, networkoversleep 1, autorestart 1, powernap 0 via sudo pmset -a; verified via pmset -g custom. Mac now never sleeps (system/disk/display/standby all disabled, WoL + network wake + auto-restart enabled). Confirmed earlier unreachability was network issue not sleep (uptime 1d 1:21 continuous)"
+}

@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260723-pubmed-rag-bonsai-8b-qa-v2",
+  "timestamp": "2026-07-22T23:32:52.352238+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 72000,
+  "tool_calls": 85,
+  "key_files": [
+    "space_app/app.py",
+    "space_app/qa_pipeline.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260723-pubmed-rag-bonsai-8b-qa-v2",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---.........................-.-.-.-.........--...--........-.--...-........................................-.--...-",
+  "action": "Bonsai 8B swapped in, QA pipeline v2 running (11,640 pairs so far, targeting 15K), chat memory + live PubMed API + safety alerts all live"
+}

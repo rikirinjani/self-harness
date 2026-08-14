@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "claim-pdf-0194b0370226p000033-mempalace",
+  "timestamp": "2026-08-04T07:59:57.761161+00:00",
+  "agent": "coordinator",
+  "outcome": "fail",
+  "duration_s": 5,
+  "tool_calls": 1,
+  "key_files": [
+    "self-harness/failures/20260804-external-mempalace-claim-pdf-assessment.json"
+  ],
+  "failure": {
+    "category": "external",
+    "severity": "low"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "claim-pdf-0194b0370226p000033-mempalace",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........-.--...-........-.--...-........-.--...-........-.--...-........................-.--...-........-.--...-",
+  "action": "Attempted to archive the completed PDF assessment in MemPalace; MCP writer was active and rejected the mutating call"
+}

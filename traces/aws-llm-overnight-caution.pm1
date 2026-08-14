@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "aws-llm-overnight-caution",
+  "timestamp": "2026-08-05T00:46:31.374945+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 30,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "aws-llm-overnight-caution",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................-.--...-........................................................................-.--...-",
+  "action": "Advised on using AWS promotional credits for overnight local-LLM coding sessions with GPU cost and shutdown cautions"
+}

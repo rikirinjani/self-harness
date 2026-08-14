@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-07-31T15:40:00",
+  "agent": "oracle",
+  "outcome": "fail",
+  "category": "OVERRIDES",
+  "severity": "medium",
+  "summary": "ora-1 quantified 27 antihypertensive l4_clinical values but delivered them only in the ephemeral session buffer; payload lost when the lane closed. Required full regeneration via ora-5.",
+  "root_cause": "Oracle lane is read-only (read_files only) and cannot persist JSON to disk. The orchestrator (me) relied on the lane's ephemeral response buffer without requiring a file write or capturing the full payload before lane close. Board result shows only a summary ('JSON output above is ready for the orchestrator to strip...') with the payload not included in the returned task result.",
+  "trace_id": "retrace-ora1-ah-l4",
+  "recovery": "Regenerated in fresh lane ora-5 with explicit instruction to persist JSON to %TEMP%\\opencode\\l4_antihypertensive.json; payload persisted and merged into api\\drugs.json. Net effect on deliverable: none (regenerated values used).",
+  "lesson": "Read-only specialist lanes must write deliverables to disk themselves (via a permitted path) or the orchestrator must capture the payload inside the task result before lane close. Never assume a long JSON payload survives in an ephemeral buffer."
+}

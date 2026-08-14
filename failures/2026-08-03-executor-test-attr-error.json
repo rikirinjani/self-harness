@@ -1,0 +1,10 @@
+{
+    "severity":  "low",
+    "timestamp":  "2026-08-03T10:49:28Z",
+    "trace_id":  "executor-test-attr-error-20260803",
+    "category":  "tool",
+    "summary":  "Dry-run test of executor sync_trades against a copy of lab.json failed: AttributeError \u0027str\u0027 object has no attribute \u0027exists\u0027 - sync_trades expects a Path, not a str",
+    "outcome":  "fail",
+    "agent":  "orchestrator",
+    "root_cause":  "Test script passed a plain string path to sync_trades instead of pathlib.Path; also discovered local executor.py copy was stale (missing BUY/SELL shareholder direction mapping and auto: suffix strip in signal-\u003etrade index)"
+}

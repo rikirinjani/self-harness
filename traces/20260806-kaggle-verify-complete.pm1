@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260806-kaggle-verify-complete",
+  "timestamp": "2026-08-05T20:55:56.964549+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 8,
+  "key_files": [
+    "C:\\Users\\think\\KLAIM 2026\\claims.zip",
+    "C:\\Users\\think\\KLAIM 2026\\extracted\\claims_all.csv",
+    "C:\\Users\\think\\KLAIM 2026\\extracted\\claims_all.jsonl",
+    "C:\\Users\\think\\KLAIM 2026\\extracted\\review_queue.jsonl"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260806-kaggle-verify-complete",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........-.--...-........-.--...-........................................-.--...-",
+  "action": "Verified Kaggle run COMPLETE + claims.zip (828 JSONs). Regenerated exports from real claims: 798 with target page (797 kunjungan, 1 sep), 30 target_page_not_found errors, 444 needs_review (missing_no_kartu 307, missing_nama 295, kartu_format 88, low_conf 17). Vision spot-check of 5 clean claims: 9/10 fields MATCH vs source; 1 error (MARET/03 claim nama=card-number instead of TIAMAH). Cleaned stale test artifacts."
+}

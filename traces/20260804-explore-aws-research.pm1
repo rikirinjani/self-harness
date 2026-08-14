@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260804-explore-aws-research",
+  "timestamp": "2026-08-05T01:18:59.570043+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 240,
+  "tool_calls": 6,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260804-explore-aws-research",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--.........................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Researched AWS Explore credits program: canonical 5 tasks = EC2 launch, Bedrock playground (console-only), Budgets, Lambda web app, RDS database. Remaining 3: Bedrock/Lambda/RDS = . Lambda+RDS CLI-able; Bedrock console-only; credits ~10min to register; 6mo completion window."
+}

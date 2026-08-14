@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260803-space-investigation-resolution",
+  "timestamp": "2026-08-03T03:37:38.914499+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 8,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260803-space-investigation-resolution",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........-.--...-........................................................-.--...-",
+  "action": "Resolved HF 401/404 investigation: balade/pubmed-faiss-index is a public dataset (26 files intact, mod 2026-08-02), not a Space. Serving Space balade/pubmed-rag-bot RUNNING/alive; 124GB index still loading 2h after 01:35Z rebuild. No rename, no deletion."
+}

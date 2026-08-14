@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "webinar-2026-14-deck",
+  "timestamp": "2026-08-12T05:21:06.361195+00:00",
+  "agent": "designer",
+  "outcome": "pass",
+  "duration_s": 240,
+  "tool_calls": 8,
+  "key_files": [
+    "C:\\Users\\think\\Downloads\\Webinar_2026-14_Tepat_Pilih_Tepat_Pakai.pptx",
+    "C:\\Users\\think\\Downloads\\build_webinar_deck.py",
+    "C:\\Users\\think\\Downloads\\check_pptx.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "webinar-2026-14-deck",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........----...........................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Created 12-slide Indonesian-language pharmaceutical webinar deck (16:9, Pharma Tekno Solusi navy/red/teal visual system). Built from ppt.md content with python-pptx: title, learning goals, safe exploration + screening, red flags, RICE first aid for bruises, insect bite first aid, active ingredients + vehicle selection, tepat pakai counselling, key messages, Q&A/closing, rundown agenda. Includes rehearsal timer cues, disclaimer, speaker notes on all slides. Corrected 'leam' to 'lebam' typo."
+}

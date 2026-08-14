@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260808-librarian-canva-mcp",
+  "timestamp": "2026-08-12T04:11:06.607041+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 6,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260808-librarian-canva-mcp",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--.........................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Researched Canva MCP server: hosted remote at mcp.canva.com/mcp, 32 tools (designs/editing/export/brand/folders/comments), OAuth per-user auth, hosted endpoint waitlisted, generic clients incl OpenCode supported via remote MCP or mcp-remote bridge"
+}

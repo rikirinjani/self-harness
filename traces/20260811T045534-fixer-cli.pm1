@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260811T045534-fixer-cli",
+  "timestamp": "2026-08-11T04:55:34.062549+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 720,
+  "tool_calls": 28,
+  "key_files": [
+    "api_server.py",
+    "start-api.bat"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260811T045534-fixer-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--.........................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Built FastAPI backend api_server.py (POST /api/ask with 3 personas + GET /api/paper) wrapping the production RAG pipeline; verified live: 200 responses with cited PMIDs, CORS preflight OK, found/not-found paper lookup OK"
+}

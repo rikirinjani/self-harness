@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "idx-bpjs-intraday-facts",
+  "timestamp": "2026-08-10T02:26:28.500755+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 750,
+  "tool_calls": 9,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "idx-bpjs-intraday-facts",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--..........................--...--........-.--...-........................................................-.--...-",
+  "action": "Researched IDX BPJS intraday facts: exact 2026 WIB session times (S1 09:00-12:00, S2 13:30-15:49 Mon-Thu; 2023-04-03 normalization), Yahoo .JK intraday availability + depth limits (1m~7d, 5m/15m/30m/60m~60d, 30m-bug, GMT+7 tz), alternative intraday sources (Invezgo, IDX paid license, TradingView IDX:BBRI, idnfinancials), and IDX 2026 holidays (Aug17, Aug25, Dec24/25/31). Flagged unverified 1m-.JK depth, Invezgo caps, closing-bar timestamp."
+}

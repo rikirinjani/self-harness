@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "opencode-zai-provider",
+  "timestamp": "2026-08-12T03:52:02.307549+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 8,
+  "key_files": [
+    "C:\\Users\\think\\.config\\opencode\\opencode.jsonc"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "opencode-zai-provider",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................-.--...-........-.--...-........................................-.--...-",
+  "action": "Added Z.AI (GLM) provider to opencode.jsonc using the @ai-sdk/openai-compatible pattern with verified baseURL https://api.z.ai/api/paas/v4 and the founder's ZAI_API_KEY; registered glm-4.7-flash (free) + glm-4.7. Validated JSONC parses (providers: opencode-go, deepseek, openai, bonsai, z-ai). Verified live: 'opencode models' lists z-ai/glm-4.7-flash; headless 'opencode run --model z-ai/glm-4.7-flash' returned ZAI_OK. Note: oh-my-opencode-slim reports pre-existing benign warning 'Custom agent meta-platform skipped: model is required' (unrelated to this change). Restart opencode for the running session to pick up the provider."
+}

@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "session-summary",
+  "timestamp": "2026-07-18T20:18:37.321806+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 22,
+  "key_files": [
+    "t5-pipeline/t5_pipeline/idx_browser.py",
+    "t5-pipeline/t5_pipeline/discovery.py",
+    "t5-pipeline/t5_pipeline/analyst.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "session-summary",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Discovery CF bypass wired via Playwright (107s->11.5s). Bonsai server script cleaned. Analysis JSON extraction improved. Full pipeline verified. Dashboard restarted."
+}

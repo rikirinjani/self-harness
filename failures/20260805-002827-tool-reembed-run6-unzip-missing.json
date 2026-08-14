@@ -1,0 +1,10 @@
+{
+    "severity":  "medium",
+    "timestamp":  "2026-08-04T17:28:27.7996214Z",
+    "trace_id":  "20260804-reembed-run6-unzip-missing",
+    "category":  "tool",
+    "summary":  "Run 6 bootstrap failed at AWS CLI v2 bundle install: unzip not installed on Ubuntu 22.04 minimal AMI.",
+    "outcome":  "fail",
+    "agent":  "orchestrator",
+    "root_cause":  "The DLAMI minimal Ubuntu image does not ship unzip by default; the AWS CLI v2 bundle requires it. The bootstrap assumed unzip/curl were present. Fix: apt install unzip curl ca-certificates before the bundle step, plus a CLI sanity check."
+}

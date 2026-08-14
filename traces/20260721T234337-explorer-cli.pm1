@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260721T234337-explorer-cli",
+  "timestamp": "2026-07-21T23:43:37.455466+00:00",
+  "agent": "explorer",
+  "outcome": "pass",
+  "duration_s": 310,
+  "tool_calls": 15,
+  "key_files": [
+    "C:\\Users\\think\\Project\\fid_debug_test.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260721T234337-explorer-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........---..-...........................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Wrote and ran comprehensive FID debug test: tested normalize=True/False, 4 feature sizes, edge cases (0/1 images, NaN input, identical sets, reset, mismatched sizes). Found FID never returns NaN/null -- errors on <2 samples per distribution or no update before compute. All results captured."
+}

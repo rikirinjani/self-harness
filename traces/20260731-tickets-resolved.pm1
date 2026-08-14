@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260731-tickets-resolved",
+  "timestamp": "2026-07-31T06:09:48.453289+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 8,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260731-tickets-resolved",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........................................................-.--...-",
+  "action": "Marked previously-failed tickets resolved: posted success=true task_results for 926b8de4b2d94d40 and 16e3008550294afc (Ticket system live test) citing OPENCODE_BIN root cause + live re-verification via 9511f1f582ee4fab; hub pending empty"
+}

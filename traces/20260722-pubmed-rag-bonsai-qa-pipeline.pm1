@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260722-pubmed-rag-bonsai-qa-pipeline",
+  "timestamp": "2026-07-22T07:38:09.751925+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 36000,
+  "tool_calls": 120,
+  "key_files": [
+    "space_app/app.py",
+    "space_app/qa_pipeline.py",
+    "TODO.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260722-pubmed-rag-bonsai-qa-pipeline",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---.........................-.-.-.-........---..-..........-.--...-........................................-.--...-",
+  "action": "Bonsai 4B running on Mac, Q&A pipeline processing first chunk (~18K by 11PM PM), chat memory + live PubMed API + safety alerts deployed, simvastatin+colchicine detection fixed, carambola matching fixed"
+}

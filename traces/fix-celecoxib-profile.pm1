@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "fix-celecoxib-profile",
+  "timestamp": "2026-07-16T03:48:31.725449+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 45,
+  "tool_calls": 5,
+  "key_files": [
+    "C:\\Users\\think\\Project\\drug-quantification-framework\\profiles\\celecoxib.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "fix-celecoxib-profile",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................-.--...-........-.--...-........-.--...-........................................-.--...-",
+  "action": "Applied 3 fixes to celecoxib profile: off-target table citations, 200mg NNT CI, evidence level tags"
+}

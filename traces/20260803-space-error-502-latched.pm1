@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260803-space-error-502-latched",
+  "timestamp": "2026-08-04T01:29:06.078056+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 240,
+  "tool_calls": 4,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260803-space-error-502-latched",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Space gate poll: index flipped loading -> ERROR. Root cause: container hit transient HfHubHTTPError 502 Bad Gateway on snapshot_download tree-listing call, app latched rag_error (no retry logic in app.py routes - error state is permanent for that container). Verified HF API itself is healthy NOW (direct query of same tree endpoint returns 200/26 rows), so 502 was transient. Fix: user must Restart Space to clear latched error. Reinforces AWS-path case: Space is operationally fragile (multi-hour loads wiped by restarts, now 502 latch). Space only needed later for Phase 4 parity baseline; AWS re-embed doesn't depend on it."
+}

@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260731-pubmed-reindex-recovery-complete",
+  "timestamp": "2026-07-31T16:45:03.597953+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 1,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260731-pubmed-reindex-recovery-complete",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Confirmed full recovery: 94,643 records re-added from raw bins (845 main + 93,798 recent), 4 committed files skipped, main loop resumed at n1330; cumulative counts chain exactly (975/1131/1368); ~260 vec/s effective (110-116s per ~29.9K-record file); ~28-31h projection holds"
+}

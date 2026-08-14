@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "librarian-pmc-hf-feasibility",
+  "timestamp": "2026-08-12T02:11:18.766563+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 9,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "librarian-pmc-hf-feasibility",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--.........................---..-..........-.--...-........................................................-.--...-",
+  "action": "Feasibility verdict: full-text PMC embedding index on HF in 18 days. Researched PMC OA size (~350GB/5M articles, 2026 S3 migration), HF serverless/ZeroGPU/CPU Space throughput limits, bge-base .005/M vs OpenAI .02/M, storage fit (143-430GB, Pro 1TB vs 100GB after lapse). Conclusion: full corpus infeasible on current plan (throughput bottleneck); recommend recent-year subset on GPU or on-demand efetch."
+}

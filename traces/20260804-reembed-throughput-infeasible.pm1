@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260804-reembed-throughput-infeasible",
+  "timestamp": "2026-08-04T18:13:31.422989+00:00",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "duration_s": 28800,
+  "tool_calls": 55,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\reembed-bootstrap.sh",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\scripts\\reembed_modal.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\scripts\\download_metadata.py"
+  ],
+  "failure": {
+    "category": "external",
+    "severity": "high"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260804-reembed-throughput-infeasible",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................-.--...-.........-.-.-.-.........--...--........-.--...-.........................--...--........-.--...-",
+  "action": "Run 7 (i-078dbcbab7cd6644f) fully validated the pipeline (download stall-kill-resume WORKED, real smoke committed 1024+1024 rows, full run started) but measured 8.5 rows/s CPU fp32 throughput -> 29.1M rows = 39.7 days / ~, infeasible. Terminated. CPU path is fundamentally too slow for this scale; needs GPU (quota rejected) or a smarter approach."
+}

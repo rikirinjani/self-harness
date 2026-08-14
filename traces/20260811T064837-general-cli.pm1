@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260811T064837-general-cli",
+  "timestamp": "2026-08-11T06:48:37.227587+00:00",
+  "agent": "general",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 10,
+  "key_files": [
+    "query_lancedb_fulltext.py",
+    "api_server.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260811T064837-general-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-.--...-.........................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Implemented LanceDB credential fix: added storage_options() helper to query_lancedb_fulltext.py (region + explicit env AWS creds to bypass poisoned Rust aws_config profile chain from ~/.aws CLI-v2 login). Used it at query_lancedb_fulltext.py:83 (search_abstracts connect) and api_server.py:168 (_lookup_paper connect) replacing inline {'region': REGION}. Restarted api_server.py (new PID 8164). Verified: GET /api/paper?pmid=7712240 returns found:true, journal 'Journal of acquired immune deficiency syndromes and human retrovirology...', year '1995'; GET /api/paper?pmid=99999999 returns found:false gracefully."
+}

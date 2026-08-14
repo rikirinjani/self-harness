@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "shareholders-tab",
+  "timestamp": "2026-07-24T22:28:33.650047+00:00",
+  "agent": "designer",
+  "outcome": "pass",
+  "duration_s": 420,
+  "tool_calls": 6,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dashboard.html"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "shareholders-tab",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........----............................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Added Shareholders tab to T5 pipeline dashboard: tab button in nav, panel HTML with company-grouped tables, filter/search/refresh toolbar, summary stats row, loading/empty states, and JS functions (initShareholdersTab, loadShareholders, renderShareholders, setShCategory, debounceShSearch). Follows existing dark theme, tab-switching pattern, and data-fetch conventions."
+}

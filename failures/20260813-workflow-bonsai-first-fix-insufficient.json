@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-08-13T07:00:00Z",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "category": "workflow",
+  "severity": "medium",
+  "summary": "Initial Bonsai max-token fix did not resolve OpenCode empty responses; a large session prompt still caused client disconnect before generation.",
+  "root_cause": "The first diagnosis focused on the output-token budget but did not inspect the actual OpenCode request size. The active session sent 164901 input tokens, causing mlx_lm prompt processing to run for minutes and end with BrokenPipeError when OpenCode disconnected.",
+  "trace_id": "bonsai-max-tokens-fix"
+}

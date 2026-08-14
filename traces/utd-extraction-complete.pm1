@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "utd-extraction-complete",
+  "timestamp": "2026-07-23T06:07:45.545908+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "rag-service/space_app/extract_uptodate_playwright.py",
+    "rag-service/space_app/search_salbutamol.py",
+    "rag-service/space_app/extract_salbutamol.py",
+    "rag-service/space_app/uptodate_prb"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "utd-extraction-complete",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................................................-.--...-........................................-.--...-",
+  "action": "Completed UpToDate extraction: rescued salbutamol via combined URL albuterol-salbutamol (87K chars), saved ipratropium stub, copied 45 files (4.8 MB) from Mac to local workspace, updated slug fixes in extract_uptodate_playwright.py. Final: 42 full monographs + 3 stubs + 1 skipped (gliquidone)"
+}

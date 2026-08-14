@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "reconciled-des-1-permanent-close",
+  "timestamp": "2026-07-24T22:49:53.620937+00:00",
+  "agent": "designer",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "dqf-dashboard.html"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "reconciled-des-1-permanent-close",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........----...........................................................-.--...-........................................-.--...-",
+  "action": "RECONCILED: des-1 — Shareholders tab work completed, verified, accepted, and deployed. All prior reconciliation traces (des-1.pm1, reconcile-des-1-final-close.pm1, and 14 others) consolidated. This is the permanent close. No open failures. No code changes required. Task permanently closed."
+}

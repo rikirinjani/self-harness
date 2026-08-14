@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "qms-v4-records",
+  "timestamp": "2026-07-27T03:28:49.729882+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 12,
+  "key_files": [
+    "qms/records/requirements/20260727-v4-edge-case.json",
+    "qms/records/verifications/20260727-v4-edge-case-pass.json",
+    "qms/records/nonconformities/20260727-process-session-spam.json",
+    "qms/trace-matrix.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "qms-v4-records",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................--.-..-.........--.-..-.........-.--...-........................................-.--...-",
+  "action": "QMS records: V4 requirement, verification, NCR for process violation, trace-matrix. Session fully reconciled."
+}

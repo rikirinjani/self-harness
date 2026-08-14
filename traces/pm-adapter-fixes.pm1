@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm-adapter-fixes",
+  "timestamp": "2026-08-02T04:24:09.501378+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 420,
+  "tool_calls": 18,
+  "key_files": [
+    "pm-adapter/pyproject.toml",
+    "pm-adapter/pm_adapter/adapter.py",
+    "pm-adapter/pm_adapter/__init__.py",
+    "pm-adapter/pm_adapter/rag.py",
+    "pm-adapter/README.md",
+    "pm-adapter/tests/test_adapter.py",
+    "pm-adapter/examples/basic_usage.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm-adapter-fixes",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--.........................--...--........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Fixed 4 pm-adapter issues: (1) pro-memoria dep -> git+https URL, README install -> git URL; (2) removed [project.scripts] (library only); (3) added use_ecc param to Adapter.__init__ (default False) with FailsafePM1 decode via try-package-export-then-direct-path import; raises ValueError on corrected single-bit or unrecoverable double-bit errors; (4) renamed to_rag->to_semantic in adapter/init/tests/examples/README, rag.py kept as internal impl. 12 tests pass, example works, ECC mode verified (clean decode + correction + unrecoverable detection)."
+}

@@ -1,0 +1,10 @@
+{
+    "severity": "medium",
+    "timestamp": "2026-08-06T02:13:18Z",
+    "trace_id": "macmini-ssh-blocked",
+    "category": "external",
+    "summary": "SSH survey of Mac mini (100.83.28.83, pts-mac-mini.tail53650c.ts.net) failed: connection timed out; Tailscale daemon in NoState, coordination server unreachable.",
+    "outcome": "fail",
+    "agent": "orchestrator",
+    "root_cause": "External infrastructure: Tailscale daemon not in running state on the Mac mini, so the coordination server was unreachable over the tailnet. Not a code defect."
+}

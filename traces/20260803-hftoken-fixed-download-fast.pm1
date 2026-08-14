@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260803-hftoken-fixed-download-fast",
+  "timestamp": "2026-08-03T07:17:56.085241+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 3,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260803-hftoken-fixed-download-fast",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "HF_TOKEN re-created by user + fresh restart: container log shows NO unauthenticated warning and fast download (0-65% in ~19s) = token value was the root cause, confirmed fixed. That container shut down at 65% (HF restart settling); current poll: RUNNING sha 5031b537, index (loading). Download phase now fast, mmap load (1-2h) is the remaining wait. Gate still loading."
+}

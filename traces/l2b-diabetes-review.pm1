@@ -1,0 +1,41 @@
+{
+  "pm1_version": 1,
+  "session_id": "l2b-diabetes-review",
+  "timestamp": "2026-07-31T05:48:39.603900+00:00",
+  "agent": "oracle",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 17,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\l2b_digests\\insulin-glargine.json",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\l2b_digests\\insulin-lispro.json",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\l2b_digests\\linagliptin.json",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\l2b_digests\\liraglutide.json",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\l2b_digests\\metformin.json",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\l2b_digests\\pioglitazone.json",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\l2b_digests\\pramlintide.json",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\l2b_digests\\repaglinide.json",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\l2b_digests\\rosiglitazone.json",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\l2b_digests\\saxagliptin.json",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\l2b_digests\\semaglutide.json",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\l2b_digests\\sitagliptin.json",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\l2b_digests\\tirzepatide.json",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\l2b_digests\\vildagliptin.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "l2b-diabetes-review",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........-.-.-.-........................................--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Semantic review of heuristic L3 scores for 14 Diabetes drugs in DQF pipeline. Checked all field values against evidence snippets and pharmacology anchors. Found systematic over-scoring across DPP-4i, insulins, and TZDs for fields where class pharmacology clearly contradicts heuristic values."
+}

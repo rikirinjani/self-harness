@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-l3-ticket-002-batch",
+  "timestamp": "2026-07-31T04:48:09.319483+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 25,
+  "key_files": [
+    "Project_v2/drug-quantification-framework/rag-queries/extract_l3.py",
+    "Project_v2/drug-quantification-framework/rag-queries/TICKET-002-dqf-l3-retrieval.md",
+    "Project_v2/drug-quantification-framework/rag-queries/l3_output/hydrochlorothiazide_l3_profile.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-l3-ticket-002-batch",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "TICKET-002: re-fetched all 30 sub-50% drugs via drug-anchored EUtils path (--pubmed-only); audit 30/61->0/61 <50%, mean 48%->80%; HCTZ renal pool 33%->85% with real nephrolithiasis lit (PMID 36856614); boilerplate PMIDs gone; response appended to TICKET-002-dqf-l3-retrieval.md"
+}

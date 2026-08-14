@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "session-wrap-final-20260727",
+  "timestamp": "2026-07-27T04:12:53.085670+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 30,
+  "tool_calls": 6,
+  "key_files": [
+    "self-harness/tools/retrace.py",
+    "self-harness/tools/crashlog.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "session-wrap-final-20260727",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................-.--...-........-.--...-........-.--...-........................................-.--...-",
+  "action": "Session wrap confirmed: 6 new NSAIDs verified in D.nsaids (10 total). Retrace clean (0 untraced). Crashlog marked complete. Session closed and reusable on Board."
+}

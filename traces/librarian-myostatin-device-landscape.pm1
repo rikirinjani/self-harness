@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "librarian-myostatin-device-landscape",
+  "timestamp": "2026-08-06T02:35:28.487811+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 8,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "librarian-myostatin-device-landscape",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--..........................--...--........-.--...-........................................................-.--...-",
+  "action": "Web research: drug + muscle-stimulation device combos, myostatin platforms, EMS companies, diaphragm pacing, GLP-1 muscle preservation. Verdict: nobody co-develops muscle drug with stimulation device."
+}

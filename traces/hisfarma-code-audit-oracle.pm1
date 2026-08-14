@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "hisfarma-code-audit-oracle",
+  "timestamp": "2026-07-21T11:50:12.217788+00:00",
+  "agent": "oracle",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 10,
+  "key_files": [
+    "C:\\Users\\think\\Hisfarma\\SuperApp\\code\\backend\\laravel-worker\\routes\\api.php",
+    "C:\\Users\\think\\Hisfarma\\SuperApp\\code\\backend\\laravel-worker\\config\\jwt.php",
+    "C:\\Users\\think\\Hisfarma\\SuperApp\\code\\backend\\laravel-worker\\app\\Http\\Controllers\\AuthController.php",
+    "C:\\Users\\think\\Hisfarma\\SuperApp\\code\\backend\\laravel-worker\\app\\Http\\Middleware\\JwtMiddleware.php"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "hisfarma-code-audit-oracle",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........-.-.-.-.........................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Audited Hisfarma SuperApp: found 6 CRITICAL, 10 HIGH, 14 MEDIUM, 6 LOW issues. Key: all-clear endpoint backdoor, 1-year JWT TTL, unauthenticated PHI endpoints, hardcoded API keys, disabled mass assignment."
+}

@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260801-pubmed-reindex-add-after-commit-fix",
+  "timestamp": "2026-08-01T02:27:43.387907+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 14,
+  "key_files": [
+    "scripts/build_full_rebuild_1995_2026.py",
+    "scripts/test_resume_fixture.py",
+    "scripts/RUNPOD_RUN_SPEC.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260801-pubmed-reindex-add-after-commit-fix",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Reorder commit sequence to embed->append raw->commit state->FAISS add->persist index; add FIXTURE_FAIL_AFTER_EMBED_FNAME injection; add fixture scenario D proving post-embed failure leaves zero orphan vectors in persisted index; all 9 fixture runs green; new SHA256 0F35EEB4"
+}

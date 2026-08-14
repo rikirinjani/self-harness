@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260803-modal-billing-reconciled",
+  "timestamp": "2026-08-03T12:55:00.539251+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 150,
+  "tool_calls": 2,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260803-modal-billing-reconciled",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Reconciled lib-4 (Modal billing research):  top-up path does NOT exist on Modal; valid payment method required to unlock full /mo verified credit; no-card tier is only ~-5/mo. Declined card = account unverified, full credit locked. User's ' then rest later' plan is a dead end. Alternatives: retry card (unlocks /mo, covers -15 job), email billing@modal.com for exception, or fallback to RunPod (proven, reembed script is host-agnostic). Space still loading (baseline parked)."
+}

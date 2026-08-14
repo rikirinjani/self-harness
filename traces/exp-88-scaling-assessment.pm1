@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "exp-88-scaling-assessment",
+  "timestamp": "2026-07-25T00:15:54.824070+00:00",
+  "agent": "explorer",
+  "outcome": "pass",
+  "duration_s": 45,
+  "tool_calls": 1,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "exp-88-scaling-assessment",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........---..-..........................-.--...-........-.--...-........................................................-.--...-",
+  "action": "Explored Mac Mini t5_pipeline to assess 900-ticker scalability — found IdxBrowser serial loop, get_json ~300-750ms/call, IDX 429 throttling documented, GetCompanyProfiles endpoint returns all companies in one call"
+}

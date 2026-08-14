@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260811T051331-designer-cli",
+  "timestamp": "2026-08-11T05:13:31.502452+00:00",
+  "agent": "designer",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 12,
+  "key_files": [
+    "src/lib/api.ts",
+    "src/app/answer/content.tsx",
+    "src/app/ask/content.tsx"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260811T051331-designer-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........----............................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Fixed two rendering bugs. Bug 1 (citation beads empty): rewrote parseAnswerText in api.ts — changed from stripping PMID numbers out of text and replacing with ref-number beads, to matching complete (PMID: X)/(PMIDs: X,Y)/(PMID: X, PMID: Y) groups as pmid-group segments that preserve the full original text with PMID numbers visible. PMID groups now render as clickable ember-colored underlined spans showing the full text (e.g. '(PMID: 30561177)'), with click handler opening the citation drawer. Regex: /\\(PMID[s]?: \\d{6,9}(?:, (?:PMID: )?\\d{6,9})*\\)/g matches all three formats. Bug 2 (raw markdown): added **bold**→<strong> rendering via regex in renderSegment function (answer/content.tsx) and markdown stripping for card summaries (ask/content.tsx). Verified with node tests on all PMID formats and bold markers. Build passes clean — 7 routes, exit 0. Zero design/visual changes."
+}

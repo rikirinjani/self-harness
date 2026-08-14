@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260810T033226-fixer-cli",
+  "timestamp": "2026-08-10T03:32:26.549354+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 2100,
+  "tool_calls": 16,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\IDX Whale\\t5-pipeline\\bpjs.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260810T033226-fixer-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "bpjs.py v1.4: removed lookahead from 09:15 entry variant (first15_vol_ratio5 + first15_value_idr no-lookahead analogs; combined filter now entry-knowable only; first15 2-5% band on entry15 basis; Part A relabeled diagnostic)"
+}

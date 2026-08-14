@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "bonsai-fresh-session-still-large",
+  "timestamp": "2026-08-13T00:22:15.392552+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 240,
+  "tool_calls": 7,
+  "key_files": [
+    "C:\\Users\\think\\self-harness\\failures\\20260813-execution-bonsai-context-cap-insufficient.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "bonsai-fresh-session-still-large",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Rechecked fresh Bonsai session: Mac log shows OpenCode request at 91848 input tokens, still processing after 2 minutes; model is healthy but full MCP/skill context remains too large. Identified need for dedicated lightweight Bonsai agent with MCPs/heavy skills disabled."
+}

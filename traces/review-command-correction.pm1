@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "review-command-correction",
+  "timestamp": "2026-08-13T08:20:30.082382+00:00",
+  "agent": "oracle",
+  "outcome": "fail",
+  "duration_s": 0,
+  "tool_calls": 1,
+  "key_files": [],
+  "failure": {
+    "category": "tool-usage",
+    "severity": "low"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "review-command-correction",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........-.-.-.-........-.--...-........................-.--...-........................................-.--...-........-.--...-",
+  "action": "Focused-check command initially used an invalid dictionary key and POSIX || syntax under PowerShell; no files modified."
+}

@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "2026-07-29-t5-weekly-scan-fix",
+  "timestamp": "2026-07-29T02:37:11.012090+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 5400,
+  "tool_calls": 30,
+  "key_files": [
+    "~/t5-pipeline/t5_pipeline/shareholder_discovery.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "2026-07-29-t5-weekly-scan-fix",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........-.--...-........................................-.--...-",
+  "action": "Fixed company-code fetch to use Playwright browser. Investigated Jul 28 weekly scan non-fire (correct schedule, stale exit code from Jul 26 manual test with old bug). Restarted dashboard. Verified 963 codes fetched, weekly scan running batch 3/97. Dashboard healthy: T5 4 tickers, 89 open trades, 83.3% win rate, 94 signals."
+}

@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "mac-mini-pipeline-launch",
+  "timestamp": "2026-07-17T21:34:01.739671+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 95,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\morse\\bench\\pipeline.py",
+    "C:\\Users\\think\\Agentic Layer\\morse\\bench\\loop_bench.py",
+    "C:\\Users\\think\\Agentic Layer\\morse\\bench\\loop_eval.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "mac-mini-pipeline-launch",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "Created PM-1 pipeline on Mac Mini (bench 100 runs + eval 5 traces via Bonsai 27B). Launched with nohup PID 16376. Pipeline runs independently after SSH disconnect. Estimated 16 min total."
+}

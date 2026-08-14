@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "reconciliation-full-close-shareholders-tab-final",
+  "timestamp": "2026-07-24T22:29:53.901733+00:00",
+  "agent": "designer",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "dqf-dashboard.html"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "reconciliation-full-close-shareholders-tab-final",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........----...........................................................-.--...-........................................-.--...-",
+  "action": "FULL RECONCILIATION — Shareholders tab accepted and ready for deployment. All shareholder-discovery traces now reconciled and permanently closed. No further actions pending. This is the definitive close."
+}

@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260802-upload-verified-deploy-done",
+  "timestamp": "2026-08-02T07:03:38.482568+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 8,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\app_fixed.py",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\space_snapshot\\app.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260802-upload-verified-deploy-done",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Post-upload sequence complete: verified all 12 files in balade/pubmed-faiss-index (127.57GB/32 files, main texts 107.10GB, recent texts 12.18GB); deployed fixed app.py to Space (commit 8efcefa, recent_* naming); deleted 6 stale old-named files (faiss_recent.index, metadata_recent_*.npy); dataset now clean 124.75GB/26 files; Space rebuilding. Told user to stop pod (upload safely on HF)."
+}

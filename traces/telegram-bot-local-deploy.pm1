@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "telegram-bot-local-deploy",
+  "timestamp": "2026-08-06T23:58:12.107171+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 420,
+  "tool_calls": 8,
+  "key_files": [
+    "Project_v2/LocalNotebook/rag-service/telegram_bot.py",
+    "Project_v2/LocalNotebook/rag-service/bot.log",
+    "Project_v2/LocalNotebook/rag-service/bot.log.err"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "telegram-bot-local-deploy",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Deployed Telegram bot prototype locally on Windows (long-polling): verified deps present, minted fresh AWS creds, launched telegram_bot.py detached (PID 14348), confirmed alive 110s + valid token via getMe (@MedQuerriesBot id 8893896142). Production path deferred to Mac mini / cloud per user."
+}

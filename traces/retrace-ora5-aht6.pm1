@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "retrace-ora5-aht6",
+  "timestamp": "2026-07-31T06:30:58.754770+00:00",
+  "agent": "oracle",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 6,
+  "key_files": [
+    "api/drugs.json",
+    "rag-queries/l2b_overrides.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "retrace-ora5-aht6",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........-.-.-.-.........................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Retroactive: ora-5 AHT-6 phantom adjudication — candesartan ddi KEEP 1, irbesartan ddi KEEP 1, olmesartan electrolyte CHANGE 2 (ARB class hyperkalemia, losartan anchor consistency, PMID 18046913/39635439), doxazosin electrolyte KEEP 1, hydralazine metabolic KEEP 2; remaining hydralazine/methyldopa fields delivered via ora-7 fill lane. Verdicts applied via apply_phantom.py and merged into manifest."
+}

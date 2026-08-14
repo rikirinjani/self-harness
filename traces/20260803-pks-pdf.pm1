@@ -1,0 +1,36 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260803-pks-pdf",
+  "timestamp": "2026-08-04T05:22:00.527290+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 8,
+  "key_files": [
+    "C:\\Users\\think\\PKS\\PKS-Main.pdf",
+    "C:\\Users\\think\\PKS\\PKS-Lampiran I.pdf",
+    "C:\\Users\\think\\PKS\\PKS-Lampiran II.pdf",
+    "C:\\Users\\think\\PKS\\PKS-Lampiran III.pdf",
+    "C:\\Users\\think\\PKS\\PKS-Lampiran IV.pdf",
+    "C:\\Users\\think\\PKS\\PKS-Lampiran V.pdf",
+    "C:\\Users\\think\\PKS\\PKS-Lampiran VI.pdf",
+    "C:\\Users\\think\\PKS\\PKS-Lampiran VII.pdf",
+    "C:\\Users\\think\\PKS\\PKS.pdf"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260803-pks-pdf",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........--.-..-.........................................-.--...-",
+  "action": "Converted 51 scanned JPEGs across 8 PKS subfolders into 8 multi-page PDFs (PKS-<folder>.pdf) via Pillow, merged into PKS.pdf (51 pages, 31.5MB) via pypdf; verified page counts match image counts."
+}

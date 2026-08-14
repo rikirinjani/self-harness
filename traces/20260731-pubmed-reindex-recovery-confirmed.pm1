@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260731-pubmed-reindex-recovery-confirmed",
+  "timestamp": "2026-07-31T16:36:29.025253+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 1,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260731-pubmed-reindex-recovery-confirmed",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Confirmed pod recovery path fired: fresh train 214,443 samples -> 'Trained both indexes' -> catch-up re-embedded 845 main records from raw_main_texts.bin (4 committed files recovered, no wipe); recent catch-up (~94K) and main loop resume expected next"
+}

@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-ticket004-verdicts-apply",
+  "timestamp": "2026-07-31T08:58:10.383872+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 14,
+  "key_files": [
+    "api\\drugs.json",
+    "rag-queries\\l2b_overrides.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-ticket004-verdicts-apply",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "TICKET-004 applied 7 phantom L4 verdicts: 3 CHANGE (naproxen/aspirin ddi_risk 1->2, pramlintide hypo 2->3) into drugs.json; manifest now 27 verdicts; audit rerun: 0 phantom, 19/19 anchors"
+}

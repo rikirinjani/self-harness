@@ -1,0 +1,104 @@
+{
+  "session": "taxonomy-classification-session2",
+  "classification_date": "2026-08-14",
+  "taxonomy": {
+    "decision": "DEC-2026-0001",
+    "categories": [
+      "process",
+      "workflow",
+      "tool",
+      "tool-usage",
+      "external",
+      "OVERRIDES",
+      "EMPTY_LANE",
+      "SEMANTIC_MISMATCH"
+    ]
+  },
+  "summary": {
+    "total_records": 10,
+    "reclassified": 5,
+    "unchanged": 5,
+    "category_counts": {
+      "OVERRIDES": 2,
+      "EMPTY_LANE": 2,
+      "SEMANTIC_MISMATCH": 1,
+      "tool": 2,
+      "tool-usage": 1,
+      "workflow": 1,
+      "external": 1
+    },
+    "most_common": ["OVERRIDES", "EMPTY_LANE", "tool"]
+  },
+  "records": [
+    {
+      "id": "ora1-payload-loss",
+      "original_category": "process",
+      "new_category": "OVERRIDES",
+      "changed": true,
+      "rationale": "Oracle lane is read-only (read_files only) and cannot persist JSON to disk; payload of 27 quantified values lost when the lane closed. Exactly matches OVERRIDES: oracle read-only constraint causing payload loss."
+    },
+    {
+      "id": "ora9-payload-loss",
+      "original_category": "process",
+      "new_category": "OVERRIDES",
+      "changed": true,
+      "rationale": "Oracle lane returned no payload, only a status note; required JSON payload omitted from final message. Same failure mode as ora1: oracle lane payload loss. Classified as OVERRIDES: oracle constraint causing payload loss."
+    },
+    {
+      "id": "fixer-lane-noop",
+      "original_category": "process",
+      "new_category": "EMPTY_LANE",
+      "changed": true,
+      "rationale": "Fixer subagent returned empty results across two task calls (2/2), zero work produced. Matches EMPTY_LANE: fixer/oracle subagent returning empty results systemically."
+    },
+    {
+      "id": "l2b-weight-direction",
+      "original_category": "workflow",
+      "new_category": "SEMANTIC_MISMATCH",
+      "changed": true,
+      "rationale": "Oracle reviewers scored weight_effect using adverse-direction semantics while audit anchors define benefit-direction semantics; meaning discrepancy between agent output and expected format. Matches SEMANTIC_MISMATCH."
+    },
+    {
+      "id": "fixer-lane-empty",
+      "original_category": "process",
+      "new_category": "EMPTY_LANE",
+      "changed": true,
+      "rationale": "Two independent fixer subagent sessions returned empty task_result systemically. Matches EMPTY_LANE: fixer/oracle subagent returning empty results systemically."
+    },
+    {
+      "id": "executor-test-attr-error",
+      "original_category": "tool",
+      "new_category": "tool",
+      "changed": false,
+      "rationale": "AttributeError 'str' object has no attribute 'exists' is a type error during tool execution. Explicitly covered by tool: tool execution failures (crash, OOM, type error)."
+    },
+    {
+      "id": "vlm-oom",
+      "original_category": "tool",
+      "new_category": "tool",
+      "changed": false,
+      "rationale": "CUDA out-of-memory during VLM inference is an OOM tool execution failure. Explicitly covered by tool: tool execution failures (crash, OOM, type error)."
+    },
+    {
+      "id": "tool-usage-review-command-correction",
+      "original_category": "tool-usage",
+      "new_category": "tool-usage",
+      "changed": false,
+      "rationale": "Used a Python namespace key with a function call suffix and POSIX || syntax in PowerShell - wrong command syntax / incorrect tool invocation. Explicitly covered by tool-usage."
+    },
+    {
+      "id": "smoke-checkpoint-collision",
+      "original_category": "workflow",
+      "new_category": "workflow",
+      "changed": false,
+      "rationale": "Two parallel sessions writing to the same checkpoint file is a routing/coordination failure between tasks. Covered by workflow: task sequencing, dependency, or routing errors."
+    },
+    {
+      "id": "reembed-download-stall",
+      "original_category": "external",
+      "new_category": "external",
+      "changed": false,
+      "rationale": "Network timeout during large file transfer from external storage. Explicitly covered by external: external service failures (API errors, SSH blocks, timeouts)."
+    }
+  ]
+}

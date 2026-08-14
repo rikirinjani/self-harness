@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260804-klaim-batch-draft-v02",
+  "timestamp": "2026-08-04T08:05:38.600255+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 60,
+  "tool_calls": 2,
+  "key_files": [
+    "C:\\Users\\think\\KLAIM 2026\\BATCH-EXTRACTION-DRAFT.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260804-klaim-batch-draft-v02",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Updated batch draft to v0.2: page-3 SEP-only scope per user decision. Removed faktur/handwriting/kunjungan paths, dropped VLM (PaddleOCR suffices), simplified pipeline to locate-SEP-page-then-parse, single open question left (output location)."
+}

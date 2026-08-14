@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "runpod-full-eta-measured",
+  "timestamp": "2026-08-13T12:59:16.267326+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 3,
+  "key_files": [
+    "scripts/runpod_launch.py",
+    "scripts/runpod_reembed_large.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "runpod-full-eta-measured",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................-.--...-........-.--...-........................................-.--...-",
+  "action": "Measured first full batch at 122 rows/s with main:0 checkpoint committed; recalculated ETA at approximately 66 hours and GPU cost approximately .60"
+}

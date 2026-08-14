@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260801-catchup-rest-flow-confirm",
+  "timestamp": "2026-08-01T04:16:32.884889+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260801-catchup-rest-flow-confirm",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................................................................-.--...-",
+  "action": "Read build_full_rebuild_1995_2026.py lines 340-489 to answer user question: catch-up (step 4) and main loop (step 5) run back-to-back in one process with no stop between them; after 'Recovered committed state' log the script falls through to the file loop which skips state_names files and processes the rest; only hard stop is the missing-raw-bins guard at line 345, not applicable to pod"
+}

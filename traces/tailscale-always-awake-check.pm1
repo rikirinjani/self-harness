@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "tailscale-always-awake-check",
+  "timestamp": "2026-08-11T03:18:31.960609+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 60,
+  "tool_calls": 2,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "tailscale-always-awake-check",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Verified Tailscale on Mac mini: runs as launchd system extension (root PID 508, NetworkExtension.io.tailscale.ipn.macsys), auto-starts at boot independent of login, currently connected with Funnel enabled; explained earlier offline blip as network-interface idle (networkoversleep was 0, now 1); confirmed Tailscale stays awake with sleep disabled + autorestart 1"
+}

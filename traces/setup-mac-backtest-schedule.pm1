@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "setup-mac-backtest-schedule",
+  "timestamp": "2026-08-10T02:20:04.295436+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1500,
+  "tool_calls": 16,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\IDX Whale\\t5-pipeline\\backtest.py",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\idxbk\\run_backtest_once.sh",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\idxbk\\com.t5pipeline.backtest.once.plist"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "setup-mac-backtest-schedule",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Mac setup: copied backtest.py + run_backtest_once.sh wrapper to pts-mac-mini (~/t5-pipeline), validated live run on Mac (130 signals/64 tickers, matches Windows). Installed launchd LaunchAgent com.t5pipeline.backtest.once (StartCalendarInterval 2026-09-05 09:00 WIB) via bootstrap, verified in launchctl list + calendarinterval stream. Disabled AC auto-sleep: sudo pmset -c sleep 0, disksleep 0; womp kept 1. SSH via Tailscale IP 100.83.28.83 (mDNS pts-mac-mini.local flaky)."
+}

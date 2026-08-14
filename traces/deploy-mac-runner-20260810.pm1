@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "deploy-mac-runner-20260810",
+  "timestamp": "2026-08-10T06:58:17.629404+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 12,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\run_baseline_mac.sh",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\mac_preflight.sh",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\eval_rag.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\data\\qa.parquet"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "deploy-mac-runner-20260810",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Wrote Mac self-runner (run_baseline_mac.sh) + preflight check, deployed fixed harness + rebuilt gold set + scripts to Mac via scp, preflight passed 6/6 (brace fixes, gold usable, venv, env keys)"
+}

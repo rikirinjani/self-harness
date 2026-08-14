@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "reconciliation-final-close-20260725",
+  "timestamp": "2026-07-24T21:21:23.916203+00:00",
+  "agent": "explorer",
+  "outcome": "pass",
+  "duration_s": 15,
+  "tool_calls": 4,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "reconciliation-final-close-20260725",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........---..-..........................-.--...-........-.--...-........................................................-.--...-",
+  "action": "RECONCILIATION FINAL: Verified t5_pipeline analysis already fully reconciled to shareholder_discovery.py across 30+ prior traces (reconciliation-final.pm1, reconciliation-t5-pipeline-final-close.pm1, et al.). Retrace scanner: 0 untraced. All consumption confirmed. Closing permanently — no further tasks."
+}

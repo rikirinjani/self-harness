@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "test-shareholder-discovery-mac-mini",
+  "timestamp": "2026-07-24T22:11:25.431251+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 45,
+  "key_files": [
+    "t5-pipeline/t5_pipeline/shareholder_discovery.py",
+    "t5-pipeline/output/shareholder_snapshots.json",
+    "t5-pipeline/test_e2e.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "test-shareholder-discovery-mac-mini",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "Tested shareholder_discovery.py on Mac Mini: Playwright browser, 3 companies (ADRO/BBCA/AMMN), DB persistence, change detection, signal generation all PASS"
+}

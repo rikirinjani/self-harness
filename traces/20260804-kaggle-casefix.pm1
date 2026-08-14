@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260804-kaggle-casefix",
+  "timestamp": "2026-08-05T13:23:38.704861+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 4,
+  "key_files": [
+    "C:\\Users\\think\\KLAIM 2026\\kaggle\\klaim_extract_kaggle.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260804-kaggle-casefix",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........-.--...-........-.--...-........................................-.--...-",
+  "action": "Kaggle 3rd failure root cause: input glob '*.zip' is case-sensitive on Linux; user's file is KLAIM 2026.ZIP (uppercase) -> glob returned nothing. Fixed: glob '/kaggle/input/**/*' all files then filter os.path.isfile + lower().endswith('.zip'). Verified with exact user scenario (uppercase .ZIP at deep datasets path): rc=0, SEP parsed conf 0.958, exports.zip written, DONE."
+}

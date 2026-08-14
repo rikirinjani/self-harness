@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "pharmacy-schematic-v3",
+  "timestamp": "2026-07-23T14:03:27.067376+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 420,
+  "tool_calls": 13,
+  "key_files": [
+    "pharmacy-automation/SCHEMATIC.md",
+    "pharmacy-automation/SCHEMATIC.pdf"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pharmacy-schematic-v3",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Updated schematic v3: added Return Stock & Error Recovery flow (6a, 3 error scenarios), New Patient Onboarding flow (6b, FKTP letter), Google Drive backup, Offline POS fallback, Management Dashboard, emergency contact field, ReturnStock + AuditLog entities, pharmacist multi-roles consolidation. 13 diagrams. 20 design decisions. PDF 191 KB."
+}

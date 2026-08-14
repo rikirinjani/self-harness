@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "wrap-t5-blocked",
+  "timestamp": "2026-07-23T04:33:51.070114+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 30,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "wrap-t5-blocked",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................-.--...-........................................................................-.--...-",
+  "action": "Session wrap: confirmed IDX FDUc API 503, T5 signals fully blocked. KSEI pipeline healthy (66.7% WR, 90 trades, 50K PnL). Revisit after market hours."
+}

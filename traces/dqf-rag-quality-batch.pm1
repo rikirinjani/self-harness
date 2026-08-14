@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-rag-quality-batch",
+  "timestamp": "2026-07-31T11:31:47.466772+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1500,
+  "tool_calls": 20,
+  "key_files": [
+    "Project_v2/drug-quantification-framework/rag-queries/extract_l3.py",
+    "Project_v2/drug-quantification-framework/rag-queries/build_l2b_digests.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-rag-quality-batch",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "RAG quality batch (3 priorities): dispatched fixer for client-side fixes (full-text evidence, PMID dedup, co-mention gate, Still-loading retry, confusable filter, schema docs, --eutils-first); added source tag to save_raw; verified 61 digests rebuild + 0 contamination; diagnosed 512 cap as index-baked (server-side = S2048 rebuild task)"
+}

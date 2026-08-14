@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260801-pubmed-reindex-run-health-assessment",
+  "timestamp": "2026-08-01T01:56:20.159259+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 4,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260801-pubmed-reindex-run-health-assessment",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Assessed pod run from user-pasted log: tmp-deletion failure episode (23:02-01:17) ended on its own; 19 consecutive commits 01:19-01:51 at ~485 vec/s; run at ~262/1334 files; ETA recomputed ~31h at healthy rate; adjusted guidance: no urgent restart needed, but fixed script must be running before Step 6 finalization"
+}

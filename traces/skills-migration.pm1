@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "skills-migration",
+  "timestamp": "2026-08-13T06:47:48.930419+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 0,
+  "key_files": [
+    "~/.config/opencode/opencode.jsonc",
+    "~/.config/opencode/skill-index.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "skills-migration",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........................-.--...-........................................-.--...-",
+  "action": "Moved 71 skills from ~/.config/opencode/skills/ to ~/.agents/skills/, compressed 54 descriptions to 30 chars, created skill-index.md (1154 tokens), updated opencode.jsonc instructions. System prompt now shows compact index instead of 71 full descriptions."
+}

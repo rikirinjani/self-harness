@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "paper-rebuild-v2",
+  "timestamp": "2026-07-28T14:13:30.130958+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\morse\\paper\\pro-memoria.md",
+    "C:\\Users\\think\\Agentic Layer\\morse\\paper\\pro-memoria.pdf",
+    "C:\\Users\\think\\Agentic Layer\\morse\\paper\\generate_pdf.py",
+    "C:\\Users\\think\\Agentic Layer\\morse\\paper\\fig6_design_space.png"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "paper-rebuild-v2",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Rebuilt PM-1 paper draft: updated MD (BabelTele, invariants, design space, case study, live 89.4% numbers), generated 6 figures (inc. new design space map), updated PDF generator, produced 631KB PDF"
+}

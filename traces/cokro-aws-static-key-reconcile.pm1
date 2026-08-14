@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "cokro-aws-static-key-reconcile",
+  "timestamp": "2026-08-07T01:43:58.254662+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 240,
+  "tool_calls": 12,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\.env"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "cokro-aws-static-key-reconcile",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Searched MemPalace for permanent AWS creds (none in credentials wing); reconciled 3 stale short-lived-credential drawers (97d5358c, 0ae06fed, 6861a4e8) to point at new pubmed-rag-bot static-key record 1962a7be; verified .env key ID matches AKIA5GKC4LVMBKWX4EH5 with no session token"
+}

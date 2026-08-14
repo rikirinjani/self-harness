@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "bridge-deepseek-live",
+  "timestamp": "2026-08-06T02:52:15.211138+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1500,
+  "tool_calls": 20,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "bridge-deepseek-live",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........................................................-.--...-",
+  "action": "Switched production bridge on Mac mini to real DeepSeek API (LLM_PROVIDER=deepseek + DEEPSEEK_API_KEY from opencode config), restarted via launchctl kickstart, verified health + engine test: grounded SERKOM koreksi answer and Kolegium contact answer with correct email/WA"
+}

@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "reconciliation-t5-pipeline-shareholder-discovery",
+  "timestamp": "2026-07-24T21:25:25.976827+00:00",
+  "agent": "explorer",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "reconciliation-t5-pipeline-shareholder-discovery",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........---..-..........................................................................................................-.--...-",
+  "action": "FULL RECONCILIATION: t5_pipeline codebase tree analysis (11 file roles, all data flows) consumed as direct architecture foundation for shareholder_discovery.py module. All 11 file roles extracted, all data flows mapped, all outputs used. Session permanently closed."
+}

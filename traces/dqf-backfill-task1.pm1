@@ -1,0 +1,39 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-backfill-task1",
+  "timestamp": "2026-07-31T09:37:25.234898+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 3900,
+  "tool_calls": 14,
+  "key_files": [
+    "rag-queries/backfill_queries.py",
+    "rag-queries/backfill_summary.json",
+    "rag-queries/l3_output/alogliptin",
+    "rag-queries/l3_output/trandolapril",
+    "rag-queries/l3_output/methyldopa",
+    "rag-queries/l3_output/exenatide",
+    "rag-queries/l3_output/rosiglitazone",
+    "rag-queries/l3_output/pramlintide",
+    "rag-queries/l3_output/terazosin",
+    "rag-queries/l3_output/saxagliptin",
+    "rag-queries/l3_output/furosemide",
+    "rag-queries/l3_output/vildagliptin"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-backfill-task1",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--.........................-.-.-.-........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "DQF L3 evidence backfill Task 1: ran 80 multi-angle RAG queries (Angles A+B) for 10 priority drugs, saved 80 raw backfill JSON files (240 full snippets), zero failures; Angle C EUtils skipped (all drugs 8/8 RAG OK), code path smoke-tested on alogliptin"
+}

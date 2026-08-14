@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "session-wrap-fors-v14b-logbook",
+  "timestamp": "2026-07-24T05:51:19.401372+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 7200,
+  "tool_calls": 80,
+  "key_files": [
+    "C:\\Users\\think\\Project\\repro_fors\\kaggle\\kernel_dir\\fors_v10_full.py",
+    "C:\\Users\\think\\Project\\repro_fors\\kaggle\\kernel_dir\\fors_v11_full.py",
+    "C:\\Users\\think\\Project\\repro_fors\\kaggle\\kernel_dir\\fors_v13_full.py",
+    "C:\\Users\\think\\Project\\repro_fors\\kaggle\\kernel_dir\\kernel-metadata.json",
+    "C:\\Users\\think\\Project\\repro_fors\\kaggle\\downloaded\\v14b_results.json",
+    "C:\\Users\\think\\Project\\repro_fors\\submit_logbook.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "session-wrap-fors-v14b-logbook",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "Session wrap: v10-v14b iterative FID debugging cycle. Root cause: torchmetrics FrechetInceptionDistance interpolate shape mismatch. Fixed with manual InceptionV3+scipy sqrtm+cov reg. Final FID: DDPM=160.42, DDIM=157.98, FORS=295.05. Submitted to FORS Logbook. GPU quota exhausted at 30h/wk."
+}

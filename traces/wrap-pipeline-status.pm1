@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "wrap-pipeline-status",
+  "timestamp": "2026-07-21T11:54:20.458817+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 45,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "wrap-pipeline-status",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................-.--...-........................................................................-.--...-",
+  "action": "Reported pipeline status: 91 signals, 90 trades open, 66.7% win rate. Executor bug fixed — next run will close AMMN."
+}

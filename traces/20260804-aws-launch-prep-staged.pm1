@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260804-aws-launch-prep-staged",
+  "timestamp": "2026-08-04T07:59:01.846514+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 12,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\scripts\\reembed_modal.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260804-aws-launch-prep-staged",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Staged AWS launch prep for Phase 1 re-embed: IAM role reembed-role + instance profile reembed-profile + S3/SSM inline policy, SSM param /reembed/HF_TOKEN, uploaded reembed_modal.py and reembed-bootstrap.sh to s3://pubmed-rag-lancedb/bootstrap/; quota L-DB2E81BA still CASE_OPENED (the only remaining gate)"
+}

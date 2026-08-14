@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "fix-ppi-scoring-pipeline",
+  "timestamp": "2026-07-30T03:24:32.625487+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 2100,
+  "tool_calls": 30,
+  "key_files": [
+    "api/drugs.json",
+    "rag-queries/l3_query_templates.json",
+    "rag-queries/l3_output/_fix_ppi_scoring.py",
+    "rag-queries/l3_output/_check_new_profiles.py",
+    "validation/V1c-ppi-l3-risk-concordance.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "fix-ppi-scoring-pipeline",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................---..-...........--...--........--.-..-.........................................-.--...-",
+  "action": "Fixed PPI L3 CDI/DDI scoring per ACG evidence: 8 + 6 corrections across 5 drugs. Improved PPI query templates: 16 queries/drug (was 8) with healing/CYP2C19/bone/rebound targeting. Re-extracted all 5 PPIs (44-47 PMIDs each, up from 10-23). Re-merged 26 profiles and re-applied scoring fix."
+}

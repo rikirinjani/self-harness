@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-07-31T16:50:00",
+  "agent": "oracle",
+  "outcome": "fail",
+  "category": "OVERRIDES",
+  "severity": "major",
+  "summary": "ora-9 AH/cardio backfill adjudication returned no payload — only a status note. Dispatch Persistence Rule violated; recurrence of NCR-2026-014 failure mode.",
+  "root_cause": "Documentation-only corrective action (CAPA-2026-009) without a close-time enforcement gate; lane omitted required JSON payload from final message; orchestrator detected the miss only after the fact and re-dispatched (ora-10).",
+  "trace_id": "ora-9-l4-ah-backfill-adjudication"
+}

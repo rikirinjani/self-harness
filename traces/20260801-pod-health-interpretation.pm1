@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260801-pod-health-interpretation",
+  "timestamp": "2026-08-01T03:52:53.876375+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260801-pod-health-interpretation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................................................................-.--...-",
+  "action": "Interpreted pod ps/ls output: PID 255721 alive at 367% CPU, R state, 4h54m elapsed; static log since 02:43:44 is expected (catch-up phase logs nothing until done); gave user 3 checks (ps CPU recheck, nvidia-smi, file growth) to confirm active grinding; predicted catch-up completion ~07:15 pod time"
+}

@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-l4-tickets-dispatch",
+  "timestamp": "2026-07-31T06:57:42.530380+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 90,
+  "tool_calls": 6,
+  "key_files": [
+    "Project_v2/self-harness/tools/mesh_client.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-l4-tickets-dispatch",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Dispatched TICKET-004 (L4 phantom adjudication, 7 out-of-scope fields) and TICKET-005 (l4_clinical quantification on clean digests) via mesh to orchestrator@dqf.mesh.ai; msg ids 76200a07cc8844f0 / 815d616345954d12"
+}

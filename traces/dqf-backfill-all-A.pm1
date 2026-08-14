@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-backfill-all-A",
+  "timestamp": "2026-07-31T10:46:13.913919+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 1500,
+  "tool_calls": 20,
+  "key_files": [
+    "Project_v2/drug-quantification-framework/rag-queries/backfill_all_queries.py",
+    "Project_v2/drug-quantification-framework/rag-queries/backfill_all_summary_A.json",
+    "Project_v2/drug-quantification-framework/rag-queries/l3_output"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-backfill-all-A",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Lane A multi-angle RAG backfill: 45 drugs (AH 33 + GI 12: PPI 5, H2RA 3, Antacid 2, Alginate 1, Mucosal Protectant 1), 360/360 queries OK (264 fetched this run, 96 resumed from disk), full-text saved, 0 failures, EUtils not needed. Note: parallel Lane B overwrote backfill_all_queries.py with their same-named script mid-task; restored Lane A version and re-ran. Pre-existing files untouched."
+}

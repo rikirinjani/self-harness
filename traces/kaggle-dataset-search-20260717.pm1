@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "kaggle-dataset-search-20260717",
+  "timestamp": "2026-07-17T09:20:12.229044+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 480,
+  "tool_calls": 14,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kaggle-dataset-search-20260717",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--..........................--...--........--.-..-.........................................................-.--...-",
+  "action": "Searched Kaggle via websearch across 4 topics (IDX stock, drug interactions, model quantization, Indonesia economy). Found and reported 13+ datasets with URLs, sizes, licenses, and upvotes."
+}

@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "cokro-telepharmacy",
+  "timestamp": "2026-08-04T07:52:52.613505+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 520,
+  "tool_calls": 22,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\COKRO\\cokro-pitch-revised.html"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "cokro-telepharmacy",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Integrated telepharmacy into COKRO deck after librarian verified Indonesian regulatory basis (telepharmacy=correct term, telemedicine is doctor-anchored). Anchored in live instruments only: Permenkes 73/2016, PerBPOM 8/2020, PMK 24/2022, PP 28/2024; flagged Kepmenkes 4829/2021 as superseded. Edits: S3 Helping Hand desc+tag to TELEPHARMACY, S5 legal model to telepharmacy + Quit in 12 weekly telepharmacy counseling, S6 stage-2 dispensing + stage-3 async telepharmacy touchpoints, S9 ask PSEF registration, S10 regulatory posture, moat table row to Licensed dispensing & telepharmacy. Verified 296/296 divs, 10 sections, 3/3 tables."
+}

@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-p1-ontology-schema",
+  "timestamp": "2026-07-31T09:06:19.442844+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 8,
+  "key_files": [
+    "methodology\\framework-ontology.md",
+    "api\\drugs.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-p1-ontology-schema",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "P1: documented locked l4_clinical schema (AH/Diabetes + legacy class shapes, onset semantics, phantom adjudication manifest ref) in framework-ontology.md; full audit regression green: L4 phantom 0, anchors 19/19, L0 108 / L2a 265 pre-existing baseline, drugs.json 88/88 l4_clinical"
+}

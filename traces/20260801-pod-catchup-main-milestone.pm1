@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260801-pod-catchup-main-milestone",
+  "timestamp": "2026-08-01T06:21:05.301415+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260801-pod-catchup-main-milestone",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................................................................-.--...-",
+  "action": "Interpreted catch-up milestone log: 'catch-up: re-embedded 4816561 main records from raw_main_texts.bin' at 06:12:41 = main catch-up phase done (02:43:44->06:12:41, ~380 vec/s, consistent with GPU oscillation); next expected lines: recent catch-up (~3M, ETA ~07:50-08:20), then 'Recovered committed state'; gave user head -20 rebuild.log command to derive per-file rate from original 264-file run to estimate the remaining 1070-file tail; no action needed, resume-safe if crash recurs"
+}

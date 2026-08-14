@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "hf-serverless-embed-switch",
+  "timestamp": "2026-08-12T02:14:59.536592+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 8,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\query_lancedb_fulltext.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "hf-serverless-embed-switch",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................-.--...-........-.--...-........................................-.--...-",
+  "action": "Implemented Cokro #1: HF serverless embedding switch in query_lancedb_fulltext.py embed_query() — prefers hf-inference feature-extraction on BAAI/bge-base-en-v1.5 when HF_TOKEN set, falls back to local sentence-transformers on any HF error. Added module-level import os (was missing — parity test caught NameError). Verified PARITY: HF vs local vectors cosine=1.000000 (dim 768, L2 unit norm both) — search quality preserved. Frees t4g.micro RAM bottleneck (no torch load)."
+}

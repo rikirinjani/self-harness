@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "hf-pro-2026-research",
+  "timestamp": "2026-08-03T04:44:07.321547+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 6,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "hf-pro-2026-research",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--.........................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Researched HF Pro 2026 pricing/benefits: fetched huggingface.co/pricing and /pro, docs on rate-limits, storage-limits, ZeroGPU (Blackwell refresh May 2026), Inference Providers (/mo credits, hf-inference CPU shift Jul 2025); compiled 500-word report with sources"
+}

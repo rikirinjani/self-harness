@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "day14-full",
+  "timestamp": "2026-07-23T02:25:45.354618+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 7,
+  "key_files": [
+    "articles/day14-article.md",
+    "scripts/publish-day14.mjs",
+    "articles/ramble-gap.md",
+    "scripts/publish-ramble-gap.mjs",
+    "substack-knowledge.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "day14-full",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---.........................--...--........-.--...-........--.-..-.........................................-.--...-",
+  "action": "Published Day 14 + companion ramble: The Trace Is Not the Experience + What Lives in the Gap — intentionality, the bridge between description and experience"
+}

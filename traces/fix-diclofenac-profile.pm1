@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "fix-diclofenac-profile",
+  "timestamp": "2026-07-16T03:48:45.995521+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 9,
+  "key_files": [
+    "C:\\Users\\think\\Project\\drug-quantification-framework\\profiles\\diclofenac.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "fix-diclofenac-profile",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Applied 6 edits to diclofenac.md per publication-readiness audit: Fix 1 (PMID for P2X3 paper, 2 edits), Fix 2 (tempered P2X3 claim, 3 edits), Fix 4 (Deranged Physiology citation, 1 edit), Fix 5 (colloquial language, covered by Fix 2). Fix 3 (COX table) was already applied."
+}

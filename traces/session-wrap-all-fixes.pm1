@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "session-wrap-all-fixes",
+  "timestamp": "2026-08-02T04:58:56.775827+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm-adapter\\pyproject.toml",
+    "C:\\Users\\think\\Agentic Layer\\pm-adapter\\pm_adapter\\adapter.py",
+    "C:\\Users\\think\\Agentic Layer\\morse\\pro_memoria\\__init__.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "session-wrap-all-fixes",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Session wrap: pm-adapter fully fixed (schemas shipping, ECC silent correction, import path, git dep, renamed to_semantic, flags documented, 12 tests). Pro Memoria wheel packaging fixed. Both repos live."
+}

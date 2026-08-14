@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "crash-recovery-20260727",
+  "timestamp": "2026-07-27T12:45:22.737591+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 10800,
+  "tool_calls": 75,
+  "key_files": [
+    "C:\\Users\\think\\.config\\opencode\\opencode.jsonc",
+    "C:\\Users\\think\\.local\\share\\opencode\\opencode.db",
+    "C:\\Users\\think\\NAC_Antioxidant_Research_transcript.txt",
+    "C:\\Users\\think\\RAG_GitHub_transcript.txt"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "crash-recovery-20260727",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........-.--...-........................................-.--...-",
+  "action": "Crash recovery: diagnosed 11MB JSON corruption, extracted NAC+RAG transcripts (808KB+5.5MB), set up MemPalace wings (projects+agentic-layer), removed corrupted session+bloated 23K-file folder, fixed sidebar freeze"
+}

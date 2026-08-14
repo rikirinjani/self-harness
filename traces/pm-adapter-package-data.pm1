@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm-adapter-package-data",
+  "timestamp": "2026-08-02T04:58:27.864652+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 420,
+  "tool_calls": 12,
+  "key_files": [
+    "pm-adapter/pyproject.toml"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm-adapter-package-data",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--.........................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Fixed packaging bug: added [tool.setuptools.package-data] pm_adapter = ['schemas/*.json'] to pyproject.toml so schemas/default.json ships in the wheel. Verified all 6 steps: (1) python -m build OK, (2) wheel contains pm_adapter/schemas/default.json, (3) pip install --force-reinstall wheel OK (pro-memoria git dep resolved from GitHub commit a8f22867 and rebuilt), (4) load_schema('default') prints default_agent_state from site-packages (neutral cwd), (5) examples/basic_usage.py all 4 modes, (6) pytest 12 passed. Also confirmed ECC path works against wheel-installed pro_memoria.opencode_plugin.failsafe. Note: getsitepackages()[0] is interpreter root not site-packages - initial False check was wrong path."
+}

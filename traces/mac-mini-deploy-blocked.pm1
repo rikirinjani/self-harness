@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "mac-mini-deploy-blocked",
+  "timestamp": "2026-08-06T23:46:59.034518+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 420,
+  "tool_calls": 6,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "mac-mini-deploy-blocked",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-..........--...--........-.--...-........................................................-.--...-",
+  "action": "Attempted prototype deployment to Mac mini: SSH pts-mac-mini.local unreachable (getaddrinfo/dns fail), Tailscale pts-mac-mini offline 13h, LAN port-22 scan found only 192.168.1.1+192.168.1.2. Prepared production plan preservation. Blocked on user powering on / waking the Mac mini."
+}

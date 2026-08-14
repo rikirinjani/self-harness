@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "session-gemma4-installed",
+  "timestamp": "2026-07-20T13:38:09.606343+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 35,
+  "key_files": [
+    "bonsai-gateway.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "session-gemma4-installed",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................................--...--........-.--...-........................................-.--...-",
+  "action": "Downloaded Gemma 4 12B Q4 (~10 GB via curl at 6.8 MB/s), installed mlx-vlm, configured server on port 8090, added to gateway at /v2/ route. Tested: returns correct chat completions via gateway. Updated memory and gateway config."
+}

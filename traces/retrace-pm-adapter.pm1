@@ -1,0 +1,36 @@
+{
+  "pm1_version": 1,
+  "session_id": "retrace-pm-adapter",
+  "timestamp": "2026-08-13T13:29:44.988326+00:00",
+  "agent": "opencode",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 1,
+  "key_files": [
+    "pm-adapter/_test_context.txt",
+    "pm-adapter/CONTRIBUTING.md",
+    "pm-adapter/pm_adapter/project_reducer.py",
+    "pm-adapter/pm_adapter/schemas/decision.json",
+    "pm-adapter/pm_adapter/session_reducer.py",
+    "pm-adapter/pm_adapter.egg-info/dependency_links.txt",
+    "pm-adapter/pm_adapter.egg-info/requires.txt",
+    "pm-adapter/pm_adapter.egg-info/SOURCES.txt",
+    "pm-adapter/pm_adapter.egg-info/top_level.txt"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "retrace-pm-adapter",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........................................-.--...-........--.-..-.........................................-.--...-",
+  "action": "Retroactive: retrace scanner identified nine pre-existing untraced pm-adapter files; recorded them for session hygiene."
+}

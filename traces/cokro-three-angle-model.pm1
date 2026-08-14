@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "cokro-three-angle-model",
+  "timestamp": "2026-08-04T07:25:52.073540+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 420,
+  "tool_calls": 14,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\COKRO\\cokro-pitch-revised.html"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "cokro-three-angle-model",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Applied 3-angle model (pharmacist+dietitian+psychologist in every program) across COKRO deck: S5 prog-hand-labels/states/includes to ALL THREE HANDS, S6 stage-3 counseling all-three copy, S8 COGS to 3-practitioner team, S10 core clinical team. Verified 296/296 divs, 10 sections, 3/3 tables."
+}

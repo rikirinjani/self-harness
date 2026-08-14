@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "idx-backtest-sources",
+  "timestamp": "2026-08-10T01:56:10.504439+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 12,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "idx-backtest-sources",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--.........................---..-..........--.-..-.........................................................-.--...-",
+  "action": "Researched free IDX daily OHLC data sources: yfinance .JK/^JKSE (works, rate-limit/auto_adjust caveats), idx.co.id Umbraco endpoints (Cloudflare-gated, GetStockSummary per-day), sectors.app fallback, Stooq/investpy ruled out. Recommended yfinance primary + sectors.app fallback for 40x3mo backtest."
+}

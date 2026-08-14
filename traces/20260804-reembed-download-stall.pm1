@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260804-reembed-download-stall",
+  "timestamp": "2026-08-04T17:00:32.113865+00:00",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "duration_s": 7200,
+  "tool_calls": 40,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\reembed-bootstrap.sh",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\scripts\\download_metadata.py"
+  ],
+  "failure": {
+    "category": "external",
+    "severity": "high"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260804-reembed-download-stall",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................-.--...-.........-.-.-.-.........--...--........-.--...-.........................--...--........-.--...-",
+  "action": "Run 4 (i-0cd4fcd9652fcf3be) stalled during smoke: 102GB metadata_texts.npy download from HF hard-stalled mid-transfer (zero EBS writes 20+ min, CPU 6%, tiny network). Same root cause as the HF Space failure. Built v4: dedicated download phase (download_metadata.py) with stall-kill-resume watchdog + hf_transfer (HF_HUB_ENABLE_HF_TRANSFER=1), job runs SKIP_DOWNLOAD=1. Relaunched i-0f11e5f5e6c77f064"
+}

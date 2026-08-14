@@ -1,0 +1,40 @@
+{
+  "pm1_version": 1,
+  "session_id": "retrace-AndroidDev",
+  "timestamp": "2026-07-20T02:58:24.498585+00:00",
+  "agent": "general",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "AndroidDev/ai-clinical-pharmacist-concept.md",
+    "AndroidDev/cultural-layer-build-proposal.md",
+    "AndroidDev/cultural-layer-concept.md",
+    "AndroidDev/drug-tldr-concept.md",
+    "AndroidDev/lib/CulturalFilter.kt",
+    "AndroidDev/lib/InteractionDisplayAdapter.kt",
+    "AndroidDev/lib/RegionConfig.kt",
+    "AndroidDev/regions/_default.json",
+    "AndroidDev/regions/id.json",
+    "AndroidDev/scripts/extract_interactions.py",
+    "AndroidDev/scripts/extraction_prompt_template.md",
+    "AndroidDev/sources/catalog.md",
+    "AndroidDev/tests/CulturalFilterTest.kt"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "retrace-AndroidDev",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-.--...-........................................................--.-..-.........................................-.--...-",
+  "action": "Retroactive: AndroidDev project files"
+}

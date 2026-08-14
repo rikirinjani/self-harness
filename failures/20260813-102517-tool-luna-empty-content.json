@@ -1,0 +1,10 @@
+﻿{
+    "severity":  "low",
+    "timestamp":  "2026-08-13T10:25:17.9424748+07:00",
+    "trace_id":  "luna-dispatch-empty-first",
+    "category":  "tool",
+    "summary":  "First real Luna dispatch returned empty content: completion_tokens=1200, content=\u0027\u0027",
+    "outcome":  "fail",
+    "agent":  "orchestrator",
+    "root_cause":  "gpt-5.6-luna is a reasoning model; max_completion_tokens includes reasoning tokens. The 1200-token cap was fully consumed by reasoning before visible content was emitted (retry with 6000 showed reasoning_tokens=316, content=5334 chars). Context window was never the issue - request succeeded at 9,594 prompt tokens."
+}

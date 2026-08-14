@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260803-restart-cycle-verified",
+  "timestamp": "2026-08-03T04:43:19.628283+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 240,
+  "tool_calls": 2,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260803-restart-cycle-verified",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Post-restart verification: container shut down gracefully mid-download (SIGTERM, HF-initiated restart) after HF_TOKEN made fetch fast (0-65% in ~8s). API confirms stage=RUNNING, devMode=False, sha=5031b537, cpu-basic, no error. /search returns 'Still loading' - fresh authenticated download + mmap load phase underway. Phase 0 gate unchanged: run baseline_capture.py when loading drops."
+}

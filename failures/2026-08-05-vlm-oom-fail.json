@@ -1,0 +1,10 @@
+{
+    "severity": "high",
+    "timestamp": "2026-08-05T23:33:59Z",
+    "trace_id": "20260806-vlm-oom-fail",
+    "category": "tool",
+    "summary": "VLM pass on vlm_results.zip: 444/444 pages failed, all CUDA OOM. Qwen2.5-VL-7B 4-bit + 200dpi pages tried to allocate ~23GB on a 16GB T4.",
+    "outcome": "fail",
+    "agent": "orchestrator",
+    "root_cause": "Model too large for GPU memory budget. Fixed notebook to use 3B-Instruct model, attn_implementation=sdpa, max_pixels=1280*28*28, rasterize capped at 1400px/150dpi. Re-run still needed."
+}

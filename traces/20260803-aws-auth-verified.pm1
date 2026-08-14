@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260803-aws-auth-verified",
+  "timestamp": "2026-08-03T03:52:31.739486+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 10,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260803-aws-auth-verified",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........................................................-.--...-",
+  "action": "Verified AWS auth live (root 906915241304, both sides). Diagnosed agent-toolkit WinError 2: wizard spawns bare 'codex' .cmd shim for MCP registration (Windows PATHEXT/CreateProcess limitation) - not an OpenCode/config fault. 16 AWS skills installed to C:\\Users\\think\\.agents\\skills. AWS CLI sufficient for migration; MCP server optional. S3 API access verified."
+}

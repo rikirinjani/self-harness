@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-08-01T08:31:00+08:00",
+  "agent": "vision",
+  "outcome": "fail",
+  "category": "external",
+  "severity": "low",
+  "summary": "Vision specialist could not access the screenshot attachment.",
+  "root_cause": "The delegated vision context received no image attachment, so it returned that the screenshot was unavailable. The coordinator independently used the image visible in the conversation and completed the interpretation.",
+  "trace_id": "20260801-vision-attachment-miss"
+}

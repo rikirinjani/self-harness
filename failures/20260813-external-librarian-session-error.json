@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-08-13T07:00:00Z",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "category": "external",
+  "severity": "low",
+  "summary": "Delegated OpenCode model-limit documentation lookup ended with a session error and no result.",
+  "root_cause": "The librarian specialist session terminated before returning findings; the orchestrator used the official provider documentation fetch instead.",
+  "trace_id": "ses_007987a6fffeIIjlTJMrsGxwNY"
+}

@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-lancedb-adapter",
+  "timestamp": "2026-08-07T01:35:02.692795+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 12,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\drug-quantification-framework\\rag-queries\\backfill_all_queries.py",
+    "C:\\Users\\think\\Project_v2\\drug-quantification-framework\\rag-queries\\l3_output\\terazosin\\backfill_terazosin_mechanism_of_action_efficacy_clinical_trial.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-lancedb-adapter",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Built --source lancedb backend in backfill_all_queries.py (LanceDB direct, bypass paused HF Space); live test terazosin PASS: 8/8 OK, 24 results, 0 at exactly 512, max 2072 chars; committed 13b2443; full 88-drug run deferred pending RAG agent's permanent AWS auth"
+}

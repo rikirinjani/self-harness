@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "session-compact-20260810",
+  "timestamp": "2026-08-11T03:09:22.532734+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3600,
+  "tool_calls": 25,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\TODO.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "session-compact-20260810",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Session compaction: filed web design plan, hosting, build-model, domain/email, Activate, credits/ops, model-switch decisions to MemPalace (7 drawers + 2 diary entries); TODO.md current; produced compacted session summary for model handoff"
+}

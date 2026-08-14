@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "2026-07-30-t5-status-reconnect",
+  "timestamp": "2026-07-31T07:14:33.316573+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 12,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "2026-07-30-t5-status-reconnect",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........................................................-.--...-",
+  "action": "Reconnected to Mac Mini via LAN (192.168.1.38) after Tailscale on Windows box stuck in NoState. Verified all services alive (dashboard 8000, bonsai 8080, gateway), daily run SUCCESS Jul 29, weekly scan exit 0. P&L 83% (5V/1F/43E), 95 signals, 46 open trades, +50000 IDR. New BIKE control_change BUY signal from daily shareholders step."
+}

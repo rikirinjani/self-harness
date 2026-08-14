@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260730-ppi-parser-fix",
+  "timestamp": "2026-07-30T04:02:41.960007+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 540,
+  "tool_calls": 0,
+  "key_files": [
+    "rag-queries/extract_l3.py",
+    "rag-queries/PARSER_SUGGESTION.md",
+    "api/drugs.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260730-ppi-parser-fix",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........................-.--...-........................................-.--...-",
+  "action": "Improved PPI L3 parser: added extract_healing_ability(), intensified _score_risk(), 3 new cyp2c19 regex patterns, PPI branch now fills all 7 dimensions. Re-extracted 5 PPIs, merged, re-applied scoring fix. Previously 2/7 fields populated -> now 6/7."
+}

@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-batch-crash-harden-relaunch",
+  "timestamp": "2026-08-07T07:11:36.043761+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 400,
+  "tool_calls": 12,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\drug-quantification-framework\\rag-queries\\run_lancedb_refresh.ps1",
+    "C:\\Users\\think\\Project_v2\\drug-quantification-framework\\rag-queries\\backfill_all_queries.py"
+  ],
+  "failure": {
+    "category": "external",
+    "severity": "medium"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-batch-crash-harden-relaunch",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-..........--...--........--.-..-.........-.--...-........................--.-..-.........-.--...-",
+  "action": "Batch1 died 09:52 during NSAID/celecoxib: SentenceTransformer HF-Hub download stall hung class forever (no timeout). Root-caused via frozen log mtimes + batch.err HF warning. Fixed: per-class 30-min timeout+kill+retry in runner, local_files_only=True offline model load (0.7s verified); commit b1b51f0; batch2 relaunched 14:11 running NSAID (python 15128). Antihypertensive+Diabetes completed before death."
+}

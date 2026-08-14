@@ -1,0 +1,10 @@
+{
+    "severity":  "high",
+    "timestamp":  "2026-08-04T13:44:39.6410478Z",
+    "trace_id":  "20260804-smoke-checkpoint-collision",
+    "category":  "workflow",
+    "summary":  "Smoke run committed batch ids main:0/recent:0 for rows 0-1024; full run computes batch ids as part:start so its first batch is ALSO main:0 (rows 0-262144) -\u003e it skips the first 262K-row batch of both partitions, silently losing ~522K rows. Caught during monitoring before much damage.",
+    "outcome":  "fail",
+    "agent":  "orchestrator",
+    "root_cause":  "Smoke (REEMBED_LIMIT=1024) and full run share the same batch-id namespace (part:start). Smoke committed the low-id batch, so the full run treats the entire first commit-sized range as done. Bootstrap did not reset the checkpoint between smoke and full."
+}

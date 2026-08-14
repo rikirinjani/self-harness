@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "bonsai-model-removal",
+  "timestamp": "2026-08-13T02:02:14.875499+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 6,
+  "key_files": [
+    "N/A (remote Mac operations)"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "bonsai-model-removal",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Removed 4 old Bonsai models from Mac mini (/Users/ptpakdefarma/models): ternary-bonsai-27b (7.9G), bonsai-image-ternary (3.6G), bonsai-8b-q2_0.gguf (2.0G), bonsai-4b-q2_0.gguf (1.0G) = ~14.5G freed; cleaned dangling HF cache stubs for prism-ml models; verified Qwen3.5-9B-4bit (5.6G) remains active and server serving 200 OK over Tailscale"
+}

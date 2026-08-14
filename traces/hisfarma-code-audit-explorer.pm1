@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "hisfarma-code-audit-explorer",
+  "timestamp": "2026-07-21T11:50:10.627641+00:00",
+  "agent": "explorer",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 8,
+  "key_files": [
+    "C:\\Users\\think\\Hisfarma\\SuperApp\\code\\backend\\laravel-worker\\routes\\api.php",
+    "C:\\Users\\think\\Hisfarma\\SuperApp\\code\\backend\\laravel-worker\\app\\Http\\Controllers\\TicketController.php",
+    "C:\\Users\\think\\Hisfarma\\SuperApp\\code\\database\\hisfarma_db.sql",
+    "C:\\Users\\think\\Hisfarma\\SuperApp\\code\\frontend\\hisfarma-fe\\src\\routes\\App.jsx",
+    "C:\\Users\\think\\Hisfarma\\SuperApp\\code\\frontend\\hisfarma-fe\\src\\services\\auth.service.jsx"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "hisfarma-code-audit-explorer",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........---..-..........................--.-..-.........-.--...-........--.-..-.........................................-.--...-",
+  "action": "Mapped Hisfarma SuperApp codebase: 14 controllers, 13 models, ~60 API routes, 22 DB tables, 70+ React components"
+}

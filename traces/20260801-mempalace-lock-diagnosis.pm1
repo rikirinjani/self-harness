@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260801-mempalace-lock-diagnosis",
+  "timestamp": "2026-08-01T01:50:02.468654+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 2,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260801-mempalace-lock-diagnosis",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Diagnosed MemPalace -32001 writer lock: file-based byte-range lock (~\\.mempalace\\locks\\mine_palace_0f081e2d207bcfe8.lock) using msvcrt.locking on byte 0, OS-released at process death, no PID-liveness check; -32001 fires only while a LIVE second mempalace-mcp server holds the lease; root cause = 7 concurrent OpenCode.exe desktop sessions each spawn their own server, only one wins; lock verified FREE right now (test lock succeeded), on-disk files stale but inert; no SQLite lock, no daemon running"
+}

@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260731-signal-daemon-built",
+  "timestamp": "2026-07-31T04:31:52.298671+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 18,
+  "key_files": [
+    "Project_v2/self-harness/tools/mesh_signal_daemon.py",
+    "Project_v2/self-harness/tools/mesh_signal_daemon.ps1",
+    "Project_v2/self-harness/tools/com.mesh.signal-daemon.plist",
+    "Project_v2/self-harness/tools/router.agent.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260731-signal-daemon-built",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Built+verified mesh signal daemon (poll task_request, wake agent via opencode run, post task_result back, stale-claim requeue); dry-run+stub real pass round-trip verified; router registered, router-ops room filed"
+}

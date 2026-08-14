@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260804-reembed-run6-unzip-missing",
+  "timestamp": "2026-08-04T17:28:27.783995+00:00",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "duration_s": 500,
+  "tool_calls": 8,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\reembed-bootstrap.sh"
+  ],
+  "failure": {
+    "category": "tool",
+    "severity": "medium"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260804-reembed-run6-unzip-missing",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................-.--...-.........--...--........-.--...-........-.--...-........-.--...-........--.-..-.........-.--...-",
+  "action": "Run 6 (i-0b96556c6c704ccba) failed: 'unzip: command not found' during AWS CLI v2 bundle install. Ubuntu 22.04 minimal lacks unzip. Fixed: explicit apt install of unzip curl ca-certificates before CLI bundle + aws sts get-caller-identity verification. Relaunched i-078dbcbab7cd6644f"
+}

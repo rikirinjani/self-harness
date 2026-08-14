@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260731-creds-sweep",
+  "timestamp": "2026-07-31T12:07:26.195461+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 420,
+  "tool_calls": 10,
+  "key_files": [
+    ".config/opencode/credentials.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260731-creds-sweep",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Full memory sweep for HF/Kaggle/RunPod/Replicate creds: MemPalace had none; local sweep found REPLICATE_API_TOKEN env var (filed drawer credentials/replicate with full token) + kaggle.json partial (username rikirinjani, key missing; filed drawer credentials/kaggle as incomplete); HF and RunPod confirmed absent everywhere; local credentials.md mirror updated"
+}

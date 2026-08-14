@@ -1,0 +1,35 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260731-mesh-hub-deployed",
+  "timestamp": "2026-07-31T05:50:24.245374+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 5400,
+  "tool_calls": 40,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\self-harness\\tools\\mesh_hub.py",
+    "C:\\Users\\think\\Project_v2\\self-harness\\tools\\mesh_client.py",
+    "C:\\Users\\think\\Project_v2\\self-harness\\tools\\mesh_waker.py",
+    "C:\\Users\\think\\Project_v2\\self-harness\\tools\\mesh_waker.cmd",
+    "C:\\Users\\think\\Project_v2\\self-harness\\tools\\mesh_mcp_server.py",
+    "C:\\Users\\think\\Project_v2\\self-harness\\tools\\agent_mesh\\registry.py",
+    "C:\\Users\\think\\Project_v2\\self-harness\\tools\\mesh_signal_daemon.py",
+    "C:\\Users\\think\\.config\\opencode\\opencode.jsonc"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260731-mesh-hub-deployed",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "Built+deployed mesh hub topology: hub verified locally (SQLite thread+unquote fixes), waker written+Task Scheduler installed, MCP server hub-mode refactor verified both backends, hub deployed to Mac via SFTP+launchd (running), e2e Windows->Mac hub->waker->result verified, DB migrated to Mac, opencode.jsonc MESH_HUB_URL set"
+}

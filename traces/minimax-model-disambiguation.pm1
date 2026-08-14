@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "minimax-model-disambiguation",
+  "timestamp": "2026-08-05T01:54:53.805678+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 90,
+  "tool_calls": 1,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "minimax-model-disambiguation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Disambiguated MiniMax H3 as a video model and flagged likely intended MiniMax M2 text model before giving AWS hardware advice"
+}

@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "mempalace-db-query-recipe",
+  "timestamp": "2026-08-07T00:03:04.995948+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 3,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "mempalace-db-query-recipe",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Wrote MemPalace drawer 'HOW TO QUERY THE PUBMED RAG LANCEDB DIRECTLY' (projects/pubmed-rag-db, drawer_projects_pubmed-rag-db_6861a4e8a5bb06f35d32eae8): S3 URI, table name embeddings, region, schema, short-lived cred minting, vector search snippet, memory safety rules, reference scripts"
+}

@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-space-rebuild-monitor",
+  "timestamp": "2026-08-03T01:26:18.387822+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 5400,
+  "tool_calls": 12,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-space-rebuild-monitor",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-..........-.-.-.-........--.-..-.........................................................-.--...-",
+  "action": "Verified Space balade/pubmed-rag-bot rebuilt (~18h ago): app.py no longer truncates returned text (512 slice now reranker-internal only), index rebuilt with full abstracts (metadata_texts.npy 107GB, mmap_mode=r so no OOM on 16GB cpu-basic). Polled /search ~50 min: persistent 'Still loading' = cold-start downloading ~110GB index. Monitoring stopped per user; RAG agent fixing indexing. Refresh-ready state: runner --refresh mode committed (9829a05) + Fix A-E (326785e) pushed."
+}

@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "bonsai-context-cap-staged",
+  "timestamp": "2026-08-13T00:02:56.900522+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 420,
+  "tool_calls": 12,
+  "key_files": [
+    "C:\\Users\\think\\.config\\opencode\\opencode.jsonc",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\20260813-pass-bonsai-context-cap.json",
+    "C:\\Users\\think\\self-harness\\failures\\20260813-workflow-bonsai-first-fix-insufficient.json",
+    "C:\\Users\\think\\self-harness\\failures\\20260813-external-librarian-session-error.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "bonsai-context-cap-staged",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-..........--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Diagnosed remaining Bonsai failure from Mac log: OpenCode sent 164901 input tokens and disconnected with BrokenPipeError during prompt processing. Added Bonsai model context limit 16384, output limit 4096, reasoning metadata, and interleaved reasoning field to opencode.jsonc; direct Tailscale inference remains healthy. Runtime confirmation requires OpenCode restart and a fresh session."
+}

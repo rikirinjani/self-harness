@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "session-self-harness-install",
+  "timestamp": "2026-07-15T02:53:57.435519+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 65,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "session-self-harness-install",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................---..-...........--...--........................................................-.--...-",
+  "action": "Full session: analyzed PM-1 long-run token efficiency vs JSON, operationalized daily tracing, created missing self-harness SKILL.md with per-agent tracing commands, validated clean"
+}

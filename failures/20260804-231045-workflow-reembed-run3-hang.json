@@ -1,0 +1,10 @@
+{
+    "severity":  "high",
+    "timestamp":  "2026-08-04T16:10:45.3843586Z",
+    "trace_id":  "20260804-reembed-run3-hang",
+    "category":  "workflow",
+    "summary":  "Full re-embed run 3 hung 2h: smoke run was a no-op (both batches already committed from run 1/2), so model load + encode path never validated; full run stalled after \u0027main: rows\u0027 with flat 44.5% CPU, zero EBS reads, no commit. Log uploader also dead due to mount-order bug (mkdir before mount hid the log file).",
+    "outcome":  "fail",
+    "agent":  "orchestrator",
+    "root_cause":  "Smoke validated nothing because checkpoint from earlier runs made it skip both batches. The real embed path (model load + first 262K batch) then hung on first use. Secondary: log uploader wrote to a /data path hidden by the late mount, so no S3-side logs were available for monitoring."
+}

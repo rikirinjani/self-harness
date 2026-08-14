@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "freelance-demo-invoice-agent",
+  "timestamp": "2026-08-07T13:33:28.494962+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 320,
+  "tool_calls": 26,
+  "key_files": [
+    "demo.py",
+    "README.md",
+    "sample_output/invoices_approved.csv",
+    "sample_output/audit_log.jsonl",
+    "sample_output/review_queue.jsonl",
+    "sample_output/exceptions.log"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "freelance-demo-invoice-agent",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--.........................--...--........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Built invoice-processing agent demo with human review gate (gen/extract/review/commit/status CLI, stdlib-only)"
+}

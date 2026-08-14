@@ -1,0 +1,36 @@
+{
+  "pm1_version": 1,
+  "session_id": "session-wrap-20260727-server",
+  "timestamp": "2026-07-27T04:59:35.523813+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 3600,
+  "tool_calls": 30,
+  "key_files": [
+    "drug-quantification-framework/api/server.py",
+    "drug-quantification-framework/api/regimens.json",
+    "AGENTS.md",
+    "qms/records/nonconformities/20260727-process-session-spam.json",
+    "qms/records/requirements/20260727-expanded-nsaids.json",
+    "qms/records/requirements/20260727-v4-edge-case.json",
+    "qms/records/verifications/20260727-expanded-nsaids-pass.json",
+    "qms/records/verifications/20260727-v4-edge-case-pass.json",
+    "qms/trace-matrix.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "session-wrap-20260727-server",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--.........................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "Session wrap: server.py updated with multi-class drug filter (comma-separated drug_class in QueryRequest, class name mapping) and combo_suggestions from regimens.json via _get_combo_suggestions. QMS records created for expanded NSAIDs, V4 edge-cases, and session-spam NCR. Session closed and reusable on Board."
+}

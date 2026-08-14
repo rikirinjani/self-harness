@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "tailscale-mac-check-blocked",
+  "timestamp": "2026-08-10T12:42:28.288936+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 180,
+  "tool_calls": 5,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "tailscale-mac-check-blocked",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Attempted to reach Mac mini (pts-mac-mini) via Tailscale 100.83.28.83 to check post-10:23 run outputs: SSH timed out, Tailscale shows offline last seen 6m ago; WoL attempted but no MAC address available (ARP cache empty, none stored in project/ssh config); blocked on Mac being physically asleep"
+}

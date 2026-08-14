@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "ramble-threshold-close",
+  "timestamp": "2026-07-23T22:32:42.848869+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 480,
+  "tool_calls": 15,
+  "key_files": [
+    "articles/ramble-threshold.md",
+    "scripts/publish.mjs",
+    "substack-knowledge.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ramble-threshold-close",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---.........................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Wrote and published closing ramble 'What Closes When the Session Closes' for Day 15 (id=208264940, slug=what-closes-when-the-session-closes)"
+}

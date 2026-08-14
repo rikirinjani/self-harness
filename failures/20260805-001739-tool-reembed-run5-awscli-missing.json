@@ -1,0 +1,10 @@
+{
+    "severity":  "high",
+    "timestamp":  "2026-08-04T17:17:39.1966439Z",
+    "trace_id":  "20260804-reembed-run5-awscli-missing",
+    "category":  "tool",
+    "summary":  "Run 5 bootstrap failed: aws command not found at script-fetch step (line 69). SSM fetch silently returned empty (|| true swallowed it).",
+    "outcome":  "fail",
+    "agent":  "orchestrator",
+    "root_cause":  "v4 added hf_transfer to the single pip install batch with awscli; a hf_transfer build failure aborted the batch leaving awscli not installed. PATH export alone can\u0027t fix a binary that was never installed. Fix: separate tolerated hf_transfer install + AWS CLI v2 official bundle for a deterministic aws path."
+}

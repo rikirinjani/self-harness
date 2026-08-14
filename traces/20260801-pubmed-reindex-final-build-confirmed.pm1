@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260801-pubmed-reindex-final-build-confirmed",
+  "timestamp": "2026-08-01T02:04:15.393652+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 4,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\scripts\\build_full_rebuild_1995_2026.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260801-pubmed-reindex-final-build-confirmed",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Confirmed user-pasted script is the final tested build: all 4 finalization guards present at verified locations (lines 67/377/402-403/483/492-500), no missing prior fixes, expandable_segments correctly absent (runtime env var), download-fail path also covered by completeness gate; recorded SHA256 19123AB7... for pod-side verification"
+}

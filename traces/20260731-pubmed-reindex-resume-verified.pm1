@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260731-pubmed-reindex-resume-verified",
+  "timestamp": "2026-07-31T14:36:05.932908+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 5400,
+  "tool_calls": 40,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\scripts\\build_full_rebuild_1995_2026.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\scripts\\test_resume_fixture.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\scripts\\RUNPOD_RUN_SPEC.md",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\20260731-pubmed-reindex-resume-pass.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260731-pubmed-reindex-resume-verified",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........-.--...-........................................-.--...-",
+  "action": "Verified resume-safety redesign via fixture harness: fixed .view() dtype reshape corruption at raw_to_npy, main-index npy naming (main_* -> unprefixed), fixture MeSHHeading tag; ALL FIXTURE CHECKS PASSED; updated RUNPOD runbook resume section; wrote VER-2026-005"
+}

@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "retroactive-drug-potency-research",
+  "timestamp": "2026-07-16T02:00:56.597458+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 6,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "retroactive-drug-potency-research",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--.........................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Retroactive: Researched why drug potency cannot be reduced to single numerical score — covered potency metrics (EC50/IC50/Kd/Ki), mechanism diversity (paracetamol vs diclofenac vs celecoxib), potency vs efficacy distinction, pharmacokinetics, therapeutic index, opioid MME as special case, CUI framework, 8 key references"
+}

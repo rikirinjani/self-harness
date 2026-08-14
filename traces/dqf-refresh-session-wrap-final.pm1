@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-refresh-session-wrap-final",
+  "timestamp": "2026-08-07T21:59:27.553203+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 300,
+  "tool_calls": 4,
+  "key_files": [
+    "C:\\Users\\think\\.opencode\\STATE.md",
+    "C:\\Users\\think\\Project_v2\\drug-quantification-framework\\rag-queries\\run_lancedb_refresh.ps1",
+    "C:\\Users\\think\\Project_v2\\drug-quantification-framework\\rag-queries\\refresh_logs\\done.txt"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-refresh-session-wrap-final",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-..........--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Session wrap recap: LanceDB adapter and permanent AWS auth verified; cache/offline-load fixes committed; refresh data complete for Antihypertensive, Diabetes, NSAID, Statin; PPI and later classes incomplete; 3 stale HF files remain; runner checkpoint/exit handling unresolved; no active batch."
+}

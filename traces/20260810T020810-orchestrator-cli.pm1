@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260810T020810-orchestrator-cli",
+  "timestamp": "2026-08-10T02:08:10.485420+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 22,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\IDX Whale\\t5-pipeline\\backtest.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260810T020810-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Built backtest.py for IDX Whale shareholder-change signals: pull lab.json from Mac, curl_cffi Chrome impersonation data layer (yfinance 1.5.1 plain requests was Yahoo-429'd; IDX API Cloudflare-503'd), fwd returns vs ^JKSE at 5/20d horizons. Ran: 39 signals/20 tickers, 1 row qualifying — journal too young (signals 07-27..08-05, today 08-10). PURE.JK is a Yahoo MUTUALFUND stub with 1 bar. Script validated end-to-end; needs ~3wk re-run."
+}

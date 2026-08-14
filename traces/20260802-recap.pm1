@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260802-recap",
+  "timestamp": "2026-08-02T07:05:42.980131+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 60,
+  "tool_calls": 1,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260802-recap",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Recap provided: build done (26.1M main + 2.97M recent), HF upload 12/12 verified (124.75GB/26 files), fixed app.py deployed (8efcefa), 6 stale files deleted, Space APP_STARTING, PRO active, pod at .09 -> user advised to stop pod immediately."
+}

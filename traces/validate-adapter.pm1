@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "validate-adapter",
+  "timestamp": "2026-08-02T05:15:14.112708+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 9,
+  "key_files": [
+    "morse/bench/validate_adapter.py",
+    "morse/bench/results/adapter_validation_report.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "validate-adapter",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--.........................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Created morse/bench/validate_adapter.py live validation script per spec; ran over all 698 real traces: 697 clean decodes (99.9%), 1 decode error (wrap-v4-reconciled-20260727.pm1 has 129-char frame, not multiple of 8 - genuinely malformed upstream, adapter correctly rejects), all 4 modes 99.9% coverage, schema gaps on error_count/tool_calls/files_touched/flags (all 697) + phase (383), per-agent savings ~23-24% (added JSON-size fallback since no trace has a savings field). Report written to bench/results/adapter_validation_report.json."
+}

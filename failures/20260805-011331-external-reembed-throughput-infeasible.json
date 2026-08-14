@@ -1,0 +1,10 @@
+{
+    "severity":  "high",
+    "timestamp":  "2026-08-04T18:13:31.4386182Z",
+    "trace_id":  "20260804-reembed-throughput-infeasible",
+    "category":  "external",
+    "summary":  "CPU re-embed measured 8.5 rows/s (fp32, bge-base-en-v1.5, 16 vCPU) -\u003e 29.1M rows = 39.7 days / ~. Pipeline fully works (download, smoke, commit, resume) but throughput is infeasible at this scale.",
+    "outcome":  "fail",
+    "agent":  "orchestrator",
+    "root_cause":  "CPU fp32 inference for bge-base-en-v1.5 is ~8.5 rows/s on a c6i.4xlarge. The 29.1M-row re-embed needs GPU-class throughput (T4 = 13-27h). GPU quota (L-DB2E81BA) was rejected by AWS; the  credits cover CPU cost but not the 40-day timeline."
+}

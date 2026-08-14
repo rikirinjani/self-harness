@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260803-phase0-gate-diagnostics",
+  "timestamp": "2026-08-03T04:17:44.244641+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 420,
+  "tool_calls": 6,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260803-phase0-gate-diagnostics",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........................................................-.--...-",
+  "action": "Phase 0 gate diagnostics: polled /search (still 'Still loading', ~4h vs documented 1-2h); checked Space runtime metadata via /api/spaces (RUNNING, cpu-basic, single replica, same commit 5031b537, no restart loop, gcTimeout 172800s=48h buffer); verified baseline_capture.py error-handling path (fetch() with 180s timeout + 3 retries, stores raw body, ok:False on failure); confirmed no local HF token (env, .cache/huggingface/token, .huggingface/token all absent) so Space logs not self-servable. All prep done; next decisive step (Dev Mode SSH du -sh) requires user action."
+}

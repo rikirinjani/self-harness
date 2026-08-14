@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "sanitize-push",
+  "timestamp": "2026-07-14T20:46:41.856583+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 12,
+  "key_files": [
+    ".gitignore",
+    "bench/test_dsp.py",
+    "bench/track_efficiency.py",
+    "bench/real_traces.py",
+    "opencode_plugin/cli.py",
+    "opencode_plugin/verify_results.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "sanitize-push",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................--.-..-.........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Sanitized and pushed PM-1 v5 to GitHub — fixed hardcoded path in test_dsp.py, sanitized verify_results.json, added to .gitignore, committed tracker and metadata changes"
+}

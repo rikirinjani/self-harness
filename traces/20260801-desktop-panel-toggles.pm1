@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260801-desktop-panel-toggles",
+  "timestamp": "2026-08-01T02:34:59.574398+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 420,
+  "tool_calls": 8,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Programs\\@opencode-aidesktop\\resources\\app.asar"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260801-desktop-panel-toggles",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Investigated OpenCode desktop panel toggles: official keybinds doc + app.asar keybind scan (mod+b sidebar, mod+\\ fileTree). Librarian task lib-1 errored, superseded by direct asar analysis"
+}

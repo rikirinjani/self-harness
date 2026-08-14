@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-task2-schema-map",
+  "timestamp": "2026-07-31T09:26:12.547730+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 14,
+  "key_files": [
+    "Project_v2/drug-quantification-framework/api/l4_schema_map.json",
+    "Project_v2/drug-quantification-framework/methodology/framework-ontology.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-task2-schema-map",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Task 2: created api/l4_schema_map.json (9 classes, 6 risks) from ora-7 audit; documented document-only mapping + nnt_bp_control false-sharing risk in framework-ontology.md; dispatched backfill query lane (fixer) + inventory lanes (exp-2)"
+}

@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260731-pubmed-reindex-recurring-tmp-fnf",
+  "timestamp": "2026-08-01T01:26:23.633429+00:00",
+  "agent": "orchestrator",
+  "outcome": "unknown",
+  "duration_s": 600,
+  "tool_calls": 2,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260731-pubmed-reindex-recurring-tmp-fnf",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................--...--.........--...--........-.--...-........................................................-.--...-",
+  "action": "Verified pod run tmux-protected (pid 115430 under tmux server 606, survived laptop close) and committing (243 files, last n1075); identified recurring FileNotFoundError on tmp_main_texts.bin as unresolved env-adjacent issue (~26%+ files, worsening) with finalization risk (Step 6 deletes raw bins, gaps unrecoverable); dispatched oracle root-cause lane; issued ls tmp/ + df diagnostics"
+}

@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "wrap-dashboard-nsaids-expansion",
+  "timestamp": "2026-07-27T04:07:24.414992+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 0,
+  "key_files": [
+    "drug-quantification-framework/dqf-dashboard.html",
+    "qms/records/requirements/20260727-expanded-nsaids.json",
+    "qms/records/verifications/20260727-expanded-nsaids-pass.json",
+    "qms/trace-matrix.json",
+    "AGENTS.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "wrap-dashboard-nsaids-expansion",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--.........................--...--........................--.-..-.........................................-.--...-",
+  "action": "Session wrap: Dashboard update reconciled — 6 new NSAIDs (naproxen, indomethacin, meloxicam, piroxicam, ketorolac, aspirin) added to D.nsaids array in dqf-dashboard.html. Total NSAIDs: 10. QMS records written: REQ-2026-003, VER-2026-002, trace-matrix updated. AGENTS.md refreshed. Session closed and reusable on Board."
+}

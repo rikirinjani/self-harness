@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "oracle-rag-evidence-review-20260810",
+  "timestamp": "2026-08-10T04:10:06.489842+00:00",
+  "agent": "oracle",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 12,
+  "key_files": [
+    "rag-queries/extract_l3.py rag-queries/backfill_all_queries.py rag-queries/l3_query_templates.json rag-queries/merge_l3.py api/drugs.json rag-queries/RAG_QUALITY_NOTES.md rag-queries/README.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "oracle-rag-evidence-review-20260810",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........-.-.-.-........................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Independent quality review of RAG/PubMed evidence index in drug-quantification-framework. Assessed: evidence quality (512-char truncation P0, k=3, EUtils fallback), query adequacy, grounding/attribution (no per-dimension PMID trace P0, synthetic scores P0), correctness hazards (template gap, orphaned backfill data, divergent pipelines). Delivered structured review with 3 P0s, 5 P1s, 4 P2s."
+}

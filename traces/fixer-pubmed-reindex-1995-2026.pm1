@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "fixer-pubmed-reindex-1995-2026",
+  "timestamp": "2026-07-31T13:15:54.714897+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 480,
+  "tool_calls": 4,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\scripts\\build_full_rebuild_1995_2026.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "fixer-pubmed-reindex-1995-2026",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--.........................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Wrote patched PubMed FAISS reindex script (1995-2026, full abstracts, bge-base S4096, file-backed metadata, checkpoint/resume); py_compile passed"
+}

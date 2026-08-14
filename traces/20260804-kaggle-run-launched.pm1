@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260804-kaggle-run-launched",
+  "timestamp": "2026-08-05T13:42:33.655047+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 2,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260804-kaggle-run-launched",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........................................................-.--...-",
+  "action": "Kaggle commit run launched successfully after 3 fixes: (1) dataset attach, (2) reflow-safe multi-line embed, (3) case-insensitive glob for KLAIM 2026.ZIP. Log confirms: zip found, 828 PDFs extracted, extract_sep.py written, extraction running with 4 workers. User can turn off laptop; results expected ~3-4h CPU at /kaggle/working/exports.zip + claims.zip. Follow-up: verify 828 claims + spot-check N=20 after download."
+}

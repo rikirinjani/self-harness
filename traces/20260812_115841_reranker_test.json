@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-08-12T11:58:41Z",
+  "agent": "orchestrator",
+  "task": "#2 Reranker Test — Execute & Package",
+  "outcome": "pass",
+  "duration_s": 1200,
+  "tool_calls": 45,
+  "key_files": [
+    "reranker_test.py",
+    "reranker_test.Dockerfile",
+    "README.md",
+    "reranker_report.json"
+  ],
+  "action": "Executed #2 reranker test: fixed pmid_ prefix mismatch bug, fixed rerank() in-place mutation bug, ran full 20-question eval, packaged as HF Docker Space",
+  "results": {
+    "mean_p3_direct": 0.05,
+    "mean_p3_reranked": 0.033,
+    "delta": -0.017,
+    "improved": 0,
+    "same": 19,
+    "worse": 1,
+    "conclusion": "Cross-encoder reranking does NOT improve retrieval. Bottleneck is bi-encoder (only 4/20 gold PMIDs in top-20)."
+  }
+}

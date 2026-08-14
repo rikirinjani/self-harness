@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "reconciled-t5-pipeline-analysis",
+  "timestamp": "2026-07-24T21:34:21.750346+00:00",
+  "agent": "explorer",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 6,
+  "key_files": [
+    "t5-pipeline/t5_pipeline/discovery.py",
+    "t5-pipeline/t5_pipeline/__init__.py",
+    "t5-pipeline/t5_pipeline/config.py",
+    "t5-pipeline/t5_pipeline/cli.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "reconciled-t5-pipeline-analysis",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........---..-..........................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Analyzed t5_pipeline codebase: reviewed discovery.py's IDX API integration, Cloudflare bypass strategy, T5 PDF detection, download caching, and pipeline structure — all outputs consumed as foundation for shareholder_discovery.py"
+}

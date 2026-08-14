@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260803-proceed-unauthenticated-decision",
+  "timestamp": "2026-08-03T05:30:21.138479+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260803-proceed-unauthenticated-decision",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........................................................................-.--...-",
+  "action": "User decision: proceed with unauthenticated download (HF_TOKEN warning persists after fresh Restart; name verified correct -> suspect token value, not container; re-save later optional). Space RUNNING, cpu-basic, load in progress per user's UI (throttling normal). Phase 0 gate: wait for /search 'Still loading' to drop, then baseline_capture.py. Token fix deferred as optimization only."
+}

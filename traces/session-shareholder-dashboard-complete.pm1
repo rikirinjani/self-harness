@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "session-shareholder-dashboard-complete",
+  "timestamp": "2026-07-24T23:01:44.069840+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 7200,
+  "tool_calls": 120,
+  "key_files": [
+    "t5_pipeline/shareholder_discovery.py",
+    "t5_pipeline/automation.py",
+    "t5_pipeline/cli.py",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dashboard_app.py",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dashboard.html"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "session-shareholder-dashboard-complete",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-........---..-..........--.-..-.........................................-.--...-",
+  "action": "Shareholder discovery module: tested on Mac Mini, wired into automation pipeline + CLI, added /api/shareholders endpoint + Shareholders tab to dashboard, deployed and verified"
+}

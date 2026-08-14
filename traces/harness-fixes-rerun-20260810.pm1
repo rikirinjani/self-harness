@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "harness-fixes-rerun-20260810",
+  "timestamp": "2026-08-10T13:21:38.060388+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1830,
+  "tool_calls": 6,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\eval_rag.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\test_citation_fix.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "harness-fixes-rerun-20260810",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........-.--...-........-.--...-........................................-.--...-",
+  "action": "Applied 2 harness fixes: citation pmid_XXXX/bare-digit normalization + judge context window 1500->3000; verified unit checks; reran 20-gold baseline on Windows: citation_precision 0->1.0, faithful 0.5->0.9, agreement 17->20/20, unfaithful 10->2"
+}

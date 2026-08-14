@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-query-tool-route",
+  "timestamp": "2026-07-25T22:28:40.629071+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 12,
+  "key_files": [
+    "C:\\Users\\think\\Project\\drug-quantification-framework\\api\\server.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-query-tool-route",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Fixed /query-tool.html route: Added static file endpoint + Python 3.9 Optional compat"
+}

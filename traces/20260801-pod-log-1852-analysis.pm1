@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260801-pod-log-1852-analysis",
+  "timestamp": "2026-08-01T18:54:49.480877+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260801-pod-log-1852-analysis",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................................................................-.--...-",
+  "action": "Analyzed 18:52 log: 620/1334 files (46.5%), main 15.40M (~30k/file), recent complete 2,973,382; pace stable ~100-106s/file (vec/s decline 473->403 is index-add cost, not wall-clock); refined ETA 714 files x 102s = ~20.2h -> Aug 2 ~15:05 UTC; credit: work ~.5 vs .20 available,  at Aug 2 03:42 UTC, shortfall ~.3; recommend  top-up (30h runway, ~6h margin); top-up MUST land before 03:42 UTC or /tmp wiped -> full rebuild"
+}

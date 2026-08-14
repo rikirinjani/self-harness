@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260801-idx-sessions-access",
+  "timestamp": "2026-08-01T02:10:53.404104+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 240,
+  "tool_calls": 7,
+  "key_files": [
+    "C:\\Users\\think\\.local\\share\\opencode\\opencode.db"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260801-idx-sessions-access",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Verified IDX Whale sessions intact after corruption: ses_09c021a0fffeqno2HAjMKY0WYL (Project dir, 2077 msgs/8465 parts, 7/15-7/27) and ses_05453fa95ffe3MPu6zSd9XOxiX (Project_v2 dir, 113 msgs/468 parts, 7/29-7/31), both unarchived, message content readable; no standalone opencode CLI on PATH, desktop app at Program Files @opencode-aidesktop; sessions reachable via sidebar grouped by directory"
+}

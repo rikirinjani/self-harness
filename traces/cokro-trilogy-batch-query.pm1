@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "cokro-trilogy-batch-query",
+  "timestamp": "2026-08-07T02:28:39.666861+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 915,
+  "tool_calls": 14,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\batch_query_trilogy.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\queries_trilogy.json",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\results_trilogy_TBS.json",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\results_trilogy_MCP.json",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\results_trilogy_SENSE.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "cokro-trilogy-batch-query",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Batch-ran 36 trilogy queries against PubMed LanceDB corpus (TBS/MCP/SENSE), produced 3 result JSONs, verified hits"
+}

@@ -1,0 +1,10 @@
+﻿{
+    "action":  "Moved Pro Memoria project from C:\\\\Users\\\\think\\\\morse\\\\ to C:\\\\Users\\\\think\\\\Project\\\\morse\\\\",
+    "agent":  "agent-morse",
+    "outcome":  "pass",
+    "note":  "Git history preserved. No other project assets touched.",
+    "trace_id":  "trace-pm1-relocate-20260715-033759",
+    "key_files":  [
+                      "C:\\\\Users\\\\think\\\\Project\\\\morse\\\\"
+                  ]
+}

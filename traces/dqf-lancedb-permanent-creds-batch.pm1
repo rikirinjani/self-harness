@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-lancedb-permanent-creds-batch",
+  "timestamp": "2026-08-07T02:03:44.224327+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1200,
+  "tool_calls": 15,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\drug-quantification-framework\\rag-queries\\backfill_all_queries.py",
+    "C:\\Users\\think\\Project_v2\\drug-quantification-framework\\rag-queries\\run_lancedb_refresh.ps1"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-lancedb-permanent-creds-batch",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Verified permanent AWS creds (IAM pubmed-rag-bot, read-only bucket scope) from MemPalace + rag-service/.env; fixed per-query model/table reload (cache singletons, c24fe5d; amlodipine 8/8 in 348s); wrote run_lancedb_refresh.ps1 detached per-class batch with done.txt resume; launched (PID 4984 -> python 772)"
+}

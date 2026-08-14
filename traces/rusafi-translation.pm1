@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "rusafi-translation",
+  "timestamp": "2026-07-15T02:27:07.803589+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 480,
+  "tool_calls": 15,
+  "key_files": [
+    "C:\\Users\\think\\Downloads\\rusafi_text.txt"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "rusafi-translation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Found and translated 'There is no god but God' chapter from Rusafi's Al-Shakhsiyah al-Muhammadiyah — book details, PDF/EPUB sources, OCR text extraction, and Arabic-to-English translation of the shahada analysis section"
+}

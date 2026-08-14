@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-encoder-integration",
+  "timestamp": "2026-08-13T08:32:50.713803+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Project\\pm-adapter\\pm_adapter\\encoder.py",
+    "C:\\Users\\think\\Project\\pm-adapter\\pm_adapter\\schemas\\tool_call.json",
+    "C:\\Users\\think\\Project\\pm-adapter\\pm_adapter\\schemas\\handoff.json",
+    "C:\\Users\\think\\Project\\pm-adapter\\pm_adapter\\schemas\\error_pattern.json",
+    "C:\\Users\\think\\Project\\pm-adapter\\pm_adapter\\schemas\\cost_log.json",
+    "C:\\Users\\think\\Project\\pm-adapter\\scripts\\run_agent.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-encoder-integration",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........................--.-..-.........................................-.--...-",
+  "action": "PM-1 encoder module: 4 schemas (tool_call, handoff, error_pattern, cost_log), bucket helpers, integrated into run_agent.py. Logs compressed morse frames to ~/.config/opencode/pm1-logs/. Committed and pushed to pm-adapter repo."
+}

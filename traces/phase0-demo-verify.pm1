@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "phase0-demo-verify",
+  "timestamp": "2026-07-15T04:50:35.577099+00:00",
+  "agent": "general",
+  "outcome": "pass",
+  "duration_s": 15,
+  "tool_calls": 6,
+  "key_files": [
+    "C:\\Users\\think\\Project\\t5-pipeline\\output\\demo\\dashboard.json",
+    "C:\\Users\\think\\Project\\t5-pipeline\\output\\demo\\dashboard.db",
+    "C:\\Users\\think\\Project\\t5-pipeline\\output\\demo\\transactions.csv"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "phase0-demo-verify",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-.--...-........................-.--...-........-.--...-........-.--...-........................................-.--...-",
+  "action": "Phase 0: Ran demo, verified all 7 output files — 8 tickers, 15 T5 transactions, SID counts, IHSG data, ownership lists, SQLite DB with 4 tables, CSV export"
+}

@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260801-pod-mainloop-running",
+  "timestamp": "2026-08-01T09:33:04.371872+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260801-pod-mainloop-running",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................................................................-.--...-",
+  "action": "Interpreted post-recovery log: catch-up complete, main loop running (files n1070->n1033, ~110s/file); indexes checkpointing (saves at 08:55/09:13); progress 302/1334 files (23%), main 5.95M/25.2M (24%), recent 2.97M/4.46M (67%, recent-heavy pre-crash files); vec/s decline 2446->1329 is index-add growth, benign; ETA ~31h -> Aug 2 ~17:00 UTC; confirmed frozen SSH terminal is cosmetic (tmux keeps PID 255721 alive); advised tmux ls/attach on new connection, grep for 'Recovered committed state' totals, credit budget check for ~1.3-day tail"
+}

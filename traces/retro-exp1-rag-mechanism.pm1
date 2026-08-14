@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "retro-exp1-rag-mechanism",
+  "timestamp": "2026-07-31T09:48:16.613539+00:00",
+  "agent": "explorer",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 20,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "retro-exp1-rag-mechanism",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........---..-...........................--...--........--.-..-.........................................................-.--...-",
+  "action": "exp-1 RAG PMC query mechanism map: HF Space endpoint balade-pubmed-rag-bot.hf.space/search, extract_l3.py CLI, EUtils fallback, truncation + drug-name-blindness quality findings"
+}

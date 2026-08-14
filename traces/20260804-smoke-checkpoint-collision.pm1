@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260804-smoke-checkpoint-collision",
+  "timestamp": "2026-08-04T13:44:39.615044+00:00",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "duration_s": 3600,
+  "tool_calls": 25,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\reembed-bootstrap.sh",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\scripts\\reembed_modal.py"
+  ],
+  "failure": {
+    "category": "workflow",
+    "severity": "high"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260804-smoke-checkpoint-collision",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................-.--...-.........-.-.-.-........--.-..-.........-.--...-.........--...--.........--...--........-.--...-",
+  "action": "Found smoke->full checkpoint collision bug in reembed run: smoke commits batch id main:0/recent:0 (rows 0-1024) but full run's first batch is also main:0 (rows 0-262144) -> full run would skip first 262K rows of both partitions (~522K rows lost). Terminated instance i-08bfc49d4d4d35eae, fixed bootstrap (delete checkpoint after smoke + mkdir /data before log redirect), relaunched as i-00295677b908a8e43"
+}

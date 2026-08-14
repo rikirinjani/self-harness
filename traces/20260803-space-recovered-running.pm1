@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260803-space-recovered-running",
+  "timestamp": "2026-08-03T04:36:45.022203+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 5,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260803-space-recovered-running",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........-.--...-........................................................-.--...-",
+  "action": "Recovered HF Space from BUILD_ERROR: user disabled Dev Mode, forced rebuild, fresh container started 2026-08-03 04:35:29, uvicorn up, snapshot_download of 26 files restarted from 0% (download cache wiped as predicted). API confirms stage=RUNNING, devMode=False, sha=5031b537 (known-good image), cpu-basic. Log shows unauthenticated HF Hub download (no HF_TOKEN -> lower rate limits, slower fetch). Next: recommend HF_TOKEN secret on Space to speed the 116GB download, then resume Phase 0 polling."
+}

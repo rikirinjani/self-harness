@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "hf-storage-limits-2026",
+  "timestamp": "2026-07-31T15:25:21.413023+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 12,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "hf-storage-limits-2026",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--..........................--...--........--.-..-.........................................................-.--...-",
+  "action": "Researched current (2026) Hugging Face Hub storage limits: free tier = best-effort public storage + 100GB private (no per-repo limit, applies to all repo types incl. datasets); PRO \\/mo = up to 10TB public + 1TB private; storage grants/exceptions via datasets@/models@; largest dataset FineWeb ~50.4TB. Sources: hub docs storage-limits page + pricing page, verified verbatim."
+}

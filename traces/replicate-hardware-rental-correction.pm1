@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "replicate-hardware-rental-correction",
+  "timestamp": "2026-08-12T02:28:25.527045+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 2,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "replicate-hardware-rental-correction",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................-.--...-........................................................-.--...-",
+  "action": "Corrected Replicate assessment after founder pushback: fetched replicate.com/pricing directly — confirmed Replicate DOES rent dedicated hardware via private-model/Cog hosting (T4 .81/hr, L40S .51, A100 .04, H100 .49), billed for all online time (setup+idle+active) except fast-boot fine-tunes. Verdict unchanged: RunPod 3090/4090 cheapest (.22-0.34/hr) and raw-pod (runs reembed_modal.py as-is); Replicate 2.4-4x costlier + Cog packaging + idle billing. .95 stays dev/testing."
+}

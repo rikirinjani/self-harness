@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "librarian-embedding-hosting-pricing",
+  "timestamp": "2026-08-03T01:29:01.992441+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 420,
+  "tool_calls": 9,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "librarian-embedding-hosting-pricing",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--..........................--...--........-.--...-........................................................-.--...-",
+  "action": "Researched 2026 pricing for bge-base-en-v1.5 embedding hosting: Modal/Render/RunPod/HF/SageMaker; compared cold start and monthly cost at 1k and 10k embeds/day; recommended Modal T4 with RunPod runner-up"
+}

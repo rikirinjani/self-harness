@@ -1,0 +1,10 @@
+﻿{
+    "severity":  "medium",
+    "timestamp":  "2026-08-06T09:13:18.6594389+07:00",
+    "trace_id":  "macmini-ssh-blocked",
+    "category":  "external",
+    "summary":  "SSH survey of Mac mini blocked: connection timeout to 100.83.28.83:22; local tailscaled in NoState (cannot reach coordination server)",
+    "outcome":  "fail",
+    "agent":  "orchestrator",
+    "root_cause":  "Tailscale overlay not established on this Windows machine (tailscale status: \u0027unexpected state: NoState\u0027, health check: unable to connect to coordination server). Mac mini reachable only via Tailscale overlay; peer may also be offline."
+}

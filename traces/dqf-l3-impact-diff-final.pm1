@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-l3-impact-diff-final",
+  "timestamp": "2026-08-08T10:43:07.150533+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 8,
+  "key_files": [
+    "rag-queries/l3_output",
+    "api/drugs.json",
+    "qms/records/verifications"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-l3-impact-diff-final",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........-.--...-........-.--...-........................................-.--...-",
+  "action": "Reparsed 76 refreshed-class L3 profiles, compared against preserved pre-refresh profiles, found substantive changes for all 76 drugs, verified no merge into api/drugs.json, and recorded QMS verification evidence"
+}

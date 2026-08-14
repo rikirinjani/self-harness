@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-v2-fixes-round2",
+  "timestamp": "2026-07-16T06:34:30.882286+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 25,
+  "key_files": [
+    "drug-quantification-framework\\rag-queries\\raw\\README.md",
+    "drug-quantification-framework\\build_pdf_fpdf.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-v2-fixes-round2",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "RAG archiving (16 queries), formal math definition (Section 2), L2 causal role clarified, RAG methodology expanded (Section 10), limitation #9 closed — rebuilt PDF (14+1p, 994KB)"
+}

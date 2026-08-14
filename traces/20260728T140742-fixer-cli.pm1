@@ -1,0 +1,35 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260728T140742-fixer-cli",
+  "timestamp": "2026-07-28T14:07:42.927746+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 12,
+  "key_files": [
+    "paper/generate_figures.py",
+    "paper/fig6_design_space.py",
+    "paper/fig1_crucible.png",
+    "paper/fig2_sensitivity.png",
+    "paper/fig3_statemachine.png",
+    "paper/fig4_realtraces.png",
+    "paper/fig5_crossover.png",
+    "paper/fig6_design_space.png"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260728T140742-fixer-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................--.-..-.........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Regenerated fig1-fig5 and created new fig6_design_space.py for Pro Memoria paper"
+}

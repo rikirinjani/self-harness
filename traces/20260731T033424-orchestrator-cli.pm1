@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260731T033424-orchestrator-cli",
+  "timestamp": "2026-07-31T03:34:24.472653+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 6,
+  "key_files": [
+    "C:\\Users\\think\\.local\\share\\opencode\\opencode.db"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260731T033424-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Investigated missing IDX Whale session: confirmed ses_05453fa95ffe3MPu6zSd9XOxiX intact in opencode.db with 71 messages/305 parts under project 5624b132 (Project_v2 scope, 76 sessions); explained session-list scoping by launch directory; nothing was deleted"
+}

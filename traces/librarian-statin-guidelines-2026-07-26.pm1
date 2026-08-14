@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "librarian-statin-guidelines-2026-07-26",
+  "timestamp": "2026-07-26T03:49:43.652910+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 480,
+  "tool_calls": 7,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "librarian-statin-guidelines-2026-07-26",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--..........................--...--........-.--...-........................................................-.--...-",
+  "action": "Researched and compiled comprehensive structured summary of major guideline positions on statins for cardiovascular prevention — ACC/AHA, ESC/EAS, NICE, ADA, KDIGO — incl. intensity categories, per-statin LDL reduction, NNT, myopathy risk, DDI hierarchy, hydrophilic/lipophilic comparison, and key clinical trial data"
+}

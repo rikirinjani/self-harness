@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "epicure-mac-deploy",
+  "timestamp": "2026-07-21T05:28:39.080257+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 35,
+  "key_files": [
+    "C:\\Users\\think\\.config\\opencode\\skills\\qms-recorder\\SKILL.md",
+    "C:\\Users\\think\\.config\\opencode\\skills\\self-harness\\SKILL.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "epicure-mac-deploy",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "Set up Epicure-Core on Mac Mini: installed env, downloaded model, built epicure-server.py with 10 endpoints (neighbors, slerp, modes, pharmacy profile/substitute/compound, meal suggest, pairing, vocab), patched Bonsai Gateway with epicure route, fixed launchd plist to use system Python, tested all 5 pipeline endpoints through gateway. Knowledge graph stored."
+}

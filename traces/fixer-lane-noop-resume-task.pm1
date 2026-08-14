@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "fixer-lane-noop-resume-task",
+  "timestamp": "2026-07-31T14:04:00.315974+00:00",
+  "agent": "fixer",
+  "outcome": "fail",
+  "duration_s": 60,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {
+    "category": "process",
+    "severity": "medium"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "fixer-lane-noop-resume-task",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........-.--...-........--.-..-.........................................---..-..........--.-..-.........-.--...-",
+  "action": "Reindex resume-safety task: dispatched twice (resume of fix-1 + fresh fix-2); both sessions returned empty results with zero file changes, zero traces — lane not executing"
+}

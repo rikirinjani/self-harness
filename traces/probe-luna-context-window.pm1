@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "probe-luna-context-window",
+  "timestamp": "2026-08-13T03:05:22.138202+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 10,
+  "key_files": [
+    "Agentic Layer/morse/context_assembly/probe_luna.py",
+    "Agentic Layer/morse/context_assembly/luna_probe_results.json",
+    "Agentic Layer/morse/context_assembly/window_registry.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "probe-luna-context-window",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Probed gpt-5.6-luna context window: calibrated 5.79 chars/token, confirmed 71,155 prompt tokens OK, no context_length_exceeded at any size, ceiling probe TPM-walled at ~190k request tokens (200k TPM/min). Effective window >=58,982 perfect recall. Finding: 355k stall is TPM-bound not window-bound"
+}

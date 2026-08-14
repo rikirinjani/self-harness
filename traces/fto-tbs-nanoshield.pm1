@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "fto-tbs-nanoshield",
+  "timestamp": "2026-08-07T02:35:35.845688+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 12,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "fto-tbs-nanoshield",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--.........................---..-..........--.-..-.........................................................-.--...-",
+  "action": "Ran TBS patent/FTO scoping across Google Patents/PatSnap/freepatentsonline: CDT+ceria combos, UCF/Cerion nanoceria shield family, CN CDT filings, GOx synergy, beta-gal senescent targeting; verdict = conditional, no granted block on asymmetric killer+shield architecture, nearest near-misses UCF US9119391B1 + Unity US9969776B2"
+}

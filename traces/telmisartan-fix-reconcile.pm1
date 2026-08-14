@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "telmisartan-fix-reconcile",
+  "timestamp": "2026-08-10T05:15:16.334504+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 24,
+  "key_files": [
+    "api/drugs.json",
+    "rag-queries/l3_output/telmisartan_l3_profile.json",
+    "rag-queries/merge_l3.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "telmisartan-fix-reconcile",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Reconciled telmisartan override-rule fix: verified metabolic_effect=3, accepted full-reparse state (23 field changes vs 115439 baseline, all profile-consistent), confirmed merge idempotent, no nested profiles"
+}

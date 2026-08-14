@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "librarian-cokro-pl-feasibility",
+  "timestamp": "2026-08-11T08:36:10.556825+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "librarian-cokro-pl-feasibility",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--.........................................................................................................-.--...-",
+  "action": "Verified cokro.pl feasibility: .pl not registrable in Route 53 (absent from supported TLD list); confirmed NASK-reseller registration (~50-99 PLN/yr, no residency/entity requirement, individuals OK); cokro.pl available per NASK RDAP 404; Route 53 public hosted zone NS-delegation path confirmed; no .pl email blockers; .pl vs .com price comparison"
+}

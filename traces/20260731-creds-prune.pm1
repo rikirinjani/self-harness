@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260731-creds-prune",
+  "timestamp": "2026-07-31T12:43:08.297663+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 420,
+  "tool_calls": 12,
+  "key_files": [
+    "C:\\Users\\think\\.config\\opencode\\credentials.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260731-creds-prune",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Pruned credentials wing: removed dead HF (hf_hCJD + truncated dup), removed 4 unused DeepSeek keys + dead OpenRouter key per user; split llm-providers drawer into 7 per-service drawers (deepseek, opencode-go, bluesminds, openai, agnes, generated-key, dify); updated huggingface drawer; deleted old llm-providers drawer; synced local mirror credentials.md"
+}

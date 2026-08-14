@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-07-31T13:05:00",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "category": "workflow",
+  "severity": "low",
+  "summary": "L2b apply introduced 2 anchor regressions: metformin weight_effect set to 1 (anchor requires >=2) and empagliflozin weight_effect set to 2 (anchor requires ==3). Caught by the audit anchor gate immediately after apply; corrected to 2 and 3 with backup + manifest update.",
+  "root_cause": "Field-direction semantics mismatch: oracle reviewers scored weight_effect using adverse-direction semantics (lower = safer), while the audit anchors define weight_effect as benefit-direction (higher = more weight loss). Overrides were transcribed from oracle output without cross-checking against the audit anchor layer before apply.",
+  "trace_id": "dqf-l2b-review",
+  "remediation": "Corrected values in drugs.json (metformin 2, empagliflozin 3), updated l2b_overrides.json manifest with corrections + note, added anchor-driven correction notes. Prevention: field-direction semantics must be stated explicitly in future oracle review prompts and validated against anchors before apply."
+}

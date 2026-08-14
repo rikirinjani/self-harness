@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-deploy-macmini",
+  "timestamp": "2026-07-25T14:57:14.147928+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 18,
+  "key_files": [
+    "C:\\Users\\think\\Project\\drug-quantification-framework\\api\\server.py",
+    "C:\\Users\\think\\Project\\drug-quantification-framework\\api\\query-tool.html",
+    "C:\\Users\\think\\Project\\drug-quantification-framework\\api\\com.dqf.server.plist"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-deploy-macmini",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Deployed DQF query tool to Mac Mini: SCP'd server.py + UI + data, started on port 8765 via launchd for auto-restart; verified remote access via Tailscale at 100.83.28.83:8765"
+}

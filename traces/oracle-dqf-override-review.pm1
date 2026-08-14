@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "oracle-dqf-override-review",
+  "timestamp": "2026-08-10T03:41:20.941961+00:00",
+  "agent": "oracle",
+  "outcome": "pass",
+  "duration_s": 480,
+  "tool_calls": 8,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dqf_verify20.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "oracle-dqf-override-review",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........-.-.-.-.........................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Reviewed _score_risk override logic — verdict: candidate C is correct, apply globally, 4 metabolic_effect rows need separate keyword-model fix. Additional flaws noted in negation proximity, sentence splitting, and missing negation phrases."
+}

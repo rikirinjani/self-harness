@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "session-wrap-pubmed-reembed",
+  "timestamp": "2026-08-05T12:54:35.895872+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\sagemaker\\code\\run_reembed.sh",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\sagemaker\\model.tar.gz"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "session-wrap-pubmed-reembed",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........................................-.--...-........................................-.--...-",
+  "action": "Session wrap: deployed refreshed runner, confirmed GPU endpoint startup and trigger, preserved stalled-run evidence, deleted endpoint/config to stop billing, and recorded NCR/CAPA/QMS verification."
+}

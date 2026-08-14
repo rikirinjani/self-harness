@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "ora-9-l4-ah-backfill-adjudication",
+  "timestamp": "2026-07-31T09:41:26.484247+00:00",
+  "agent": "oracle",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 24,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\drug-quantification-framework\\api\\l4_schema_map.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ora-9-l4-ah-backfill-adjudication",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........-.-.-.-........................--.-..-.........--.-..-.........-.--...-........................................-.--...-",
+  "action": "READ-ONLY L4 evidence adjudication for trandolapril, methyldopa, terazosin, furosemide. Reviewed 32 backfill files (8 per drug) plus current drugs.json L4 blocks plus l4_schema_map. All 4 drugs confirmed — no backfill snippet provides a specific drug-specific quantitative BP/NNT/onset value to override current class-anchored values. Zero changes proposed."
+}

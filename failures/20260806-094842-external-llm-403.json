@@ -1,0 +1,10 @@
+﻿{
+    "severity":  "high",
+    "timestamp":  "2026-08-06T09:48:42.3014941+07:00",
+    "trace_id":  "macmini-engine-test",
+    "category":  "external",
+    "summary":  "Live chatbot bridge on Mac mini cannot answer: configured LLM (deepseek-v4-flash via opencode.ai/zen/go/v1) returns HTTP 403 RegionError (China-hosted model requires opt-in at workspace URL). Local Bonsai fallback not yet viable: reasoning model consumes default token budget (bridge llm-client sends no max_tokens -\u003e empty message.content), and max_tokens=4096 generation exceeded gateway upstream timeout (502).",
+    "outcome":  "fail",
+    "agent":  "orchestrator",
+    "root_cause":  "1) opencode gateway denies deepseek-v4-flash in this region until account opt-in. 2) Bonsai 27B is a verbose reasoning model; mlx_lm.server default max-tokens comes from the chat template, so bridge calls without max_tokens return empty content; large-budget calls exceed bonsai-gateway upstream timeout."
+}

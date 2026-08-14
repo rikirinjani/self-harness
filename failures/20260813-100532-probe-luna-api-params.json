@@ -1,0 +1,10 @@
+﻿{
+    "severity":  "low",
+    "timestamp":  "2026-08-13T03:05:32.0659864Z",
+    "trace_id":  "probe-luna-context-window",
+    "category":  "tool",
+    "summary":  "probe_luna.py first runs rejected by OpenAI API: max_tokens unsupported (use max_completion_tokens) and temperature=0 unsupported (only default 1 allowed) for gpt-5.6-luna. Fixed by switching to max_completion_tokens and removing temperature. Probe then succeeded.",
+    "outcome":  "fail",
+    "agent":  "orchestrator",
+    "root_cause":  "gpt-5.6-luna has nonstandard chat-completions surface vs typical OpenAI models (no max_tokens, temperature pinned to default). Assumed standard params instead of reading the error first."
+}

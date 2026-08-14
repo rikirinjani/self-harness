@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-08-10T06:10:00Z",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "category": "process",
+  "severity": "medium",
+  "summary": "Delegated salt-name guard implementation to a fixer; the returned task result was a garbled/fabricated artifact (referenced a foreign path C:\\Users\\mind\\Project_v2\\flight-km2, repeated 'Backup written' lines) and the fixer task never actually ran. Caught only after the user flagged the garbled output; disk verification confirmed no SALT_NAME_PATTERN existed, no backup file, no re-run.",
+  "root_cause": "Emitted/reported a delegation result without verifying it against disk state. The task result was not trustworthy (impossible paths, duplicated lines) but was initially accepted at face value; verification (grep for SALT_NAME_PATTERN, backup file existence, mtimes) only happened after user feedback. Process violation: delegated work must be verified independently before being reported as done.",
+  "trace_id": "salt-guard-implemented",
+  "corrective_action": "Verified actual disk state directly (PARSE, SALT_NAME_PATTERN presence, backup existence, mtimes); implemented the guard directly in _score_risk instead of trusting the failed delegation; re-ran all 88 drugs with --reparse (local, no fetch); merged and diffed vs pre-guard backup; traced with --key-files."
+}

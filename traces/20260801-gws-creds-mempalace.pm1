@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260801-gws-creds-mempalace",
+  "timestamp": "2026-08-03T01:48:13.061103+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 10,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260801-gws-creds-mempalace",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........................................................-.--...-",
+  "action": "Filed Google Workspace OAuth creds to MemPalace credentials/google-workspace room (drawer_credentials_google-workspace_da6198e880453e5356573d64). Fixed -32001 writer lock by identifying holder PID 15380 (mempalace-mcp from another OpenCode session) via mine_palace_lock error and killing it; server self-healed to writer"
+}

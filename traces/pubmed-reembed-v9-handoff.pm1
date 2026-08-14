@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "pubmed-reembed-v9-handoff",
+  "timestamp": "2026-08-06T02:36:29.016418+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 39600,
+  "tool_calls": 34,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\sagemaker\\code\\run_reembed.sh",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\sagemaker\\code\\inference.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pubmed-reembed-v9-handoff",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........-.--...-........................................-.--...-",
+  "action": "Handoff to v9 resume variant: v8 reached batch 51/100 (13.3M rows, 51%) then swapped to v9 (RESUME=1, 28h cap, staged tar) which re-downloaded, skipped 52 committed batches, and resumed embedding (batch 52 committed 02:33 UTC). Job now runs autonomously to completion (~11h) and self-deletes the endpoint. No further standing-by required."
+}

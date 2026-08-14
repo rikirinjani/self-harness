@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260801-gws-reauth",
+  "timestamp": "2026-08-03T01:44:00.192666+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 15,
+  "key_files": [
+    "C:\\Users\\think\\google_workspace_mcp.py",
+    "C:\\Users\\think\\.config\\opencode\\opencode.jsonc"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260801-gws-reauth",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Re-authed Google Workspace MCP: old refresh token dead (invalid_grant), OAuth client redirect_uri only accepts oauthplayground. User minted 2 fresh tokens via playground (gmail+drive, separate scopes). Updated google_workspace_mcp.py for per-service tokens (SERVICE_TOKENS map), updated opencode.jsonc env with GOOGLE_REFRESH_TOKEN_GMAIL/DRIVE, verified gmail+drive auth OK, listed inbox (201 msgs) and recent Drive files via direct API"
+}

@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "bpjs-v14-lookahead-correction",
+  "timestamp": "2026-08-10T03:33:10.114778+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1200,
+  "tool_calls": 16,
+  "key_files": [
+    "Project_v2\\IDX Whale\\t5-pipeline\\bpjs.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "bpjs-v14-lookahead-correction",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "v1.4 lookahead correction: caught via code review that v1.3 Part B 09:15-entry filter used full-morning volume + full-day value (not knowable at entry); dispatched fixer to rebuild with first15_vol_ratio5 + first15_value_idr; honest result: combined-v1 51 rows / 47% win / +0.25% vs 41% baseline — mentor checklist does NOT retain tradeable edge post-correction; failure record filed"
+}

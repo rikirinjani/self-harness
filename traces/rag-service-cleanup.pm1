@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "rag-service-cleanup",
+  "timestamp": "2026-07-27T13:18:28.883417+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 8,
+  "key_files": [
+    "C:\\Users\\think\\LocalNotebook\\rag-service"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "rag-service-cleanup",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Cleaned up rag-service: removed pubmed_chunks/ (2.1 GB, backed up at balade/pubmed-faiss-index) and space_app/ (44.5 MB, deployed at balade-pubmed-rag-bot). Kept data/ + chroma_full/ (local-only, 459 MB). Reclaimed ~2.15 GB."
+}

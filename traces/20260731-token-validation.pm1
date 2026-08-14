@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260731-token-validation",
+  "timestamp": "2026-07-31T12:16:25.415617+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 6,
+  "key_files": [
+    ".config/opencode/credentials.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260731-token-validation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Deleted 5 token-exposing opencode.db scan scripts + validation script/json; validated 17 tokens against provider APIs: HF 3 LIVE/2 dead (one truncated duplicate), DeepSeek 4 LIVE (.46 shared balance), openrouter 1 DEAD, 7 unverifiable (no public endpoint); updated credentials/huggingface + credentials/llm-providers drawers + local mirror with live/dead status; kaggle scripts contain no key"
+}

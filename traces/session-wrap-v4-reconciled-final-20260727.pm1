@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "session-wrap-v4-reconciled-final-20260727",
+  "timestamp": "2026-07-26T23:57:17.801269+00:00",
+  "agent": "designer",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 6,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "session-wrap-v4-reconciled-final-20260727",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........----...........................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Session-wrap: V4 query-tool.html reconciled and verified — all form controls and edge cases confirmed integrated. Session closed as reusable. No outstanding issues."
+}

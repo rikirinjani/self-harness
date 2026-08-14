@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260801-monitor-recent-catchup",
+  "timestamp": "2026-08-01T07:09:30.199532+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260801-monitor-recent-catchup",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................................................................-.--...-",
+  "action": "Answered how to monitor recent catch-up on pod: old single-shot script logs only at phase completion, so tail -f rebuild.log waits silently until 'catch-up: re-embedded N recent records' then 'Recovered committed state'; provided 10s heartbeat loop combining tail + nvidia-smi GPU oscillation + ps CPU/etime; expected recent phase 1.5-2.5h (~380 vec/s, 12.2GB bin) completing ~07:50-08:20 pod time; noted chunked script deployed after this run fixes the no-intermediate-logging gap"
+}

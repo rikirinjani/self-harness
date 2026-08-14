@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "session-bonsai-gateway",
+  "timestamp": "2026-07-20T04:53:36.224060+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 35,
+  "key_files": [
+    "bonsai-gateway.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "session-bonsai-gateway",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................................--...--........-.--...-........................................-.--...-",
+  "action": "Built & deployed bonsai-gateway.py on Mac Mini: FastAPI reverse proxy + model lifecycle manager on :8888. Routes: /v1→text, /images→image, /music→placeholder. Policy: 1-model-at-a-time with idle timeout. Fixed env-vars, prefix routing, adoption, binary proxy. Tested: text adoption, image generation via gateway returning PNG. Updated knowledge graph."
+}

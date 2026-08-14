@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "librarian-aws-2026-research",
+  "timestamp": "2026-08-11T08:17:54.747948+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 60,
+  "tool_calls": 14,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "librarian-aws-2026-research",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--.........................--.-..-.........--.-..-.........................................................-.--...-",
+  "action": "Researched 2026 AWS facts for Cokro SaaS: Route 53 .com pricing/credits, WorkMail shutdown (Apr30 2026 + Mar31 2027), SES pricing plans, Activate tiers + resale fine print, DNS flow. Delivered structured report."
+}

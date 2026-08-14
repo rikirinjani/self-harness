@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260805T010412-librarian-cli",
+  "timestamp": "2026-08-05T01:04:12.293340+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 3,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260805T010412-librarian-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--..........................--...--........-.--...-........................................................-.--...-",
+  "action": "Verified Kaggle GPU quotas (30h/wk, 12h session), T4x2/P100 availability (no L4), TP feasibility, HF_TOKEN secrets; feasibility of Qwen3-Coder-30B-A3B Q4 on T4/L4/dual-T4 vs AWS"
+}

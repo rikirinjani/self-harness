@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "pubmed-rag-data-sources",
+  "timestamp": "2026-07-21T06:10:04.297134+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 480,
+  "tool_calls": 20,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pubmed-rag-data-sources",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--..........................--...--........--.-..-.........................................................-.--...-",
+  "action": "Researched 6 data sources for PubMed medical RAG: PMC OA Subset (8M full-text), Dataclysm (35.7M pre-embedded), PubMed abstracts truncation status, MeSH terms, PKG 2.0, Semantic Scholar. Documented sizes, URLs, licenses, embedding status, and cost estimates."
+}

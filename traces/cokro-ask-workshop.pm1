@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "cokro-ask-workshop",
+  "timestamp": "2026-08-04T06:44:05.482452+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 420,
+  "tool_calls": 10,
+  "key_files": [
+    "Project_v2/COKRO/pitch-critique-and-fix-list.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "cokro-ask-workshop",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Responded to founder's 6 reactions to COKRO critique: explained M3 demographic contradiction (65% male smoking vs premium cash-pay target = two populations; split social-problem vs commercial-wedge narrative + TAM/SAM/SOM), delivered M6 seed-ask workshop (.5M/18-mo, two packages, milestone map, use-of-funds %, valuation range, 500-patient scaling path), confirmed Nicorette pivot (Tier 1 fully pharmacist-legal; rebase quit metrics to 25-35% NRT norm; price = program value not drug cost). Updated pitch-critique-and-fix-list.md M1/M3/M6 sections with founder decisions. Reconciled lib-2 (seed benchmarks) into the fix list."
+}

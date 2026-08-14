@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "cokro-deck-critique",
+  "timestamp": "2026-08-04T06:34:30.488369+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1500,
+  "tool_calls": 10,
+  "key_files": [
+    "Project_v2/COKRO/pitch-critique-and-fix-list.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "cokro-deck-critique",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Full investor-grade critique + fix list for COKRO seed pitch deck: 6 MUST-fix (doctor-Rx layer for varenicline/GLP-1, stale GLP-1 claim, demographic contradiction, wrong MEDVi reference, metric precision, missing ask), 6 SHOULD-fix, slide-by-slide plan, revised narrative; grounded in librarian fact-check + Indonesia market deep-dive"
+}

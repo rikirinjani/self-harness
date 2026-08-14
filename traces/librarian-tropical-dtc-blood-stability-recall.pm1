@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "librarian-tropical-dtc-blood-stability-recall",
+  "timestamp": "2026-08-03T09:23:19.315100+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 6,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "librarian-tropical-dtc-blood-stability-recall",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--..........................--...--........-.--...-........................................................-.--...-",
+  "action": "Recovered full tropical DTC blood stability briefing from opencode.db session ses_03915bfb8ffeWffECJroyuOVrR (24785-char briefing part prt_fc6ec7b1a001uTcRJFCiWch3v6) after orchestrator only received one-line takeaway; delivered complete 9-section briefing"
+}

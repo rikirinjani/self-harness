@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "cokro-no-doctors",
+  "timestamp": "2026-08-04T07:44:06.047322+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 480,
+  "tool_calls": 20,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\COKRO\\cokro-pitch-revised.html"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "cokro-no-doctors",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Removed all doctor/MD involvement from COKRO deck per user directive; dropped varenicline + GLP-1/Wegovy/Mounjaro entirely (user-confirmed). Three-way pharmacist-dietitian-psychologist model: S3 Helping Hand desc+tag to OTC/supplement scope, S3 caring desc no doctor visits, cover meta connective tissue, S5 Quit in 12 + Metabolik prog-includes, legal model paragraph to 2-item pharmacist scope, S6 stage-2 dispensing + stage-5 referral out, S8 Metabolik price to Rp1-2jt + pilot math Rp2.3B, S9 ask regulatory, S10 team + regulatory posture, moat table COKRO row. Kept competitor doctor-led rows + NOT-doctor-replacement positioning. Verified 296/296 divs, 10 sections, 3/3 tables, no stale tier refs."
+}

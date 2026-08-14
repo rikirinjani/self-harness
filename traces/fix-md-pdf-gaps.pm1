@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "fix-md-pdf-gaps",
+  "timestamp": "2026-07-28T14:26:48.167550+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\morse\\paper\\generate_pdf.py",
+    "C:\\Users\\think\\Agentic Layer\\morse\\paper\\pro-memoria.pdf"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "fix-md-pdf-gaps",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Cross-referenced MD vs PDF: fixed §2.4 (Hybrid Morse-Braille) missing from generate_pdf.py, updated §6 Conclusion to match MD (removed PM-S/PM-View). Regenerated PDF."
+}

@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260803-aws-region-setup",
+  "timestamp": "2026-08-03T03:28:01.814581+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "Project_v2/LocalNotebook/rag-service/scripts/MIGRATION_PLAN.md",
+    "~/.aws/config"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260803-aws-region-setup",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "AWS CLI 2.36.14 confirmed installed at LOCALAPPDATA path (not on PATH in this session), set default region ap-southeast-1 (Singapore) via aws configure set, updated MIGRATION_PLAN.md region to ap-southeast-1 for S3/Lambda stack + region decision note"
+}

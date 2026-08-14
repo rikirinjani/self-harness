@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm-adapter-built",
+  "timestamp": "2026-08-02T03:58:49.930647+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm-adapter\\pm_adapter\\adapter.py",
+    "C:\\Users\\think\\Agentic Layer\\pm-adapter\\pm_adapter\\rag.py",
+    "C:\\Users\\think\\Agentic Layer\\pm-adapter\\pm_adapter\\events.py",
+    "C:\\Users\\think\\Agentic Layer\\pm-adapter\\pm_adapter\\schemas\\default.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm-adapter-built",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "PM-1 adapter built: standalone package at pm-adapter/, 4 modes (english/json/rag/events), schema-driven, zero LLM calls, pip-installable. Verified against real traces."
+}

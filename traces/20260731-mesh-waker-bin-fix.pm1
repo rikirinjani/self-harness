@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260731-mesh-waker-bin-fix",
+  "timestamp": "2026-07-31T06:07:22.208902+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3000,
+  "tool_calls": 12,
+  "key_files": [
+    "Project_v2/self-harness/tools/mesh_waker.py",
+    "Project_v2/self-harness/tools/mesh_waker_e2e.log"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260731-mesh-waker-bin-fix",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Fixed waker WinError 2: OPENCODE_BIN shadowing between mesh_waker.py and mesh_signal_daemon.py (daemon fell back to bare 'opencode'); set env before daemon import; verified live E2E: ticket 9511f1f582ee4fab -> hub -> real opencode.exe run -> exit 0 -> result posted; restarted MeshWaker scheduled task"
+}

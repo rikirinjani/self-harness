@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm-adapter-bugfix2",
+  "timestamp": "2026-08-02T04:40:13.047196+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 240,
+  "tool_calls": 10,
+  "key_files": [
+    "pm-adapter/pm_adapter/adapter.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm-adapter-bugfix2",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................--.-..-.........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Fixed 2 bugs in adapter.py: (1) _import_failsafe() replaced with single clean import from pro_memoria.opencode_plugin.failsafe, removed sys.path hacking, _MORSE_ROOT, try/except chain (verified morse repo refactored - failsafe.py now inside pro_memoria/opencode_plugin/); (2) _decode_bytes() no longer raises on single-bit correction - returns corrected bytes with logging.warning, raises ValueError only on unrecoverable double-bit errors, defensive guard for corrected+uncorrectable combo. Also restored load_schema() which was accidentally dropped during an edit, and added import logging. User's ALL PASSED script passes, 12 pytest tests pass, double-bit still raises."
+}

@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260801-pod-credit-gap-analysis",
+  "timestamp": "2026-08-01T15:04:10.673893+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260801-pod-credit-gap-analysis",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................................................................-.--...-",
+  "action": "Credit analysis: confirmed user math (.20 = 12h42m,  at Aug 2 03:42 UTC); flagged gap vs job completion Aug 2 ~15:00-17:00 UTC (11-13h work lost if  hits);  stop destroys instance + wipes /tmp (32GB raw + indexes) = full rebuild from scratch; remaining work ~24-26h x .57/h = .7-14.8 vs .20 available = ~-8 shortfall; recommended top up  NOW (not before sleep) = .20 = 30h runway to Aug 2 ~21:00 with margin for upload;  top-up is knife-edge"
+}

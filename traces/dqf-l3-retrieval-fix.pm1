@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-l3-retrieval-fix",
+  "timestamp": "2026-07-31T04:09:01.000217+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1500,
+  "tool_calls": 30,
+  "key_files": [
+    "Project_v2/drug-quantification-framework/rag-queries/extract_l3.py",
+    "Project_v2/drug-quantification-framework/rag-queries/l3_output/glyburide_l3_profile.json",
+    "Project_v2/drug-quantification-framework/rag-queries/l3_output/hydrochlorothiazide_l3_profile.json",
+    "Project_v2/drug-quantification-framework/rag-queries/l3_output/chlorthalidone_l3_profile.json",
+    "Project_v2/drug-quantification-framework/rag-queries/l3_output/atenolol_l3_profile.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-l3-retrieval-fix",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........--.-..-.........................................-.--...-",
+  "action": "Implemented+verified DQF L3 retrieval fix: drug-anchored EUtils queries, relevance gate (title OR >=2 mentions), <30% threshold EUtils refetch. glyburide 0->78%, chlorthalidone bradycardia->none, atenolol metabolic 3->2, rosmarinic/HCQ/uridine excluded. Fixed residual HCTZ filter gap directly."
+}

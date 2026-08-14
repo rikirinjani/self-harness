@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "orchestrator-b4-real-data",
+  "timestamp": "2026-08-13T12:27:56.835443+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "scripts/check_decisions.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "orchestrator-b4-real-data",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "B4: Real data validation. 4 decisions in pm-adapter.jsonl. All active, correct. Issue: source=? on all 4 (seeder doesn't set source field)"
+}

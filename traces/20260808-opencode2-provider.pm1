@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260808-opencode2-provider",
+  "timestamp": "2026-08-08T04:24:05.608550+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 8,
+  "key_files": [
+    "C:\\Users\\think\\.config\\opencode\\opencode.jsonc"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260808-opencode2-provider",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Tested new opencode API key (sk-WIsWI...): valid — bare urllib hit Cloudflare 403 (error 1010 bot-block), with browser headers models list OK (20 models incl deepseek-v4-flash/pro, glm-5.1/5.2, kimi-k2.6, qwen3.8-max, gpt-5.6-luna, grok-4.5) and chat returned structured RegionError (China-hosted model opt-in) proving auth works. Added 'opencode2' provider to opencode.jsonc (same zen/go/v1 baseURL, new key, 10 models). Validated JSONC (comment+trailing-comma tolerant). Restart needed to use."
+}

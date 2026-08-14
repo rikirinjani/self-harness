@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "parser-rewrite",
+  "timestamp": "2026-07-15T05:09:32.689632+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 8,
+  "key_files": [
+    "t5_pipeline/parser.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "parser-rewrite",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Rewrote parse_t5_pdf() for POJK 4/2024 single-entity PDF format — regex-based extraction, verified against 9 real PDFs"
+}

@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "session-wrap-20260810-saltguard",
+  "timestamp": "2026-08-10T06:18:43.092936+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 7200,
+  "tool_calls": 60,
+  "key_files": [
+    "rag-queries/extract_l3.py api/drugs.json rag-queries/l3_output/_backups/drugs_20260810_saltguard_pre.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "session-wrap-20260810-saltguard",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........-.--...-........................................-.--...-",
+  "action": "Session wrap: answered PMC full-text vs abstract question (lib-1 reconciled), planned full-text corpus sizing (raw ~200-350GB / index ~50-100GB, 2-4x abstract index), confirmed abstract backfill need pre-1995, closed outstanding items (MemPalace drawer retry, failure record for unverified delegation artifact, session-wrap trace). All 4 specialist sessions reconciled."
+}

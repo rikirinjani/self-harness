@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "lib-myostatin-poststroke",
+  "timestamp": "2026-08-06T02:14:18.266755+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 10,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "lib-myostatin-poststroke",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--.........................---..-..........--.-..-.........................................................-.--...-",
+  "action": "Researched myostatin in post-stroke: paretic-limb myostatin rise (PMID 21164115), PINTA745 rescued mass+function in MCAO mice (Desgeorges 2017), chronic-phase paradox lower myostatin, stroke sarcopenia 42-50% prevalence, inhibitor+NES combination untested"
+}

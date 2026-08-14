@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "session-wrap-paper-complete",
+  "timestamp": "2026-07-28T14:28:13.244889+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\morse\\paper\\pro-memoria.md",
+    "C:\\Users\\think\\Agentic Layer\\morse\\paper\\pro-memoria.pdf",
+    "C:\\Users\\think\\Agentic Layer\\morse\\paper\\generate_pdf.py",
+    "C:\\Users\\think\\Agentic Layer\\morse\\paper\\fig6_design_space.png"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "session-wrap-paper-complete",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Session wrap: paper rebuild (MD+PDF with BabelTele, invariants, Machine-Native Communication Taxonomy, case study, 6 figures), reviewer feedback applied, MD-PDF cross-ref gap fixes (§2.4 Hybrid, §6 Conclusion). 518 traces, 0 untraced."
+}

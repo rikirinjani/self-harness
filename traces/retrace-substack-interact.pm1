@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "retrace-substack-interact",
+  "timestamp": "2026-07-20T02:58:25.384814+00:00",
+  "agent": "general",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "substack-interact/package-lock.json",
+    "substack-interact/package.json",
+    "substack-interact/substack-interact-mcp.js"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "retrace-substack-interact",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-.--...-........................................................-.--...-........................................-.--...-",
+  "action": "Retroactive: substack-interact project files"
+}

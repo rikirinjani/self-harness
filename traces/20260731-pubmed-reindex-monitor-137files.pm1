@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260731-pubmed-reindex-monitor-137files",
+  "timestamp": "2026-07-31T21:01:31.528129+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 1,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260731-pubmed-reindex-monitor-137files",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Monitor: 137/1334 files committed, 4.08M vectors (1.13M main + 2.95M recent); explained rising (vec/s) is cumulative-main artifact, real rate steady ~240-270 vec/s; periodic save at n1201 (10-file boundary) confirmed; ETA ~27-28h -> Aug 2 late evening local"
+}

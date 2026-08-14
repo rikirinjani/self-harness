@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "librarian-aws-free-tier-2026",
+  "timestamp": "2026-08-11T08:45:49.154210+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 8,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "librarian-aws-free-tier-2026",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--.........................................-.--...-........................................................-.--...-",
+  "action": "Retroactive (lib-9, ses_0100362fbffeKkYGWlm2le481C): AWS free-for-1-year stack research for Cokro. Verified 2026: classic 12-month free tier RETIRED 2025-07-15 for new accounts ->  credits ( signup + up to  onboarding) + 6-month free plan + permanent always-free tier (Lambda 1M/400K GB-s, DynamoDB 25GB, CloudFront 1TB+10M, SNS/SQS 1M, Cognito 50K MAU, Amplify, 100GB egress). SES free tier REMOVED 2026-07-21 (.16/1K Essentials). Route53 zones .50/mo not free. Bedrock no free tier. LanceDB corpus ~90-200GB (28.4M rows) cannot be free; verify account ownership. Activate requires PAID plan. Recommended  stack: S3 static+CloudFront, DynamoDB+Cognito, Lambda+SNS/SQS, Zoho email, Cloudflare free DNS."
+}

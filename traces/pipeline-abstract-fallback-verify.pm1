@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pipeline-abstract-fallback-verify",
+  "timestamp": "2026-08-06T23:40:05.842181+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "Project_v2/LocalNotebook/rag-service/query_lancedb_fulltext.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pipeline-abstract-fallback-verify",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Verified abstract-fallback fix end-to-end: ran query_lancedb_fulltext.py with LLM on ketamine query; all 3 hits lacked PMC full text yet DeepSeek answer fully grounded citing all 3 PMIDs"
+}

@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "freelance-draft-cokro-removal",
+  "timestamp": "2026-08-07T05:32:26.804783+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 6,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\freelance-agent-ops\\service-offering-playbook.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "freelance-draft-cokro-removal",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Removed COKRO from freelance draft (proof table + footer) at user request; disclosed which price figures are sourced vs tiering vs unsourced estimates"
+}

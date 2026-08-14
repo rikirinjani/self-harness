@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "librarian-hf-pro-2026-cokro",
+  "timestamp": "2026-08-12T01:54:28.990294+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 6,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "librarian-hf-pro-2026-cokro",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--.........................................-.--...-........................................................-.--...-",
+  "action": "Retroactive (lib-2, ses_00c53eea9ffe1FEzNg45s4Bavj): HF Pro 2026 utilization research for Cokro. Verified: Pro /mo = 20x inference credits (/mo), ZeroGPU 40min/day 10 spaces, 1TB private storage, Dev Mode. Recommendation: #1 switch embeddings to serverless hf-inference BAAI/bge-base-en-v1.5 (feature-extraction, ~.0016/1M tok,  credit ~1B tokens, frees t4g.micro RAM bottleneck); #2 batch re-embed before Aug ends; #3 ZeroGPU demo-only (40min/day cap, /hr overquota); don't renew after Aug unless using storage/ZeroGPU/rate-limit perks. Migration: hf-inference pay-as-you-go or OpenAI text-embedding-3-small .02/1M."
+}

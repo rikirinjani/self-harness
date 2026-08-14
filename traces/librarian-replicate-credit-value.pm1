@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "librarian-replicate-credit-value",
+  "timestamp": "2026-08-12T02:26:43.961856+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 5,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "librarian-replicate-credit-value",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--.........................................-.--...-........................................................-.--...-",
+  "action": "Retroactive (lib-5, ses_00c35c50bffe4q5Q6FCccBa0Mn): Replicate .95 value for Cokro embedding. Verified 2026: Replicate = per-second GPU billing (L40S .000975/s, T4 .000225/s, H100 .001525/s). nateraw/bge-large-en-v1.5 on L40S ~.00098/1s prediction. Backfill (456K chunks/233M tok) via Replicate ~-230; full corpus (59M chunks/30B tok) ~,000-29,000. .95 covers ~0.7% of backfill, ~3,000 single calls. Ranking for backfill: HF serverless ~.37 == RunPod 4090 ~.06-0.17 >> Replicate (100-600x worse). Use .95 for dev/test/vision, not batch."
+}

@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "pilot-dispatch-worker",
+  "timestamp": "2026-08-13T23:36:53.765291+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3600,
+  "tool_calls": 0,
+  "key_files": [
+    "pm-adapter/pm_adapter/dispatch.py",
+    "pm-adapter/docs/PM-ADAPTER-ORACLE-WORKAROUND.md",
+    "pm-adapter/scripts/test_dispatch.py",
+    "pm-adapter/scripts/test_api_key.py",
+    "pm-adapter/scripts/analyze_log.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pilot-dispatch-worker",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-........................--.-..-.........................................-.--...-",
+  "action": "Built dispatch_worker() — closed-loop PM-1 integration. 22 events logged, 7/12 completed, 5 empty (billing). Key finding: context packet must include file contents, not just project state. API key reading from opencode.jsonc. Fixed encode_handoff, max_completion_tokens. Pushed to origin."
+}

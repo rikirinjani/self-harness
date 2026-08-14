@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "l4-clinical-diabetes-22",
+  "timestamp": "2026-07-31T08:45:09.620741+00:00",
+  "agent": "oracle",
+  "outcome": "pass",
+  "duration_s": 480,
+  "tool_calls": 22,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "l4-clinical-diabetes-22",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........-.-.-.-.........................--...--........--.-..-.........................................................-.--...-",
+  "action": "Quantified L4 clinical outcomes for 22 diabetes drugs from l2b digest evidence + pharmacology — a1c reductions, indications, success rates, onset timelines across SGLT2i, GLP-1, DPP-4i, TZD, SU, insulin, and other classes"
+}

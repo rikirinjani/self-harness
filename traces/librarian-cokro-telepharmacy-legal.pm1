@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "librarian-cokro-telepharmacy-legal",
+  "timestamp": "2026-08-04T07:48:37.415885+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 1500,
+  "tool_calls": 9,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "librarian-cokro-telepharmacy-legal",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--.........................---..-..........-.--...-........................................................-.--...-",
+  "action": "Researched telepharmacy legality in Indonesia: no dedicated telepharmacy regulation exists; Kepmenkes 4829/2021 (expired COVID KMK) has only textual telefarmasi section; PP 28/2024 telekesehatan/telemedisin framework + draft RPMK (Sept 2024 public hearing) explicitly contemplates telefarmasi; Permenkes 20/2019 still in force facility-to-facility; PerBPOM 8/2020 + Permenkes 14/2021 PSEF govern online pharmacy; corrected founder errors (Permenkes 26/2018=OSS not pharmacy; 4829 expired); PMK 24/2022 RME/SATUSEHAT applies to apotek; verdict: telepharmacy defensible term with caveats"
+}
