@@ -38,8 +38,8 @@ Introduce a **constraint-restating + diff-against-spec** step in the fixer workf
 3. The restatement and self-check must be included in the trace output.
 
 Target files:
-- `.opencode/AGENTS.md` or project-level agent instructions (human approval required).
-- Optionally add a lightweight harness guard: `tools/constraint_check.py` that parses a spec snippet and flags missing constraints.
+- `rules/fixer-workflow.md` — project-level fixer workflow instruction (approved by human).
+- `tools/constraint_check.py` — lightweight harness guard that parses a spec snippet and reports missing constraints.
 
 Expected behavior change: executor scores on `faithfulness` and `actionability` should move closer to validator scores because the agent is forced to demonstrate that it followed constraints rather than assuming it did.
 
@@ -76,6 +76,10 @@ Rollback: `git revert {commit-sha}` or restore previous version of the affected 
 - [x] Human has reviewed this proposal.
 - [x] Human approves implementation.
 - [ ] Human approves deployment after re-validation.
+
+**Implementation artifacts:**
+- `rules/fixer-workflow.md`
+- `tools/constraint_check.py`
 
 **Approver:** rikirinjani  
 **Date:** 2026-09-14  
