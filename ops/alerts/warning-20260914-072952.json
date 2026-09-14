@@ -1,0 +1,14 @@
+[
+  {
+    "level": "warning",
+    "metric": "avg_diff",
+    "value": 0.69,
+    "threshold": 0.5
+  },
+  {
+    "level": "warning",
+    "metric": "pending_promotions",
+    "value": 1,
+    "threshold": 1
+  }
+]

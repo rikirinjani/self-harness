@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-09-14T07:29:52.528350+00:00Z",
+  "flagged_benchmarks": 3,
+  "avg_diff": 0.69,
+  "pass_rate": 1.0,
+  "failure_records": 107,
+  "trace_records": 1772,
+  "pending_promotions": 1
+}

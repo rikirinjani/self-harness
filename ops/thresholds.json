@@ -1,0 +1,22 @@
+{
+  "avg_diff": {
+    "warning": 0.5,
+    "critical": 1.0
+  },
+  "failure_records_delta": {
+    "warning": 5,
+    "critical": 10
+  },
+  "trace_records_delta": {
+    "warning": 50,
+    "critical": 100
+  },
+  "pending_promotions": {
+    "warning": 1,
+    "critical": 3
+  },
+  "pass_rate": {
+    "warning": 0.95,
+    "critical": 0.90
+  }
+}

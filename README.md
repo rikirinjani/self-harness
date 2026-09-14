@@ -30,9 +30,7 @@ self-harness/
 | 4 | Weakness Miner | ✅ Complete |
 | 5 | Harness Architect | ✅ Complete |
 | 6 | Controlled Evolution | ✅ Complete |
-| 7 | Operations | 🔄 Active |
-| 8 | Limited Automation | 🔲 Gated (40 props + 6mo) |
-| 7 | Operations | 🔲 Pending |
+| 7 | Operations | ✅ Complete |
 | 8 | Limited Automation | 🔲 Gated (40 props + 6mo) |
 
 ## Constitutional Rules
