@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "task-006-freeze-complete",
+  "timestamp": "2026-09-14T05:50:54.361629+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3600,
+  "tool_calls": 0,
+  "key_files": [
+    "experiments/pm1-rx/harness/CONFIRMATORY_001_FREEZE_RECORD.md",
+    "experiments/pm1-rx/harness/CONFIRMATORY_001_REPORT.md",
+    "experiments/pm1-rx/harness/REPRODUCIBILITY_MANIFEST.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task-006-freeze-complete",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-........................-.--...-........................................-.--...-",
+  "action": "Task 006 COMPLETE: Experiment 001 FROZEN. Dataset archive confirmatory_001_FROZEN.tar.gz sha256 4364fd88... (52515 files, 17MB); code snapshot pm1rx_code_FROZEN.tar.gz sha256 db628b6c...; SHA256SUMS.txt manifest; reproducibility verified byte-identical. Freeze record CONFIRMATORY_001_FREEZE_RECORD.md (status FROZEN, modification PROHIBITED, E negative result preserved, 8 limitations retained, 3 deviations declared). Git tag pm1-rx-confirmatory-001-final -> 8304262. No further experimentation launched."
+}

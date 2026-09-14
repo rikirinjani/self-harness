@@ -1,6 +1,6 @@
 # Score Comparison: Phase 2 Executor vs GPT Validator
 
-Generated: 2026-09-14 12:40
+Generated: 2026-09-14 12:51
 
 | Benchmark | Axes Matched | Exec Avg | GPT Avg | Diff | Exec Verdict | GPT Verdict |
 |-----------|-------------|----------|---------|------|--------------|-------------|

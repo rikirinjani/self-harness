@@ -1,0 +1,11 @@
+﻿{
+  "timestamp": "2026-09-14T05:44:43.455986+00:00",
+  "failure_id": "82b8b9b7-e0dd-45cb-869f-15f5b0b98f3d",
+  "trace_id": "sync-phase2-phase3-plan",
+  "category": "infrastructure",
+  "severity": "minor",
+  "root_cause": "oracle subagent API credit exhaustion prevented delegated Phase 3 planning",
+  "trace_summary": "Phase 3 planning was delegated to @oracle, but the session errored due to zero API credits. Orchestrator completed the planning deliverables as fallback.",
+  "failure_signature": {"agent":"oracle","cause":"api_credit_exhaustion","fallback":"orchestrator_direct_output"},
+  "remediation": "Replenish API credits; in the interim use orchestrator fallback for planning docs and avoid spawning oracle until credits are restored."
+}
