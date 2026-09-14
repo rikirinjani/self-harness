@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Harness Improvement Proposal",
+  "description": "Structured representation of a harness change proposal for the Self-Harness program.",
+  "type": "object",
+  "required": [
+    "proposal_id",
+    "weakness_ids",
+    "affected_agent",
+    "proposed_by",
+    "date",
+    "status",
+    "change",
+    "verification",
+    "risks"
+  ],
+  "properties": {
+    "proposal_id": {
+      "type": "string",
+      "pattern": "^P-[0-9]{3}$"
+    },
+    "weakness_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "affected_agent": {
+      "type": "string"
+    },
+    "proposed_by": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "approved", "shadow", "deployed", "rejected"]
+    },
+    "evidence": {
+      "type": "object",
+      "properties": {
+        "benchmarks": { "type": "array", "items": { "type": "string" } },
+        "executor_avg": { "type": "number" },
+        "validator_avg": { "type": "number" },
+        "diff": { "type": "number" },
+        "axes": { "type": "array", "items": { "type": "string" } },
+        "failure_records": { "type": "array", "items": { "type": "string" } },
+        "trace_records": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "change": {
+      "type": "object",
+      "required": ["description", "target_files"],
+      "properties": {
+        "description": { "type": "string" },
+        "target_files": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "expected_behavior": { "type": "string" }
+      }
+    },
+    "verification": {
+      "type": "object",
+      "required": ["primary_benchmark", "expected_outcome"],
+      "properties": {
+        "primary_benchmark": { "type": "string" },
+        "secondary_benchmarks": { "type": "array", "items": { "type": "string" } },
+        "expected_outcome": { "type": "string" }
+      }
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "risk": { "type": "string" },
+          "likelihood": { "type": "string", "enum": ["low", "medium", "high"] },
+          "impact": { "type": "string", "enum": ["low", "medium", "high"] },
+          "mitigation": { "type": "string" }
+        }
+      }
+    },
+    "approval": {
+      "type": "object",
+      "properties": {
+        "reviewed": { "type": "boolean" },
+        "implementation_approved": { "type": "boolean" },
+        "deployment_approved": { "type": "boolean" },
+        "approver": { "type": "string" },
+        "date": { "type": "string" }
+      }
+    },
+    "post_implementation": {
+      "type": "object",
+      "properties": {
+        "commit": { "type": "string" },
+        "revalidation_result": { "type": "string" },
+        "measured_diff_after": { "type": "number" },
+        "decision": { "type": "string", "enum": ["deployed", "rejected", "needs_iteration"] }
+      }
+    }
+  }
+}

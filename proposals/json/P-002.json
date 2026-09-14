@@ -1,0 +1,44 @@
+{
+  "proposal_id": "P-002",
+  "weakness_ids": ["WM-2026-09-14-v2-001"],
+  "affected_agent": "fixer",
+  "proposed_by": "orchestrator",
+  "date": "2026-09-14",
+  "status": "deployed",
+  "evidence": {
+    "benchmarks": ["BENCH-C-01", "BENCH-C-02", "BENCH-C-04"],
+    "executor_avg": 4.96,
+    "validator_avg": 2.41,
+    "diff": 2.55,
+    "axes": ["correctness", "actionability", "faithfulness"],
+    "failure_records": ["failures/2026-08-30-execution-fixer-silent-empty.json", "failures/2026-08-30-execution-fixer-silent-empty-2.json"],
+    "trace_records": ["traces/fix-1-reconcile.pm1", "traces/20260819T211028-Fixer-cli.pm1"]
+  },
+  "change": {
+    "description": "Make the P-001 fixer workflow machine-enforceable: write constraints.md before editing, run tools/constraint_check.py after editing, and refuse to mark complete if any constraint is missing.",
+    "target_files": ["rules/fixer-workflow.md", "tools/constraint_check.py"],
+    "expected_behavior": "Fixer cannot silently skip constraint verification; coverage must be demonstrated."
+  },
+  "verification": {
+    "primary_benchmark": "BENCH-C-01",
+    "secondary_benchmarks": ["BENCH-C-02", "BENCH-C-04"],
+    "expected_outcome": "Average diff for BENCH-C-01/02/04 drops below 1.0."
+  },
+  "risks": [
+    {"risk": "constraint_check.py gives false negatives", "likelihood": "medium", "impact": "low", "mitigation": "Keep parser simple; allow human override."},
+    {"risk": "Extra file clutter", "likelihood": "low", "impact": "low", "mitigation": "Store constraints.md in task workdir or trace directory."}
+  ],
+  "approval": {
+    "reviewed": true,
+    "implementation_approved": true,
+    "deployment_approved": true,
+    "approver": "rikirinjani",
+    "date": "2026-09-14"
+  },
+  "post_implementation": {
+    "commit": "90d9796",
+    "revalidation_result": "pass",
+    "measured_diff_after": 0.21,
+    "decision": "deployed"
+  }
+}

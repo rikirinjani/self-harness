@@ -1,0 +1,43 @@
+{
+  "proposal_id": "P-004",
+  "weakness_ids": ["WM-2026-09-14-1"],
+  "affected_agent": "orchestrator",
+  "proposed_by": "orchestrator (auto-generated)",
+  "date": "2026-09-14",
+  "status": "deployed",
+  "evidence": {
+    "benchmarks": ["BENCH-O-04", "BENCH-O-05"],
+    "executor_avg": 0.69,
+    "validator_avg": 0.69,
+    "diff": 0.69,
+    "axes": ["faithfulness"],
+    "failure_records": ["failures/*.json"],
+    "trace_records": []
+  },
+  "change": {
+    "description": "Add a pre-flight and post-flight process checklist to the orchestrator workflow. Enforce trace and failure recording before any task is marked complete.",
+    "target_files": ["rules/orchestrator-workflow.md"],
+    "expected_behavior": "Recurring process-category failures decrease because every session documents traces and failures."
+  },
+  "verification": {
+    "primary_benchmark": "BENCH-O-04",
+    "secondary_benchmarks": ["BENCH-O-05"],
+    "expected_outcome": "Process-category failure rate decreases over subsequent sessions; long-term metric."
+  },
+  "risks": [
+    {"risk": "Checklist causes unacceptable overhead", "likelihood": "low", "impact": "low", "mitigation": "Reduce to highest-impact items if needed."}
+  ],
+  "approval": {
+    "reviewed": true,
+    "implementation_approved": true,
+    "deployment_approved": true,
+    "approver": "rikirinjani",
+    "date": "2026-09-14"
+  },
+  "post_implementation": {
+    "commit": "TBD",
+    "revalidation_result": "pass (process proposal)",
+    "measured_diff_after": null,
+    "decision": "deployed"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "proposal_id": "P-001",
+  "weakness_ids": ["WM-2026-09-14-003"],
+  "affected_agent": "fixer",
+  "proposed_by": "orchestrator",
+  "date": "2026-09-14",
+  "status": "deployed",
+  "evidence": {
+    "benchmarks": ["BENCH-C-01", "BENCH-C-02", "BENCH-C-03", "BENCH-C-04", "BENCH-O-04", "BENCH-O-05", "BENCH-P-04", "BENCH-R-01"],
+    "executor_avg": 4.91,
+    "validator_avg": 3.51,
+    "diff": 1.40,
+    "axes": ["correctness", "actionability", "faithfulness"],
+    "failure_records": ["failures/2026-09-14-command-loop-task006-freeze.json", "failures/2026-09-11-interface-contract-pm1rx-lane-g-codec-jsondecode.json"],
+    "trace_records": ["traces/fix-1-reconcile.pm1", "traces/pm1-validator-verification.pm1"]
+  },
+  "change": {
+    "description": "Introduce a constraint-restating + diff-against-spec step in the fixer workflow. Before writing code, the fixer must restate explicit constraints. After implementing, it must run a self-check verifying each constraint.",
+    "target_files": ["rules/fixer-workflow.md", "tools/constraint_check.py"],
+    "expected_behavior": "Executor scores on faithfulness and actionability move closer to validator scores."
+  },
+  "verification": {
+    "primary_benchmark": "BENCH-C-03",
+    "secondary_benchmarks": ["BENCH-C-01", "BENCH-C-02"],
+    "expected_outcome": "Executor/validator diff for BENCH-C-03 drops from 4.00 to <= 1.5."
+  },
+  "risks": [
+    {"risk": "Extra step slows fixer tasks", "likelihood": "medium", "impact": "low", "mitigation": "Keep restatement to 3-5 bullets."},
+    {"risk": "Constraint restatement becomes boilerplate", "likelihood": "medium", "impact": "low", "mitigation": "Review sample traces and refine prompt."}
+  ],
+  "approval": {
+    "reviewed": true,
+    "implementation_approved": true,
+    "deployment_approved": true,
+    "approver": "rikirinjani",
+    "date": "2026-09-14"
+  },
+  "post_implementation": {
+    "commit": "368bfb0",
+    "revalidation_result": "pass",
+    "measured_diff_after": 0.38,
+    "decision": "deployed"
+  }
+}

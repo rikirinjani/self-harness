@@ -27,7 +27,8 @@ self-harness/
 | 1 | Observation Infrastructure | ✅ Complete |
 | 2 | Benchmark Runner | ✅ Complete |
 | 3 | Validator | ✅ Complete |
-| 4 | Weakness Miner | 🔄 Active |
+| 4 | Weakness Miner | ✅ Complete |
+| 5 | Harness Architect | 🔄 Active |
 | 5 | Harness Architect | 🔲 Pending |
 | 6 | Controlled Evolution | 🔲 Pending |
 | 7 | Operations | 🔲 Pending |

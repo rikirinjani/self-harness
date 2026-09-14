@@ -1,0 +1,44 @@
+{
+  "proposal_id": "P-003",
+  "weakness_ids": ["WM-2026-09-14-v2-004"],
+  "affected_agent": "validator",
+  "proposed_by": "orchestrator",
+  "date": "2026-09-14",
+  "status": "deployed",
+  "evidence": {
+    "benchmarks": ["BENCH-C-03", "BENCH-R-01"],
+    "executor_avg": 4.88,
+    "validator_avg": 1.0,
+    "diff": 3.88,
+    "axes": ["faithfulness", "completeness", "correctness"],
+    "failure_records": [],
+    "trace_records": ["traces/pm1-validator-verification.pm1", "traces/pm1-validator-retrace.pm1"]
+  },
+  "change": {
+    "description": "Update validator prompt generator to reference actual benchmark output files instead of using 'No output file found' placeholders. Prefer newest -vN output files.",
+    "target_files": ["validator/generate_prompts.py", "validator/prompts/*.txt"],
+    "expected_behavior": "Validator scores reflect actual output quality rather than missing-file assumptions."
+  },
+  "verification": {
+    "primary_benchmark": "BENCH-R-01",
+    "secondary_benchmarks": ["BENCH-C-03"],
+    "expected_outcome": "BENCH-R-01 diff drops from 3.88 to <= 1.5."
+  },
+  "risks": [
+    {"risk": "Regenerated prompts overwrite manual edits", "likelihood": "medium", "impact": "medium", "mitigation": "Version-control prompts; review diff before commit."},
+    {"risk": "Prompt becomes too long", "likelihood": "low", "impact": "low", "mitigation": "Truncate or summarize long outputs."}
+  ],
+  "approval": {
+    "reviewed": true,
+    "implementation_approved": true,
+    "deployment_approved": true,
+    "approver": "rikirinjani",
+    "date": "2026-09-14"
+  },
+  "post_implementation": {
+    "commit": "90d9796",
+    "revalidation_result": "pass",
+    "measured_diff_after": 0.26,
+    "decision": "deployed"
+  }
+}

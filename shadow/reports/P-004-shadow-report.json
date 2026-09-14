@@ -1,0 +1,8 @@
+{
+  "proposal_id": "P-004",
+  "timestamp": "2026-09-14T07:23:09.443288+00:00Z",
+  "baseline_avg_diff": 0.69,
+  "shadow_avg_diff": null,
+  "recommendation": "manual_review",
+  "notes": "Shadow scaffold: rule/process proposals do not produce immediate benchmark diffs; measure via long-term failure-rate trend."
+}
