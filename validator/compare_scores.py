@@ -21,6 +21,10 @@ import re
 import sys
 from pathlib import Path
 
+# Reconfigure stdout to UTF-8 to handle Unicode characters on Windows
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+
 THIS_DIR = Path(__file__).resolve().parent
 PROMPTS_DIR = THIS_DIR / "prompts"
 RESPONSES_DIR = THIS_DIR / "responses"
