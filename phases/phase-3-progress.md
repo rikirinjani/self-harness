@@ -54,7 +54,7 @@
 
 | ID | Weakness | Status | Benchmark verification | Commit |
 |----|----------|--------|------------------------|--------|
-| — | — | — | — | — |
+| P-001 | Low faithfulness on coding/operational outputs | approved for implementation | BENCH-C-03 (primary), BENCH-C-01/02 (secondary) | — |
 
 ---
 
