@@ -127,6 +127,16 @@ def main():
 
     print("\n=== Shadow application complete ===")
     print(f"Recommendation: {report['recommendation']}")
+    if report['recommendation'] == 'deploy':
+        print("\nNext step: open veto window and await human approval.")
+        print(f"  python tools/promote_shadow_change.py {proposal['proposal_id']}")
+        print(f"Then promote with:")
+        print(f"  python tools/promote_shadow_change.py {proposal['proposal_id']} --approve")
+        print(f"To roll back after promotion:")
+        print(f"  python tools/rollback_harness_change.py {proposal['proposal_id']}")
+    elif report['recommendation'] == 'manual_review':
+        print("\nThis proposal requires human review before promotion.")
+        print("Review the shadow report and either improve the change or approve manually.")
 
 
 if __name__ == "__main__":

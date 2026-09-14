@@ -28,9 +28,10 @@ self-harness/
 | 2 | Benchmark Runner | ✅ Complete |
 | 3 | Validator | ✅ Complete |
 | 4 | Weakness Miner | ✅ Complete |
-| 5 | Harness Architect | 🔄 Active |
-| 5 | Harness Architect | 🔲 Pending |
-| 6 | Controlled Evolution | 🔲 Pending |
+| 5 | Harness Architect | ✅ Complete |
+| 6 | Controlled Evolution | ✅ Complete |
+| 7 | Operations | 🔄 Active |
+| 8 | Limited Automation | 🔲 Gated (40 props + 6mo) |
 | 7 | Operations | 🔲 Pending |
 | 8 | Limited Automation | 🔲 Gated (40 props + 6mo) |
 

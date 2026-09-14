@@ -38,8 +38,3 @@ Every orchestrator trace must reference this rule file (`rules/orchestrator-work
 ## Rollback
 
 If this rule causes unacceptable overhead, reduce the checklist to the two highest-impact items (trace + failure recording) and commit the simplified version.
-
-
-### P-004 (shadow addition)
-
-Add a pre-flight and post-flight process checklist to the orchestrator workflow. Enforce trace and failure recording before any task is marked complete.

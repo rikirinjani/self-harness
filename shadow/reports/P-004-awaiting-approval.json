@@ -1,0 +1,7 @@
+{
+  "proposal_id": "P-004",
+  "shadow_report": "C:\\Users\\think\\self-harness\\shadow\\reports\\P-004-shadow-report.json",
+  "status": "awaiting_human_approval",
+  "created": "2026-09-14T07:27:07.087591+00:00Z",
+  "instruction": "Run promote_shadow_change.py with --approve to deploy, or delete this file to veto."
+}
