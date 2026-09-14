@@ -1,0 +1,295 @@
+{
+  "generated": "2026-09-14T07:12:10.201247+00:00Z",
+  "summary": {
+    "benchmarks": 20,
+    "flagged": 3,
+    "avg_diff": 0.69,
+    "agreement": 0.75,
+    "failure_records": 82,
+    "trace_records": 1771,
+    "evidence_sources": [
+      "benchmark",
+      "failure",
+      "trace"
+    ]
+  },
+  "flagged_benchmarks": [
+    {
+      "benchmark": "BENCH-O-04",
+      "exec_avg": 5.0,
+      "gpt_avg": 2.62,
+      "diff": 2.38
+    },
+    {
+      "benchmark": "BENCH-O-05",
+      "exec_avg": 4.88,
+      "gpt_avg": 2.75,
+      "diff": 2.13
+    },
+    {
+      "benchmark": "BENCH-P-04",
+      "exec_avg": 5.0,
+      "gpt_avg": 3.12,
+      "diff": 1.88
+    }
+  ],
+  "themes": [
+    {
+      "theme": "Low correctness scores on flagged benchmarks",
+      "source": "benchmark",
+      "benchmarks": [
+        "BENCH-O-04",
+        "BENCH-O-05",
+        "BENCH-P-04"
+      ],
+      "evidence": "Large exec-gpt gap on correctness axis.",
+      "priority": "high",
+      "affected_axes": [
+        "correctness"
+      ]
+    },
+    {
+      "theme": "Low completeness scores on flagged benchmarks",
+      "source": "benchmark",
+      "benchmarks": [
+        "BENCH-O-04",
+        "BENCH-O-05"
+      ],
+      "evidence": "Large exec-gpt gap on completeness axis.",
+      "priority": "medium",
+      "affected_axes": [
+        "completeness"
+      ]
+    },
+    {
+      "theme": "Low precision scores on flagged benchmarks",
+      "source": "benchmark",
+      "benchmarks": [
+        "BENCH-O-04",
+        "BENCH-O-05",
+        "BENCH-P-04"
+      ],
+      "evidence": "Large exec-gpt gap on precision axis.",
+      "priority": "medium",
+      "affected_axes": [
+        "precision"
+      ]
+    },
+    {
+      "theme": "Low actionability scores on flagged benchmarks",
+      "source": "benchmark",
+      "benchmarks": [
+        "BENCH-O-04",
+        "BENCH-O-05"
+      ],
+      "evidence": "Large exec-gpt gap on actionability axis.",
+      "priority": "medium",
+      "affected_axes": [
+        "actionability"
+      ]
+    },
+    {
+      "theme": "Low faithfulness scores on flagged benchmarks",
+      "source": "benchmark",
+      "benchmarks": [
+        "BENCH-O-04",
+        "BENCH-O-05",
+        "BENCH-P-04"
+      ],
+      "evidence": "Large exec-gpt gap on faithfulness axis.",
+      "priority": "high",
+      "affected_axes": [
+        "faithfulness"
+      ]
+    },
+    {
+      "theme": "Recurring failure categories in backlog",
+      "source": "failure",
+      "categories": [
+        [
+          "external",
+          9
+        ],
+        [
+          "process",
+          9
+        ],
+        [
+          "tool",
+          8
+        ],
+        [
+          "architecture",
+          8
+        ],
+        [
+          "unknown",
+          5
+        ]
+      ],
+      "evidence": "Top failure categories across 82 records.",
+      "priority": "high"
+    },
+    {
+      "theme": "Most active agents in trace corpus",
+      "source": "trace",
+      "agents": [
+        [
+          "orchestrator",
+          945
+        ],
+        [
+          "fixer",
+          182
+        ],
+        [
+          "coordinator",
+          178
+        ],
+        [
+          "librarian",
+          119
+        ],
+        [
+          "explorer",
+          119
+        ]
+      ],
+      "evidence": "Trace activity distribution across 1771 records.",
+      "priority": "low"
+    }
+  ],
+  "ranked_candidates": [
+    {
+      "theme": "Recurring failure categories in backlog",
+      "score": 8,
+      "source": "failure",
+      "categories": [
+        [
+          "external",
+          9
+        ],
+        [
+          "process",
+          9
+        ],
+        [
+          "tool",
+          8
+        ],
+        [
+          "architecture",
+          8
+        ],
+        [
+          "unknown",
+          5
+        ]
+      ],
+      "evidence": "Top failure categories across 82 records.",
+      "priority": "high"
+    },
+    {
+      "theme": "Low correctness scores on flagged benchmarks",
+      "score": 6,
+      "source": "benchmark",
+      "benchmarks": [
+        "BENCH-O-04",
+        "BENCH-O-05",
+        "BENCH-P-04"
+      ],
+      "evidence": "Large exec-gpt gap on correctness axis.",
+      "priority": "high",
+      "affected_axes": [
+        "correctness"
+      ]
+    },
+    {
+      "theme": "Low faithfulness scores on flagged benchmarks",
+      "score": 6,
+      "source": "benchmark",
+      "benchmarks": [
+        "BENCH-O-04",
+        "BENCH-O-05",
+        "BENCH-P-04"
+      ],
+      "evidence": "Large exec-gpt gap on faithfulness axis.",
+      "priority": "high",
+      "affected_axes": [
+        "faithfulness"
+      ]
+    },
+    {
+      "theme": "Most active agents in trace corpus",
+      "score": 6,
+      "source": "trace",
+      "agents": [
+        [
+          "orchestrator",
+          945
+        ],
+        [
+          "fixer",
+          182
+        ],
+        [
+          "coordinator",
+          178
+        ],
+        [
+          "librarian",
+          119
+        ],
+        [
+          "explorer",
+          119
+        ]
+      ],
+      "evidence": "Trace activity distribution across 1771 records.",
+      "priority": "low"
+    },
+    {
+      "theme": "Low precision scores on flagged benchmarks",
+      "score": 5,
+      "source": "benchmark",
+      "benchmarks": [
+        "BENCH-O-04",
+        "BENCH-O-05",
+        "BENCH-P-04"
+      ],
+      "evidence": "Large exec-gpt gap on precision axis.",
+      "priority": "medium",
+      "affected_axes": [
+        "precision"
+      ]
+    },
+    {
+      "theme": "Low completeness scores on flagged benchmarks",
+      "score": 4,
+      "source": "benchmark",
+      "benchmarks": [
+        "BENCH-O-04",
+        "BENCH-O-05"
+      ],
+      "evidence": "Large exec-gpt gap on completeness axis.",
+      "priority": "medium",
+      "affected_axes": [
+        "completeness"
+      ]
+    },
+    {
+      "theme": "Low actionability scores on flagged benchmarks",
+      "score": 4,
+      "source": "benchmark",
+      "benchmarks": [
+        "BENCH-O-04",
+        "BENCH-O-05"
+      ],
+      "evidence": "Large exec-gpt gap on actionability axis.",
+      "priority": "medium",
+      "affected_axes": [
+        "actionability"
+      ]
+    }
+  ]
+}

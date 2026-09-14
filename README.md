@@ -24,10 +24,10 @@ self-harness/
 | Phase | Description | Status |
 |-------|-------------|--------|
 | 0 | Governance Foundation | ✅ Complete |
-| 1 | Observation Infrastructure | 🔲 Pending |
-| 2 | Benchmark Runner | 🔲 Pending |
-| 3 | Validator | 🔲 Pending |
-| 4 | Weakness Miner | 🔲 Pending |
+| 1 | Observation Infrastructure | ✅ Complete |
+| 2 | Benchmark Runner | ✅ Complete |
+| 3 | Validator | ✅ Complete |
+| 4 | Weakness Miner | 🔄 Active |
 | 5 | Harness Architect | 🔲 Pending |
 | 6 | Controlled Evolution | 🔲 Pending |
 | 7 | Operations | 🔲 Pending |
