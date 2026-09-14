@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "task-006a-loopguard",
+  "timestamp": "2026-09-14T06:01:41.297972+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 0,
+  "key_files": [
+    "experiments/pm1-rx/harness/pm1rx/loopguard.py",
+    "experiments/pm1-rx/harness/tests/test_loopguard.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task-006a-loopguard",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........................-.--...-........................................-.--...-",
+  "action": "Task 006A COMPLETE: anti-loop/fixed-point guard implemented and tested. pm1rx/loopguard.py (self-reference detection direct+indirect, metadata-only detection, LoopGuard hard budget, structural repeat, NO_PROGRESS, escalation, freeze-record rule) + tests/test_loopguard.py (27 tests). Full suite 188 passed. Experiment 001 verified byte-identical; freeze tag pm1-rx-confirmatory-001-final still -> 8304262; dataset archive sha256 unchanged 4364fd88...; code archive db628b6c... Guard commit fbb167b."
+}

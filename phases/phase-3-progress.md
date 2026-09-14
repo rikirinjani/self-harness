@@ -32,6 +32,7 @@
 | Date | Flagged count | Avg diff | Agreement rate | Proposals filed | Proposals merged | Notes |
 |------|--------------:|---------:|---------------:|----------------:|-----------------:|-------|
 | 2026-09-14 | 8 | 1.40 | 0% | 0 | 0 | Phase 3 restarted; assets located |
+| 2026-09-14 | 7 | 1.22 | 55% | 3 | 1 | P-001 deployed; BENCH-C-03 diff 0.38 |
 
 ---
 
@@ -54,7 +55,9 @@
 
 | ID | Weakness | Status | Benchmark verification | Commit |
 |----|----------|--------|------------------------|--------|
-| P-001 | Low faithfulness on coding/operational outputs | implemented, pending full re-validation | BENCH-C-03 (primary), BENCH-C-01/02 (secondary) | — |
+| P-001 | Low faithfulness on coding/operational outputs | deployed | BENCH-C-03 | 368bfb0 |
+| P-002 | Extend fixer workflow to machine-enforceable checks | filed | BENCH-C-01/02/04 | — |
+| P-003 | Fix validator prompts to reference actual outputs | filed | BENCH-R-01 | — |
 
 ---
 

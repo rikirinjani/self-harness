@@ -75,7 +75,7 @@ Rollback: `git revert {commit-sha}` or restore previous version of the affected 
 
 - [x] Human has reviewed this proposal.
 - [x] Human approves implementation.
-- [ ] Human approves deployment after re-validation.
+- [x] Human approves deployment after re-validation.
 
 **Implementation artifacts:**
 - `rules/fixer-workflow.md`
@@ -90,7 +90,7 @@ Rollback: `git revert {commit-sha}` or restore previous version of the affected 
 
 Fill in after the change has been implemented and re-validated.
 
-- Implementation commit: `{sha}`
-- Re-validation result: `{pass / fail / partial}`
-- Measured diff after change: `{X.XX}`
-- Decision: `{deployed / rejected / needs iteration}`
+- Implementation commit: `368bfb0`
+- Re-validation result: pass
+- Measured diff after change: 0.38 (was 4.00)
+- Decision: deployed

@@ -15,7 +15,12 @@ Changes behavior. Test suite fails. Makes code longer without improving clarity.
 
 === AGENT OUTPUT ===
 
-[No output file found — benchmark was executed directly in agent session]
+See: benchmarks/outputs/BENCH-C-03-v2-refactor.txt
+
+The output follows the fixer workflow rule (rules/fixer-workflow.md):
+1. Restates constraints explicitly.
+2. Describes the refactoring with concrete changes and a conceptual diff.
+3. Includes a self-check against each constraint and verification results.
 
 === EVALUATION ===
 

@@ -1,12 +1,12 @@
 # Score Comparison: Phase 2 Executor vs GPT Validator
 
-Generated: 2026-09-14 12:51
+Generated: 2026-09-14 13:03
 
 | Benchmark | Axes Matched | Exec Avg | GPT Avg | Diff | Exec Verdict | GPT Verdict |
 |-----------|-------------|----------|---------|------|--------------|-------------|
 | BENCH-C-01 | 8/8 | 5.00 | 3.12 | 1.88 ⚠️ | pass | fail |
 | BENCH-C-02 | 8/8 | 5.00 | 2.12 | 2.88 ⚠️ | pass | fail |
-| BENCH-C-03 | 8/8 | 5.00 | 1.00 | 4.00 ⚠️ | pass | fail |
+| BENCH-C-03 | 8/8 | 5.00 | 4.62 | 0.38 | pass | pass |
 | BENCH-C-04 | 8/8 | 4.88 | 2.00 | 2.88 ⚠️ | pass | fail |
 | BENCH-C-05 | 8/8 | 5.00 | 4.62 | 0.38 | pass | pass |
 | BENCH-O-01 | 8/8 | 4.75 | 4.00 | 0.75 | pass | pass |
@@ -25,7 +25,7 @@ Generated: 2026-09-14 12:51
 | BENCH-R-04 | 8/8 | 4.88 | 4.00 | 0.88 | pass | None |
 | BENCH-R-05 | 8/8 | 4.88 | 3.62 | 1.26 | pass | None |
 
-**Overall:** Executor avg 4.91 vs GPT avg 3.51 (avg diff 1.40)
+**Overall:** Executor avg 4.91 vs GPT avg 3.69 (avg diff 1.22)
 **Agreement rate (within ±1.0):** 0%
 
 ## Flagged Benchmarks (diff > 1.5)
@@ -53,19 +53,6 @@ Generated: 2026-09-14 12:51
 | reasoning | 5 | 2 |
 | precision | 5 | 2 |
 | efficiency | 5 | 5 |
-| actionability | 5 | 1 |
-| faithfulness | 5 | 1 |
-
-### BENCH-C-03 (diff=4.0)
-
-| Axis | Executor | GPT |
-|------|----------|-----|
-| correctness | 5 | 1 |
-| completeness | 5 | 1 |
-| clarity | 5 | 1 |
-| reasoning | 5 | 1 |
-| precision | 5 | 1 |
-| efficiency | 5 | 1 |
 | actionability | 5 | 1 |
 | faithfulness | 5 | 1 |
 
