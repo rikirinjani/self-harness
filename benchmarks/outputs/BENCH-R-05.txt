@@ -1,0 +1,51 @@
+# BENCH-R-05: Documentation Accuracy Audit
+
+## Doc Audited: `phases/phase-2-plan.md`
+## Source Compared: `benchmarks/run.py` + `benchmarks/score.py` + actual directory structure
+
+---
+
+## Findings
+
+### 1. [OMISSION — MEDIUM] CLI flag `--score` is not in the plan
+- **Doc:** Lists `--all`, `--category`, `--json`, `--dry-run` (lines 20-31)
+- **Source:** `run.py` implements `--score`, `--summary`, `--json` (for listing)
+- **Impact:** Plan understates CLI capabilities. Users reading the plan don't know about scoring workflow.
+
+### 2. [INACCURACY — LOW] `--all` description in plan is wrong
+- **Doc:** "Run all benchmarks" (line 21)
+- **Source:** `--all` actually lists benchmarks, it does NOT execute them (run.py line ~305: "List all or by category")
+- **Impact:** Minor — anyone using the script sees the help text. Plan is misleading about behavior.
+
+### 3. [OMISSION — HIGH] `score.py` not mentioned anywhere
+- **Doc:** Only mentions `run.py` (line 17)
+- **Source:** `benchmarks/score.py` exists for non-interactive scoring (200+ lines)
+- **Impact:** Secondary helper script omitted from documentation. Future maintainers won't know about it.
+
+### 4. [OMISSION — MEDIUM] No trace integration implemented yet
+- **Doc:** Section 4 (lines 103-112) specifies trace/failure records must be written
+- **Source:** Neither `run.py` nor `score.py` writes trace or failure records to `traces/` or `failures/`
+- **Impact:** Trace integration is a phase-out gate requirement (line 158) but not yet coded. Either implement or update the gate.
+
+### 5. [OMISSION — MEDIUM] `score.py` result schema has no `pass_criteria` override
+- **Doc:** Result schema line 69-74 shows `pass_criteria` with real fields (compiles, tests_pass, etc.)
+- **Source:** `score.py` always sets `compiles=True, tests_pass=<outcome=='pass'>, no_new_deps=True, follows_style=True` regardless of actual values
+- **Impact:** Coding benchmarks that fail to compile will be recorded as "compiles = True" — misleading.
+
+### 6. [STALE — LOW] Progress table not updated
+- **Doc:** Lines 137-145 show progress table with "Pending" values
+- **Actual:** Runner built, 4/20 benchmarks executed
+- **Impact:** Low — the table was always meant to be manually updated. But plan promises it's updated via `phases/phase-2-progress.md`.
+
+---
+
+## Severity Summary
+
+| # | Type | Severity | Item |
+|---|------|----------|------|
+| 1 | Omission | MEDIUM | `--score` flag undocumented |
+| 2 | Inaccuracy | LOW | `--all` described as "run" but actually "list" |
+| 3 | Omission | HIGH | `score.py` helper not documented |
+| 4 | Omission | MEDIUM | Trace integration not implemented |
+| 5 | Omission | MEDIUM | Pass criteria hardcoded |
+| 6 | Stale | LOW | Progress table not updated |

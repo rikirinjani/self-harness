@@ -1,0 +1,28 @@
+SCORING:
+
+correctness (1-5): 1
+note: No refactored code was provided, so there is no basis for determining correctness or behavior preservation.
+completeness (1-5): 1
+note: The benchmark requested a refactored implementation. No output file or code was submitted.
+clarity (1-5): 1
+note: Since no refactoring was produced, there is no improvement in readability to evaluate.
+reasoning (1-5): 1
+note: No explanation or rationale for any refactoring decisions was provided.
+precision (1-5): 1
+note: The submission does not address the requested task in any measurable way.
+efficiency (1-5): 1
+note: Efficiency of the refactoring cannot be assessed because no implementation exists.
+actionability (1-5): 1
+note: There is nothing that could be applied, reviewed, or tested.
+faithfulness (1-5): 1
+note: The submission fails to satisfy the benchmark requirements by providing no deliverable.
+WEAKNESSES (specific issues)
+No refactored code was submitted.
+No evidence that behavior was preserved or that the test suite would still pass.
+No explanation, diff, or implementation to evaluate.
+STRENGTHS
+None evident from the submitted output.
+N/A.
+OVERALL VERDICT: Fail
+
+The benchmark requires a behavior-preserving refactoring. Because no output was provided, none of the success criteria can be evaluated or considered satisfied.

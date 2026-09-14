@@ -1,0 +1,132 @@
+=== BENCHMARK VALIDATION ===
+
+Benchmark: BENCH-O-02 (OPS)
+Title: Diagnostic Execution
+Difficulty: Medium
+
+TASK DESCRIPTION:
+Given a symptom (error, failure, anomaly), run diagnostics, collect evidence, and produce a structured finding.
+
+SUCCESS CRITERIA:
+Correct diagnostic commands chosen. Evidence collected before conclusion. Finding is specific.
+
+FAILURE CRITERIA:
+Jumps to conclusion. Wrong diagnostic. Missing evidence. No finding.
+
+=== AGENT OUTPUT ===
+
+"""BENCH-O-02: Diagnostic Execution - cp1252 encoding issue."""
+import sys
+
+print("=== Encoding Diagnostics ===")
+print(f"stdout encoding: {sys.stdout.encoding}")
+print(f"preferred encoding: {sys.getdefaultencoding()}")
+
+print("\n--- Problematic characters ---")
+test_chars = {
+    "em dash": "\u2014",
+    "bullet": "\u2022",
+    "greater-or-equal": "\u2265",
+    "check mark": "\u2705",
+    "cross mark": "\u274c",
+}
+for name, char in test_chars.items():
+    try:
+        char.encode("cp1252")
+        print(f"  {name} (U+{ord(char):04X}): OK in cp1252")
+    except UnicodeEncodeError:
+        print(f"  {name} (U+{ord(char):04X}): FAILS in cp1252")
+
+print("\n--- Source analysis ---")
+# Check catalog
+with open(
+    r"C:\Users\think\AppData\Local\Temp\self-harness-sync\benchmark_catalog.md",
+    encoding="utf-8",
+) as f:
+    content = f.read()
+non_ascii = [(i, c) for i, c in enumerate(content) if ord(c) > 127]
+print(f"Catalog non-ASCII chars: {len(non_ascii)}")
+for pos, char in non_ascii[:10]:
+    line = content[:pos].count("\n") + 1
+    print(f"  Line {line}: U+{ord(char):04X} ({repr(char)})")
+
+# Check run.py
+with open(
+    r"C:\Users\think\AppData\Local\Temp\self-harness-sync\benchmarks\run.py",
+    encoding="utf-8",
+) as f:
+    run_content = f.read()
+non_ascii_run = [(i, c) for i, c in enumerate(run_content) if ord(c) > 127]
+print(f"\nrun.py non-ASCII chars: {len(non_ascii_run)}")
+for pos, char in non_ascii_run[:10]:
+    line = run_content[:pos].count("\n") + 1
+    print(f"  Line {line}: U+{ord(char):04X} ({repr(char)})")
+
+# Test the actual error scenario
+print("\n--- Reproduction ---")
+try:
+    # Simulate cp1252 output
+    b"\u2265".decode("utf-8")  # just to confirm char
+    test = "\u2265"
+    test.encode("cp1252")  # this should fail
+except UnicodeEncodeError as e:
+    print(f"PASS: cp1252 encode error reproduced: {e}")
+
+# Fix recommendation
+print("\n--- Finding ---")
+print("Root cause: Python on Windows defaults to cp1252 console encoding.")
+print("The benchmark_catalog.md and run.py contain non-ASCII characters")
+print("(≥, —, •, ✅, ❌) that are not representable in cp1252.")
+print()
+print("Fix: Add to run.py main():")
+print("  if hasattr(sys.stdout, 'reconfigure'):")
+print("      sys.stdout.reconfigure(encoding='utf-8')")
+print("Or set environment variable PYTHONIOENCODING=utf-8.")
+
+
+=== EVALUATION ===
+
+Please score this benchmark output on each of the 8 quality axes below.
+Use the following scale:
+  5 = Excellent — exceeds expectations
+  4 = Good — meets criteria with minor room for improvement
+  3 = Adequate — meets minimum bar
+  2 = Poor — significant gaps
+  1 = Failing — does not meet criteria
+
+SCORING:
+
+1. correctness (1-5): ___
+   note: ____
+
+2. completeness (1-5): ___
+   note: ____
+
+3. clarity (1-5): ___
+   note: ____
+
+4. reasoning (1-5): ___
+   note: ____
+
+5. precision (1-5): ___
+   note: ____
+
+6. efficiency (1-5): ___
+   note: ____
+
+7. actionability (1-5): ___
+   note: ____
+
+8. faithfulness (1-5): ___
+   note: ____
+
+WEAKNESSES (list specific issues, be critical):
+1. ____
+2. ____
+3. ____
+
+STRENGTHS (what was done well):
+1. ____
+2. ____
+
+OVERALL VERDICT: Pass / Fail

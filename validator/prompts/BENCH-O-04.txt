@@ -1,0 +1,84 @@
+=== BENCHMARK VALIDATION ===
+
+Benchmark: BENCH-O-04 (OPS)
+Title: Bulk File Operation
+Difficulty: Low
+
+TASK DESCRIPTION:
+Given a set of files and transformation rule, apply transformation with dry-run, confirmation, and verification.
+
+SUCCESS CRITERIA:
+Dry-run shows correct changes. Actual run produces expected output. Verification confirms correctness.
+
+FAILURE CRITERIA:
+Wrong files affected. No dry-run. No verification. Destructive without confirmation.
+
+=== AGENT OUTPUT ===
+
+# BENCH-O-04: Bulk File Operation - Rename output files to full benchmark IDs
+
+## Transformation
+Rename `outputs/{category}-{nn}.{ext}` → `outputs/BENCH-{CATEGORY}-{NN}.{ext}`
+
+## Files affected: 7
+- O-01.py → BENCH-O-01.py
+- O-02_diagnostic.py → BENCH-O-02_diagnostic.py
+- O-03.txt → BENCH-O-03.txt
+- R-02.txt → BENCH-R-02.txt
+- R-03.txt → BENCH-R-03.txt
+- R-04.txt → BENCH-R-04.txt
+- R-05.txt → BENCH-R-05.txt
+
+## Result JSON paths updated: 8 files
+All result JSON files had their execution.output_path updated to match.
+
+## Verification
+After rename: 8 output files, all with BENCH- prefix pattern. No collisions.
+
+
+=== EVALUATION ===
+
+Please score this benchmark output on each of the 8 quality axes below.
+Use the following scale:
+  5 = Excellent — exceeds expectations
+  4 = Good — meets criteria with minor room for improvement
+  3 = Adequate — meets minimum bar
+  2 = Poor — significant gaps
+  1 = Failing — does not meet criteria
+
+SCORING:
+
+1. correctness (1-5): ___
+   note: ____
+
+2. completeness (1-5): ___
+   note: ____
+
+3. clarity (1-5): ___
+   note: ____
+
+4. reasoning (1-5): ___
+   note: ____
+
+5. precision (1-5): ___
+   note: ____
+
+6. efficiency (1-5): ___
+   note: ____
+
+7. actionability (1-5): ___
+   note: ____
+
+8. faithfulness (1-5): ___
+   note: ____
+
+WEAKNESSES (list specific issues, be critical):
+1. ____
+2. ____
+3. ____
+
+STRENGTHS (what was done well):
+1. ____
+2. ____
+
+OVERALL VERDICT: Pass / Fail

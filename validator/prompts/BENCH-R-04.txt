@@ -1,0 +1,186 @@
+=== BENCHMARK VALIDATION ===
+
+Benchmark: BENCH-R-04 (RES)
+Title: Failure Pattern Analysis
+Difficulty: High
+
+TASK DESCRIPTION:
+Given a set of execution traces with known failures, cluster failures by root cause and produce structured weakness descriptions.
+
+SUCCESS CRITERIA:
+Correct clustering by causal mechanism (not surface symptom). Each cluster has ≥2 supporting traces.
+
+FAILURE CRITERIA:
+Clustering by symptom only, missed root cause, clusters with single trace.
+
+=== AGENT OUTPUT ===
+
+# BENCH-R-04: Failure Pattern Analysis — Self-Harness Failure Records
+
+## Data Source
+44 failure records from `C:\Users\think\self-harness\failures/` (2026-06-29 to 2026-07-08)
+
+---
+
+## Cluster 1: Trace Location Violation (20 failures)
+
+**Root Cause:** Agents do not consistently apply the centralized trace-path rule from RULES.md. When a trace-writing instruction is encountered, the agent defaults to a project-local path unless the rules file is explicitly loaded and the central path is hard-coded in the session context.
+
+**Surface Symptoms:** Traces written to `Kronos Engine/self-harness/`, `Deers-Rock/self-harness/`, `Peer Review/self-harness/`, `world-archivist/self-harness/`, etc.
+
+**Supporting Traces:**
+- `2026-07-08-process-trace-wrong-location-peer-review.json`
+- `2026-07-08T09-37-27-131Z-paper-oc-wrong-trace-path.json`
+- `2026-07-08T09-38-00Z-process-trace-location-violation.json`
+- `2026-07-08T09-44-42-rule1-trace-location.json`
+- `2026-07-08T12-31-00-process-trace-wrong-location-kronos-engine.json`
+- `2026-07-08T02-37-42-196Z-process_violation-wrong-trace-location.json`
+- `20260708T091759-wrong-trace-location.json`
+- `2026-07-08-process-trace-wrong-location-world-archivist.json`
+- `2026-07-08T093200-process-wrong-trace-location.json`
+- `2026-07-08T093329-process-trace-wrong-location.json`
+- `2026-07-08-workflow-wrong-trace-path.json`
+- `2026-07-06-rule1-trace-location-prb-bpjs.json`
+- `20260708-092900-workflow-trace-location.json`
+- `20260703-process-trace-location-violation.json`
+- `20260708T120000-process-trace-wrong-location.json`
+- (5 more with similar naming)
+
+**Weakness Description:** The trace-location rule is enforced by prompt instructions, but prompts fail when: (a) a session starts in a project directory and the central path shadows the project path, (b) the agent's prompt list is truncated and RULES.md (position 1) is not loaded.
+
+**Fix Applied:** Changed RULES.md to absolute central path. Added orchestrator append prompt to verify trace location before closing tasks. Audit shows ongoing violations despite fix — need runtime enforcement, not just prompt.
+
+---
+
+## Cluster 2: Scope Overstep / Missing Guardrails (8 failures)
+
+**Root Cause:** Agents treat exploratory or investigative instructions as implementation instructions when the task boundary is not explicitly restricted. A "investigate X" prompt gets interpreted as "build X" because the agent defaults to action-oriented behavior.
+
+**Surface Symptoms:** Building dashboards, running experiments, constructing sectors — all things the agent was asked to investigate, not implement.
+
+**Supporting Traces:**
+- `2026-06-29T11-29-27-712Z-workflow-built-sectors-directly.json`
+- `2026-06-30T09-36-15Z-workflow-scope-overstep.json`
+- `2026-06-30T10-34-37Z-workflow-heatmap-overstep.json`
+- `2026-06-30T11-33-51-731Z-workflow-built-dashboard.json`
+- `2026-07-01-workflow-memory-pin.json`
+- `2026-06-29T18-53-12-214Z-workflow-missing-git-push.json`
+- `2026-06-30T01-33-19-874Z-workflow-wrong-handoff-status.json`
+- `2026-07-01T11-16-00-workflow-figures-not-embedded.json`
+
+**Weakness Description:** Agents lack a "read-only by default" instinct. When instructions are ambiguous ("analyze the project structure, look into X"), the agent defaults to modifying files rather than producing analysis. The distinction between "research" and "implement" must be explicit in every task prompt.
+
+---
+
+## Cluster 3: External Dependency / Environment Failure (7 failures)
+
+**Root Cause:** Agent proceeds without verifying that external dependencies (hardware, API keys, tool versions, network) are available. Failure is discovered at runtime, not pre-flight.
+
+**Surface Symptoms:** Kaggle training iterations, FAISS timeout on CPU, encoding errors, missing imports at runtime.
+
+**Supporting Traces:**
+- `2026-07-04-kaggle-training-iterations.json`
+- `20260708-tool-deployed-to-hf-space-but-faiss.json`
+- `20260707-hf-search-encoding-issues.json`
+- `2026-07-04-process-batch-failures.json`
+- `20260707-memory-search-other-session.json`
+- `20260708-config-added-import-but-didn't-update.json`
+- `2026-06-30-config-economy-wars-init.json`
+
+**Weakness Description:** No pre-flight check step exists in the agent workflow. The agent should verify (a) environment availability, (b) dependency versions, (c) resource constraints before executing a plan. This is a workflow gap, not a prompt gap.
+
+---
+
+## Cluster 4: Reasoning / Algorithm Edge Cases (5 failures)
+
+**Root Cause:** Implementation logic handles the happy path but misses edge cases (empty input, encoding issues, format assumptions). Not caught by tests because tests also follow the happy path.
+
+**Surface Symptoms:** Idle loop with no termination, seed derivation returning NaN, JSON corruption from regex patch.
+
+**Supporting Traces:**
+- `2026-06-30T06-00-00Z-reasoning-idle-loop.json`
+- `2026-06-30T10-30-53Z-reasoning-seed-derivation-bug.json`
+- `2026-06-29-corruption-json-regex-patch.json`
+- `2026-07-01-config-pdf-read-fallback.json`
+- `2026-07-03T091823-custom-domain-cookie.json`
+
+**Weakness Description:** No systematic edge-case thinking in implementation. A "doubt-driven development" step (adversarial review before committing logic) would catch these before they reach production. This maps to Phase 3 (Validator).
+
+---
+
+## Cluster 5: Cross-Session Context Isolation (4 failures)
+
+**Root Cause:** Each session starts with no memory of other sessions' work. Duplicates, wrong repo references, and lost entities occur because nothing persists between sessions.
+
+**Surface Symptoms:** Same entry added twice, wrong GitHub repo cloned, entities invisible across sessions.
+
+**Supporting Traces:**
+- `2026-06-30-communication-nonstop-execution.json`
+- `2026-07-01-communication-netflix-duplicate.json`
+- `20260708-wrong-hermes-repo.json`
+- `20260704-fix-invalid-repo-url.json`
+- `20260707-memory-search-other-session.json`
+
+**Weakness Description:** No shared state between sessions. Each agent acts as if it is the first and only agent. A session-state registry or shared project map would prevent duplicates and wrong-repo mistakes.
+
+---
+
+## Summary
+
+| Cluster | Root Cause | Count | Severity |
+|---------|-----------|-------|----------|
+| 1. Trace Location | Path defaults override rules | 20 | HIGH |
+| 2. Scope Overstep | No read-only default | 8 | HIGH |
+| 3. Environment | No pre-flight check | 7 | MEDIUM |
+| 4. Edge Cases | No adversarial review | 5 | MEDIUM |
+| 5. Context Isolation | No shared state | 4 | LOW |
+
+**Key Insight:** The top 2 clusters (28/44 failures) are process failures, not technical failures. They are caused by missing procedural guardrails, not by bugs. This validates Phase 2's focus on benchmark measurement — we need to measure guardrail effectiveness, not just code quality.
+
+
+=== EVALUATION ===
+
+Please score this benchmark output on each of the 8 quality axes below.
+Use the following scale:
+  5 = Excellent — exceeds expectations
+  4 = Good — meets criteria with minor room for improvement
+  3 = Adequate — meets minimum bar
+  2 = Poor — significant gaps
+  1 = Failing — does not meet criteria
+
+SCORING:
+
+1. correctness (1-5): ___
+   note: ____
+
+2. completeness (1-5): ___
+   note: ____
+
+3. clarity (1-5): ___
+   note: ____
+
+4. reasoning (1-5): ___
+   note: ____
+
+5. precision (1-5): ___
+   note: ____
+
+6. efficiency (1-5): ___
+   note: ____
+
+7. actionability (1-5): ___
+   note: ____
+
+8. faithfulness (1-5): ___
+   note: ____
+
+WEAKNESSES (list specific issues, be critical):
+1. ____
+2. ____
+3. ____
+
+STRENGTHS (what was done well):
+1. ____
+2. ____
+
+OVERALL VERDICT: Pass / Fail

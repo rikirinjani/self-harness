@@ -1,0 +1,50 @@
+Benchmark: BENCH-C-04
+Title: Multi-File Feature Addition — --stats flag
+
+FILES TOUCHED: 3
+
+1. benchmarks/run.py — modified
+   - Added "from pathlib import Path" import
+   - Added --stats argument to argparse:
+     parser.add_argument("--stats", action="store_true",
+         help="Show aggregate statistics across all benchmarks")
+   - Added handler in main():
+     if args.stats:
+         from utils import compute_aggregate_stats
+         stats = compute_aggregate_stats(RESULTS_DIR)
+         print formatted stats table
+
+2. benchmarks/utils.py — already existed, imported by run.py
+   - compute_aggregate_stats() function reads all result JSONs
+   - Returns structured dict with totals, averages, category breakdown
+
+3. benchmarks/results/ — data source (20 result JSON files)
+
+4. benchmarks/outputs/test_C04_stats.py — test file
+   - Tests structure, types, consistency, category breakdown
+   - CLI smoke test: runs `python run.py --stats`, verifies output
+
+FEATURE OUTPUT:
+==================================================
+  BENCHMARK AGGREGATE STATISTICS
+==================================================
+  Total benchmarks: 20
+  Average score:    4.91
+  Highest:          BENCH-C-01 (5.00)
+  Lowest:           BENCH-O-01 (4.75)
+  Pass rate:        100.0%
+
+  Category breakdown:
+    research      5 benchmarks, avg score 4.88, avg duration 138s
+    coding        5 benchmarks, avg score 4.98, avg duration 384s
+    planning      5 benchmarks, avg score 4.88, avg duration 162s
+    operational   5 benchmarks, avg score 4.90, avg duration 102s
+==================================================
+
+TEST RESULTS:
+[PASS] Structure: all keys present
+[PASS] Types: correct
+[PASS] Consistency: highest >= lowest, pass_rate in range
+[PASS] Category breakdown structure
+[PASS] CLI --stats smoke test
+All 5 tests passed (20 benchmarks)

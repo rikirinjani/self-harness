@@ -1,0 +1,55 @@
+# BENCH-P-02: Risk Assessment — Coding Benchmarks on Self-Harness Repo
+
+## Proposal
+Execute 5 coding benchmarks (BENCH-C-01 through C-05) that modify code in the self-harness repository under `benchmarks/`.
+
+---
+
+## Risk 1: Code modification breaks existing runner
+- **Description:** A coding benchmark's changes introduce a bug that breaks `run.py` or `score.py`, requiring repair before further benchmarks can execute.
+- **Likelihood:** HIGH (4/5) — 3 of 5 benchmarks modify code directly
+- **Impact:** HIGH (4/5) — blocks all remaining benchmarks
+- **Mitigation:** (A) Commit current state before start: `git stash` or `git commit -m "pre-benchmark"`. (B) Each coding benchmark runs in isolation; after each, run `python run.py --summary` to verify runner still works. (C) If broken, `git checkout -- benchmarks/` to restore.
+- **Second-order risk:** Over-enthusiastic `git checkout` could lose benchmark output files in `benchmarks/results/` — these are in `.gitignore` but still.
+
+## Risk 2: Sandbox contamination
+- **Description:** Changes from one coding benchmark leak into the next benchmark's scope (e.g., BENCH-C-02 expects the original code but C-01 modified it).
+- **Likelihood:** MEDIUM (3/5) — depends on whether benchmarks share files
+- **Impact:** MEDIUM (3/5) — wrong baseline invalidates benchmark scoring
+- **Mitigation:** After each coding benchmark, `git checkout -- benchmarks/` (but keep results/ and outputs/). Verify file state before starting the next benchmark.
+- **Second-order risk:** Relying on git checkout may lose uncommitted output files in the working directory — use `checkout` with file paths, not whole dir.
+
+## Risk 3: Multi-file feature introduces excessive scope
+- **Description:** BENCH-C-04 (Multi-File Feature) requires touching 3+ files. The natural agent tendency is to touch more files than needed, or to refactor adjacent code "while we're here."
+- **Likelihood:** MEDIUM (3/5)
+- **Impact:** MEDIUM (3/5) — adds cleanup cost, may change behavior outside spec
+- **Mitigation:** Timebox to 30 min. Before starting, list exactly which 3 files are in scope. Use `git diff --stat` after to verify no extras. If scope creep detected before end, revert and restart scoped.
+- **Second-order risk:** Timebox may cut off before legitimate completion — accept partial score.
+
+## Risk 4: Test environment mismatch
+- **Description:** Coding benchmarks require tests to pass, but the self-harness repo has no test framework configured. "Tests pass" can't be verified without one.
+- **Likelihood:** HIGH (4/5)
+- **Impact:** HIGH (4/5) — success criterion "Tests pass" is unverifiable
+- **Mitigation:** (A) For BENCH-C-01, include writing a simple test alongside the implementation. (B) For C-02, write a failing test as the bug reproduction. (C) C-03 (refactor) can use a self-test approach (run `python run.py --summary` before and after).
+- **Second-order risk:** Introducing a test framework adds scope not in the benchmark spec. Use Python's built-in `assert` statements only.
+
+## Risk 5: Push conflicts with existing main
+- **Description:** After all benchmarks, pushing to GitHub may have conflicts if the remote has diverged since we last pushed.
+- **Likelihood:** LOW (1/5) — single-user repo, unlikely
+- **Impact:** LOW (2/5) — resolved with `git pull --rebase`
+- **Mitigation:** Check `git status` and `git log --oneline -5 origin/main` before pushing.
+
+---
+
+## Risk Matrix
+
+| # | Risk | Likelihood | Impact | Score | Priority |
+|---|------|-----------|--------|-------|----------|
+| 1 | Runner breakage | 4 | 4 | **16** | CRITICAL |
+| 2 | Sandbox contamination | 3 | 3 | 9 | HIGH |
+| 3 | Scope creep | 3 | 3 | 9 | HIGH |
+| 4 | Test environment missing | 4 | 4 | **16** | CRITICAL |
+| 5 | Push conflicts | 1 | 2 | 2 | LOW |
+
+## Summary
+Two CRITICAL risks: (1) runner breakage mitigated by git checkpointing, (4) no test framework mitigated by using in-process asserts instead of external test runner. Both have concrete mitigations. Proceed with caution.

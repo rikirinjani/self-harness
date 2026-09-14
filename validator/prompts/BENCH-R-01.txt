@@ -1,0 +1,65 @@
+=== BENCHMARK VALIDATION ===
+
+Benchmark: BENCH-R-01 (RES)
+Title: Codebase Pattern Discovery
+Difficulty: Medium
+
+TASK DESCRIPTION:
+Given a codebase path and a pattern description, locate all relevant files and summarize their function.
+
+SUCCESS CRITERIA:
+Returns complete file list with correct functional summaries. No false positives. No missed files.
+
+FAILURE CRITERIA:
+Missing relevant files, incorrect summaries, hallucinated files.
+
+=== AGENT OUTPUT ===
+
+[No output file found — benchmark was executed directly in agent session]
+
+=== EVALUATION ===
+
+Please score this benchmark output on each of the 8 quality axes below.
+Use the following scale:
+  5 = Excellent — exceeds expectations
+  4 = Good — meets criteria with minor room for improvement
+  3 = Adequate — meets minimum bar
+  2 = Poor — significant gaps
+  1 = Failing — does not meet criteria
+
+SCORING:
+
+1. correctness (1-5): ___
+   note: ____
+
+2. completeness (1-5): ___
+   note: ____
+
+3. clarity (1-5): ___
+   note: ____
+
+4. reasoning (1-5): ___
+   note: ____
+
+5. precision (1-5): ___
+   note: ____
+
+6. efficiency (1-5): ___
+   note: ____
+
+7. actionability (1-5): ___
+   note: ____
+
+8. faithfulness (1-5): ___
+   note: ____
+
+WEAKNESSES (list specific issues, be critical):
+1. ____
+2. ____
+3. ____
+
+STRENGTHS (what was done well):
+1. ____
+2. ____
+
+OVERALL VERDICT: Pass / Fail

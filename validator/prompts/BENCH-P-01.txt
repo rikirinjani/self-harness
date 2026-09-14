@@ -1,0 +1,132 @@
+=== BENCHMARK VALIDATION ===
+
+Benchmark: BENCH-P-01 (PLN)
+Title: Task Decomposition
+Difficulty: Medium
+
+TASK DESCRIPTION:
+Given a high-level goal, decompose into a dependency-ordered task list with estimated effort per task.
+
+SUCCESS CRITERIA:
+Tasks are independent where possible. Dependencies explicit. Estimates have confidence ranges. No missing critical path.
+
+FAILURE CRITERIA:
+Missing dependency. Overly coarse decomposition. No effort estimates. Circular dependency.
+
+=== AGENT OUTPUT ===
+
+# BENCH-P-01: Task Decomposition — Complete Phase 2
+
+## Goal
+Execute remaining 10 benchmarks (5 Planning + 5 Coding), record all results, update progress tracking, push artifacts, and exit Phase 2.
+
+## Decomposition
+
+```
+Phase 2 Remaining
+│
+├── [A] Planning Benchmarks (5 tasks, ~30 min each)
+│   ├── A1. BENCH-P-01: Task Decomposition         [this task]
+│   ├── A2. BENCH-P-02: Risk Assessment             [depends: none]
+│   ├── A3. BENCH-P-03: Architecture Decision       [depends: none]
+│   ├── A4. BENCH-P-04: Resource-Constrained Plan   [depends: none]
+│   └── A5. BENCH-P-05: Retrospective / RCA         [depends: none]
+│
+├── [B] Coding Benchmarks (5 tasks, ~20 min each)
+│   ├── B1. BENCH-C-01: Bounded Implementation      [depends: none]
+│   ├── B2. BENCH-C-02: Bug Fix with Regression     [depends: B1 optional — same sandbox]
+│   ├── B3. BENCH-C-03: Refactor for Clarity        [depends: none]
+│   ├── B4. BENCH-C-04: Multi-File Feature          [depends: B3 — refactored code]
+│   └── B5. BENCH-C-05: Scripting / Automation      [depends: none]
+│
+├── [C] Record & Update (concurrent with A/B)
+│   ├── C1. Update phase-2-progress.md              [after each A/B task]
+│   └── C2. Push all to GitHub                      [after all A+B]
+│
+└── [D] Phase Exit                                  [after C]
+    └── D1. Verify gate checklist
+         D2. Write phase summary
+```
+
+## Task Details
+
+| ID | Task | Est. Time | Confidence | Dependencies |
+|----|------|-----------|------------|--------------|
+| A1 | BENCH-P-01: Task Decomposition | 10 min | HIGH (being done now) | None |
+| A2 | BENCH-P-02: Risk Assessment | 20 min | MEDIUM | None |
+| A3 | BENCH-P-03: Architecture Decision | 25 min | MEDIUM | None |
+| A4 | BENCH-P-04: Resource-Constrained Plan | 20 min | MEDIUM | None |
+| A5 | BENCH-P-05: Retrospective / RCA | 20 min | MEDIUM | None |
+| B1 | BENCH-C-01: Bounded Implementation | 15 min | HIGH | None |
+| B2 | BENCH-C-02: Bug Fix with Regression | 15 min | HIGH | B1 (same sandbox) |
+| B3 | BENCH-C-03: Refactor for Clarity | 20 min | HIGH | None |
+| B4 | BENCH-C-04: Multi-File Feature | 25 min | MEDIUM | B3 (refactored code) |
+| B5 | BENCH-C-05: Scripting / Automation | 15 min | HIGH | None |
+| C1 | Update progress file | 5 min per batch | HIGH | After each A/B batch |
+| C2 | Push to GitHub | 5 min | HIGH | After C1 |
+
+## Critical Path
+A1→A2→A3→A4→A5 → C1 → B1→B2 → B3→B4 → B5 → C1 → C2 → D1
+
+**Critical path length:** ~10 sequential tasks (Planning → Record → Coding → Record → Push → Verify)
+
+## Parallelization opportunities
+- A2-A5 can run concurrently (no deps between them)
+- B1, B3, B5 can run concurrently (no deps)
+- C1 can run after each batch (doesn't block other work)
+
+## Total estimated effort: ~3 hours
+## Total wall clock (parallel): ~2 hours
+
+## Risk (Rationale)
+- Planning benchmarks are read-only (low risk) but require careful thought
+- Coding benchmarks modify code (higher risk) — use sandbox/git worktree
+- Phase exit gate has 6 items — may miss some if not checked explicitly
+
+
+=== EVALUATION ===
+
+Please score this benchmark output on each of the 8 quality axes below.
+Use the following scale:
+  5 = Excellent — exceeds expectations
+  4 = Good — meets criteria with minor room for improvement
+  3 = Adequate — meets minimum bar
+  2 = Poor — significant gaps
+  1 = Failing — does not meet criteria
+
+SCORING:
+
+1. correctness (1-5): ___
+   note: ____
+
+2. completeness (1-5): ___
+   note: ____
+
+3. clarity (1-5): ___
+   note: ____
+
+4. reasoning (1-5): ___
+   note: ____
+
+5. precision (1-5): ___
+   note: ____
+
+6. efficiency (1-5): ___
+   note: ____
+
+7. actionability (1-5): ___
+   note: ____
+
+8. faithfulness (1-5): ___
+   note: ____
+
+WEAKNESSES (list specific issues, be critical):
+1. ____
+2. ____
+3. ____
+
+STRENGTHS (what was done well):
+1. ____
+2. ____
+
+OVERALL VERDICT: Pass / Fail

@@ -1,0 +1,113 @@
+=== BENCHMARK VALIDATION ===
+
+Benchmark: BENCH-P-05 (PLN)
+Title: Retrospective / Root Cause Analysis
+Difficulty: Medium
+
+TASK DESCRIPTION:
+Given a failure event with timeline, produce a root cause analysis with contributing factors and prevention recommendations.
+
+SUCCESS CRITERIA:
+Root cause is correct (not just proximate cause). Contributing factors identified. Recommendations are specific and actionable.
+
+FAILURE CRITERIA:
+Confuses symptom with cause. Missing contributing factors. Vague recommendations.
+
+=== AGENT OUTPUT ===
+
+# BENCH-P-05: Retrospective — Phase 2 Benchmark Execution
+
+## Timeline
+
+| Time | Event | Impact |
+|------|-------|--------|
+| T+0 | First `--all` output — 0 benchmarks parsed | 20 min delay debugging parser |
+| T+20 | Found regex issue: `\w` doesn't match `-` | Fixed, benchmarks loaded |
+| T+30 | First `print_task` — UnicodeEncodeError | cp1252 can't render emoji |
+| T+35 | Replaced emoji with ASCII `[PASS]`/`[FAIL]` | Fixed print_task |
+| T+50 | Interactive `--score` mode fails (PS no heredoc) | Built score.py (80 lines) |
+| T+70 | `summary.json` shows `null` for research | Fixed cat_letter mapping |
+| T+85 | BENCH-R-03 print fails again — `\u2265` issue | Added stdout.reconfigure |
+| T+100 | BENCH-O-04 bulk rename — had to also update result JSONs | Extra 10 min |
+| T+120 | BENCH-O-05 trace integration — WORKED first try | No issues |
+
+## Root Cause Analysis
+
+### Primary Root Cause: Windows encoding mismatch
+- **Symptom:** UnicodeEncodeError on every run
+- **Proximate cause:** Python defaults to cp1252 on Windows
+- **Root cause:** The script was developed on a platform assumption (UTF-8 terminal) that didn't match the execution environment (Windows cp1252 console)
+- **Contributing factors:** (1) No CI/test run on actual Windows console before deployment, (2) Benchmark catalog contained Unicode ≥ chars from the original spec, (3) f-strings in Python don't warn about non-encodable characters at definition time
+
+### Secondary Root Cause: PowerShell != bash
+- **Symptom:** Several attempts to use Unix-style scripting (heredoc, nested quoting)
+- **Proximate cause:** Commands written for bash don't work in PowerShell
+- **Root cause:** The runner was designed assuming a Unix execution environment, but the actual environment is Windows PowerShell
+- **Contributing factors:** (1) #!/usr/bin/env python3 shebang implies Unix, (2) Script examples in the phase plan use `$ echo` syntax, (3) The script was never tested in the target environment before deployment
+
+### Tertiary Root Cause: Parser fragility
+- **Symptom:** Catalog parser returned 0 results on first attempt
+- **Proximate cause:** Regex required `\w` to match hyphens in benchmark IDs
+- **Root cause:** The markdown catalog format and the parser regex were designed separately, with no test fixture to validate parsing
+- **Contributing factors:** (1) No unit tests for the parser, (2) `BENCH-R-01` format wasn't tested explicitly, (3) re.DOTALL behavior was assumed but not verified
+
+## Prevention Recommendations
+
+| Recommendation | Prevents | Effort | Priority |
+|---------------|----------|--------|----------|
+| Add `sys.stdout.reconfigure(encoding='utf-8')` at top of every script | Encoding failure | 1 line | HIGH |
+| Test runner on Windows PowerShell before Phase 3 | PS incompatibility | 10 min | HIGH |
+| Add inline test for catalog parser (simple assert with 3 known benchmarks) | Parser regression | 5 lines | MEDIUM |
+| Replace Unicode characters in catalog with ASCII alternatives (e.g., `>=` not `≥`) | Encoding issues in data files | 2 edits | MEDIUM |
+| Add `python -c "..."` test commands in script, not bash-isms | Cross-platform scripts | Documentation | LOW |
+
+## Verdict
+Phase 2 execution had a higher-than-expected setup friction cost (~100 min of debugging parser/encoding/PS issues before stable execution). Once stable, benchmark execution was clean. Recommendation for Phase 3: test the runner in the target environment BEFORE starting benchmark execution.
+
+
+=== EVALUATION ===
+
+Please score this benchmark output on each of the 8 quality axes below.
+Use the following scale:
+  5 = Excellent — exceeds expectations
+  4 = Good — meets criteria with minor room for improvement
+  3 = Adequate — meets minimum bar
+  2 = Poor — significant gaps
+  1 = Failing — does not meet criteria
+
+SCORING:
+
+1. correctness (1-5): ___
+   note: ____
+
+2. completeness (1-5): ___
+   note: ____
+
+3. clarity (1-5): ___
+   note: ____
+
+4. reasoning (1-5): ___
+   note: ____
+
+5. precision (1-5): ___
+   note: ____
+
+6. efficiency (1-5): ___
+   note: ____
+
+7. actionability (1-5): ___
+   note: ____
+
+8. faithfulness (1-5): ___
+   note: ____
+
+WEAKNESSES (list specific issues, be critical):
+1. ____
+2. ____
+3. ____
+
+STRENGTHS (what was done well):
+1. ____
+2. ____
+
+OVERALL VERDICT: Pass / Fail

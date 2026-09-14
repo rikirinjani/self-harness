@@ -1,0 +1,30 @@
+# BENCH-O-05: Workflow Automation — Trace Integration
+
+## Manual Process Automated
+
+**Before:** Scoring a benchmark required:
+1. Run `python benchmarks/score.py ...`
+2. Manually write a trace record to `C:\Users\think\self-harness\traces\`
+3. If fail, manually write a failure record to `C:\Users\think\self-harness\failures\`
+
+**After (automated):**
+1. Run `python benchmarks/score.py ...`
+2. ✅ Trace auto-written to `C:\Users\think\self-harness\traces/{ts}-bench-{id}.json`
+3. ✅ Failure auto-written to `C:\Users\think\self-harness\failures/{ts}-bench-{id}.json`
+
+## Implementation
+Added `write_trace()` function to `benchmarks/score.py`:
+- Called automatically after every `--score` run
+- Uses UUID for trace_id (matching existing trace schema)
+- Records scores, weaknesses, duration, tool_calls
+- References the result JSON via `result_ref`
+- Writes failure record only on `outcome == "fail"`
+
+## Error handling
+- `trace_dir.mkdir(parents=True, exist_ok=True)` — safe if dir exists
+- No crash if central path is missing (creates it)
+- Failure writing is dependent on outcome, not on trace success
+
+## Rollback
+- Remove `write_trace()` call and function from score.py
+- Or: delete trace files if unwanted (benign — they're just records)

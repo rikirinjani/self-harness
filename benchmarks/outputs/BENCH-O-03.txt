@@ -1,0 +1,36 @@
+# BENCH-O-03: Configuration Change
+
+## Change: summary.json default for empty category scores
+
+### Before
+```python
+cat: round(sum(vals) / len(vals), 2) if vals else None
+```
+
+### After
+```python
+cat: round(sum(vals) / len(vals), 2) if vals else 0.0
+```
+
+### File
+`benchmarks/run.py`, line 264
+
+### What changed
+When a benchmark category has no results yet, `avg_scores.<category>` in summary.json
+showed `null`. Changed to `0.0` for cleaner output in dashboards.
+
+### Validation
+Ran `update_summary()` then `--summary`:
+```
+"planning": 0.0,    # was null
+"coding": 0.0,      # was null
+```
+
+### Rollback procedure
+Option A: `git checkout -- benchmarks/run.py` (revert entire file)
+Option B: Edit line 264 back: change `0.0` to `None`
+Option C: `git diff` to verify the single-line change, then `git restore benchmarks/run.py`
+
+### Side effects
+None — this only affects the JSON representation of empty categories.
+Any consumer that checked for `is not None` may need updating.

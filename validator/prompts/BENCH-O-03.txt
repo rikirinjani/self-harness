@@ -1,0 +1,101 @@
+=== BENCHMARK VALIDATION ===
+
+Benchmark: BENCH-O-03 (OPS)
+Title: Configuration Change
+Difficulty: Medium
+
+TASK DESCRIPTION:
+Given a config file and required change, implement change safely with validation and rollback plan.
+
+SUCCESS CRITERIA:
+Change applied correctly. Validation confirms it works. Rollback procedure documented.
+
+FAILURE CRITERIA:
+Change breaks config. No validation. No rollback plan. Unrelated side effects.
+
+=== AGENT OUTPUT ===
+
+# BENCH-O-03: Configuration Change
+
+## Change: summary.json default for empty category scores
+
+### Before
+```python
+cat: round(sum(vals) / len(vals), 2) if vals else None
+```
+
+### After
+```python
+cat: round(sum(vals) / len(vals), 2) if vals else 0.0
+```
+
+### File
+`benchmarks/run.py`, line 264
+
+### What changed
+When a benchmark category has no results yet, `avg_scores.<category>` in summary.json
+showed `null`. Changed to `0.0` for cleaner output in dashboards.
+
+### Validation
+Ran `update_summary()` then `--summary`:
+```
+"planning": 0.0,    # was null
+"coding": 0.0,      # was null
+```
+
+### Rollback procedure
+Option A: `git checkout -- benchmarks/run.py` (revert entire file)
+Option B: Edit line 264 back: change `0.0` to `None`
+Option C: `git diff` to verify the single-line change, then `git restore benchmarks/run.py`
+
+### Side effects
+None — this only affects the JSON representation of empty categories.
+Any consumer that checked for `is not None` may need updating.
+
+
+=== EVALUATION ===
+
+Please score this benchmark output on each of the 8 quality axes below.
+Use the following scale:
+  5 = Excellent — exceeds expectations
+  4 = Good — meets criteria with minor room for improvement
+  3 = Adequate — meets minimum bar
+  2 = Poor — significant gaps
+  1 = Failing — does not meet criteria
+
+SCORING:
+
+1. correctness (1-5): ___
+   note: ____
+
+2. completeness (1-5): ___
+   note: ____
+
+3. clarity (1-5): ___
+   note: ____
+
+4. reasoning (1-5): ___
+   note: ____
+
+5. precision (1-5): ___
+   note: ____
+
+6. efficiency (1-5): ___
+   note: ____
+
+7. actionability (1-5): ___
+   note: ____
+
+8. faithfulness (1-5): ___
+   note: ____
+
+WEAKNESSES (list specific issues, be critical):
+1. ____
+2. ____
+3. ____
+
+STRENGTHS (what was done well):
+1. ____
+2. ____
+
+OVERALL VERDICT: Pass / Fail
