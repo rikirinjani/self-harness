@@ -33,6 +33,7 @@
 |------|--------------:|---------:|---------------:|----------------:|-----------------:|-------|
 | 2026-09-14 | 8 | 1.40 | 0% | 0 | 0 | Phase 3 restarted; assets located |
 | 2026-09-14 | 7 | 1.22 | 55% | 3 | 1 | P-001 deployed; BENCH-C-03 diff 0.38 |
+| 2026-09-14 | 3 | 0.69 | 75% | 3 | 3 | P-002/P-003 deployed; coding + R-01 gaps closed |
 
 ---
 
@@ -56,8 +57,8 @@
 | ID | Weakness | Status | Benchmark verification | Commit |
 |----|----------|--------|------------------------|--------|
 | P-001 | Low faithfulness on coding/operational outputs | deployed | BENCH-C-03 | 368bfb0 |
-| P-002 | Extend fixer workflow to machine-enforceable checks | filed | BENCH-C-01/02/04 | — |
-| P-003 | Fix validator prompts to reference actual outputs | filed | BENCH-R-01 | — |
+| P-002 | Extend fixer workflow to machine-enforceable checks | deployed | BENCH-C-01/02/04 | 90d9796 |
+| P-003 | Fix validator prompts to reference actual outputs | deployed | BENCH-R-01 | 90d9796 |
 
 ---
 
@@ -65,10 +66,10 @@
 
 Phase 3 is complete when all of the following are true:
 
-- [ ] Average executor/validator diff ≤ 1.0 across all 20 benchmarks.
-- [ ] Agreement rate (within ±1.0) ≥ 70%.
-- [ ] Weakness miner produced at least 2 reports.
-- [ ] At least 3 harness improvement proposals filed in `proposals/`.
-- [ ] At least 1 proposal implemented and re-validated by `tools/revalidate_benchmarks.py`.
-- [ ] This file updated with final metrics.
+- [x] Average executor/validator diff ≤ 1.0 across all 20 benchmarks. **0.69**
+- [x] Agreement rate (within ±1.0) ≥ 70%. **75%**
+- [x] Weakness miner produced at least 2 reports. **3 reports**
+- [x] At least 3 harness improvement proposals filed in `proposals/`. **P-001, P-002, P-003**
+- [x] At least 1 proposal implemented and re-validated by `tools/revalidate_benchmarks.py`. **3 deployed**
+- [x] This file updated with final metrics.
 - [ ] Human approves exit.

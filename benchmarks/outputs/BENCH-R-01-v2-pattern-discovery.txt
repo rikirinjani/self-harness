@@ -1,0 +1,42 @@
+BENCH-R-01: Codebase Pattern Discovery — benchmark validation pipeline
+Workflow applied: rules/fixer-workflow.md (adapted for explorer/research tasks)
+
+=== 1. CONSTRAINT RESTATEMENT (constraints.md) ===
+
+- codebase path: C:\Users\think\self-harness
+- pattern: "benchmark validation pipeline" (files and scripts involved in running benchmarks and validating outputs)
+- deliverable: complete file list with correct functional summaries
+- no false positives
+- no missed files
+
+=== 2. RELEVANT FILES DISCOVERED ===
+
+| File | Function |
+|------|----------|
+| benchmark_catalog.md | Defines the 20 benchmark slots, descriptions, success/failure criteria, and responsible agents. |
+| benchmarks/run.py | Benchmark runner. Parses catalog, prints tasks, supports --summary and --stats. |
+| benchmarks/score.py | Scoring helper for benchmark results. |
+| benchmarks/utils.py | Aggregate statistics computation used by runner. |
+| benchmarks/results/*.json | 20 benchmark result files with executor scores and outcomes. |
+| benchmarks/outputs/* | Output artifacts produced by benchmark executions. |
+| validator/generate_prompts.py | Generates blind-evaluation prompts from benchmark catalog and outputs. |
+| validator/compare_scores.py | Compares executor scores against GPT validator responses. |
+| validator/prompts/BENCH-*.txt | Per-benchmark validation prompts. |
+| validator/responses/BENCH-*.txt | GPT validator filled-in responses. |
+| validator/comparisons/comparison_report.md | Diff report between executor and validator. |
+
+=== 3. CONSTRAINT CHECK ===
+
+- [x] All files are directly related to the benchmark validation pipeline.
+- [x] No unrelated files included.
+- [x] Functional summaries are concise and accurate.
+- [x] No hallucinated files.
+
+=== 4. SELF-CHECK ===
+
+- [x] File list is complete for the pipeline scope.
+- [x] Summaries explain function, not just filename.
+- [x] No false positives.
+
+VERIFICATION:
+- Cross-checked against git ls-tree -r --name-only HEAD and benchmarks/run.py --summary.

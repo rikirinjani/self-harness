@@ -1,0 +1,85 @@
+BENCH-C-04: Multi-File Feature Addition — --stats flag
+Workflow applied: rules/fixer-workflow.md (P-001 + P-002)
+
+=== 1. CONSTRAINT RESTATEMENT (constraints.md) ===
+
+- Add a `--stats` CLI flag to `benchmarks/run.py`.
+- The flag must display aggregate statistics across all benchmark result JSON files.
+- Feature must touch 3+ files following existing project conventions.
+- Tests must pass.
+- No unrelated changes.
+- No new dependencies.
+
+=== 2. IMPLEMENTATION ===
+
+Files touched: 3
+
+1. benchmarks/run.py
+   - Added `--stats` argument to argparse.
+   - Added handler in `main()`: imports `compute_aggregate_stats` from utils and prints formatted table.
+
+2. benchmarks/utils.py
+   - `compute_aggregate_stats()` reads all result JSONs and returns totals, averages, and category breakdown.
+
+3. benchmarks/outputs/test_C04_stats.py
+   - Tests structure, types, consistency, category breakdown, and CLI smoke test.
+
+=== 3. CONSTRAINT CHECK (tools/constraint_check.py) ===
+
+```json
+{
+  "spec": "constraints.md",
+  "impl": "benchmarks/run.py",
+  "constraints": [
+    "add --stats cli flag",
+    "display aggregate statistics",
+    "touch 3 or more files",
+    "follow existing conventions",
+    "tests must pass",
+    "no unrelated changes",
+    "no new dependencies"
+  ],
+  "covered": [
+    "add --stats cli flag",
+    "display aggregate statistics",
+    "touch 3 or more files",
+    "follow existing conventions",
+    "tests must pass",
+    "no unrelated changes",
+    "no new dependencies"
+  ],
+  "missing": [],
+  "pass": true,
+  "coverage_ratio": 1.0
+}
+```
+
+=== 4. SELF-CHECK ===
+
+- [x] Code compiles / runs without errors.
+- [x] Feature works: `python benchmarks/run.py --stats` prints aggregate table.
+- [x] Tests pass: 5/5 tests in `test_C04_stats.py`.
+- [x] No unrelated changes.
+- [x] No new dependencies.
+- [x] Follows existing patterns (imports from utils, argparse usage consistent with other flags).
+
+FEATURE OUTPUT:
+==================================================
+  BENCHMARK AGGREGATE STATISTICS
+==================================================
+  Total benchmarks: 20
+  Average score:    4.91
+  Highest:          BENCH-C-01 (5.00)
+  Lowest:           BENCH-O-01 (4.75)
+  Pass rate:        100.0%
+
+  Category breakdown:
+    research      5 benchmarks, avg score 4.88
+    coding        5 benchmarks, avg score 4.98
+    planning      5 benchmarks, avg score 4.88
+    operational   5 benchmarks, avg score 4.90
+==================================================
+
+VERIFICATION:
+- `python benchmarks/run.py --stats` runs without errors.
+- `python benchmarks/outputs/test_C04_stats.py` passes all assertions.

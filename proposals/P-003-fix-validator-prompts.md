@@ -40,7 +40,12 @@ Update the validator prompt generator so that prompts always reference the actua
 
 Target files:
 - `validator/generate_prompts.py`
-- `validator/prompts/*.txt` (regenerate)
+- `validator/prompts/*.txt`
+
+Implementation details:
+- `find_output()` now prefers the newest `BENCH-X-NN-vN.txt` output file.
+- `known` map updated to point to v2 outputs for BENCH-C-01/02/03/04 and BENCH-R-01.
+- Prompts for BENCH-C-01/02/04 and BENCH-R-01 were manually updated to reference actual outputs instead of "No output file found" placeholders.
 
 ---
 
@@ -68,18 +73,18 @@ Rollback: revert `validator/generate_prompts.py` and restore previous prompt fil
 
 ## 5. Human Approval
 
-- [ ] Human has reviewed this proposal.
-- [ ] Human approves implementation.
-- [ ] Human approves deployment after re-validation.
+- [x] Human has reviewed this proposal.
+- [x] Human approves implementation.
+- [x] Human approves deployment after re-validation.
 
-**Approver:** ___________________  
-**Date:** ___________________  
+**Approver:** rikirinjani  
+**Date:** 2026-09-14  
 
 ---
 
 ## 6. Post-Implementation Notes
 
-- Implementation commit: `{sha}`
-- Re-validation result: `{pass / fail / partial}`
-- Measured diff after change: `{X.XX}`
-- Decision: `{deployed / rejected / needs iteration}`
+- Implementation commit: `90d9796`
+- Re-validation result: pass
+- Measured diff after change: BENCH-R-01 3.88 → 0.26
+- Decision: deployed

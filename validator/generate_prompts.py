@@ -57,16 +57,20 @@ def load_catalog():
 
 
 def find_output(bench_id):
-    """Find the output file for a benchmark."""
+    """Find the latest output file for a benchmark."""
+    # Prefer the newest -vN output if available, otherwise fall back to base file.
+    candidates = sorted(OUTPUTS_DIR.glob(f"{bench_id}-v*.txt"), reverse=True)
+    if candidates:
+        return candidates[0]
+
     # Known output locations (where we saved them during Phase 2 execution)
     known = {
-        "BENCH-C-01": BENCHMARKS_DIR / "utils.py",
-        "BENCH-C-02": OUTPUTS_DIR / "test_C02_bug.py",
-        "BENCH-C-03": None,  # refactor has no separate output (changes were in run.py)
-        "BENCH-C-04": OUTPUTS_DIR / "test_C04_stats.py",
+        "BENCH-C-01": OUTPUTS_DIR / "BENCH-C-01-v2-bounded-impl.txt",
+        "BENCH-C-02": OUTPUTS_DIR / "BENCH-C-02-v2-fix.txt",
+        "BENCH-C-03": OUTPUTS_DIR / "BENCH-C-03-v2-refactor.txt",
+        "BENCH-C-04": OUTPUTS_DIR / "BENCH-C-04-v2-feature.txt",
         "BENCH-C-05": BENCHMARKS_DIR / "phase2_report.py",
-        "BENCH-O-04": OUTPUTS_DIR / "BENCH-O-04.txt",  # might not have been created
-        "BENCH-R-01": None,  # interactive — no file saved
+        "BENCH-R-01": OUTPUTS_DIR / "BENCH-R-01-v2-pattern-discovery.txt",
     }
     result = known.get(bench_id)
     if result and result.exists():

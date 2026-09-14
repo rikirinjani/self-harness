@@ -156,12 +156,24 @@ def generate_comparison_report(bench_ids, executor, gpt, output_file=None):
             flagged.append((bid, e_avg, g_avg, diff, e_scores, g_scores))
 
     if count > 0:
+        agreement_count = 0
+        for b in bench_ids:
+            e = executor.get(b, {})
+            g = gpt.get(b, {})
+            e_scores = e.get("scores", {})
+            g_scores = g.get("scores", {})
+            if not any(g_scores.values()):
+                continue
+            e_avg = sum(v for v in e_scores.values() if v) / len(QUALITY_AXES)
+            g_avg = sum(v for v in g_scores.values() if v) / len(QUALITY_AXES)
+            if abs(e_avg - g_avg) <= 1.0:
+                agreement_count += 1
+        agreement_rate = agreement_count / count * 100 if count > 0 else 0
         lines.extend([
             "",
             f"**Overall:** Executor avg {total_exec_avg/count:.2f} vs GPT avg {total_gpt_avg/count:.2f} "
             f"(avg diff {total_diff/count:.2f})",
-            f"**Agreement rate (within ±1.0):** {sum(1 for b in bench_ids if abs((executor.get(b,{})).get('average',0) - (gpt.get(b,{})).get('scores',{}).get('average',0) if gpt.get(b,{}).get('scores',{}) else 0) <= 1) / count * 100:.0f}%"
-            if count > 0 else "**No data**",
+            f"**Agreement rate (within ±1.0):** {agreement_rate:.0f}% ({agreement_count}/{count})",
         ])
 
     if flagged:

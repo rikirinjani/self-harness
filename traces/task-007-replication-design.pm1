@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "task-007-replication-design",
+  "timestamp": "2026-09-14T06:49:38.367497+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 0,
+  "key_files": [
+    "experiments/pm1-rx/REPLICATION_001_DESIGN.md",
+    "experiments/pm1-rx/REPLICATION_001_RESOURCE_PLAN.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task-007-replication-design",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........................-.--...-........................................-.--...-",
+  "action": "Task 007 COMPLETE: Experiment 001 replication protocol designed (design only, not executed). Deliverables: REPLICATION_001_DESIGN.md + REPLICATION_001_RESOURCE_PLAN.md. Key finding: Ollama Cloud retired deepseek-v3.1:671b and deepseek-v3.2 on 2026-07-15, so pure provider replication impossible; proposed combined provider+model replication on deepseek-v4-flash. Cost est \\-13 base / \\ peak; runtime 8-10h; Pro plan \\/mo. 21 OPEN TODOs listed. No experiment run, no credits spent. Commit 3d9e78f. Experiment 001 tag 8304262 unchanged; dataset archive sha256 4364fd88... unchanged."
+}

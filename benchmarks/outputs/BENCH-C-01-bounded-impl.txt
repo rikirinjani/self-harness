@@ -1,0 +1,68 @@
+BENCH-C-01: Bounded Implementation — safe_divide function
+Workflow applied: rules/fixer-workflow.md (P-001 + P-002)
+
+=== 1. CONSTRAINT RESTATEMENT (constraints.md) ===
+
+- Implement a single function named `safe_divide(a, b)`.
+- Inputs are numbers (int or float).
+- Output is the quotient `a / b` when `b != 0`.
+- If `b == 0`, return `None` instead of raising an exception.
+- If either input is not a number, return `None`.
+- No new dependencies.
+- Must include a short docstring.
+
+=== 2. IMPLEMENTATION ===
+
+```python
+def safe_divide(a, b):
+    """Return a / b, or None for invalid inputs or division by zero."""
+    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+        return None
+    if b == 0:
+        return None
+    return a / b
+```
+
+=== 3. CONSTRAINT CHECK (tools/constraint_check.py) ===
+
+```json
+{
+  "spec": "constraints.md",
+  "impl": "safe_divide.py",
+  "constraints": [
+    "implement a single function named safe_divide",
+    "inputs are numbers",
+    "output is the quotient",
+    "if b == 0 return none",
+    "if either input is not a number return none",
+    "no new dependencies",
+    "must include a short docstring"
+  ],
+  "covered": [
+    "implement a single function named safe_divide",
+    "inputs are numbers",
+    "output is the quotient",
+    "if b == 0 return none",
+    "if either input is not a number return none",
+    "no new dependencies",
+    "must include a short docstring"
+  ],
+  "missing": [],
+  "pass": true,
+  "coverage_ratio": 1.0
+}
+```
+
+=== 4. SELF-CHECK ===
+
+- [x] Code compiles / runs without errors.
+- [x] Provided tests pass:
+  - `safe_divide(10, 2) == 5.0`
+  - `safe_divide(10, 0) is None`
+  - `safe_divide("10", 2) is None`
+- [x] No new dependencies.
+- [x] Edge cases handled: zero division and non-numeric inputs.
+- [x] Output format matches the spec (single function with docstring).
+
+VERIFICATION:
+- `python -m py.test safe_divide_test.py` passes 3/3 tests.

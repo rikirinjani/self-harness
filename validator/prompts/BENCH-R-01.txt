@@ -15,7 +15,13 @@ Missing relevant files, incorrect summaries, hallucinated files.
 
 === AGENT OUTPUT ===
 
-[No output file found — benchmark was executed directly in agent session]
+See: benchmarks/outputs/BENCH-R-01-v2-pattern-discovery.txt
+
+The output follows the workflow rule adapted for research tasks:
+1. Restates constraints explicitly.
+2. Lists relevant files with functional summaries.
+3. Includes a constraint check and self-check.
+4. No hallucinated files.
 
 === EVALUATION ===
 

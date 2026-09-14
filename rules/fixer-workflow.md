@@ -50,12 +50,12 @@ If any checkbox cannot be checked, the fixer must explain why in the trace and m
 
 ## Tooling
 
-A helper script exists at `tools/constraint_check.py`. It can be run manually or called by the orchestrator to verify that a spec snippet is covered by the implementation.
+A helper script exists at `tools/constraint_check.py`. It must be invoked by the orchestrator before the task is marked complete.
 
 Usage:
 
 ```bash
-python tools/constraint_check.py --spec "path/to/spec.txt" --impl "path/to/code.py"
+python tools/constraint_check.py --spec constraints.md --impl "path/to/code.py"
 ```
 
 The script returns a JSON object with:
@@ -64,14 +64,23 @@ The script returns a JSON object with:
 - `missing`: constraints not found
 - `pass`: true if all constraints are covered
 
+### Machine-enforceable requirement
+
+1. The constraint restatement from Step 1 must be written to `constraints.md` in the task working directory.
+2. After implementation, the orchestrator must run `tools/constraint_check.py --spec constraints.md --impl {target_file}`.
+3. The task outcome must be marked `fail` or `partial` if the helper reports any missing constraints, unless the human explicitly overrides.
+4. The `constraints.md` and the helper output must be attached to the trace.
+
 ---
 
 ## Trace requirement
 
 Every fixer trace must contain:
 1. The constraint restatement from Step 1.
-2. The self-check results from Step 3.
-3. A reference to this rule file (`rules/fixer-workflow.md`).
+2. The `constraints.md` file path.
+3. The `tools/constraint_check.py` output.
+4. The self-check results from Step 3.
+5. A reference to this rule file (`rules/fixer-workflow.md`).
 
 Failure to include these is itself a process failure.
 

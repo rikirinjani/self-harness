@@ -1,0 +1,183 @@
+BENCH-C-01: Bounded Implementation — compute_aggregate_stats
+Workflow applied: rules/fixer-workflow.md (P-001 + P-002)
+
+=== 1. CONSTRAINT RESTATEMENT (constraints.md) ===
+
+- Function name: `compute_aggregate_stats(results_dir)`.
+- Input: `pathlib.Path` to directory containing `BENCH-*.json` result files.
+- Output: `dict` with keys:
+  - `total_benchmarks` (int)
+  - `avg_score` (float)
+  - `highest` (dict with `id`, `score`, `title`)
+  - `lowest` (dict with `id`, `score`, `title`)
+  - `pass_rate` (float)
+  - `category_breakdown` (list of `{category, count, avg_score, avg_duration}`)
+- Constraints:
+  - stdlib only
+  - handle malformed JSON gracefully (skip corrupt files)
+  - follow project style (snake_case, type hints)
+
+=== 2. IMPLEMENTATION ===
+
+```python
+import json
+from pathlib import Path
+from collections import defaultdict
+from typing import Dict, List, Any
+
+
+def compute_aggregate_stats(results_dir: Path) -> Dict[str, Any]:
+    """Compute aggregate statistics from benchmark result files.
+
+    Args:
+        results_dir: Path to directory containing BENCH-*.json result files.
+
+    Returns:
+        dict with total_benchmarks, avg_score, highest, lowest, pass_rate,
+        and category_breakdown as specified.
+    """
+    results_dir = Path(results_dir)
+    result_files = sorted(results_dir.glob("BENCH-*.json"))
+
+    scores: List[Dict[str, Any]] = []
+    category_data: Dict[str, List[Dict[str, Any]]] = defaultdict(list)
+    total = 0
+    passed = 0
+    highest: Dict[str, Any] = {"id": "", "score": 0.0, "title": ""}
+    lowest: Dict[str, Any] = {"id": "", "score": 0.0, "title": ""}
+
+    for rf in result_files:
+        try:
+            with open(rf, encoding="utf-8") as f:
+                data = json.load(f)
+        except (json.JSONDecodeError, OSError):
+            continue
+
+        bid = data.get("benchmark_id", "unknown")
+        title = data.get("task", "")
+        avg = data.get("scores", {}).get("average")
+        outcome = data.get("execution", {}).get("outcome", "")
+        duration = data.get("execution", {}).get("duration_s", 0)
+
+        if avg is None:
+            continue
+
+        cat_letter = bid.split("-")[1].lower() if "-" in bid else "?"
+        cat_map = {"r": "research", "c": "coding", "p": "planning", "o": "operational"}
+        category = cat_map.get(cat_letter, "unknown")
+
+        entry = {"id": bid, "score": avg, "title": title, "duration": duration}
+        scores.append(entry)
+        category_data[category].append(entry)
+        total += 1
+
+        if outcome == "pass":
+            passed += 1
+
+        if highest["id"] == "" or avg > highest["score"]:
+            highest = {"id": bid, "score": avg, "title": title}
+        if lowest["id"] == "" or avg < lowest["score"]:
+            lowest = {"id": bid, "score": avg, "title": title}
+
+    if not scores:
+        return {
+            "total_benchmarks": 0,
+            "avg_score": 0.0,
+            "highest": {"id": "", "score": 0.0, "title": ""},
+            "lowest": {"id": "", "score": 0.0, "title": ""},
+            "pass_rate": 0.0,
+            "category_breakdown": [
+                {"category": c, "count": 0, "avg_score": 0.0, "avg_duration": 0.0}
+                for c in ["research", "coding", "planning", "operational"]
+            ],
+        }
+
+    avg_score = round(sum(s["score"] for s in scores) / len(scores), 2)
+    pass_rate = round(passed / total * 100, 1) if total > 0 else 0.0
+
+    category_breakdown = []
+    for cat in ["research", "coding", "planning", "operational"]:
+        entries = category_data.get(cat, [])
+        if entries:
+            cat_avg = round(sum(e["score"] for e in entries) / len(entries), 2)
+            cat_dur = sum(e["duration"] for e in entries)
+            category_breakdown.append({
+                "category": cat,
+                "count": len(entries),
+                "avg_score": cat_avg,
+                "avg_duration": round(cat_dur / len(entries), 1),
+            })
+        else:
+            category_breakdown.append({
+                "category": cat, "count": 0, "avg_score": 0.0, "avg_duration": 0.0,
+            })
+
+    return {
+        "total_benchmarks": total,
+        "avg_score": avg_score,
+        "highest": highest,
+        "lowest": lowest,
+        "pass_rate": pass_rate,
+        "category_breakdown": category_breakdown,
+    }
+
+
+if __name__ == "__main__":
+    test_dir = Path(__file__).resolve().parent / "results"
+    stats = compute_aggregate_stats(test_dir)
+    assert isinstance(stats["total_benchmarks"], int)
+    assert isinstance(stats["avg_score"], float)
+    assert stats["highest"]["score"] >= stats["lowest"]["score"]
+    assert 0 <= stats["pass_rate"] <= 100
+    assert len(stats["category_breakdown"]) == 4
+    assert "title" in stats["highest"] and "title" in stats["lowest"]
+    print("[PASS] All assertions passed")
+```
+
+=== 3. CONSTRAINT CHECK (tools/constraint_check.py) ===
+
+```json
+{
+  "spec": "constraints.md",
+  "impl": "benchmarks/utils.py",
+  "constraints": [
+    "function name compute_aggregate_stats",
+    "input pathlib path",
+    "output dict with total_benchmarks",
+    "highest contains id score title",
+    "lowest contains id score title",
+    "pass_rate float",
+    "category breakdown list",
+    "stdlib only",
+    "handle malformed json gracefully",
+    "follow project style snake_case type hints"
+  ],
+  "covered": [
+    "function name compute_aggregate_stats",
+    "input pathlib path",
+    "output dict with total_benchmarks",
+    "highest contains id score title",
+    "lowest contains id score title",
+    "pass_rate float",
+    "category breakdown list",
+    "stdlib only",
+    "handle malformed json gracefully",
+    "follow project style snake_case type hints"
+  ],
+  "missing": [],
+  "pass": true,
+  "coverage_ratio": 1.0
+}
+```
+
+=== 4. SELF-CHECK ===
+
+- [x] Code compiles / runs without errors.
+- [x] All provided tests pass.
+- [x] No new dependencies.
+- [x] Follows project style (snake_case, type hints).
+- [x] Malformed JSON handled gracefully.
+- [x] Output schema matches spec exactly.
+
+VERIFICATION:
+- `python benchmarks/utils.py` runs assertions and prints `[PASS] All assertions passed`.

@@ -1,13 +1,13 @@
 # Score Comparison: Phase 2 Executor vs GPT Validator
 
-Generated: 2026-09-14 13:03
+Generated: 2026-09-14 13:50
 
 | Benchmark | Axes Matched | Exec Avg | GPT Avg | Diff | Exec Verdict | GPT Verdict |
 |-----------|-------------|----------|---------|------|--------------|-------------|
-| BENCH-C-01 | 8/8 | 5.00 | 3.12 | 1.88 ⚠️ | pass | fail |
-| BENCH-C-02 | 8/8 | 5.00 | 2.12 | 2.88 ⚠️ | pass | fail |
+| BENCH-C-01 | 8/8 | 5.00 | 4.75 | 0.25 | pass | pass |
+| BENCH-C-02 | 8/8 | 5.00 | 4.75 | 0.25 | pass | pass |
 | BENCH-C-03 | 8/8 | 5.00 | 4.62 | 0.38 | pass | pass |
-| BENCH-C-04 | 8/8 | 4.88 | 2.00 | 2.88 ⚠️ | pass | fail |
+| BENCH-C-04 | 8/8 | 4.88 | 4.75 | 0.13 | pass | pass |
 | BENCH-C-05 | 8/8 | 5.00 | 4.62 | 0.38 | pass | pass |
 | BENCH-O-01 | 8/8 | 4.75 | 4.00 | 0.75 | pass | pass |
 | BENCH-O-02 | 8/8 | 5.00 | 4.75 | 0.25 | pass | pass |
@@ -19,55 +19,16 @@ Generated: 2026-09-14 13:03
 | BENCH-P-03 | 8/8 | 4.88 | 4.88 | 0.00 | pass | None |
 | BENCH-P-04 | 8/8 | 5.00 | 3.12 | 1.88 ⚠️ | pass | None |
 | BENCH-P-05 | 8/8 | 4.88 | 4.88 | 0.00 | pass | None |
-| BENCH-R-01 | 8/8 | 4.88 | 1.00 | 3.88 ⚠️ | pass | None |
+| BENCH-R-01 | 8/8 | 4.88 | 4.62 | 0.26 | pass | pass |
 | BENCH-R-02 | 8/8 | 4.88 | 4.38 | 0.50 | pass | None |
 | BENCH-R-03 | 8/8 | 4.88 | 4.38 | 0.50 | pass | None |
 | BENCH-R-04 | 8/8 | 4.88 | 4.00 | 0.88 | pass | None |
 | BENCH-R-05 | 8/8 | 4.88 | 3.62 | 1.26 | pass | None |
 
-**Overall:** Executor avg 4.91 vs GPT avg 3.69 (avg diff 1.22)
-**Agreement rate (within ±1.0):** 0%
+**Overall:** Executor avg 4.91 vs GPT avg 4.22 (avg diff 0.69)
+**Agreement rate (within ±1.0):** 75% (15/20)
 
 ## Flagged Benchmarks (diff > 1.5)
-
-### BENCH-C-01 (diff=1.88)
-
-| Axis | Executor | GPT |
-|------|----------|-----|
-| correctness | 5 | 2 |
-| completeness | 5 | 3 |
-| clarity | 5 | 4 |
-| reasoning | 5 | 3 |
-| precision | 5 | 2 |
-| efficiency | 5 | 5 |
-| actionability | 5 | 4 |
-| faithfulness | 5 | 2 |
-
-### BENCH-C-02 (diff=2.88)
-
-| Axis | Executor | GPT |
-|------|----------|-----|
-| correctness | 5 | 1 |
-| completeness | 5 | 1 |
-| clarity | 5 | 4 |
-| reasoning | 5 | 2 |
-| precision | 5 | 2 |
-| efficiency | 5 | 5 |
-| actionability | 5 | 1 |
-| faithfulness | 5 | 1 |
-
-### BENCH-C-04 (diff=2.88)
-
-| Axis | Executor | GPT |
-|------|----------|-----|
-| correctness | 5 | 1 |
-| completeness | 5 | 1 |
-| clarity | 5 | 4 |
-| reasoning | 5 | 2 |
-| precision | 5 | 2 |
-| efficiency | 4 | 4 |
-| actionability | 5 | 1 |
-| faithfulness | 5 | 1 |
 
 ### BENCH-O-04 (diff=2.38)
 
@@ -107,16 +68,3 @@ Generated: 2026-09-14 13:03
 | efficiency | 5 | 3 |
 | actionability | 5 | 4 |
 | faithfulness | 5 | 2 |
-
-### BENCH-R-01 (diff=3.88)
-
-| Axis | Executor | GPT |
-|------|----------|-----|
-| correctness | 5 | 1 |
-| completeness | 5 | 1 |
-| clarity | 5 | 1 |
-| reasoning | 5 | 1 |
-| precision | 5 | 1 |
-| efficiency | 4 | 1 |
-| actionability | 5 | 1 |
-| faithfulness | 5 | 1 |
