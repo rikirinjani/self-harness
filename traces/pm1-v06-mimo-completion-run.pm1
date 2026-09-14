@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-v06-mimo-completion-run",
+  "timestamp": "2026-08-20T14:19:09.646878+00:00",
+  "agent": "coordinator",
+  "outcome": "fail",
+  "duration_s": 900,
+  "tool_calls": 3,
+  "key_files": [
+    "pm1-trading-benchmark\\results\\v06\\execution_mimo.err.log"
+  ],
+  "failure": {
+    "category": "external",
+    "severity": "medium"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-v06-mimo-completion-run",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........-.--...-........---..-..........-.--...-........-.--...-........................--.-..-.........-.--...-",
+  "action": "Targeted MiMo completion run for missing E2/E4 cells: connectivity PASS, 5 of 20 cells attempted on mimo-v2.5 (api.xiaomimimo.com), ALL failed with empty content on 3 retries; 0/20 recovered. Failures now reproduce across DeepSeek (3 passes) and MiMo (1 pass) = 4 passes, 2 providers. Stopped at registered INFRA_FAILURE; no workaround, no imputation. Key hygiene verified (never printed/persisted, env unset, scan clean). Config hashes unchanged. Reported: reproducibility-record model field sources defaults.json (deepseek) not live env - MiMo attribution rests on execution command/log."
+}

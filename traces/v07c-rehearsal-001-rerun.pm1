@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "v07c-rehearsal-001-rerun",
+  "timestamp": "2026-08-22T08:15:00.514621+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 200,
+  "tool_calls": 10,
+  "key_files": [
+    "v07c/run_rehearsal_001_rerun.py",
+    "results/v07c/rehearsal/PM1_V07C_REHEARSAL_001_RERUN_REPORT.md",
+    "results/v07c/rehearsal/PM1_V07C_REHEARSAL_001_RERUN_RESULTS.json",
+    "results/v07c/rehearsal/manifest.json"
+  ],
+  "failure": {
+    "category": "model-behavior",
+    "severity": "high"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v07c-rehearsal-001-rerun",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........--.-..-.........--.-..-.........-.--...-.........................--...--........-.--...-",
+  "action": "V.7-C REHEARSAL-001 RERUN: 30 hops with FINALIZE_TASK protocol. Infrastructure PASS. Model stuck in read-only exploration — 30/30 hops empty content, only search(15)+read_file(14)+list_repo(1), never called edit_file/run_tests/finalize_task. 98,544 tokens. Safety ceiling triggered. V07C-DEFECT-001 PERSISTS: model never transitions from exploration to action. REHEARSAL PARTIAL."
+}

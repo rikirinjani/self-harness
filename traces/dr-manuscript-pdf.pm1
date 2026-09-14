@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "dr-manuscript-pdf",
+  "timestamp": "2026-09-11T03:04:47.864114+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "Deers-Rock/docs/papers/jamia-dr-submission.pdf",
+    "Deers-Rock/docs/papers/build-manuscript-pdf.mjs",
+    "Deers-Rock/docs/papers/figures/figure-1-architecture.svg",
+    "Deers-Rock/docs/papers/figures/figure-2-handler-pipeline.svg",
+    "Deers-Rock/docs/papers/figures/figure-3-calendar-modifiers.svg",
+    "Deers-Rock/docs/papers/figures/figure-4-per-seed-los.svg"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dr-manuscript-pdf",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................--.-..-.........................................-.--...-",
+  "action": "Converted DR manuscript to PDF. Built HTML render from jamia-dr-submission.md with the 4 SVG figures embedded (build-manuscript-pdf.mjs), then printed via headless Chrome (--print-to-pdf). Output: Deers-Rock/docs/papers/jamia-dr-submission.pdf, 11 pages, 219,976 bytes, 15 fonts, figure titles present. Temp HTML removed; build script retained. No manuscript content changed."
+}

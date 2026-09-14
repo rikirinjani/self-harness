@@ -1,0 +1,1 @@
+﻿{"category":"process","severity":"low","root_cause":"Final validation command used C:\\Users\\think as workdir while supplying project-relative paths, so both module test invocations failed to locate files.","actual_action":"Ran validation from the wrong directory; immediately reran from the project directory."}

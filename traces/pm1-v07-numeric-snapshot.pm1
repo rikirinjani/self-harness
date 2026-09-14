@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-v07-numeric-snapshot",
+  "timestamp": "2026-08-21T07:03:11.787235+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 5,
+  "key_files": [
+    "pm1-trading-benchmark\\results\\v07\\numeric_snapshot\\PM1_V07_NUMERIC_SNAPSHOT_EXECUTION_REPORT.md",
+    "pm1-trading-benchmark\\v06\\lib\\state_generator.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-v07-numeric-snapshot",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................---..-..........-.--...-........-.--...-........................................-.--...-",
+  "action": "V0.7 numeric snapshot isolation executed: seed11+seed33_numeric+step@60% on MiMo-v2.5@2048. Result: EMPTY (0/10 hops, completion_tokens=2048, reasoning_tokens=0). Seed33's numeric snapshot injected into seed11 trajectory was INSUFFICIENT to reproduce seed33's robustness under snapshot-injection. Conclusion: seed33's robustness is a trajectory-level property, not reducible to numeric snapshot. Harness change: numeric_overrides parameter in StateConfig (verified: changes only target/current/tolerance, preserves all else). 10/10 API calls, 0 completed, no provider credits consumed beyond empty-content retries."
+}

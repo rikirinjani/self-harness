@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "ce-param-sweep",
+  "timestamp": "2026-08-30T13:16:14.184345+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 20,
+  "key_files": [
+    "src\\poc\\sweep.ts",
+    "src\\poc\\calibrate.ts",
+    "src\\core\\config.ts",
+    "docs\\RECONNAISSANCE.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ce-param-sweep",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Rec 1 done: 48-cell parameter sweep (threshold x ledger decay x boundary decay) with one-factor-at-a-time analysis. Found and corrected a measurement trap (immediate route effect drives the chain even when quota never fires; peakHostility isolates the quota signal). Recalibrated defaults: ledgerDecay 0.9->0.8 (settle 60->28 ticks), boundaryDecay 0.35->0.3 (0.5 breaks locality); threshold 0.6 confirmed as lowest value where quota fires AND locality holds. 19/48 configs fully viable"
+}

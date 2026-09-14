@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-mimo-flight2-design",
+  "timestamp": "2026-08-21T01:19:58.822842+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 1200,
+  "tool_calls": 8,
+  "key_files": [
+    "pm1-trading-benchmark\\results\\v06\\mimo_flight2_design\\PM1_V06_MIMO_FLIGHT2_DESIGN.md",
+    "pm1-trading-benchmark\\results\\v06\\mimo_flight2_design\\PM1_V06_MIMO_FLIGHT2_DESIGN.json",
+    "pm1-trading-benchmark\\results\\v06\\mimo_flight2_design\\manifest.json",
+    "pm1-trading-benchmark\\v06\\lib\\runner.py",
+    "pm1-trading-benchmark\\v06\\lib\\checkpoint.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-mimo-flight2-design",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................---..-..........-.--...-........--.-..-.........................................-.--...-",
+  "action": "MiMo Flight 2 resource-constrained design: 3 candidate designs (A=balanced 150 calls, B=budget-curve 150 calls, C=minimum 100 calls); recommended Design A; 2 harness fixes implemented (PM1_REQUIRED_MODEL env guard + mark_run_failed attribution propagation); 162/162 tests pass; all under results/v06/mimo_flight2_design/; design status READY FOR AUTHORIZATION"
+}

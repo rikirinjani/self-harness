@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "oracle-ora1-billing-error",
+  "timestamp": "2026-09-08T04:42:02.382937+00:00",
+  "agent": "oracle",
+  "outcome": "fail",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {
+    "category": "billing",
+    "severity": "low"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "oracle-ora1-billing-error",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........-.-.-.-........-.--...-........................................................................-.--...-........-.--...-",
+  "action": "Oracle session errored (no credits). Review completed independently by coordinator. Not a functional failure — session error due to billing. Ora-1 is not reusable."
+}

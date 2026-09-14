@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "v08-g3-r1",
+  "timestamp": "2026-08-24T14:28:25.268823+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3600,
+  "tool_calls": 20,
+  "key_files": [
+    "v08/g3_r1_django16046/g3_r1_runner.py",
+    "v08/g3_r1_django16046/g3_r1_results.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v08-g3-r1",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-........--.-..-.........-.--...-........................................-.--...-",
+  "action": "V.8 G3-R1 django-16046 Complete: 8 runs executed with MiMo. All 8 provenance verified (replay matches). All 8 evaluator FAIL (0+7/7 tests). Model edits (a1851a37c3d9) in 3 of 8 runs do not fix the tested bug. Empty patch in 5 of 8 runs (no edits). L3_P2 called FINALIZE_TASK. Tokens range 13K-193K. G3-R1 COMPLETE."
+}

@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "s024-randomized-scc-stress",
+  "timestamp": "2026-09-11T04:07:15.973671+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 12,
+  "key_files": [
+    "experiments/s024/REPORT.md",
+    "experiments/s024/probe.ts",
+    "qms/records/requirements/2026-09-11T15-30-00-req-024-s024-randomized-scc-stress.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "s024-randomized-scc-stress",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "S024 randomized SCC / OR-support boundary stress: from frozen S023 (6aa4b74), no src change (pure observation). VERDICT PASS. 100 randomized 5-20-node topologies (seeded), 80 with a real unfounded SCC (|U|>0), 45 with a genuine OR group (A AND B) OR G, 500 transitions. All invariants universal: U subset of C 500/500; dU subset of dC 500/500; PhaseBOnlyDelta subset of dC 500/500; failures=0. S023 OR-group gap closed. Phase B = class B (global algorithm over a local candidate domain). Stop condition met: Phase-B locality investigation ends; no incremental Phase B, no SCC caching, no candidate prediction. Next question: incremental Phase A using S021 support aggregates. Baseline 624/624, verify-facts 3/3, frozen hashes unchanged."
+}

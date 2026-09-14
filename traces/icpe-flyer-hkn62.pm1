@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "icpe-flyer-hkn62",
+  "timestamp": "2026-09-05T09:47:38.392567+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 5,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\hisfarma-temp\\ICPE\\flyer\\flyer_hkn62_announcement.png",
+    "C:\\Users\\think\\Project_v2\\hisfarma-temp\\ICPE\\flyer\\flyer_hkn62_announcement.html",
+    "C:\\Users\\think\\Project_v2\\hisfarma-temp\\ICPE\\flyer\\qr_location.png"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "icpe-flyer-hkn62",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Created HKN62 announcement flyer (vertical 1080x1920): QR code for Grand Cikareo Hall coords (-6.94035,106.908569), HTML with Kemenkes gradient, converted to PNG via Playwright at 2x. Assets used: logo-atas-new.png, Logo Hisfarma NEW.jpg, wm-bawah-new.png. SKP badges for 4 professions + Pengabdian all ON CONFIRMATION"
+}

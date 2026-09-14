@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "v07c-patch-evaluation",
+  "timestamp": "2026-08-22T11:52:08.833784+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 10,
+  "key_files": [
+    "v07c/run_patch_evaluation.py",
+    "results/v07c/patch_evaluation/PM1_V07C_PATCH_OPERATION_EVALUATION.md",
+    "results/v07c/patch_evaluation/PM1_V07C_PATCH_OPERATION_EVALUATION.json",
+    "results/v07c/patch_evaluation/manifest.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v07c-patch-evaluation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "V.7-C Patch Operation Evaluation: Reconstructed both L3 conventional and L4/PM-1 patches from recorded edit operations. L3: 2 edits, reconstructed as \\A[\\w.@+-]+\\Z on both lines — INCORRECT (extra ^ to A change). L4: 3 edits, reconstructed as \\A\\w[\\w.@+-]*\\Z — INCORRECT (structure + anchor changes). Both FAIL evaluator. Gold fix r'^[\\\\w.@+-]+\\\\Z' (only $ to Z) PASSES. Measurement repair complete. No superiority claims. n=1 both failed."
+}

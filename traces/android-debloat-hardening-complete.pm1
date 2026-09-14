@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "android-debloat-hardening-complete",
+  "timestamp": "2026-08-30T19:50:13.215945+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 24,
+  "key_files": [
+    "C:\\Users\\think\\self-harness\\traces\\librarian-redmi-suspicious-pkg-id.pm1",
+    "C:\\Users\\think\\self-harness\\traces\\android-debloat-phase1.pm1"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "android-debloat-hardening-complete",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Redmi Note 8 (ginkgo) full debloat + hardening complete over WiFi ADB. Re-paired after device dropped mid-run (new pair 192.168.1.4:38919 code 902854, connect port 41729 found via TCP sweep 30000-46000; mdns never advertised). Removed 26 more pkgs across facebook stubs, Xiaomi cloud/pay, MIUI cruft, browsers, trivial, plus TikTok PineDrama/OfficeLens/Netflix-activation/Mi Video; facemoji.lite.xiaomi resisted uninstall -> disable-user after switching default IME to Gboard. Hardening: install_non_market_apps=0, package_verifier_enable=1, verifier_verify_adb_installs=1, animations 0.0, wifi_scan_interval=300, ble_scan_always_enabled=0, pm trim-caches. Verified: 356->315 pkgs, 3rd-party 26->18, storage 22G->19G used (46%->39%), verified boot green, bootloader locked, FBE encrypted, all 14 core apps present, launcher+UI alive, battery health good."
+}

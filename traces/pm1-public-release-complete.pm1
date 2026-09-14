@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-public-release-complete",
+  "timestamp": "2026-08-19T04:23:50.822154+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 12,
+  "key_files": [
+    "morse\\research\\pm1-v05\\RELEASE_v0.5.0.md",
+    "morse\\research\\pm1-v05\\CITATION.cff"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-public-release-complete",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "PUBLISHED PM-1 V0.5: GitHub rikirinjani/pro-memoria public (5 commits, tag v0.5.0, 70 files in research/pm1-v05, final secret scan 0 hits) + Zenodo record 22005884 published with DOI 10.5281/zenodo.22005884 (9 files: raw checkpoint/hop records, manifest, reports, READMEs). Token used transiently via env var only, never written or committed."
+}

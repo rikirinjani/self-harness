@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-09-10T20:46:00Z",
+  "category": "code-defect",
+  "slug": "exp001-cli-guard-ts-suffix",
+  "severity": "high",
+  "agent": "orchestrator",
+  "project": "Kronos Engine",
+  "experiment": "EXP-001",
+  "summary": "The CLI entry guard in exp-001-stability.ts checked the module URL suffix for '.ts'. When compiled to dist/*.js the guard evaluated false, so `node dist/experiment/experiments/exp-001-stability.js` exited 0 having run nothing and written no output. This is the same defect class previously found in dr-counterfactual.ts on the VPS.",
+  "what_went_wrong": "The guard pattern `fileURLToPath(import.meta.url).replace(/\\\\/g, '/').endsWith('exp-001-stability.ts')` is only true when the module is loaded from TypeScript source. Under compiled ESM the URL ends in '.js', so the CLI branch is skipped. A caller invoking the compiled artifact receives a successful exit code and an empty/missing output file — a silent failure that could be mistaken for a valid zero-result run.",
+  "detection": "Caught during a local smoke test of the compiled artifact (3 seeds) which produced no output file, before any large run was launched.",
+  "root_cause": "Extension-specific guard copied from dr-counterfactual.ts, which has the same latent defect. The guard conflates 'is this module the program entry point' with 'was it authored as TypeScript'.",
+  "remediation": "Changed the guard to an extension-agnostic check: `fileURLToPath(import.meta.url).replace(/\\\\/g, '/').includes('exp-001-stability')`. Rebuilt, re-ran the smoke test (3 seeds, H=10) — produced 3 valid JSONL lines. Updated scripts/exp-001-orchestrate.py to invoke the compiled `dist/...js` instead of `npx tsx`, removing the TypeScript-runtime dependency from the execution path.",
+  "impact": "No corrupted results were produced. All validation and primary runs executed through the corrected compiled artifact. The dr-counterfactual.ts instance of the same defect was already remediated earlier on the VPS.",
+  "process_lesson": "Any CLI-guarded experiment script must be smoke-tested as the COMPILED artifact, not just via tsx, before a long run. A zero-byte or missing output file with exit code 0 is the signature of this failure.",
+  "key_files": [
+    "src/experiment/experiments/exp-001-stability.ts",
+    "scripts/exp-001-orchestrate.py"
+  ]
+}

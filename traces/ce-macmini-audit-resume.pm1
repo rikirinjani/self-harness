@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "ce-macmini-audit-resume",
+  "timestamp": "2026-09-02T02:35:30.034812+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 35,
+  "key_files": [
+    "scripts/replay-smoke.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ce-macmini-audit-resume",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "CE Mac mini environment audit + sync COMPLETE. Mac mini was at stale P-011 (24df699). Safety-gated sync: compared all P-012..P-020 files against BOTH origin/main and Windows working tree. Found: 4 files matched origin, 4 were NEWER on Mac mini (P-018/P-020 versions), 2 test files missing from origin (never pushed), 2 test files missing from both (P-012/P-013 never scp'd). Deployed 6 files total: ce-server.ts (overwrite stale), branching-rewind.test.ts + temporal-boundary.test.ts (from Windows), adapter-hardening.test.ts + runtime-boundary.test.ts (from origin/main), replay-smoke.ts (new). RESULT: 685/685 tests, deterministic replay hash 5404d32e matches P-014 baseline, HTTP health OK, WS 426 OK, Godot present. Stale ce-server.ts preserved at /tmp/ce-presync-backup/. SE P-007 boundary preserved (no SE work performed)."
+}

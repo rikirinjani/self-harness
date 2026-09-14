@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "v05a-pilot",
+  "timestamp": "2026-08-16T11:51:00.707350+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 500,
+  "tool_calls": 0,
+  "key_files": [
+    "results/v0.5/V0.5_PILOT_CONFIG.md",
+    "results/v0.5/V0.5_PILOT_REPORT.md",
+    "results/v0.5/v05a_pilot_results.json",
+    "results/v0.5/v05a_pilot_hop_records.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v05a-pilot",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........................-.--...-........................................-.--...-",
+  "action": "V0.5 320-call pilot: 320/320 calls, 0 errors, 434s. P vs C: both 100% PASS/integrity/digest/action. Cumulative tokens h10/50/100: P 4926/24810/48816, C 5357/63802/252455 (C/P 1.09/2.57/5.17, savings 8/61/81%). P context bounded 318 chars; C grows 46->14792. Scaling fits: C quadratic R2=1.0 > linear 0.9475; P linear 0.9999. No fairness/leakage/persistence defects. Recommendation A: proceed to full experiment authorization request. Full 116100-call run NOT executed."
+}

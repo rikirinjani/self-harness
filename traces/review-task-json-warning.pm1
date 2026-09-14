@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "review-task-json-warning",
+  "timestamp": "2026-08-14T10:33:30.948417+00:00",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {
+    "category": "tool",
+    "severity": "low"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "review-task-json-warning",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................-.--...-........................................................-.--...-........-.--...-........-.--...-",
+  "action": "The delegated review result was returned, but the scheduler emitted an invalid-JSON immediate-action warning after the task call; no project files changed"
+}

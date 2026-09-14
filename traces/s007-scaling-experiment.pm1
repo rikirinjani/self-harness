@@ -1,0 +1,38 @@
+{
+  "pm1_version": 1,
+  "session_id": "s007-scaling-experiment",
+  "timestamp": "2026-09-10T15:53:31.017702+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 5400,
+  "tool_calls": 60,
+  "key_files": [
+    "experiments/s007/REPORT.md",
+    "experiments/s007/harness.ts",
+    "experiments/s007/workloads.ts",
+    "experiments/s007/exp-a-linear.ts",
+    "experiments/s007/exp-b-branching.ts",
+    "experiments/s007/exp-c-convergence.ts",
+    "experiments/s007/exp-d-diffcost.ts",
+    "experiments/s007/exp-e-parallel.ts",
+    "experiments/s007/run-all.ts",
+    "experiments/s007/worker.ts",
+    "experiments/s007/diagnose.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "s007-scaling-experiment",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "S007 long-horizon semantic state scaling: built isolated experiment harness on branch s007 off frozen P-007 (443d3d9), ran 5 experiments (linear, branching, convergence, WorldDiff cost, parallel) up to H=100000, produced REPORT.md. Key finding: canonical semantic representation is BOUNDED (~50KB verrin/~39KB ordos) and history-independent; single-derive is O(H), chain walk O(H^2); parallel peak 1.1x on 4 cores. src/ untouched; 624/624 tests, verify-facts 3/3."
+}

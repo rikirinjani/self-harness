@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-09-11T01:30:00Z",
+  "category": "design-defect",
+  "severity": "high",
+  "slug": "s010-state-change-retention-unsound",
+  "agent": "orchestrator",
+  "project": "somnium-engine",
+  "branch": "s010",
+  "ancestor_commit": "443d3d9",
+  "what_happened": "S010 built two fold-derived retention mechanisms. Both failed. M-B (accumulator-only) failed S009's NCR-006 and 6/10 multi-fact stress cases (loses effective-fact identity provenance). M-H (semantic-state-change oracle) failed 279/517 (verrin) and 297/517 (ordos) differential cases, with a minimal 2-intervention counterexample on the SEED canon: H = [forceEvent(ev/maren-return), negateEvent(ev/maren-return)] reduces under M-H to [negateEvent(ev/maren-return)], turning ev/maren-return from CONTRADICTORY (force-vs-negate) into EXCLUDED.",
+  "root_cause": "M-H assumed the semantic state captures everything a later intervention depends on. It does not: effectiveSemanticState is a projection over statuses/facts/edges/workStatuses/contradictions/temporal/constraint violations and omits the fold's accumulators (negated, forcedBy, retracted, overriddenCells). forceEvent on an already-ESTABLISHED event is a semantic no-op, so M-H drops it, but buildModel sets forcedBy[E] and the later negateEvent then yields a force-vs-negate contradiction. Symmetrically, M-B assumed the accumulators capture everything, but overriddenCells records only the last value per cell and omits which fact id a write reused (S009/NCR-006).",
+  "what_i_did_wrong": "I initially wrote M-H with a stated invariant ('after processing H[0..k], the retained chain derives to the same state as H[0..k]') and believed that invariant made M-H sound by construction. The invariant is real but INSUFFICIENT: equal state does not imply equal response to the next intervention, because the fold is history-dependent through accumulators the state does not expose. I had the correct instinct (keep semantic authority singular by using derive as the oracle) but did not ask what the oracle's output fails to capture. The differential harness caught it immediately (100/117 on the smoke run); I then found the 2-op minimal witness.",
+  "detection": "experiments/s010/run-all.ts differential phase (M-H 100/117 in the quick run), then experiments/s010/probe-mh-random.ts delta-debugged a random failure down to the 2-intervention seed-canon witness.",
+  "impact": "The target architecture (full history -> authoritative fold -> retained history) is NOT realizable from the fold's current public outputs. Neither the semantic state nor the accumulator set is sufficient, and combining them requires reconstructing the fold's retention rules - the second semantic authority S010 was specifically asked to avoid.",
+  "fix_status": "Not applied. The spec requires reporting BLOCKED rather than patching. The enabling change is in src/: have the fold emit a per-intervention 'changed the fold state' flag. That is a separate productionization task.",
+  "lesson": "An oracle's output is only as strong as its completeness. Before using X as the authority for a retention/equivalence decision, enumerate what X omits relative to the computation it summarizes. 'Sound by construction' is a claim about the invariant actually needed, not about the invariant that is convenient to state. Here the needed invariant was 'equal FOLD STATE', not 'equal semantic state'."
+}

@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "vague-guard",
+  "timestamp": "2026-08-31T05:18:24.781534+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 240,
+  "tool_calls": 6,
+  "key_files": [
+    "Project_v2/chatbot/bridge/src/core/router.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "vague-guard",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Added vague-input guard (menu echoes + bare topic words get clarification prompt, no unanswered ID burned). Cleaned U7 noise record, backfilled legacy undefined ID as U7."
+}

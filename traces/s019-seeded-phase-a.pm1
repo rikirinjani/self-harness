@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "s019-seeded-phase-a",
+  "timestamp": "2026-09-11T03:15:31.678508+00:00",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "duration_s": 2400,
+  "tool_calls": 15,
+  "key_files": [
+    "src/derive/propagation.ts",
+    "experiments/s019/REPORT.md",
+    "experiments/s019/probe.ts",
+    "qms/records/requirements/2026-09-11T10-30-00-req-019-s019-seeded-phase-a.json"
+  ],
+  "failure": {
+    "category": "design-defect",
+    "severity": "high"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "s019-seeded-phase-a",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................-.--...-........---..-..........--.-..-.........-.--...-.........................--...--........-.--...-",
+  "action": "S019 prior-judgment seeded Phase-A equivalence: from frozen S018 (c652204). Experimental src change isolated to S019 (positiveFixpoint gains an optional seed; propagateJudgments threads it; new propagationTruth). VERDICT BLOCKED. Experiment A (complete prior-truth seeding) is NOT reference-equivalent: 26/400 steps diverge (6.5%) - negateEvent 19/84, retractFact 2/32, severEdge 3/38, setFact 1/152, forceEvent 1/68, addEdge 0/26. Example ev/treaty-of-ash ref=FALSE seeded=TRUE. Negative control force->negate: ref=FALSE seeded=TRUE. EXACT CAUSE: Phase A is sticky ('if current !== NEITHER continue'), so a seeded decided value is never recomputed; a prior TRUE whose support was removed persists forever. The reset to NEITHER is semantically necessary. Required fix is an invalidation mechanism needing per-node decision provenance. Baseline 624/624, verify-facts 3/3, frozen hashes unchanged."
+}

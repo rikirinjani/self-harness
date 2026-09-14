@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-v06-core-execution",
+  "timestamp": "2026-08-19T18:03:45.827808+00:00",
+  "agent": "coordinator",
+  "outcome": "partial",
+  "duration_s": 13230,
+  "tool_calls": 6,
+  "key_files": [
+    "pm1-trading-benchmark\\results\\v06\\PM1_V06_EXECUTION_REPORT.md",
+    "pm1-trading-benchmark\\results\\v06\\summaries\\run_summary.json",
+    "pm1-trading-benchmark\\results\\v06\\checkpoints\\e1_checkpoint.json",
+    "pm1-trading-benchmark\\results\\v06\\checkpoints\\e4_checkpoint.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-v06-core-execution",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........--.-..-..........-.-.-.-........-.--...-........-.--...-........................................-.--...-",
+  "action": "V0.6 core execution completed via authorized fixer lane: 73/93 runs, 3,500/4,500 hops, 2,315,751 tokens, 220.5 min, ~3,560 calls issued (under 25k budget). E1/E3/E6 complete; E2 partial (15/18); E4 partial (19/36) - 20 runs failed with provider empty-content on all retries (infra, not harness). 1 resume event, INFRA_FAILURE stop, incomplete not marked complete. E5 not run; V0.5 untouched; nothing published. Execution report written."
+}

@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "s023-unfounded-nonempty",
+  "timestamp": "2026-09-11T03:55:39.509594+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 2400,
+  "tool_calls": 12,
+  "key_files": [
+    "src/derive/propagation.ts",
+    "experiments/s023/REPORT.md",
+    "experiments/s023/probe.ts",
+    "qms/records/requirements/2026-09-11T14-30-00-req-023-s023-unfounded-nonempty.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "s023-unfounded-nonempty",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "S023 unfounded-set non-empty / candidate sufficiency: from frozen S021 (dfa4cfa). Observation-only src addition (observeUnfoundedSet). VERDICT HOLD with strong positive core. Built synthetic REQUIRES-cycle canons to exercise |U|>0: A 2-cycle |C|=2 |U|=2; B 3-cycle |C|=3 |U|=3; C/F SCCs+bridge |C|=5 |U|=5; D gain dC=1 dU=0; E loss dC=2 dU=2; F+ force dC=2 dU=2. FINDINGS: U subset of C always; dU <= dC always; cross-SCC cascade U-flips outside dC = 0; behaviour follows only from the CURRENT candidate set. ANSWER: Phase A must hand Phase B dC. Phase B = class B (global algorithm over a local candidate domain). HOLD because only 6 witnesses, no randomized stress, OR-group case mis-constructed, determinism/branch isolation untested. Baseline 624/624, verify-facts 3/3, frozen hashes unchanged."
+}

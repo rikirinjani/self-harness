@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "v07c-evaluator-repair",
+  "timestamp": "2026-08-22T10:21:06.657253+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 15,
+  "key_files": [
+    "v07c/evaluator.py",
+    "v07c/test_evaluator_with_patch.py",
+    "results/v07c/evaluator_repair/PM1_V07C_EVALUATOR_REPAIR.md",
+    "results/v07c/evaluator_repair/PM1_V07C_EVALUATOR_REPAIR.json",
+    "results/v07c/evaluator_repair/manifest.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v07c-evaluator-repair",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "V.7-C Evaluator Repair: Added repo_test_runner='django' backend (tests/runtests.py), test_patch support (SWE-bench style), auto-detection, _apply/_revert test patch. Offline validated: baseline FAILS (correct), correct fix PASSES (correct), full fix PASSES (correct). Existing 16 tests pass. EVALUATOR READY FOR REHEARSAL."
+}

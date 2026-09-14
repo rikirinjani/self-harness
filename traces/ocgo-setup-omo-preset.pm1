@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "ocgo-setup-omo-preset",
+  "timestamp": "2026-09-01T03:18:20.766420+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\.config\\opencode\\opencode.jsonc",
+    "C:\\Users\\think\\.config\\opencode\\oh-my-opencode-slim.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ocgo-setup-omo-preset",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "OC Go subscription setup: verified key in auth.json, pinged all 34 GO models (22 OK initially; deepseek-v4-flash/pro region-blocked until user opted in to China-hosted inference, then both 200; grok-4.6 format-unsupported, muse-spark data-policy, 6 upstream 4xx/5xx). Updated opencode.jsonc opencode-go provider block 3->14 verified models. Rewrote OMO opencode-go preset: orchestrator=deepseek-v4-flash (user request), oracle/council=kimi-k3, librarian=qwen3.8-flash, explorer/observer=mimo-v2.5, designer=glm-5.3-flash, fixer=deepseek-v4-flash. Both configs JSON-validated. Answered balance question: usage limits consumed first, PAYG balance only after quota exceeded."
+}

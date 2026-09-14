@@ -1,0 +1,40 @@
+{
+  "pm1_version": 1,
+  "session_id": "dr-reopen-session-close",
+  "timestamp": "2026-08-31T14:00:33.577847+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 7200,
+  "tool_calls": 60,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\reopen-audit\\01-executive-summary.md",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\reopen-audit\\02-implementation-vs-docs-matrix.md",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\reopen-audit\\03-boundary-compliance-matrix.md",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\reopen-audit\\04-sentinel-output-audit.md",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\reopen-audit\\05-statistical-reassessment.md",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\reopen-audit\\06-scientific-claim-audit.md",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\reopen-audit\\07-clinical-plausibility-audit.md",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\reopen-audit\\08-experiment-reports.md",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\reopen-audit\\README-REPRODUCIBILITY.md",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\reopen-audit\\paper\\deers-rock-reopening-paper.md",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\reopen-audit\\paper\\PAPER-NOTES.md",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\CITATION.cff",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\.zenodo.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dr-reopen-session-close",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---.........................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "DR reopen session close: 10 lanes reconciled, audit package + paper + publication metadata complete, QMS VER-2026-004 + NCR-2026-006 filed, MemPalace filed"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "fail-2026-08-31-vacuous-test-empty-abandoned-future",
+  "timestamp": "2026-08-31T11:00:00Z",
+  "category": "verification",
+  "agent": "orchestrator",
+  "task": "CE lifecycle pass — replay-capability bounds test (brief section 7)",
+  "outcome": "partial",
+  "error": "A test named 'abandoned-future replay genuinely fails once its interventions are gone' PASSED while proving nothing. Its scenario built an 'abandoned future' by submitting a second bridge destruction, which the action schema rejects with 'infrastructure grain_road already destroyed'. The abandoned future therefore contained ZERO interventions, so the with-records replay and the without-records replay were the same empty replay and produced identical hashes. The assertion that they must DIFFER was inverted in the first draft and appeared to fail for the wrong reason; once corrected the test would have passed vacuously.",
+  "rootCause": "The test constructed its scenario from a convenient existing intervention factory without asserting that the intervention was accepted. Rejection is a legitimate outcome of submitIntervention, so an unchecked submit silently produces an empty scenario. This is the second time in this project that an unchecked precondition produced a test that could not fail for its stated reason (the first was the quota cap test in section 15.9, where repeat destroys were rejected so the cap was never exercised).",
+  "whatActuallyHappened": "The failing assertion prompted a probe, which revealed the empty intervention list and, downstream of that, a REAL defect: the abandoned-future boundary was computed by tick rather than by intervention sequence (recorded separately). So the vacuous test was concealing an actual architectural bug — the worst case for a test that passes.",
+  "mitigation": "Rewrote the scenario using actions that are genuinely accepted at that point (hold_public_rally and kill_entity on a different merchant), and added expect(accepted.ok).toBe(true) on each submit plus expect(abandonedInterventions.length).toBe(2) so an empty scenario now fails loudly instead of passing silently. Standing lesson for this codebase: any test whose setup calls submitIntervention must assert acceptance, because rejection is a valid engine response that silently empties the scenario.",
+  "files": [
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\poc\\lifecycle.test.ts"
+  ]
+}

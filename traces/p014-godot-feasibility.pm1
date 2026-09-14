@@ -1,0 +1,37 @@
+{
+  "pm1_version": 1,
+  "session_id": "p014-godot-feasibility",
+  "timestamp": "2026-08-31T08:03:07.849012+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3600,
+  "tool_calls": 60,
+  "key_files": [
+    "src/poc/ce-server.ts",
+    "src/poc/ce-integration-test.ts",
+    "src/poc/godot/ce_adapter.gd",
+    "src/poc/godot/main.gd",
+    "src/poc/godot/headless_test.gd",
+    "src/poc/godot/headless_test.tscn",
+    "src/poc/godot/headless_cadence.gd",
+    "src/poc/godot/headless_cadence.tscn",
+    "docs/P-014-GODOT-FEASIBILITY.md",
+    "docs/RECONNAISSANCE.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "p014-godot-feasibility",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "P-014 Godot feasibility: CE HTTP server + Godot headless adapter integration verified end-to-end (causal chain 16/16, cadence/persistence 13/14, server 10/10, cross-platform determinism hash match, checkpoint/restore exact). Fixed 4 integration bugs (missing serializeDelivery import, raw JSON.parse in restore, patrol_demand key mismatch, checkpoint payload not captured). Wrote P-014 report + RECONNAISSANCE section 24."
+}

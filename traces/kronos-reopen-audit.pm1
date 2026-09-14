@@ -1,0 +1,35 @@
+{
+  "pm1_version": 1,
+  "session_id": "kronos-reopen-audit",
+  "timestamp": "2026-08-31T11:18:09.490958+00:00",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "duration_s": 5400,
+  "tool_calls": 45,
+  "key_files": [
+    "docs/audits/REOPEN-AUDIT-2026-08-31.md",
+    "qms/records/nonconformities/2026-08-31T18-20-00-ncr-003-paper-numbers-fabricated.json",
+    "qms/records/nonconformities/2026-08-31T18-22-00-ncr-004-verify-facts-gate-broken.json",
+    "qms/records/nonconformities/2026-08-31T18-24-00-ncr-005-rewind-hash-integrity.json",
+    "qms/records/verifications/2026-08-31T18-26-00-ver-002-reopen-audit.json"
+  ],
+  "failure": {
+    "category": "integrity",
+    "severity": "major"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kronos-reopen-audit",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................-.--...-.........-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "Kronos formal reopening audit: executed determinism/power/hash/aliasing probes, verified P-003 reproduction byte-identical, produced REOPEN-AUDIT-2026-08-31.md, filed NCR-003/004/005 + VER-002. Verdict: NOT publishable as-is."
+}

@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "s021-support-aggregate",
+  "timestamp": "2026-09-11T03:28:26.199751+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 2400,
+  "tool_calls": 12,
+  "key_files": [
+    "experiments/s021/REPORT.md",
+    "experiments/s021/probe.ts",
+    "qms/records/requirements/2026-09-11T12-30-00-req-021-s021-support-aggregate.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "s021-support-aggregate",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "S021 incremental support aggregate / fixpoint primitive: from frozen S020 (f219e67), no src change (pure observation). VERDICT HOLD. The reference conjoin/disjoin are commutative/associative lattice meets over the member multiset, so a per-group count is a sufficient statistic: group {n, nTrue, nFalseOrBoth} -> conjoin; node group-result vector -> disjoin. MEASURED: 667 conjunctive groups 0 mismatches, 635 disjunctive nodes 0 mismatches, 6 incremental member flips 0 mismatches -> the aggregate is EXACT and locally updatable (O(1)). No second causal engine (re-expresses the same lattice meet over a sufficient statistic). BOUNDARY: Phase B unfoundedSet is a GLOBAL candidate-set fixpoint, not a per-group aggregate, so it must remain a separate global consistency stage; topology changes alter group SHAPE. HOLD because cycle/unfounded and topology boundaries were characterised but not tested. Baseline 624/624, verify-facts 3/3, frozen hashes unchanged."
+}

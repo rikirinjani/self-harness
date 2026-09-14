@@ -1,0 +1,37 @@
+{
+  "pm1_version": 1,
+  "session_id": "p015-visual-godot",
+  "timestamp": "2026-08-31T08:18:04.371383+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2700,
+  "tool_calls": 55,
+  "key_files": [
+    "src/poc/godot/main.gd",
+    "src/poc/godot/ce_adapter.gd",
+    "src/poc/godot/icon.svg",
+    "src/poc/godot/shots/shot_1_initial.png",
+    "src/poc/godot/shots/shot_2_destroyed.png",
+    "src/poc/godot/shots/shot_3_advanced.png",
+    "docs/P-015-VISUAL-GODOT.md",
+    "docs/P-014-GODOT-FEASIBILITY.md",
+    "docs/RECONNAISSANCE.md",
+    "src/poc/ce-server.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "p015-visual-godot",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........--.-..-.........................................-.--...-",
+  "action": "P-015 native visual Godot consumer: corrected P-014 display erratum (Mac mini HAS monitor); launched godot res://main.tscn as normal GUI app on Mac mini (renderer: OpenGL 4.1 Metal, Apple M4); in-app demo drove deterministic causal scenario via Destroy Bridge button -> CE -> events -> visual change; screenshots pixel-verified (bridge region 100% changed); determinism identical hashes across 2 GUI runs; cadence FPS avg 83-88, transport ~55-64ms; boundary audit clean (no causal rules/RNG in Godot); 579/579 suite green, tsc no new errors; fixed 2 defects (inflight_url, icon.svg); wrote report + RECONNAISSANCE s25 + QMS VER-2026-015/REQ-2026-012"
+}

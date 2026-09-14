@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "v04a-pilot-fix-f1f4",
+  "timestamp": "2026-08-16T09:01:36.689973+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 0,
+  "key_files": [
+    "lib/v04a_chain.py",
+    "lib/v04a_worker.py",
+    "run_v04a_pilot.py",
+    "run_v04a_full.py",
+    "tests/test_v04a.py",
+    "results/v0.4a/revalidation/V0.4a_REVALIDATION_PREEXPERIMENT_REPORT.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v04a-pilot-fix-f1f4",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........................--.-..-.........................................-.--...-",
+  "action": "V0.4a pilot fix F1-F4: F1 condition-gated corruption/restore in run_chain (H-full/H-direct clean); F2 LLMHandoffWorker.last_usage + usage_available propagation; F3 hop_record_to_dict/chain_result_to_dict persistence to results/v0.4a/revalidation; F4 pilot chain switched to chain-06 (multi-unit). Added 17 regression tests. 203/203 offline tests pass, 0 API calls. Revalidation pre-experiment report written. Full 4000-call experiment remains blocked."
+}

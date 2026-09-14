@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "exp1-dr-inventory",
+  "timestamp": "2026-09-08T04:23:30.607882+00:00",
+  "agent": "explorer",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\package.json",
+    "C:\\Users\\think\\Project_v2\\Kronos Engine\\src\\sectors\\deers-rock-adapter.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "exp1-dr-inventory",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........---..-..........................................................-.--...-........................................-.--...-",
+  "action": "DR asset inventory in KE project. Found DR is already separate workspace at Deers-Rock/ with own package.json v0.5.0, tsconfig, vitest (17 tests), dist (195 files), git repo. KE imports DR via relative path ../../../Deers-Rock/dist/. No DR source duplication in KE. Adapter is only bridge."
+}

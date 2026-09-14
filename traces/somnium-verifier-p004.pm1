@@ -1,0 +1,36 @@
+{
+  "pm1_version": 1,
+  "session_id": "somnium-verifier-p004",
+  "timestamp": "2026-08-31T01:00:14.384696+00:00",
+  "agent": "verifier",
+  "outcome": "fail",
+  "duration_s": 0,
+  "tool_calls": 32,
+  "key_files": [
+    "src/canon/ordos.ts",
+    "src/derive/propagation.ts",
+    "src/canon/canon.ts",
+    "src/canon/verrin-adversarial.ts",
+    "tests/acceptance/cross-canon-acceptance.test.ts",
+    "docs/ARCHITECTURE-RECONNAISSANCE.md"
+  ],
+  "failure": {
+    "category": "documentation-claim-unsupported",
+    "severity": "high"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "somnium-verifier-p004",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........-.--...-.........................--...--........--.-..-..........................--...--........-.--...-",
+  "action": "L2 verifier gate on Somnium P-004 (second canon genericity: Ordos, fact-node defect, validator errors/notices, two-hash split, cross-canon suite) - REJECT: surviving refuted claim, adversarial fixture reports 5 validateCanon errors while docs/code assert zero; Canon.unspecified never set on that fixture"
+}

@@ -1,0 +1,1 @@
+﻿{"category":"validation","severity":"low","root_cause":"Ran benchmark-relative py_compile path from workspace root.","actual_action":"Received file-not-found, then reran with workdir set to pm1-trading-benchmark and passed.","corrective_action":"Set tool workdir to the module project before relative validation commands."

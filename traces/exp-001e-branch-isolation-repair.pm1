@@ -1,0 +1,39 @@
+{
+  "pm1_version": 1,
+  "session_id": "exp-001e-branch-isolation-repair",
+  "timestamp": "2026-09-11T14:04:24.922600+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 5400,
+  "tool_calls": 48,
+  "key_files": [
+    "src/sectors/deers-rock-adapter.ts",
+    "src/sectors/exp-001e-branch-isolation.test.ts",
+    "src/experiment/experiments/exp-001e-phase3-decisive.ts",
+    "src/experiment/experiments/exp-001e-phase3-clean.ts",
+    "src/experiment/experiments/exp-001e-phase3-bisect.ts",
+    "src/experiment/experiments/exp-001e-snapshot-diff.ts",
+    "src/experiment/experiments/exp-001e-verification.ts",
+    "docs/experiments/EXP-001E-branch-isolation-repair-and-verification.md",
+    "experiment-results/exp-001e/phase3-decisive.json",
+    "experiment-results/exp-001e/phase3-clean.json",
+    "experiment-results/exp-001e/phase3-bisect.json",
+    "experiment-results/exp-001e/phase4-verification.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "exp-001e-branch-isolation-repair",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "EXP-001E: identified root cause of counterfactual branch divergence as capture-time and restore-time aliasing of live DR hospitalState (makeSnapshot stored by reference; cssdHandler mutates shared CSSD tray objects in place). Snapshot diff proved exactly 21 mutated fields in _cssd.trays. Pre-clone experiment proved parent's effect is entirely rewind-state mutation, not counters/global state. Applied repair: deepClone at makeSnapshot (hospitalState/lastTickState/events) and doReconstruct (hospitalState). Verified: snapshot diff 21->0, variant matrix converges to fresh baseline 0.8244, multi-seed 15/15 isolation+reproducibility PASS, live regression 87/0, EXP-001D 7/7 preserved, new regression test 3/3."
+}

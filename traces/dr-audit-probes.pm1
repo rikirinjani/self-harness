@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "dr-audit-probes",
+  "timestamp": "2026-08-31T13:04:39.954053+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 1500,
+  "tool_calls": 20,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\probes\\probe_a.ts",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\probes\\probe_b.ts",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\probes\\probe_c.ts",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\probes\\probe_d.ts",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\probes\\probe_rng_algo.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dr-audit-probes",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................---..-..........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Ran determinism/RNG/temporal audit probes A-F on Deers-Rock (read-only). Found: cross-process determinism holds; in-process determinism broken by ~20 module-level global counters (patientCounter/agentCounter/nikCounter/chargeCounter/etc). RNG is canonical mulberry32 (verified 100k outputs). getHospitalSeed formula confirmed. ai-pharmacy.ts:37 has tick%1440 absolute-time gate. No fastForward."
+}

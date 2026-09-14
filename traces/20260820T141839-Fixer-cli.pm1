@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260820T141839-Fixer-cli",
+  "timestamp": "2026-08-20T14:18:39.499632+00:00",
+  "agent": "Fixer",
+  "outcome": "fail",
+  "duration_s": 185,
+  "tool_calls": 12,
+  "key_files": [
+    "results/v06/execution_mimo.err.log",
+    "results/v06/checkpoints/e2_checkpoint.json",
+    "results/v06/checkpoints/e4_checkpoint.json",
+    "results/v06/status"
+  ],
+  "failure": {
+    "category": "provider_empty_content",
+    "severity": "medium"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260820T141839-Fixer-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........-.--...-........--.-..-.........--.-..-.........-.--...-........................--.-..-.........-.--...-",
+  "action": "Targeted MiMo completion run for missing E2/E4 Flight 1 cells. Connectivity check PASS (mimo-v2.5 @ api.xiaomimimo.com/v1, models endpoint reachable, key via env only). Ran 'python -m v06.lib.runner --experiment e2,e4 --execute-experiment' in background (logs execution_mimo.*). MiMo ALSO returns empty content for the exact same 5 attempted runs (e2 25% x3 seeds, e4 none-s11, e4 C:drop-s11) - 'LLM API: all 3 retries exhausted: LLM returned empty content', reproducible across 2 providers and 4 passes for these prompts. Runner stopped cleanly via registered INFRA_FAILURE after 5 consecutive failures (185s, 0 calls completed, 0 runs recovered). 20 missing cells unchanged. Config hashes unchanged (e2 484429740bd49f68, e4 db1c8f460e3f2bc5). Duplicate calls: 0. Hygiene: key set only as env in launching shell, never written to disk; scan of results/v06 finds no key prefix; env unset in session. No config/experiment/raw-record modifications; nothing uploaded/published."
+}

@@ -1,0 +1,35 @@
+{
+  "pm1_version": 1,
+  "session_id": "kronos-reopen-remediation",
+  "timestamp": "2026-08-31T11:56:19.717445+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 22,
+  "key_files": [
+    "docs/audits/REOPEN-AUDIT-2026-08-31.md",
+    "qms/records/verifications/2026-08-31T19-10-00-ver-003-remediation.json",
+    "C:\\Users\\think\\Project_v2\\Kronos-Engine-remediation\\src\\timeline\\hash.ts",
+    "C:\\Users\\think\\Project_v2\\Kronos-Engine-remediation\\src\\timeline\\rewind-point.ts",
+    "C:\\Users\\think\\Project_v2\\Kronos-Engine-remediation\\scripts\\verify-facts.ts",
+    "C:\\Users\\think\\Project_v2\\Kronos-Engine-remediation\\src\\experiment\\stats.ts",
+    "C:\\Users\\think\\Project_v2\\Kronos-Engine-remediation\\src\\experiment\\experiments\\wwii-no-war.ts",
+    "C:\\Users\\think\\Project_v2\\Kronos-Engine-remediation\\src\\experiment\\experiments\\dr-counterfactual.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kronos-reopen-remediation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Kronos remediation: 6 fixer lanes applied in worktree (hash/rewind integrity, verify-facts gate, stats rebuild, sweep semantics, counterfactual guards, sentinel docs), suite 34/307 green, verify-facts 12/12 exit 0, P-003 corrected (1 FDR survivor, 0 GDP), P-004 rerun, VER-2026-003 + audit addendum filed"
+}

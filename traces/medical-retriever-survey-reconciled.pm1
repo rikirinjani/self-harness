@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "medical-retriever-survey-reconciled",
+  "timestamp": "2026-08-29T11:24:00.614533+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 1,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "medical-retriever-survey-reconciled",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................-.--...-........................................................-.--...-",
+  "action": "Reconciled librarian medical-retriever survey: fine-tuning (#3) not justified - MedCPT below bge-large on same-protocol BEIR; identified 512-token truncation as real issue and Qwen3-Embedding-0.6B (32K ctx, multilingual) as candidate; reordered roadmap to eval-set-first before any re-embed"
+}

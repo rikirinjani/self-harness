@@ -1,7 +1,7 @@
 {
   "pm1_version": 1,
-  "session_id": "fix-1-reconcile",
-  "timestamp": "2026-08-19T19:58:42.800162+00:00",
+  "session_id": "reconcile-exp1-somnium",
+  "timestamp": "2026-09-10T12:50:14.364160+00:00",
   "agent": "fixer",
   "outcome": "pass",
   "duration_s": 0,
@@ -12,7 +12,7 @@
   "n_states": 1,
   "state_width": 8,
   "failsafe": {
-    "session_id": "fix-1-reconcile",
+    "session_id": "reconcile-exp1-somnium",
     "status": "ACTIVE",
     "total_encodes": 1,
     "total_errors": 0,
@@ -22,5 +22,5 @@
     "failure_ids": []
   },
   "pm1": ".........--...--........................................................................................................-.--...-",
-  "action": "Reconciled session fix-1: confirmed orchestrator-verified V0.6 Flight 1 resume — hop_records 73 (no dupes), status files 2026-08-20 02:56Z, resume2 logs present, V0.5/V0.4a clean, 0/20 unrecovered deterministic per-prompt failures, global budgets enforced (139min/21440 passed). Flight 1 stays 73/93 runs / 3500/4500 hops, STOPPED via INFRA_FAILURE, not complete. No further work."
+  "action": "Confirmed reconciliation of background task ses_f7525a81cffeaGUJPRtojMwM4B (exp-1, explorer, 'Explore Somnium API surface'). No new task created. Reconciliation is owned by the oh-my-opencode-slim task-session-manager background job board (in-memory; markReconciled via reconcileInjectedTerminalJobs), so no file/state edit was required or appropriate for this role."
 }

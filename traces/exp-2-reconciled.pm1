@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "exp-2-reconciled",
+  "timestamp": "2026-08-14T06:14:28.076710+00:00",
+  "agent": "explorer",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "Agentic Layer/morse/context_assembly/assembler.py",
+    "Agentic Layer/morse/bench",
+    "self-harness/tools/detect_overrides.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "exp-2-reconciled",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........---..-..........................................................-.--...-........................................-.--...-",
+  "action": "Reconciled exp-2 (ses_0012aa7ddffeWVL09l3NsghC2R): explorer findings verified by exp-4 reconciliation session — assembler.py structure (context_assembly/assembler.py present), absence of detect_overrides.py in context_assembly (present only in self-harness/tools), PM-1 trace format, and bench scripts (morse/bench/*.py). All findings confirmed accurate and complete. Marked reconciled."
+}

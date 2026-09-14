@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-action-boundary-design",
+  "timestamp": "2026-08-21T03:07:52.849368+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 1200,
+  "tool_calls": 4,
+  "key_files": [
+    "pm1-trading-benchmark\\results\\v06\\action_boundary_design\\PM1_V06_ACTION_BOUNDARY_ANALYSIS.md",
+    "pm1-trading-benchmark\\results\\v06\\action_boundary_design\\PM1_V06_ACTION_BOUNDARY_DESIGN.md",
+    "pm1-trading-benchmark\\results\\v06\\action_boundary_design\\PM1_V06_ACTION_BOUNDARY_DESIGN.json",
+    "pm1-trading-benchmark\\results\\v06\\action_boundary_design\\PM1_V06_ACTION_BOUNDARY_ANALYSIS.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-action-boundary-design",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................---..-..........-.--...-........-.--...-........................................-.--...-",
+  "action": "Action-equivalence boundary analysis + design: synthesized all 4 evidence classes, corrected interpretation (boundary between 50% and 100%, not at 50%), identified density paradox (0.7813 at 50% vs 0.5063 at 100% yet 50% fails), designed 3 candidates (A=fine sweep 60 calls 28min, B=binary search 50-75 calls, C=replicated bracket 50 calls); recommended Design A; all artifacts under results/v06/action_boundary_design/; 0 API calls."
+}

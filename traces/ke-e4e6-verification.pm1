@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "ke-e4e6-verification",
+  "timestamp": "2026-09-05T01:49:09.868062+00:00",
+  "agent": "ke",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 12,
+  "key_files": [
+    "src/experiment/experiments/e4-horizon.ts",
+    "src/experiment/experiments/e5-isolation.ts",
+    "src/experiment/experiments/e6-rewind.ts",
+    "experiment-results/e4-horizon/e4-horizon-results.json",
+    "experiment-results/e5-isolation/e5-isolation-results.json",
+    "experiment-results/e6-rewind/e6-rewind-results.json",
+    "docs/E6-REPORT-2026-09-05.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ke-e4e6-verification",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........................--.-..-.........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "E4-E6 verification: ran all 3 experiments locally. E4: zero intervention effect across 9 combinations (3 horizons × 3 seeds). E5: PASS — intervention isolated to target sentinel. E6: PASS on all 3 verdicts (reproducible, intervention consumed) but critical finding: non-zero effect in E6 is aliasing artifact from forkBranch shared EventQueue/RNG. E4 fresh-worlds design is correct for causal inference."
+}

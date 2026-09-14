@@ -1,0 +1,12 @@
+{
+    "slug":  "p003-propagation-empty",
+    "recurrence_note":  "Second occurrence of this failure mode across the Somnium project (3 lanes total). If it recurs, split the brief into smaller per-file lanes rather than re-dispatching the same scope.",
+    "category":  "subagent-empty-completion",
+    "root_cause":  "Fixer lane ses_facf9541cffeskRJ4d5DX0Tguz returned completed-with-empty-result and wrote zero files and zero PM-1 trace. Same failure mode as two lanes in P-001 (2026-08-30T04 record). Session marked completed but contained no work product, so it is not resumable. Suspected cause: large multi-file brief with heavy specification content; the lane terminated without emitting a result payload.",
+    "agent":  "fixer",
+    "what_went_wrong":  "Critical-path lane produced no implementation; only orchestrator-authored judgment.ts and canon/types.ts group field were on disk.",
+    "timestamp":  "2026-08-30T21:21:19.2755703+07:00",
+    "task":  "P-003 propagation rewrite (judgment model)",
+    "severity":  "minor",
+    "corrective_action":  "Re-dispatched as a fresh session with an explicit \u0027previous attempt wrote nothing, you MUST write files\u0027 instruction and a required file-by-file completion checklist in the return contract."
+}

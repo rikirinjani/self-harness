@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "v07c-rehearsal-002",
+  "timestamp": "2026-08-22T10:08:28.219841+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 300,
+  "tool_calls": 15,
+  "key_files": [
+    "v07c/run_rehearsal_002.py",
+    "results/v07c/rehearsal_002/PM1_V07C_REHEARSAL_002_REPORT.md",
+    "results/v07c/rehearsal_002/PM1_V07C_REHEARSAL_002_RESULTS.json",
+    "results/v07c/rehearsal_002/manifest.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v07c-rehearsal-002",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-..........--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "V.7-C REHEARSAL-002 executed with valid SWE-bench task django__django-11099. MAJOR MILESTONE: model called edit_file at hop 27 for the first time ever. Correctly changed regex from $ to Z in ASCIIUsernameValidator. But: only 1 of 2 lines fixed, no run_tests, no finalize_task, hit LOOP_LIMIT at 30 hops. Evaluator failed (Django needs tests/runtests.py not pytest). 96,779 tokens. REHEARSAL PARTIAL."
+}

@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "android-security-recheck-predisconnect",
+  "timestamp": "2026-08-30T20:09:08.159072+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 11,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "android-security-recheck-predisconnect",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........................................................-.--...-",
+  "action": "Pre-disconnect security recheck on Redmi Note 8 (ginkgo). INSTALL GATE VERIFIED CLOSED: install_non_market_apps=0, package_verifier_enable=1, verifier_verify_adb_installs=1, package_verifier_user_consent=1; 'appops query-op REQUEST_INSTALL_PACKAGES allow' returns No operations and per-app default mode=deny across all 20 checked pkgs, so no app can sideload. Only installer paths left are Play Store + system PackageInstaller; GetApps/mipicks/discover confirmed absent; no third-party stores (fdroid/aurora/apkpure/uptodown/amazon/huawei/samsung all absent); no staged install sessions; no leftover APKs in shared storage. CRITICAL FINDING: NO SCREEN LOCK on a device holding GoPay, ShopeePay, Shopee, Finex broker and gov IKD identity app - confirmed by 4 independent signals (locksettings verify --old '' succeeds, device_policy Password quality 0, lockscreen.password_type null, trust deviceLocked=0) and no biometric enrolled. Also found screen_off_timeout=2147483647 (never sleeps) -> set 120000 and stay_on_while_plugged_in=0. Clean: no VPN/proxy/private DNS, no device or profile owner, no device admins, no accessibility services, single user, only notification listener is Android Auto. Verified boot green, bootloader locked, FBE encrypted. GAP: /data/misc/user/0/cacerts-added unreadable without root so user-installed MITM CA certs could not be ruled out. ADB still enabled (adb_enabled=1, adb_wifi_enabled=1) pending user disconnect."
+}

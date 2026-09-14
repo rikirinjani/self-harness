@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "research-ult-80at-ii-driver",
+  "timestamp": "2026-08-19T06:57:16.935661+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 720,
+  "tool_calls": 9,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "research-ult-80at-ii-driver",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--..........................--...--........-.--...-........................................................-.--...-",
+  "action": "Riset lanjutan ULT 80AT II: dikonfirmasi sebagai printer thermal 80mm merek Ultron (distributor Iware / CV Rajawali Bina Maju Surabaya, iwarezone.com). Driver resmi lewat Google Drive folder (bit.ly/driverCD), alternatif file driver FolioPOS, fallback POS-X 4.64/Rongta/generic ESC/POS. Kertas 79.5mm, lebar cetak 72mm, auto-cutter, ESC/POS."
+}

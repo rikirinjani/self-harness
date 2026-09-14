@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "android-wifi-adb-blocked",
+  "timestamp": "2026-08-30T14:11:00.066591+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 150,
+  "tool_calls": 4,
+  "key_files": [],
+  "failure": {
+    "category": "environment",
+    "severity": "medium"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "android-wifi-adb-blocked",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........--.-..-.........-.--...-........................................--.-..-.........-.--...-",
+  "action": "Android WiFi ADB blocked on two fronts. Network: 192.168.1.4 reachable (ping 3-32ms, ARP c8-3d-dc-d3-c4-56, IPv6 LL matches EUI-64) but ports 5555/5556/5557/5037/37000/39999 all closed = wireless debugging not enabled. USB: phone enumerates as USB\\\\VID_0000&PID_0002 'Unknown USB Device (Device Descriptor Request Failed)' Status=Error = physical layer failure (cable/port), not driver. Concluded Android<=10 likely since Wireless debugging absent; USB bootstrap is critical path."
+}

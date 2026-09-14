@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "fix-gate09-staleness-metadata",
+  "timestamp": "2026-09-11T03:17:13.866385+00:00",
+  "agent": "Fixer",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\morse\\experiments\\pm1-rx\\harness\\pm1rx\\codecs.py",
+    "C:\\Users\\think\\Agentic Layer\\morse\\experiments\\pm1-rx\\harness\\tests\\test_codecs.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "fix-gate09-staleness-metadata",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................................................-.--...-........................................-.--...-",
+  "action": "Fixed gate 9: codecs.py now carries real per-item validity status (from event validity.status) in content and fields_present for arms C/E/F; updated test_codecs.py assertion"
+}

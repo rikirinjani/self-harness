@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-09-11T14:12:00Z",
+  "category": "verification-gap",
+  "severity": "medium",
+  "slug": "shallow-fingerprint-delayed-exp001e-root-cause",
+  "agent": "orchestrator",
+  "task": "EXP-001E counterfactual branch isolation root-cause investigation",
+  "what_went_wrong": "Across EXP-001B/C and the early part of EXP-001E, branch-divergence diagnostics used shallow fingerprints (top-level sizes: beds.size, encounters.size, patient count, occupancy) to test whether a parent run mutated a captured rewind point. These fingerprints reported 'no change' after the parent run, which led to repeated rejection of the correct hypothesis (rewind-point state aliasing) and to a theorizing loop over alternative causes (clock RNG position, agent/referral state, module-global counters).",
+  "root_cause": "The mutated state was nested field values inside hospitalState._cssd.trays[i] (sterilizedAt, expiresAt, cycleId). Shallow fingerprints counted collection sizes and occupancy, none of which change when a tray's internal fields are mutated in place. The verification therefore could not observe the defect it was testing for.",
+  "what_was_done_wrong": "1) Assumed 'no observable change in aggregate counts' equalled 'no mutation', instead of diffing full serialized state. 2) Relied on the existence of deepClone elsewhere in the codebase as evidence that snapshot capture was safe, without reading makeSnapshot() to confirm it stored references. 3) Allowed multiple sequential hypotheses to be tested with the same insufficient instrument before escalating to a full-state diff.",
+  "corrective_action": "Replaced count-based fingerprints with a deep field-level serializer (exp-001e-snapshot-diff.ts) over all 12,211 flattened fields of rp.sectorStates. This immediately isolated the 21 mutated _cssd.trays fields and confirmed the root cause. The fix (deepClone at makeSnapshot + doReconstruct) was then verified with a multi-seed matrix and a permanent regression test (src/sectors/exp-001e-branch-isolation.test.ts).",
+  "impact": "Delayed root-cause identification by several investigation cycles; consumed diagnostic budget. No incorrect production change was made and no frozen evidence was affected.",
+  "prevention": "For any claim that shared/mutable state is or is not mutated, diff the fully serialized state (all fields), not aggregate counts. Read the actual capture/restore code path before inferring aliasing safety from the presence of cloning utilities elsewhere.",
+  "trace": "C:/Users/think/self-harness/traces/exp-001e-branch-isolation-repair.pm1"
+}

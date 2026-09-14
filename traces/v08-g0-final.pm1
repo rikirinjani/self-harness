@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "v08-g0-final",
+  "timestamp": "2026-08-24T03:23:49.466423+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 15,
+  "key_files": [
+    "v08/g0_final_validate.py",
+    "results/v08/g0_final/g0_final_results.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v08-g0-final",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "V.8 G0-FINAL Evaluator Validity: 4/13 valid tasks (all Django). Django controls: baseline FAIL 4/4, gold PASS 4/4, bad FAIL 4/4, invalid execution PASS 4/4, dep failure PASS 4/4. Non-Django 9/9 INVALID (gold FAIL — test environments incomplete). G0 PASS with 4 valid tasks for V.8 experimental pool."
+}

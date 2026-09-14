@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-hf-space-created",
+  "timestamp": "2026-08-22T06:01:55.268398+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 8,
+  "key_files": [
+    "pm1-trading-benchmark\\results\\v07c\\hf_primary\\PM1_V07C_HF_PRIMARY_INFRASTRUCTURE.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-hf-space-created",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................---..-..........-.--...-........-.--...-........................................-.--...-",
+  "action": "HF Space created and deployed: balade/pm1-v07c-calibration (Docker, python:3.12-slim). Verified live, serving content. Files: Dockerfile, requirements.txt, README.md, app.py. Stage: RUNNING. Space URL: https://huggingface.co/spaces/balade/pm1-v07c-calibration. HF token verified (balade, org ICML-2026-agent-repro). 0 API calls to benchmark; Space creation via HF SDK."
+}

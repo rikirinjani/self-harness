@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-09-10T22:54:08Z",
+  "category": "measurement-defect",
+  "severity": "high",
+  "slug": "s007-parallel-async-timing",
+  "agent": "orchestrator",
+  "project": "somnium-engine",
+  "branch": "s007",
+  "ancestor_commit": "443d3d9",
+  "what_happened": "Experiment E (parallel scaling) measured `time(() => pool.process(items))`. `time()` is synchronous and `pool.process()` returns a Promise, so it recorded only promise-creation time (~800 microseconds), not the awaited work. The first smoke run reported speedup 32x and efficiency 3212% — physically impossible on a 4-core host.",
+  "root_cause": "Applying a synchronous timer to an asynchronous operation. The awaited work happened outside the measured window.",
+  "what_i_did_wrong": "Wrote a timing wrapper for an async call without awaiting inside the wrapper. The absurd 32x/3212% numbers were the tell; the correct reaction is to distrust any super-linear speedup, not to report it.",
+  "detection": "Speedup 32x and efficiency 3212% in the --quick smoke run, far above the 4-core ceiling.",
+  "fix": "Measure with performance.now() around `await pool.process(items)`. Also added a warmup batch before the measured phase, because the first worker job is JIT-cold and inflated per-worker cost. After the fix, peak speedup is 1.10x at W=4 — consistent with the physical core count.",
+  "lesson": "Never wrap an async operation in a synchronous timer. Treat any speedup above the core count as a measurement bug until proven otherwise."
+}

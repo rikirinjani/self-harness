@@ -1,0 +1,36 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260820T154948-Fixer-cli",
+  "timestamp": "2026-08-20T15:49:48.293668+00:00",
+  "agent": "Fixer",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 18,
+  "key_files": [
+    "v06/lib/checkpoint.py",
+    "v06/lib/runner.py",
+    "v06/tests/test_provenance.py",
+    "results/v06/corrected_backfill/PM1_V06_CORRECTED_BACKFILL_PROVENANCE.md",
+    "results/v06/corrected_backfill/PM1_V06_CORRECTED_BACKFILL_DESIGN.md",
+    "results/v06/corrected_backfill/PM1_V06_CORRECTED_BACKFILL_PREFLIGHT_PLAN.md",
+    "results/v06/corrected_backfill/corrected_backfill_manifest.json",
+    "results/v06/checkpoints/e2_checkpoint_v0_6_corrected_backfill.json",
+    "results/v06/checkpoints/e4_checkpoint_v0_6_corrected_backfill.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260820T154948-Fixer-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................---..-..........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "V0.6 provenance correction (offline, 0 API calls): dual-record provenance model for corrected backfill. Implemented run-class storage namespace: CheckpointManager(run_class) writes checkpoints/{exp}_checkpoint_{sanitized}.json; runner scopes hop_records/{run_class}/, failed_calls/{run_class}/, status/{exp}_status_{suffix}.json, summaries/run_summary_{suffix}.json; run_class injected into hop-record JSON; --seed-run-class-checkpoints + --defer-run-ids CLI (offline, idempotent, read-only on originals, defer filtered by experiment prefix). Seeded real e2/e4 corrected checkpoints: resume sets e2->3, e4->2 (exactly the 5 target cells); original checkpoint MD5s unchanged after seeding and corrected writes. 10 new offline provenance tests (no-overwrite byte-identity, run_class persistence, seeding carry/defer/filter, end-to-end offline run isolation): suite 162 passed / 0 failed. Batch plan: B1 E2 3 runs/150 hops ~54 min, B2 E4 2 runs/100 hops ~36 min, both fit 90-min ceiling, 250 calls total <= 1000. Docs updated: PROVENANCE.md added, DESIGN.md (execution+provenance+batch), PREFLIGHT_PLAN.md (24-item gate + provenance isolation items 21-24), manifest updated. Status: READY FOR CORRECTED BACKFILL AUTHORIZATION."
+}

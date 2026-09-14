@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "v07c-phase1-incident-002",
+  "timestamp": "2026-08-23T08:03:46.308941+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 15,
+  "key_files": [
+    "results/v07c/phase1_incident_002/PM1_V07C_PHASE1_INCIDENT_002.md",
+    "results/v07c/phase1_incident_002/PM1_V07C_PHASE1_INCIDENT_002.json",
+    "results/v07c/phase1_incident_002/evaluator_compatibility_matrix.json",
+    "results/v07c/phase1_incident_002/runner_crash_analysis.json",
+    "v07c/build_compat_matrix.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v07c-phase1-incident-002",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "V.7-C Phase-1 Incident 002 Diagnostic: Runner death cause identified — git push fails for runs after run 1 (non-fast-forward). Evaluator incompatibility: Django multiprocessing + Python 3.12 addDuration. Fix: --parallel=0 for Django tasks. Task matrix: 4 Django (32 conditions) require fix, 4 pytest (32 conditions) ready. Run 1 durably persisted (SHA fa0cf0ccd5c3, immutable). Minimum fixes: --parallel=0 + git pull --rebase."
+}

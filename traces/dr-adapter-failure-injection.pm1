@@ -1,0 +1,41 @@
+{
+  "pm1_version": 1,
+  "session_id": "dr-adapter-failure-injection",
+  "timestamp": "2026-08-31T13:39:02.034679+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 3000,
+  "tool_calls": 30,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\failure\\probe1-macro.mjs",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\failure\\probe2-dr.mjs",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\failure\\probe2-refined.mjs",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\failure\\probe2b-fresh.mjs",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\failure\\probe3-icd.mjs",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\failure\\probe4-adapter.mjs",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\failure\\probe5-runner.mjs",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\failure\\out1-macro.json",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\failure\\out2-refined.json",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\failure\\out3-icd.json",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\failure\\out4-adapter.json",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\failure\\out5-runner.json",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\failure\\fresh-A.json",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\failure\\fresh-B.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dr-adapter-failure-injection",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................---..-...........--...--........--.-..-.........................................-.--...-",
+  "action": "Failure injection tests on DR/Kronos adapter: 11 cases (malformed packet REJECT, extreme multiplier/zero-staff/supply-pressure IGNORE, unknown scenario CRASH, circuit breaker verified, determinism fresh-vs-inprocess, seed mismatch unvalidated)"
+}

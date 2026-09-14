@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "s028-dependency-completeness",
+  "timestamp": "2026-09-11T05:21:26.124667+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 12,
+  "key_files": [
+    "experiments/s028/REPORT.md",
+    "experiments/s028/probe.ts",
+    "qms/records/requirements/2026-09-11T19-30-00-req-028-s028-dependency-completeness.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "s028-dependency-completeness",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "S028 authoritative Phase-A dependency completeness audit: from frozen S027 (94533fe), no src change (observation only). VERDICT PASS. Audited the authoritative Phase-A reads rather than guessing. FINDING: the S027 Ordos residual (mismatch=38, R\\\\closure=67) was caused by a MISSING DEPENDENCY EDGE - S027's directChanged OMITTED the overriddenCells delta (facts in a changed cell); factNodeTruth reads model.overriddenCells via cellKey. Adding the override delta: ordos V1/V2/V3/V5 all reach mismatch=0 R\\\\closure=0; Verrin already 0. COMPLETE dependency set: supportGroups, enablesIn, excludesEdges, invariantEdges, precedesEdges, validity windows, overriddenCells (the missed class), nodeIds/edge endpoints, negated/forcedBy, retracted. CLASSIFICATION: A - locally incrementalisable Phase A. Next: implement the event-driven incremental Phase-A engine and prove prefix-by-prefix equivalence. Baseline 624/624, verify-facts 3/3, frozen hashes unchanged."
+}

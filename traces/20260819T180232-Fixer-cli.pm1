@@ -1,0 +1,40 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260819T180232-Fixer-cli",
+  "timestamp": "2026-08-19T18:02:32.937875+00:00",
+  "agent": "Fixer",
+  "outcome": "partial",
+  "duration_s": 13230,
+  "tool_calls": 40,
+  "key_files": [
+    "results/v06/execution.log",
+    "results/v06/execution.err.log",
+    "results/v06/execution_resume.err.log",
+    "results/v06/summaries/run_summary.json",
+    "results/v06/checkpoints/e1_checkpoint.json",
+    "results/v06/checkpoints/e2_checkpoint.json",
+    "results/v06/checkpoints/e3_checkpoint.json",
+    "results/v06/checkpoints/e4_checkpoint.json",
+    "results/v06/checkpoints/e6_checkpoint.json",
+    "results/v06/hop_records"
+  ],
+  "failure": {
+    "category": "provider_empty_content",
+    "severity": "low"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260819T180232-Fixer-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........--.-..-..........-.-.-.-.........--...--........--.-..-.........................-.--...-........-.--...-",
+  "action": "Executed authorized V0.6 core experiment run (E1,E2,E3,E4,E6; E5 excluded). Main pass: 3,400 calls in 12,106s (e1 12/12, e2 13/18, e3 15/15, e4 19/36, e6 12/12). Resume pass recovered 2 e2 runs then stopped via registered INFRA_FAILURE stop condition (5 consecutive provider empty-content failures). Final: 73/93 runs, 3,500 completed hops/calls; 20 runs (e2 25% x3, e4 x17) failed deterministically - provider (api.deepseek.com deepseek-v4-flash) returns empty content for those prompts across two passes. Provider tokens: 1,635,630 in / 680,121 out. Taxonomy across completed hops: PASS 1947, SELECTION_ERROR 1235, PARSE_ERROR 111, CATEGORY_ERROR 119, DEGRADE_FAILURE 88. Wall time 220.5 min < 360; calls ~3,560 < 25,000. E5 not executed; V0.5/V0.4a unmodified (mtime-verified); nothing uploaded/published."
+}

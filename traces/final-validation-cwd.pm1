@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "final-validation-cwd",
+  "timestamp": "2026-08-14T11:15:39.816624+00:00",
+  "agent": "fixer",
+  "outcome": "fail",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {
+    "category": "validation",
+    "severity": "low"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "final-validation-cwd",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........-.--...-........................................................................-.--...-........-.--...-",
+  "action": "A final py_compile command was first run from the workspace root with a benchmark-relative path, so it reported file not found; rerun from benchmark directory passed."
+}

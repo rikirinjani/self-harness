@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "proposal-bisnis-v3-kurs",
+  "timestamp": "2026-09-14T03:16:41.974311+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 12,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\chatbot\\PROPOSAL_BISNIS.md",
+    "C:\\Users\\think\\Project_v2\\chatbot\\PROPOSAL_BISNIS_v3.pdf"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "proposal-bisnis-v3-kurs",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Live FX check: USD/IDR = 17.623,72 (exchangerate-api.com, 14 Sep 2026, +8.1% vs old 16.300). Updated all USD-based costs: HP A06 1.4-1.62jt, Meta Verified 295-530k, LLM estimates (nano 15k, 4o-mini 21k, Groq 10k/21k, DeepSeek 26.5-53k, Gemini 44k), 50k scale figures, kurs note. IDR-native costs (VPS, domain, WhatsApp Rp406) unchanged. Regenerated v3 PDF (167KB)"
+}

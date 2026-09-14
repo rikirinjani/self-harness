@@ -1,0 +1,38 @@
+{
+  "pm1_version": 1,
+  "session_id": "somnium-verifier-p007-gate2",
+  "timestamp": "2026-09-02T12:04:28.954062+00:00",
+  "agent": "verifier",
+  "outcome": "fail",
+  "duration_s": 0,
+  "tool_calls": 96,
+  "key_files": [
+    "src/derive/semantic.ts",
+    "src/canon/hash.ts",
+    "src/canon/fact-rules.ts",
+    "src/diff/diff.ts",
+    "src/diff/types.ts",
+    "src/diff/semantic.test.ts",
+    "docs/P007-WORLDDIFF.md",
+    "src/derive/world-state.ts"
+  ],
+  "failure": {
+    "category": "verification-blocking-defect",
+    "severity": "high"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "somnium-verifier-p007-gate2",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........-.--...-.........................--...--........--.-..-..........................--...--........-.--...-",
+  "action": "L2 verifier gate round 2 on Somnium P-007 (gate-1 remediation: group in world identity, two-layer non-finite defense, content-string diff keys, probe/tsconfig fixes) - REJECT: 2 blocking findings (world-state.ts:279 unconverted !== on fact objects feeding the workStatuses semantic dimension, reachable via derive on a canon literal; new absolute overclaim in semantic.ts:70-76 / docs P007 §4 refuted on both canons by the report's own §7 forced/negated exclusion). All four gate-1 blockers themselves verified closed by execution: group attack reproduced+caught on both canons, 4950 INV pairs across 116 routes with 0 failures, live 32-bit contentSetDiff collision found at 1.6M candidates confirming fix 3, encoding injective under 18-value token attack, sameCanonicalValue agrees with encoding on 13/13 pairs."
+}

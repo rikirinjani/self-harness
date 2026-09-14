@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "s022-unfounded-boundary",
+  "timestamp": "2026-09-11T03:47:13.462426+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 2400,
+  "tool_calls": 12,
+  "key_files": [
+    "src/derive/propagation.ts",
+    "experiments/s022/REPORT.md",
+    "experiments/s022/probe.ts",
+    "qms/records/requirements/2026-09-11T13-30-00-req-022-s022-unfounded-boundary.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "s022-unfounded-boundary",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "S022 unfounded-set candidate boundary / incremental cycle observability: from frozen S021 (dfa4cfa). Observation-only src addition (observeUnfoundedSet). VERDICT HOLD. The Phase-B candidate set is EXACTLY the NEITHER set after Phase A. Measured both seed canons: |C| 0.07-1.31 nodes, dC 0.00-0.19 (LOCAL); |U| 0.00, dU 0.00 (EMPTY). So Phase B is GLOBAL SCAN + EMPTY/LOCAL RESULT and its scan domain is tiny - a cheap global consistency check that can safely remain global. Relationship: support aggregate change -> NEITHER-set change (= dC) -> Phase B re-scan. HOLD because the |U|>0 case (constructed cycles) was NOT tested. Baseline 624/624, verify-facts 3/3, frozen hashes unchanged."
+}

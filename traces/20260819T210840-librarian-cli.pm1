@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260819T210840-librarian-cli",
+  "timestamp": "2026-08-19T21:08:40.495953+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 10,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260819T210840-librarian-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--..........................--...--........--.-..-.........................................................-.--...-",
+  "action": "Researched MiMo-V2.5 for experiment config: verified Xiaomi model mimo-v2.5, official base URL https://api.xiaomimimo.com/v1, auth api-key/Bearer, 1M context, 128K max output, pricing .14/.28 per 1M, RPM 100/TPM 10M, OpenAI-compatible; confirmed codebase default 'mimo-2.5-free' is NOT an official ID"
+}

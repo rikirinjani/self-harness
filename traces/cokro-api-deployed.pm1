@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "cokro-api-deployed",
+  "timestamp": "2026-09-10T10:03:41.404499+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 15,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\eval_ab_retrieval.py C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\eval_ab_judge.py C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\eval_ab_metrics.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "cokro-api-deployed",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................--.-..-.........-.--...-........................................-.--...-",
+  "action": "Deployed COKRO API on Vultr VPS (45.32.122.6 Singapore). Transferred scripts via base64 over SSH, built 500K sub-corpus from S3 in 3min, set up uvicorn+nginx+systemd. API live on port 80, retrieval working (DeepSeek key expired). Eval on CPU too slow for 500K embedding — pivoted to production API deployment."
+}

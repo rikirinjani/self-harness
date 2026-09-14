@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "vultr-sensitivity-study",
+  "timestamp": "2026-09-10T16:50:14.080646+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "Kronos Engine/docs/experiments/vultr-sensitivity-design.md",
+    "Kronos Engine/docs/experiments/vultr-sensitivity-report.md",
+    "Kronos Engine/experiment-results/vultr-sensitivity/vultr-sensitivity-results.json",
+    "Kronos Engine/src/experiment/experiments/vultr-sensitivity.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "vultr-sensitivity-study",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Vultr exploratory sensitivity study (NON-CANONICAL). 12 configs on Vultr VPS 45.32.122.6 (KE 4d7e412, DR 5884ba3), 694.9s compute, ~.002. Key finding: GDP->emissions saturation at tick 4 caps intervention differentiation to ticks 1-3 of 20; both arms identical thereafter (CO2 ~2e8, eventChance pinned 0.5). Admission quantization: multipliers bounded {1.0,1.2,1.3,1.5}; inert below 1.5. CO2 leverage raises divergence frequency (3/8->7/8) but direction sign-unstable. Discharge/horizon infeasible (superlinear DR cost). Isolation held as designed. 3 candidate experiments proposed, not frozen. No manuscript/QMS/PhaseF changes."
+}

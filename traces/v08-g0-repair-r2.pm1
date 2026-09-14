@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "v08-g0-repair-r2",
+  "timestamp": "2026-08-24T03:11:45.464230+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 15,
+  "key_files": [
+    "v08/g0_r2_validate.py",
+    "results/v08/g0_repair_r2/PM1_V08_G0_REPAIR_R2.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v08-g0-repair-r2",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "V.8 G0-R2 Evaluator Repair: Django parser fixed (baseline FAIL, gold PASS correctly detected). Zero-test control documented as structurally inapplicable for Django (runtests.py ignores module restriction). Non-Django audit: 9 tasks evaluator-ready, 7 tasks environment-blocked (missing build toolchains). Final G0-valid pool: 4 Django tasks. Non-Django tasks need gold-fix verification before G0. G0-R2 READY FOR FINAL VALIDATION."
+}

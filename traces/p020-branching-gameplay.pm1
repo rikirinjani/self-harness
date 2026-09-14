@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "p020-branching-gameplay",
+  "timestamp": "2026-09-01T06:09:24.927228+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 5400,
+  "tool_calls": 70,
+  "key_files": [
+    "src/poc/branching-rewind.test.ts",
+    "src/poc/ce-ws-server.ts",
+    "src/poc/godot/ce_ws_adapter.gd",
+    "src/poc/godot/iso_main.gd",
+    "src/poc/godot/shots/iso_G_branch_compare.png",
+    "docs/P-020-BRANCHING-GAMEPLAY.md",
+    "docs/RECONNAISSANCE.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "p020-branching-gameplay",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "P-020 branching & rewind as first-class game mechanic COMPLETE. 25 adversarial TS tests (P1-P10 + 13 attack matrix) verified 25/25, tsc clean. WS server extended to multi-timeline registry + branch API (fork/rewind/switch/list/info/compare), checkpoints stored by id. Godot branch UI + gameplay loop on physical display: Timeline A destroy bridge (grain 14.86) -> checkpoint C-45aa1ecd -> rewind (T-849c1d0a) -> fork B (T-5d05c928) -> subsidy (grain 14.46) -> compare panel rendered (iso_G_branch_compare.png, 39k text pixels). Headless iso 16/16 no regression; WS boundary 24/24 no regression; full suite 685/685; tsc 0 new errors. All 10 predictions CONFIRMED (exact rewind physics identical, traceHash differs - measured; convergence never collapsed). Report + RECONNAISSANCE s30 + QMS VER-2026-027/REQ-2026-017."
+}

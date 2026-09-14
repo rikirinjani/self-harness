@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm-adapter-trading-benchmark-recon",
+  "timestamp": "2026-08-14T10:00:44.671855+00:00",
+  "agent": "explorer",
+  "outcome": "pass",
+  "duration_s": 90,
+  "tool_calls": 8,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm-adapter-trading-benchmark-recon",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........---..-..........................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Read-only reconnaissance of pm-adapter, PM-Adapter QMS verifications, and canonical PM-1 project state/context conventions; confirmed no pm1-trading-benchmark project directory."
+}

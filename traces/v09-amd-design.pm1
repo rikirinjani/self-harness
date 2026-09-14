@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "v09-amd-design",
+  "timestamp": "2026-08-29T12:18:38.259031+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 10,
+  "key_files": [
+    "results/v09/design/PM1_V09_AMD_EXPERIMENT_DESIGN.md",
+    "results/v09/design/PM1_V09_AMD_EXPERIMENT_DESIGN.json",
+    "results/v09/design/manifest.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v09-amd-design",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "V.9 AMD Experiment Design Complete. Research question: Does PM-1 measurably improve information retention over long horizons? 4 experimental arms: Control (no memory), RAG, PM-1, PM-1+RAG. Memory ablation H0-H1000. Long-horizon synthetic task. Trajectory replay framework. AMD MI300X ~192GB. ~1200 inference calls, ~20 GPU-min. Model TBD (ROCm-compatible open-weight). Design-only, implementation deferred."
+}

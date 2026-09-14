@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "donasi-ntt-v3-alpha-join",
+  "timestamp": "2026-08-30T23:58:09.948958+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 9,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\Donasi NTT\\Daftar Belanja Obat Donasi NTT v3.txt"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "donasi-ntt-v3-alpha-join",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Revised v3: added Bagian A alphabetical joined list (34 items) before existing Bagian B category list; verified both sections agree on codes, subtotals, and Rp 14.901.001 total"
+}

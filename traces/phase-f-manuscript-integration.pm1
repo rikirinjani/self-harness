@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "phase-f-manuscript-integration",
+  "timestamp": "2026-09-08T04:06:49.768593+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 0,
+  "key_files": [
+    "docs/papers/jamia-2026-kronos-engine.md",
+    "docs/EXPERIMENT-FREEZE-2026-09-07.md",
+    "docs/CLAIM-AUDIT-2026-09-07.md",
+    "docs/SUBMISSION-READINESS-2026-09-07.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "phase-f-manuscript-integration",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........................-.--...-........................................-.--...-",
+  "action": "Added Phase F mechanistic pilot to manuscript (Section 3.3), renumbered sections, updated abstract and conclusion to three experiments. Updated EXPERIMENT-FREEZE with Phase F results. Updated CLAIM-AUDIT with C16 (structural null) and C17 (honest negatives). Updated SUBMISSION-READINESS with Phase F status and macOS 333/333. GDP audit completed: WAR_START only fires for NEW wars, not pre-existing; manuscript already explains negative deltas correctly."
+}

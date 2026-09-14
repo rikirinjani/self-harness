@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "v07c-phase1-outcome-forensics",
+  "timestamp": "2026-08-23T22:22:12.518038+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 10,
+  "key_files": [
+    "v07c/evaluator_audit.py",
+    "v07c/cross_check.py",
+    "results/v07c/phase1/forensics/PM1_V07C_PHASE1_OUTCOME_FORENSICS.json",
+    "results/v07c/phase1/forensics/manifest.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v07c-phase1-outcome-forensics",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "V.7-C Phase-1 Outcome Validity Forensics: EVALUATOR VALIDITY CONCERN. 5/6 sampled runs are evaluator_failure (not task failure). Only seaborn evaluator runs successfully (120 tests via pytest). Django evaluator falls back to pytest (no module). Pylint/pytest evaluators also fail to execute. The Phase-1 failure rate of 58/64 is inflated by evaluator non-execution. The measured success rate (6/64) is valid but the failure rate is not measurable as task failure. Outcomes need re-evaluation after fixing evaluator for all 4 task families."
+}

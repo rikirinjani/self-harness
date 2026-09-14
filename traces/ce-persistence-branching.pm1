@@ -1,0 +1,40 @@
+{
+  "pm1_version": 1,
+  "session_id": "ce-persistence-branching",
+  "timestamp": "2026-08-30T15:29:53.065313+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 5400,
+  "tool_calls": 60,
+  "key_files": [
+    "src\\core\\persistence.ts",
+    "src\\core\\genealogy.ts",
+    "src\\core\\timeline.ts",
+    "src\\core\\hash.ts",
+    "src\\core\\types.ts",
+    "src\\core\\world.ts",
+    "src\\core\\provenance.ts",
+    "src\\core\\propagation.ts",
+    "src\\poc\\persistence.ts",
+    "src\\poc\\persistence.test.ts",
+    "src\\poc\\branching.test.ts",
+    "src\\poc\\resume-worker.ts",
+    "docs\\RECONNAISSANCE.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ce-persistence-branching",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "CE persistence/branching pass (brief sections 1-15): defined checkpoint semantics with pendingContributions as non-reconstructable state; moved interventionHistory into WorldState; added historyTruncated honesty flag; content-derived checkpoint/timeline ids (no counters/clocks); chose genealogy ontology World/Timeline/Checkpoint over KE Universe/RewindPoint/Branch with justification; implemented rewind preserving+re-deriving abandoned futures; fork isolation; branch convergence state-vs-trace; explain() now reports incomplete+danglingParents for evicted provenance; config reject-by-default with opt-in labelled migration; 13-code failure taxonomy with no repair; ACTUALLY CROSSED THE PROCESS BOUNDARY via resume-worker child process (state+trace+RNG identical). FOUND AND FIXED: config comparison used JSON.stringify replacer-array as if it were a sort order, filtering nested keys so threshold-only differences compared identical and incompatible saves were silently accepted. 155 tests pass (61 new), tsc clean. Verdict ACCEPTED WITH CAVEATS; next gate = history lifecycle (compaction/retention/schema migration) because it alone would change the adapter API shape"
+}

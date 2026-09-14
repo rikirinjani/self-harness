@@ -1,0 +1,15 @@
+{
+    "slug":  "empty-completion-retry",
+    "ncr_id":  "ncr-002-empty-completion",
+    "trace_ids":  [
+                      "somnium-canon-verrin",
+                      "somnium-derive-core"
+                  ],
+    "category":  "subagent-empty-completion",
+    "root_cause":  "Two parallel fixer lanes (canon+Verrin, derive core) returned completed-with-empty-result and wrote zero files and zero PM-1 traces on first dispatch; their sessions were marked completed but contained no work product, so they were not resumable. Work was re-dispatched fresh (superseding sessions fix-2/fix-3); re-dispatched lanes fix-5/fix-6 completed successfully with files + traces.",
+    "agent":  "fixer",
+    "what_went_wrong":  "First dispatch of canon and derive lanes produced no output, no files, no traces despite completed status; integration failed on missing modules.",
+    "timestamp":  "2026-08-30T04:23:18.8280110+07:00",
+    "severity":  "minor",
+    "corrective_action":  "Re-dispatched both lanes as fresh sessions with explicit \u0027previous attempt wrote nothing — you MUST write files this time\u0027 instruction; verified 94/94 tests pass post-integration; integration caught and fixed REQUIRES edge direction mismatch in canon seed."
+}

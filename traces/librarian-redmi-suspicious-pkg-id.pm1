@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "librarian-redmi-suspicious-pkg-id",
+  "timestamp": "2026-08-30T19:31:06.088610+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 14,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "librarian-redmi-suspicious-pkg-id",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--.........................---..-..........--.-..-.........................................................-.--...-",
+  "action": "Identified suspicious packages on Redmi Note 8: yay.marvelous.orange.corp (SunnySecurity/TAFTAF, adware-grade), com.baliuapps.superapp+light (8Super/86Apps, scareware ads, incentivized installs), com.bppd (Echdun, identity mismatch, not gov app), verified com.finex.trading, com.ss.android.ttmd.video (PineDrama), com.linkit.bimatri (bima+), gov.dukcapil.mobile_id (IKD) and GetApps delivery vector"
+}

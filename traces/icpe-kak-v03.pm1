@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "icpe-kak-v03",
+  "timestamp": "2026-09-03T14:49:32.455689+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 240,
+  "tool_calls": 4,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\hisfarma-temp\\ICPE\\KAK_SeminarNasional_HKN62_V0.3.md",
+    "C:\\Users\\think\\Project_v2\\hisfarma-temp\\ICPE\\KAK_SeminarNasional_HKN62_V0.3.docx"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "icpe-kak-v03",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "KAK v0.3 per user revisions: Seminar Nasional/classical/offline, 1000 peserta, Sukabumi 14-15 Nov 2026 (Sat-Sun), berbayar Rp PH, 2-day rundown (Day1: 2h opening ceremony + M1-M4 + panel; Day2: M5-M8 + simulasi + penutupan; all materi 60min, lunch 12-13, close 17:00); 9 narasumber blocks; note: user item 9 arrived blank"
+}

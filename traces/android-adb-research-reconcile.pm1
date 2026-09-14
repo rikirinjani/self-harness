@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "android-adb-research-reconcile",
+  "timestamp": "2026-08-30T14:18:39.818445+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 180,
+  "tool_calls": 3,
+  "key_files": [
+    "C:\\Users\\think\\self-harness\\traces\\librarian-redmi-note8-adb-research.pm1"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "android-adb-research-reconcile",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Reconciled librarian research on Redmi Note 8 (ginkgo) Android 10 no-USB ADB. Verdict: no rootless WiFi-ADB path exists on Android 10 without one successful USB enumeration from some host. VID_0000&PID_0002 descriptor failure is below the MIUI layer, now showing CM_PROB_PHANTOM (device absent). Prioritized triage: fastboot probe to isolate hardware vs Android layer, second-host test, port cleaning. Fallback for inspection without ADB: MIUI Mi File Manager built-in FTP over LAN."
+}

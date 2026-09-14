@@ -1,0 +1,39 @@
+{
+  "pm1_version": 1,
+  "session_id": "p-024-release-validation",
+  "timestamp": "2026-09-02T11:54:24.764152+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3600,
+  "tool_calls": 60,
+  "key_files": [
+    "tsconfig.build.json",
+    "package.json",
+    "CHANGELOG.md",
+    ".github/workflows/verify.yml",
+    "docs/P-024-PREDICTIONS.md",
+    "docs/P-024-RELEASE-VALIDATION.md",
+    "docs/DEPLOYMENT.md",
+    "docs/TROUBLESHOOTING.md",
+    "docs/INSTALLATION.md",
+    "scripts/clean-consumer.mjs",
+    "scripts/clean-consumer-package.json",
+    "scripts/audit-tarball.sh"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "p-024-release-validation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "P-024 v1.0.0 Release Candidate Validation COMPLETE. Commit 236ac45 pushed to origin/main, Mac mini verified in sync. DECISION: HOLD at 1.0.0-rc.1. Predictions P1-P8 written before any release change; P4 FALSIFIED by blind walkthrough then fixed, P6 PARTIAL (CI authored + locally verified, not run on hosted runner), other six confirmed. PACKAGING DEFECT FOUND AND FIXED: npm run build ran bare tsc shipping src/poc + 60 compiled test files (2.7MB dist); added tsconfig.build.json restricting emit to api/core/game/product with noEmitOnError, result 144 files 888KB zero test/poc files. Pre-existing 90-line tsc baseline unchanged and still visible via npm run check. Tarball 162 entries 184.0kB shasum 3a73849f, audit PASS (9 exclusion patterns absent, 14 required paths present, credential scan clean). Clean consumer at /tmp/ce-consumer outside repo: npm install tarball, 51/51 assertions, reproduced grain 10.00 to 13.13 and stateHash 5404d32e exactly, src/ absent from node_modules. GODOT MATRIX: downloaded and executed 4.3 (77dcf97d8), 4.4 (4c311cbee), 4.7.2 (ed1daf0bf) all 23/23; labelled 4.5/4.6 expected-compatible NOT tested. Blind walkthrough recorded 6 friction points, 5 documentation defects fixed. 746/746 tests, check:dist 0 errors, replay 5404d32e matches P-014, invariant check pass. ZERO engine files touched. All 12 frozen invariants unchanged. HOLD because npm install causality-engine returns 404 and no external developer has used it."
+}

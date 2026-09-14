@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "deepseek-key-ping",
+  "timestamp": "2026-08-19T03:50:47.807190+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 30,
+  "tool_calls": 4,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "deepseek-key-ping",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................-.--...-........-.--...-........................................................-.--...-",
+  "action": "Pinged new DeepSeek API key sk-a08e...6247: GET /v1/models -> HTTP 200 (0.43s); POST /v1/chat/completions -> 200, deepseek-v4-flash responded, finish_reason=length (10-token cap)"
+}

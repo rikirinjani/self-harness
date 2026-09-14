@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1rx-runner-integration-fixes",
+  "timestamp": "2026-09-11T03:12:50.551807+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 18,
+  "key_files": [
+    "experiments/pm1-rx/harness/pm1rx/runner.py",
+    "experiments/pm1-rx/harness/tests/test_runner.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1rx-runner-integration-fixes",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--.........................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Fixed two pm1-rx integration defects in runner.py/test_runner.py: (1) NO_REPRESENTATION floor no longer emits/validates a representation record (v1.2 schema defect resolved conservatively), floor reconstruction keyed to NO_REPRESENTATION, excluded from matched-budget; (2) matched-budget truncation now truncates method=none arms via content-type boundary choice + hard-truncate guarantee; deterministic budget = min natural size_tokens among B/C/E/F excluding A and floor. Full suite: 105 passed, 0 failed, 0 skipped."
+}

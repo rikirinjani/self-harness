@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "providers-multi-machine",
+  "timestamp": "2026-08-25T15:13:13.602480+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\.config\\opencode\\opencode.jsonc"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "providers-multi-machine",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "Configured opencode providers across machines: added justwoker (Claude via api.justwoker.icu) + Freebie (router.bypfa.web.id, 11 models) on Windows; set justwoker/claude-opus-4-8 default; installed Claude Code CLI with ANTHROPIC_BASE_URL env; added xiaomi-mimo+justwoker to MacBook Pro (~/.opencode/opencode.jsonc via Tailscale ssh). Root-caused MacBook no-reply: wrong config dir + missing npm adapter; fixed, works on new session."
+}

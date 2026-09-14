@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "exp001-baseline",
+  "timestamp": "2026-09-10T20:44:19.491844+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 0,
+  "key_files": [
+    "src/experiment/experiments/exp-001-stability.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "exp001-baseline",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........................-.--...-........................................-.--...-",
+  "action": "EXP-001 deployment + baseline: deployed to Vultr VPS 45.32.122.6, built clean, stats.test.ts 32/32 pass, determinism verified (identical seeds produce byte-identical semantic state; only timestamps+runtimeMs differ). Commit 4d7e412."
+}

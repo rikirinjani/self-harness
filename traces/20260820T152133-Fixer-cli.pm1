@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260820T152133-Fixer-cli",
+  "timestamp": "2026-08-20T15:21:33.715751+00:00",
+  "agent": "Fixer",
+  "outcome": "pass",
+  "duration_s": 420,
+  "tool_calls": 8,
+  "key_files": [
+    "results/v06/analysis/diagnostic_reasoning_budget/PM1_V06_REASONING_BUDGET_DIAGNOSTIC.md",
+    "results/v06/analysis/diagnostic_reasoning_budget/PM1_V06_REASONING_BUDGET_RESULTS.json",
+    "results/v06/analysis/diagnostic_reasoning_budget/manifest.json",
+    "results/v06/analysis/diagnostic_reasoning_budget/run_reasoning_budget.py",
+    "results/v06/analysis/diagnostic_reasoning_budget/requests",
+    "results/v06/analysis/diagnostic_reasoning_budget/responses"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260820T152133-Fixer-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--.........................--...--........-.--...-........--.-..-.........................................-.--...-",
+  "action": "Reasoning-budget diagnostic on MiMo-V2.5: condition A vs control at max_tokens=2048 (20 API calls, 0 retries, all HTTP 200). Byte-exact reuse of the prior 512-token diagnostic request artifacts (request SHA256 verified identical; only max_tokens 512->2048 changed). Preflight 10/10 PASS (incl. mtime snapshot of hop_records/checkpoints/status/summaries/forensics/diagnostic - no changes; model from live env). DECISIVE: A@2048 = 10/10 NON-EMPTY (was 10/10 empty at 512); control@2048 = 10/10 NON-EMPTY (was 3/5). Completion tokens 482-1587, none near the 2048 ceiling (proportion at ceiling 0.0). A responses contain the correct fail-closed JSON (RESOLVE_ERROR, missing fields listed). Decision: CASE 1 / label A - OUTPUT-BUDGET ARTIFACT SUPPORTED (with CASE 4 corroboration: 512 globally constraining for both). reasoning_tokens field not populated at 2048 (only at 512's capped responses). Recommendation: raise harness max_tokens for reasoning models + record failed-run usage; no adapter/prompt/state-completeness change. Deliverables under results/v06/analysis/diagnostic_reasoning_budget/ (report MD 13 sections, results JSON, manifest, requests/, responses/). Key never printed/persisted; env unset; no historical artifact modified; nothing uploaded/published."
+}

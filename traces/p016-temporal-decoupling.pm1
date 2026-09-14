@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "p016-temporal-decoupling",
+  "timestamp": "2026-08-31T08:42:36.654948+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 45,
+  "key_files": [
+    "src/poc/temporal-boundary.test.ts",
+    "src/core/events.ts",
+    "src/api/public.ts",
+    "docs/P-016-TEMPORAL-DECOUPLING.md",
+    "docs/RECONNAISSANCE.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "p016-temporal-decoupling",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........--.-..-.........................................-.--...-",
+  "action": "P-016 temporal decoupling adversarial pass: 44 new tests (623/623 suite green). Proven CE sim time and game render time decouple without weakening causal correctness: cadence matrix A-H all match headless reference (stateHash+traceHash), sequential vs same-tick batch semantically different (grain 28.87 vs 40), rejected interventions invisible (no seq/event/hash change), interpolation cannot feed back (no setter API), discrete-event animation contract defined, restart/reconnect/failure recovery via public contract only. 2 API fixes: stream() now returns delivery order matching poll() (was canonicalCompare - read paths disagreed); submitBatch exported publicly. tsc: zero new errors. Wrote report + RECONNAISSANCE s26 + QMS VER-2026-016/REQ-2026-013."
+}

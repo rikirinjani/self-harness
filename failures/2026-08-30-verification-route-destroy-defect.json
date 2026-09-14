@@ -1,0 +1,13 @@
+{
+  "id": "fail-2026-08-30-route-destroy-defect",
+  "timestamp": "2026-08-30T00:00:00Z",
+  "category": "verification",
+  "agent": "orchestrator",
+  "task": "CE PoC — destroy_infrastructure causal chain (2 vitest failures caught by the design's own test gate)",
+  "outcome": "partial",
+  "error": "2 of 6 tests failed: (1) tradeVolume expected 0, got 8 after destroying grain_road; (2) RF grain price expected > 15, got 10.13.",
+  "rootCause": "Design decision modeled infrastructure as per-region copies (grain_road stored on both endpoint regions RF and HT). The destroy_infrastructure schema's immediateEffects only zeroed the copy in the intervention's location region (RF), while the trade loop reads the exporter copy (HT), which stayed at health 1.0 — trade continued and prices never rose.",
+  "whatActuallyHappened": "The verification gate (vitest suite designed before implementation) caught the defect. Root cause traced to inconsistent identity semantics: per-region infrastructure copies vs world-global structure identity.",
+  "mitigation": "Fixed immediateEffects to zero every copy of the structure across all regions (a structure is a single world object; per-region copies are references). All 6 tests then passed. Design lesson recorded: infrastructure identity must be world-global in the destroy semantics even when state is partitioned per region.",
+  "files": ["C:\\Users\\think\\Project_v2\\Causality Engine\\src\\game\\interventions.ts"]
+}

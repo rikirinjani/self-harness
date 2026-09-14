@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "android-debloat-phase1",
+  "timestamp": "2026-08-30T19:34:11.319972+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 420,
+  "tool_calls": 14,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "android-debloat-phase1",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........................................................-.--...-",
+  "action": "Redmi Note 8 (ginkgo) ADB session established over WiFi after Android 11 OTA (V12.5.3.0.RCOIDXM, MIUI V125, SDK 30). Paired 192.168.1.4:39155 code 049098, connected :43415 (port found by TCP sweep since mdns returned nothing). Inspected: 22G/49G used, 356 pkgs (330 sys/26 3rd), verified boot green, bootloader locked, FBE encrypted, no device admins, no accessibility abuse, no proxy/VPN, single user. Removed 4 adware/unidentified pkgs (yay.marvelous.orange.corp, com.baliuapps.superapp, .light, com.bppd) and 5 MIUI ad/silent-install stack pkgs (mipicks/GetApps, msa.global, analytics, discover, yellowpage). All 9 verified absent; 3rd-party count 26->22."
+}

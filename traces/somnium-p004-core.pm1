@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "somnium-p004-core",
+  "timestamp": "2026-08-30T23:56:03.063443+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 720,
+  "tool_calls": 97,
+  "key_files": [
+    "src/derive/world-state.ts",
+    "src/canon/canon.ts",
+    "src/query/query.ts",
+    "src/diff/projections.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "somnium-p004-core",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--.........................--...--.........--...--........-.--...-........................................-.--...-",
+  "action": "Somnium P-004 core genericity: ALTERED detection fix, WorkBinding.facts, fact-object validation, subjectFact rename, stateHash/identityHash split, Object projection"
+}

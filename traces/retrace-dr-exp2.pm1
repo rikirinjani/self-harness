@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "retrace-dr-exp2",
+  "timestamp": "2026-08-31T14:00:13.280066+00:00",
+  "agent": "explorer",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 25,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\README.md",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\EVALUATION-REPORT.md",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\docs"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "retrace-dr-exp2",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........---..-...........................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Retroactive: DR claims inventory (lane B) — determinism/adapter/sentinel/counterfactual claims; found 14/156 and d-values absent from DR repo"
+}

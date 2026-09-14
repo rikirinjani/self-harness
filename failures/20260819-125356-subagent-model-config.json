@@ -1,0 +1,10 @@
+﻿{
+    "summary":  "3x delegasi @designer gagal (des-1/2/3): Model not found: DeepSeek/DeepSeek V4 Flash. Root cause: oh-my-opencode-slim.json preset + tui-state.json sesi aktif memakai ID model invalid \u0027DeepSeek/DeepSeek V4 Flash\u0027; ID valid = deepseek/deepseek-v4-flash. Diperbaiki dengan edit kedua file, restart opencode, retry sukses (ses_fe771ec8dffeImlqm1vmwpcFni).",
+    "timestamp":  "2026-08-19T12:53:56",
+    "category":  "infrastructure",
+    "severity":  "medium",
+    "slug":  "subagent-model-config",
+    "agent":  "orchestrator",
+    "root_cause":  "Konfigurasi model subagent preset salah format ID model; runtime memuat model agent ke memori saat startup sehingga edit konfigurasi hanya berlaku setelah restart.",
+    "remediation":  "Edit oh-my-opencode-slim.json (replaceAll \u0027DeepSeek/DeepSeek V4 Flash\u0027 -\u003e \u0027deepseek/deepseek-v4-flash\u0027) + tui-state.json sesi aktif; restart opencode."
+}

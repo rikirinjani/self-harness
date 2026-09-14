@@ -1,0 +1,36 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260820T162415-Fixer-cli",
+  "timestamp": "2026-08-20T16:24:15.559779+00:00",
+  "agent": "Fixer",
+  "outcome": "partial",
+  "duration_s": 1420,
+  "tool_calls": 12,
+  "key_files": [
+    "results/v06/corrected_backfill/PM1_V06_BATCH1_EXECUTION_REPORT.md",
+    "results/v06/hop_records/v0.6_corrected_backfill",
+    "results/v06/failed_calls/v0.6_corrected_backfill",
+    "results/v06/checkpoints/e2_checkpoint_v0_6_corrected_backfill.json",
+    "results/v06/status/e2_status_v0_6_corrected_backfill.json",
+    "results/v06/summaries/run_summary_v0_6_corrected_backfill.json"
+  ],
+  "failure": {
+    "category": "provider_empty_content",
+    "severity": "medium"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260820T162415-Fixer-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........--.-..-.........---..-..........--.-..-.........--.-..-.........................--.-..-.........-.--...-",
+  "action": "V0.6 corrected backfill Batch 1 EXECUTED (E2 25% seeds 11/22/33, MiMo-V2.5, max_tokens=2048, run_class=v0.6_corrected_backfill). 20/20 pre-execution gate items PASS (pytest 162/162; e2 config hash 484429740bd49f68; live connectivity PASS; env model/provider/max_tokens/temp verified; resume set exactly 3 targets; 86/86 original artifacts byte-unchanged before/after). Result: seed33 COMPLETED 50/50 hops (OBSERVABLE - 49 SELECTION_ERROR + 1 PARSE_ERROR, worker RESOLVE_ERROR 49x, mean completion 1297, density 0.468, live attribution mimo-v2.5/xiaomimimo/2048); seeds 11/22 EMPTY at 2048 (failed-call usage persisted: completion_tokens=2048 capped, reasoning_tokens=0, prompt 362 - a DIFFERENT signature from 512-era reasoning=511). Calls completed 50; retries 0; wall 1420s (23.7 min) < 90min. Conclusion: 512->2048 made the E2 25% transition cell PARTIALLY observable (1/3 seeds, step-mode); empty persists stochastically for lazy/reset cells - reported as data. Corrected namespace artifacts: checkpoint, hop records, failed_calls, status, summary + PM1_V06_BATCH1_EXECUTION_REPORT.md. Provenance: original Flight 1 records byte-identical; dual-record model preserved. Key never printed/persisted; env unset. Batch 2 NOT executed; no E4; no other provider."
+}

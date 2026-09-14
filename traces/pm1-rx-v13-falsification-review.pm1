@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-rx-v13-falsification-review",
+  "timestamp": "2026-09-11T13:44:56.919170+00:00",
+  "agent": "pm1-rx",
+  "outcome": "fail",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {
+    "category": "measurement-validity",
+    "severity": "high"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-rx-v13-falsification-review",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........-.--...-.........................................................................--...--........-.--...-",
+  "action": "Final adversarial falsification review of v1.3 (5d2b693). VERDICT: BLOCKED - v1.3 cannot validly measure the research question. BLOCKING findings: (1) answer leak - generator emits observable events with a literal next_lawful_action payload = GT L4 accepted_action (probe: observable_state leaks ['Run the test suite'], GT accepted_action='Run the test suite'; pilot history leaks ['Run the test suite','Write section 2','Request review']) so L3/L4 are copy tasks; (2) L4 literal substring matcher - negation false-pass (do not run the test suite -> L4=1.0), paraphrase false-fail (execute the verification checks -> 0.0), single accepted action; (3) L1 token-overlap matcher - negation/partial/unrelated false-pass (do not ship the refactor / ship / ship the release all -> L1=1.0), cannot establish semantic recovery. PRE-PILOT: E exclusion documented but not enforced (run_robustness averages all arms; _MATCHED_BUDGET_ARMS includes E); staleness not a distinct attribution; producer_omission precedence masks representation insufficiency; decoding_failure conflation; producer token accounting aggregates a codec field left at 0. No F-specific pilot contamination; L1 loosening broadly favours sufficiency (confirmatory-only). No code/spec changes; no pilot run"
+}

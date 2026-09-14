@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "macmini-unreachable-diagnosis",
+  "timestamp": "2026-08-29T08:43:17.253707+00:00",
+  "agent": "coordinator",
+  "outcome": "partial",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\mempalace\\mac-mini\\README.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "macmini-unreachable-diagnosis",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........--.-..-.........................................-.--...-........................................-.--...-",
+  "action": "Diagnosed pts-mac-mini unreachability: full LAN sweep 192.168.1.1-254 (only router+4 hosts, no Mac), Tailscale status offline 22h rx=0, tailscale ping 6x timeout, SSH via LAN+Tailscale IP both timed out. Retrieved creds from mempalace/mac-mini/README.md (ptpakdefarma/qwertyu, 100.83.28.83). Notes state sleep disabled + Tailscale root launchd + autorestart=1, so only failure mode is power outage without UPS (Sidoarjo site). Conclusion: no remote path exists; needs physical power check. EA Tahan Banting demo test parked at FP Markets MT4 login retry step."
+}

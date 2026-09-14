@@ -1,0 +1,5 @@
+| bge-small-en-v1.5 | 133M | 384 | Fast recall | PubMed contrastive pairs | | | bge-base-en-v1.5 | 335M | 768 | Precision | PubMed contrastive pairs | | | e5-large-v2 | 335M | 1024 | Multilingual | PubMed + multilingual pairs |
+---
+| bge-base-en-v1.5 | 335M | 768 | Precision | PubMed contrastive pairs | | | e5-large-v2 | 335M | 1024 | Multilingual | PubMed + multilingual pairs | | | PMC-BERT | 125M | 768 | Biomedical | PubMed + PMC pairs |
+---
+   - Precision@5 on held-out set |    - NDCG@10 |    - MRR

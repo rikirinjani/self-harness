@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-v07-raw-response-forensics",
+  "timestamp": "2026-08-21T07:48:53.810391+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 6,
+  "key_files": [
+    "pm1-trading-benchmark\\results\\v07\\empty_forensics\\PM1_V07_EMPTY_RAW_CAPTURE_REPORT.md",
+    "pm1-trading-benchmark\\results\\v07\\empty_forensics\\PM1_V07_EMPTY_RAW_CAPTURE_RESULTS.json",
+    "pm1-trading-benchmark\\v06\\diagnostic_raw_capture.py",
+    "pm1-trading-benchmark\\v06\\lib\\llm_api.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-v07-raw-response-forensics",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................---..-..........-.--...-........-.--...-........................................-.--...-",
+  "action": "Raw-response forensic: captured 10 raw MiMo responses at h10 (seed11/lazy/60%). All 10 NON-EMPTY with valid JSON. KEY FINDING: MiMo returns dual-channel output — content + reasoning_content (present but unreported in usage); harness reads only content (llm_api.py line 123). finish_reason=stop on all 10. This establishes: (1) h10 response is completely normal, (2) EMPTY at h25 is consistent with reasoning-channel budget exhaustion (model puts all output in reasoning_content, leaving content empty), (3) harness never reads/persists reasoning_content. Minimum h25 rerun: 25 calls to capture raw response confirming reasoning_content presence during EMPTY. 10/10 calls executed, 0 EMPTY at h10, raw responses persisted."
+}

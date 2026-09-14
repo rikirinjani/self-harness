@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-09-11",
+  "category": "data-loss",
+  "slug": "pm1-rx-schema-truncation-version-bump",
+  "severity": "high",
+  "what_happened": "While applying the PM-1-RX revision-001 version bump, a Python one-liner truncated all 7 JSON schema files in experiments/pm1-rx/schema/ to 0 bytes. The command was: python -c \"import glob; fs=glob.glob(...); [open(f,'w',encoding='utf-8').write(open(f,encoding='utf-8').read().replace('pm1-rx/1.0','pm1-rx/1.1')) for f in fs]\".",
+  "root_cause": "Python evaluates the receiver of the write before its argument. `open(f,'w',encoding='utf-8')` is evaluated first and truncates the file; then the argument `open(f,encoding='utf-8').read()` reads the now-empty file; the write persists an empty string. The read was not performed before the truncating open.",
+  "what_i_did_wrong": "I used an inline single-expression read-modify-write across 7 files without a dry run and without verifying the read completed before the write. I also did not check file sizes immediately after the command. A statement-based loop (read into a variable first) or a temp-file write would have been safe. This is a preventable self-inflicted data-loss bug.",
+  "impact": "All 7 schema JSON files were destroyed in the working tree. No permanent loss occurred because v1.0 had been committed to git at e27d120 immediately beforehand, which is the only reason recovery was possible.",
+  "detection": "Detected when the subsequent read tool returned 'total 0 lines' for all four schemas. Confirmed via file sizes (0 bytes each).",
+  "recovery": "Restored with `git restore --source=e27d120 -- experiments/pm1-rx/schema/`; all 7 files returned to correct sizes (2171-4640 bytes). Redid the version bump using a statement-based loop that reads every file fully into a dict before writing any. Verified: 7/7 parse as valid JSON and carry 'pm1-rx/1.1'.",
+  "mitigation_applied": [
+    "Recovered all 7 schemas from git commit e27d120.",
+    "Rewrote the bump as a two-phase operation (read all -> then write all).",
+    "Verified sizes, version consts, and JSON parse after the safe redo.",
+    "Committed v1.0 BEFORE making any edits, which is what made recovery possible; this ordering should be standard for any destructive-adjacent bulk operation."
+  ],
+  "residual_risk": "None for the schemas (fully recovered and verified). Process risk remains: bulk in-place file rewrites should always be dry-run or size-verified.",
+  "artifacts": [
+    "C:\\Users\\think\\Agentic Layer\\morse\\experiments\\pm1-rx\\schema\\",
+    "commit e27d120 (recovery source)",
+    "commit 4f75129 (revision 001, v1.1)"
+  ]
+}

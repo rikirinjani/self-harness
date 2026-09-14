@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "exp001-validation",
+  "timestamp": "2026-09-10T20:44:19.619306+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 11000,
+  "tool_calls": 0,
+  "key_files": [
+    "experiment-results/mc-lab/validation/summary.json",
+    "experiment-results/mc-lab/validation/diagnostics.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "exp001-validation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-........................-.--...-........................................-.--...-",
+  "action": "EXP-001 validation run N=1000 x H=10,20,50. Results: degeneracy 58.4%/84.5%/93.7%; significant 11/15/14 (FDR 1/2/2) at noise floor; funnel adapter-translation 0%/0%/45.8%, sentinel 0%. Resource: 3.05 CPU-hr, 0.092 USD."
+}

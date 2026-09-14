@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "exp-001b-explorer-sentinel-lifecycle",
+  "timestamp": "2026-09-11T01:19:19.052661+00:00",
+  "agent": "explorer",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 5,
+  "key_files": [
+    "src/sectors/deers-rock-adapter.ts",
+    "src/engine/clone.ts",
+    "src/engine/world-engine.ts",
+    "src/experiment/diff-engine.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "exp-001b-explorer-sentinel-lifecycle",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........---..-..........................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "EXP-001B Part A: Mapped complete sentinelOutput lifecycle — extraction (line 318), snapshot serialization (makeSnapshot line 226), reconstruction (doReconstruct line 259), diff engine extraction (extractNumericPaths). Found sentinelOutput in type definitions at lines 53, 73. Traced deepClone Snapshotable dispatch at clone.ts:30-36."
+}

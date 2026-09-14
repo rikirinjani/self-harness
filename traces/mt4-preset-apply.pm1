@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "mt4-preset-apply",
+  "timestamp": "2026-08-31T08:18:43.117789+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 6,
+  "key_files": [
+    "/Users/ptpakdefarma/Library/Application Support/net.metaquotes.wine.metatrader4/drive_c/Program Files (x86)/MetaTrader 4/profiles/Default/chart01.CHR"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "mt4-preset-apply",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---.........................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Applied Tahan-Banting.set to live MT4 EA by patching chart01.CHR expert block (10 inputs: UseAutoTarget false, TargetInMoney 2000, UseAutoLot false, UseBalance 1000, UseFilterTarget true, Deposit 1000, DepositBns 0, UseAutoLot_A false, BasedEquityLot_A 300, Slippage 3). Killed terminal (no orders open), patched, relaunched 15:18:26, EA reloaded, verified via chart file + log. Backup chart01.CHR.bak-20260831-151824."
+}

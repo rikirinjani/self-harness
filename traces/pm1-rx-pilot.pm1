@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-rx-pilot",
+  "timestamp": "2026-09-11T06:04:37.226767+00:00",
+  "agent": "pm1-rx",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\morse\\experiments\\pm1-rx\\harness\\results\\pilot\\experiment_result\\experiment_result-00005.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-rx-pilot",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........................................................-.--...-........................................-.--...-",
+  "action": "PM-1-RX Experiment-001 five-task pilot COMPLETE on DeepSeek (credits confirmed 2.91 USD). Env preflight passed (Win10 AMD64, Ryzen 3 4300U 4c, 7.4GB RAM, 29.5GB disk, Python 3.12.10, deps ok, HEAD 8fa5fe2, 7/7 schemas v1.2). 5 tasks (generator_seed=1, task_seed=0..4, H10) all schema-valid, 0 errors. Capability floor fired on all 5 tasks (L4=0 for all arms incl full transcript); all excluded by inclusion threshold. Probe: arm F never pass_direct (G1 held). Findings (no spec/harness change): per-run GT/covert audits not performed; token usage not persisted; attribution budget_truncation 70/80. Total arm latency 1,577,360 ms. Verdict: PILOT COMPLETE - READY FOR PILOT REVIEW"
+}

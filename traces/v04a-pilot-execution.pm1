@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "v04a-pilot-execution",
+  "timestamp": "2026-08-16T08:46:17.847686+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 180,
+  "tool_calls": 0,
+  "key_files": [
+    "results/v0.4a/V0.4a_PILOT_REPORT.md",
+    "results/v0.4a/v04a_pilot_results.json",
+    "results/v0.4a/V0.4a_PILOT_CONFIG.md",
+    "results/v0.4a/V0.4a_PILOT_EXECUTION_REPORT.md"
+  ],
+  "failure": {
+    "category": "harness-defect",
+    "severity": "medium"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v04a-pilot-execution",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........--.-..-.........................-.--...-........................--.-..-.........-.--...-",
+  "action": "V0.4a pilot executed: 40/40 API calls, 0 errors, 53s. All conditions chain-survived with 0 divergence. Found 2 genuine harness bugs: F1 corruption/restore not gated by condition (H-full/H-direct also got corruption), F2 token accounting broken (last_usage never set, 0 tokens reported). F3 per-hop records not persisted. F4 chain-01 absorbs corruption. Recommendation B: fix and rerun pilot."
+}

@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "phase-f-final-freeze",
+  "timestamp": "2026-09-08T03:32:53.419741+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 0,
+  "key_files": [
+    "experiment-results/phase-f/manifest.json",
+    "experiment-results/phase-f/statistical-summary.json",
+    "experiment-results/phase-f/results.json",
+    "docs/PHASE-F-DESIGN.md",
+    "Deers-Rock/reopen-audit/PHASE-C-NOTES.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "phase-f-final-freeze",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........................--.-..-.........................................-.--...-",
+  "action": "Phase F FINAL VERDICT: FREEZE. Canonical Mac execution complete. Mac 333/333 (all pass), Windows 332/333 (1 platform-specific E3). SupplyStress +0.219 (Mac canonical) vs +0.17 (Windows). Event-gate behavior identical across platforms. Structural nulls confirmed. All 5 causal links traced. Replay identical. §10 satisfied."
+}

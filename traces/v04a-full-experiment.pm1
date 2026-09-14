@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "v04a-full-experiment",
+  "timestamp": "2026-08-16T10:42:59.374548+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 5300,
+  "tool_calls": 0,
+  "key_files": [
+    "results/v0.4a/full/V0.4a_FULL_CONFIG.md",
+    "results/v0.4a/full/V0.4a_FULL_REPORT.md",
+    "results/v0.4a/full/v04a_full_results.json",
+    "results/v0.4a/full/v04a_full_hop_records.json",
+    "run_v04a_full.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v04a-full-experiment",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-........................--.-..-.........................................-.--...-",
+  "action": "V0.4a full experiment: 4,000/4,000 API calls, 0 API errors, 0 retries, 4,888s. H-full 9/10 survival (1 model PARSE_ERROR), H-direct 10/10, H-corrupt 9/10 (1 PARSE_ERROR), H-recover 10/10. State integrity 100%, drift 0, digest continuity 100% all conditions. 3,998 PASS / 2 PARSE_ERROR (worker-level). Corruption injected 20/20 but absorbed (0/20 state divergence; action diff 20/20). Recovery 10/10. Tokens: 1,506,191 in / 357,932 out, 100% complete. H-full vs H-direct: handoff -0.1pp, tokens +30.6%. Recommendation B: partial support, V0.5 for corruption schedule + parse robustness."
+}

@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-empty-probability-preflight",
+  "timestamp": "2026-08-21T10:48:52.884659+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 3,
+  "key_files": [
+    "pm1-trading-benchmark\\results\\v07\\empty_probability\\PM1_V07_EMPTY_PROBABILITY_PREFLIGHT.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-empty-probability-preflight",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---.........................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Empty probability/budget coupling diagnostic preflight: 60-call matrix (2 prompts x 3 ceilings x 10 reps), ~28 min estimated, ~.02 cost. Prompt A=seed11/lazy/60%/h25 (EMPTY-prone, deterministic reconstruction from harness state); Prompt B=seed33/step/60%/h25 (known-normal control, never EMPTY). Ceilings 2048/4096/8192 (4K/8K TO VERIFY). Preflight ready; awaiting human authorization."
+}

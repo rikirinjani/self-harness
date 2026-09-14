@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "icpe-proposal-adapt",
+  "timestamp": "2026-09-05T10:08:18.154063+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 4,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\hisfarma-temp\\ICPE\\proposal\\PROPOSAL HKN62_2026.docx"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "icpe-proposal-adapt",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Adapted ICPE 2025 proposal → PROPOSAL HKN62_2026.docx: updated title (Drug Provider → Value-Based Care Partner), venue (Grand Cikareo Hall Sukabumi), dates (12-15 Nov 2026), event name (Seminar Nasional HKN ke-62), removed 3 building images, added [PLACEHOLDER] for denah & sponsorship prices, kept sponsor-pitch structure (seminar/expo/publikasi tiers)"
+}

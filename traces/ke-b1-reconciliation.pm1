@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "ke-b1-reconciliation",
+  "timestamp": "2026-09-08T06:35:25.770826+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "Kronos Engine/docs/papers/jamia-2026-kronos-engine.md",
+    "Kronos Engine/docs/papers/ke-phase-f-reconciliation-report.md",
+    "Kronos Engine/docs/papers/drafts/phase-f-draft.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ke-b1-reconciliation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "KE Manuscript B1 Reconciliation: Ported correct Phase F content from (7).md into canonical §3.3 (mean Δ=0.044, seed-46 Δ=0.219, 3 structural mechanisms). Added 3 Phase F limitation paragraphs to §4.4. Fixed B2: 212→199 in phase-f-draft.md. Resolved B3: (7).md fully drained, safe to discard. All stale values removed. Validation passed."
+}

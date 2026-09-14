@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "s018-frontier-soundness",
+  "timestamp": "2026-09-11T03:08:35.649165+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 2400,
+  "tool_calls": 15,
+  "key_files": [
+    "experiments/s018/REPORT.md",
+    "experiments/s018/probe.ts",
+    "qms/records/requirements/2026-09-11T09-30-00-req-018-s018-frontier-soundness.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "s018-frontier-soundness",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "S018 node-set & topology-aware frontier soundness: from frozen S017 (4ad78c7), no src change (pure observation). VERDICT HOLD. Adding pre-propagation node-set + edge-endpoint + cycle-membership terms eliminates the S017 false negatives (FN 3 -> 0): the frontier is SOUND on both canons for all seven operations. The S017 edge residue is fully explained by node-set + edge-endpoint change. BUT the sound frontier is GLOBAL: F18 ~= whole model (14/14, 18/18), precision ~1% (FP 6339), because cycle membership - the input that removes the last FN - is globally connected. Fallback frequency ~100%. Shadow-engine audit: class A/B inputs only, no class D; the frontier never predicts a judgment value; semantic authority singular. Conclusion: soundness achievable only at global scope; stop elaborating invalidation rules."
+}

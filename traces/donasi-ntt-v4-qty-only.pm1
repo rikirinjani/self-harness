@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "donasi-ntt-v4-qty-only",
+  "timestamp": "2026-08-31T03:35:55.922820+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 150,
+  "tool_calls": 5,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\Donasi NTT\\Daftar Belanja Obat Donasi NTT v4.txt"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "donasi-ntt-v4-qty-only",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Created v4: stripped all prices/totals, kept drug name + SKU code + satuan + qty only; verified 34 items and 1013 units match v3 exactly in both alphabetical and category sections, no currency leakage"
+}

@@ -1,0 +1,35 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260819T195756-Fixer-cli",
+  "timestamp": "2026-08-19T19:57:56.214410+00:00",
+  "agent": "Fixer",
+  "outcome": "partial",
+  "duration_s": 348,
+  "tool_calls": 10,
+  "key_files": [
+    "results/v06/execution_resume2.err.log",
+    "results/v06/checkpoints/e2_checkpoint.json",
+    "results/v06/checkpoints/e4_checkpoint.json",
+    "results/v06/summaries/run_summary.json",
+    "results/v06/hop_records"
+  ],
+  "failure": {
+    "category": "provider_empty_content",
+    "severity": "low"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260819T195756-Fixer-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........--.-..-..........--...--........--.-..-.........--.-..-.........................-.--...-........-.--...-",
+  "action": "V0.6 Flight 1 continuation (resume pass 3, resume2). STEP A: live connectivity PASS (models endpoint reachable). STEP B: resumed with explicit global budgets --time-budget 139 --api-call-budget 21440 (runner log confirms 'time budget 139min, api budget 21440' - no reset); checkpoint/resume executed only the 20 missing runs. STEP C: 5 consecutive provider empty-content failures -> registered INFRA_FAILURE stop in 348s, 0 calls completed, 0 runs recovered. Failures deterministic across 3 passes even after provider top-up (e2 25% x3 seeds confirmed 3x; e4 none/C:drop-s11 confirmed 2-3x). No endless retrying per policy. Final Flight 1 state: 73/93 runs, 3,500/4,500 hops (e1 12/12, e2 15/18, e3 15/15, e4 19/36, e6 12/12). Global calls issued ~3,635 (3,500 completed + 135 empty-content retries); global wall 13,578s = 226.3 min < 360. Duplicate runs: 0. E5 not run; V0.5/V0.4a untouched; nothing published."
+}

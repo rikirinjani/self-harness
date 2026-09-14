@@ -1,0 +1,37 @@
+{
+  "pm1_version": 1,
+  "session_id": "somnium-verifier-p005-recheck5",
+  "timestamp": "2026-08-31T12:30:02.855635+00:00",
+  "agent": "verifier",
+  "outcome": "fail",
+  "duration_s": 0,
+  "tool_calls": 46,
+  "key_files": [
+    "src/canon/fact-rules.ts",
+    "src/canon/fact-rules.test.ts",
+    "src/canon/canon.ts",
+    "src/derive/propagation.ts",
+    "src/derive/world-state.ts",
+    "src/query/occurrence.test.ts",
+    "docs/ARCHITECTURE-RECONNAISSANCE.md"
+  ],
+  "failure": {
+    "category": "false-invariant",
+    "severity": "major"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "somnium-verifier-p005-recheck5",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........-.--...-.........................--...--........--.-..-.........................................-.--...-",
+  "action": "L2 sixth review of Somnium P-005 after typed instance_of signature and differential fact-legality invariant (c27e1dc). REJECT: gate-5 routes 7a/7b/7c confirmed closed and the truth invariant is unweakened, but route 8 found by execution on the SHIPPED Ordos canon - a REFUSED fact write emits a fact-write-illegal ConflictNote on a DECLARED subject, and propagation.ts:695 joinTruth(NEITHER,'TRUE')=TRUE promotes a dormant declared Event from UNKNOWN to ESTABLISHED. setFact('ev/galen-invested', instance_of, 'phantomtype') on ordosCanon() inflates occurrenceCount('type/investiture') 1->2, opens fact/seal-held-galen and fact/galen-warden, and puts two mutually exclusive Seal holders in the effective-fact list while the canon EXCLUDES edge is NOT reported (the fact node stays NEITHER) - the two-views defect this commit claims to have made impossible. Also: occurrence.test.ts:427 still asserts declaredSubjects gates fact writes in the present tense."
+}

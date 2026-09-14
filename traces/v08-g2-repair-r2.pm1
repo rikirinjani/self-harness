@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "v08-g2-repair-r2",
+  "timestamp": "2026-08-24T06:09:54.556536+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 20,
+  "key_files": [
+    "v08/g2_repair_r2/reproduce_failure.py",
+    "v07c/evaluator.py",
+    "results/v08/g2_repair_r2/PM1_V08_G2_REPAIR_R2_RESULTS.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v08-g2-repair-r2",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "V.8 G2 Repair R2: Django evaluation context ROOT CAUSE IDENTIFIED. The production evaluator did NOT apply the SWE-bench test_patch before running tests, so baseline PASSES (0 failures in existing tests). With test_patch applied: baseline FAILS (20+2 tests, rc=1), gold PASSES (22+0, rc=0). Two-point validation PASSES for django-11099. django-12113 TWO-POINT FAIL (gold patch doesn't fix the tested bug). Fix: ensure evaluate_repo_state() applies test_patch and uses exit code for 0-test case."
+}

@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "manuscript-reconcile-zenodo",
+  "timestamp": "2026-09-11T00:01:45.171319+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 0,
+  "key_files": [
+    "docs/papers/jamia-2026-kronos-engine.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "manuscript-reconcile-zenodo",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........................-.--...-........................................-.--...-",
+  "action": "Reconciled main manuscript to published artifact WITHOUT reverting any uncommitted content. Applied 3 surgical fixes: (1) stale SupplyStress values 0.219->0.17 and 0.044->0.034 (lines 305,309) to match frozen Phase F evidence; (2) removed [17]/[18] citation markers on FMI/HLA line 381 (inline names retained); (3) removed [17]/[18] reference entries. Verified: refs [1]-[16] intact, no dangling citations, Phase F section preserved, encoding UTF-8 no-BOM. Diff 110ins/62del (was 114/62; -4 = removed ref entries only)."
+}

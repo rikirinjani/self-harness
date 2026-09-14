@@ -1,0 +1,18 @@
+{
+  "id": "fail-2026-08-31-event-id-collision-across-timelines",
+  "timestamp": "2026-08-31T13:40:00Z",
+  "category": "architecture",
+  "agent": "orchestrator",
+  "task": "CE event-stream delivery semantics pass — event identity audit (brief sections 2 and 14)",
+  "outcome": "partial",
+  "error": "EVENT IDS COLLIDED ACROSS UNRELATED TIMELINES. Event identity was a bare per-world monotonic counter (`ev-${++state.eventSeq}`), and the counter is part of WorldState, so it is copied into every checkpoint and therefore into every fork. Two branches forked from the same checkpoint both resumed the counter at the same value and minted IDENTICAL ids for completely different facts. Measured: forking one checkpoint into branches A and B and applying different interventions produced 3 of 3 colliding ids (ev-22, ev-23, ev-24) describing different events in different timelines. Any consumer watching more than one timeline, or deduplicating on eventId across a fork, would silently drop distinct facts as duplicates.",
+  "rootCause": "Event identity was designed before branching existed (the original PoC had one timeline) and was never revisited when forkTimeline was added in the persistence pass. A monotonic counter is only unique within the sequence that generates it; once state can be duplicated and resumed independently, the counter is duplicated too. The same class of mistake was already recorded twice in this project for provenance node ids leaking into hashed state, but this instance is the inverse: not a leak of history into identity, but an identity that is not scoped to the history it belongs to.",
+  "whatActuallyHappened": "The pass began by auditing every emitted event type and probing identity before designing delivery, on the reasoning that a delivery contract built on non-unique ids would be meaningless. The probe forked a checkpoint and compared post-fork event ids directly, which exposed the collision immediately. Had delivery been designed first, at-least-once redelivery with id-based deduplication would have been specified on top of ids that are not unique, and the resulting contract would have been unimplementable.",
+  "mitigation": "Event ids are now derived by SHA-256 over (timelineId, tick, within-tick ordinal, type, regionId, canonical payload), truncated to 16 hex chars with an `E-` prefix. Timeline scoping makes cross-branch collision impossible; the ordinal keeps two otherwise-identical facts in one tick distinguishable; canonical payload serialization (shared sortKeys) means insertion order cannot change an id. `eventSeq` was demoted from an identity source to a per-tick ordinal counter, reset at the start of each tick, so identity no longer depends on total history length and a compacted world mints the same ids for the same facts. Verified: 0 collisions across forks, ids identical across repeated runs.",
+  "files": [
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\core\\events.ts",
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\core\\event-bus.ts",
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\core\\types.ts",
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\core\\world.ts"
+  ]
+}

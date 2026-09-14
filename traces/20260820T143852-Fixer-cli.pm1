@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260820T143852-Fixer-cli",
+  "timestamp": "2026-08-20T14:38:52.330406+00:00",
+  "agent": "Fixer",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 15,
+  "key_files": [
+    "results/v06/analysis/forensics/PM1_V06_EMPTY_CONTENT_FORENSICS.json",
+    "results/v06/analysis/forensics/compute_forensics.py",
+    "results/v06/analysis/forensics/requests/manifest.json",
+    "results/v06/analysis/forensics/requests/artifacts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260820T143852-Fixer-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--.........................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Forensic offline analysis of the cross-provider empty-content failure (T1-T11). No API calls, no raw-record modification. Deterministic replay of harness request construction VERIFIED EXACT against persisted hop records (state_digest/handoff_tokens/transmitted_names match on every hop of all control cells). Key findings: (1) payload is {model,messages,temperature,max_tokens}, NO response_format - structurally valid, 2 messages; (2) T1 matrix: 19 NORMAL / 5 EMPTY-BOTH / 15 EMPTY-DS-ONLY (single-observation, never MiMo-attempted); (3) byte-identical requests produce opposite outcomes: none-s22 == C:drop-s22 all 50 payloads identical, EMPTY vs NORMAL; (4) the 5 reproducible-empty cells (4 attempts each, 0 recoveries) have 49/50 hops with NO byte-twin among normal cells; their unique requests are policy-mode-only states (lazy/reset without threshold, step without current/target, or mode+tolerance+changing ephemeral distractor); (5) E2 ladder: 25% (mode-only, empty) sits between content-returning 50% (18 tok, current present) and 10% (5 tok, flaky/recovered) and 5% (4 tok incl empty 'current: ' line, normal); (6) e2-10% s11/s33 transient (failed pass1, recovered pass2) vs 25% reproducible; (7) evidence boundary: content not sufficient (byte-identical twins differ), provider-side mechanism not observable. Delivered forensics/PM1_V06_EMPTY_CONTENT_FORENSICS.json + requests/manifest.json + 136 request artifacts."
+}

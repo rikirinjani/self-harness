@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-08-31T04:20:00Z",
+  "category": "blocked-approach",
+  "severity": "low",
+  "slug": "prj80us-cups-raw-queue-removed",
+  "agent": "coordinator",
+  "detected_by": "coordinator while installing PRJ-80US thermal printer on Mac mini",
+  "system": "CUPS 2.3.4 on macOS 26.2 (build 25C56), Apple Silicon Mac mini M4",
+  "device": "PRJ 80US Panda thermal receipt printer, USB VID 0x0fe6 PID 0x811e, USB printer class 7 / subclass 1 / protocol 2, 2 bulk endpoints (IN pipe 1, OUT pipe 2), 80mm 200dpi",
+  "what_was_attempted": "The conventional install path for a generic ESC/POS thermal printer on macOS: create a CUPS raw queue and pipe ESC/POS bytes through it with `lp -o raw`.",
+  "why_it_failed": [
+    "`sudo lpadmin -p PRJ80US -m raw` was rejected outright: 'lpadmin: Raw queues are no longer supported on macOS.' Apple removed raw queue support (tracked upstream as apple/cups#5269 'Deprecate raw queues' and #5271 'FUTURE: Remove printer driver and raw queue support'). This lands in macOS 26.",
+    "Workaround attempt — hand-written PPD declaring `*cupsFilter: \"application/vnd.cups-raw 0 -\"` — was accepted by lpadmin (with warning 'Printer drivers are deprecated and will stop working in a future version of CUPS') and produced a valid idle queue, but every job then stalled.",
+    "The CUPS usb backend could not reach the device. Ran /usr/libexec/cups/backend/usb directly against all three candidate device URIs: usb://Unknown/USB%20Receipt%20Printer?location=140000, usb://Unknown/USB%20Receipt%20Printer, and usb:///80Series%20Receipt%20Printer%20200DPI?location=140000. All three emitted 'STATE: +offline-report' / 'INFO: The printer is offline.' and then hung until timeout. Note lpinfo -v itself reported two different URIs for the same device across invocations (initially the 80Series/200DPI form, later the Unknown/USB Receipt Printer form), so the backend's own enumeration is inconsistent.",
+    "Ruled out contention as the cause: no AppleUSBPrinter/usbprint kext is loaded (kextstat empty for printer classes), lsof shows nobody holding the device, and no stale backend processes remained after cleanup. The IOUSBHostInterface with bInterfaceClass=7 has no child driver bound, i.e. the interface was free the whole time. The backend's 'offline' verdict was therefore spurious, not a genuine claim conflict."
+  ],
+  "root_cause": "macOS 26 has removed CUPS raw queue support and is actively deprecating the PPD/driver filter pipeline in favour of driverless IPP Everywhere/AirPrint. A generic ESC/POS receipt printer speaks neither IPP nor a raster dialect CUPS ships a filter for, so it falls outside every remaining supported path. Compounding this, the bundled usb backend fails to attach to this device regardless of URI form.",
+  "resolution": "Bypassed CUPS entirely. Wrote a small IOKit/IOUSBLib client (escpos-usb.c, ~180 lines C) that matches the device by VID/PID over both IOUSBHostDevice and legacy IOUSBDevice classes, locates the printer-class interface (class 7), enumerates pipes, and writes the payload to the bulk OUT pipe via WritePipeTO with seize fallback. Compiled with Apple clang 21.0.0 for arm64. Confirmed working: 'OK: wrote 342 bytes to bulk OUT pipe 2', reproduced on a second run.",
+  "artifacts": {
+    "source": "/Users/ptpakdefarma/thermal-printer/escpos-usb.c",
+    "binary_user": "/Users/ptpakdefarma/thermal-printer/escpos-usb",
+    "binary_system": "/usr/local/bin/escpos-usb (root:wheel 755)",
+    "test_payload": "/Users/ptpakdefarma/thermal-printer/escpos-test.bin (342 bytes)",
+    "leftover_ppd": "/Library/Printers/PPDs/Contents/Resources/PRJ80US.ppd",
+    "leftover_queue": "CUPS queue PRJ80US — idle, non-functional, retained only for reference"
+  },
+  "tradeoff_accepted": "Direct USB works from CLI and scripts but is NOT reachable from ordinary GUI apps' Print dialog, because there is no working CUPS queue behind it. If GUI printing is ever needed, the path would be building a rastertozj-style CUPS filter (klirichek/zj-58 with ModelNumber set to 576 dots for 80mm), which is viable today but sits on the deprecated driver pipeline Apple has announced it will remove.",
+  "cleanup_recommended": "Consider removing the dead PRJ80US CUPS queue and its PPD to avoid a misleading idle-but-broken printer appearing in System Settings: sudo lpadmin -x PRJ80US && sudo rm /Library/Printers/PPDs/Contents/Resources/PRJ80US.ppd",
+  "residual_uncertainty": "Byte delivery to the printer's bulk endpoint is confirmed at the USB layer. Physical paper output was not visually verified — that requires the user to look at the printer.",
+  "status": "RESOLVED via alternative approach; CUPS route abandoned as unsupported on this OS version"
+}

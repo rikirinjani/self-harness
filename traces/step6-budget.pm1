@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "step6-budget",
+  "timestamp": "2026-09-10T10:20:44.320852+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 30,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\Kronos Engine\\docs\\experiments\\ke-monte-carlo-vultr-report.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "step6-budget",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................-.--...-........................-.--...-........................................-.--...-",
+  "action": "STEP 6: Budget accounting. VPS hourly ~.03 (estimated). N=1k cost: .008. N=10k cost: .08. Stage A ceiling . Budget NOT a constraint. Even N=100k costs only .83."
+}

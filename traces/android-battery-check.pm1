@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "android-battery-check",
+  "timestamp": "2026-08-30T20:01:44.413126+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 240,
+  "tool_calls": 7,
+  "key_files": [],
+  "failure": {
+    "category": "environment",
+    "severity": "low"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "android-battery-check",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........--.-..-.........-.--...-........................................-.--...-........-.--...-",
+  "action": "Battery check on Redmi Note 8 (ginkgo) over wireless ADB. Health: dumpsys battery health=2 (GOOD), learned capacity min=max=3984 mAh vs 4000 mAh design = ~99.6% retention, no measurable degradation. Voltage 4202mV @ 90%, temp 32.8C, Li-poly, status=3 discharging. Drain window CONTAMINATED: only 44m23s, 100% screen-on, captured during the debloat session itself, so numbers reflect my own ADB workload not normal use. Screen 113 of 206 mAh computed drain even at dim. Zero doze time (screen never off) so sleep behaviour unassessable. Top app drain: Play Store 8.38 (radio=4.26), GMS 5.72, quicksearchbox 3.26. Uid 1000 system 36 mAh = my dumpsys/pm hammering. LIMITS: /sys/class/power_supply/battery/ Permission denied (non-root) so cycle_count and charge_full_design unreadable; charge_counter frozen at 1852560 across 3 samples; wakelock sections returned empty (MIUI restriction). Recommend re-measure after a full charge cycle with normal use for valid drain attribution."
+}

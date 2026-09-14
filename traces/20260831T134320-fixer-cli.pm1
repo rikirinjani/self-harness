@@ -1,0 +1,42 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260831T134320-fixer-cli",
+  "timestamp": "2026-08-31T13:43:20.606928+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 2700,
+  "tool_calls": 30,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\sentinel-indep\\common.ts",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\sentinel-indep\\exp1.ts",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\sentinel-indep\\exp1_repro_b.ts",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\sentinel-indep\\exp2_baseline.ts",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\sentinel-indep\\exp2_perturb.ts",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\sentinel-indep\\exp3.ts",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\sentinel-indep\\exp4_adapter.ts",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\sentinel-indep\\REPORT.md",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\sentinel-indep\\out-exp1.txt",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\sentinel-indep\\out-exp2perturb.txt",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\sentinel-indep\\out-exp3-clean.txt",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\sentinel-indep\\out-exp3-dirty.txt",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\sentinel-indep\\out-exp4.txt",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\sentinel-indep\\diag_semantic4.ts",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\sentinel-indep\\diag_semantic5.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260831T134320-fixer-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................---..-...........--...--.........--...--........................................-.--...-",
+  "action": "Sentinel independence experiment (3 sentinels, perturbation, RNG isolation)"
+}

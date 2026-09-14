@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "somnium-delivery",
+  "timestamp": "2026-08-29T21:57:40.145913+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 6,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\Somnium Engine\\package.json",
+    "C:\\Users\\think\\Project_v2\\Somnium Engine\\src\\derive\\world-state.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "somnium-delivery",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................-.--...-........-.--...-........................................-.--...-",
+  "action": "Somnium PoC delivered: merged poc->main (d5a35f0), worktree removed, npm install + 94/94 tests + tsc clean verified in canonical repo, crashlog completed"
+}

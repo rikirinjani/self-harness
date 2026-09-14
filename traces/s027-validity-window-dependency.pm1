@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "s027-validity-window-dependency",
+  "timestamp": "2026-09-11T04:38:51.264787+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 2400,
+  "tool_calls": 12,
+  "key_files": [
+    "experiments/s027/REPORT.md",
+    "experiments/s027/probe.ts",
+    "qms/records/requirements/2026-09-11T18-30-00-req-027-s027-validity-window-dependency.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "s027-validity-window-dependency",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "S027 validity-window dependency / reconsideration boundary validation: from frozen S026 (b540e13), no src change. VERDICT HOLD. Added fact.validFrom/validTo -> fact.id to the reverse index; reset-to-NEITHER supplies member-first scheduling (so V1 IS V3). RESULTS (400 prefixes/canon): verrin V0 mismatch=0 R\\\\closure=6 -> V1 mismatch=0 R\\\\closure=0; ordos V0 mismatch=186 R\\\\closure=353 -> V1 mismatch=38 R\\\\closure=67. The validity-window dependency is NECESSARY and SUFFICIENT for verrin (incremental Phase A becomes exact) but on ordos only reduces the residue -> at least one further dependency class is missing. S021 aggregate remains exact; the gap is the dependency index. Next experiment: enumerate the remaining dependency classes (overriddenCells, retracted, node-set). Baseline 624/624, verify-facts 3/3, frozen hashes unchanged."
+}

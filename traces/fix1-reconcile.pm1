@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "fix1-reconcile",
+  "timestamp": "2026-09-10T12:50:27.592178+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 14,
+  "key_files": [
+    "src/experiment/stats.ts",
+    "src/experiment/types.ts",
+    "qms/records/verifications/2026-09-10-ver-020-exp001-stability-stats-reconcile.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "fix1-reconcile",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................................--.-..-.........-.--...-........................................-.--...-",
+  "action": "Reconciled completed task fix-1 (EXP-001 stability stats): verified stats.ts and types.ts contain all 7 new functions and 3 interfaces; tsc --noEmit exit 0; stats tests 64/64 pass; trace exp001-stability-stats.pm1 present; wrote VER-2026-020 reconciliation record."
+}

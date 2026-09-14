@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-09-10T22:54:08Z",
+  "category": "harness-defect",
+  "severity": "high",
+  "slug": "s007-o-h-squared-prefix-memory",
+  "agent": "orchestrator",
+  "project": "somnium-engine",
+  "branch": "s007",
+  "ancestor_commit": "443d3d9",
+  "what_happened": "The Experiment A workload generator (linearWorkload) materialized every prefix of the intervention chain: prefixes[k] = interventions.slice(0, k) for k = 0..H. That is O(H^2) memory. At H=10,000 it allocated ~50 million array slots (~400 MB); at H=100,000 the Node heap exhausted (FATAL ERROR: Ineffective mark-compacts near heap limit, allocation failure at ~1816 MB) and the full sweep crashed.",
+  "root_cause": "Confusing the workload representation with the measurement. Materializing all prefixes is convenient for indexed access but quadratic in memory; only the current prefix is ever needed by derive().",
+  "what_i_did_wrong": "Built the prefix array eagerly. Worse, the H=10,000 run reported peak RSS 528 MB and I nearly attributed that to the engine's semantic state growth, which would have been a FALSE finding about Somnium rather than a true finding about my harness.",
+  "detection": "FATAL ERROR: Ineffective mark-compacts near heap limit during the first full sweep, immediately after the H=10,000 row.",
+  "fix": "Removed the prefixes array entirely. linearWorkload now returns only interventions; callers build the current prefix incrementally (chain.push) so peak extra memory is O(H). Added a walkChain helper. After the fix, H=100,000 single-derive peaked at 297 MB (verrin) / 444 MB (ordos) and completed.",
+  "lesson": "A benchmark harness's own allocation must be O(workload), never O(workload^2). Verify the harness footprint before attributing any memory reading to the system under test. The first full-sweep 'peak RSS' numbers were measuring the harness."
+}

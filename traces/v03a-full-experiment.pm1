@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "v03a-full-experiment",
+  "timestamp": "2026-08-16T07:06:17.835021+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1975,
+  "tool_calls": 0,
+  "key_files": [
+    "run_v03a_full.py",
+    "results/v0.3a/EXPERIMENT_V0.3a_DEV_REPORT.md",
+    "results/v0.3a/EXPERIMENT_V0.3a_HELDOUT_REPORT.md",
+    "results/v0.3a/experiment_v0.3a_dev_results.json",
+    "results/v0.3a/experiment_v0.3a_heldout_results.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v03a-full-experiment",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........................--.-..-.........................................-.--...-",
+  "action": "V0.3a full experiment: 864/864 API calls, 0 errors, 1975s. Dev: 50.9% paired PASS (B-full 100%, S 100%, B-restored 100%). Held-out: 52.8% paired PASS. All 3 variants identical performance. Model generalizes across 24 scenarios."
+}

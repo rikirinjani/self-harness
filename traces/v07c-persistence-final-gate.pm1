@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "v07c-persistence-final-gate",
+  "timestamp": "2026-08-23T05:09:18.861062+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 20,
+  "key_files": [
+    "v07c/test_persistence_final_gate.py",
+    "v07c/test_git_auth.py",
+    "v07c/hf_space_deploy/app.py",
+    "results/v07c/persistence_final_gate/PM1_V07C_PERSISTENCE_FINAL_GATE.md",
+    "results/v07c/persistence_final_gate/PM1_V07C_PERSISTENCE_FINAL_GATE.json",
+    "results/v07c/persistence_final_gate/synthetic_test_results.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v07c-persistence-final-gate",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "V.7-C Persistence Final Gate: 10/10 tests PASS. ROOT CAUSE of prior artifact loss found: git auth used token-only URL (TOKEN@host) which HF rejects; fixed to user:token (balade:TOKEN@host). Verified E2E against real HF remote: write->commit->push->verify SHA->verify remote artifact->restart recovery->no duplicate. Push failure + SHA mismatch correctly raise PERSISTENCE FAILURE. Secret safety verified. Synthetic artifacts cleaned. PERSISTENCE GATE PASSED."
+}

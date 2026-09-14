@@ -1,0 +1,1 @@
+﻿{"category":"process","severity":"low","root_cause":"Used project-relative self-harness tool paths before verifying the configured canonical location.","actual_action":"Initial retrace and crashlog commands failed; reran them using C:\\Users\\think\\self-harness.","corrective_action":"Use the canonical absolute self-harness path for mandatory session tooling."

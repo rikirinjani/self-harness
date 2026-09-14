@@ -1,0 +1,36 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-rx-v14b-repair",
+  "timestamp": "2026-09-13T06:08:21.286550+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 80,
+  "key_files": [
+    "experiments/pm1-rx/harness/pm1rx/runner.py",
+    "experiments/pm1-rx/harness/pm1rx/generator.py",
+    "experiments/pm1-rx/harness/pm1rx/codecs.py",
+    "experiments/pm1-rx/harness/tests/test_v14b_policy.py",
+    "experiments/pm1-rx/harness/tests/test_v14b_diversity.py",
+    "experiments/pm1-rx/harness/tests/test_v14b_validity.py",
+    "experiments/pm1-rx/harness/tests/test_v14b_probes.py",
+    "experiments/pm1-rx/harness/tests/test_v14_regression.py",
+    "experiments/pm1-rx/harness/V14B_CALIBRATION_REPORT.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-rx-v14b-repair",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........--.-..-.........................................-.--...-",
+  "action": "v1.4b measurement repair and adversarial calibration: 4 repairs (observable policy, R1/R2 counterfactual, calibration diversity, F validity), 9 adversarial probes, 161/161 tests pass, calibration pilot shows L4=1.0 across all tasks (model genuinely applies policy)"
+}

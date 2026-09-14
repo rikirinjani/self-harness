@@ -1,0 +1,42 @@
+{
+  "pm1_version": 1,
+  "session_id": "ce-poc-impl-verify",
+  "timestamp": "2026-08-29T21:44:31.014569+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1500,
+  "tool_calls": 55,
+  "key_files": [
+    "package.json",
+    "tsconfig.json",
+    "src\\core\\rng.ts",
+    "src\\core\\types.ts",
+    "src\\core\\event-bus.ts",
+    "src\\core\\hash.ts",
+    "src\\core\\world.ts",
+    "src\\game\\content.ts",
+    "src\\game\\economy.ts",
+    "src\\game\\factions.ts",
+    "src\\game\\population.ts",
+    "src\\game\\ecology.ts",
+    "src\\game\\interventions.ts",
+    "src\\poc\\main.ts",
+    "src\\poc\\determinism.test.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ce-poc-impl-verify",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--.........--...--........................................-.--...-",
+  "action": "CE PoC implemented directly by orchestrator after two fixer lanes returned empty results. Engine core (rng/types/event-bus/hash/world) + game domains (content/economy/factions/population/ecology/interventions) + driver + 6 vitest proofs. Fixed route-copy destroy defect caught by test gate. tsc clean, 6/6 tests pass, determinism verified (identical SHA-256 across runs), causal chain + locality + snapshot/restore demonstrated"
+}

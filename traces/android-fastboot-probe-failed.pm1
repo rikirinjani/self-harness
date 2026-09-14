@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "android-fastboot-probe-failed",
+  "timestamp": "2026-08-30T14:23:45.328909+00:00",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "duration_s": 120,
+  "tool_calls": 2,
+  "key_files": [],
+  "failure": {
+    "category": "hardware",
+    "severity": "high"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "android-fastboot-probe-failed",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................-.--...-........--.-..-.........-.--...-.........................................--...--........-.--...-",
+  "action": "Fastboot probe on Redmi Note 8 FAILED: 'fastboot devices' empty while phone reportedly in fastboot mode; Windows still shows USB\\\\VID_0000&PID_0002 'Device Descriptor Request Failed' now CM_PROB_FAILED_POST_START (was PHANTOM). Both ADB and fastboot stacks fail => fault is physical/link layer, not MIUI/driver/authorization. Device stuck at same hub location 6&A716098&0&1 across attempts. Next: differential unplug/replug identification + second-host test."
+}

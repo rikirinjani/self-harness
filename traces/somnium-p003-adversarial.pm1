@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "somnium-p003-adversarial",
+  "timestamp": "2026-08-30T14:50:43.478389+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 26,
+  "key_files": [
+    "src/canon/verrin-adversarial.ts",
+    "tests/acceptance/causal-acceptance.test.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "somnium-p003-adversarial",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................................--.-..-.........-.--...-........................................-.--...-",
+  "action": "Somnium P-003 adversarial suite: Verrin annex canon + cases A-K covering every causal relation, contradiction provenance, and under-specification"
+}

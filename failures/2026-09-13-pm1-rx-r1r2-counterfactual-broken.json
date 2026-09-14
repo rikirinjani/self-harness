@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-09-13T06:00:00Z",
+  "session_id": "pm1-rx-v14-forensic-audit",
+  "failure_category": "measurement-defect",
+  "failure_subcategory": "counterfactual-broken",
+  "severity": "medium",
+  "description": "R1/R2 counterfactual test produces no difference. Omitting a constraint from the representation is treated as 'constraint absent' by lawful_continuation(), not as 'constraint active'. The function only checks constraints present in the dict with status 'active'. If a constraint is omitted entirely, it's treated as non-existent.",
+  "root_cause": "The lawful_continuation function iterates over state['constraints'].items(). Omitted constraints are never seen. The counterfactual test assumed omission would be equivalent to activation, but the function's semantics treat omission as absence.",
+  "what_i_did_wrong": "Designed the R1/R2 counterfactual as 'remove the retracted constraint' without verifying that the function treats missing constraints as active. Should have tested the counterfactual implementation before relying on it.",
+  "what_i_should_do_instead": "Reformulate the counterfactual: instead of omitting the constraint, set it to status='active'. Or modify lawful_continuation to treat missing constraints as active by default (semantic change).",
+  "impact": "The R1/R2 counterfactual cannot demonstrate that the lawful set depends on retraction status. This was a core design goal of v1.4.",
+  "related_files": [
+    "C:\\Users\\think\\Agentic Layer\\morse\\experiments\\pm1-rx\\harness\\pm1rx\\ontology.py"
+  ]
+}

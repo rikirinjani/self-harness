@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "admission-threshold-feasibility",
+  "timestamp": "2026-09-10T23:49:02.948550+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "Kronos Engine/docs/experiments/admission-threshold-design.md",
+    "Kronos Engine/docs/experiments/admission-threshold-null.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "admission-threshold-feasibility",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Admission-multiplier threshold feasibility/design (Candidate #3). Traced full pathway: adapter buildMacroPacket (+0.3 weather, +0.2 WAR_START) -> admission_surge -> DR _admissionMultiplier (sole writer, sticky/no-reset) -> markov toAdmit. Math: toAdmit=min(beds,max(1,floor(baseAdmit*m))), baseAdmit in {0,1,2}; first change m=1.5 (baseAdmit=2 only, ~1/3 ticks), reliable change m>=2.0. Reachability: m=1.5 reachable (weather+1 war, P~0.046/tick); m>=2.0 needs >=5 coincident WAR_STARTs (only 5 low-relation nations, p=0.02), P~1e-7..1e-5 per run = effectively unreachable. No clean paired experiment through full KE pathway (multiplier emergent from stochastic events; cannot hold event stream constant). Verdict: REDESIGN. No model/manuscript/QMS changes; no experiment run."
+}

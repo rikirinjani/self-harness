@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-09-10T23:50:00Z",
+  "category": "tooling-defect",
+  "slug": "zenodo-upload-post-method-405",
+  "severity": "medium",
+  "agent": "orchestrator",
+  "project": "Kronos Engine",
+  "summary": "zenodo-package/upload.ps1 used HTTP POST to the Zenodo bucket URL. Zenodo now rejects POST with HTTP 405 Method Not Allowed; bucket uploads require PUT. This blocked the entire upload for days under the mistaken belief it was only a server outage.",
+  "what_went_wrong": "The upload script was written against the older Zenodo bucket API (POST /api/files/{bucket}/{filename}). The current API requires PUT to the same URL. Every attempt returned 405, which was conflated with the earlier 504 Gateway Timeout outage.",
+  "detection": "Resumed the aborted upload after the outage; a single-file POST test returned HTTP 405. A PUT test returned HTTP 201 immediately.",
+  "root_cause": "API method drift — the script was never re-validated against the current Zenodo REST API. The 504 outage masked the 405 defect because both presented as 'upload failed'.",
+  "remediation": "Changed upload.ps1 from -Method Post to -Method Put. Re-ran: 23/23 files uploaded successfully (4.81 MB). Verified via the deposition API that all 23 files are present with correct sizes.",
+  "impact": "Delayed the Zenodo publication. No data corruption. The deposited manuscript is the corrected version (supplyStress 0.17/0.034, matching frozen Phase F evidence).",
+  "process_lesson": "Distinguish HTTP 4xx (client/method error) from 5xx (server error) before concluding 'the server is down'. A method mismatch never resolves by waiting.",
+  "key_files": ["zenodo-package/upload.ps1"]
+}

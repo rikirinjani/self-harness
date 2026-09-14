@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "usb-mouse-vendor-id",
+  "timestamp": "2026-08-31T12:18:04.893724+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 90,
+  "tool_calls": 3,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "usb-mouse-vendor-id",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Identified the working USB mouse on Windows host: USB\\\\VID_3151&PID_1020, BusReportedDeviceDesc='2.4G Receiver', vendor VID_3151 = Yichip Microelectronics (Hangzhou) Co Ltd per usb-ids/the-sz/linux-hardware. Composite receiver exposing Mouse (MI_01&COL01), system controller (COL02), consumer control (COL03), vendor-defined (COL04) plus MI_00 interface = generic no-name 2.4GHz keyboard+mouse combo dongle, not Logitech. LastArrivalDate 2026-08-31 19:13:18 confirms fresh re-enumeration after the user's replug/re-pair, matching the restored pointer input. Second Mouse-class device HID\\\\MSFT0002&COL01 has ACPI\\\\MSFT0002 parent = laptop built-in I2C touchpad, arrived 2026-08-21, unrelated. No VID_046D (Logitech) devices present; earlier Logitech and VID_3151&PID_3020 entries were CM_PROB_PHANTOM stale records."
+}

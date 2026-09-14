@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-public-release-github",
+  "timestamp": "2026-08-19T04:15:59.684724+00:00",
+  "agent": "coordinator",
+  "outcome": "partial",
+  "duration_s": 1800,
+  "tool_calls": 12,
+  "key_files": [
+    "morse\\research\\pm1-v05\\RELEASE_v0.5.0.md",
+    "morse\\research\\pm1-v05\\CITATION.cff",
+    "morse\\research\\pm1-v05\\benchmark\\regenerate_summary.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-public-release-github",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........--.-..-.........---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Published PM-1 V0.5 to canonical rikirinjani/pro-memoria (public): 3 commits (0907e5a artifact, 04af8bb CITATION.cff, 287db50 release record), 70 files in research/pm1-v05, 0 secrets, 243 tests pass, offline regeneration matches. Zenodo BLOCKED: ZENODO_TOKEN not set in environment."
+}

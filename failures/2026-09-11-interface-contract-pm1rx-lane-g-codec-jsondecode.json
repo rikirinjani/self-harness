@@ -1,0 +1,30 @@
+{
+    "severity": "high",
+    "timestamp": "2026-09-11T00:00:00Z",
+    "trace_id": "pm1rx-lane-g-codec-jsondecode",
+    "category": "interface-contract",
+    "summary": "PM-1-RX lane-G implementation: the three end-to-end tests in harness/tests/test_runner.py failed with json.decoder.JSONDecodeError raised inside pm1rx/codecs.py (_parse_json_payload) when the bare DeterministicReferenceBackend() returned its documented '[deterministic-fallback:...]' marker for the structured-checkpoint prompt tag (arms C/E/F).",
+    "outcome": "fail",
+    "agent": "fixer",
+    "root_cause": "codecs.py violated the v1.2 decoding-failure contract (oracle.md §5, revision 002 G11): an unparseable model response must be carried in the representation as raw content (content_format application/json) so the oracle can attribute 'decoding_failure'; instead _parse_json_payload raised JSONDecodeError and crashed the episode. The backend (DeterministicReferenceBackend) was used within its documented contract (generate -> {text, usage}; fallback marker for unknown keys), so the backend was not at fault. Fixed at the codec boundary: _parse_json_payload_or_raw() carries raw text on parse failure; _payload_fields() guards fields_present; regression test added in tests/test_codecs.py (test_unparseable_model_output_is_carried_not_crashed).",
+    "fix": {
+        "files_changed": [
+            "experiments/pm1-rx/harness/pm1rx/codecs.py",
+            "experiments/pm1-rx/harness/tests/test_codecs.py"
+        ],
+        "semantics_affected": false,
+        "note": "Behavior changes only for unparseable model output (previously crash; now decoding_failure attribution per G11). Valid-JSON output path unchanged."
+    },
+    "remaining_blockers": [
+        {
+            "test": "test_episode_validates_against_schema",
+            "root_cause": "NO_REPRESENTATION is not in the v1.2 representation.schema.json enum (documented spec gap; pinned by test_codecs.py::test_no_representation_type_not_in_schema_enum). store.put('representation', ...) fails closed.",
+            "owner": "v1.2 schema/spec or lane O (runner/test)"
+        },
+        {
+            "test": "test_matched_budget_artifacts_are_boundary_aware",
+            "root_cause": "runner.truncate_to_budget returns truncation_method='none' arms (A_full_transcript) unchanged, so the matched-budget artifact exceeds the budget (853 > 18); the test asserts truncated size <= budget for every arm. Harness README documents the runner's behavior.",
+            "owner": "lane O (runner.py or test_runner.py)"
+        }
+    ]
+}

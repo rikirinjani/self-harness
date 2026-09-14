@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-08-31T02:20:00Z",
+  "category": "research",
+  "severity": "high",
+  "slug": "research-incorrect-ginkgo-android-version",
+  "agent": "librarian",
+  "reported_by": "orchestrator",
+  "task": "Research whether ADB over Wi-Fi can be enabled on a Xiaomi Redmi Note 8 (ginkgo) whose USB port is dead",
+  "what_went_wrong": "The first research report asserted that Redmi Note 8 / ginkgo never received Android 11 officially, and specifically that MIUI 12.5 for this device remained on Android 10. This was stated as a verified finding, not as an uncertainty. It is false: ginkgo received official Android 11 (MIUI 12.5.x) in every region, including the user's Indonesian branch as V12.5.3.0.RCOIDXM.",
+  "impact": "The orchestrator relied on the claim and told the user that no rootless wireless-ADB path existed on their device, that USB was the mandatory critical path, and that the remaining options were physical: clean the USB-C port, borrow a Linux host or a second Android phone as USB host, or replace the charging daughterboard for roughly USD 10. The user was directed toward a hardware repair while the actual fix was a single over-the-air update requiring no cable, no bootloader unlock and no flashing. Roughly one full triage cycle of user effort was spent on the wrong fault domain.",
+  "root_cause": "Version-mapping error. MIUI version numbers are decoupled from Android platform versions: the same MIUI 12.5 branch shipped on both Android 10 and Android 11 depending on device and region. The research treated the MIUI version as a proxy for the Android platform version instead of resolving the per-region build identifier (the Q/R letter in codes such as QCOIDXM versus RCOIDXM directly encodes the platform generation). The negative claim was then reported with the same confidence as the positive findings, without being checked against the per-region build list on bigota.mi.com that would have refuted it immediately.",
+  "why_it_was_not_caught_sooner": "The claim was plausible: ginkgo is a 2019 budget device, so end-of-support at Android 10 is a reasonable prior, and it arrived embedded in an otherwise accurate and well-cited report. Nothing in the surrounding material contradicted it. It survived because a load-bearing NEGATIVE claim was accepted without independent confirmation, and a negative claim is exactly the kind that closes off options and therefore deserves more scrutiny than a positive one.",
+  "how_it_was_caught": "A second, narrowly scoped verification task was dispatched to attack a specific recollection that MIUI had shipped its own wireless-ADB toggle before AOSP did. That task re-examined the platform-version question as a dependency and self-corrected the earlier report, producing the per-region Android 11 build list including V12.5.3.0.RCOIDXM. The correction came from re-attacking an adjacent uncertainty, not from doubting the original conclusion directly.",
+  "corrective_action": "The user applied the official same-region OTA to V12.5.3.0.RCOIDXM (Android 11, SDK 30), which exposed the AOSP wireless-debugging pair flow. Pairing and connection then succeeded and the full inspection, debloat and hardening pass completed over Wi-Fi with USB never being used.",
+  "preventive_action": [
+    "Never treat a vendor skin version (MIUI, One UI, ColorOS) as evidence of the underlying Android platform version. Resolve the platform from the build identifier or ro.build.version.release.",
+    "When a research finding closes off an entire solution path, verify it against a primary source before acting on it. Negative claims are load-bearing and should be held to a higher standard than positive ones.",
+    "Before recommending hardware repair or physical remediation, confirm that every software path has been genuinely eliminated rather than reported as eliminated.",
+    "Require research reports to label negative claims with their evidence basis, distinguishing 'confirmed absent in primary source' from 'not found while searching'."
+  ],
+  "related_records": [
+    "self-harness/traces/librarian-redmi-note8-adb-research.pm1",
+    "self-harness/traces/librarian-miui-wireless-adb-verify.pm1",
+    "self-harness/traces/android-adb-research-reconcile.pm1",
+    "self-harness/traces/android-fastboot-probe-failed.pm1",
+    "Agentic Layer/qms/records/verifications/20260831-pass-android-redmi-note8-debloat-hardening.json"
+  ]
+}

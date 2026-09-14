@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-mode-trajectory-execution",
+  "timestamp": "2026-08-21T06:14:10.642636+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 8,
+  "key_files": [
+    "pm1-trading-benchmark\\results\\v06\\mode_trajectory\\PM1_V06_MODE_TRAJECTORY_EXECUTION_REPORT.md",
+    "pm1-trading-benchmark\\results\\v06\\hop_records\\v0.6_mode_trajectory"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-mode-trajectory-execution",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................---..-..........-.--...-........-.--...-........................................-.--...-",
+  "action": "Mode/trajectory crossing executed: 4 new cells on MiMo-v2.5@2048 (seed11+step@60%, seed33+lazy@60%, seed11+step@80%, seed33+lazy@80%). Key finding: mode IS causally implicated — lazy breaks seed33 (100% PASS → 10% PASS) but step does not rescue seed11 (stays EMPTY). Asymmetric mode × trajectory interaction. Controls confirm override correctness. 30 calls completed, 10 unissued (seed11+step@60% EMPTY). Run class: v0.6_mode_trajectory. Historical artifacts untouched."
+}

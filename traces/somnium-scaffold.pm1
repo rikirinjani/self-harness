@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "somnium-scaffold",
+  "timestamp": "2026-08-29T21:03:17.979940+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 51,
+  "key_files": [
+    "README.md",
+    "HANDOFF.md",
+    "qms/trace-matrix.json",
+    "self-harness/constitution.md",
+    "scripts/verify-facts.ts",
+    ".github/workflows/ci.yml"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "somnium-scaffold",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--.........................................--...--........--.-..-.........................................-.--...-",
+  "action": "Somnium PoC scaffold: README, HANDOFF, qms trace-matrix, self-harness constitution, verify-facts CI gate, GitHub workflow"
+}

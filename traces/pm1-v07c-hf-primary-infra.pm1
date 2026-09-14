@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-v07c-hf-primary-infra",
+  "timestamp": "2026-08-22T05:37:46.986150+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 3,
+  "key_files": [
+    "pm1-trading-benchmark\\results\\v07c\\hf_primary\\PM1_V07C_HF_PRIMARY_INFRASTRUCTURE.md",
+    "pm1-trading-benchmark\\results\\v07c\\hf_primary\\PM1_V07C_HF_PRIMARY_INFRASTRUCTURE.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-v07c-hf-primary-infra",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "HF primary infrastructure plan: HF Pro as primary (2 vCPU, 16GB RAM, Docker support, tier storage), AWS as scale-up (t3.xlarge, EBS+S3), local as dev/fallback. HF feasibility probe required (1 representative SWE task). HF token needs provisioning. Calibration cost: -15 (HF Pro + API). 0 API calls, zero provisioning."
+}

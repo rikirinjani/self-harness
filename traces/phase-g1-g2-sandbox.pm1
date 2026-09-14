@@ -1,0 +1,35 @@
+{
+  "pm1_version": 1,
+  "session_id": "phase-g1-g2-sandbox",
+  "timestamp": "2026-09-11T05:01:36.686258+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "Deers-Rock/src/sandbox/session.ts",
+    "Deers-Rock/src/sandbox/server.ts",
+    "Deers-Rock/src/sandbox/index.ts",
+    "Deers-Rock/src/sandbox/cli.ts",
+    "Deers-Rock/src/sandbox/sandbox.test.ts",
+    "Deers-Rock/src/sandbox/core-isolation.test.ts",
+    "Deers-Rock/docs/productization/SANDBOX-CONTRACT.md",
+    "Deers-Rock/docs/productization/README.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "phase-g1-g2-sandbox",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................--.-..-.........................................-.--...-",
+  "action": "Phase G1/G2 (DR sandbox productization). Implemented additive sandbox layer under src/sandbox/ (session.ts, server.ts, index.ts, cli.ts) with ZERO core modifications (git confirms no core src changes). G1 contract doc + developer README. Lifecycle: create(seed required)/status/step/reset/delete/health; single-active (409); ephemeral (no journal); explicit seed; no wall-clock. Activated existing FHIR createFhirEndpoints (Patient/Observation) previously unmounted. Scenario trigger = 501 NOT CURRENTLY SUPPORTED. Tests: 17/17 sandbox tests pass incl core-semantics guard (core determinism unchanged by sandbox activity). tsc clean. End-to-end smoke passed (session->step120->data surface 58 patients->FHIR->reset->delete). Full suite 143/144: the 1 failure is PRE-EXISTING tests/world.test.ts 1000-tick timeout (fails in isolation; unrelated to sandbox). Verdict: G1/G2 READY."
+}

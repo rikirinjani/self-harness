@@ -1,0 +1,36 @@
+{
+  "pm1_version": 1,
+  "session_id": "v07c-rehearsal-001",
+  "timestamp": "2026-08-22T07:52:00.483656+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 120,
+  "tool_calls": 20,
+  "key_files": [
+    "v07c/run_rehearsal_001.py",
+    "v07c/l4_agent.py",
+    "results/v07c/rehearsal/PM1_V07C_REHEARSAL_001_REPORT.md",
+    "results/v07c/rehearsal/PM1_V07C_REHEARSAL_001_RESULTS.json",
+    "results/v07c/rehearsal/manifest.json",
+    "results/v07c/rehearsal/checkpoint_rehearsal_001.json"
+  ],
+  "failure": {
+    "category": "orchestration",
+    "severity": "medium"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v07c-rehearsal-001",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........--.-..-.........--.-..-.........--.-..-.........................--.-..-.........-.--...-",
+  "action": "V.7-C REHEARSAL-001 executed: 10/10 hops with real MiMo API. Infrastructure SUCCESS: L4 loop, tools, PM-Adapter, L0, L3, fingerprints, checkpoint all functional. Task FAILURE: model stuck in tool-call loop (MiMo returns tool_calls with empty content, never produces text response with patch). Defect V07C-DEFECT-001 identified. 30,958 tokens consumed across 10 API calls. REHEARSAL PARTIAL."
+}

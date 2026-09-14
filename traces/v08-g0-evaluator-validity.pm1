@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "v08-g0-evaluator-validity",
+  "timestamp": "2026-08-24T02:40:35.360203+00:00",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "duration_s": 1200,
+  "tool_calls": 20,
+  "key_files": [
+    "v08/g0_validate.py",
+    "v08/g0_validate_v2.py",
+    "v08/g0/g0_results.json",
+    "v08/g0/PM1_V08_G0_REPORT.md"
+  ],
+  "failure": {
+    "category": "evaluator_infrastructure",
+    "severity": "high"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v08-g0-evaluator-validity",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................-.--...-........---..-..........--.-..-.........-.--...-.........................--...--........-.--...-",
+  "action": "V.8 G0 Evaluator Validity: G0 FAIL (0/20 tasks valid). Root causes: (1) Django evaluator parser doesn't match runtests.py output format — rc=1 but 0 passed/0 failed detected. (2) Non-Django tasks: test infrastructure not set up for repo-specific test frameworks at specific commits. 100 evaluations across 20 tasks x 5 controls. Hard gate failure: experimental pool is empty. Minimum fix: update _parse_test_results() + install full test deps or select tasks with working test infrastructure."
+}

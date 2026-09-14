@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-v06-connectivity-fix",
+  "timestamp": "2026-08-19T14:08:08.921617+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 4,
+  "key_files": [
+    "pm1-trading-benchmark\\v06\\lib\\preflight.py",
+    "pm1-trading-benchmark\\v06\\tests\\test_artifact_isolation.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-v06-connectivity-fix",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---.........................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Live connectivity check initially failed (TypeError: tuple not callable - probe wired eagerly instead of as callable in preflight.py). fixer fixed with lambda binding; added wiring guard test. Independently verified: 137/137 tests pass, live probe PASS ('models endpoint reachable'), OVERALL PASS, no credentials in report JSON."
+}

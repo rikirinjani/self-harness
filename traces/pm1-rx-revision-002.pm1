@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-rx-revision-002",
+  "timestamp": "2026-09-11T01:09:30.724194+00:00",
+  "agent": "pm1-rx",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\morse\\experiments\\pm1-rx\\schema\\experiment-result.schema.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-rx-revision-002",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........................................................-.--...-........................................-.--...-",
+  "action": "Applied v1.1 adversarial-review corrections G1-G14 as versioned pre-run revision 002 (spec v1.2). v1.0=e27d120 and v1.1=4f75129 preserved immutably; v1.2 committed separately at 2dd07bb. G1 CRITICAL fixed by naming the off-schema probe (rejected-option provenance, L2) + evaluation.construct_validity_probe; documented why it removes the threat and that H1/H0/H2/H-arch remain falsifiable (H-arch now harder). G2 staleness in attribution; G3 enforced generator separation audit; G4 GT audit; G5 precommitted inclusion threshold; G7 L3 stated vs L4 executed; G10 objective is producer state not generator-injected; G11 budget_truncation+decoding_failure; G12 covert-channel control; G13 multiplicity-justified c; G14 Arm-E scope note. experiment-result.validity_checks added. All 7 schemas pm1-rx/1.2. Consistency audit CLEAN (8 docs v1.2, 0 stray headers, 0 objective-injection, 0 L0-L5 leftovers, 7/7 parse). No finding reinterpreted/suppressed/merged/downgraded. No benchmark code, no pilot, historical artifacts untouched"
+}

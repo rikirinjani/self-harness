@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260814-tool-startup-path-correction",
+  "timestamp": "2026-08-14T10:02:54.829927+00:00",
+  "agent": "oracle",
+  "outcome": "fail",
+  "duration_s": 30,
+  "tool_calls": 2,
+  "key_files": [],
+  "failure": {
+    "category": "tool",
+    "severity": "low"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260814-tool-startup-path-correction",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........-.-.-.-........-.--...-........-.--...-........-.--...-........................-.--...-........-.--...-........-.--...-",
+  "action": "Startup checks initially used a nonexistent workspace-relative self-harness path; corrected to C:\\Users\\think\\self-harness and reran successfully"
+}

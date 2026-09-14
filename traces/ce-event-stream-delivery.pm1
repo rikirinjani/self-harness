@@ -1,0 +1,39 @@
+{
+  "pm1_version": 1,
+  "session_id": "ce-event-stream-delivery",
+  "timestamp": "2026-08-30T19:58:13.309568+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 5400,
+  "tool_calls": 55,
+  "key_files": [
+    "src\\core\\events.ts",
+    "src\\core\\delivery.ts",
+    "src\\core\\event-bus.ts",
+    "src\\core\\hash.ts",
+    "src\\core\\types.ts",
+    "src\\core\\world.ts",
+    "src\\core\\lifecycle.ts",
+    "src\\poc\\events.ts",
+    "src\\poc\\events.test.ts",
+    "src\\poc\\lifecycle.test.ts",
+    "src\\poc\\branching.test.ts",
+    "docs\\RECONNAISSANCE.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ce-event-stream-delivery",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "CE event-stream delivery semantics pass (brief sections 1-20): audited all 7 event types into a FACT/INTERNAL ontology and found world.boundary_signal was engine scheduling detail not a world fact (10 of 21 events, would have frozen the quota mechanism into the public contract); chose at-least-once delivery and documented why exactly-once is impossible at the CE boundary; separated eventId from deliverySequence and attempt; built DeliveryState entirely outside WorldState with cursors, gap detection and state-sync resync; per-tick canonical total order with region-before-source; coalescing for delta facts only, never written back to record or provenance; reference-based causal attribution honest under eviction. TWO ARCHITECTURAL CORRECTIONS: (1) event ids were a bare counter living in WorldState, so two forks of one checkpoint minted IDENTICAL ids for different facts (3/3 collisions measured) - now SHA-256 over timeline+tick+ordinal+content, probed BEFORE designing delivery because id-based dedup on non-unique ids would have been unimplementable; (2) moved events OUT of stateHash and dynamics INTO it, correcting section 18.4 - the event buffer is a record of facts (history) not a delivery obligation, and timeline-scoped ids in stateHash broke branch convergence. 255 tests pass (54 new), tsc clean. Verdict ACCEPTED WITH CAVEATS; contract stable enough to design the adapter API except for event retention policy"
+}

@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "s012-fold-delta-productionization",
+  "timestamp": "2026-09-11T00:37:17.016211+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 4800,
+  "tool_calls": 40,
+  "key_files": [
+    "src/derive/world-state.ts",
+    "experiments/s012/REPORT.md",
+    "experiments/s012/probe-forcedby.ts",
+    "experiments/s012/probe-perf.ts",
+    "experiments/s012/results/results.json",
+    "qms/records/requirements/2026-09-11T03-30-00-req-012-s012-fold-delta-productionization.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "s012-fold-delta-productionization",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "S012 fold-state delta productionization / forcedBy identity: from frozen S011 (d92a15e). RESOLVED forcedBy identity: stored value is the content-derived id forceEvent:<target> (bijection of the key; a custom id yields the same stateHash f0185e63) - presence semantic, value provenance-only, no distinct identity domain. REDUCED delta overhead ~63x by replacing canonicalJson whole-list observation with factListsEqual structural bookkeeping: 57.7x -> 0.93x at H=3000, 1.02x at H=10000. Correctness unchanged: S009/S010 witnesses caught, 520/520 differential on 3 canons, 0 inverse hits, identical classification. Default behavior preserved: 624/624, verify-facts 3/3, frozen hashes unchanged. VERDICT PASS. API boundary: experimental."
+}

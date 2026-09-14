@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-structural-differential-analysis",
+  "timestamp": "2026-08-21T06:33:28.358802+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 1200,
+  "tool_calls": 8,
+  "key_files": [
+    "pm1-trading-benchmark\\results\\v06\\structural_analysis\\PM1_V06_STRUCTURAL_DIFFERENTIAL_ANALYSIS.md",
+    "pm1-trading-benchmark\\results\\v06\\structural_analysis\\PM1_V06_STRUCTURAL_EXPERIMENT_DESIGN.md",
+    "pm1-trading-benchmark\\results\\v06\\structural_analysis\\PM1_V06_STRUCTURAL_DIFFERENTIAL_RESULTS.json",
+    "pm1-trading-benchmark\\v06\\lib\\oracle.py",
+    "pm1-trading-benchmark\\v06\\lib\\adapter.py",
+    "pm1-trading-benchmark\\v06\\lib\\state_generator.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-structural-differential-analysis",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................---..-..........-.--...-........--.-..-.........................................-.--...-",
+  "action": "Structural differential analysis: reconstructed adapter state pipeline offline for all 4 conditions (seed11/33 x lazy/step @60%). KEY FINDING: adapter transmits IDENTICAL 5 fields at 60% for all conditions (same field count, names, tokens, structure). Oracle-relevant fields ALL present; no dependency chain broken. The action-equivalence failure is NOT adapter-selection — it is model-interpretation of the mode label + numeric values. Missing oracle field hypothesis REJECTED. All 4 conditions of the 2x2 factorial already tested in prior experiments; NO new experiment needed. No API calls, no artifact modification."
+}

@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-rx-measurement-repair-v13",
+  "timestamp": "2026-09-11T13:37:00.321608+00:00",
+  "agent": "pm1-rx",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\morse\\experiments\\pm1-rx\\schema\\experiment-result.schema.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-rx-measurement-repair-v13",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........................................................-.--...-........................................-.--...-",
+  "action": "PM-1-RX measurement repair v1.3 applied: fixed L4 executed-action capture (immutable field, verdict isolated, capability-floor reachable), attribution separation (truncated flag, decoding_failure, producer_omission), L1 semantic matching, Arm-E decoder confound (excluded from primary estimand, documented), artifact-integrity (dedupe + store invariant), instrumentation (per-run GT/covert audits, producer/consumer tokens, L5). Schemas pm1-rx/1.3. 129 tests pass; all 10 gates pass. No second pilot, no confirmatory. Verdict: MEASUREMENT REPAIR COMPLETE - READY FOR ADVERSARIAL REVIEW"
+}

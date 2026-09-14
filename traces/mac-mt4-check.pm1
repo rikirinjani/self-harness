@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "mac-mt4-check",
+  "timestamp": "2026-08-31T07:18:18.111192+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 540,
+  "tool_calls": 18,
+  "key_files": [
+    "/Users/ptpakdefarma/Library/Application Support/net.metaquotes.wine.metatrader4/drive_c/Program Files (x86)/MetaTrader 4/logs/20260831.log"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "mac-mt4-check",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---.........................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Confirmed MT4 running on Mac mini: MetaTrader 4 build 1478 via bundled Wine, coalition pid 84825 (LSUIElement=1 agent) + wine64-preloader terminal.exe pid 84847 29pct CPU 551MB, logged into demo account 175689231 on MetaQuotes-Demo 184ms ping since 12:53. Windows not pullable because app is LSUIElement=1 (no Dock/menu bar presence) and osascript lacks Accessibility permission. Also discovered Qwen MLX server died Aug 22 11:33 (graceful shutdown) and has no launchd plist - contradicts earlier assumption of launchd KeepAlive persistence; mac rebooted Aug 28 17:14"
+}

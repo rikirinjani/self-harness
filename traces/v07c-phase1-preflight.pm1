@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "v07c-phase1-preflight",
+  "timestamp": "2026-08-22T12:04:16.896926+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 10,
+  "key_files": [
+    "results/v07c/phase1_preflight/PM1_V07C_PHASE1_PREFLIGHT.md",
+    "results/v07c/phase1_preflight/PM1_V07C_PHASE1_PREFLIGHT.json",
+    "results/v07c/phase1_preflight/candidate_tasks.json",
+    "results/v07c/phase1_preflight/manifest.json",
+    "v07c/select_tasks.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v07c-phase1-preflight",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "V.7-C Phase-1 Calibration Preflight: 21 candidate tasks selected from SWE-bench Lite. Pressure ladder P1-P4 (30/20/10/5 hops, 16K/12K/8K/4K context). L3 (sliding window) vs L4 (PM-1). Execution matrix: 168 runs (21 tasks x 2 levels x 4 pressure). Estimated 14 hours, 7M tokens. Metrics pre-registered. Negative-result criterion defined. Failure taxonomy F1-F10. PHASE-1 PREFLIGHT READY."
+}

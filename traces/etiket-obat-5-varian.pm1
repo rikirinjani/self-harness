@@ -1,0 +1,39 @@
+{
+  "pm1_version": 1,
+  "session_id": "etiket-obat-5-varian",
+  "timestamp": "2026-08-19T05:50:56.447101+00:00",
+  "agent": "Designer",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 12,
+  "key_files": [
+    "Agentic Layer/etiket-obat/html/etiket-1-standar.html",
+    "Agentic Layer/etiket-obat/html/etiket-2-grid.html",
+    "Agentic Layer/etiket-obat/html/etiket-3-qr.html",
+    "Agentic Layer/etiket-obat/html/etiket-4-peringatan.html",
+    "Agentic Layer/etiket-obat/html/etiket-5-lansia.html",
+    "Agentic Layer/etiket-obat/preview.html",
+    "Agentic Layer/etiket-obat/png/etiket-1-standar.png",
+    "Agentic Layer/etiket-obat/png/etiket-2-grid.png",
+    "Agentic Layer/etiket-obat/png/etiket-3-qr.png",
+    "Agentic Layer/etiket-obat/png/etiket-4-peringatan.png",
+    "Agentic Layer/etiket-obat/png/etiket-5-lansia.png",
+    "Agentic Layer/etiket-obat/png/preview.png"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "etiket-obat-5-varian",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........----...........................---..-..........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Desain 5 varian etiket obat (616px/203dpi) + preview, render PNG via Edge headless, verifikasi dimensi & piksel OK"
+}

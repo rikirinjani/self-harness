@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-release-readiness-audit",
+  "timestamp": "2026-08-19T03:23:48.252506+00:00",
+  "agent": "coordinator",
+  "outcome": "partial",
+  "duration_s": 1800,
+  "tool_calls": 12,
+  "key_files": [
+    "pm1-trading-benchmark\\paper\\RELEASE_READINESS_REPORT.md",
+    "pm1-trading-benchmark\\paper\\README_PUBLIC_DRAFT.md",
+    "pm1-trading-benchmark\\results\\v0.5\\EXPERIMENT_STATUS.md",
+    "pm1-trading-benchmark\\paper\\REPRODUCTION_MANIFEST.csv",
+    "pm1-trading-benchmark\\paper\\CITATION.cff"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-release-readiness-audit",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........--.-..-.........---..-..........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Completed offline release-preparation audit: repo inventory (63.79MB/139 files), secret scan found CONFIRMED SECRET in .llm_creds.json (release blocker, not modified), personal-path scan (3 files), hashes computed, prepared README/EXPERIMENT_STATUS/manifest/CITATION drafts. No uploads or publications."
+}

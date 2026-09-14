@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-trading-benchmark-experiment-v0.1-session-wrap",
+  "timestamp": "2026-08-14T11:02:26.746602+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 780,
+  "tool_calls": 24,
+  "key_files": [
+    "pm1-trading-benchmark/EXPERIMENT_V0.1.md",
+    "qms/records/requirements/20260814-pm1-trading-benchmark-experiment-v0.1.json",
+    "qms/records/verifications/20260814-pass-pm1-trading-benchmark-experiment-v0.1.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-trading-benchmark-experiment-v0.1-session-wrap",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-..........--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Created and verified Experiment v0.1 without modifying ARCHITECTURE.md or implementing the simulator. Defined matched hidden-position episodes, conditions A/B/C, strategy control S, state ablations, independent oracle, 30-run target, anti-leakage controls, expected outcomes, and implementation/deferred boundaries. MemPalace archival timed out and was recorded locally."
+}

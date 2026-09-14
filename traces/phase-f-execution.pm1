@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "phase-f-execution",
+  "timestamp": "2026-09-06T14:21:31.817905+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 5400,
+  "tool_calls": 0,
+  "key_files": [
+    "src/experiment/experiments/phase-f-intervention.ts",
+    "src/experiment/experiments/phase-f-intervention.test.ts",
+    "experiment-results/phase-f/results.json",
+    "experiment-results/phase-f/statistical-summary.json",
+    "experiment-results/phase-f/manifest.json",
+    "experiment-results/phase-f/report.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "phase-f-execution",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-........................--.-..-.........................................-.--...-",
+  "action": "Phase F causal integration experiment executed per frozen design: 5 seeds x 2 arms (CO2 280/800) x 20 KE ticks, fresh-world paired execution, full 5-link causal trace instrumented, isolation verified, seed-42 replay identical. Result: classification E (null stochastic) with seed-46 supplyStress +0.17 partial propagation. KE 323/324 (1 pre-existing E3 test defect exposed by dist alignment), DR 127/127 sequential, tsc clean both. v1 run invalidated by stale DR dist and quarantined; dist rebuilt from DR HEAD 5884ba3 before v2."
+}

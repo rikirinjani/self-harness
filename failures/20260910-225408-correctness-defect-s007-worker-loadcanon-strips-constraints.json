@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-09-10T22:54:08Z",
+  "category": "correctness-defect",
+  "severity": "medium",
+  "slug": "s007-worker-loadcanon-strips-constraints",
+  "agent": "orchestrator",
+  "project": "somnium-engine",
+  "branch": "s007",
+  "ancestor_commit": "443d3d9",
+  "what_happened": "The Experiment E worker reconstructed its canon with `loadCanon(workerData.canonRaw)`. loadCanon re-normalizes and DROPPED the ordos cardinality constraints: the ordos canon round-tripped to hash ef9cbe0c — the 'ordos-without-constraints' hash — instead of the frozen 51f32b2e. Workers therefore derived a different world than the main thread, and ordos reported hashesMatch=false for every worker count. verrin was unaffected (it has no constraints), which is what made the bug canon-specific and easy to miss.",
+  "root_cause": "loadCanon is a validating loader for raw canon documents, not a serializer round-trip. Passing an already-constructed Canon through it re-normalizes the document and does not preserve constraints. The JSON round-trip itself was lossless (canonicalJson equal); loadCanon was the destructive step.",
+  "what_i_did_wrong": "Assumed loadCanon was an identity for an already-valid Canon. The mismatch was initially mistaken for possible non-determinism in derive — the opposite of the truth: derive was deterministic, and the two sides were deriving different canons.",
+  "detection": "Experiment E ordos rows reported hashesMatch=false while verrin rows matched. The diagnose.ts probe showed ordos reloaded hash = ef9cbe0c (without-constraints) vs original 51f32b2e.",
+  "fix": "The worker now casts workerData.canonRaw directly to Canon instead of calling loadCanon. After the fix, all worker counts match for both canons. Diagnose.ts retained as the regression probe.",
+  "lesson": "Do not route an already-constructed domain object through a validating loader. Verify serialization round-trips by comparing behaviour (here, derived hashes), not just document bytes — the canonicalJson bytes were identical while the derived world was not."
+}

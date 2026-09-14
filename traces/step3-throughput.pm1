@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "step3-throughput",
+  "timestamp": "2026-09-10T10:20:43.909283+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1050,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\Kronos Engine\\docs\\experiments\\ke-monte-carlo-vultr-report.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "step3-throughput",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........................-.--...-........................................-.--...-",
+  "action": "STEP 3: Sustained throughput measured. N=1000 completed in 1002.6s (16.7 min). 1.0 sims/sec, ~1.0s per simulation. Linear scaling confirmed (N=10: 1.096s/sim → N=1000: 1.003s/sim). Memory: 511MB at N=1000."
+}

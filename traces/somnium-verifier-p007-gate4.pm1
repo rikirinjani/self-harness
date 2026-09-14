@@ -1,0 +1,37 @@
+{
+  "pm1_version": 1,
+  "session_id": "somnium-verifier-p007-gate4",
+  "timestamp": "2026-09-03T21:47:41.975389+00:00",
+  "agent": "verifier",
+  "outcome": "fail",
+  "duration_s": 0,
+  "tool_calls": 47,
+  "key_files": [
+    "src/derive/semantic.ts",
+    "src/derive/world-state.ts",
+    "src/derive/propagation.ts",
+    "src/canon/canon.ts",
+    "src/diff/diff.ts",
+    "src/depth/depth.ts",
+    "docs/P007-WORLDDIFF.md"
+  ],
+  "failure": {
+    "category": "verification-blocking-defect",
+    "severity": "major"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "somnium-verifier-p007-gate4",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........-.--...-.........................--...--........--.-..-.........................................-.--...-",
+  "action": "L2 verifier gate round 4 on Somnium P-007 (gate-3 remediation: injective minted fact ids, reserved derived: namespace, semanticState as cardinality chokepoint, lineage-subtracting projections, four side fixes) - REJECT: 4 blocking INV breaks (NUL-unenforced cellKey injectivity via loadCanon; factOverrides compares only object/validFrom/validTo while the hash folds subject+predicate; localeCompare-non-total dedupeBy sort order; contradictions dedup key id vs diff key content) plus 1 unfalsifiable new test"
+}

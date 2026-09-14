@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "handoff-representations-survey",
+  "timestamp": "2026-09-11T00:39:24.179142+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 420,
+  "tool_calls": 14,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "handoff-representations-survey",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--..........................--...--........--.-..-.........................................................-.--...-",
+  "action": "SOTA survey: candidate representations for agent state handoff without transcript (7 categories, ~30 verified citations via arXiv API: lost-in-middle, compaction/condensation, structured checkpoints, RAG/memory-streams, task/belief/provenance state, staleness/contradiction/branch/commitment, memory benchmarks). Empirical vs open flagged per item."
+}

@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-09-06T21:15:00Z",
+  "category": "stale-build-artifact",
+  "slug": "phase-f-v1-stale-dr-dist",
+  "severity": "major",
+  "agent": "orchestrator",
+  "task": "Phase F causal integration experiment execution",
+  "what_went_wrong": "The first Phase F run (v1, 2026-09-06 07:45) executed against a stale Deers-Rock dist (built 2026-09-04 05:52) that predated the Phase E coupling consumers committed to DR source on 2026-09-05 (world.ts admission_surge/supply_chain_pressure/active_disaster consumption, scenario.ts mapMacroDisasterToScenario, central-supply.ts adaptive restock). KE's adapter imports DR from Deers-Rock/dist/, so the v1 run silently exercised DR code WITHOUT the macro-micro coupling. v1's zero deltas were uninterpretable and its causal-trace placeholders were empty.",
+  "root_cause": "Cross-repo build dependency without freshness verification. DR dist is gitignored build output; the Phase E workflow updated DR source and (on the canonical Mac Mini host) rebuilt dist, but the Windows KE worktree's sibling DR checkout retained a two-day-old dist. No pre-experiment gate existed to detect that the imported dist did not match the DR source HEAD being claimed as the experimental baseline.",
+  "detection": "During v2 instrumentation, source-vs-dist timestamps were compared (src 2026-09-05 05:18-05:20 vs dist 2026-09-04 05:52) and dist contents grepped for the coupling consumers. Confirmed absent. Mac Mini dist (2026-09-05 08:32, same DR HEAD 5884ba3) confirmed coupled, proving the canonical Phase E baseline used a coupled dist and the Windows stale dist was the anomaly.",
+  "remediation": "Rebuilt DR dist from DR HEAD 5884ba3 (npm run build, tsc clean). Verified admission_surge consumption and mapMacroDisasterToScenario present in dist. Quarantined v1 artifacts to experiment-results/phase-f/v1-invalid-stale-dist/ and recorded the invalidation in the v2 experiment header, manifest, and final report. Re-ran the full experiment (v2) against the corrected dist.",
+  "consequences": "One wasted experiment run (~12 min compute) and one aborted orchestrator session. No scientific evidence was contaminated: v1 artifacts were quarantined before any interpretation was recorded, and the final Phase F report is based solely on v2.",
+  "systemic_fix_recommendation": "Add a pre-experiment dist-freshness gate for cross-repo imports: verify imported dist build timestamp >= source HEAD commit date of the claimed baseline (or embed a build-id in dist and assert it). Recorded as an architectural limitation in the Phase F report (section 17.5).",
+  "related_trace": "phase-f-execution.pm1",
+  "related_artifacts": [
+    "experiment-results/phase-f/v1-invalid-stale-dist/",
+    "experiment-results/phase-f/manifest.json"
+  ]
+}

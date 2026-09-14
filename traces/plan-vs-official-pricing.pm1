@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "plan-vs-official-pricing",
+  "timestamp": "2026-09-01T02:53:05.490921+00:00",
+  "agent": "coordinator",
+  "outcome": "partial",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "plan-vs-official-pricing",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........--.-..-.........................................................................................-.--...-",
+  "action": "Compared coding-plan internal pricing vs official provider API rates. Verified: Z.ai official GLM-5.3 .4/.26/.4 + Flash .15/.50 (promo ends 2026-09-09); GLM plan credit multipliers are 5x official USD prices so 1 credit=.20 official-rate usage, Lite=/wk equivalent, 92% claim arithmetically real at full consumption, break-even ~15M tok/wk. DeepSeek official v4-flash .44/.32 peak half off-peak. Ollama rates EXACTLY mirror official (glm/deepseek verified identical) with 3:1 credit multiplier on Pro/Max. opencode GO break-even ~17-33 req/day on open models, ~1x on Kimi K3/Grok slots. Kimi official pricing JS-blocked, used Ollama mirror (k2.7-code .95/, k3 /). Claude plan API-equivalents unverified estimates."
+}

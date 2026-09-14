@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "phase-b-determinism",
+  "timestamp": "2026-09-02T00:47:34.842951+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 25,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\src\\engine\\world.ts",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\src\\patient\\generator.ts",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\tests\\determinism.test.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "phase-b-determinism",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---.........................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Phase B: counter reset per createWorld, determinism tests (7/7), build dist, snapshot doc — same-process determinism fixed"
+}

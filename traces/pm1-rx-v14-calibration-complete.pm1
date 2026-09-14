@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-rx-v14-calibration-complete",
+  "timestamp": "2026-09-13T05:25:33.631824+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3600,
+  "tool_calls": 0,
+  "key_files": [
+    "experiments/pm1-rx/harness/pm1rx/runner.py",
+    "experiments/pm1-rx/harness/V14_CALIBRATION_REPORT.md",
+    "experiments/pm1-rx/harness/V14_MEASUREMENT_SPEC.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-rx-v14-calibration-complete",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-........................-.--...-........................................-.--...-",
+  "action": "PM-1-RX v1.4 calibration complete. Discovered consumer prompt missing ACTION_VOCABULARY (L4=0.0 root cause), fixed in commit 3037757. Re-ran 5-task pilot with deepseek-chat: L4=1.000 all primary arms, L1: F=0.800>C=0.700>B=0.667>A=0.056. All 131 tests pass, all 10 gates pass, no leakage. Verdict: INSTRUMENT VALIDATED."
+}

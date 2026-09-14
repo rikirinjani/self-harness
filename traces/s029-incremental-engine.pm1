@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "s029-incremental-engine",
+  "timestamp": "2026-09-11T05:38:20.329449+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3000,
+  "tool_calls": 12,
+  "key_files": [
+    "experiments/s029/REPORT.md",
+    "experiments/s029/probe.ts",
+    "qms/records/requirements/2026-09-11T20-30-00-req-029-s029-incremental-engine.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "s029-incremental-engine",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "S029 event-driven incremental Phase-A implementation / exact equivalence: from frozen S028 (553b347), no src change. VERDICT PASS. Implementation: previous Phase-A truth + intervention -> directChanged (S028 complete delta) -> closure over the S028 COMPLETE dependency index -> reset to NEITHER -> AUTHORITATIVE seeded positiveFixpoint (phaseATruth) -> Phase A -> AUTHORITATIVE Phase B. RESULTS: 10,000 prefixes (100xH=20 + 30xH=100, verrin+ordos), 0 mismatches (0.00%); Phase-B integration 800 steps U subset of C 800/800 and dU subset of dC 800/800; known witnesses pass. Minimum maintained state: previous Phase-A truth + previous model + the S028 index; history not required. HONEST CAVEAT: reset-scope strategy, exact but NOT yet worklist-local, so no speed-up demonstrated. Next: convert to a genuine event-driven worklist over the S021 aggregates and measure. Baseline 624/624, verify-facts 3/3, frozen hashes unchanged."
+}

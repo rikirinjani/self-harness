@@ -1,0 +1,18 @@
+{
+  "id": "fail-2026-08-30-causal-saturation-under-cap",
+  "timestamp": "2026-08-30T15:40:00Z",
+  "category": "architecture",
+  "agent": "orchestrator",
+  "task": "CE multi-intervention stress test — Experiment B/C composition analysis",
+  "outcome": "partial",
+  "error": "CAUSAL SATURATION: the anti-gaming contribution cap (capPerDomainRegionTick = 1.0) silently erased the causal contribution of a distinct simultaneous intervention. Destroying the bridge contributes economy pressure 1.0 at RF, which is exactly the cap. Co-submitting a merchant killing (economy 0.2) produced RF economy pressure of 1.0 — identical to bridge alone. Verified: peak RF price 40.0049 in both cases, economy resolution pressure t10:1.000 in both. The merchant's economic causal weight was causally invisible.",
+  "rootCause": "The cap was specified as an aggregate clamp per (domain, region, tick) with a value equal to the magnitude of a single strong action, leaving zero headroom for a second contributor. Two conflated concerns: (a) bounding spam of a REPEATABLE action, and (b) bounding the total of DISTINCT independent actions. A hard clamp cannot separate them. Compounding: the original cap test in determinism.test.ts submitted 5 identical bridge destructions, which the schema's new already-destroyed validation now rejects, so that test had silently stopped exercising the cap at all and was passing for the wrong reason.",
+  "whatActuallyHappened": "The stress harness compared bridge-only vs bridge+merchant and found identical economic outcomes. A dedicated diagnostic probe (src/poc/diag.ts) confirmed pending economy pressure saturated at the cap in both submission orders. Without this experiment the defect would have shipped as 'composition works', because the faction domain (not saturated) did compose and masked the economy failure at a glance.",
+  "mitigation": "Replaced the hard clamp with piecewise saturating accumulation: raw contributions are summed linearly (commutative, so order-independent), then mapped through a soft knee — identity below the knee, exponentially saturating toward the cap above it. Knee set to 1.0 (the magnitude of the strongest single action) so every previously calibrated behaviour is bit-for-bit preserved, while distinct contributions above the knee always remain visible. Spam of repeatable actions remains bounded by the cap. The misleading cap test was rewritten to use a genuinely repeatable action (hold_public_rally) so it exercises saturation rather than validation rejection.",
+  "files": [
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\core\\config.ts",
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\core\\propagation.ts",
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\core\\types.ts",
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\poc\\determinism.test.ts"
+  ]
+}

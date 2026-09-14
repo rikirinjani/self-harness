@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "s026-reconsideration-semantics",
+  "timestamp": "2026-09-11T04:29:35.419657+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 2400,
+  "tool_calls": 12,
+  "key_files": [
+    "experiments/s026/REPORT.md",
+    "experiments/s026/probe.ts",
+    "qms/records/requirements/2026-09-11T17-30-00-req-026-s026-reconsideration-semantics.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "s026-reconsideration-semantics",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "S026 Phase-A reconsideration semantics: from frozen S025 (d1d6f66), no src change (observation only). VERDICT HOLD. Reproduced the S025 first divergence exactly (ordos seed 0 prefix 5 negateEvent:ev/vaela-invested; 3 divergent nodes). ROOT CAUSE A: fact/seal-held-vaela changed OUTSIDE the closure because the reverse index OMITS fact validity-window edges (validFrom/validTo via factNodeTruth) - a named missing edge class. ROOT CAUSE B: sticky order-dependence - ev/rite-of-binding-vaela and ev/succession-settled were INSIDE the closure but decided TRUE using a stale member value before the member was re-decided. R \\\\ closure = 51 over 800 prefixes (max 5). S021 aggregate remains exact; the index is the gap. CLASSIFICATION C (conditionally incremental). Next experiment: validate a validity-window-aware dependency index. Baseline 624/624, verify-facts 3/3, frozen hashes unchanged."
+}

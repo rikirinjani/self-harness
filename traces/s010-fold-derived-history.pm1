@@ -1,0 +1,38 @@
+{
+  "pm1_version": 1,
+  "session_id": "s010-fold-derived-history",
+  "timestamp": "2026-09-11T00:12:40.068746+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 4200,
+  "tool_calls": 45,
+  "key_files": [
+    "experiments/s010/REPORT.md",
+    "experiments/s010/retain.ts",
+    "experiments/s010/synthetic.ts",
+    "experiments/s010/checks.ts",
+    "experiments/s010/run-all.ts",
+    "experiments/s010/results/results.json",
+    "qms/records/nonconformities/2026-09-11T01-30-00-ncr-007-state-change-retention-unsound.json",
+    "qms/records/requirements/2026-09-11T01-30-00-req-010-s010-fold-derived-history.json"
+  ],
+  "failure": {
+    "category": "design-defect",
+    "severity": "high"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "s010-fold-derived-history",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-..........-.-.-.-.........--...--........--.-..-..........................--...--........-.--...-",
+  "action": "S010 fold-derived sufficient history: isolated worktree off frozen P-007 (443d3d9). Built two fold-derived retention mechanisms. VERDICT BLOCKED: M-B (accumulator-only) fails NCR-006 + 6/10 multi-fact stress + 493/517 differential; M-H (semantic-state-change oracle) fails 279/517 with a minimal 2-intervention seed-canon counterexample [forceEvent(E), negateEvent(E)] because the semantic state omits the fold's accumulators (forcedBy). Root cause: neither the semantic state nor the accumulator set is sufficient; combining them requires a second semantic authority. Determinism stable; branch isolation pure; M-B retained size saturates. Regression 624/624, verify-facts 3/3, frozen hashes unchanged, src/ untouched. Reported BLOCKED rather than patching."
+}

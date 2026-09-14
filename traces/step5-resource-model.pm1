@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "step5-resource-model",
+  "timestamp": "2026-09-10T10:20:44.181736+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 30,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\Kronos Engine\\docs\\experiments\\ke-monte-carlo-vultr-report.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "step5-resource-model",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................-.--...-........................-.--...-........................................-.--...-",
+  "action": "STEP 5: Resource model updated. Per-sim: 1.003s CPU, 3.5MB RAM, 9.1KB disk. Extrapolated: N=10k = 2.8hr, 546MB RAM, 89MB file. Bottleneck: CPU single-thread. Memory/disk not constraints."
+}

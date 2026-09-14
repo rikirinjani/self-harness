@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "se-macmini-migration-resume",
+  "timestamp": "2026-09-01T06:46:29.809667+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1500,
+  "tool_calls": 20,
+  "key_files": [
+    "MACMINI-CHECKPOINT.md",
+    "experiments/p007/probes.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "se-macmini-migration-resume",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "SE Mac mini migration + repository reconciliation (RESUME of interrupted run). Non-destructive: established somnium-engine on Mac mini via git bundle (full history, all 10 branches + tag somnium-p005-final). Verified host: macOS 26.6.2 arm64 Apple M4 16GB, Node v26.5.0, npm 11.17.0, git 2.50.1, 101GiB free, repo 62MB. Gate PASSED on Mac mini: npm ci OK, tsc exit 0, verify-facts 3/3, 507/507 tests (22 files) - reproduces main exactly. RECONCILED: P-005 frozen (tag, ver-005); P-006 merged 434f896 + ver-006 APPROVE first-pass with residual H1-WorldDiff deferred to P-007; P-007 STARTED NOT IMPLEMENTED (branch p007 = 0 commits ahead of main, only untracked experiments/p007/probes.ts 174 lines, no predictions.md, no QMS). Local main is 18 commits AHEAD of origin/main (P-002..P-006 unpushed). No destructive git op performed. Wrote MACMINI-CHECKPOINT.md as durable resume anchor (credential-free)."
+}

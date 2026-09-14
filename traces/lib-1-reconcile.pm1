@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "lib-1-reconcile",
+  "timestamp": "2026-08-19T21:11:26.852290+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "lib-1-reconcile",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--.........................................................................................................-.--...-",
+  "action": "Reconciled session lib-1: MiMo-V2.5 research accepted by orchestrator (model identity mimo-v2.5/Xiaomi, base URL api.xiaomimimo.com/v1, 1M ctx/128K max out, .14/.28 per 1M, 100 RPM/10M TPM, OpenAI-compatible; mimo-2.5-free flagged non-official; TO-VERIFY items recorded). No further work. Retrace scanner: trace-clean."
+}

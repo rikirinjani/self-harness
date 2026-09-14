@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260814-pm1-trading-benchmark-experiment-v01",
+  "timestamp": "2026-08-14T10:53:47.719649+00:00",
+  "agent": "oracle",
+  "outcome": "pass",
+  "duration_s": 360,
+  "tool_calls": 8,
+  "key_files": [
+    "pm1-trading-benchmark/ARCHITECTURE.md",
+    "morse/context_assembly/SPEC.md",
+    "morse/context_assembly/assembler.py",
+    "morse/context_assembly/writeback.py",
+    "qms/records/verifications/20260814-pass-pm1-trading-benchmark-experiment-v01.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260814-pm1-trading-benchmark-experiment-v01",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........-.-.-.-.........................--...--........-.--...-........--.-..-.........................................-.--...-",
+  "action": "Designed and reviewed Experiment v0.1: a two-episode paired hidden-position scenario with identical current observations; A/B/C conditions, full-minus-corrupt-restored state ablations, complete-state strategy control, independent ground truth, expected-result matrix, 14 unique plus 16 replay executions, anti-leakage rules, and explicit implementation/deferred boundaries"
+}

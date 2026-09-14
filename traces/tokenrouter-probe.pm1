@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "tokenrouter-probe",
+  "timestamp": "2026-08-29T09:57:04.630779+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\.config\\opencode\\opencode.jsonc"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "tokenrouter-probe",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "Probed TokenRouter (api.tokenrouter.com/v1): key valid, /v1/models 200 with ~140 models, but account credit 0 so nearly all chat completions 403. Found exactly ONE working free model: z-ai/glm-5.3-free (non-stream + stream both verified, returns reasoning_content). Added tokenrouter provider to Windows opencode config with key in UTIM_TOKENROUTER_KEY env var (matched existing {env:} convention). Verified JSON parses."
+}

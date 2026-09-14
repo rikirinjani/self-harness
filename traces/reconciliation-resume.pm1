@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "reconciliation-resume",
+  "timestamp": "2026-08-14T06:22:22.268392+00:00",
+  "agent": "coordinator",
+  "outcome": "partial",
+  "duration_s": 30,
+  "tool_calls": 3,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "reconciliation-resume",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........--.-..-.........-.--...-........-.--...-........................................................-.--...-",
+  "action": "Reconciliation resumed and confirmed through background job board; crash recovery clean. Retrace verification timed out, so scanner cleanliness remains unconfirmed."
+}

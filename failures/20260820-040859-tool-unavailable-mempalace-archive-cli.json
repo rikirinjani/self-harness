@@ -1,0 +1,10 @@
+﻿{
+    "timestamp":  "2026-08-20T04:08:59",
+    "task":  "MiMo-V2.5 research archival",
+    "impact":  "Research findings not filed to MemPalace drawer; PM-1 trace written successfully (20260819T210840-librarian-cli.pm1); mitigation: findings preserved in this session\u0027s output fact sheet, orchestrator may file via MCP when mempalace MCP server is attached",
+    "category":  "tool-unavailable",
+    "what_went_wrong":  "Attempted \u0027mempalace_mempalace_add_drawer\u0027 CLI invocation per RULES.md Rule 10; command not found; then \u0027mempalace add-drawer --help\u0027 confirmed invalid choice",
+    "slug":  "mempalace-archive-cli",
+    "agent":  "librarian",
+    "root_cause":  "mempalace add_drawer is an MCP tool name; the mempalace.exe CLI exposes different subcommands (init/mine/sync/search/...) and has no add-drawer equivalent in this shell session"
+}

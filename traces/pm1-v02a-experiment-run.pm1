@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-v02a-experiment-run",
+  "timestamp": "2026-08-16T03:58:58.450172+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 0,
+  "key_files": [
+    "lib/llm_runner.py",
+    "results/v0.2a/EXPERIMENT_V0.2a_REPORT.md",
+    "results/v0.2a/experiment_v0.2a_results.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-v02a-experiment-run",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........................-.--...-........................................-.--...-",
+  "action": "V0.2a S1 experiment executed: 70/70 API calls, 0 errors, deepseek-v4-flash, 8/9 acceptance criteria passed. B-minus (implicit) failed fail-closed (F=PASS, L=FAIL). All other conditions matched expectations. Cross-trial consistency: 100% (all digests identical across 5 trials). Results saved to results/v0.2a/."
+}

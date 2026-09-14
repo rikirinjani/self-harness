@@ -1,0 +1,36 @@
+{
+  "pm1_version": 1,
+  "session_id": "p004-repro-fixer",
+  "timestamp": "2026-08-31T13:31:44.641945+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 2900,
+  "tool_calls": 40,
+  "key_files": [
+    "p004-fresh-summary.json",
+    "p004-fresh-runs.json",
+    "p004-stale-summary.json",
+    "p004-stale-runs.json",
+    "p004-stale2-summary.json",
+    "p004-stale2-runs.json",
+    "aliasing-probe.ts",
+    "aliasing-probe2.ts",
+    "aliasing-probe3.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "p004-repro-fixer",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................---..-...........--...--........--.-..-.........................................-.--...-",
+  "action": "P-004 reproduction audit: fresh vs stale dist vs committed artifacts. Fresh (515 metrics/42 sig) and stale (532/31, 530/41 - nondeterministic) BOTH fail byte-for-byte vs committed (156/14). Root causes: (1) DR adapter hardcodes seed 42 so DR state is seed-invariant in deterministic fresh build (all DR deltas constant, d=0); committed artifact's seed-varying DR state only possible with pre-Math.random-fix stale build (unseeded rng); (2) engine changed 2026-07-10 (8b30779 deepClone+snapshot fix, in-place mutation on 4 sectors) after committed artifact generation (June 30) - metric surface grew 156->515; (3) rewind-point aliasing CONFIRMED: createRewindPoint stores sectorStates BY REFERENCE (rewind-point.ts:63), parent run mutates climate/economy/geopolitics/technology in place corrupting RP baseline; remediation worktree deep-clones (line 66). DR effects are NOT macro-penetration: branch-without-intervention also differs from parent (cssd 4 vs 9, dial 116 vs 108) proving rewind artifact. Committed artifact regenerates EXACTLY with neither fresh nor stale dist."
+}

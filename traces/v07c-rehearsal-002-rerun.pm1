@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "v07c-rehearsal-002-rerun",
+  "timestamp": "2026-08-22T10:32:11.784509+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 300,
+  "tool_calls": 15,
+  "key_files": [
+    "v07c/run_rehearsal_002_rerun.py",
+    "v07c/evaluator.py",
+    "results/v07c/rehearsal_002_rerun/PM1_V07C_REHEARSAL_002_RERUN_REPORT.md",
+    "results/v07c/rehearsal_002_rerun/PM1_V07C_REHEARSAL_002_RERUN_RESULTS.json",
+    "results/v07c/rehearsal_002_rerun/manifest.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v07c-rehearsal-002-rerun",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-..........--...--........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "V.7-C REHEARSAL-002 RERUN with repaired evaluator: 30 hops, 3 edits (first at hop 8, down from 27), 1 run_tests call, 91K tokens. Evaluator PASS — correctly detected 0+2/2 failing tests. Model made 3 edits but fix incomplete. Task FAILURE. REHEARSAL PARTIAL. Significant trajectory improvement vs previous run."
+}

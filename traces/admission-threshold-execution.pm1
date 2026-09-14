@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "admission-threshold-execution",
+  "timestamp": "2026-09-11T00:10:38.800978+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "Kronos Engine/docs/experiments/admission-threshold-results.md",
+    "Kronos Engine/docs/experiments/admission-threshold-results.json",
+    "Kronos Engine/src/experiment/experiments/admission-threshold-runner.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "admission-threshold-execution",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........................................-.--...-........................................-.--...-",
+  "action": "Executed frozen ADMISSION-THRESHOLD-BOUNDARY-2026-09-10 protocol on Vultr VPS (KE 4d7e412, DR 5884ba3, 8.17s). Threshold CONFIRMED: in all 8 seeds arms identical until first baseAdmit=2 tick, then control admits 2 vs intervention 3 (exactly floor(2*1.3)=2 vs floor(2*1.5)=3). Cumulative reconciliation FAILED (diagnosed): DR clock RNG is one stateful stream; extra admission consumes extra clock.rng() draw (dischargeDelay), desyncing streams (compounds to thousands of draws); plus patient-pool saturation (~65-79 admissions both arms). Verdict: CONFIRMED WITH DISCREPANCY. Canonical gate: NO - SCIENTIFIC VALUE TOO LIMITED. No model/manuscript/QMS/Phase-F changes."
+}

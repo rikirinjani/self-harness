@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "reconcile-exp1-morse",
+  "timestamp": "2026-08-14T06:02:48.331007+00:00",
+  "agent": "explorer",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 6,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\morse\\bench",
+    "C:\\Users\\think\\Agentic Layer\\morse\\context_assembly"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "reconcile-exp1-morse",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........---..-..........................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Reconciled exp-1 (ses_0012dd6a5ffeo0TnzF8Z34ruF0): morse codebase experiment exploration. Findings verified by exp-3 reconciliation session — all claims accurate with 2 minor corrections: bench/ has 19 scripts (not 20), and state-layer counts were misattributed. Marked RECONCILED — findings sound."
+}

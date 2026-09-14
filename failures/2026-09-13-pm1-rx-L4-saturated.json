@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-09-13T06:10:00Z",
+  "session_id": "pm1-rx-v14-forensic-audit",
+  "failure_category": "measurement-defect",
+  "failure_subcategory": "L4-saturated",
+  "severity": "medium",
+  "description": "L4=1.000 across all primary arms for all 5 tasks. The model systematically selects RESOLVE_DECISION/RESOLVE_QUESTION/NOTIFY_REVIEWERS — actions that are lawful in most states. It never selects DEPLOY or OPEN_PR. L4 cannot distinguish between representations.",
+  "root_cause": "Two compounding factors: (1) the model has a systematic bias toward 'safe' resolution-oriented actions, and (2) the lawful set at the boundary always includes RESOLVE_DECISION, RESOLVE_QUESTION, and NOTIFY_REVIEWERS. The model's bias aligns with the lawful set, making L4 trivially easy.",
+  "what_i_did_wrong": "Did not test the instrument with states where only DEPLOY or RUN_TESTS is lawful. The pilot only tested boundary positions where the lawful set overlaps with the model's bias.",
+  "what_i_should_do_instead": "Add test states where the only lawful action is DEPLOY or RUN_TESTS. This would force the model to select actions outside its comfort zone and reveal whether it can actually use the representation to determine lawfulness.",
+  "impact": "L4 is uninformative as a measurement — it cannot detect differences between representations because all arms achieve 1.000.",
+  "related_files": [
+    "C:\\Users\\think\\Agentic Layer\\morse\\experiments\\pm1-rx\\harness\\results\\pilot_v14c"
+  ]
+}

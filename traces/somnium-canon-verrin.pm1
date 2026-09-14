@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "somnium-canon-verrin",
+  "timestamp": "2026-08-29T21:15:58.103211+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 540,
+  "tool_calls": 32,
+  "key_files": [
+    "src/canon/canon.ts",
+    "src/canon/verrin.ts",
+    "src/canon/canon.test.ts",
+    "src/canon/verrin.test.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "somnium-canon-verrin",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--.........................--...--.........--...--........-.--...-........................................-.--...-",
+  "action": "Somnium canon lane: canon loader/validator + Verrin seed library"
+}

@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "somnium-poc-integration",
+  "timestamp": "2026-08-29T21:55:45.993545+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 12,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\Somnium-poc\\src\\canon\\verrin.ts",
+    "C:\\Users\\think\\Project_v2\\Somnium-poc\\src\\canon\\verrin.test.ts",
+    "C:\\Users\\think\\Project_v2\\Somnium-poc\\tests\\acceptance\\poc-acceptance.test.ts",
+    "C:\\Users\\think\\Project_v2\\Somnium-poc\\qms\\records\\verifications\\2026-08-30T04-55-21-ver-001-poc-l2-gate.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "somnium-poc-integration",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................--.-..-.........-.--...-........................................-.--...-",
+  "action": "Somnium PoC integration: reconciled 6 fixer lanes, fixed REQUIRES edge direction in Verrin seed + acceptance genealogy call, 94/94 tests, verifier APPROVE, committed 737d668"
+}

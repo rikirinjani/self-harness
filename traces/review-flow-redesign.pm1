@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "review-flow-redesign",
+  "timestamp": "2026-09-07T09:21:40.095951+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 60,
+  "tool_calls": 6,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\chatbot\\bridge\\src\\core\\router.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "review-flow-redesign",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Redesigned review flow: ALL queries go to Telegram group. Curated → group as JAWABAN BAKU (ACC to send). LLM answer → group as DRAF (ACC to send). Can't answer → group as TIDAK TERJAWAB with R-ID (admin /edit to write answer). User always gets meneruskan ke tim immediately. Deployed."
+}

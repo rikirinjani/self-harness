@@ -1,0 +1,10 @@
+﻿{
+    "timestamp":  "2026-08-14T10:02:34Z",
+    "agent":  "oracle",
+    "outcome":  "fail",
+    "category":  "tool",
+    "severity":  "low",
+    "summary":  "Startup checks initially targeted a nonexistent workspace-relative self-harness path.",
+    "root_cause":  "I assumed self-harness was under the project working directory instead of using the canonical absolute path from RULES.md; the retrace and crashlog commands failed before I corrected the path.",
+    "trace_id":  "20260814-tool-startup-path-correction"
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-08-14T10:37:00Z",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "category": "tool",
+  "severity": "low",
+  "summary": "The delegated review result was followed by an invalid-JSON scheduler warning.",
+  "root_cause": "The review result was returned, but the task-call wrapper emitted an immediate-action JSON parse warning after execution; no project files were affected.",
+  "trace_id": "review-task-json-warning"
+}

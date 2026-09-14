@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "exp001-primary",
+  "timestamp": "2026-09-10T20:44:19.747000+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 13200,
+  "tool_calls": 0,
+  "key_files": [
+    "experiment-results/mc-lab/primary/summary.json",
+    "experiment-results/mc-lab/primary/diagnostics.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "exp001-primary",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-........................-.--...-........................................-.--...-",
+  "action": "EXP-001 primary run N=10000 x H=10,20 (H=50 omitted: budget gate, projects to 26.8h/0.80 USD > Stage B 0.25 USD). Results: FDR-significant 13/12 vs expected-FP 11.8/13.9 (at/below noise floor) = STRUCTURAL NULL. Funnel translation 0%. Superlinear cost 0.303/1.013 s/sim."
+}

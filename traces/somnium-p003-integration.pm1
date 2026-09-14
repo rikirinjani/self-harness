@@ -1,0 +1,41 @@
+{
+  "pm1_version": 1,
+  "session_id": "somnium-p003-integration",
+  "timestamp": "2026-08-30T20:39:01.611082+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 60,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\Somnium-causal\\src\\derive\\judgment.ts",
+    "C:\\Users\\think\\Project_v2\\Somnium-causal\\src\\derive\\judgment.test.ts",
+    "C:\\Users\\think\\Project_v2\\Somnium-causal\\src\\derive\\propagation.ts",
+    "C:\\Users\\think\\Project_v2\\Somnium-causal\\src\\derive\\propagation.test.ts",
+    "C:\\Users\\think\\Project_v2\\Somnium-causal\\src\\derive\\world-state.ts",
+    "C:\\Users\\think\\Project_v2\\Somnium-causal\\src\\derive\\world-state.test.ts",
+    "C:\\Users\\think\\Project_v2\\Somnium-causal\\src\\derive\\contradictions.ts",
+    "C:\\Users\\think\\Project_v2\\Somnium-causal\\src\\derive\\ordering.test.ts",
+    "C:\\Users\\think\\Project_v2\\Somnium-causal\\src\\canon\\types.ts",
+    "C:\\Users\\think\\Project_v2\\Somnium-causal\\docs\\ARCHITECTURE-RECONNAISSANCE.md",
+    "C:\\Users\\think\\Project_v2\\Somnium-causal\\qms\\trace-matrix.json",
+    "C:\\Users\\think\\Project_v2\\Somnium-causal\\qms\\records\\nonconformities\\2026-08-31T02-46-51-ncr-002-refuted-claim-survived.json",
+    "C:\\Users\\think\\Project_v2\\Somnium-causal\\qms\\records\\verifications\\2026-08-31T02-46-51-ver-003-p003-l2-gate.json",
+    "C:\\Users\\think\\Project_v2\\Somnium-causal\\HANDOFF.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "somnium-p003-integration",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................................--...--........--.-..-.........................................-.--...-",
+  "action": "Somnium P-003 integration: wrote judgment model + propagation rewrite directly after 2 fixer lanes returned empty, reconciled 8 lanes, caught fact-node double-count and sever/addEdge non-commutativity, closed 2 L2 REJECTs, authored report section 17, ncr-002 + ver-003, 225 tests"
+}

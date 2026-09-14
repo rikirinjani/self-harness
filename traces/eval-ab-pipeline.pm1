@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "eval-ab-pipeline",
+  "timestamp": "2026-09-10T07:02:16.348022+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 4,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\eval_ab_retrieval.py C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\eval_ab_judge.py C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\eval_ab_metrics.py C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\requirements.txt"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "eval-ab-pipeline",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................-.--...-........-.--...-........................................-.--...-",
+  "action": "Wrote complete A/B eval pipeline: eval_ab_retrieval.py (6 models + BM25 on 500K sub-corpus), eval_ab_judge.py (DeepSeek 0-3 grading), eval_ab_metrics.py (nDCG@10, Recall@20, MRR@10 per-category), eval/requirements.txt"
+}

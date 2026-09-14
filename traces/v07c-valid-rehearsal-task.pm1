@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "v07c-valid-rehearsal-task",
+  "timestamp": "2026-08-22T08:35:24.739047+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 15,
+  "key_files": [
+    "results/v07c/valid_rehearsal/PM1_V07C_VALID_REHEARSAL_TASK_VALIDATION.md",
+    "results/v07c/valid_rehearsal/PM1_V07C_VALID_REHEARSAL_TASK_VALIDATION.json",
+    "results/v07c/valid_rehearsal/rehearsal_manifest.json",
+    "results/v07c/valid_rehearsal/manifest.json",
+    "results/v07c/valid_rehearsal/task_data.json",
+    "results/v07c/valid_rehearsal/validation.json",
+    "v07c/validate_task_v2.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v07c-valid-rehearsal-task",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "V.7-C Valid Rehearsal Task Recovery: Selected django__django-11099 from SWE-bench Lite. Validated: commit resolves, bug exists (regex uses $ not Z), test patch adds 2 failing tests, baseline 22/22 pass, repo 35.2MB. 4 candidates rejected. VALID REHEARSAL TASK READY. Awaiting authorization for REHEARSAL-002."
+}

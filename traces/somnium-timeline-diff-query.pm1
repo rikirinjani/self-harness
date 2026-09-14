@@ -1,0 +1,38 @@
+{
+  "pm1_version": 1,
+  "session_id": "somnium-timeline-diff-query",
+  "timestamp": "2026-08-29T21:06:07.943966+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 36,
+  "key_files": [
+    "src/timeline/rewind-point.ts",
+    "src/timeline/universe.ts",
+    "src/diff/diff.ts",
+    "src/diff/projections.ts",
+    "src/query/status.ts",
+    "src/query/query.ts",
+    "src/cli/main.ts",
+    "src/timeline/rewind-point.test.ts",
+    "src/timeline/universe.test.ts",
+    "src/diff/diff.test.ts",
+    "src/query/query.test.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "somnium-timeline-diff-query",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--.........................--...--.........--...--........--.-..-.........................................-.--...-",
+  "action": "Somnium timeline/diff/query/cli lane: rewind-point validation, universe genealogy, WorldDiff, projections, queries, CLI"
+}

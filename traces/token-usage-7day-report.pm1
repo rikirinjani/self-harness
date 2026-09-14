@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "token-usage-7day-report",
+  "timestamp": "2026-09-02T02:28:08.301931+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 9,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "token-usage-7day-report",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........................................................-.--...-",
+  "action": "Queried opencode.db (10.5 GB sqlite, read-only immutable URI) for 7-day token usage. Schema discovery: message.data is JSON with tokens.{input,output,reasoning,cache.{read,write}} + cost + modelID; session table also carries denormalized token columns but message-level was authoritative. Window 2026-08-26 09:27 to 2026-09-02 09:27: 2,075,959,909 total tokens across 7,414 assistant msgs, reported cost .8476. Split: input 1,092,212,300 / cache_read 975,967,103 / output 5,723,689 / reasoning 2,056,817 / cache_write 0. Peak day 2026-08-31 = 1,051,567,967 tok (50.7% of week) in 4,316 msgs, matching the Redmi Note 8 ADB session. Top models by tokens: claude-opus-4-8-thinking 797M, deepseek-v4-flash 746M, claude-opus-4-8 202M. Data quality: 78/7414 rows (1.1%) report zero tokens; cache_write is 0 across the entire window which is suspect for a provider-side accounting gap rather than genuinely no cache writes."
+}

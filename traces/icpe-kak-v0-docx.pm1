@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "icpe-kak-v0-docx",
+  "timestamp": "2026-09-03T13:46:05.546158+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 150,
+  "tool_calls": 6,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\hisfarma-temp\\ICPE\\KAK_SeminarNasional_HKN62_V0.docx",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\md2docx_kak.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "icpe-kak-v0-docx",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Converted KAK md draft to docx via python-docx (no pandoc on machine): KAK_SeminarNasional_HKN62_V0.docx, 3 tables (logo 1x2, jadwal 9x7, CV 11x2), 49 placeholder runs highlighted yellow, TNR 12 justified; verified content coverage md->docx complete"
+}

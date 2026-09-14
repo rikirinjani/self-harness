@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "s025-incremental-phase-a",
+  "timestamp": "2026-09-11T04:20:01.999430+00:00",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "duration_s": 2400,
+  "tool_calls": 12,
+  "key_files": [
+    "src/derive/propagation.ts",
+    "experiments/s025/REPORT.md",
+    "experiments/s025/probe.ts",
+    "qms/records/requirements/2026-09-11T16-30-00-req-025-s025-incremental-phase-a.json"
+  ],
+  "failure": {
+    "category": "design-defect",
+    "severity": "high"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "s025-incremental-phase-a",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................-.--...-........---..-..........--.-..-.........-.--...-.........................--...--........-.--...-",
+  "action": "S025 incremental Phase-A fixpoint equivalence: from frozen S024 (19f6c98). Experimental src addition isolated to S025 (new phaseATruth = authoritative positiveFixpoint with a seed). VERDICT BLOCKED. Shadow engine: reset the affected dependency closure to NEITHER, then call the authoritative seeded Phase A; no second FOUR evaluator, no reimplemented support rule. RESULT: NOT equivalent - 800 prefixes, 152 mismatched (19.0%). First divergence: ordos seed=0 prefix=5 iv=negateEvent:ev/vaela-invested, 3 nodes outside an 11-node reset closure. ROOT CAUSE: the from-scratch Phase A is a sticky LEAST fixpoint over the whole node set; a support change re-decides nodes not reverse-reachable from the directly-changed nodes (S015/S017 at the Phase-A level), and seeded sticky nodes are never re-evaluated. WHY BLOCKED: a sound reset superset is the whole model = from-scratch propagation. S021 aggregates are exact and not the failure. Baseline 624/624, verify-facts 3/3, frozen hashes unchanged."
+}

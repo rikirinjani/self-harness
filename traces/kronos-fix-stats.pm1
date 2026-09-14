@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "kronos-fix-stats",
+  "timestamp": "2026-08-31T11:35:14.251367+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "src/experiment/stats.ts",
+    "src/experiment/types.ts",
+    "src/experiment/stats.test.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kronos-fix-stats",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................................................-.--...-........................................-.--...-",
+  "action": "Rebuilt stats: one-sample t p-values, BH-FDR + Bonferroni, degenerate guards, noise-floor summary fields"
+}

@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "exp-001e-closeout",
+  "timestamp": "2026-09-11T14:24:02.564732+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 12,
+  "key_files": [
+    "src/sectors/deers-rock-adapter.ts",
+    "src/sectors/exp-001e-branch-isolation.test.ts",
+    "docs/experiments/EXP-001E-branch-isolation-repair-and-verification.md",
+    "qms/records/verifications/2026-09-11-ver-022-exp001e-branch-isolation.json",
+    "C:/Users/think/self-harness/failures/2026-09-11T14-12-00-verification-gap-shallow-fingerprint-exp001e.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "exp-001e-closeout",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "EXP-001E closeout: committed fix as e9d0fed (14 files: adapter deepClone repair, new regression test, report, experiment scripts, results; nothing else staged). Wrote QMS verification VER-2026-022 (PASS/VERIFIED). Wrote failure record for process gap: shallow count-based fingerprints delayed root-cause identification (deep field diff was needed). Retrace clean (0 untraced project files). MemPalace drawers + diary filed."
+}

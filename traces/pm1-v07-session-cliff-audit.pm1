@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-v07-session-cliff-audit",
+  "timestamp": "2026-08-22T04:11:46.856830+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 1200,
+  "tool_calls": 5,
+  "key_files": [
+    "pm1-trading-benchmark\\results\\v07\\empty_probability\\reconciliation\\PM1_V07_EMPTY_SESSION_AUDIT.md",
+    "pm1-trading-benchmark\\results\\v07\\empty_probability\\reconciliation\\PM1_V07_EMPTY_SESSION_AUDIT.json",
+    "pm1-trading-benchmark\\results\\v07\\empty_probability\\reconciliation\\PM1_V07_EMPTY_PROBABILITY_RECONCILIATION.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-v07-session-cliff-audit",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................---..-..........-.--...-........-.--...-........................................-.--...-",
+  "action": "Session cliff audit: headers NOT persisted (rate-limit mechanism undetermined); exact 60-call ordering recovered (cliff at call 15 to 16); pre-cliff calls 1-15 = 0% EMPTY with full condition coverage (all 6 conditions, all 3 ceilings, both prompts); post-cliff calls 16-60 = 100% EMPTY; no condition-specific effect; session-wide cliff. Cross-run audit: all adjacent MiMo runs (Flight 2, runner-chain, captures) show 0% EMPTY with ≤25 continuous calls; Flight 2 shows 0% EMPTY at 150 calls (different conditions); cliff is NOT universal. Classification: B很多玩家 (session-position confirmed) + D (cannot generalize). PM-1 contamination: none detected."
+}

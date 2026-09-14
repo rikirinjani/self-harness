@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "p-025-external-validation",
+  "timestamp": "2026-09-02T13:54:44.005337+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 3900,
+  "tool_calls": 55,
+  "key_files": [
+    "docs/P-025-PREDICTIONS.md",
+    "docs/P-025-RELEASE-VALIDATION.md",
+    "docs/INDEPENDENT-VALIDATION-BRIEF.md",
+    "docs/INSTALLATION.md",
+    "scripts/blind-doc-snippet.mjs",
+    ".gitignore"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "p-025-external-validation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-..........-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "P-025 External Release Validation COMPLETE. Commit 7874947 pushed; hosted CI run 33638489781 green 8/8. DECISION: HOLD at 1.0.0-rc.1. Predictions P1-P8 written first; SIX CONFIRMED, TWO FALSIFIED and reported as failures not deferrals: P2 npm publication (no credentials on Mac mini or Windows, npm whoami ENEEDAUTH, no .npmrc, no NPM_TOKEN - publication NOT simulated, availability NOT claimed) and P5 independent developer validation (none available - user confirmed 'No one available'). CLOSED THIS PASS: GitHub release v1.0.0-rc.1 published with both assets downloadable by public URL; downloaded tarball sha256 020d6e58 matches release digest and sha1 871b33cd matches local audited build exactly; clean consumer from public download 51/51; hosted CI run 33626994835 8/8 green with 6-way engine matrix; deterministic replay 5404d32e now reproduced in SEVEN environments (local macOS arm64 + linux/macos/windows x node 20/22 hosted); Godot 4.3/4.4/4.7.2 each 23/23 FROM THE RELEASED ADDON not the repo. P0 PACKAGING DEFECT FOUND AND FIXED: addon zip built with Windows Compress-Archive used backslash path separators, unzip on macOS/Linux warned and produced unreliable layout, would have broken every non-Windows Godot user; rebuilt with zip -rq, entries now addons/causality_engine/... so unzip at project root lands correctly, release asset replaced sha256 ff36cd6a, download re-verified. THREE P1 doc defects fixed (git-clone-only claim, Godot clone assumption, undocumented npm 404). Blind time-to-first-result 8min to under 2min. Added INDEPENDENT-VALIDATION-BRIEF.md. Zero engine files touched, 12/12 frozen invariants unchanged, zero semantic defects. Blocking gate B1 unchanged from P-024: no developer outside the project has used CE."
+}

@@ -1,0 +1,41 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260820T153250-Fixer-cli",
+  "timestamp": "2026-08-20T15:32:50.532500+00:00",
+  "agent": "Fixer",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 20,
+  "key_files": [
+    "v06/lib/llm_api.py",
+    "v06/lib/llm_runner_creds.py",
+    "v06/lib/tokens.py",
+    "v06/lib/workers.py",
+    "v06/lib/chain.py",
+    "v06/lib/checkpoint.py",
+    "v06/lib/runner.py",
+    "v06/lib/repro.py",
+    "v06/configs/defaults.json",
+    "v06/tests/test_corrections.py",
+    "results/v06/corrected_backfill/PM1_V06_HARNESS_CORRECTION_REPORT.md",
+    "results/v06/corrected_backfill/PM1_V06_CORRECTED_BACKFILL_DESIGN.md",
+    "results/v06/corrected_backfill/PM1_V06_CORRECTED_BACKFILL_PREFLIGHT_PLAN.md",
+    "results/v06/corrected_backfill/corrected_backfill_manifest.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260820T153250-Fixer-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................---..-..........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "V0.6 harness correction + corrected-backfill design (PREPARATION ONLY, 0 API calls, no historical modification). Phase A implemented: max_tokens default 512->2048 (defaults.json + per-model max_tokens_by_model + env override in llm_runner_creds); usage persistence (llm_api normalize_usage + LLMEmptyContentError(usage) no-retry-on-empty + LLMAPIHTTPError(status,error_body); TokenAccounting extended with total_tokens/reasoning_tokens/model/provider/max_tokens/temperature; LLMWorker retains usage on failure; chain passes live identity; checkpoint.mark_run_failed(meta); runner persists failed_calls/<run_id>.json usage artifacts, --run-class flag recorded in status/summary/checkpoint, live model config passed to build_reproducibility_record fixing defaults.json attribution bug). Tests: v06/tests/test_corrections.py (16 offline tests, monkeypatched HTTP). Full suite: 152 passed / 0 failed. Phase B: 4 deliverables under results/v06/corrected_backfill/ (harness correction report, backfill design with same-config analysis + recovery criteria + budget 250 calls/90min/~365K tokens/~0.33 USD TO VERIFY, 20-item preflight gate plan, machine-readable manifest). e2/e4 config hashes unchanged (484429740bd49f68 / db1c8f460e3f2bc5). Status: READY FOR CORRECTED BACKFILL PREFLIGHT. Nothing executed/uploaded/published."
+}

@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260814-tool-missing-benchmark-directory",
+  "timestamp": "2026-08-14T10:03:54.065331+00:00",
+  "agent": "oracle",
+  "outcome": "fail",
+  "duration_s": 10,
+  "tool_calls": 1,
+  "key_files": [],
+  "failure": {
+    "category": "tool",
+    "severity": "low"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260814-tool-missing-benchmark-directory",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........-.-.-.-........-.--...-........-.--...-........-.--...-........................-.--...-........-.--...-........-.--...-",
+  "action": "Checked whether the new pm1-trading-benchmark directory already exists; glob failed because the directory is absent, confirming there is no existing implementation to inspect"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "fail-2026-08-31-provenance-ids-leak-into-state-identity",
+  "timestamp": "2026-08-31T09:20:00Z",
+  "category": "architecture",
+  "agent": "orchestrator",
+  "task": "CE lifecycle pass — precondition probe for the mandatory retention-determinism test (brief section 13)",
+  "outcome": "partial",
+  "error": "PROVENANCE LEAKED INTO WORLD IDENTITY. `stateHash` included `pendingContributions[region][domain].causes` and `.items[].cause`, which are provenance NODE IDS. Two worlds with byte-identical physics (equal pressure, raw, netValence, negativeRaw, positiveRaw, origin, generation) hashed differently purely because their provenance ids were renumbered: 00e48a6ee418198e44ac8b3a vs eb44ee1342765e0632bc82b5. Since renumbering ids is what every compaction and every schema migration does, the brief's mandatory test — identical state plus different retained history must behave identically going forward — could not have passed, and the documented state/trace split was false in this one place.",
+  "rootCause": "When `PendingEntry` was introduced during the feedback pass to carry multi-parent provenance, and again when it was restructured to hold `items` for canonical summation, the cause ids were stored INSIDE the entry rather than in a parallel trace-side map. The equivalent problem had already been identified and fixed for ledger causes in section 15.5 (ledgerCauses was moved off Region and onto WorldState precisely so node ids would not enter hashed region state), but the same reasoning was never applied to pending contributions. The persistence pass then added `pendingContributions` to `stateHash` — correctly, since unresolved causal work is load-bearing state — which promoted a latent inconsistency into an active identity leak.",
+  "whatActuallyHappened": "Before writing any lifecycle code, a probe built two identical worlds and renumbered provenance ids in one of them exactly as compaction would. Physical scalars were bit-identical; stateHash differed. Dropping all provenance nodes did NOT change stateHash (so the split held for the provenance array itself), and rewriting ledgerCauses did not either — the leak was confined to pendingContributions. Had the lifecycle work been built on top of this, compaction would have appeared to change the world.",
+  "mitigation": "Split the pending bucket the same way ledgerCauses was split: `PendingItem` now carries only physical fields (magnitude, valence, origin, generation) and cause ids moved to `WorldState.pendingCauses`, a trace-side map keyed `\"regionId:domain\"` that is covered by traceHash and excluded from stateHash. Canonical summation is unaffected: the sort tiebreak on `cause` was removed, and items that tie on (magnitude, valence) are interchangeable for summation because the sum only reads magnitude and magnitude*valence, so bit-identical results are preserved. Regression tests assert that renumbering every provenance id leaves stateHash unchanged while traceHash changes, and that compaction preserves forward determinism.",
+  "files": [
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\core\\types.ts",
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\core\\propagation.ts",
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\core\\hash.ts",
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\core\\world.ts"
+  ]
+}

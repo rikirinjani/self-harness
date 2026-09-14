@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "cokro-todo-rebuild-2026-08-29",
+  "timestamp": "2026-08-29T11:52:16.257675+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 6,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\docs\\TODO-2026-08-29.md",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\docs\\TODO-2026-08-21.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "cokro-todo-rebuild-2026-08-29",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................-.--...-........-.--...-........................................-.--...-",
+  "action": "Rebuilt COKRO RAG roadmap as TODO-2026-08-29.md: harder eval set as TODO 1, PMC full-text acquisition spec (new flat bucket layout, licence filter, section-aware chunking) as TODO 2, model A/B as TODO 3, remaining items reordered; marked TODO-2026-08-21.md superseded"
+}

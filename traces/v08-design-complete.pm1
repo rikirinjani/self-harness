@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "v08-design-complete",
+  "timestamp": "2026-08-24T02:07:48.576486+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 15,
+  "key_files": [
+    "results/v08/design/PM1_V08_DESIGN.md",
+    "results/v08/design/PM1_V08_DESIGN.json",
+    "results/v08/design/evaluator_validity_protocol.md",
+    "results/v08/design/patch_provenance_protocol.md",
+    "results/v08/design/task_selection_protocol.md",
+    "results/v08/design/manifest.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v08-design-complete",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "V.8 DESIGN COMPLETE: Master design (PM1_V08_DESIGN.md) + 8 supporting documents. Covers: research question, hypotheses, primary outcome, experimental factors, task selection, sample-size rationale, evaluator validity protocol (G0), patch provenance protocol (G1), model provenance, failure taxonomy, replication strategy, negative-result criteria, statistical analysis plan, reproducibility, interpretation boundaries. Design-only: no implementation. Next gate: G0 Evaluator Validity for all 20 tasks."
+}

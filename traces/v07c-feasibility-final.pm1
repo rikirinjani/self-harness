@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "v07c-feasibility-final",
+  "timestamp": "2026-08-22T07:31:43.655002+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 60,
+  "tool_calls": 40,
+  "key_files": [
+    "results/v07c/feasibility_probe/PM1_V07C_FEASIBILITY_PROBE_REPORT.md",
+    "results/v07c/feasibility_probe/PM1_V07C_FEASIBILITY_PROBE_RESULTS.json",
+    "results/v07c/feasibility_probe/manifest.json",
+    "v07c/run_feasibility_probe.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v07c-feasibility-final",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-..........--...--........-.--...-........................................-.--...-",
+  "action": "V.7-C Feasibility Probe FINALIZED: 8/8 local phases PASS + 3/3 HF Space phases PASS. Task PROBE-001 (Jinja2 off-by-one). Both environments verified: local (win32 Python 3.12.10) and HF Docker Space (balade/pm1-v07c-calibration). MiMo-V2.5 API functional in both. Deliverables written: report, results JSON, manifest. FEASIBILITY VERIFIED."
+}

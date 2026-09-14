@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260819T140732-Fixer-cli",
+  "timestamp": "2026-08-19T14:07:32.488375+00:00",
+  "agent": "Fixer",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 6,
+  "key_files": [
+    "v06/lib/preflight.py",
+    "v06/tests/test_artifact_isolation.py",
+    "results/v06/preflight/preflight_report.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260819T140732-Fixer-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--.........................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Fixed V0.6 live-connectivity probe wiring bug: preflight.run() eagerly invoked self._check_connectivity(model_config) when registering the check, so add() received the resulting tuple and raised TypeError 'tuple' object is not callable before any network call. Fix: wrap in lambda with bound default arg (preflight.py line ~115). Added offline regression test monkeypatching the probe (test_artifact_isolation.py). Verification: pytest 137/137 pass; python -m v06.lib.preflight --live-connectivity-check now PASSES with real detail 'models endpoint reachable'; preflight report contains no credentials."
+}

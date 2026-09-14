@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "somnium-verifier-p007-gate3",
+  "timestamp": "2026-09-03T13:49:18.109467+00:00",
+  "agent": "verifier",
+  "outcome": "fail",
+  "duration_s": 0,
+  "tool_calls": 47,
+  "key_files": [
+    "src/derive/world-state.ts",
+    "src/derive/propagation.ts",
+    "src/canon/hash.ts",
+    "src/diff/diff.ts",
+    "src/derive/semantic.ts",
+    "src/diff/semantic.test.ts",
+    "docs/P007-WORLDDIFF.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "somnium-verifier-p007-gate3",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........-.--...-.........................--...--........--.-..-.........................................-.--...-",
+  "action": "L2 verifier gate round 3 on Somnium P-007 (gate-2 remediation: canonical value comparison across every semantic dimension, contentKey over whole records, group justification narrowed). Verdict REJECT: gate-2 blockers 1 and 2 both CLOSED and verified by execution, but Claim 2 fails on a NEW instance of the same class one level up - the semantic-state comparison MECHANISM (id-keyed Map for facts/edges, content-Set for the three record dimensions) disagrees with the ARRAY/multiset that semanticState folds into stateHash. Executable counterexample on a canon validateCanon and loadCanon both accept, via two ordinary accepted setFact writes: stateHash moves, all 13 diff dimensions empty, and a genuine value change is invisible (INV violated in both directions). Second route puts a wrong value into workStatuses (a semanticState dimension) so INV cannot catch it. 602/602 tests, tsc 0, verify-facts 3/3, frozen tag 5b41deda, canon hashes e4c79cec/51f32b2e unmoved, no test bent, determinism and worldDiff(W,W) identity hold."
+}

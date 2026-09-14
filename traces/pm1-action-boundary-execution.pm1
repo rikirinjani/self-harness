@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-action-boundary-execution",
+  "timestamp": "2026-08-21T03:30:39.172762+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 1200,
+  "tool_calls": 8,
+  "key_files": [
+    "pm1-trading-benchmark\\results\\v06\\action_boundary_design\\PM1_V06_ACTION_BOUNDARY_EXECUTION_REPORT.md",
+    "pm1-trading-benchmark\\results\\v06\\hop_records\\v0.6_action_boundary\\b2-F-A+B+C-drop-100%-100%-seed11-h10-t1.json",
+    "pm1-trading-benchmark\\results\\v06\\hop_records\\v0.6_action_boundary\\b2-F-A+B+C-drop-80%-80%-seed11-h10-t1.json",
+    "pm1-trading-benchmark\\results\\v06\\hop_records\\v0.6_action_boundary\\b2-F-A+B+C-drop-70%-70%-seed11-h10-t1.json",
+    "pm1-trading-benchmark\\results\\v06\\hop_records\\v0.6_action_boundary\\b2-F-A+B+C-drop-60%-60%-seed11-h10-t1.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-action-boundary-execution",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................---..-..........-.--...-........--.-..-.........................................-.--...-",
+  "action": "Action-equivalence boundary flight executed: 6 budget levels (100/90/80/70/60/50%) x seed11 x horizon10 = 60 calls on MiMo-v2.5@2048. All 60/60 calls completed non-empty. Results: 100%=10/10 PASS, 90%=10/10 PASS, 80%=10/10 PASS, 70%=7/10 PASS + 3 SELECTION_ERROR, 60%=1/10 PASS + 9 SELECTION_ERROR, 50%=0/10 PASS. Action-equivalence boundary located between 80% and 70%. Density paradox confirmed (higher density at 60%/50% does not predict PASS). Run class: v0.6_action_boundary."
+}

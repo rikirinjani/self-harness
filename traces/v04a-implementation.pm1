@@ -1,0 +1,35 @@
+{
+  "pm1_version": 1,
+  "session_id": "v04a-implementation",
+  "timestamp": "2026-08-16T08:30:21.444808+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 0,
+  "key_files": [
+    "lib/v04a_state.py",
+    "lib/v04a_generator.py",
+    "lib/v04a_worker.py",
+    "lib/v04a_chain.py",
+    "run_v04a_pilot.py",
+    "run_v04a_full.py",
+    "tests/test_v04a.py",
+    "results/v0.4a/V0.4a_PREEXPERIMENT_REPORT.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v04a-implementation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........................--.-..-.........................................-.--...-",
+  "action": "V0.4a implementation: 100-hop PM-1 sequential handoff benchmark. Created lib/v04a_state.py (PM-1 encode/decode, state digests), v04a_generator.py (10 deterministic chains x 100 hops), v04a_worker.py (fresh-context LLM + deterministic sim workers, no oracle import), v04a_chain.py (runner, oracle validation, 9-class taxonomy, metrics, long-horizon analysis), run_v04a_pilot.py (40 calls), run_v04a_full.py (4000 calls), tests/test_v04a.py (66 tests), results/v0.4a/V0.4a_PREEXPERIMENT_REPORT.md. All 186 tests pass. 0 API calls."
+}

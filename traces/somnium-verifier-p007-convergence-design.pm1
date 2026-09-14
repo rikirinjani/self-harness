@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "somnium-verifier-p007-convergence-design",
+  "timestamp": "2026-09-04T21:26:17.494406+00:00",
+  "agent": "verifier",
+  "outcome": "fail",
+  "duration_s": 0,
+  "tool_calls": 3,
+  "key_files": [
+    "docs/P007-CONVERGENCE.md",
+    "src/derive/semantic.ts",
+    "src/diff/diff.ts",
+    "src/derive/world-state.ts",
+    "src/canon/hash.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "somnium-verifier-p007-convergence-design",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........-.--...-........................-.--...-........--.-..-.........................................-.--...-",
+  "action": "Pre-implementation design review of P-007 semantic comparison convergence architecture (docs/P007-CONVERGENCE.md), conducted by orchestrator after 5 review-lane dispatch failures (credits x2, ECONNRESET, terminated, invalid request). NO-GO as written with mandatory corrections. Execution-backed findings: (Q2) keys cannot break INV when representation IS the keyed map - keys break faithfulness instead; Ordos negate-old-warden-dies makes two held_by facts co-effective in one cell TODAY, so a too-coarse key collides on a legal world, and recorded-not-thrown collision policy = silent record loss on legal worlds - must be hard error; (Q1) typed struct + declaration table still leaves two maintenance surfaces - the table must BE the representation and worldDiff must accept only representations by signature; (Q3) memoization by declared canon.hash is unsound (untrusted cache key) - memoize by computed canonical encoding; (Q4) canonicalJson injectivity correctly ranked first, WorldState-decomposition scoping is the gates-1-4 pattern repeating and must be a P-008 gate precondition; dependency map five-of-eight verified correct; UNKNOWN normalization closes not moves; factOverrides/edge rendering genuinely presentation, statusChanges union-with-default is comparison wearing presentation."
+}

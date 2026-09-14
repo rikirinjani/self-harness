@@ -1,0 +1,35 @@
+{
+  "pm1_version": 1,
+  "session_id": "p004-stats-reassessment",
+  "timestamp": "2026-08-31T13:11:30.209725+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 20,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\stats\\table.csv",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\stats\\results.json",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\stats\\summary.md",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\analyze.js",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\inspect.js",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\inspect2.js",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\extras.js",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr-audit\\levels.js"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "p004-stats-reassessment",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................---..-..........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Statistical reassessment of P-004 committed artifacts: recomputed 156-metric stats from runs.json, reproduced 14/14 significant flags, multiplicity analysis (BH q=.05/0.10 -> 9, Bonferroni -> 8), 13 duplicate pairs, 1 fp artifact (annualEmissionsNoise d=-9e15), horizon audit, power analysis, verdict"
+}

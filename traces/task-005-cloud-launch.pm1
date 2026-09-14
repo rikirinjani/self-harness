@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "task-005-cloud-launch",
+  "timestamp": "2026-09-13T06:59:49.374167+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 0,
+  "key_files": [
+    "experiments/pm1-rx/harness/run_confirmatory.py",
+    "experiments/pm1-rx/harness/pm1rx/runner.py",
+    "experiments/pm1-rx/schema/experiment-result.schema.json",
+    "experiments/pm1-rx/harness/REPRODUCIBILITY_MANIFEST.md",
+    "experiments/pm1-rx/harness/results/variance_pilot_v14b/contrasts.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task-005-cloud-launch",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........................--.-..-.........................................-.--...-",
+  "action": "Task 005: Launched PM-1-RX Confirmatory Experiment 001 on Vultr cloud (155.138.237.162). 966 task runs (322 x 3 horizons x 6 arms). Variance pilot: n=322 required (F-C L4 binding). Pipeline verified: 26s/task, ~7hr total. Git commit 54a2872. Checkpoint/resume enabled."
+}

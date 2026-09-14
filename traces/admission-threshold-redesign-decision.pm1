@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "admission-threshold-redesign-decision",
+  "timestamp": "2026-09-10T23:52:10.578819+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "Kronos Engine/docs/experiments/admission-threshold-redesign.md",
+    "Kronos Engine/docs/experiments/admission-threshold-protocol.md",
+    "Kronos Engine/docs/experiments/admission-threshold-design.md",
+    "Kronos Engine/docs/experiments/admission-threshold-null.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "admission-threshold-redesign-decision",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Admission-threshold redesign decision (Candidate #3 round 2). Evaluated receiver-boundary design vs endogenous observational design. Boundary design (impose m=1.3 control / m=1.5 intervention at adapter boundary, same DR seed) is clean: isolates receiver quantization, preserves DR unchanged, uses only naturally-reachable multipliers (rejected m=2.0 as hypothetical). Observational design rejected (sticky multiplier limits variation; m=1.5 co-moves with war/weather confounds; baseAdmit not independent of events). m=1.5 analysis: P(baseAdmit=2)=1/3, +0.333 admissions/tick, ~+6.7 over 20 ticks. Primary endpoint = admission count (not occupancy/mortality; discharge closed). Verdict: FREEZE BOUNDARY PROTOCOL. Relation to Phase F: orthogonal (B vs C), complementary. No experiment run; no model/manuscript/QMS changes."
+}

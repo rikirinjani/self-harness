@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "etiket-obat-session",
+  "timestamp": "2026-08-19T05:53:46.646859+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 4200,
+  "tool_calls": 24,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\etiket-obat\\html\\etiket-1-standar.html",
+    "C:\\Users\\think\\Agentic Layer\\etiket-obat\\html\\etiket-2-grid.html",
+    "C:\\Users\\think\\Agentic Layer\\etiket-obat\\html\\etiket-3-qr.html",
+    "C:\\Users\\think\\Agentic Layer\\etiket-obat\\html\\etiket-4-peringatan.html",
+    "C:\\Users\\think\\Agentic Layer\\etiket-obat\\html\\etiket-5-lansia.html",
+    "C:\\Users\\think\\Agentic Layer\\etiket-obat\\preview.html",
+    "C:\\Users\\think\\.config\\opencode\\oh-my-opencode-slim.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "etiket-obat-session",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Etiket obat termal: delegasi designer 5 varian label HTML->PNG (616px @203DPI), re-render varian 4 setelah perbaikan copy Cefadroxil, verifikasi dimensi System.Drawing"
+}

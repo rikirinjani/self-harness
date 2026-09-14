@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "reject-list",
+  "timestamp": "2026-08-28T02:17:05.557691+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 6,
+  "key_files": [
+    "Project_v2/chatbot/bridge/src/core/router.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "reject-list",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Added /reject_list (shows pending + rejected reviews) and /resolve now works for both U-IDs and R-IDs (rejected reviews go to KB). /reject stores in rejectedReviews map."
+}

@@ -1,0 +1,10 @@
+﻿{
+    "timestamp":  "2026-08-14T11:06:00Z",
+    "agent":  "oracle",
+    "outcome":  "fail",
+    "category":  "external",
+    "severity":  "medium",
+    "summary":  "Required MemPalace add-drawer archival for Experiment v0.1 was unavailable.",
+    "root_cause":  "The prescribed mempalace_mempalace_add_drawer command is not exposed; only the installed mempalace.exe CLI is available.",
+    "trace_id":  "20260814-external-mempalace-v01-archive-unavailable"
+}

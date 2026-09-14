@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "proposal-bisnis-v3-ppn-fix",
+  "timestamp": "2026-09-14T03:04:31.628142+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 240,
+  "tool_calls": 6,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\chatbot\\PROPOSAL_BISNIS.md",
+    "C:\\Users\\think\\Project_v2\\chatbot\\PROPOSAL_BISNIS_v3.pdf"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "proposal-bisnis-v3-ppn-fix",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "PPN correction: recomputed all service costs with PPN 11% (VPS 3.114.000, domain 222-389k, LLM estimates +11%, WhatsApp Rp406/msg, dev fee 10.545.000, totals 16,25-17,35jt); retail items (HP, nomor) kept as-is since already PPN-inclusive; regenerated v3 PDF (165KB)"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "fail-2026-08-30-config-comparison-allowlist-bug",
+  "timestamp": "2026-08-30T22:10:00Z",
+  "category": "architecture",
+  "agent": "orchestrator",
+  "task": "CE persistence pass — configuration compatibility check (brief section 12)",
+  "outcome": "partial",
+  "error": "The configuration-compatibility check silently accepted INCOMPATIBLE configs. A checkpoint saved with thresholds {civic:0.6, ecology:0.6, economy:0.6, faction:0.6} compared as IDENTICAL to one restored under uniformThresholds(0.9), so `restoreCheckpoint` returned ok instead of rejecting, and the migration path was never taken. Exactly the failure mode the brief forbids: 'Do not silently allow a saved world to resume under incompatible causal parameters.'",
+  "rootCause": "The comparison used JSON.stringify(cfg, Object.keys(cfg).sort()) intending to sort keys for a stable comparison. The array form of JSON.stringify's second argument is a key ALLOW-LIST (replacer array), not a sort order, and it is applied at EVERY nesting depth. Object.keys(cfg) lists only top-level keys, so nested keys such as thresholds.civic / thresholds.economy were filtered out of the serialization entirely. Every config therefore serialized with `thresholds: {}` and any threshold-only difference compared equal. The same mistake would have hidden differences in any future nested config object.",
+  "whatActuallyHappened": "Two persistence tests failed: 'restoring under a DIFFERENT config is REJECTED by default' (expected rejection, got acceptance) and 'explicit migration assigns a NEW timeline identity' (migration never triggered because the configs looked identical). Without those two tests the bug would have shipped as a working compatibility gate, and saves would have silently resumed under foreign causal parameters.",
+  "mitigation": "Replaced the ad-hoc comparison with `configFingerprint`, which reuses the same recursive `sortKeys` helper that `configHash` uses. Sharing one canonicalisation path means the compatibility check and the hash can no longer disagree about what a config is. Both tests now pass, and a second test asserts rejection for a non-threshold parameter (ledgerDecayPerTick) so the fix is not threshold-specific.",
+  "files": [
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\core\\persistence.ts",
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\poc\\persistence.test.ts"
+  ]
+}

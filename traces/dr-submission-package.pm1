@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "dr-submission-package",
+  "timestamp": "2026-09-11T01:08:59.961392+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "Deers-Rock/docs/papers/jamia-dr-submission.md",
+    "Deers-Rock/docs/papers/jamia-figure-provenance.md",
+    "Deers-Rock/docs/papers/jamia-author-action-register.md",
+    "Deers-Rock/docs/papers/jamia-submission-field-map.md",
+    "Deers-Rock/docs/papers/jamia-cover-letter-inputs.md",
+    "Deers-Rock/docs/papers/jamia-submission-package-manifest.md",
+    "Deers-Rock/docs/papers/figures/README.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dr-submission-package",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................--.-..-.........................................-.--...-",
+  "action": "DR JAMIA submission package preparation (DR-only). Created submission copy jamia-dr-submission.md (223 lines; 2136 main text/244 abstract). Resolved figures 1-4 as Mermaid source from existing evidence (figures/*.mmd + README). CRITICAL: excluded pre-existing fig1-architecture.svg (stale: 35 handlers, FHIR Encounter) and fig2-los-histogram.png/fig3-bed-occupancy.png (fabricated via np.random synthetic data). Created figure provenance, author action register, submission field map, cover-letter input sheet, package manifest. Verified submission copy: 38 handlers, 130.9/133 (98%), 2/10 5.5vs4.0, 49 ICD, Patient+Observation, no stale values. Verdict: PACKAGE READY - AUTHOR INPUT REQUIRED. No KE touched, no experiments, no model/QMS/PM-1 changes."
+}

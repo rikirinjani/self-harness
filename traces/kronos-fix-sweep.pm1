@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "kronos-fix-sweep",
+  "timestamp": "2026-08-31T11:41:43.913929+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "src/experiment/experiments/sensitivity-sweep.ts",
+    "src/experiment/experiments/sensitivity-sweep.test.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kronos-fix-sweep",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................................................-.--...-........................................-.--...-",
+  "action": "Fixed sensitivity-sweep noise baseline for corrected immutable-baseline semantics (0 FP on no-intervention replay), suite + verify-facts green"
+}

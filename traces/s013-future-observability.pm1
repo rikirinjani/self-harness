@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "s013-future-observability",
+  "timestamp": "2026-09-11T01:01:06.462377+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 3600,
+  "tool_calls": 25,
+  "key_files": [
+    "experiments/s013/REPORT.md",
+    "experiments/s013/run-all.ts",
+    "experiments/s013/results/results.json",
+    "qms/records/requirements/2026-09-11T04-30-00-req-013-s013-future-observability.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "s013-future-observability",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-..........-.-.-.-........--.-..-.........-.--...-........................................-.--...-",
+  "action": "S013 future observability / minimal sufficient retention: from frozen S012 (dabc4a1), no src change. Built a bounded suffix-search oracle (calls derive only, no semantic rule). VERDICT HOLD. The oracle OVERTURNS S012's category C: under suffix exploration almost every fold-changed step is future-observable (verrin A=124 B=16 C=0 D=20; ordos A=119 B=21 C=1 D=19). Of 281 fold-changed steps only 17 were future-invisible within the bound; 37 were semantic-invisible but future-visible. Smallest exposing suffix is the S010 shape (forceEvent + negateEvent). No generic fold-only rule separates the 17 from the 264 relevant ones without semantic interpretation, so a tighter rule is NOT justified; keep S012's conservative boundary. S012 delta-retention re-run 16/16. Semantic authority singular. Baseline 624/624, verify-facts 3/3, frozen hashes unchanged."
+}

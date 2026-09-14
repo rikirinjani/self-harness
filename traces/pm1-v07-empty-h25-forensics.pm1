@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-v07-empty-h25-forensics",
+  "timestamp": "2026-08-21T09:50:42.368929+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 4,
+  "key_files": [
+    "pm1-trading-benchmark\\results\\v07\\empty_h25_forensics\\PM1_V07_EMPTY_H25_FORENSICS_REPORT.md",
+    "pm1-trading-benchmark\\results\\v07\\empty_h25_forensics\\PM1_V07_EMPTY_H25_FORENSICS_RESULTS.json",
+    "pm1-trading-benchmark\\v06\\diagnostic_raw_capture.py",
+    "pm1-trading-benchmark\\v06\\lib\\llm_api.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-v07-empty-h25-forensics",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................---..-..........-.--...-........-.--...-........................................-.--...-",
+  "action": "Raw h25 EMPTY forensic: 25-call capture on MiMo-v2.5@2048 seed11/lazy/60%/h25. RESULT: 25/25 NON-EMPTY — every hop produced valid content (finish_reason=stop, content JSON, reasoning_content present, completion 739-2048). Hop 15 hit 2048 ceiling but still produced content. This resolves the EMPTY mystery: the initial state is fully well-formed; the diagnostic script does NOT advance state via oracle (same initial state all 25 hops), while the runner advances state via oracle transitions — EMPTY is therefore a trajectory-evolution phenomenon, not a state-snapshot/budget/mode/provider phenomenon. All prior EMPTY hypotheses refuted by raw evidence. V0.7 numeric-snapshot test INVALIDATED as semantic isolation. 25/25 calls authorized, executed, non-empty. No other providers, no semantic experiments."
+}

@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-09-10T23:37:32Z",
+  "category": "design-defect",
+  "severity": "high",
+  "slug": "s008-reduction-dropped-rejected-writes",
+  "agent": "orchestrator",
+  "project": "somnium-engine",
+  "branch": "s008",
+  "ancestor_commit": "443d3d9",
+  "what_happened": "The first version of reduceChain applied a single last-write-wins rule to every setFact/relocate, keyed by (subject, predicate) cell. For the history [setFact(S,P,\"V1\"), retractFact(F), setFact(S,P,\"V2\")] where the writes are ILLEGAL, the reduction dropped the first write. The differential harness caught a real semantic divergence: the legacy world carried the contradiction record for \"V1\" while the incremental world carried the record for \"V2\".",
+  "root_cause": "A rejected fact write never enters buildModel.overriddenCells — it is recorded in rejectedFactWrites and rendered as a `fact-write-illegal` contradiction. That contradiction's record id is `contra:<subject>:fact-write-illegal:<reason>`, which does NOT include the written value, so detectContradictions keeps the FIRST such write per id. Last-write-wins is therefore the wrong subsumption rule for rejected writes; the correct rule is first-wins-per-contradiction-id.",
+  "what_i_did_wrong": "Reasoned about the write fold purely in terms of the effective-fact cell (last-write-wins) and missed that rejected writes take a completely different path into the semantic state (the contradictions dimension). The reduction was written from the effective-fact semantics alone.",
+  "detection": "Adversarial matrix case `write+retract+write[fact/kael-oath-is-oath]` (dimension=facts) reported semantic=false, hash=false, diff=false while throwEqual=true. Isolated with experiments/s008/debug-case.ts.",
+  "fix": "Split setFact/relocate reduction by legality. Legal writes keep LAST per cell. Rejected writes (factAssertionError != null) keep FIRST per `contra:<subject>:fact-write-illegal:<reason>`. The reduction now reuses factAssertionError + buildFactVocabulary (the same validation the engine uses), so the two paths cannot disagree about what counts as rejected.",
+  "verification": "After the fix, matrix went 296/297 -> 297/297 (verrin) and the full run reached 1632/1632 differential cases across both canons.",
+  "lesson": "When reducing a fold, enumerate EVERY path an element can take into the semantic state, not just the primary one. Rejected/invalid inputs often have their own accumulation rule (here: first-per-id) that differs from the valid-input rule (last-per-write). The differential harness is what turned a plausible-looking reduction into a caught defect."
+}

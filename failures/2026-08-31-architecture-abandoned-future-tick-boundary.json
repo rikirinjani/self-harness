@@ -1,0 +1,16 @@
+{
+  "id": "fail-2026-08-31-abandoned-future-tick-boundary",
+  "timestamp": "2026-08-31T11:05:00Z",
+  "category": "architecture",
+  "agent": "orchestrator",
+  "task": "CE lifecycle pass — replay-capability bounds after compaction (brief section 4/7)",
+  "outcome": "partial",
+  "error": "The abandoned-future boundary was computed by TICK instead of by intervention SEQUENCE. `rewindTo` recorded `interventionIds` as everything with `submittedAtTick >= rewindTick`, but several interventions can share a tick, so any intervention submitted in the SAME tick as the checkpoint but BEFORE the capture was wrongly counted as part of the abandoned future. A replay of that future then re-applied interventions the checkpoint already contained. Measured: with a checkpoint at tick 30 holding interventionSeq 2, the tick filter returned [pre-cp, post-cp] where only [post-cp] belongs to the future.",
+  "rootCause": "Tick is not a fine enough boundary for an event ordering that the engine itself already made finer. The persistence pass established that same-tick submission order is semantic and is recorded by a monotonic `provenance.sequence` counter, and `CheckpointIdentity` captures `interventionSeq`. The rewind code nonetheless used the coarser tick comparison, so the boundary disagreed with the ordering the rest of the engine uses.",
+  "whatActuallyHappened": "The bug surfaced only after a second defect was fixed. The lifecycle test 'abandoned-future replay genuinely fails once its interventions are gone' originally used a repeat bridge destruction, which the schema rejects as already-destroyed; the abandoned future was therefore EMPTY and both the with-records and without-records replays trivially produced the same hash, so the test passed while proving nothing. Replacing it with genuinely accepted actions exposed a count mismatch (3 vs 2), and a probe traced that to the tick-based filter. Two layers of false confidence: a vacuous test hiding a real boundary error.",
+  "mitigation": "Boundary now uses `i.provenance.sequence > checkpoint.world.interventionSeq`. Added an exported `interventionsAfter(checkpoint, world)` helper so callers cannot re-derive the boundary incorrectly, and rewrote the test to assert the abandoned future is non-empty before comparing replays — a scenario that is empty must fail loudly rather than pass silently.",
+  "files": [
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\core\\timeline.ts",
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\poc\\lifecycle.test.ts"
+  ]
+}

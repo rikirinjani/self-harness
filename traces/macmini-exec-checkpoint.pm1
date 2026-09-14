@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "macmini-exec-checkpoint",
+  "timestamp": "2026-09-03T19:12:05.568209+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 18,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "macmini-exec-checkpoint",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................---..-..........--.-..-.........................................................-.--...-",
+  "action": "Mac Mini execution host checkpoint: MemPalace-sourced SSH (Tailscale), cloned rikirinjani/Deers-Rock @2f932f0 to ~/Project_v2/Deers-Rock, npm install, tsc build, 100-tick probe OK, determinism 7/7 in 1.04s, bench 5-8x faster than Windows, cross-platform divergence confirmed (enc 59 vs 62, hashes differ)"
+}

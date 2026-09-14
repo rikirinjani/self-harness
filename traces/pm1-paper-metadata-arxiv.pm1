@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-paper-metadata-arxiv",
+  "timestamp": "2026-08-19T06:16:25.687337+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 1200,
+  "tool_calls": 8,
+  "key_files": [
+    "morse\\research\\pm1-v05\\paper\\PM1_PAPER_SUBMISSION.md",
+    "morse\\research\\pm1-v05\\paper\\PM1_PAPER_ARXIV_READY.md",
+    "morse\\research\\pm1-v05\\paper\\ARXIV_PREPARATION_REPORT.md",
+    "morse\\research\\pm1-v05\\README.md",
+    "morse\\research\\pm1-v05\\paper\\PM1_PAPER_SUBMISSION.typ",
+    "morse\\research\\pm1-v05\\paper\\PM1_PAPER_SUBMISSION.pdf"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-paper-metadata-arxiv",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................---..-..........-.--...-........--.-..-.........................................-.--...-",
+  "action": "Paper metadata/artifact update: added Code and Data Availability section (GitHub URL, Zenodo DOI 10.5281/zenodo.22005884, v0.5.0), artifact citation [10], regenerated PDF from typst, updated README DOIs, produced PM1_PAPER_ARXIV_READY.md + ARXIV_PREPARATION_REPORT.md; numbers frozen; committed and pushed 6786310."
+}

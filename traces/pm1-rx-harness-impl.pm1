@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-rx-harness-impl",
+  "timestamp": "2026-09-11T04:32:35.343690+00:00",
+  "agent": "pm1-rx",
+  "outcome": "partial",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\morse\\experiments\\pm1-rx\\harness\\results\\preflight\\gate_report\\gate_report-00001.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-rx-harness-impl",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........--.-..-.........................................-.--...-........................................-.--...-",
+  "action": "PM-1-RX Experiment-001 harness implemented (v1.2, commit 8fa5fe2): generator/minimize, backends (retry/backoff/throttle), codecs A/B/C/E/F/floor, oracle (L0-L4, ordered attribution, construct-validity probe), gates (10 fail-closed), audits (separation/GT/covert), store, runner, pilot+preflight CLIs. 111 tests pass; ALL 10 pre-run gates pass. Harness failed closed 3x during dev (gate 9 codec staleness; floor-arm schema gap; matched-budget truncation) - fixed, not suppressed. 5-task pilot BLOCKED on external model backend: DeepSeek 402, opencode-go needs session header, Xiaomi 402, OpenAI no credits, z.ai 429 hard cap (13 retries), TokenRouter ReadTimeout, Kaggle DNS down. Partial live pilot artifacts retained (no runs discarded). No confirmatory sample run. Verdict: IMPLEMENTATION READY FOR PILOT (external blocker only)"
+}

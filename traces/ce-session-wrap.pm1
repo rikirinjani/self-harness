@@ -1,0 +1,43 @@
+{
+  "pm1_version": 1,
+  "session_id": "ce-session-wrap",
+  "timestamp": "2026-08-30T13:19:53.329792+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 2400,
+  "tool_calls": 75,
+  "key_files": [
+    "docs\\RECONNAISSANCE.md",
+    "src\\core\\config.ts",
+    "src\\core\\propagation.ts",
+    "src\\core\\types.ts",
+    "src\\core\\world.ts",
+    "src\\core\\hash.ts",
+    "src\\game\\economy.ts",
+    "src\\game\\factions.ts",
+    "src\\game\\population.ts",
+    "src\\game\\ecology.ts",
+    "src\\game\\content.ts",
+    "src\\game\\interventions.ts",
+    "src\\poc\\main.ts",
+    "src\\poc\\sweep.ts",
+    "src\\poc\\calibrate.ts",
+    "src\\poc\\determinism.test.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ce-session-wrap",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........---..-...........--...--.........--...--........................................-.--...-",
+  "action": "SESSION WRAP: Causality Engine recommendations executed. Rec1 param sweep (48 cells) + recalibration, Rec2 cross-region boundary signals with provenance-based loop safety, Rec3 kill_entity end-to-end tests, Rec4 oracle review FAILED twice on API credits (open verification gap, NOT closed). 14/14 tests, tsc clean, determinism preserved. QMS VER-2026-019 with 4 residual gaps. Partial outcome because independent architectural review remains unperformed"
+}

@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "s011-fold-state-delta",
+  "timestamp": "2026-09-11T00:28:19.106878+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 5400,
+  "tool_calls": 50,
+  "key_files": [
+    "src/derive/propagation.ts",
+    "src/derive/world-state.ts",
+    "experiments/s011/REPORT.md",
+    "experiments/s011/checks.ts",
+    "experiments/s011/run-all.ts",
+    "experiments/s011/results/results.json",
+    "qms/records/requirements/2026-09-11T02-30-00-req-011-s011-fold-state-delta.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "s011-fold-state-delta",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "S011 fold-state delta / retention signal: isolated worktree off frozen P-007 (443d3d9). Added narrowly scoped src/ instrumentation so the authoritative fold emits a per-intervention FoldStateDelta (propagation.ts resolveEdges+accumulator fold+buildModelWithDeltas; world-state.ts applyFactInterventions+foldStateDeltas). VERDICT PASS. S009 witness all 3 steps non-empty; S010 witness forceEvent[forcedBy] with UNCHANGED semantic hash + negateEvent[negated], caught generically. Retention by delta sound: 520/520 differential on verrin/ordos/overlap. Inverse attack 0 hits. Classification A=19990 B=621 C=2692 D=14329. Determinism stable, branch isolation passes, overhead 2.2x-57.7x. Signal NECESSARY but not minimal. Regression 624/624, verify-facts 3/3, frozen hashes unchanged."
+}

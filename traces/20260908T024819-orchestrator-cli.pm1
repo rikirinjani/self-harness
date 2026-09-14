@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260908T024819-orchestrator-cli",
+  "timestamp": "2026-09-08T02:48:19.329537+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\chatbot\\bridge\\src\\core\\router.ts",
+    "C:\\Users\\think\\Project_v2\\chatbot\\bridge\\src\\core\\audit-log.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260908T024819-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........................-.--...-........................................-.--...-",
+  "action": "Prepared recovery batches for unanswered queries (36 users, 73 queries). Split into 2 batches (25+11). Saved to Mac mini data/recovery-batch-{1,2}.json. Telegram API is down - batches queued for later delivery."
+}

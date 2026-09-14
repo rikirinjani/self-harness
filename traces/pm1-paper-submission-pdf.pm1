@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-paper-submission-pdf",
+  "timestamp": "2026-08-19T03:16:40.761038+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 9,
+  "key_files": [
+    "pm1-trading-benchmark\\paper\\PM1_PAPER_SUBMISSION.typ",
+    "pm1-trading-benchmark\\paper\\PM1_PAPER_SUBMISSION.pdf",
+    "pm1-trading-benchmark\\paper\\PM1_PAPER_SUBMISSION.md",
+    "pm1-trading-benchmark\\paper\\make_figures.py",
+    "pm1-trading-benchmark\\paper\\figures\\fig1_cumulative_tokens.png",
+    "pm1-trading-benchmark\\paper\\figures\\fig2_per_hop_context.png",
+    "pm1-trading-benchmark\\paper\\figures\\fig3_reduction.png"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-paper-submission-pdf",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................---..-..........-.--...-........--.-..-.........................................-.--...-",
+  "action": "Generated 3 figures from existing measured data, wrote typst source with author block, installed typst via winget, compiled 11-page submission PDF; all numbers preserved, no experiments run."
+}

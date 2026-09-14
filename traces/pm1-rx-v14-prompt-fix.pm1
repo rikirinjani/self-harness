@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-rx-v14-prompt-fix",
+  "timestamp": "2026-09-13T04:24:59.583123+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 1800,
+  "tool_calls": 0,
+  "key_files": [
+    "experiments/pm1-rx/harness/pm1rx/runner.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-rx-v14-prompt-fix",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........---..-..........................-.--...-........................................-.--...-",
+  "action": "PM-1-RX v1.4 measurement repair: discovered consumer prompt missing ACTION_VOCABULARY (root cause of L4=0.0), fixed by injecting vocabulary into prompt. 131 tests pass, 10 gates pass. Pilot blocked on DeepSeek credits (402). Commit 3037757."
+}

@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-v06-empty-content-forensics",
+  "timestamp": "2026-08-20T14:40:20.284796+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 5,
+  "key_files": [
+    "pm1-trading-benchmark\\results\\v06\\analysis\\PM1_V06_EMPTY_CONTENT_FORENSICS.md",
+    "pm1-trading-benchmark\\results\\v06\\analysis\\PM1_V06_EMPTY_CONTENT_FORENSICS.json",
+    "pm1-trading-benchmark\\results\\v06\\analysis\\forensics\\PM1_V06_EMPTY_CONTENT_FORENSICS.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-v06-empty-content-forensics",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................---..-..........-.--...-........-.--...-........................................-.--...-",
+  "action": "Empty-content forensics: fixer reconstructed 136 exact request payloads (sha256 artifacts + manifest), built failure/control matrix, state/request diffs, byte-identity twin analysis, evidence boundary (request accepted, content empty - provider-side). Key finding: 5 reproducible-empty cells share mode-only state signature (numeric policy inputs absent at 25% budget); byte-identical payloads gave opposite outcomes (stochastic component); no response-format feature sent. Ranked H5 (prompt-structure interaction, medium) > H1; designed minimal single-hop diagnostic matrix; documented MiMo attribution limitation."
+}

@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-08-16T08:35:00Z",
+  "category": "harness-defect",
+  "slug": "v04a-pilot-corruption-gating",
+  "agent": "orchestrator",
+  "task": "V0.4a 40-call pilot execution",
+  "severity": "medium",
+  "root_cause": [
+    "lib/v04a_chain.py run_chain() gates corruption/restoration ONLY on spec.corrupt_hops / spec.restore_hops, never on the condition parameter. H-full and H-direct (pre-registered as zero-corruption) therefore received injected corruption and restoration at hops 3-5.",
+    "lib/v04a_worker.py LLMHandoffWorker.run() accumulates self.total_input_tokens/self.total_output_tokens but never sets self.last_usage. lib/v04a_chain.py reads getattr(worker, 'last_usage', {}) per hop -> always empty -> 40 real API calls reported as 0 tokens."
+  ],
+  "what_was_actually_wrong": [
+    "Corruption propagation criterion and recovery criterion could NOT be honestly evaluated: corruption was applied to all conditions (F1) and chain-01 absorbs the +1 flip in one step (F4).",
+    "Token cost metric is unavailable (F2): 0 tokens reported despite 40 API calls.",
+    "Per-hop LLM records were not persisted (F3), so per-hop reporting is impossible post-hoc."
+  ],
+  "evidence": {
+    "v04a_pilot_results.json": "corruption_hops: 2 and restore_hops: 1 present in metrics of H-full AND H-direct; total_input_tokens: 0 across all conditions",
+    "lib/v04a_chain.py lines 235-242": "if hop in spec.corrupt_hops: ... elif hop in spec.restore_hops: (no condition check)",
+    "lib/v04a_worker.py LLMHandoffWorker.run": "no self.last_usage assignment"
+  },
+  "outcome": "40/40 API calls succeeded, 0 errors. All conditions chain-survived with 0 divergence. Results are NOT valid for corruption/recovery evaluation due to F1+F4; token metric invalid due to F2.",
+  "recommendation": "Recommendation B: fix corruption gating (condition-aware), set last_usage, persist HopRecords, optionally use multi-unit chain for pilot, then rerun 40-call pilot before the 4,000-call full experiment."
+}

@@ -1,0 +1,43 @@
+{
+  "pm1_version": 1,
+  "session_id": "exp-001c-recon-exp7",
+  "timestamp": "2026-09-11T03:06:55.640396+00:00",
+  "agent": "explorer",
+  "outcome": "pass",
+  "duration_s": 90,
+  "tool_calls": 6,
+  "key_files": [
+    "Deers-Rock/dist/engine/charge-generator.ts",
+    "Deers-Rock/dist/engine/cssd.ts",
+    "Deers-Rock/dist/engine/dialysis.ts",
+    "Deers-Rock/dist/engine/scenario.ts",
+    "Deers-Rock/dist/engine/blood-bank.ts",
+    "Deers-Rock/dist/engine/clinical-nutrition.ts",
+    "Deers-Rock/dist/engine/ipc.ts",
+    "Deers-Rock/dist/engine/microbiology.ts",
+    "Deers-Rock/dist/engine/pathology.ts",
+    "Deers-Rock/dist/engine/mm-conference.ts",
+    "Deers-Rock/dist/engine/radiotherapy.ts",
+    "Deers-Rock/dist/engine/biomedical-engineering.ts",
+    "Deers-Rock/dist/engine/journal.ts",
+    "Deers-Rock/dist/patient/generator.ts",
+    "Deers-Rock/dist/agent/generator.ts",
+    "Deers-Rock/dist/identity/generator.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "exp-001c-recon-exp7",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........---..-..........................--.-..-.........-.--...-.........--...--........................................-.--...-",
+  "action": "EXP-001C recon exp-7: complete inventory of 22 DR module-global counters across 14 source files with reset function locations"
+}

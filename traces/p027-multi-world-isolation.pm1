@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "p027-multi-world-isolation",
+  "timestamp": "2026-09-13T06:27:47.943382+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 0,
+  "key_files": [
+    "scripts/experiments/multi-world-isolation.ts",
+    "scripts/experiments/index.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "p027-multi-world-isolation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........................-.--...-........................................-.--...-",
+  "action": "P-027: multi-world isolation experiment — 300 units across 6 families, 300/300 pass on Windows (Node 22.23.2 x64) and Linux (Node 22.23.2 x86_64). Cross-host determinism: 10/10 representative hashes byte-identical. Architecture audit validated: no module-level mutable state in any CE core module. Commit c5b3659. Baseline: 62e6a34."
+}

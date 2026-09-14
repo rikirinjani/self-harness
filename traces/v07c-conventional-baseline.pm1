@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "v07c-conventional-baseline",
+  "timestamp": "2026-08-22T11:04:38.541340+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 25,
+  "key_files": [
+    "v07c/tools.py",
+    "v07c/conventional_baseline.py",
+    "v07c/test_h4_fix.py",
+    "results/v07c/conventional_baseline/PM1_V07C_CONVENTIONAL_BASELINE_DESIGN.md",
+    "results/v07c/conventional_baseline/PM1_V07C_CONVENTIONAL_BASELINE_DESIGN.json",
+    "results/v07c/conventional_baseline/manifest.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v07c-conventional-baseline",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "V.7-C Conventional Baseline Preparation: Fixed H4 (run_tests auto-detects Django tests/runtests.py, pytest fallback). Validated 3/3 tests. Designed conventional baseline agent with sliding-window context, same tools, NO PM-1 leakage. PM-1 leakage audit: clean. Baseline ready for ONE execution. READY FOR AUTHORIZATION."
+}

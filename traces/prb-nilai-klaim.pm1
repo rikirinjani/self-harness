@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "prb-nilai-klaim",
+  "timestamp": "2026-08-20T06:55:57.003771+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 30,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\PRB\\Nilai Klaim PRB - Master Database Barang.xlsx",
+    "C:\\Users\\think\\Project_v2\\PRB\\Perhitungan Persediaan PRB Puskesmas Taman.xlsx",
+    "C:\\Users\\think\\Project_v2\\PRB\\KMK-No.-HK.01.07-MENKES-730-2025-ttg-Nilai-Klaim-Harga-Obat-Program-Rujuk-Balik-Penyakit-Kronis-di-F.pdf"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "prb-nilai-klaim",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "Built PRB claim-value Excel: parsed KMK 730/2025 PDF (505 entries, Regional I prices), mapped 109 Excel drug items to PDF standard names (99 matched incl. brand->generic, 10 not in KMK), computed Nilai Klaim = Persediaan Awal x harga satuan terkecil"
+}

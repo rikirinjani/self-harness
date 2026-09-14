@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "v07c-feasibility-probe-mimo",
+  "timestamp": "2026-08-22T07:18:50.197513+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 30,
+  "tool_calls": 15,
+  "key_files": [
+    "results/v07c/feasibility_probe/PM1_V07C_FEASIBILITY_PROBE_REPORT.md",
+    "results/v07c/feasibility_probe/PM1_V07C_FEASIBILITY_PROBE_RESULTS.json",
+    "results/v07c/feasibility_probe/manifest.json",
+    "v07c/run_feasibility_probe.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v07c-feasibility-probe-mimo",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................-.--...-........--.-..-.........-.--...-........................................-.--...-",
+  "action": "V.7-C Feasibility Probe (MiMo): 8/8 phases PASS. Task PROBE-001 (Jinja2 off-by-one). Repo clone 2.4s, L0 Rule C 2 files 380 tokens, L3 init digest e402b3865743fdd3, SE adapter 3 fields 172 char handoff, MiMo API 871 chars 77+752 tokens 17.4s, pytest 76/76 1.25s, checkpoint persisted. FEASIBILITY VERIFIED."
+}

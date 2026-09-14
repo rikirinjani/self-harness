@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1rx-openai-retry",
+  "timestamp": "2026-09-11T03:23:02.214862+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 14,
+  "key_files": [
+    "experiments/pm1-rx/harness/pm1rx/backends.py",
+    "experiments/pm1-rx/harness/tests/test_backends.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1rx-openai-retry",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................................--.-..-.........-.--...-........................................-.--...-",
+  "action": "Added bounded retry/backoff + throttle to OpenAICompatBackend: retries 429/500/502/503/504 and httpx Timeout/Transport errors with exponential backoff+jitter, honors Retry-After (capped), min_interval_s monotonic throttle, raises BackendError after max_retries. Added 6 offline tests. pytest experiments/pm1-rx/harness/tests -q => 111 passed, 0 skipped."
+}

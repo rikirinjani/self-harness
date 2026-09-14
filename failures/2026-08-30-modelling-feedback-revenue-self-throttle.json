@@ -1,0 +1,17 @@
+{
+  "id": "fail-2026-08-30-feedback-loop-revenue-self-throttle",
+  "timestamp": "2026-08-30T18:10:00Z",
+  "category": "modelling",
+  "agent": "orchestrator",
+  "task": "CE feedback/convergence adversarial pass — constructing the economic feedback loop (brief section 1)",
+  "outcome": "partial",
+  "error": "The first feedback loop implementation computed merchant revenue from REALISED tradeVolume rather than the potential trade rate. That created a second, unintended loop with no price term: throughput falls -> revenue falls -> investment falls -> capacity falls -> throughput falls. The baseline world with NO intervention collapsed on its own: HT investment slid 1.000 -> 0.100 over ~12 ticks, RF grain stock drained to 0 and price pinned at the 40.00 ceiling by tick 24, and 6 spurious divergence diagnostics were emitted for a world nobody had touched.",
+  "rootCause": "Conflating a stock-and-flow measurement with a decision input. Revenue-from-realised-volume makes investment depend on its own previous output (capacity -> volume -> revenue -> investment -> capacity), which is a self-reinforcing loop independent of the price channel the experiment was supposed to test. Compounding: investmentProfitReference was 0.4 while equilibrium profitability was 0.35, so target investment at rest was 0.875 rather than 1.0 — the world was not even at a fixed point before the loop was added, so drift was expected and its true cause was masked.",
+  "whatActuallyHappened": "A diagnostic probe of the control run (no interventions) showed monotonic investment collapse and starvation. Because the collapse looked exactly like a successful feedback demonstration, it would have been easy to accept as evidence the loop worked. Isolating the control run exposed that the loop was firing without any cause.",
+  "mitigation": "Revenue now uses the POTENTIAL rate (mgMargin x tradeRate), so only destination price closes the loop. investmentProfitReference was set to 0.35 to equal equilibrium profitability exactly (mgMargin*tradeRate - carryCost*basePrice = 0.8 - 0.45), making rest an exact fixed point: 400-tick control run holds price 10.000000000, stock 50.000000000, investment 1.000000000, zero diagnostics. The identity is asserted by a regression test (`equilibriumProfitability` exported from game/investment.ts) so retuning margin/rate/carry cannot silently reintroduce baseline drift. Also restricted investment dynamics to a route's exporter, the party whose capacity actually gates flow.",
+  "files": [
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\game\\investment.ts",
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\core\\config.ts",
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\poc\\feedback.test.ts"
+  ]
+}

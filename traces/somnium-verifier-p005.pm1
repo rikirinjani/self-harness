@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "somnium-verifier-p005",
+  "timestamp": "2026-08-31T05:04:23.075081+00:00",
+  "agent": "verifier",
+  "outcome": "fail",
+  "duration_s": 0,
+  "tool_calls": 42,
+  "key_files": [
+    "src/query/occurrence.ts",
+    "src/derive/propagation.ts",
+    "src/canon/types.ts",
+    "docs/ARCHITECTURE-RECONNAISSANCE.md"
+  ],
+  "failure": {
+    "category": "unsupported-documentation-claim",
+    "severity": "blocking"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "somnium-verifier-p005",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........-.--...-.........................--...--........-.--...-........................................-.--...-",
+  "action": "L2 verifier gate on Somnium P-005 (occurrence identity, EventType layer, forceEvent-undeclared defect, three-predicate occurrence diff)"
+}

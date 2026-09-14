@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-mimo-flight2-execution",
+  "timestamp": "2026-08-21T02:10:53.069157+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 2700,
+  "tool_calls": 15,
+  "key_files": [
+    "pm1-trading-benchmark\\results\\v06\\mimo_flight2_design\\PM1_V06_MIMO_FLIGHT2_EXECUTION_REPORT.md",
+    "pm1-trading-benchmark\\results\\v06\\hop_records\\v0.6_mimo_flight2\\f1-F-A+B+C-drop-unbounded-F-relevance-seed11-h50-t1.json",
+    "pm1-trading-benchmark\\results\\v06\\hop_records\\v0.6_mimo_flight2\\f2-F-A+B+C-drop-100%-base-seed11-h50-t1.json",
+    "pm1-trading-benchmark\\results\\v06\\hop_records\\v0.6_mimo_flight2\\f3-F-A+B+C-drop-abs-30-dvx0-seed11-h50-t1.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-mimo-flight2-execution",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "V0.6 MiMo Flight 2 Design A executed: 3 runs / 150 hops / 150 calls on MiMo-v2.5 max_tokens=2048. All 150 hops PASS. E1 (adapter, unbounded, seed11): 50/50 PASS, density 0.506. E2 (budget 100%, seed11): 50/50 PASS, density 0.506. E3 (abs:30 dvx0, seed11): 50/50 PASS, density 0.80. Zero empty-content, zero failures. Total tokens: 60,334 in / 145,897 out. PM-Adapter contribution reproduces on MiMo. Full-fidelity baseline reproduces on MiMo. Pressure immunity reproduces on MiMo. All results PARTIAL REPLICATION (single seed/scenario/trial per experiment). No historical artifacts modified. No other providers."
+}

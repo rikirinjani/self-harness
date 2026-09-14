@@ -1,0 +1,18 @@
+{
+  "id": "fail-2026-08-30-float-nonassociativity-breaks-canonical-order",
+  "timestamp": "2026-08-30T19:30:00Z",
+  "category": "architecture",
+  "agent": "orchestrator",
+  "task": "CE feedback/convergence adversarial pass — systematic saturation attack (brief section 5: commutativity)",
+  "outcome": "partial",
+  "error": "IEEE-754 float addition is NOT associative, so incrementally accumulating causal pressure into a bucket produced ARRIVAL-ORDER-DEPENDENT BITS. Measured: for 5 same-bucket contributions [1.0, 0.2, 0.7, 0.05, 0.4], forward order gave raw = 2.35000000000000008882 and reverse order gave 2.34999999999999964473; saturated pressure differed at the 16th digit (1.74075973935410854843 vs 1.74075973935410832638); positiveRaw differed under a shuffled order. Exhaustive check over 1000 value triples found 328 associativity violations. This silently breaks the documented guarantee that submitBatch (canonical id-sorted batching) yields an identical stateHash regardless of arrival order.",
+  "rootCause": "PendingEntry accumulated derived scalars in place (raw += magnitude, netValence += magnitude*valence, ...). Binary commutativity a+b == b+a IS exact in IEEE-754, which is why the section 15 test passed; but n-ary accumulation depends on grouping, and grouping depends on arrival order. Compounding: the section 15 commutativity test used toBeCloseTo(..., 12), a tolerance loose enough (~1e-12) to hide a ~4e-16 discrepancy, and every real scenario happened to deliver at most 2-3 addends per (region, domain) bucket with associativity-safe values. The guarantee was therefore asserted but never actually tested at bit precision.",
+  "whatActuallyHappened": "The feedback pass ran the brief's systematic saturation attack (one/two/many/repeated/mixed/opposing causes). Monotonicity, non-erasure and boundedness all held. Commutativity reported 'all equal: false' for mixed-magnitude sets. A dedicated probe isolated it to float non-associativity rather than to the saturation curve. Without the brief's explicit demand to test commutativity across mixed magnitudes, this would have shipped as a passing invariant.",
+  "mitigation": "PendingEntry now retains its contributions as an item list and derives every scalar (raw, pressure, netValence, negativeRaw, positiveRaw) by CANONICAL SUMMATION: items are sorted by (magnitude, valence, cause-id) and folded in that fixed order, so the result is bit-identical for any arrival order. Saturation is applied to the canonically-summed raw. The tolerance-based commutativity assertion was replaced with bit-exact equality (Object.is on raw/pressure/netValence and on the full stateHash) plus a regression test over mixed-magnitude and opposing-valence sets in several arrival orders. Also noted: saturate() reaches the cap exactly at raw ~= 38 due to exp underflow, so strict monotonicity holds only below that point; boundedness is unaffected and the test now asserts non-decreasing plus strictly-increasing-below-saturation.",
+  "files": [
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\core\\propagation.ts",
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\core\\types.ts",
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\poc\\stress.test.ts",
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\poc\\feedback.test.ts"
+  ]
+}

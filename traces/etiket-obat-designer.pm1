@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "etiket-obat-designer",
+  "timestamp": "2026-08-19T05:53:47.713186+00:00",
+  "agent": "designer",
+  "outcome": "pass",
+  "duration_s": 3600,
+  "tool_calls": 30,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\etiket-obat\\html\\etiket-1-standar.html",
+    "C:\\Users\\think\\Agentic Layer\\etiket-obat\\html\\etiket-2-grid.html",
+    "C:\\Users\\think\\Agentic Layer\\etiket-obat\\html\\etiket-3-qr.html",
+    "C:\\Users\\think\\Agentic Layer\\etiket-obat\\html\\etiket-4-peringatan.html",
+    "C:\\Users\\think\\Agentic Layer\\etiket-obat\\html\\etiket-5-lansia.html",
+    "C:\\Users\\think\\Agentic Layer\\etiket-obat\\preview.html"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "etiket-obat-designer",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........----............................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "Desain 5 varian etiket obat termal (standar, grid, QR, peringatan, lansia) HTML self-contained + render PNG 616px via Edge headless + preview, verifikasi dimensi System.Drawing"
+}

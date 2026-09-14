@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "s032-s024-failures",
+  "timestamp": "2026-09-11T13:40:58.196647+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3000,
+  "tool_calls": 12,
+  "key_files": [
+    "experiments/s032/REPORT.md",
+    "experiments/s032/probe.ts",
+    "qms/records/requirements/2026-09-11T23-30-00-req-032-s032-s024-failures.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "s032-s024-failures",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "S032 minimise and characterise the 5 failing S024 topologies: from frozen S031 (ad8340d), no src change. VERDICT PASS. Root cause: NOT a missing dependency class - a RECONSIDERATION-SCOPE error in S030's worklist (it seeded the queue with directChanged only and carried the previous truth, so a closure node outside directChanged kept a stale FALSE where the reference held NEITHER). FIX: reset the DEPENDENCY CLOSURE to NEITHER and seed the queue with it (S029 closure reset + S030 worklist); nodeSupport remains authoritative; the S028 index is unchanged. CAUSAL PROOF: minimal witness diverges -> fix -> gone; remove fix -> returns. S024: 95/100 -> 100/100 topologies, 1487/1500 -> 1500/1500 prefixes, 13 -> 0 mismatches. Conclusion: the S028 dependency boundary is correct; S030's execution was incomplete. Baseline 624/624, verify-facts 3/3, frozen hashes unchanged."
+}

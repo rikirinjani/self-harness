@@ -1,0 +1,35 @@
+{
+  "pm1_version": 1,
+  "session_id": "phase-d-sentinel",
+  "timestamp": "2026-09-03T22:17:09.903654+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 25,
+  "key_files": [
+    "src/engine/markov.ts",
+    "src/engine/emergency.ts",
+    "src/engine/outpatient.ts",
+    "src/engine/central-supply.ts",
+    "src/patient/schema.ts",
+    "src/index.ts",
+    "tests/phase-d.test.ts",
+    "reopen-audit/PHASE-D-NOTES.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "phase-d-sentinel",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Phase D: sentinel output semantics. Added primaryDiagnosis to Encounter (3 encounter-creation sites wired), computeSupplyStress from actual inventory state. 16/16 tests pass. Commit 57730e9 on Mac Mini (unpushed — SSH key not authorized for GitHub)."
+}

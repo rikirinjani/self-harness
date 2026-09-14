@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "task-005-confirmatory-complete",
+  "timestamp": "2026-09-14T02:59:47.504064+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 27000,
+  "tool_calls": 0,
+  "key_files": [
+    "experiments/pm1-rx/harness/CONFIRMATORY_001_REPORT.md",
+    "experiments/pm1-rx/harness/results/confirmatory_001_local/final_analysis.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task-005-confirmatory-complete",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-........................-.--...-........................................-.--...-",
+  "action": "Task 005 COMPLETE: Confirmatory Experiment 001 finished. 5796 evaluations (966 tasks x 6 arms x 3 horizons), 0 unexplained errors. H10 gap (60 tasks, 402 failure) filled; H50 rerun complete. Final analysis: F non-inferior to A/B/C at all horizons (power=1.0), superior to A at H10 (+0.078) and H50 (+0.284, d=1.87). H1 SUPPORTED, H0 REJECTED, H2 REJECTED. Report: CONFIRMATORY_001_REPORT.md. E-control H0 anomaly diagnosed (degenerate seq-0 action space). Cost ~.19."
+}

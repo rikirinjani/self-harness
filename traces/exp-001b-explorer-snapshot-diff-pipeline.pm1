@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "exp-001b-explorer-snapshot-diff-pipeline",
+  "timestamp": "2026-09-11T01:19:22.104075+00:00",
+  "agent": "explorer",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 5,
+  "key_files": [
+    "src/experiment/diff-engine.ts",
+    "src/experiment/exp-001-observer.ts",
+    "src/experiment/experiments/exp-001-stability.ts",
+    "src/experiment/experiments/exp-001-analyze.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "exp-001b-explorer-snapshot-diff-pipeline",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........---..-..........................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "EXP-001B: Mapped snapshot-to-diff pipeline — WorldSnapshot type (world-engine.ts:21-31), deepClone Snapshotable dispatch, extractNumericPaths recursive walk, computeMetricDeltas, buildFullDiff. Traced EXP-001 analyzer computeRunFunnel (74-93) which checks sentinelOutput.* path prefix. Observer sector is passive event counter."
+}

@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "v07c-phase1-calibration",
+  "timestamp": "2026-08-23T04:23:02.292388+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 15,
+  "key_files": [
+    "results/v07c/phase1/PM1_V07C_PHASE1_REPORT.md",
+    "results/v07c/phase1/PM1_V07C_PHASE1_RESULTS.json",
+    "results/v07c/phase1/manifest.json",
+    "results/v07c/phase1/phase1_rerun_log.txt"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v07c-phase1-calibration",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "V.7-C PHASE-1 CALIBRATION COMPLETE: 64/64 runs executed on HF Space. 56 succeeded, 8 failed (all L3 NoneType on pylint — fix exists but was not deployed to HF Space). Wall time 1.68h. First valid Phase-1 dataset: 56 observations across 8 tasks x 2 levels x 4 pressures. Persistence gap: git push fails (Docker has MiMo key not HF_TOKEN). No task/model failures. PHASE-1 CALIBRATION COMPLETE."
+}

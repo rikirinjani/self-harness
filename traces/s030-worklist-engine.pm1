@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "s030-worklist-engine",
+  "timestamp": "2026-09-11T05:56:22.376217+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3000,
+  "tool_calls": 12,
+  "key_files": [
+    "src/derive/propagation.ts",
+    "experiments/s030/REPORT.md",
+    "experiments/s030/probe.ts",
+    "qms/records/requirements/2026-09-11T21-30-00-req-030-s030-worklist-engine.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "s030-worklist-engine",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "S030 event-driven aggregate worklist / performance equivalence: from frozen S029 (fe2f645). One src REFACTOR (nodeSupport extraction, semantics unchanged). VERDICT PASS. TARGET: event-driven worklist Phase A - seed the queue with directChanged (S028 complete delta), pop a node, recompute via the AUTHORITATIVE nodeSupport, enqueue dependents only on an actual judgment change. RESULTS: 10,000 prefixes (100xH=20 + 30xH=100, verrin+ordos), 0 mismatches (0.00%), TARGET == REF-A at every prefix. KEY METRIC: worklist processes 0.94 nodes/step vs 15.76 model nodes (~6%) - O(actual change), not O(model). Phase B unchanged. CLASSIFICATION A - exact and materially incremental. CAVEAT: wall-clock not measured; S024 corpus and determinism/branch not run. Next: productionization/hardening of the incremental state lifecycle plus a wall-clock confirmation. Baseline 624/624, verify-facts 3/3, frozen hashes unchanged."
+}

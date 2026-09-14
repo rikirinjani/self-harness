@@ -1,0 +1,35 @@
+{
+  "pm1_version": 1,
+  "session_id": "dr-zenodo-freeze-upload",
+  "timestamp": "2026-09-11T01:17:30.348880+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "Deers-Rock/docs/experiments/EXPERIMENT-FREEZE-2026-09-10.md",
+    "Deers-Rock/zenodo-package/metadata.json",
+    "Deers-Rock/zenodo-package/upload.ps1",
+    "Deers-Rock/zenodo-package/README.md",
+    "Deers-Rock/zenodo-package/ZENODO-REPORT.md",
+    "Deers-Rock/zenodo-package/software/CITATION.cff",
+    "Deers-Rock/docs/papers/jamia-dr-submission.md",
+    "Deers-Rock/docs/papers/jamia-author-action-register.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dr-zenodo-freeze-upload",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................--.-..-.........................................-.--...-",
+  "action": "DR author email added (riki.rinjani@hisfarma.com) across submission copy, draft, register, field map, cover-letter inputs, manifest. Froze DR E1 experiment data (EXPERIMENT-FREEZE-2026-09-10.md with SHA-256 of summary+csv; git 5884ba3). Built DR zenodo-package (manuscript, E1 evidence, freeze doc, CITATION.cff, LICENSE, README, ZENODO-REPORT, upload.ps1 token-as-param) mirroring KE. Uploaded to Zenodo using KE token via legacy /api/deposit/depositions: v1 22699510 (5 files), v2 22699518 (8 files), v3 22699524 (corrected CITATION DOI). FINAL PUBLISHED DOI 10.5281/zenodo.22699524, concept 10.5281/zenodo.22699509, 8 files, public. SECURITY FLAG: KE zenodo-package/upload.ps1 contains a hardcoded live Zenodo token (should be env var)."
+}

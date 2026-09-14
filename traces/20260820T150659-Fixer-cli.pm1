@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260820T150659-Fixer-cli",
+  "timestamp": "2026-08-20T15:06:59.786914+00:00",
+  "agent": "Fixer",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 10,
+  "key_files": [
+    "results/v06/analysis/diagnostic/PM1_V06_DIAGNOSTIC_REPORT.md",
+    "results/v06/analysis/diagnostic/PM1_V06_DIAGNOSTIC_RESULTS.json",
+    "results/v06/analysis/diagnostic/manifest.json",
+    "results/v06/analysis/diagnostic/run_diagnostic.py",
+    "results/v06/analysis/diagnostic/requests",
+    "results/v06/analysis/diagnostic/responses"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260820T150659-Fixer-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--.........................--...--........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Minimal empty-content / state-interpretability diagnostic on MiMo (45 API calls, budget 45<=100, 0 retries on empty). 9/9 offline preflight checks passed (baseline+control reconstruct byte-exact vs forensics manifest; variant diffs only intended component; budgets; output isolation; credentials w/o printing; historical mtime check clean; model recorded from LIVE env mimo-v2.5 not defaults.json). Results: A(identical failing) 10/10 empty; B(+current numeric) 10/10 empty; C(reword mode token) 10/10 empty; D(+newline) 5/5 empty; E(separate state message) 4/5 empty; control(known-normal payload) 2/5 empty. MECHANISM FOUND: every empty response consumed completion_tokens=512 with reasoning_tokens=511 - the reasoning model exhausts the max_tokens=512 output budget on reasoning and emits no content; non-empty responses stopped reasoning earlier (312-441 reasoning tokens). Content-level fixes (H1-as-literal, H5-as-token) did not flip outcome; control itself is not reliably non-empty on MiMo (60%). Report 19 sections + results JSON + manifest + request/response artifacts under results/v06/analysis/diagnostic/. No V0.6 config/adapter/oracle/prompt changes; no historical record modified (mtime-verified); key never printed/persisted; env unset; nothing uploaded/published."
+}

@@ -1,0 +1,37 @@
+{
+  "pm1_version": 1,
+  "session_id": "somnium-p002-integration",
+  "timestamp": "2026-08-30T13:49:39.619426+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 24,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\Somnium-depth\\src\\depth\\types.ts",
+    "C:\\Users\\think\\Project_v2\\Somnium-depth\\src\\depth\\depth.ts",
+    "C:\\Users\\think\\Project_v2\\Somnium-depth\\src\\experiment\\types.ts",
+    "C:\\Users\\think\\Project_v2\\Somnium-depth\\src\\experiment\\runner.ts",
+    "C:\\Users\\think\\Project_v2\\Somnium-depth\\tests\\acceptance\\depth-acceptance.test.ts",
+    "C:\\Users\\think\\Project_v2\\Somnium-depth\\docs\\ARCHITECTURE-RECONNAISSANCE.md",
+    "C:\\Users\\think\\Project_v2\\Somnium-depth\\qms\\trace-matrix.json",
+    "C:\\Users\\think\\Project_v2\\Somnium-depth\\qms\\records\\verifications\\2026-08-30T13-45-00-ver-002-p002-l2-gate.json",
+    "C:\\Users\\think\\Project_v2\\Somnium-depth\\qms\\records\\nonconformities\\2026-08-30T13-40-00-ncr-001-doc-contradicts-change.json",
+    "C:\\Users\\think\\Project_v2\\Somnium-depth\\HANDOFF.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "somnium-p002-integration",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Somnium P-002 integration: reconciled depth+experiment lanes, found divergence metric insensitivity via probe (23 at all depths), scoped remediation lane, fixed noUncheckedIndexedAccess error, authored report section 8.1, closed L2 REJECT with ncr-001 + ver-002, 138/138 tests"
+}

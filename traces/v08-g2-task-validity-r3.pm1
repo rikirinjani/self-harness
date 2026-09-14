@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "v08-g2-task-validity-r3",
+  "timestamp": "2026-08-24T06:44:23.322411+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 600,
+  "tool_calls": 15,
+  "key_files": [
+    "results/v08/g2_task_validity_r3/PM1_V08_G2_TASK_VALIDITY_R3_RESULTS.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v08-g2-task-validity-r3",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-..........--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "V.8 G2 Task Validity R3: 1 of 4 tasks validated for G3. django-11099 VALID (two-point PASS). django-12113 INVALID (reference fix doesn't resolve tested bug). django-11179 EVALUATOR_FAILURE (test runner timeout). django-12908 EVALUATOR_FAILURE (gold doesn't fix bug, 0 tests discovered). Final G3 pool: 1 task. Minimum viable experiment: 1 task x 2 arch x 4 pressure = 8 runs."
+}

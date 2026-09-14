@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "somnium-verifier-p004-recheck",
+  "timestamp": "2026-08-31T01:51:56.145684+00:00",
+  "agent": "verifier",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 34,
+  "key_files": [
+    "src/canon/verrin-adversarial.ts",
+    "src/canon/canon.test.ts",
+    "docs/ARCHITECTURE-RECONNAISSANCE.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "somnium-verifier-p004-recheck",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------.........................................--...--........-.--...-........................................-.--...-",
+  "action": "L2 re-verification of Somnium P-004 after unspecified-declaration and seed-validation remediation (1c7565a)"
+}

@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-09-11",
+  "category": "verification-blocked",
+  "slug": "pm1-rx-oracle-review-blocked-second-attempt",
+  "severity": "medium",
+  "what_happened": "Second attempt to obtain an independent Oracle review (task ses_f720d5107ffeofCnR7xXU8f34r, alias ora-2) failed immediately with the same OpenAI credit error: 'You have no credits remaining.' This is the second consecutive Oracle block on the PM-1-RX line (see 20260911-verification-blocked-pm1-rx-oracle-review.json).",
+  "root_cause": "OpenAI API account still has no remaining credits. The oracle specialist is OpenAI-backed (gpt-5.6-luna); non-OpenAI specialists (explorer, fixer, librarian) run successfully.",
+  "what_i_did_wrong": "After the first block I did not pre-check credits before re-dispatching the oracle, so the same avoidable failure recurred. A single pre-flight check would have gone straight to the fallback.",
+  "impact": "The review was conducted by a fallback reviewer instead of the designated independent specialist. Independence is partially preserved (fresh, non-authoring, read-only explorer context) but the reasoning depth of the Oracle was not available.",
+  "mitigation_applied": [
+    "Routed the review to a fresh non-OpenAI read-only explorer (exp-3, ses_f720bae83ffeWOR2sC9CZzmP1a) with the full adversarial brief.",
+    "Reconciled the result and added two findings the fallback missed: F10 (arm-F oracle-alignment / construct-validity privilege) and F11 (single global verdict vs per-level taxonomy).",
+    "Calibrated the fallback's F5 numeric example (n~350 implies sigma~0.375; the true requirement is n~2470*sigma^2).",
+    "Delivered VERDICT: PASS WITH CORRECTIONS with 11 findings and 6 required pre-run corrections."
+  ],
+  "residual_risk": "A true independent Oracle review is still owed. Recommend it before implementation begins, once credits are restored or via a non-OpenAI reviewer with equivalent depth.",
+  "artifacts": [
+    "C:\\Users\\think\\self-harness\\traces\\pm1-rx-adversarial-review.pm1",
+    "C:\\Users\\think\\Agentic Layer\\morse\\experiments\\pm1-rx\\"
+  ]
+}

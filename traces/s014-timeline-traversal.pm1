@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "s014-timeline-traversal",
+  "timestamp": "2026-09-11T01:22:57.941111+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 5400,
+  "tool_calls": 20,
+  "key_files": [
+    "experiments/s014/REPORT.md",
+    "experiments/s014/run-all.ts",
+    "experiments/s014/results/results.json",
+    "qms/records/requirements/2026-09-11T05-30-00-req-014-s014-timeline-traversal.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "s014-timeline-traversal",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-..........-.-.-.-........--.-..-.........-.--...-........................................-.--...-",
+  "action": "S014 long-horizon timeline traversal via FoldStateDelta retention: from frozen S012 (dabc4a1), no src change. VERDICT Promising but experimental. Retained traversal is EXACTLY prefix-correct: 0 mismatches on all 1001 prefixes at H=1000, 3001 at H=3000, 302 sampled at H=10000, plus S009/S010 witnesses; branch isolation and determinism pass; derive() remains sole authority. Performance is workload-dependent: sparse retention 6.88x/6.69x, medium/dense ~47% retention 0.87x-1.10x (no benefit), H=10000 1.12x/1.46x. Bottleneck identified: the per-prefix propagation fixpoint (O(model)), which retention does not touch. Baseline 624/624, verify-facts 3/3, frozen hashes unchanged. Next experiment: incremental propagation."
+}

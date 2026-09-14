@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "somnium-p007-gate3-reject",
+  "timestamp": "2026-09-03T13:57:17.046544+00:00",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "duration_s": 0,
+  "tool_calls": 1,
+  "key_files": [
+    "src/derive/world-state.ts",
+    "src/derive/semantic.ts",
+    "src/diff/diff.ts",
+    "docs/P007-WORLDDIFF.md"
+  ],
+  "failure": {
+    "category": "verification-rejection",
+    "severity": "major"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "somnium-p007-gate3-reject",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................-.--...-........................-.--...-........-.--...-........................................-.--...-",
+  "action": "P-007 L2 gate round 3: REJECT. Gate-2 blockers 1+2 both CLOSED (value-comparison class converted at 4 sites, group justification narrowed, refutation test passing). One NEW blocking finding: world-state.ts:191 mints derived fact ids as 'derived:SUBJECT.PREDICATE' with an unescaped dot, so two distinct cells collide on one id; semanticState folds facts as an ARRAY while worldDiff keys them in a MAP, so the collision breaks INV (stateHash moves, all 13 dimensions empty) and puts a wrong ALTERED into workStatuses where INV is blind. Reachable via two ordinary accepted setFact writes on a canon validateCanon accepts. Root cause: hash compares multisets, diff compares sets - the disagreement moved from element level to collection level. Non-blocking: 6 further findings (loadCanon drops edge.group, depth.ts raw !== on fact objects, non-string group throws, contradiction id-only dedup, edge multiplicity under-report, doc duplicated paragraph + one fresh overclaim in section 14c)."
+}

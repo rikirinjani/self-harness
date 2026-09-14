@@ -1,0 +1,37 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1rx-lane-g",
+  "timestamp": "2026-09-11T03:03:29.145836+00:00",
+  "agent": "fixer",
+  "outcome": "partial",
+  "duration_s": 3600,
+  "tool_calls": 40,
+  "key_files": [
+    "experiments/pm1-rx/harness/pm1rx/generator.py",
+    "experiments/pm1-rx/harness/pm1rx/minimize.py",
+    "experiments/pm1-rx/harness/tests/test_generator.py",
+    "experiments/pm1-rx/harness/tests/test_minimize.py",
+    "experiments/pm1-rx/harness/pm1rx/codecs.py",
+    "experiments/pm1-rx/harness/tests/test_codecs.py",
+    "self-harness/failures/2026-09-11-interface-contract-pm1rx-lane-g-codec-jsondecode.json"
+  ],
+  "failure": {
+    "category": "interface-contract",
+    "severity": "high"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1rx-lane-g",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........--.-..-..........-.-.-.-.........--...--........--.-..-..........................--...--........-.--...-",
+  "action": "Implemented lane G (generator.py, minimize.py, test_generator.py, test_minimize.py) per CONTRACTS.md v1.2; fixed codecs.py G11 decoding-failure contract violation (unparseable model output carried as raw content, oracle attributes decoding_failure); added regression test. Suite: 103 passed / 2 failed (both lane-O blockers: NO_REPRESENTATION schema gap; matched-budget method-none arm invariant)."
+}

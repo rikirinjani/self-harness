@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260908T034152-fixer-cli",
+  "timestamp": "2026-09-08T03:41:52.975195+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 60,
+  "tool_calls": 6,
+  "key_files": [
+    "C:\\Users\\think\\kaggle-test\\ragnarok-gpu.ipynb",
+    "C:\\Users\\think\\kaggle-test\\tpu-qwen.ipynb",
+    "C:\\Users\\think\\kaggle-test\\kernel-metadata.json",
+    "C:\\Users\\think\\kaggle-test\\kernel-metadata-tpu.json",
+    "C:\\Users\\think\\kaggle-test\\push_ragnarok.py",
+    "C:\\Users\\think\\kaggle-test\\push_tpu.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260908T034152-fixer-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................--.-..-.........-.--...-........--.-..-.........................................-.--...-",
+  "action": "Rebuilt complete Kaggle notebook package: GPU (Qwen 3.8 27B Uncensored) + TPU (Qwen 3.8 27B standard) with metadata and push scripts"
+}

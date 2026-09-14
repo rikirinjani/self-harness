@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "full-audit-sep1",
+  "timestamp": "2026-09-08T02:21:37.298916+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 12,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\chatbot\\bridge\\data\\audit-2026-09-07.jsonl",
+    "C:\\Users\\think\\Project_v2\\chatbot\\bridge\\data\\audit-2026-09-08.jsonl"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "full-audit-sep1",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Full audit since Sep 1. Found 50 queries missing from audit log on Sep 7-8. Root causes: (1) Greeting trap - messages starting with Halo/Selamat pagi caught by greeting handler, (2) Early morning gap before audit logging was added, (3) Unknown misses possibly from Telegram polling gaps. Sep 1-6 has no audit data at all. 15+ real questions silently swallowed."
+}

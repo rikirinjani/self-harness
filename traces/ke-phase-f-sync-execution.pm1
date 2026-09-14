@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "ke-phase-f-sync-execution",
+  "timestamp": "2026-09-08T03:29:00.831166+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 0,
+  "key_files": [
+    "experiment-results/phase-f/manifest.json",
+    "experiment-results/phase-f/statistical-summary.json",
+    "experiment-results/phase-f/results.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ke-phase-f-sync-execution",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........................-.--...-........................................-.--...-",
+  "action": "Phase F sync + execution on Mac Mini: pushed 3 commits to origin, synced Mac Mini to 4d7e412, rebuilt DR dist, verified pre-flight (tsc clean, phase-f tests 9/9), executed Phase F (5 seeds, 10.4s), regression 333/333 KE + 127/127 DR. Key finding: supplyStress Δ=0.219 on seed 46 only; direction consistency 20% (1/5); success criterion NOT MET. Isolation failure on seed 46 (B=false C=false rng=false). Replay confirmed identical."
+}

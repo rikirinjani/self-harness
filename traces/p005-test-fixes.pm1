@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "p005-test-fixes",
+  "timestamp": "2026-08-31T04:15:56.300065+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 20,
+  "key_files": [
+    "src/poc/external-consumer.test.ts",
+    "docs/RECONNAISSANCE.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "p005-test-fixes",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "P-005: Fixed 2 failing tests (interventionsAfter: use different target; event ID collision: compare only post-fork events). Wrote §21.23 Final Report. 383/383 tests passing."
+}

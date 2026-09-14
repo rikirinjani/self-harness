@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-v06-flight1-analysis-flight2-design",
+  "timestamp": "2026-08-19T21:14:31.024489+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 6,
+  "key_files": [
+    "pm1-trading-benchmark\\results\\v06\\analysis\\PM1_V06_FLIGHT1_OFFLINE_ANALYSIS.md",
+    "pm1-trading-benchmark\\results\\v06\\analysis\\PM1_V06_FLIGHT1_ANALYSIS_DATA.json",
+    "pm1-trading-benchmark\\results\\v06\\flight2\\PM1_V06_FLIGHT2_DESIGN.md",
+    "pm1-trading-benchmark\\results\\v06\\flight2\\PM1_V06_FLIGHT2_PREFLIGHT_PLAN.md",
+    "pm1-trading-benchmark\\results\\v06\\analysis\\figures\\fig_e1_adapter_contribution.png"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-v06-flight1-analysis-flight2-design",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................---..-..........-.--...-........--.-..-.........................................-.--...-",
+  "action": "Flight 1 offline analysis + Flight 2 design: fixer computed aggregate JSON (integrity clean, 3500 hops, SELECTION_ERROR budget-confined, E1 37% handoff cut at equal fidelity, E3 pressure-immunity, E2/E4 no threshold/taxonomy established due to 25% missing cells); librarian verified MiMo-V2.5 facts; wrote analysis md, design md, preflight plan, 3 offline figures. Flight 1 closed; Flight 2 not executed."
+}

@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-final-release-check",
+  "timestamp": "2026-08-19T04:04:02.969387+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 9,
+  "key_files": [
+    "pm1-trading-benchmark\\release-staging\\pm1-v05\\paper\\PUBLIC_RELEASE_CHECKLIST.md",
+    "pm1-trading-benchmark\\release-staging\\pm1-v05\\paper\\REPRODUCTION_MANIFEST.csv",
+    "pm1-trading-benchmark\\release-staging\\pm1-v05\\CITATION.cff",
+    "pm1-trading-benchmark\\release-staging\\pm1-v05\\paper\\RELEASE_READINESS_REPORT.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-final-release-check",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................---..-..........-.--...-........-.--...-........................................-.--...-",
+  "action": "Final pre-publication quality check: staging secret scan 0 confirmed, 251/251 offline tests pass, offline regeneration matches published summary, paper/numerical consistency verified, manifest regenerated against staging tree (68 staged + 3 external, ALL OK), path refs neutralized in staging, PUBLIC_RELEASE_CHECKLIST created. Nothing published."
+}

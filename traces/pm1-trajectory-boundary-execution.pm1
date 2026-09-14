@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-trajectory-boundary-execution",
+  "timestamp": "2026-08-21T04:14:12.749630+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 8,
+  "key_files": [
+    "pm1-trading-benchmark\\results\\v06\\trajectory_boundary\\PM1_V06_TRAJECTORY_BOUNDARY_EXECUTION_REPORT.md",
+    "pm1-trading-benchmark\\results\\v06\\hop_records\\v0.6_trajectory_boundary"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-trajectory-boundary-execution",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................---..-..........-.--...-........-.--...-........................................-.--...-",
+  "action": "Trajectory replication executed: 3 seeds x 3 budgets (80/70/60%) x horizon10 = 90 calls on MiMo-v2.5@2048. 80 completed, 1 EMPTY (seed11@60%). Key finding: action-equivalence boundary IS trajectory-dependent. seed11 transition ~70-80%, seed22 ~60-70%, seed33 below 60% (still PASS at 60%). Density paradox confirmed across trajectories. Run class: v0.6_trajectory_boundary. No other providers."
+}

@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-09-13T06:05:00Z",
+  "session_id": "pm1-rx-v14-forensic-audit",
+  "failure_category": "measurement-defect",
+  "failure_subcategory": "prompt-missing-rules",
+  "severity": "high",
+  "description": "Consumer prompt does not include the lawful-continuation policy (observable_policy_document). The model must infer transition rules from the representation structure. L4 therefore measures rule inference capability, not information sufficiency.",
+  "root_cause": "The consumer prompt was designed to ask for action_type without providing the rules for determining which actions are lawful. The prompt includes the action vocabulary but not the transition rules (BASE_BY_PHASE, PROHIBITED_BY_CONSTRAINT).",
+  "what_i_did_wrong": "Assumed the model could infer the transition rules from the representation structure alone. Did not verify that the prompt provides enough information for the model to determine lawful actions.",
+  "what_i_should_do_instead": "Include observable_policy_document() in the consumer prompt. This makes L4 measure information usage (can the model apply known rules to the provided state?) rather than rule inference (can the model discover the rules from the state structure?).",
+  "impact": "L4=1.000 may be measuring the model's ability to infer rules from structure, not its ability to use provided information. The research question asks about information sufficiency, so L4 should measure rule application, not rule discovery.",
+  "related_files": [
+    "C:\\Users\\think\\Agentic Layer\\morse\\experiments\\pm1-rx\\harness\\pm1rx\\runner.py"
+  ]
+}

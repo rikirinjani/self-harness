@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "v03a-pilot",
+  "timestamp": "2026-08-16T06:26:05.028874+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 0,
+  "key_files": [
+    "lib/llm_runner.py",
+    "lib/validator.py",
+    "run_v03a_pilot.py",
+    "results/v0.3a/V0.3a_PILOT_REPORT.md",
+    "results/v0.3a/v03a_pilot_results.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v03a-pilot",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........................--.-..-.........................................-.--...-",
+  "action": "V0.3a pilot: ran 24 API calls (2 scenarios x 2 episodes x 6 conditions x 1 variant), 0 errors, 50% paired PASS rate. Fixed scenario_spec_to_scenario (dict vs ScenarioSpec), generate_run_id (added variant param), Episode dataclass access. Report generated at results/v0.3a/V0.3a_PILOT_REPORT.md"
+}

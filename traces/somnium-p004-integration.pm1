@@ -1,0 +1,41 @@
+{
+  "pm1_version": 1,
+  "session_id": "somnium-p004-integration",
+  "timestamp": "2026-08-31T02:02:54.593782+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 70,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\Somnium-generic\\src\\canon\\types.ts",
+    "C:\\Users\\think\\Project_v2\\Somnium-generic\\src\\canon\\canon.ts",
+    "C:\\Users\\think\\Project_v2\\Somnium-generic\\src\\canon\\canon.test.ts",
+    "C:\\Users\\think\\Project_v2\\Somnium-generic\\src\\canon\\ordos.ts",
+    "C:\\Users\\think\\Project_v2\\Somnium-generic\\src\\canon\\ordos.test.ts",
+    "C:\\Users\\think\\Project_v2\\Somnium-generic\\src\\canon\\verrin-adversarial.ts",
+    "C:\\Users\\think\\Project_v2\\Somnium-generic\\src\\derive\\propagation.ts",
+    "C:\\Users\\think\\Project_v2\\Somnium-generic\\src\\derive\\world-state.ts",
+    "C:\\Users\\think\\Project_v2\\Somnium-generic\\tests\\acceptance\\cross-canon-acceptance.test.ts",
+    "C:\\Users\\think\\Project_v2\\Somnium-generic\\docs\\ARCHITECTURE-RECONNAISSANCE.md",
+    "C:\\Users\\think\\Project_v2\\Somnium-generic\\qms\\trace-matrix.json",
+    "C:\\Users\\think\\Project_v2\\Somnium-generic\\qms\\records\\nonconformities\\2026-08-31T08-54-34-ncr-003-unsupported-state-claim.json",
+    "C:\\Users\\think\\Project_v2\\Somnium-generic\\qms\\records\\verifications\\2026-08-31T08-54-34-ver-004-p004-l2-gate.json",
+    "C:\\Users\\think\\Project_v2\\Somnium-generic\\HANDOFF.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "somnium-p004-integration",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................................--...--........--.-..-.........................................-.--...-",
+  "action": "Somnium P-004 integration: authored schema challenge pre-implementation, wrote Ordos canon fixes + cross-canon suite directly after 2 lanes errored, found fact-node intervention defect and validator/engine divergence by probe, closed L2 REJECT with ncr-003 + ver-004, 348 tests"
+}

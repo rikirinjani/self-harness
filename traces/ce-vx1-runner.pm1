@@ -1,0 +1,35 @@
+{
+  "pm1_version": 1,
+  "session_id": "ce-vx1-runner",
+  "timestamp": "2026-09-11T05:56:02.097934+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 4200,
+  "tool_calls": 40,
+  "key_files": [
+    "scripts/run-experiment.ts",
+    "scripts/experiment-worker.ts",
+    "scripts/experiments/causal-matrix.ts",
+    "scripts/experiments/fail-inject.ts",
+    "scripts/experiments/index.ts",
+    "scripts/compare-hashes.mjs",
+    "src/poc/benchmark.ts",
+    "package.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ce-vx1-runner",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "CE VX1 RUNNER READY. Commit 2d14189 pushed to origin/main; Mac mini in sync; clean-clone simulation (clone + npm ci + run + replay) passes. Built portable work-unit experiment runner. ZERO engine files touched (src/core, src/game, src/api, src/product unchanged); 12/12 frozen invariants intact. ARCHITECTURE: scripts/run-experiment.ts orchestrator (enumerate/spawn/collect/aggregate/replay), scripts/experiment-worker.ts persistent worker (unit JSON lines in, result JSON lines out), scripts/experiments/ adapters (registry + causal-matrix + fail-inject fixture). Process-level parallelism distributes independent deterministic work units only; tsx startup paid once per worker not per unit. causal-matrix adapter = 200 seeds x 8 sequences x 6 configs = 9600 units built from existing harness (no new causal model); per-unit asserts determinism (two identical runs same stateHash) and finiteness (no NaN/Infinity), records rest as metrics. Full campaign NOT started. VERIFIED: tsc 90 lines unchanged; 746/746 tests 20 files; single worker 10 units 10 passed; replay passing record hash match REPLAY PASS; fail-inject failure record captured + REPLAY PASS; aggregation counts/duration correct; 4 workers 20 units all passed; HASH PARITY 1-vs-4 workers 20/20 matched 0 mismatched (proves parallelism adds zero nondeterminism); 100 units 8.55s 1-worker -> 3.03s 4-worker = 2.8x speedup 389pct cpu; peak RSS 124MB 1-worker 102MB 4-worker. BENCHMARK.TS FIXED: intervention ids used Date.now()+Math.random(), ids are part of traceHash, 4 scenarios reported traceHash=false. First attempt (global counter) insufficient because measureBench compares iteration 0 vs N-1 and the counter advanced between them. Corrected by resetting benchSeq=0 at the top of each iteration; all 16 scenarios now stateHash=true traceHash=true. Benchmark-tool fix only. EXISTING EXPERIMENTS UNCHANGED: replay 5404d32e matches, invariants pass, sweep 48 cells deterministic, cross-platform runs. LIMITATIONS: runner not yet executed on Linux (engine determinism is cross-platform verified across 7 CI environments; runner uses only portable Node builtins); npm allow-scripts warning on npm 11 non-blocking."
+}

@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "P-011-mac-mini-migration",
+  "timestamp": "2026-08-31T06:33:03.845007+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 0,
+  "key_files": [
+    "src/poc/cross-platform-determinism.ts",
+    "src/poc/long-run.ts",
+    "src/poc/headless.ts",
+    "docs/RECONNAISSANCE.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "P-011-mac-mini-migration",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........................-.--...-........................................-.--...-",
+  "action": "P-011: Mac mini migration complete. CE runs natively on Apple Silicon arm64. 496/496 tests pass. Cross-platform determinism CONFIRMED (bit-identical hashes Windows x64 vs macOS arm64). Mac mini 4-5x faster: 3 towns 0.66ms (60Hz), 50 towns 9.03ms (60Hz), 100 towns 17.31ms (30Hz). 10K ticks in 0.16s. Provenance growth sublinear (0.58 exponent). Headless runtime created. Host independence verified. Recommendation: Mac mini permanent CE host."
+}

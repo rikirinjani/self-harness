@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-v07c-calibration-preflight",
+  "timestamp": "2026-08-22T05:00:06.004618+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 4,
+  "key_files": [
+    "pm1-trading-benchmark\\results\\v07c\\calibration_preflight\\PM1_V07C_CALIBRATION_PREFLIGHT.md",
+    "pm1-trading-benchmark\\results\\v07c\\calibration_preflight\\PM1_V07C_CALIBRATION_PREFLIGHT.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-v07c-calibration-preflight",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................---..-..........-.--...-........-.--...-........................................-.--...-",
+  "action": "V0.7-C calibration preflight: defined L0-L4 ladder, proposed L0 rule (bounded dependency closure), L3 conventional baseline (sliding window + summarization + task state + decisions + tool results), L4 PM-Adapter integration, 5-level pressure ladder, DeepSWE calibration subset (15-25 tasks), MiMo-V2.5 primary + replication model, evaluation protocol (primary = task performance), negative-result criterion (NON-NEGOTIABLE), Phase 1/2/3 structure, cost estimates, 15 risks, 5 unresolved design questions. Status: READY FOR AUTHORIZATION. 0 API calls."
+}

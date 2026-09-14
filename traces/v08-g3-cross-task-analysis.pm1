@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "v08-g3-cross-task-analysis",
+  "timestamp": "2026-08-27T02:57:41.958435+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 10,
+  "key_files": [
+    "results/v08/g3_analysis/PM1_V08_G3_CROSS_TASK_ANALYSIS.md",
+    "results/v08/g3_analysis/PM1_V08_G3_CROSS_TASK_ANALYSIS.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v08-g3-cross-task-analysis",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "V.8 G3 Cross-Task Analysis Complete. 16 runs across 2 tasks (django-11099, django-16046). All 16 provenance verified. All 16 TASK_FAILURE. L4 uses 33-61% fewer tokens at P1 but no success improvement. Edits task-dependent: 0/8 on 11099, 3/8 on 16046. No replicated success pattern. Recommendation: D. Stop V.8 and freeze results."
+}

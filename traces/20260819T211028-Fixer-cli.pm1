@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260819T211028-Fixer-cli",
+  "timestamp": "2026-08-19T21:10:28.500134+00:00",
+  "agent": "Fixer",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 12,
+  "key_files": [
+    "results/v06/analysis/compute_flight1_analysis.py",
+    "results/v06/analysis/PM1_V06_FLIGHT1_ANALYSIS_DATA.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260819T211028-Fixer-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--.........................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Computed machine-readable V0.6 Flight 1 analysis aggregates (read-only, no API calls, no raw-record modification). Wrote results/v06/analysis/compute_flight1_analysis.py (reproducible, deterministic - identical MD5 on rerun) and PM1_V06_FLIGHT1_ANALYSIS_DATA.json. Verified: 73 hop files / 73 runs / 3500 hops; 0 duplicate run_ids, 0 duplicate hop keys; config hashes match recomputed; 0 taxonomy violations, 0 density out-of-range, 0 overflow hops, 0 continuity violations, 0 seed mismatches. Missing 20 runs/1000 hops (e2 25% x3 seeds; e4 17 runs at 25%). Taxonomy: PASS 1947, SELECTION_ERROR 1235, PARSE_ERROR 111, CATEGORY_ERROR 119, DEGRADE_FAILURE 88, others 0. STATE_CORRUPTION 0/3500 transitions (no corruption injection configured). Tokens: handoff 85,454 / total_prompt 1,267,308 / provider 1,635,630 in + 680,121 out, usage on all 3500 hops. Provider failures: 20 runs, recurrence 35 failure lines across 3 passes, 22 distinct runs."
+}

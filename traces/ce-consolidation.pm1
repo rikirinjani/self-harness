@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "ce-consolidation",
+  "timestamp": "2026-09-02T03:05:45.691982+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 25,
+  "key_files": [
+    "godot-iso/iso_main.gd",
+    "godot-iso/iso_verify.gd",
+    "godot-iso/project.godot",
+    "godot-iso/README.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ce-consolidation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "CE Post-P-020 Vertical Slice Consolidation COMPLETE. 12-step gameplay loop verified 19/19 headless on Mac mini. Cleaned iso_main.gd (removed old save/restore, reordered demo: checkpoint BEFORE destroy so forked Timeline B has bridge intact). Rewrote iso_verify.gd to cover all 12 steps. Patched ce_ws_adapter.gd (auto-fetch timelines after fork/rewind/switch). Fixed project.godot to point to iso_main.tscn. Added README.md. Removed 13 orphan files from godot-ce-demo. GUI screenshots: step_01 (hash 99be7427), step_05 (5404d32e), step_12 (explanation), step_11 (compare, hash 48fee55b). Boundary audit: zero RNG/randi/randf in .gd files. Frozen invariants: ALL UNCHANGED. 685/685 CE tests pass. Deterministic replay: 5404d32e matches P-014 baseline."
+}

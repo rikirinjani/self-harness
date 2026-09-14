@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "v05-paper-revision-r1",
+  "timestamp": "2026-08-18T09:14:49.934369+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 1200,
+  "tool_calls": 4,
+  "key_files": [
+    "pm1-trading-benchmark\\paper\\PM1_PAPER_DRAFT_R1.md",
+    "pm1-trading-benchmark\\paper\\PM1_REVISION_R1_SUPPORTING.md",
+    "pm1-trading-benchmark\\paper\\PM1_PAPER_DRAFT.md",
+    "pm1-trading-benchmark\\paper\\PM1_PUBLICATION_DESIGN.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v05-paper-revision-r1",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................---..-..........-.--...-........-.--...-........................................-.--...-",
+  "action": "Scientific/editorial revision R1 of PM-1 paper: preserved skip-don't-compress as central anchor, corrected encoding-agnosticism claim, sharpened scope (V0.5 tests first four properties only), kept 99.98% vs 100% distinction, audited all numbers, wrote supporting doc with claims-to-avoid checklist and adapter boundary."
+}

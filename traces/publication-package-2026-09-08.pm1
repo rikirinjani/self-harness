@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "publication-package-2026-09-08",
+  "timestamp": "2026-09-08T05:29:47.584438+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 20,
+  "key_files": [
+    "docs/papers/jamia-2026-kronos-engine.md",
+    "zenodo-package/README.md",
+    "zenodo-package/software/.zenodo.json",
+    "docs/PUBLICATION-PACKAGE-2026-09-08.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "publication-package-2026-09-08",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Publication package assembly: 4 manuscript fixes (Figure 2 caption null-result framing, comparison table partial-ke clarification, §4.1 'validated' removal, §4.4 P-004 reproducibility limitation), figure placeholder consistency fix (L273), 13-term global consistency search (all clean), Zenodo evidence package assembled (24 files, ~5MB), .zenodo.json updated with correct metadata, completion report written (PUBLICATION-PACKAGE-2026-09-08.md)"
+}

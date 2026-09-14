@@ -1,0 +1,39 @@
+{
+  "pm1_version": 1,
+  "session_id": "s009-subsumption-semantics",
+  "timestamp": "2026-09-10T23:53:33.261192+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 3600,
+  "tool_calls": 40,
+  "key_files": [
+    "experiments/s009/REPORT.md",
+    "experiments/s009/reduction.ts",
+    "experiments/s009/counterexamples.ts",
+    "experiments/s009/synthetic.ts",
+    "experiments/s009/checks.ts",
+    "experiments/s009/run-all.ts",
+    "experiments/s009/results/results.json",
+    "qms/records/nonconformities/2026-09-11T00-05-00-ncr-006-r1-not-semantics-preserving.json",
+    "qms/records/requirements/2026-09-11T00-05-00-req-009-s009-subsumption-semantics.json"
+  ],
+  "failure": {
+    "category": "design-defect",
+    "severity": "high"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "s009-subsumption-semantics",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-..........-.-.-.-.........--...--........--.-..-..........................--...--........-.--...-",
+  "action": "S009 subsumption semantics / reduced-history sufficiency: isolated worktree off frozen P-007 (443d3d9), formalized the S008 reduction rules with explicit assumptions, and attacked them. VERDICT BLOCKED: found a genuine minimal counterexample (3 interventions) on a valid canon with overlapping validity windows where reduceChain loses semantically observable information (fact identity). Canon passes inspectCanon with 0 errors. On the seed canons the reduction is sound: attacks 26/26 verrin + 24/24 ordos, idempotence 1021/1021 each, sufficiency 1021/1021 each, determinism stable, branch isolation passes. Commutation shows equivalent histories reduce to different chains (not canonical). Regression 624/624, verify-facts 3/3, frozen hashes unchanged, src/ untouched. Reported BLOCKED rather than patching."
+}

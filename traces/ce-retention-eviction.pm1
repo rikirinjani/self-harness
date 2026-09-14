@@ -1,0 +1,39 @@
+{
+  "pm1_version": 1,
+  "session_id": "ce-retention-eviction",
+  "timestamp": "2026-08-30T23:33:04.703159+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 5400,
+  "tool_calls": 60,
+  "key_files": [
+    "src\\core\\retention.ts",
+    "src\\core\\delivery.ts",
+    "src\\core\\events.ts",
+    "src\\core\\event-bus.ts",
+    "src\\core\\hash.ts",
+    "src\\core\\types.ts",
+    "src\\core\\world.ts",
+    "src\\core\\persistence.ts",
+    "src\\core\\migration.ts",
+    "src\\poc\\retention.test.ts",
+    "src\\poc\\retention-worker.ts",
+    "docs\\RECONNAISSANCE.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ce-retention-eviction",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "CE retention/eviction pass (brief sections 1-20): stable streamSeq cursors, explicit eviction boundary, hybrid ownership, consumption-independent retention, gap vs caught_up distinction, stateSync resync, uniform retention, coalescing vs stateSync, checkpoint/branch/rewind/provenance/restart/crash/hash semantics. FOUND AND FIXED: positional cursors shifted on eviction, silently skipping 2 facts with no gap reported - fixed with monotonic streamSeq + oldestRetainedSeq boundary. 51 new tests, 305 total pass, tsc clean. Verdict ACCEPTED WITH CAVEATS; API shape stable, retention value (500) remains untuned"
+}

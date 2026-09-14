@@ -1,0 +1,37 @@
+{
+  "pm1_version": 1,
+  "session_id": "s008-incremental-derivation",
+  "timestamp": "2026-09-10T16:37:27.976357+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 5400,
+  "tool_calls": 45,
+  "key_files": [
+    "experiments/s008/REPORT.md",
+    "experiments/s008/incremental.ts",
+    "experiments/s008/equivalence.ts",
+    "experiments/s008/matrix.ts",
+    "experiments/s008/branching.ts",
+    "experiments/s008/determinism.ts",
+    "experiments/s008/performance.ts",
+    "experiments/s008/run-all.ts",
+    "experiments/s008/reduction-scale.ts",
+    "experiments/s008/debug-case.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "s008-incremental-derivation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "S008 incremental derivation equivalence: isolated worktree off frozen P-007 (443d3d9), implemented step()/reduceChain reusing derive as sole semantic authority, built differential-equivalence + adversarial + branching + determinism + performance harnesses. 1632/1632 differential cases pass; reduced chain saturates (verrin 228, ordos 174); prefix walk O(H) vs legacy O(H^2), ~118x at H=100000. One divergence (rejected-write contradiction id) found and fixed. src/ untouched; 624/624 tests, verify-facts 3/3, frozen hashes unchanged."
+}

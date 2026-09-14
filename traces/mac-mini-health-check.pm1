@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "mac-mini-health-check",
+  "timestamp": "2026-08-19T03:54:02.138178+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 8,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "mac-mini-health-check",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---.........................--...--........-.--...-........................................................-.--...-",
+  "action": "Mac mini health check: server PID 714 up 5d23h, 81x 200 OK, mem pressure 37% free, no thrash. Health ping used bare model name Qwen3.5-9B-4bit -> HF 404 unloaded model (500); reloaded with full path /Users/ptpakdefarma/models/Qwen3.5-9B-4bit -> 200 OK in 4.9s"
+}

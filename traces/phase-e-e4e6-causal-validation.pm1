@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "phase-e-e4e6-causal-validation",
+  "timestamp": "2026-09-05T01:40:36.810489+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 40,
+  "key_files": [
+    "src/experiment/experiments/e4-horizon.ts",
+    "src/experiment/experiments/e5-isolation.ts",
+    "src/experiment/experiments/e6-rewind.ts",
+    "src/experiment/experiments/dr-counterfactual.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "phase-e-e4e6-causal-validation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "E4-E6 causal validation: horizon sensitivity (event-flip mediated, seed 43 diverges consistently), sentinel isolation PASS (A changed, B/C byte-identical, RNG isolated), rewind counterfactual reproducible x2 BUT aliasing precondition FAIL on P2 (EventQueue shared by reference) and P3 (clock.rng closure shared) — deepClone returns class instances/functions by reference; E6 divergence traced to checkpoint contamination not intervention. Full regression: DR 127/127, KE 307/307"
+}

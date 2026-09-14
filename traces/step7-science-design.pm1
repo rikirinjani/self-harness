@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "step7-science-design",
+  "timestamp": "2026-09-10T10:20:44.456288+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 60,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\Kronos Engine\\docs\\experiments\\ke-monte-carlo-vultr-report.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "step7-science-design",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........................-.--...-........................................-.--...-",
+  "action": "STEP 7: Scientific next-step designed. Proposed N=10,000 counterfactual stability study. Measure effect proportion with 95% CI. Vary horizon (10, 20, 50 ticks). Resources: 2.8hr, 89MB, .08. Minimum scientifically useful MC workload."
+}

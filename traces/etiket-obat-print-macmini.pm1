@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "etiket-obat-print-macmini",
+  "timestamp": "2026-08-31T04:39:17.688190+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 15,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\etiket-obat\\print_label.py",
+    "C:\\Users\\think\\Agentic Layer\\etiket-obat\\print\\etiket-1-standar.png",
+    "C:\\Users\\think\\Agentic Layer\\etiket-obat\\print\\etiket-5-lansia.png"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "etiket-obat-print-macmini",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................--.-..-.........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Mac Mini thermal printer setup: diagnosed CUPS offline issue, installed python-escpos + pyusb, bypassed CUPS via direct USB printing. Successfully printed 2 etiket labels on PRJ 80US Panda Thermal printer."
+}

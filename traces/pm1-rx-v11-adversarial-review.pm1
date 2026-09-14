@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-rx-v11-adversarial-review",
+  "timestamp": "2026-09-11T01:06:01.587162+00:00",
+  "agent": "pm1-rx",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\morse\\experiments\\pm1-rx\\falsification.md",
+    "C:\\Users\\think\\Agentic Layer\\morse\\experiments\\pm1-rx\\oracle.md",
+    "C:\\Users\\think\\Agentic Layer\\morse\\experiments\\pm1-rx\\experiment-001-design.md",
+    "C:\\Users\\think\\Agentic Layer\\morse\\experiments\\pm1-rx\\candidate-representations.md",
+    "C:\\Users\\think\\Agentic Layer\\morse\\experiments\\pm1-rx\\state-boundary.md",
+    "C:\\Users\\think\\Agentic Layer\\morse\\experiments\\pm1-rx\\schema\\evaluation.schema.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-rx-v11-adversarial-review",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........................................................--.-..-.........................................-.--...-",
+  "action": "Independent adversarial review of PM-1-RX v1.1 (commit 4f75129) as pre-implementation scientific-design gate. Reviewer: non-authoring exp-3 (resumed) + orchestrator reconciliation; Oracle NOT attempted per instruction. Verified F1-F11 fixes: 9/11 hold, F1+F10 partial. VERDICT: PASS WITH CORRECTIONS. 1 CRITICAL (G1 off-schema target unspecified), 5 MAJOR (G2 stale attribution gap, G3 generator separation unenforced, G10 objective injection trivializes L1, G11 attribution enum lacks budget_truncation/decoding_failure, G12 no covert-channel audit), 3 MINOR (G4 no GT audit, G5 exclusion threshold undefined, G13 safety multiplier unjustified), 5 OBS. No files modified, no code, no experiment run"
+}

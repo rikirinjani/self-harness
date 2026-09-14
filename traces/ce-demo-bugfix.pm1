@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "ce-demo-bugfix",
+  "timestamp": "2026-09-03T12:43:28.168746+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2700,
+  "tool_calls": 28,
+  "key_files": [
+    "web/src/ce-browser.ts",
+    "web/src/components/demo.ts",
+    "web/index.html",
+    "web/styles/components.css",
+    "scripts/verify-web-demo.mjs"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ce-demo-bugfix",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Fixed three CE web demo display bugs reported by the first external user. Commit 57d1227 pushed; both CI workflows green (verify 33756408732, pages 33756408764); live site serving updated markup (HTTP 200, 27531 bytes). ALL THREE WERE PRESENTATION FAILURES - zero engine defects, git diff HEAD -- src/ godot/ empty. (1) HOSTILITY ALWAYS 0.00: adapter searched for a relation key ending in '>RF' but CE tracks 'MG>player'; nothing matched so a hardcoded zero was displayed. Now reads DEMO_HOSTILITY_KEY directly; spikes 0.10->0.70 at tick 1 then decays 0.02/tick toward floor 0.10, and the note reports the peak because a 5-tick advance lands at 0.62 which looks like nothing happened without context. (2) PRICE APPEARED STUCK AFTER 15 TICKS: not stuck - grain stock empties ~tick 14 and price pins to basePrice 10 x priceClampMax 4.0 = 40.00. Demo showed one number with no history, hiding both the clamp and the non-monotonic shape 10.00->17.05->13.13->19.84->40.00. Added per-tick history strips for price/stock/hostility, violet capped state, notes naming the ceiling and empty granary, log warning at the clamp, and a +1 tick control. (3) FORK TICK APPEARED IGNORED: correct behaviour - only one checkpoint was allowed so all forks branched from the same tick-0 save, and nothing surfaced which tick it held. Checkpoints now re-takeable, branch-point tick always on screen, new checkpoint retracts stale comparison, compare panel names the shared branch tick. Browser verification extended 37 to 56 assertions covering every regression."
+}

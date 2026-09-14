@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "donasi-ntt-shopping-list-v3",
+  "timestamp": "2026-08-30T23:52:46.047415+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 8,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\Donasi NTT\\Daftar Belanja Obat Donasi NTT v3.txt"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "donasi-ntt-shopping-list-v3",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Created v3 shopping list: replaced Dulcolax with Laxana generic bisacodyl 5mg (saved Rp379512, 2.5x more tablets), reallocated savings across 12 priority lines; reconciled librarian verification of 6 laxative products"
+}

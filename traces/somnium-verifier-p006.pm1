@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "somnium-verifier-p006",
+  "timestamp": "2026-09-01T03:17:51.589577+00:00",
+  "agent": "verifier",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 21,
+  "key_files": [
+    "src/derive/constraints.ts",
+    "src/derive/constraints.test.ts",
+    "src/canon/types.ts",
+    "src/canon/ordos.ts",
+    "docs/P006-CARDINALITY.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "somnium-verifier-p006",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........................................--.-..-.........--.-..-.........................................-.--...-",
+  "action": "L2 verifier gate on Somnium P-006 (constraint-layer cardinality: AT_MOST_ONE/AT_LEAST_ONE over occurrences). 12 claims verified by execution: predictions precede implementation (single commit 013a95d contains both); orthogonality holds (violating world: 0 contradictions, 0 impossible events, statuses kept, distinct record kinds violation/ vs contra: vs UNSUPPORTED); no silent mutation; multi-depth recompute (force->negate returns to validity); rejected writes cannot trip bound (ghost never becomes occurrence); stateHash changed by violation, identityHash lineage intact, verrin hash bit-identical (e4c79cec), ordos hash change solely from constraints (stripped ef9cbe0c == frozen); EXCLUDES retained as distinct axis (both records fire); parameterized cross-canon test over {verrin,ordos}; K agreement diagnostic.observed === query count; global-per-type scope only, no scoped fields; EXACTLY_ONE compositional. npm run check exit 0; npm test 507/507 (22 files); verify-facts 3/3; frozen somnium-p005-final dereferences to 5b41ded; git status clean. Attack cases: illegal-write fix attempts, nonexistent-fact retract, all-UNKNOWN AT_LEAST_ONE, branch leak, Ordos declaration isolation - all pass."
+}

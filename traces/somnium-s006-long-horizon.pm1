@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "somnium-s006-long-horizon",
+  "timestamp": "2026-09-01T00:08:15.745639+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 32,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\Somnium-occurrence\\src\\experiment\\s006\\long-horizon.ts",
+    "C:\\Users\\think\\Project_v2\\Somnium-occurrence\\experiments\\s006\\manifest.json",
+    "C:\\Users\\think\\Project_v2\\Somnium-occurrence\\experiments\\s006\\EXPERIMENT-S006-LONG-HORIZON.md",
+    "C:\\Users\\think\\Project_v2\\Somnium-occurrence\\experiments\\s006\\characterization.md",
+    "C:\\Users\\think\\Project_v2\\Somnium-occurrence\\experiments\\s006\\results\\s006-results-seed20260831.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "somnium-s006-long-horizon",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................................--...--........--.-..-.........................................-.--...-",
+  "action": "S006 long-horizon experiment on frozen P-005 (tag somnium-p005-final=5b41ded): harness in src/experiment/s006, report EXPERIMENT-S006-LONG-HORIZON.md. Measured: residue linear with horizon (117.46B/intervention R2=1.0, 2.16x world at H1000), world sublinear, replay stable to 50 handoffs and 3 seeds, 4/4 error classes detected, convergence stateHash/identityHash distinction verified. Deficiency: task/objective/authority/staleness/next-transition/cold-state not represented in engine; worker-cognition arms not executable (no LLM worker path) - reported as boundary, not fabricated. Frozen tag untouched; 479 tests still green."
+}

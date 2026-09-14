@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-rx-research-spec",
+  "timestamp": "2026-09-11T00:48:25.699912+00:00",
+  "agent": "pm1-rx",
+  "outcome": "partial",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\morse\\experiments\\pm1-rx\\schema\\README.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-rx-research-spec",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........--.-..-.........................................-.--...-........................................-.--...-",
+  "action": "PM-1-RX research restart: produced 8-doc research specification + 7 JSON schemas on new branch pm1-rx; audited prior PM-1 artifacts (DEMONSTRATED/FALSIFIED/OPEN/ASSUMED); defined new sufficiency question L0-L5; precommitted falsification criteria; designed smallest CPU-feasible experiment. Independent oracle review BLOCKED (no API credits); self-review applied 2 fixes (evaluation.attribution field, generator-confound control)"
+}

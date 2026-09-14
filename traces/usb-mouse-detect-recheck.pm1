@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "usb-mouse-detect-recheck",
+  "timestamp": "2026-08-31T12:14:59.484750+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 60,
+  "tool_calls": 3,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "usb-mouse-detect-recheck",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "USB mouse detection recheck on Windows host: HID\\\\VID_3151&PID_1020&MI_01&COL01 present with Status=OK as Mouse class, plus full composite sibling set (USB Input Device, consumer control, system controller, vendor-defined) all OK. Live GetCursorPos poll over 10s recorded 3 movement samples = pointer input IS flowing, versus 0 samples on the identical test at session start. Original wireless-mouse fault is resolved. Also confirmed the VID_0000&PID_0002 'Device Descriptor Request Failed' error device is no longer present (phone unplugged), and the wireless ADB session to 192.168.1.4:41729 has dropped (device not found), consistent with wireless debugging being switched off as advised."
+}

@@ -1,0 +1,36 @@
+{
+  "pm1_version": 1,
+  "session_id": "somnium-verifier-p005-recheck3",
+  "timestamp": "2026-08-31T07:04:26.535750+00:00",
+  "agent": "verifier",
+  "outcome": "fail",
+  "duration_s": 0,
+  "tool_calls": 32,
+  "key_files": [
+    "src/derive/propagation.ts",
+    "src/query/occurrence.test.ts",
+    "src/query/occurrence.ts",
+    "tests/acceptance/cross-canon-acceptance.test.ts",
+    "docs/ARCHITECTURE-RECONNAISSANCE.md",
+    "qms/records/nonconformities/2026-08-31T06-21-25-ncr-004-four-false-universals.json"
+  ],
+  "failure": {
+    "category": "false-universal-claim",
+    "severity": "major"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "somnium-verifier-p005-recheck3",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........-.--...-.........................--...--........--.-..-.........................................-.--...-",
+  "action": "L2 fourth review of Somnium P-005 after node-level undeclared-invariant remediation (02cf3ea): guard holds against all occurrence/count/window/work/temporal routes (240 pairs, 729 triples, 18 targeted attacks, 3 seed canons) and does not over-fire; REJECT on a fifth false universal - the 'can never join an EventType' clause at docs 19.3/19.8 and the test name at occurrence.test.ts:387 is refuted by setFact(ghost, instance_of, type) alone, which enrols an undeclared id in occurrencesOfType and typeOfOccurrence with no contradiction record"
+}

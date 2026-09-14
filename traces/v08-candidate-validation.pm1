@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "v08-candidate-validation",
+  "timestamp": "2026-08-24T13:22:58.544061+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 10,
+  "key_files": [
+    "results/v08/candidate_validation/PM1_V08_CANDIDATE_VALIDATION_RESULTS.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v08-candidate-validation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "V.8 Candidate Validation: django__django-16046 VALIDATED. Two-point PASS: baseline 0+7/7 FAIL (rc=1), gold 7+0/7 PASS (rc=0). Production evaluator works with test_patch applied. Test: utils_tests.test_numberformat. 12-line patch, Django file upload permissions fix. NEW VALID CANDIDATE for future MiMo experiments."
+}

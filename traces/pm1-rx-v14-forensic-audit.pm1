@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-rx-v14-forensic-audit",
+  "timestamp": "2026-09-13T05:40:17.398444+00:00",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "duration_s": 2400,
+  "tool_calls": 0,
+  "key_files": [
+    "experiments/pm1-rx/harness/V14_FORENSIC_AUDIT.md"
+  ],
+  "failure": {
+    "category": "measurement-defect",
+    "severity": "high"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-rx-v14-forensic-audit",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................-.--...-........---..-..........................-.--...-.........................--...--........-.--...-",
+  "action": "PM-1-RX v1.4 forensic audit: found 4 defects blocking confirmatory scaling. (1) R1/R2 counterfactual broken — omitting constraint != activating it. (2) Consumer prompt missing lawful-continuation rules — L4 measures rule inference not info sufficiency. (3) L4 saturated — model bias toward safe actions. (4) F validity section stale. Verdict: v1.4 NOT valid for scaling. Requires repair."
+}

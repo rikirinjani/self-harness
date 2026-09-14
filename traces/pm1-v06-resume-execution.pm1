@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-v06-resume-execution",
+  "timestamp": "2026-08-19T19:59:14.021038+00:00",
+  "agent": "coordinator",
+  "outcome": "partial",
+  "duration_s": 400,
+  "tool_calls": 4,
+  "key_files": [
+    "pm1-trading-benchmark\\results\\v06\\PM1_V06_RESUME_EXECUTION_REPORT.md",
+    "pm1-trading-benchmark\\results\\v06\\status\\RESUME_AUDIT.md",
+    "pm1-trading-benchmark\\results\\v06\\checkpoints\\e2_checkpoint.json",
+    "pm1-trading-benchmark\\results\\v06\\checkpoints\\e4_checkpoint.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-v06-resume-execution",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........--.-..-..........--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "V0.6 Flight 1 resume: offline resume audit PASS (config hashes match, 20 missing runs/1000 hops known, budgets reconciled globally), connectivity check PASS (provider topped up), resume executed only missing runs - 0/20 recovered (15 calls all empty-content, deterministic per-prompt across 3 passes; top-up did not change behavior). Stopped cleanly at registered INFRA_FAILURE. Flight 1 remains 73/93 runs 3500/4500 hops. Final: V0.6 FLIGHT 1 STILL INCOMPLETE."
+}

@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-mimo-boundary-execution",
+  "timestamp": "2026-08-21T02:55:31.916382+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 12,
+  "key_files": [
+    "pm1-trading-benchmark\\results\\v06\\mimo_boundary_design\\PM1_V06_MIMO_BOUNDARY_EXECUTION_REPORT.md",
+    "pm1-trading-benchmark\\results\\v06\\hop_records\\v0.6_mimo_boundary\\b1-F-A+B+C-drop-100%-100%-seed11-h25-t1.json",
+    "pm1-trading-benchmark\\results\\v06\\hop_records\\v0.6_mimo_boundary\\b1-F-A+B+C-drop-50%-50%-seed11-h25-t1.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-mimo-boundary-execution",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "MiMo boundary flight executed: 5 budget levels (100%/50%/25%/10%/5%) x seed11 x horizon25 = 125 authorized calls. Results: 100% = 25/25 PASS; 50% = 25/25 SELECTION_ERROR; 25%/10%/5% = EMPTY @2048. MiMo budget-fidelity transition located between 50% and 25%. 50 calls completed (100%+50% runs), 75 calls unissued (25%/10%/5% empty-content). Density: 0.5063 at 100%, 0.7813 at 50%. No other providers, no historical artifacts modified."
+}

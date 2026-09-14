@@ -1,0 +1,35 @@
+{
+  "pm1_version": 1,
+  "session_id": "somnium-p007-gate4-reject",
+  "timestamp": "2026-09-03T21:50:02.543175+00:00",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "duration_s": 0,
+  "tool_calls": 1,
+  "key_files": [
+    "src/derive/semantic.ts",
+    "src/diff/diff.ts",
+    "src/derive/propagation.ts",
+    "src/canon/canon.ts",
+    "docs/P007-WORLDDIFF.md"
+  ],
+  "failure": {
+    "category": "verification-rejection",
+    "severity": "major"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "somnium-p007-gate4-reject",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................-.--...-........................-.--...-........--.-..-.........................................-.--...-",
+  "action": "P-007 L2 gate 4: REJECT, 4 blocking. Gate-3 routes 1+3 CLOSED, route 2 only closed via loadCanon (derive never calls inspectCanon, so canon literals still collide). Three further blockers: (a) REGRESSION I introduced - semanticState now folds the whole FactView while factOverrides still compares only {object,validFrom,validTo}, so a subject/predicate/new-field difference moves stateHash with an empty diff; pre-fix the enumerated projection dropped it from BOTH views and INV held. (b) dedupeBy's comparator uses localeCompare on both terms, which is not a total order (NFC/NFD twins collate equal), so the same-key survivor is order-dependent - contradicting its own docstring. (c) cellKey injectivity rests on 'NUL cannot appear in an id', which nothing enforces; loadCanon accepts char/a-NUL-x. Non-blocking: an unfalsifiable assertion I wrote (false===false?X:false), the declined contradiction id-dedup REDUCED diff discrimination, statuses/workStatuses key-presence has no correspondence, a duplicated doc paragraph, timeline/types.ts still uses the '.' separator. Diagnosis: four rounds of fixing the named instance. Root cause is that stateHash and worldDiff are two independent hand-written implementations of one comparison; INV needs them to be one mechanism. Escalating the scope decision rather than attempting a fifth patch."
+}

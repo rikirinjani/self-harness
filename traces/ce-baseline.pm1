@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "ce-baseline",
+  "timestamp": "2026-09-02T03:23:39.026114+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1200,
+  "tool_calls": 30,
+  "key_files": [
+    "src/api/public.ts",
+    ".gitignore",
+    "scripts/replay-smoke.ts",
+    "src/poc/branching-rewind.test.ts",
+    "src/poc/vertical-slice.test.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ce-baseline",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........--.-..-.........................................-.--...-",
+  "action": "CE Clean Post-P-020 Baseline ESTABLISHED. Commit 253cc5c pushed to origin/main. Mac mini synced and verified. 685/685 tests, deterministic replay 5404d32e, Godot 12-step 19/19. Added key export to public API (fixes branching-rewind tests). Added .gitignore for headless-checkpoint.json. Excluded probe-ws-checkpoint.ts. No SE contamination, no credentials, no junk. Frozen invariants UNCHANGED. CE marked RESEARCH-FROZEN / GAME IMPLEMENTATION ONLY."
+}

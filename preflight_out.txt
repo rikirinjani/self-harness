@@ -1,0 +1,16 @@
+ENV_KEYS: DEEPSEEK_API_KEY,TELEGRAM_BOT_TOKEN,AWS_ACCESS_KEY_ID,AWS_SECRET_ACCESS_KEY,HF_TOKEN
+RECS_FILES: ['DREAM_RETRIEVER_SPECS.md', 'MULTI_MODEL_RETRIEVER_RECS.md', 'MULTI_MODEL_RETRIEVER_RECS.md']
+RECS_LINE: | ms-marco-MiniLM-L-12-v2 | 33M | 1 | Reranking | PubMed relevance pairs |
+RECS_LINE: | Cross-encoder labels | 500K | Expert-labeled relevance scores |
+RECS_LINE: - Plus cross-encoder: $10-15
+RECS_LINE: - Build 5 FAISS indices + BM25 + cross-encoder
+RECS_LINE: 3. **Cross-encoder reranking** — ms-marco-MiniLM-L-12-v2 reranks top-50
+RECS_LINE: | Cross-encoder reranker | ~200MB |
+RECS_LINE: | Reranking | ms-marco-MiniLM-L-12-v2 | 1 | 200MB |
+RECS_LINE: - Use bge-small FAISS + cross-encoder rerank (3GB)
+EVALDOC: DREAM_RETRIEVER_SPECS.md | | bge-small-en-v1.5 | 133M | 384 | Fast recall | PubMed contrastive pairs |
+EVALDOC: FULL_BUDGET_PLAN.md | │  1. bge-small FAISS (vector search)     │
+EVALDOC: HF_FULL_STACK.md | | FAISS PQ index (bge-small, 35.7M) | 8.0GB | ✅ |
+EVALDOC: PMC_FULLTEXT_DECISION.md | Retrieval (bge-small FAISS, 35.7M)
+HF_CLI: True
+GIT: True

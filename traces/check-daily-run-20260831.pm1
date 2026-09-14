@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "check-daily-run-20260831",
+  "timestamp": "2026-08-31T03:22:02.247905+00:00",
+  "agent": "coordinator",
+  "outcome": "partial",
+  "duration_s": 420,
+  "tool_calls": 11,
+  "key_files": [
+    "/Users/ptpakdefarma/t5-pipeline/logs/daily.log",
+    "/Users/ptpakdefarma/Library/LaunchAgents/com.t5pipeline.daily.plist"
+  ],
+  "failure": {
+    "category": "silent-job-death",
+    "severity": "medium"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "check-daily-run-20260831",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........--.-..-..........--...--........--.-..-.........-.--...-........................--.-..-.........-.--...-",
+  "action": "Checked t5-pipeline daily run: last SUCCESS 2026-08-27 17:04 (6 consecutive successes Aug20-27). Aug 28 run started 17:00:01, died silently at 17:11:11 during shareholders step batch 7/95, no traceback, no jetsam evidence. Aug 29-30 weekend not scheduled. Weekly full scan OK Aug 30 09:23 (962/962, 4 changes, 3 SELL signals HKMU). Bonsai analyse step degraded every run (Errno 61 conn refused, port not listening)"
+}

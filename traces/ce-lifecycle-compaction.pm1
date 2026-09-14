@@ -1,0 +1,41 @@
+{
+  "pm1_version": 1,
+  "session_id": "ce-lifecycle-compaction",
+  "timestamp": "2026-08-30T19:33:56.237544+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 6000,
+  "tool_calls": 65,
+  "key_files": [
+    "src\\core\\lifecycle.ts",
+    "src\\core\\migration.ts",
+    "src\\core\\types.ts",
+    "src\\core\\propagation.ts",
+    "src\\core\\hash.ts",
+    "src\\core\\world.ts",
+    "src\\core\\timeline.ts",
+    "src\\poc\\lifecycle.ts",
+    "src\\poc\\lifecycle.test.ts",
+    "src\\poc\\feedback.test.ts",
+    "src\\poc\\stress.test.ts",
+    "src\\poc\\determinism.test.ts",
+    "src\\poc\\persistence.ts",
+    "docs\\RECONNAISSANCE.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ce-lifecycle-compaction",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "CE lifecycle pass (brief sections 1-15): formalized 4 persistence layers with measured load-bearing matrix; defined compaction semantics (rejected lossless node merging as unavailable, adopted state-equivalent truncation, declined semantic summaries as forgery risk); semantic retention policies (RETAIN_ALL/recentWindow/RESUME_ONLY) with derived capability loss; checkpoint classes DERIVED from payload so a label cannot lie, one envelope sufficient; rewind-after-compaction rule chosen explicitly with 3 rejected alternatives; schema v6 + v5->v6 migration running before validation with hash re-derivation and no forged provenance; canonical serialization attacked. THREE DEFECTS FOUND AND FIXED: (1) provenance node ids inside PendingEntry leaked into stateHash so renumbering ids changed world identity, which would have invalidated the mandatory retention-determinism test - caught by probing BEFORE writing lifecycle code; (2) abandoned-future boundary computed by tick instead of intervention sequence, double-counting same-tick pre-checkpoint interventions; (3) a vacuous test whose scenario was empty (repeat destroy rejected) passed while proving nothing. Also identified two compaction traps: dynamics is continuation state despite leaving stateHash unchanged (dropping it changes future diagnostics 5->3), and events is inside world identity. 201 tests pass, tsc clean. Verdict ACCEPTED WITH CAVEATS; minimum resumable artefact = 12.9pct of full checkpoint; next gate = event-stream delivery contract because it decides whether events belongs in stateHash at all"
+}

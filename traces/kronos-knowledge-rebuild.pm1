@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "kronos-knowledge-rebuild",
+  "timestamp": "2026-08-29T20:47:25.327378+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 34,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kronos-knowledge-drawers.md",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\file_kronos_drawers.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kronos-knowledge-rebuild",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................................--...--........-.--...-........................................-.--...-",
+  "action": "Analyzed Kronos Engine project (2 explorer recon lanes), diagnosed MemPalace DIVERGED index (5903 sqlite vs 5886 hnsw) causing all MCP memory timeouts, rebuilt index from sqlite with archive, recorded embedder identity (minilm/384), authored and filed 12 curated knowledge drawers into wing kronos-engine across 11 rooms"
+}

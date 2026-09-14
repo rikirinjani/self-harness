@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "exp-001b-fixer-diagnostic-scripts",
+  "timestamp": "2026-09-11T01:20:05.351719+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 8,
+  "key_files": [
+    "src/experiment/experiments/exp-001b-snapshot-trace.ts",
+    "src/experiment/experiments/exp-001b-isolation-test.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "exp-001b-fixer-diagnostic-scripts",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--.........................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "EXP-001B: Wrote 2 diagnostic scripts. Part A (snapshot-trace.ts): Traces sentinelOutput through extraction→live state→snapshot→reconstruct→diff engine. Part B (isolation-test.ts): 4-case parent/branch isolation experiment testing counter-reset hypothesis. Both scripts compiled and executed successfully via tsx."
+}

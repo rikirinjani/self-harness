@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "post-test-mcq-webinar-v2",
+  "timestamp": "2026-08-25T14:28:21.751861+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 40,
+  "tool_calls": 6,
+  "key_files": [
+    "C:\\Users\\think\\Downloads\\Post_Test_Webinar_2026-14_Tepat_Pilih_Tepat_Pakai_v2.docx",
+    "C:\\Users\\think\\Downloads\\mcq_webinar_2026_14_v2.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "post-test-mcq-webinar-v2",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................-.--...-........-.--...-........-.--...-........................................-.--...-",
+  "action": "Revised MCQ v2: replaced heparinoid Q3 with kolofonium and calamine Q5 with mentol/kamper (Zambuk-relevant), saved new v2 docx"
+}

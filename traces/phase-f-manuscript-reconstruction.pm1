@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "phase-f-manuscript-reconstruction",
+  "timestamp": "2026-09-08T03:48:25.935985+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\Kronos Engine\\docs\\papers\\jamia-2026-kronos-engine.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "phase-f-manuscript-reconstruction",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........................-.--...-........................................-.--...-",
+  "action": "Phase F manuscript reconstruction: Added Section 3.5 (causal-pathway intervention), updated Abstract/Intro/Discussion/Conclusion with canonical Mac evidence, event-gate mechanism, admission-multiplier inertness, discharge-delay constraint. Updated test counts 333/332 Mac/Windows. Added Figure 4. Full consistency audit passed."
+}

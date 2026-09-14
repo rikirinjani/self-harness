@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "somnium-p019-retrospective",
+  "timestamp": "2026-08-31T22:12:53.619025+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 26,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "somnium-p019-retrospective",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................--.-..-.........................................................-.--...-",
+  "action": "P-019 retrospective (read-only): analysed 34 PM-1 traces, MemPalace 1361 drawers/8 wings, 14 P-005 commits, ncr-004, QMS records. Finding: PM-1 payload carries 8 declared bits (n_states=1 x width=8), 20 distinct payloads over 34 traces, invariant to action text; semantic content sits in plaintext fields. No PM-1 artifact read back during session. Natural ablation: gate-3 trace never written yet its finding propagated via commit message + ncr-004 + source comment. MemPalace has no Somnium wing, zero literal hits for P-005 identifiers. Verdict on PM-1-as-state-transmission: NOT SUPPORTED; observed continuity = transcript + git/repo + test state"
+}

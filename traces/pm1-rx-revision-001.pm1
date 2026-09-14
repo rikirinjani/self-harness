@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-rx-revision-001",
+  "timestamp": "2026-09-11T01:01:11.553462+00:00",
+  "agent": "pm1-rx",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\morse\\experiments\\pm1-rx\\schema\\experiment-result.schema.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-rx-revision-001",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........................................................-.--...-........................................-.--...-",
+  "action": "Applied adversarial-review corrections F1-F11 as versioned pre-run revision 001 (spec v1.1). Preserved v1.0 at commit e27d120; revision committed separately at 4f75129. F5 precommitted sample-size rule changed (variance pilot n>=10 -> computed n, achieved power reported) with full documentation. Schemas bumped to pm1-rx/1.1. Consistency checks run; 2 leftovers found and fixed. INCIDENT: version-bump one-liner truncated all 7 schema files to 0 bytes; recovered from e27d120; failure record filed. No implementation, no pilot, historical artifacts untouched"
+}

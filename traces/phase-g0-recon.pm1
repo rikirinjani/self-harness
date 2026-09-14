@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "phase-g0-recon",
+  "timestamp": "2026-09-11T04:31:05.075782+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "Deers-Rock/docs/productization/PHASE-G0-RECONNAISSANCE.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "phase-g0-recon",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Phase G0 reconnaissance (DR productization). Inspected DR repo: found existing rich REST API (~80 routes in src/api/rest.ts), FHIR createFhirEndpoints (defined but UNMOUNTED), buildFhirBundle mounted at /api/fhir/encounter/{id}, static web UI (public/index.html, bi.html), SQLite journal+snapshots. Gaps identified: non-deterministic default seed (Date.now fallback), no reset/step/seed/scenario-trigger endpoints, wall-clock auto-advance, no CORS/auth, no dev docs. Wrote docs/productization/PHASE-G0-RECONNAISSANCE.md with architecture, existing capabilities, gaps, proposed sandbox layer (additive src/sandbox/), MVP contract with SUPPORTED/ADAPTER/NOT-SUPPORTED classification, integration strategy (no OG app source found - AUTHOR ACTION), G1-G7 sequence, and 8 decisions needing approval. No implementation started. Core untouched."
+}

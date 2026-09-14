@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "v08-g1-patch-provenance",
+  "timestamp": "2026-08-24T03:49:41.991353+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 15,
+  "key_files": [
+    "v08/g1_validate.py",
+    "results/v08/g1/g1_results.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v08-g1-patch-provenance",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "V.8 G1 Patch Provenance: G1 PASS 13/13 tests. Deterministic patch hashing (SHA-256). Clone replay produces identical PATCH_ID. Mutation/revert/unauthorized-edit/wrong-base all detected. Canonicalization deterministic. Replay produces identical PATCH_ID + evaluator result. G0 regression green. Provenance infrastructure verified."
+}

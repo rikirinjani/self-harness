@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "v07c-incident-003",
+  "timestamp": "2026-08-23T10:19:26.157626+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 10,
+  "key_files": [
+    "results/v07c/phase1_incident_003/PM1_V07C_PHASE1_INCIDENT_003.md",
+    "results/v07c/phase1_incident_003/PM1_V07C_PHASE1_INCIDENT_003.json",
+    "results/v07c/phase1_incident_003/manifest.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v07c-incident-003",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "V.7-C Incident-003 Diagnosed: L4 stall root cause — process blocked 96min exceeding 60min theoretical max, likely API response parsing hang. Evaluator zero-test root cause — Django detection fails, falls back to pytest (not installed). Two minimum repairs identified: per-hop timeout 300s + evaluator Django detection resilience. INCIDENT-003 DIAGNOSED."
+}

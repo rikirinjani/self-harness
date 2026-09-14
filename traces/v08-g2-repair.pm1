@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "v08-g2-repair",
+  "timestamp": "2026-08-24T05:46:18.165642+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 10,
+  "key_files": [
+    "v08/g2_positive_path.py",
+    "results/v08/g2_repair/PM1_V08_G2_REPAIR_RESULTS.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v08-g2-repair",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "V.8 G2 Positive-Path Repair: Django evaluation context defect identified. Root cause: Django test runner discovers 0 tests in evaluation context (exit code 2). Gold patches apply correctly for both tasks. Provenance verified for django-12113, mismatch for django-11099 (inconclusive). G0 regression green. Minimum fix: ensure Django test runner discovers tests in evaluation context. No model calls, no experimental changes."
+}

@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-citation-scope-statement",
+  "timestamp": "2026-08-19T06:28:31.626136+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 400,
+  "tool_calls": 5,
+  "key_files": [
+    "morse\\research\\pm1-v05\\paper\\PM1_PAPER_SUBMISSION.md",
+    "morse\\research\\pm1-v05\\paper\\PM1_PAPER_SUBMISSION.typ",
+    "morse\\research\\pm1-v05\\paper\\PM1_PAPER_SUBMISSION.pdf",
+    "morse\\research\\pm1-v05\\paper\\PM1_PAPER_ARXIV_READY.md",
+    "morse\\research\\pm1-v05\\paper\\ARXIV_PREPARATION_REPORT.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-citation-scope-statement",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---.........................--...--........-.--...-........--.-..-.........................................-.--...-",
+  "action": "Removed literal [CITATION NEEDED] from submission manuscript, arXiv-ready copy, and typst source; rewrote as explicit scope statement ('A comprehensive taxonomy of agent handoff and stateful-agent architectures is beyond the scope of this paper'); regenerated PDF; updated arXiv prep report; committed and pushed 244580a."
+}

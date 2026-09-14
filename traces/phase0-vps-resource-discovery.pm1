@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "phase0-vps-resource-discovery",
+  "timestamp": "2026-09-10T08:35:50.305553+00:00",
+  "agent": "explorer",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "phase0-vps-resource-discovery",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........---..-..........................................................................................................-.--...-",
+  "action": "Phase 0 Resource Discovery: VPS = Ubuntu 26.04, AMD EPYC-Milan 2 vCPU @ 3.25GHz, 3.3GB RAM, 47GB disk, Node v22.23.2 installed, git 2.53.0, AVX2/FMA/SSE4.2 available. Single-socket, 1 core / 2 threads. No Vultr metadata endpoint. Unknown plan/cost."
+}

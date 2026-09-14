@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "kronos-final-acceptance",
+  "timestamp": "2026-08-31T13:44:44.523535+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 8,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\Kronos-Engine-remediation\\src\\integration\\heatwave.test.ts",
+    "docs/audits/REOPEN-AUDIT-2026-08-31.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kronos-final-acceptance",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........-.--...-........-.--...-........................................-.--...-",
+  "action": "Kronos final acceptance: heatwave flake fixed (per-test 60s timeouts), committed 698146f; reproduce 5/5 exit 0, verify-facts 13/13, suite 307/34, tree clean; audit addendum 2 + board reconciliation"
+}

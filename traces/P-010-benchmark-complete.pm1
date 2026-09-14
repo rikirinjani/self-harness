@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "P-010-benchmark-complete",
+  "timestamp": "2026-08-31T06:11:44.433796+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 0,
+  "key_files": [
+    "src/poc/benchmark.ts",
+    "src/api/public.ts",
+    "docs/RECONNAISSANCE.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "P-010-benchmark-complete",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........................-.--...-........................................-.--...-",
+  "action": "P-010: Wrote benchmark harness, fixed API mismatches, ran all benchmarks, wrote P-010 report to RECONNAISSANCE.md. 496/496 tests pass. Key finding: CE runs at 60Hz for 3-10 towns on current HW, 30Hz for 25 towns, 10Hz for 50-100 towns. LOCAL-GO with Mac mini M4 recommended for scaling."
+}

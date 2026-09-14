@@ -1,0 +1,1 @@
+﻿{"category":"process","severity":"low","root_cause":"Post-trace retrace scanner was invoked from C:\\Users\\think\\Agentic Layer, but self-harness is located at C:\\Users\\think\\self-harness.","actual_action":"Invoked scanner with the wrong workdir; reran it from C:\\Users\\think."}

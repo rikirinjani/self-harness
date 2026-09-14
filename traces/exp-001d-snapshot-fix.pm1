@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "exp-001d-snapshot-fix",
+  "timestamp": "2026-09-11T03:15:52.094214+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 12,
+  "key_files": [
+    "src/sectors/deers-rock-adapter.ts",
+    "src/experiment/experiments/exp-001d-snapshot-fix-verification.ts",
+    "experiment-results/exp-001d/verification.json",
+    "docs/experiments/EXP-001D-snapshot-fix-verification.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "exp-001d-snapshot-fix",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........--.-..-.........-.--...-........................................-.--...-",
+  "action": "EXP-001D complete: snapshot fix applied to deers-rock-adapter.ts tick handler. Moved makeSnapshot/doReconstruct to outer scope, reassigned __snapshot/__reconstruct closures to capture current state. All 7 verification checks passed. Seed=1003 H=50: 11 sentinelOutput.* paths now discoverable. Commit f37e6ce."
+}

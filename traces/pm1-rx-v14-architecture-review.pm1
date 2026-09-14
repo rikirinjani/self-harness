@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-rx-v14-architecture-review",
+  "timestamp": "2026-09-11T13:53:12.880847+00:00",
+  "agent": "pm1-rx",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-rx-v14-architecture-review",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........................................................................................................-.--...-",
+  "action": "Final adversarial review of proposed v1.4 architecture (legal-transition + canonical-action redesign). VERDICT: PASS WITH CORRECTIONS - specified design corrections required. Threat model T1-T8 (answer copying, label recognition, distributional guessing, horizon inference, structural shortcut, schema leakage, vocabulary leakage, precondition matching). Key findings: (1) lawful_continuation does not exist in the current generator (next_k=rng.choice) so the rule must be AUTHORED as a pure function of observable primitives + validity status, returning a SET of lawful actions; (2) with the label removed the residual leak is structural-shortcut + correlation, eliminable only by a validity-dependent conjunction; (3) canonical vocabulary must be global, balanced, disjoint from task/history vocab, |V|>=8, chance baseline reported; (4) multiple-lawful must be a set (current rng.choice artificially singles one); (5) L1 can be structural iff objective/phase evolves before the boundary; (6) R1/R2 counterfactual (omit the retraction) is the core sufficiency test; (7) F and C must be field-identical (content selection is the tested difference) with a positive control; (8) E exclusion must be MECHANICAL (v1.3 left it documentation-only: _MATCHED_BUDGET_ARMS includes E, run_robustness averages all arms). Invariants I1-I10 + 10 pre-implementation tests specified. Unresolved risks: L4 narrowed to classification; observable policy bounds the task; shortcut residual unproven until the rule is authored; zero-advantage construction may null H-arch; generality to real tasks untested. No code, no pilot, no spec edits"
+}

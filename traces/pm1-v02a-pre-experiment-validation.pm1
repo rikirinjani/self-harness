@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-v02a-pre-experiment-validation",
+  "timestamp": "2026-08-16T03:37:39.338625+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 30,
+  "tool_calls": 0,
+  "key_files": [
+    "lib/llm_runner.py",
+    "lib/validator.py",
+    "lib/llm_worker.py",
+    "tests/test_v02a.py",
+    "ARCHITECTURE.md",
+    "EXPERIMENT_V0.1.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-v02a-pre-experiment-validation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................-.--...-........................--.-..-.........................................-.--...-",
+  "action": "V0.2a pre-experiment validation: isolation audit 10/10, prompt inspection clean (no leaks), digest tests 8/8, full pytest 47/47, V0.1 regression scenario.py pass, V0.1 artifacts (ARCHITECTURE.md, EXPERIMENT_V0.1.md) untouched. Fixed user_bme variable bug in perform_isolation_audit."
+}

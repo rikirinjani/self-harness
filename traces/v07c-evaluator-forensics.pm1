@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "v07c-evaluator-forensics",
+  "timestamp": "2026-08-22T11:28:27.491835+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 10,
+  "key_files": [
+    "results/v07c/evaluator_forensics/PM1_V07C_EVALUATOR_FORENSICS.md",
+    "results/v07c/evaluator_forensics/PM1_V07C_EVALUATOR_FORENSICS.json",
+    "results/v07c/evaluator_forensics/manifest.json",
+    "v07c/run_evaluator_forensics.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v07c-evaluator-forensics",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "V.7-C Evaluator Pipeline Anomaly Forensics: ROOT CAUSE RESOLVED — repository-state mismatch. Agent's run_command calls (hops 8-13) reverted edits before evaluator ran. Evaluator itself is correct: offline reproduction proves model's edits produce PASS 2+0/2. Minimum fix: use evaluate(patch_ops) instead of evaluate_repo_state(). All trajectory observations valid; task-outcome measurements unreliable for runs with run_command."
+}

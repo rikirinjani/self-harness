@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "icpe-proposal-pdf2docx",
+  "timestamp": "2026-09-05T10:00:21.310705+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 60,
+  "tool_calls": 3,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\hisfarma-temp\\ICPE\\proposal\\PROPOSAL ICPE 2025.docx"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "icpe-proposal-pdf2docx",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Converted PROPOSAL ICPE 2025.pdf (11 pages) to DOCX via pdf2docx: 141 paragraphs, 27 tables, 11 sections; 609 KB. Previous year proposal (Yogyakarta, 14-15 Nov 2025) ready for reference/reuse for HKN62 2026 proposal"
+}

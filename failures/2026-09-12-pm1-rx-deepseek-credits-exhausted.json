@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-09-12T05:00:00Z",
+  "session_id": "pm1-rx-v14-prompt-fix",
+  "failure_category": "backend_unavailable",
+  "failure_subcategory": "credits_exhausted",
+  "severity": "high",
+  "description": "DeepSeek API returns 402 Payment Required — credits exhausted. Pilot v14c cannot run. Previous pilot v14b completed 2/5 tasks before same failure.",
+  "root_cause": "DeepSeek account balance depleted ($0.00 remaining). All previous pilot runs consumed credits.",
+  "what_i_did_wrong": "Did not check credit balance before launching pilot. Should have verified credits were sufficient for 5 tasks × ~4 min/task × 45 model calls.",
+  "what_i_should_do_instead": "Check DeepSeek balance before pilot. Consider using a cheaper/faster model for calibration pilot. Or pre-check that credits cover the full pilot.",
+  "impact": "Pilot blocked. Cannot produce calibration verdict until credits are restored or alternative backend is provided.",
+  "related_files": [
+    "C:\\Users\\think\\Agentic Layer\\morse\\experiments\\pm1-rx\\harness\\results\\pilot_v14b\\experiment_result\\experiment_result-00001.json",
+    "C:\\Users\\think\\Agentic Layer\\morse\\experiments\\pm1-rx\\harness\\results\\pilot_v14b\\experiment_result\\experiment_result-00002.json"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "fail-2026-08-31-events-in-statehash-category-error",
+  "timestamp": "2026-08-31T14:30:00Z",
+  "category": "architecture",
+  "agent": "orchestrator",
+  "task": "CE event-stream delivery semantics pass — events vs stateHash (brief section 12)",
+  "outcome": "partial",
+  "error": "The outbound event buffer was inside `stateHash`, and the lifecycle pass (section 18.4) had JUSTIFIED that placement in writing: 'the outbound adapter stream is inside stateHash, so discarding it changes world identity even though it does not affect the future. It is a queue the consumer has not necessarily drained yet, not history.' That reasoning was wrong. It conflated a RECORD OF FACTS THAT OCCURRED (history, belongs in traceHash) with a DELIVERY OBLIGATION (bookkeeping about a consumer, belongs outside the world entirely). The error became actively harmful once event ids were made timeline-scoped in this pass: timeline identity leaked into physical state, so two physically identical worlds in different branches stopped comparing equal, breaking the section 17.6 branch-convergence property. Two lifecycle tests failed immediately.",
+  "rootCause": "At the time of section 18 there was no delivery layer, so the only place a pending outbound event could live was the world, and the distinction between 'a fact happened' and 'a consumer has not read it yet' had nowhere to be expressed. The justification then rationalised the accident: because the buffer LOOKED like a queue, it was reasoned to be delivery state, and because delivery state was (correctly) judged load-bearing, it was kept in world identity. The correct conclusion was the opposite - if it is delivery state it does not belong in the world at all, and if it is a record it does not belong in stateHash. A converse error existed simultaneously: `dynamics` was OUTSIDE stateHash despite being read by the tick, which section 18.4 documented as a trap rather than fixing.",
+  "whatActuallyHappened": "Making event ids timeline-scoped (to fix a separate collision defect) caused two previously-passing branch-convergence tests to fail. The failures were not in the new code but in the placement of `events`. Investigation confirmed the engine never reads the event buffer, so forward evolution is bit-identical whether it is present or emptied - i.e. it is not continuation state at all. Meanwhile `dynamics` IS read by tick phase 7, so it is continuation state despite section 18.4 having it on the history side.",
+  "mitigation": "Both fields moved to the correct side. `events` -> traceHash (it is a record of what happened). `dynamics` -> stateHash (the tick reads it, so it determines what happens next; dropping it now changes world identity outright rather than silently changing future diagnostics, making the section 18.4 trap unreachable rather than merely documented). DeliveryState was created as a separate type outside WorldState so delivery obligation has a home and cannot be confused with either. Tests updated in three files, and new tests assert: dropping events leaves stateHash unchanged and forward evolution identical; polling/acking/disconnecting/resyncing a consumer changes neither hash; two physically identical worlds in different timelines compare equal on physics. The sharpened rule is recorded in section 19.11: stateHash = what the world is and will do next; traceHash = what happened and what was said about it.",
+  "files": [
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\core\\hash.ts",
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\core\\delivery.ts",
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\core\\lifecycle.ts",
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\poc\\lifecycle.test.ts",
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\poc\\branching.test.ts",
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\poc\\events.test.ts"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "s016-propagation-observability",
+  "timestamp": "2026-09-11T02:51:34.436550+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 2400,
+  "tool_calls": 18,
+  "key_files": [
+    "src/derive/propagation.ts",
+    "experiments/s016/REPORT.md",
+    "experiments/s016/probe.ts",
+    "qms/records/requirements/2026-09-11T07-30-00-req-016-s016-propagation-observability.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "s016-propagation-observability",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "S016 propagation observability: from frozen S012 (dabc4a1). Instrumented the authoritative propagateJudgments with a per-stage footprint (considered/recomputed/changed/iterations/changedNodes) via StageFootprint + propagateJudgmentsWithFootprint; evaluation untouched. Semantics preserved (624/624, verify-facts 3/3, frozen hashes). VERDICT HOLD. KEY FINDING: the reference footprint is GLOBAL - Phase A considers all nodes every pass and its from-scratch fixpoint changes ~the whole model per intervention (verrin 14/14, ordos 16/17), while the S015 closure was local (0.4-5.2); Phase B is cheap (0-1). Cause: Phase A restarts from NEITHER, so there is no local invalidation boundary to expose. The S015 closure approximated the semantic delta, not the footprint. Next experiment: propagation delta observability (cross-prefix judgment delta)."
+}

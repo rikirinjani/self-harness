@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "icpe-flyer-v2-fix",
+  "timestamp": "2026-09-05T10:16:55.904578+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 30,
+  "tool_calls": 2,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\hisfarma-temp\\ICPE\\flyer\\flyer_hkn62_v2.png"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "icpe-flyer-v2-fix",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................-.--...-........-.--...-........-.--...-........................................-.--...-",
+  "action": "Flyer v2 overwritten: removed Grand Cikareo Hall from location, now shows 'Sukabumi, Jawa Barat' only"
+}

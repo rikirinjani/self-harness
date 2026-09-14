@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "v08-g2-positive-path",
+  "timestamp": "2026-08-24T05:35:13.554941+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 600,
+  "tool_calls": 15,
+  "key_files": [
+    "v08/g2_positive_path.py",
+    "results/v08/g2/g2_positive_path_results.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v08-g2-positive-path",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-..........--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "V.8 G2 Positive-Path: PARTIAL. Gold patches apply correctly for both tasks (PATCH_ID verified). Provenance verified. But evaluator discovers 0+0 tests for both tasks — Django test runner cannot execute tests in evaluation context. Replay MATCH for django-12113 but MISMATCH for django-11099. Pipeline infrastructure works; evaluator test execution blocked for Django tasks."
+}

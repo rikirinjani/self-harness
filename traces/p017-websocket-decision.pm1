@@ -1,0 +1,40 @@
+{
+  "pm1_version": 1,
+  "session_id": "p017-websocket-decision",
+  "timestamp": "2026-08-31T10:00:33.617300+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3600,
+  "tool_calls": 60,
+  "key_files": [
+    "src/poc/ce-ws-server.ts",
+    "src/poc/ws-boundary.test.ts",
+    "src/poc/transport-benchmark.ts",
+    "src/poc/godot/ce_ws_adapter.gd",
+    "src/poc/godot/ws_main.gd",
+    "src/poc/godot/ws_main.tscn",
+    "src/poc/godot/ws_verify.gd",
+    "src/poc/godot/ws_verify.tscn",
+    "src/poc/godot/shots/ws_1_initial.png",
+    "src/poc/godot/shots/ws_2_destroyed.png",
+    "docs/P-017-WEBSOCKET-DECISION.md",
+    "docs/RECONNAISSANCE.md",
+    "package.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "p017-websocket-decision",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "P-017 WebSocket decision gate: ACCEPT WITH CAVEATS. Built WS push server (transport over same poll/ack/stateSync/resync contract, client-driven tick timing, bufferedAmount backpressure); 24/24 WS boundary tests (P1-P10 + 10 failure injections + determinism) pass on Windows+Mac mini; benchmark: in-process intervention 4.4x faster over WS, decisive gain at Godot boundary (~55ms HTTP/req vs push); Godot headless WS 14/14 + GUI on display auto-ran causal chain (stateHash 5404d32e matches HTTP reference, bridge 100% pixel-changed); boundary audit clean (zero causal rules/RNG); 647/647 suite green, tsc 0 new errors; wrote report + RECONNAISSANCE s27 + P-018 spec + QMS VER-2026-017/REQ-2026-014"
+}

@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "s033-correctness-and-performance",
+  "timestamp": "2026-09-11T14:03:49.615127+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 3000,
+  "tool_calls": 12,
+  "key_files": [
+    "experiments/s033/REPORT.md",
+    "experiments/s033/probe.ts",
+    "qms/records/requirements/2026-09-12T00-30-00-req-033-s033-correctness-and-performance.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "s033-correctness-and-performance",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "S033 full correctness gate and wall-clock performance validation: from frozen S032 (c064ab4), no src change. VERDICT HOLD. CORRECTNESS CLEAN: 25,500 prefixes, 0 mismatches (verrin/ordos 100xH=20 + 100xH=100 + S024 100x15 including the 5 previously failing); determinism 20/20; branch-from-incremental 20/20. PERFORMANCE three-way: A/T (REF-A/TARGET) sparse 0.48/0.81/1.12, medium 0.44/0.61/0.58, dense 0.67/0.57/2.13 - TARGET wins only at H=10k for sparse (1.12x) and dense (2.13x), slower elsewhere. LOCALITY excellent: worklist 0.03-5.89 nodes/step vs 14 model nodes (0.2-42%). DOMINANT COST: buildModel(canon, prefix) is O(H) per prefix and dominates BOTH paths. CORRECTION: S030's ~6% was a node-count metric; end-to-end wall clock is mixed. Next: incrementalise buildModel, then re-run the three-way comparison. Baseline 624/624, verify-facts 3/3, frozen hashes unchanged."
+}

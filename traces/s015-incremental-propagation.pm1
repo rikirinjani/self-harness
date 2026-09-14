@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "s015-incremental-propagation",
+  "timestamp": "2026-09-11T01:36:01.634036+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 2400,
+  "tool_calls": 15,
+  "key_files": [
+    "experiments/s015/REPORT.md",
+    "experiments/s015/probe.ts",
+    "qms/records/requirements/2026-09-11T06-30-00-req-015-s015-incremental-propagation.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "s015-incremental-propagation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "S015 incremental propagation / affected-fixpoint derivation: from frozen S012 (dabc4a1), no src change. VERDICT HOLD. Measured affected-region locality: setFact 7%, retractFact 3-10%, addEdge 1-2%, severEdge 5-6% (LOCAL); forceEvent 23-31%, negateEvent 29-38% (WIDE, event status cascades through REQUIRES). Tested a naive reverse-dependency closure as a scoped-recompute invalidation: NOT sound - 1-3 nodes outside the closure changed per intervention kind on both canons, because Phase B unfoundedSet is GLOBAL and Phase A is sticky/order-dependent. Correctness never compromised: full propagateJudgments remained the reference; no second engine; nothing shipped; long-horizon/scaling not run (correctness gate failed). Next experiment: propagation observability (have propagateJudgments emit its own per-stage re-evaluation set, mirroring S011). Baseline 624/624, verify-facts 3/3, frozen hashes unchanged."
+}

@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "zenodo-upload-23files",
+  "timestamp": "2026-09-10T23:49:55.518535+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 0,
+  "key_files": [
+    "zenodo-package/upload.ps1",
+    "zenodo-package/manuscript/jamia-2026-kronos-engine.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "zenodo-upload-23files",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........................-.--...-........................................-.--...-",
+  "action": "Zenodo upload resumed: outage (504) resolved; diagnosed deprecated POST method (HTTP 405) and fixed upload.ps1 to use PUT; uploaded all 23 package files (4.81 MB) to deposition 22654662 bucket. Deposition now draft-complete, reserved DOI 10.5281/zenodo.22654662. Verified uploaded manuscript has corrected values (0.17/0.034) matching frozen Phase F evidence."
+}

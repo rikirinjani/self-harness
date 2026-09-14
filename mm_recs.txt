@@ -1,0 +1,7 @@
+3. **Cross-encoder reranking** — ms-marco-MiniLM-L-12-v2 reranks top-50 | 4. **Contradiction check** — cross-reference sources for conflicts
+---
+| Cross-encoder reranker | ~200MB | | | BM25 index | ~2GB |
+---
+| Reranking | ms-marco-MiniLM-L-12-v2 | 1 | 200MB | | | Keyword search | BM25 (PyLucene) | - | 2GB |
+---
+- Use bge-small FAISS + cross-encoder rerank (3GB) | - Add BM25 for keyword fallback (2GB)

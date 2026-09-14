@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "research-vid-0fe6-pid-811e",
+  "timestamp": "2026-08-19T06:52:54.318689+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 12,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "research-vid-0fe6-pid-811e",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--.........................---..-..........--.-..-.........................................................-.--...-",
+  "action": "Riset web identifikasi USB VID_0FE6 PID_811E: dikonfirmasi sebagai CoreChips/ICS Advent USB-to-Parallel bridge (chip tertanam di printer termal ESC/POS generik, contoh DFRobot/Adafruit). Driver Windows inbox usbprint.sys sudah cukup untuk sisi USB; driver printer model ESC/POS vendor dibutuhkan untuk queue cetak."
+}

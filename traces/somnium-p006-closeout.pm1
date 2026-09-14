@@ -1,0 +1,39 @@
+{
+  "pm1_version": 1,
+  "session_id": "somnium-p006-closeout",
+  "timestamp": "2026-09-01T03:33:38.837157+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "docs/P006-CARDINALITY.md",
+    "qms/records/verifications/2026-09-01T10-27-38-ver-006-p006-l2-gate.json",
+    "qms/trace-matrix.json",
+    "src/derive/constraints.ts",
+    "src/derive/constraints.test.ts",
+    "src/canon/types.ts",
+    "src/canon/ordos.ts",
+    "src/canon/hash.ts",
+    "src/derive/world-state.ts",
+    "src/diff/diff.test.ts",
+    "src/query/query.test.ts",
+    "experiments/p006/predictions.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "somnium-p006-closeout",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................--.-..-.........................................-.--...-",
+  "action": "Somnium P-006 close-out: L2 verifier gate APPROVED on first pass (12 claims verified by execution, 5 adversarial attacks held, frozen baseline intact, 507/507 tests). One transient dispatch failure (Insufficient Balance) resolved on retry. Gate residual: H1 WorldDiff clause unimplemented - report H1/H2 row corrected to PARTIALLY CONFIRMED, deferred to P-007. ver-006 QMS record + trace-matrix req-006 written; records committed 5bf7a3e on top of implementation 013a95d (constraint-layer cardinality, determinism verified)."
+}

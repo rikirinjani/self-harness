@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-state-transmission-assessment",
+  "timestamp": "2026-09-01T04:10:10.224015+00:00",
+  "agent": "pm1-og",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 0,
+  "key_files": [
+    "results/assessments/PM1_STATE_TRANSMISSION_ASSESSMENT.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-state-transmission-assessment",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........................--.-..-.........................-.--...-........................................-.--...-",
+  "action": "PM-1 State Transmission Assessment: analyzed S006/P-006 results, produced 10-section deliverable distinguishing world-state vs agent-state transmission, designed minimum worker-handoff experiment, proposed measurement model, marked AMD deferred"
+}

@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "s017-propagation-delta",
+  "timestamp": "2026-09-11T03:04:03.818719+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 2400,
+  "tool_calls": 15,
+  "key_files": [
+    "experiments/s017/REPORT.md",
+    "experiments/s017/probe.ts",
+    "qms/records/requirements/2026-09-11T08-30-00-req-017-s017-propagation-delta.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "s017-propagation-delta",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "S017 propagation delta observability / predictive invalidation frontier: from frozen S016 (56fac34), no src change (pure observation). VERDICT HOLD. Captured the cross-prefix judgment delta (Jh vs Jh-1 by node id, canonical multi-dimensional): well-defined, deterministic, SMALL - 0.00-0.71 nodes per intervention. The dependency closure over-approximates (FP 0.18-2.26) but has FALSE NEGATIVES (0.03-0.35) so the predictive frontier is UNSOUND. Unexplained residue up to 0.30 for severEdge/addEdge because edge mutations change the NODE SET (nodeIds from edge endpoints), which the closure does not model. Cycle membership explains 0.01-0.32. Three concepts confirmed: semantic delta (small), evaluation footprint (global, S016), predictive frontier (unsound). Next experiment: frontier soundness with node-set-aware invalidation. Baseline 624/624, verify-facts 3/3, frozen hashes unchanged."
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-08-14T10:38:00Z",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "category": "tool",
+  "severity": "low",
+  "summary": "The combined final-gate PowerShell command failed to parse.",
+  "root_cause": "A nested if statement in the wrapper command was missing a closing brace; the three gates were then rerun separately.",
+  "trace_id": "final-gate-powershell-syntax"
+}

@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "s031-execution-state-lifecycle",
+  "timestamp": "2026-09-11T13:31:16.969443+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 3000,
+  "tool_calls": 12,
+  "key_files": [
+    "experiments/s031/REPORT.md",
+    "experiments/s031/probe.ts",
+    "qms/records/requirements/2026-09-11T22-30-00-req-031-s031-execution-state-lifecycle.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "s031-execution-state-lifecycle",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "S031 incremental execution state lifecycle / production boundary validation: from frozen S030 (8a39cc4), no src change. VERDICT HOLD. LIFECYCLE VALIDATED: init 50/50, rewind 50/50, branch cloning 50/50, determinism 50/50. Execution state = { model, truth } -> O(model), reconstructible from canon+prefix or WorldState, NOT part of stateHash/identityHash. Clean boundary: CanonicalModel + WorldState + IncrementalPhaseAState. BUT the S024 synthetic corpus (never run in S029/S030) reveals 5/100 topologies failing (1487/1500 prefixes) - the S028 dependency boundary is INCOMPLETE for some synthetic SCC/OR topologies (a CORRECTNESS gap, not a lifecycle defect). Per the failure discipline scaling stopped; not patched; not minimised. Next: minimise the 5 failing topologies and identify the missing dependency class. Baseline 624/624, verify-facts 3/3, frozen hashes unchanged."
+}

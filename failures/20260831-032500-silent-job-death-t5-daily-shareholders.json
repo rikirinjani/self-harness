@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-08-31T03:25:00Z",
+  "category": "silent-job-death",
+  "severity": "medium",
+  "slug": "t5-daily-shareholders-silent-death",
+  "agent": "coordinator",
+  "detected_by": "coordinator during requested daily-run health check",
+  "system": "t5-pipeline daily automation (com.t5pipeline.daily) on Mac mini 100.83.28.83",
+  "what_happened": "The 2026-08-28 daily run started on schedule at 17:00:01 and completed steps discover, check, lab, execute, analyse successfully. It entered the 'shareholders' step at 17:00:29, fetching 944 companies in 95 batches with a 120s inter-batch delay. The last log line is 'Rate-limit pause: 120s before batch 7/95' at 17:11:11. Nothing follows — no traceback, no 'Daily run SUCCESS', no 'Daily run FAIL', no step completion. The process is not running now and left no exit record.",
+  "evidence": {
+    "last_successful_run": "2026-08-27 17:04:15 — Daily run SUCCESS (4 alerts)",
+    "prior_success_streak": "2026-08-20, 08-21, 08-24, 08-25, 08-26, 08-27 all SUCCESS",
+    "truncation_point": "logs/daily.log line 6715, 2026-08-28 17:11:11",
+    "t5_pipeline_log_agrees": "logs/t5_pipeline.log ends at same timestamp mid-batch (AUTO: no changes) then rate-limit pause",
+    "no_jetsam": "log show for jetsam/memorystatus in 17:05-17:20 window returned nothing",
+    "no_crash_report": "~/Library/Logs/DiagnosticReports has no entry for python/t5_pipeline on 2026-08-28",
+    "launchctl_state": "state = not running, runs = 0, last exit code = (never exited)"
+  },
+  "root_cause": "UNDETERMINED. The process vanished without writing an exception or exit status. Ruled out by evidence: OOM/jetsam kill (no memorystatus log entries), Python exception (would have written traceback to daily.log which is both StandardOutPath and StandardErrorPath), and normal completion (no terminal SUCCESS/FAIL line). Remaining candidates not yet distinguished: (a) launchd terminated the job, (b) system sleep/power event interrupted the long-running job, (c) external SIGKILL. Note the run was unusually long-lived by design — 944 companies x 120s delay across 95 batches is roughly 3.2 hours of wall clock, versus the 136s the 2026-08-27 run took when 944 companies were freshness-skipped. The Aug 28 run was the first daily to attempt a near-full shareholder scan, so the failure correlates with unprecedented job duration.",
+  "contributing_factor": "The daily job has no watchdog, no ExitTimeOut, no AbandonProcessGroup handling, and no completion assertion. A silent death is indistinguishable from a job that never ran, so nothing alerted for 3 days.",
+  "impact": "One daily cycle (data date 2026-08-27) produced no dashboard refresh; output/dashboard.json, ownership.json, transactions.csv are stale as of 2026-08-27 17:01. Shareholder data was independently recovered by the weekly full scan on 2026-08-30 09:23 (962/962 OK, 4 changes, 3 SELL signals on HKMU written to lab.json), so no shareholder signal was permanently lost. No trades affected — executor reported 0 opened / 0 closed / 61 open trades.",
+  "secondary_finding": {
+    "issue": "analyse step degraded on every run",
+    "detail": "t5_pipeline.analyst logs 'Bonsai unreachable: [Errno 61] Connection refused' on every daily run; step is marked ok with result 'bonsai unavailable'. Confirmed no listener on the Bonsai port — lsof shows only 5000 (ControlCenter), 8000 (dashboard), 8765 (dqf), 8971 (mesh-hub). analyst.py references model path /Users/ptpakdefarma/models/ternary-bonsai-27b. The ternary-bonsai-27b server is not running; com.bonsai.gateway is loaded but the backing model server is absent.",
+    "severity": "low — step degrades gracefully, does not fail the run"
+  },
+  "corrective_action_proposed": [
+    "Add a completion sentinel: have the daily run write a heartbeat/last-success timestamp file, and alert if it goes stale beyond one scheduled cycle.",
+    "Reduce shareholders-step exposure in the daily path — the 120s x 95-batch full scan belongs in the weekly job (which already does it successfully); the daily should cap batches or skip when the freshness-skip count is low.",
+    "Investigate whether the Mac mini sleeps or whether launchd reaps long-running jobs; if sleep is the cause, set an appropriate power assertion or move the job to a windowed schedule."
+  ],
+  "verified_working": [
+    "com.t5pipeline.weekly-shareholder — ran 2026-08-30 09:23, 962/962 OK, exit 0",
+    "Qwen3.5-9B MLX server PID 714 — 200 OK, model resident",
+    "dashboard (8000), dqf (8765), mesh-hub (8971), pubmedrag telegram-bot, chatbot bridge — all listening/alive"
+  ],
+  "status": "OPEN — root cause undetermined, awaiting user decision on corrective action"
+}

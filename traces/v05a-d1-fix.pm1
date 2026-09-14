@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "v05a-d1-fix",
+  "timestamp": "2026-08-18T02:13:12.482555+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 0,
+  "key_files": [
+    "lib/v05a_chain.py",
+    "results/v0.5/V0.5_RESUME_AUDIT.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v05a-d1-fix",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........................-.--...-........................................-.--...-",
+  "action": "D1 investigation + fix: v05a_chain.py except-path referenced unimported HandoffOutput -> NameError on API error, crashed run. Classified B (contained, error-path only; 11,100 completed calls valid; no duplicates/corruption). Applied minimum fix (added HandoffOutput to lib.v05a_worker import). Offline RaisingWorker test confirms PARSE_ERROR now recorded + chain completes. 251/251 offline tests pass. 0 API calls. Resume point unchanged: h=250 s1 t1 P hop1; 105,000 remaining."
+}

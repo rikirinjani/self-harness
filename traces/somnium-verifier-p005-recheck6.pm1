@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "somnium-verifier-p005-recheck6",
+  "timestamp": "2026-08-31T14:00:09.408328+00:00",
+  "agent": "verifier",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 38,
+  "key_files": [
+    "src/derive/propagation.ts",
+    "src/canon/fact-rules.test.ts",
+    "docs/ARCHITECTURE-RECONNAISSANCE.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "somnium-verifier-p005-recheck6",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------.........................................--...--........-.--...-........................................-.--...-",
+  "action": "L2 seventh review of Somnium P-005 after taint-discipline remediation (5fafc50): route 8 closed (264 refused writes across 3 shipped canons, 0 world moves vs 150 pre-fix at c27e1dc); taint discipline neither leaks nor over-fires (mutation-tested); one prose-scope finding (independence claim overstated) -> APPROVE-WITH-RESIDUAL-RISK"
+}

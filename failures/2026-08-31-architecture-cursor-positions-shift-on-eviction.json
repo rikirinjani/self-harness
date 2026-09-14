@@ -1,0 +1,19 @@
+{
+  "id": "fail-2026-08-31-cursor-positions-shift-on-eviction-silent-skip",
+  "timestamp": "2026-08-31T16:10:00Z",
+  "category": "architecture",
+  "agent": "orchestrator",
+  "task": "CE event retention/eviction pass — precondition probe (brief sections 3, 4, 5)",
+  "outcome": "partial",
+  "error": "CURSORS SILENTLY SKIPPED FACTS ON EVICTION. Cursors were ARRAY POSITIONS into a derived, recomputed stream (`factStream()` filters and sorts `state.events` on every call). When the bounded event record evicted its oldest entries, every position shifted downward, so a consumer's saved cursor silently pointed at a DIFFERENT event. Measured: consumer acked position 5 (E-3b2fa7522011178c); after evicting 4 raw events, position 5 became E-6b52c260cb6ea83d; the next poll delivered 3 attempts and SILENTLY SKIPPED 2 facts (E-5cb0a72280821b4c, E-6b52c260cb6ea83d) with no gap reported. This is precisely the failure section 19 claimed was impossible ('CE reports a GAP and directs resync. It never stalls the world and never skips silently').",
+  "rootCause": "Two compounding errors. (1) Cursor identity was positional rather than a stable stream coordinate: nothing in a fact recorded WHERE IN THE STREAM it sat, so the only available coordinate was its index in a freshly-derived array, which is a function of what is currently retained rather than of what was emitted. (2) `detectGap` required the CALLER to supply `evictedCount` as an argument — CE tracked no eviction boundary at all (state keys matching retain/evict/seq were only eventSeq, interventionSeq, provenanceSeq, none of which is a retention boundary). So gap detection existed as a function but could never fire in normal operation, because no code path knew how many events had been dropped. The section 19 tests passed because they passed evictedCount by hand, which proved the formula and not the mechanism.",
+  "whatActuallyHappened": "The retention pass opened by probing what actually happens when the ring buffer evicts, rather than by implementing a retention policy on top of the existing cursor model. The probe simulated eviction exactly as `state.events.splice(0, n)` does in the tick, then re-polled with an unchanged cursor. The silent skip appeared immediately. Had retention been designed on top of positional cursors, the resulting adapter contract would have promised 'explicit gaps' while delivering silent data loss, and the promise would have been public before anyone noticed.",
+  "mitigation": "Introduced a STABLE STREAM COORDINATE: every fact carries `streamSeq`, a monotonic per-timeline sequence assigned at emission and never renumbered. Cursors now reference `streamSeq`, not array indices, so eviction cannot move a consumer's position. CE tracks `oldestRetainedSeq` and `highestEmittedSeq` in world state (trace side, alongside `events`), so gap detection is computed from CE's own bookkeeping rather than from a caller-supplied count. `detectGap` no longer takes an `evictedCount` parameter. Regression tests assert that after eviction a stale cursor produces an explicit gap naming the missing range, and that zero facts are ever delivered out of order or skipped without a gap.",
+  "files": [
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\core\\types.ts",
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\core\\event-bus.ts",
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\core\\delivery.ts",
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\core\\retention.ts",
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\core\\world.ts"
+  ]
+}

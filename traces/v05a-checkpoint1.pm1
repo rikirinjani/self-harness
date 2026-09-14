@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "v05a-checkpoint1",
+  "timestamp": "2026-08-18T08:27:12.832134+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 22228,
+  "tool_calls": 0,
+  "key_files": [
+    "results/v0.5/v05a_full_checkpoint.json",
+    "results/v0.5/v05a_full_hop_records.json",
+    "run_v05a_checkpoint1.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v05a-checkpoint1",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-........................-.--...-........................................-.--...-",
+  "action": "V0.5a Checkpoint 1 (horizon 250): 15,000/15,000 calls, 22,228s. Persisted 26,100 total records. PASS 14,997 / PARSE_ERROR 3 (P:2, C:1). State integrity 15,000/15,000, digest continuity 15,000/15,000, action acc 14,997/15,000. Tokens: in 40,688,523 out 1,349,887 total 42,038,410 (avg 2,802.6/hop). Cumulative continuity 15,000/15,000. No duplicates, no secrets. Resume: 90,000 remaining, next horizon 500. Stopped per instruction; awaiting authorization for Checkpoint 2."
+}

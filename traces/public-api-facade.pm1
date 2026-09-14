@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "public-api-facade",
+  "timestamp": "2026-08-31T03:43:21.954011+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 25,
+  "key_files": [
+    "docs/RECONNAISSANCE.md",
+    "src/api/public.ts",
+    "src/poc/public-api.test.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "public-api-facade",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........--.-..-.........-.--...-........................................-.--...-",
+  "action": "§21 Public Core API & Adapter Contract: classified 173 exports (13 PUBLIC, 89 ADAPTER-FACING, 33 INTERNAL, 34 TEST-ONLY, 4 DEBUG), wrote 600-line §21 doc, implemented src/api/public.ts facade, wrote 16 public-api tests (misuse-attack + immutability + full deterministic scenario), tsc clean, 321/321 tests passing"
+}

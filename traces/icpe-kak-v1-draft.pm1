@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "icpe-kak-v1-draft",
+  "timestamp": "2026-09-03T13:40:42.265513+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 240,
+  "tool_calls": 4,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\hisfarma-temp\\ICPE\\KAK_SeminarNasional_HKN62_V1_draft.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "icpe-kak-v1-draft",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Drafted full KAK (ToR) v1 in Indonesian for HKN ke-62 interprofession webinar, locked EN title, 17 template-mapped sections, 38 placeholders for lembaga/date/narsum/JEP; written as markdown for review"
+}

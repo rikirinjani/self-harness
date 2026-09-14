@@ -1,0 +1,35 @@
+{
+  "pm1_version": 1,
+  "session_id": "somnium-verifier-p005-recheck4",
+  "timestamp": "2026-08-31T10:42:31.322683+00:00",
+  "agent": "verifier",
+  "outcome": "fail",
+  "duration_s": 0,
+  "tool_calls": 32,
+  "key_files": [
+    "src/derive/propagation.ts",
+    "src/derive/world-state.ts",
+    "src/derive/contradictions.ts",
+    "src/query/occurrence.test.ts",
+    "docs/ARCHITECTURE-RECONNAISSANCE.md"
+  ],
+  "failure": {
+    "category": "reasoning",
+    "severity": "major"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "somnium-verifier-p005-recheck4",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........-.--...-.........................--...--........--.-..-.........................................-.--...-",
+  "action": "L2 fifth review of Somnium P-005 after factWriteRejection object-end remediation (3f4643a)"
+}

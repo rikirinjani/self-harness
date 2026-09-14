@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-v06-harness-preflight",
+  "timestamp": "2026-08-19T14:00:41.260292+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 8,
+  "key_files": [
+    "pm1-trading-benchmark\\v06\\README.md",
+    "pm1-trading-benchmark\\results\\v06\\PM1_V06_PREFLIGHT_REPORT.md",
+    "pm1-trading-benchmark\\results\\v06\\PM1_V06_EXECUTION_PLAN.md",
+    "pm1-trading-benchmark\\results\\v06\\preflight\\preflight_report.json",
+    "pm1-trading-benchmark\\results\\v06\\dryrun\\dryrun_e1_e2_e3_e4_e6.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-v06-harness-preflight",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................---..-..........-.--...-........--.-..-.........................................-.--...-",
+  "action": "V0.6 harness preflight: dispatched fixer to build 22-module harness, independently verified 136/136 offline tests, preflight 15/15 PASS, dry-run matrix (93 runs/4500 hops/4500 calls/~97.5min, fits 25k-call and 360-min budgets), V0.5 artifacts untouched; wrote preflight report and execution plan. Nothing executed."
+}

@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-09-11",
+  "category": "verification-blocked",
+  "slug": "pm1-rx-oracle-review-blocked",
+  "severity": "medium",
+  "what_happened": "The independent Oracle review of the PM-1-RX research specification could not be performed. The oracle sub-agent (ses_f7211bc23ffeoyzWLP293mhCZf) errored immediately with: 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.'",
+  "root_cause": "OpenAI API account has no remaining credits. The oracle specialist is backed by an OpenAI model (gpt-5.6-luna); explorer/fixer/librarian lanes used other providers and completed successfully.",
+  "what_i_did_wrong": "I selected the oracle as the verification mechanism for a high-stakes specification without first confirming provider credits were available. A pre-flight credit check would have either avoided the wasted dispatch or prompted a fallback verification plan before the spec was finalized.",
+  "impact": "The specification (8 documents + 7 JSON schemas) was NOT independently reviewed. Verification was downgraded to an orchestrator self-review, which is weaker because it shares the author's blind spots. This is a residual uncertainty on the deliverable, not a defect in the deliverable itself.",
+  "mitigation_applied": [
+    "Performed a targeted self-review against the 8 review axes (falsifiability, internal consistency, confounds, oracle validity, minimality/feasibility, task-class risk, schema coherence, escape hatches).",
+    "Fix 1: added required 'attribution' field (enum: none/representation_insufficiency/consumer_unreliability/oracle_defect/capability_floor) to schema/evaluation.schema.json — falsification.md section 10 requires attribution but the schema could not represent it.",
+    "Fix 2: added explicit generator-model confound control + a named-confounds subsection to experiment-001-design.md section 5."
+  ],
+  "residual_risk": "Other issues the oracle would have caught remain unidentified. Recommend an independent review before implementation begins (the next task), once credits are restored or via a non-OpenAI reviewer.",
+  "artifacts": [
+    "C:\\Users\\think\\Agentic Layer\\morse\\experiments\\pm1-rx\\",
+    "C:\\Users\\think\\self-harness\\traces\\pm1-rx-research-spec.pm1"
+  ]
+}
