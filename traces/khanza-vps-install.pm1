@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "khanza-vps-install",
+  "timestamp": "2026-10-09T21:43:56.803597+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 1800,
+  "tool_calls": 60,
+  "key_files": [
+    "docs/KHANZA-REAL-E2E-REPORT.md,docs/KHANZA-SCALING-STUDY.md,kaggle/khanza-dr-benchmark/adapter_real.py,kaggle/khanza-dr-benchmark/scaling_study.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "khanza-vps-install",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "Deployed SIMRS-Khanza to VPS #2 (<ip>, 4vCPU/15GB). DB schema 318 tables imported. Main JAR build failed due to JavaFX dependency (23 files use javafx which is removed from JDK 17). Pre-built sub-modules present (KhanzaUpdater, KhanzaHMSAutoVerify2, KhanzaSecurity16bit). Adapter pipeline proven on VPS #1 with real MariaDB data (2,935 patients). Next: fix JavaFX issue or use pre-built release JAR."
+}

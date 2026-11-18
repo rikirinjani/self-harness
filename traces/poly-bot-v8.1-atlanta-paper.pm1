@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "poly-bot-v8.1-atlanta-paper",
+  "timestamp": "2026-10-07T11:33:06.152329+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 8,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\poly_bot_v8.1.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "poly-bot-v8.1-atlanta-paper",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Deployed poly_bot_v8.1 (BS edge + SELL-only + Portnaya premium) to Vultr Atlanta VPS <ip>. Paper test: 3 SELL opportunities per cycle - BTC  Dec 2027 (14.5pct edge), El Salvador  BTC (8.4pct), BTC  Sep 2027 (7.8pct). CLOB connection ready for live trading. Private key configured. Ready for funded run."
+}

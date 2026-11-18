@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "issue2-deployment-sizing",
+  "timestamp": "2026-10-02T01:15:42.734626+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "Deers-Rock/Dockerfile",
+    "Deers-Rock/docker-compose.yml"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "issue2-deployment-sizing",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Issue #2 deployment sizing: pulled RAG pubmed + instance records from memory (cokro wing). Latest non-Vultr instance is Hetzner CX21 (2 vCPU, 4GB RAM, 40GB SSD, Ubuntu 24.04) per bot_poller_deploy.sh; Vultr <ip> (Ollama qwen2.5:3b) expired per FINAL-STACK pre-expiry check. RAG backend is HF Space balade-pubmed-rag-bot.hf.space with Hetzner running only the lightweight poller; full local RAG stack per HF_FULL_STACK.md needs ~11GB+ (FAISS PQ 8GB + BM25 2GB + snippets 1GB) i.e. 16GB box. Measured Deers-Rock footprint: 66MB disk, 11MB journal, 62MB RSS, p50 tick 16ms, p95 69-88ms (~2-9 percent of one core). Verdict: sharing safe if RAG stays on HF Space; impossible on 4GB box if full RAG runs locally (RAG alone needs 16GB). Guardrails: separate ports, DATA_DIR volume, systemd MemoryMax, disk alerts (journal unbounded, P1-8 open), Cloudflare Tunnel + Access in front, DR_API_KEY + CORS allowlist."
+}

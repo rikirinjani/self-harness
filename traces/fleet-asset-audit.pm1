@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "fleet-asset-audit",
+  "timestamp": "2026-09-25T01:57:27.808037+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 12,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "fleet-asset-audit",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........................................................-.--...-",
+  "action": "Fleet audit: probed 3 Vultr instances for CE asset presence. Instance 17249fe2 (<ip>, host PM-1, aka VX1): CE PRESENT - full causality-engine clone at ~/ce, HEAD 8f19480 (3 commits behind main 552c218), addon present without LICENSE (pre-commit 3645549), untracked results-p026/, older vx1-out causal-matrix run 10/10, /tmp/p028-run4.log present. Instance 489f306a (<ip>, host Somnium): NO CE - hosts Deers-Rock repo (separate project) + Kronos-Engine + cokro-*. Instance 866cc871 (<ip>, host RAG): NO CE - hosts cokro-api (Python/lancedb RAG). All 3 accept SSH key auth (BatchMode succeeded without passwords). No credentials written to disk or repo."
+}

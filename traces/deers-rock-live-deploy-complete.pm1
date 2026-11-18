@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "deers-rock-live-deploy-complete",
+  "timestamp": "2026-10-02T02:08:18.783185+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "Deers-Rock/src/api/rest.ts",
+    "Deers-Rock/.github/workflows/ci.yml"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "deers-rock-live-deploy-complete",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Deers-Rock LIVE on Tencent <ip> (co-hosted with RAG). Deployed commit c0b10eb (BIND_HOST feature) after local tsc/tests/smoke + green CI run 36952700184. Box work, all over SSH as ubuntu with passwordless sudo: created system user deersrock + /srv/deers-rock/{app,data} (700 data), installed Node 22.23.3 via NodeSource, cloned repo pinned to c0b10eb, npm ci + tsc build, 600 env file (PORT=3000, BIND_HOST=127.0.0.1, DATA_DIR, server-generated 64-hex DR_API_KEY never printed), systemd unit (MemoryMax=512M cgroup-verified 536870912, CPUWeight=50 cgroup-verified, NoNewPrivileges, PrivateTmp, ProtectSystem=strict + ReadWritePaths data, log rate limits, STOP-file ExecStartPre kill switch). Verified live: 127.0.0.1:3000 only; auth matrix complete (status+root 200 keyless-exempt, nokey 401, xkey 200, bearer 200 via --oauth2-bearer, wrong 401, fhir 200, 404 JSON contract); kill switch live-fired (STOP blocks restart, rm+start recovers, status 200 after); RAG undisturbed throughout (cokro-api/nginx/litestream active, :8000 behavior identical, memory stable ~2.9GB avail). Notable debugging: two false 401 waves root-caused to PowerShell 5.1 native-command quote mangling in my own probe commands (phantom URL args + emptied headers), never the server - proven via quoting-proof probes + server-side key presence check. /data path for nightly bundle: /srv/deers-rock/data."
+}

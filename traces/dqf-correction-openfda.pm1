@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-correction-openfda",
+  "timestamp": "2026-09-26T03:17:11.652541+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 8,
+  "key_files": [
+    "rag-queries/curation/anticoagulant_values_draft.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-correction-openfda",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "CORRECTION: diagnosed the openFDA 'DNS block' as a wrong hostname (api.open.fda.gov nonexistent vs correct api.fda.gov). Verified: NXDOMAIN on router+<ip> for the wrong name; api.fda.gov resolves and returns HTTP 200 label. Corrected the draft, filed NCR-2026-09-25-DQF-OPENFDA + failure record + MemPalace correction drawer; committed 5bae2f1. No bad data (values from DailyMed+PubMed)"
+}

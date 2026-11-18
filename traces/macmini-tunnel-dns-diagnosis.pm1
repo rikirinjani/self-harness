@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "macmini-tunnel-dns-diagnosis",
+  "timestamp": "2026-09-28T07:04:23.490616+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\macmini-stepB.sh",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\macmini-stepB2.sh"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "macmini-tunnel-dns-diagnosis",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........................-.--...-........................................-.--...-",
+  "action": "DNS cutover diagnosis: tunnel cokro-api (e1f9026a) created + running via launchd with 4 registered QUIC connections (sin11/12/16/21), ingress localhost:8000, tunnel openapi locally OK. tunnel route dns FAILED error 1003: existing A record api.cokro-tech.my.id. Discriminator tests prove public traffic still hits Vultr origin <ip>: public /api/paper?pmid=31904444 returns found:false in 0.93s vs Mac found:true via S3; Resolve-DnsName shows proxied A records (no CNAME). Cutover blocked on replacing the A record (user dashboard action or CF API token)."
+}

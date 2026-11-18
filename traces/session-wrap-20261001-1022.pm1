@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "session-wrap-20261001-1022",
+  "timestamp": "2026-10-02T12:23:52.005898+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "session-wrap-20261001-1022",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................................................................-.--...-",
+  "action": "Session wrap. Covered: (1) GLM ajianaz quota monitoring across multiple windows - confirmed limit raised 15M->17M on same key, observed full drain+lockout+rollover cycle, fresh 17M window at 18:58 UTC. (2) RDP fix on <ip> - root cause was hand-edited /etc/xrdp/xrdp.ini with every session backend port changed to 3389; installed pristine packaged config, dpkg -V clean, sessions restored. (3) Brute-force mitigation on same host - fail2ban 1.1.0 with sshd+xrdp jails, ufw rate-limits, 4 botnet /24 denies, RDP whitelisted to owner IP only; attacker traffic dropped to zero. (4) Netra Runtime research - Indonesian AI inference startup (Rifky Bujana Bisri), credit pricing, DeepSeek V4 Flash models at .20/.05/.50 per 1M; compared vs official DeepSeek; concluded Netra fits the user's PubMed RAG generation leg (41% cheaper than OG peak), flagged unpublished rate limits and general-purpose-not-biomedical quality risk. Gates: retrace clean (0 untraced), no crash. One delegation failure recorded (librarian session too large to compact) and recovered via direct research."
+}

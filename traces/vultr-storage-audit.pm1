@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "vultr-storage-audit",
+  "timestamp": "2026-09-28T05:15:56.248396+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\FINAL-STACK.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "vultr-storage-audit",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Storage map + Vultr exposure check: probed both Vultr-range IPs from repo docs; CONFIRMED <ip> is the api.cokro-tech.my.id Cloudflare origin (SNI-pin returns Cokro openapi sha 59214B6F, cokro-nginx 301 on :80, :22 open); <ip> = old eval VPS with cokro eval artifacts (duplicated locally, only VPS logs at risk); added FINAL-STACK.md sections 2.5 storage map + 2.6 Vultr exposure, restored section 3 header"
+}

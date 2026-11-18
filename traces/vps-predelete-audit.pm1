@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "vps-predelete-audit",
+  "timestamp": "2026-09-25T02:12:24.485928+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 420,
+  "tool_calls": 18,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "vps-predelete-audit",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........................................................-.--...-",
+  "action": "Pre-deletion audit of 3 VPS instances: ALL THREE UNSAFE TO DELETE. i1 (<ip>): cokro-api/cokro-eval/cokro-eval-v1-audited/eval-env are NOT git repos (no remote backup), Kronos-Engine+Deers-Rock have uncommitted mods, uvicorn api_server running since Sep22, cokro-eval files modified within 7d. i2 (<ip>): cokro-api + jev-crypto-trader NOT git repos, bun trader running since Sep24 + python api running since Sep23 + nginx/xrdp active. i3 (<ip>): pm1rx* NOT git repos, ce (causality-engine) 0-unpushed but untracked results-p026, ollama running, task024/026 files modified within 7d."
+}

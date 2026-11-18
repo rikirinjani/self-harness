@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "xrdp-server-bruteforce-mitigation",
+  "timestamp": "2026-09-28T11:04:08.596297+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 40,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\sec_recon.sh",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\sec_filter2.sh",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\sec_whitelist.sh",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\sec_order.sh"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "xrdp-server-bruteforce-mitigation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "Mitigated active brute-force on <ip>. Installed fail2ban 1.1.0 with aggressive jails (sshd maxretry=3 bantime=24h, xrdp maxretry=2 bantime=24h) + custom xrdp filter (3,472 matches). Two bugs found+fixed: filter failregex missing <HOST> group crashed fail2ban on startup; ufw rule order put LIMIT before ALLOW so owner would be rate-limited. Layered: ufw LIMIT on 22+3389, DENY rules for 4 botnet /24s, 3389 whitelisted to owner IP <ip> only. Deliberately did NOT disable password auth (owner has only password; would lock them out). Verified: SSH still works, RDP reachable from owner IP, attacker traffic dropped to 0 lines over 20s, 6 SSH + 5 RDP IPs banned in nft sets."
+}

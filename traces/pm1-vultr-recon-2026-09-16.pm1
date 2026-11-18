@@ -1,0 +1,36 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-vultr-recon-2026-09-16",
+  "timestamp": "2026-09-16T00:18:46.281808+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1200,
+  "tool_calls": 22,
+  "key_files": [
+    "experiments/pm1-rx/TASK_009_MANIFEST.json",
+    "experiments/pm1-rx/harness/CONFIRMATORY_001_FREEZE_RECORD.md",
+    "experiments/pm1-rx/harness/pm1rx/shadow_oracle.py",
+    "experiments/pm1-rx/harness/pm1rx/shadow_producers.py",
+    "experiments/pm1-rx/harness/pm1rx/shadow_coverage.py",
+    "experiments/pm1-rx/pilot_009a_results.json",
+    "experiments/pm1-rx/pilot_009a_run.log",
+    "experiments/pm1-rx/pilot_a_results.json",
+    "experiments/pm1-rx/pilot_a_run.log"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-vultr-recon-2026-09-16",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Vultr control/dataplane recon (read-only, no writes, no inference). Host PM-1 <ip> up 4d23h, load 0.07, 185G free, 30G RAM. VERIFIED all three Exp001 frozen hashes on server: dataset confirmatory_001_FROZEN.tar.gz=4364fd88... MATCH, code pm1rx_code_FROZEN.tar.gz=db628b6c... MATCH, manifest SHA256SUMS.txt=ebcf1c9e... MATCH (52515 lines = 52515 files). VERIFIED all four local Exp001 raw JSONs byte-identical to server (final_analysis d0f5c200, raw.json d73fddc2, raw_extended ed1b17f7, raw_H10_fill e440b8d3, raw_H50_rerun 18ca6df7). VERIFIED executed shadow code identical to repo: shadow_oracle.py 9ca1d9ad IDENTICAL, shadow_producers.py debbf548 IDENTICAL, shadow_coverage.py differs ONLY in import style (flat vs package-relative). VERIFIED pilot artifacts byte-identical: pilot_009a_results.json 7d4db221, pilot_009a.log 3b4da16e, pilot_a_results.json b2522ba8, pilot_a_run.log b5bd52c6, pilot_boundaries.json 35e42b8e. CONFIRMED Task 009B NOT started (no artifacts on server or repo). Ollama active (disabled at boot), 3 models installed (qwen2.5 3b/7b/14b), 15G in /usr/share/ollama/.ollama. No opencode.db on server (boundary extraction ran locally). No cron. RESOLVED divergence D2 partially: pilot_009a_runner.py and pilot_runner.py DO exist on server at /root/ (877938933b, 8093158c) but remain untracked in git; extract_boundaries.py and safety_checks.py exist ONLY in local AppData Temp - boundary-selection provenance still unversioned. No files modified on server or repo."
+}

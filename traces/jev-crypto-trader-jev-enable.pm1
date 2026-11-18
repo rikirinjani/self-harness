@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "jev-crypto-trader-jev-enable",
+  "timestamp": "2026-09-24T07:43:06.720421+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 8,
+  "key_files": [
+    "C:\\Users\\think\\jev-crypto-trader\\.env.example"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "jev-crypto-trader-jev-enable",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Enabled real Jev on deployed bot <ip>: wrote TYPESAFE_AI_API_KEY to remote .env (chmod 600), MODEL=jev, restarted systemd; verified model=jev-latest with real probabilities; Jev latency ~210-260ms exceeded 150ms tick causing ~50% late holds, bumped DECISION_MS=300 to match (jev-trader lineage block size); re-verified on-time decisions. Key not included in trace."
+}

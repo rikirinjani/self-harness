@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "task-009-credit-verified",
+  "timestamp": "2026-09-15T00:44:20.914759+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 900,
+  "tool_calls": 0,
+  "key_files": [
+    "experiments/pm1-rx/TASK_009_TODO_RESOLUTION.md",
+    "experiments/pm1-rx/TASK_009_VULTR_INFRA.md",
+    "experiments/pm1-rx/TASK_009_PROTOCOL.md",
+    "experiments/pm1-rx/TASK_009_PRE_RUN_GATE.md",
+    "experiments/pm1-rx/TASK_009_MANIFEST.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task-009-credit-verified",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........---..-..........................--.-..-.........................................-.--...-",
+  "action": "Task 009 credit verification: T23 RESOLVED via authenticated GET /v2/account. Balance -300 (Vultr: negative=credit), pending 45.65, available ~\\.35 vs \\ budget (3.1%, 30x margin). 4 active instances incl PM-1. NEW BLOCKER T24/G21: API key IP-restricted - both local <ip> and CPU <ip> rejected 401 Unauthorized IP address; blocks GPU provision/destroy via API (not inference). Resolution: update allowlist at my.vultr.com/settings/#settingsapi. TODO tally 20 RESOLVED / 2 ACCEPTED-AS-LIMITATION / 1 BLOCKING of 23. Commit eab1a93. No experiment run, no paid inference, Experiment 001 unchanged."
+}

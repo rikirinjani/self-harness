@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "khanza-build-milestone",
+  "timestamp": "2026-10-10T01:58:48.891821+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 3600,
+  "tool_calls": 100,
+  "key_files": [
+    "docs/KHANZA-INSTALL-REPORT.md,kaggle/khanza-dr-benchmark/adapter_real.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "khanza-build-milestone",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-..........-.-.-.-........---..-..........-.--...-........................................-.--...-",
+  "action": "Installed SIMRS-Khanza on VPS #2 (<ip>). Build: 11259 classes compiled, 12MB JAR created with Main-Class manifest. DB: 318 tables imported. FK constraints block DR data insertion (penjab.kd_pj mismatch). PHP portals: 37. Pre-built sub-modules: 3. Main app class not in JAR due to JavaFX/readAllBytes compilation issue."
+}

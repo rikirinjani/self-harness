@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "cokro-vps-cutover",
+  "timestamp": "2026-09-30T14:38:31.459961+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2700,
+  "tool_calls": 24,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\cokro-nginx.conf",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\api-requirements.txt"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "cokro-vps-cutover",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "CF cutover with DNS-only token: zone probe (dns_records:edit only), nginx :80 on VPS, temp probe record revealed 521 -> Full SSL mode, LE cert via DNS-01 + nginx :443, flipped api.cokro-tech.my.id CNAME->A <ip> proxied, deleted probe, public smoke PASS (abstain/paper/ask 40.5s)"
+}

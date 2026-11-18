@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "r5-tailnet-join-and-sshd-hardening",
+  "timestamp": "2026-10-23T12:57:12.700730+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 12,
+  "key_files": [
+    "khanza-r5/docs/asset_export_20261023.md",
+    "khanza-r5/docs/khanza_session_handoff_20261017.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "r5-tailnet-join-and-sshd-hardening",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Unblocked and completed the deferred sshd hardening. Owner joined mac-mini-vultr to the tailnet from the Vultr console (device <ip>; the earlier <ip> was a stale/unauthenticated number). Workstation reached it over the tailnet immediately (workstation IPv6 is still dead; tailnet path is now the preferred route). Hardening applied on the box: backup /etc/ssh/sshd_config.bak-hardening-20261023T125514Z; drop-in 00-hardening.conf (PasswordAuthentication no, KbdInteractiveAuthentication no, PermitRootLogin prohibit-password) which overrides 50-cloud-init.conf's PasswordAuthentication yes by lexical first-match; sshd -t VALID; reloaded; effective settings verified via sshd -T and a fresh post-reload key connection. Also fixed the workstation ssh alias (removed stale AddressFamily inet6 that broke the v4 tailnet address, repointed HostName to <ip>; alias verified). Docs updated and committed 6dc4f99. Vultr public IPv6 remains as fallback; no secrets stored."
+}

@@ -1,0 +1,12 @@
+{
+    "severity": "high",
+    "timestamp": "2026-11-18T03:00:00Z",
+    "trace_id": "verify-production-mac-bridge",
+    "category": "external",
+    "summary": "Could not verify production bot on Mac mini: pts-mac-mini (<ip>) is offline in Tailscale (last seen 12 days ago), and every Telegram token stored in the local repo (bridge/.env, bridge/.env.mac, hf-chatbot/.env) is rejected by api.telegram.org with 401 Unauthorized.",
+    "outcome": "blocked",
+    "agent": "orchestrator",
+    "root_cause": "No remote management path to the production host: Tailscale node offline for 12 days (may be LAN-only or powered off). Working Telegram token exists only on the device; repo copies are stale/revoked. Secondary host mac-mini-vultr (<ip>) is online but rejects the available SSH key for all attempted users.",
+    "recovery": "Not resolved. Read-only checklist handed to owner (launchctl print, bridge.log tail, localhost:4001/health). Deliberately avoided getUpdates (would consume updates and interfere with production polling) and avoided any restart on the Mac.",
+    "prevention": "Keep one documented, tested management path (Tailscale ACL + key) and one secret store for the live bot token; remove revoked tokens from the repo to avoid false verification signals."
+}

@@ -1,0 +1,20 @@
+{
+  "id": "2026-09-29-deploy-pylance-requirement-gap",
+  "timestamp": "2026-09-29T22:35:00+08:00",
+  "category": "dependency-requirements-defect",
+  "severity": "medium",
+  "discovery": "Fresh VPS deployment smoke test (<ip>) — /api/paper returned found:false for a PMID proven present in the index",
+  "what_went_wrong": [
+    "api-requirements.txt (the declared deployment requirements) omits `pylance`; lancedb 0.39 no longer bundles the `lance` module, so tbl.to_lance() in api_server._lookup_paper raised ImportError",
+    "The exception is swallowed by the endpoint's broad `except Exception: return None`, masking the missing dep as a benign found:false",
+    "Mac Mini production works only because pylance was added there ad hoc (docs/api-server.md records this) — the requirements file never caught up"
+  ],
+  "root_cause": "Requirements file drifted from actual runtime needs; silent-exception path hid the failure instead of surfacing it",
+  "fix_applied": [
+    "Installed pylance==12.0.0 in VPS venv → /api/paper found:true with full abstract",
+    "Appended `pylance` to local api-requirements.txt with explanatory comment"
+  ],
+  "secondary_self_correction": "During pre-deploy recon I misattributed missing modules/files (pandas, nltk, .cache/layer1_entities.json) from a misread traceback and narrated them as blockers; direct verification (md5 of uploaded api_server.py vs local, grep of RC modules, reading layer1_abstain.py) showed the RC imports cleanly with the shipped requirements. Lesson: verify failure claims against file hashes/greps before narrating them as findings.",
+  "detection_gap": "Silent except in _lookup_paper; no readiness probe covering /api/paper after deploy",
+  "recorded_by": "orchestrator"
+}

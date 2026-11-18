@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261010T124744-explorer-cli",
+  "timestamp": "2026-10-10T12:47:44.002090+00:00",
+  "agent": "explorer",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 12,
+  "key_files": [
+    "reconciliation.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261010T124744-explorer-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........---..-...........................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Three-count reconciliation of 512 ENC blocks vs 321 billed visits: read dr_export.sh + KhanzaBillingConsumer.java on VPS <ip>, ran file counts + 8 SQL counts + 5 duplicate-visit samples against sik DB; root cause = 1 ENC per resep_obat prescription event (512) vs 1 bill per distinct no_rawat (321), delete-rebuild collapses 191 surplus blocks; 0 visits lost, 0 drug lines lost; findings written to C:\\Users\\think\\reconciliation.md"
+}

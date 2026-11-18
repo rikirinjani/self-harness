@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "fix-dashboard-client-exception",
+  "timestamp": "2026-09-24T08:24:30.177217+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1100,
+  "tool_calls": 34,
+  "key_files": [
+    "C:\\Users\\think\\jev-crypto-trader\\web\\src\\lib\\useFeed.ts",
+    "C:\\Users\\think\\jev-crypto-trader\\web\\src\\app\\error.tsx",
+    "C:\\Users\\think\\jev-crypto-trader\\web\\src\\app\\global-error.tsx"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "fix-dashboard-client-exception",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "Fixed dashboard client-side exception at http://<ip>:3001. Root cause: remote web/.env.production had NEXT_PUBLIC_SSE_URL=http://<ip>:3000n (trailing 'n'), baked into the page chunk; new EventSource('http://<ip>:3000n/events') throws (invalid port) during hydration -> Next.js 'Application error'. Fix: corrected env to ...:3000, hardened useFeed.ts with try/catch around EventSource + retry, added app/error.tsx and app/global-error.tsx boundaries, rebuilt on VPS, restarted jev-dashboard. Verified: chunk now bakes http://<ip>:3000; headless Chrome CDP load shows 0 exceptions, 0 console errors, live data (tick #8292, model jev-latest, fills, P&L), no error boundary."
+}

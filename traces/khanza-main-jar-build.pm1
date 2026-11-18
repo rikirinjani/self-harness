@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "khanza-main-jar-build",
+  "timestamp": "2026-10-09T22:45:46.577396+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 2400,
+  "tool_calls": 80,
+  "key_files": [
+    "docs/KHANZA-REAL-E2E-REPORT.md,docs/KHANZA-SCALING-STUDY.md,kaggle/khanza-dr-benchmark/adapter_real.py,kaggle/khanza-dr-benchmark/scaling_study.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "khanza-main-jar-build",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "Khanza main JAR build: 11259 classes compiled, 4 errors (readAllBytes Java 9+ API incompatibility). JAR created at dist/SIMRSKhanza.jar (12MB). DB schema 318 tables on VPS #2 (<ip>, 4vCPU/15GB). Pre-built sub-modules functional. Main app startup blocked by JavaFX readAllBytes compat issue."
+}

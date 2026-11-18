@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261009T142245-orchestrator-cli",
+  "timestamp": "2026-10-09T14:22:45.737400+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 0,
+  "key_files": [
+    "docs/KHANZA-SCALING-STUDY.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261009T142245-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........................-.--...-........................................-.--...-",
+  "action": "Scaling study complete: 6 stages (3d-365d), 525600 ticks in 97s, 2935 patients, Rp 9.05B revenue, 1.7% mortality, 0 errors. DB grew linearly 128KB->1.87MB. Real DR->MariaDB adapter proven end-to-end on VPS <ip>."
+}

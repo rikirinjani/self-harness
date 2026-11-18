@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "p028-windows-crosshost",
+  "timestamp": "2026-09-16T01:49:17.431523+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3600,
+  "tool_calls": 40,
+  "key_files": [
+    "docs/P-028-WIN-SUMMARY.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "p028-windows-crosshost",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........-.--...-........................................-.--...-",
+  "action": "P-028 Windows instance (Vultr <ip>, EA, AMD64): installed Node v22.23.2 + Git 2.51.0, cloned repo, ran full experiment 13/13 PASS (67310ms). Cross-host checkpoint transfer verified both directions: Win producer -> Linux resumer and Linux producer -> Win resumer produce byte-identical stateHash/traceHash/rngState at tick 80. Commit 7198b5f"
+}

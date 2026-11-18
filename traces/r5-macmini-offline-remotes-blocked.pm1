@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "r5-macmini-offline-remotes-blocked",
+  "timestamp": "2026-10-23T12:33:35.334797+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 900,
+  "tool_calls": 10,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\chatbot\\HANDOFF-2026-10-16-vision.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "r5-macmini-offline-remotes-blocked",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Investigated remoting the Mac mini per owner request (RDP/GUI): memory lookup found PTs-Mac-mini (tailnet <ip>, ssh ptpakdefarma@). Workstation IS on the tailnet (desktop-micdilt), but tailscale status shows pts-mac-mini OFFLINE 2 days (tx 1716 rx 0) - no remote path exists (SSH/VNC/RDP all moot while the host is dark); macbook-pro and rins also offline, consistent with a home power/network event that also cost the workstation its IPv6 (Vultr hardening stays blocked; IPv4-from-panel remains the alternative unblock). Advised owner on the VNC-to-tailnet-IP path for when it returns; noted the credential pasted in chat was not stored and should be rotated. Will re-check on next wake."
+}

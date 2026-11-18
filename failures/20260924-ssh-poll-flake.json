@@ -1,0 +1,11 @@
+{
+  "id": "20260924-ssh-poll-flake",
+  "category": "network",
+  "severity": "medium",
+  "what_went_wrong": "SSH poll windows >60s (90s/300s/480s) return empty output then hit local tool timeout; 15s and 60s polls succeed reliably against <ip>.",
+  "root_cause": "Long-lived interactive SSH sessions to the VPS drop or stall without ServerAlive forcing; remote poll_terminal.sh may complete but stdout never returns to PowerShell wrapper.",
+  "what_i_did_wrong": "Chose multi-minute blocking SSH polls after earlier empty returns; should have capped at 60s immediately once the pattern appeared.",
+  "corrective_action": "Use poll_terminal.sh with arg <=60 only; rely on VPS-side watch_terminal.sh + budget_guard for terminal detection; sparse short probes for status.",
+  "impact": "Lost wall time on timed-out polls; no data loss; judge/guard unaffected on VPS.",
+  "ts": "2026-09-24T02:30:00Z"
+}

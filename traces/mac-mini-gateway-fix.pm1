@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "mac-mini-gateway-fix",
+  "timestamp": "2026-10-12T07:02:28.973123+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 30,
+  "key_files": [
+    "C:\\Users\\think\\.opencode\\memory.txt"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "mac-mini-gateway-fix",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "Re-established SSH to Mac mini via Tailscale IP <ip> (user reinstalled Windows Tailscale; LAN fallback 192.168.1.2 also works). Repaired crashed Bonsai gateway: accepted Xcode license (unblocked python3) and fixed asyncio bug in remote ~/bonsai-gateway.py line 144 (proc.poll() -> proc.returncode, backup kept). Verified end-to-end: gateway :8888 up, epicure neighbors endpoint returns data, router lazy-starts on demand."
+}

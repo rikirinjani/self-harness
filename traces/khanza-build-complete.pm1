@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "khanza-build-complete",
+  "timestamp": "2026-10-09T22:56:25.441441+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3600,
+  "tool_calls": 120,
+  "key_files": [
+    "docs/KHANZA-INSTALL-REPORT.md,kaggle/khanza-dr-benchmark/adapter_real.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "khanza-build-complete",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-........---..-..........-.--...-........................................-.--...-",
+  "action": "Built SIMRS-Khanza main JAR on VPS #2 (<ip>, 4vCPU/15GB). 11259 classes compiled, 12MB JAR with Main-Class manifest. DB schema 648 tables loaded from upstream SQL. Pre-built sub-modules (Updater/HMSAutoVerify/Security16bit) present. PHP portals (37) available. Total 4 compilation errors resolved (readAllBytes Java 9+ API patched out). Main app JAR ready for testing."
+}

@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-09-26T01:40:00Z",
+  "category": "wrong-information",
+  "severity": "low",
+  "task": "DQF E1 anticoagulants — curation evidence-path selection",
+  "what_went_wrong": "I concluded and recorded that the openFDA API was 'DNS-blocked' in this environment, and used that to skip the openFDA route. The real cause was a wrong hostname: I called api.open.fda.gov (non-existent) instead of api.fda.gov. Every resolver returned NXDOMAIN for the wrong name, which I misread as a network restriction. The false claim went into a committed draft, two PM-1 trace action strings, two commit messages, and a MemPalace drawer before being caught.",
+  "root_cause": "Did not verify the canonical openFDA endpoint before using it; treated a name-resolution failure as evidence of blocking instead of first checking 'is this name correct?'. Also did not compare against an independent resolver early (<ip>, which I only ran when the user asked).",
+  "impact": "No bad data: values were sourced from DailyMed labels + PubMed and stand. Cost was wasted effort (a DailyMed fallback built unnecessarily) and a false technical claim recorded in documentation/records.",
+  "corrective_action": "Corrected the draft with a correction note; filed NCR-2026-09-25-DQF-OPENFDA; this failure record; corrective MemPalace drawer; correction PM-1 trace. openFDA (api.fda.gov) is now available as a cleaner label source and can be used for the remaining nulls.",
+  "evidence": "nslookup api.open.fda.gov @<ip> -> NXDOMAIN; nslookup api.fda.gov @<ip> -> A records; GET https://api.fda.gov/drug/label.json?search=openfda.generic_name:\"apixaban\" -> HTTP 200 (140 KB)"
+}

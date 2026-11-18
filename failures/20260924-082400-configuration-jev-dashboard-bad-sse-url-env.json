@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-09-24T08:24:00Z",
+  "category": "configuration/deployment",
+  "severity": "medium",
+  "slug": "jev-dashboard-bad-sse-url-env",
+  "agent": "orchestrator",
+  "project": "jev-crypto-trader",
+  "summary": "Dashboard at http://<ip>:3001 showed 'Application error: a client-side exception has occurred' because the production env var NEXT_PUBLIC_SSE_URL contained a trailing 'n' (http://<ip>:3000n).",
+  "user_visible_impact": "Full white-screen crash of the trading dashboard on load; no live data rendered.",
+  "root_cause": "web/.env.production on the VPS was written with a trailing 'n' character in the value: NEXT_PUBLIC_SSE_URL=http://<ip>:3000n. Next.js inlines NEXT_PUBLIC_* vars at build time, so the string 'http://<ip>:3000n' was baked into the client chunk. At runtime, new EventSource(`${SSE_URL}/events`) is constructed with an invalid port ('3000n'), which throws. The throw occurred inside useFeed's useEffect during client hydration, which React/Next.js surfaces as the generic 'Application error: a client-side exception has occurred' page.",
+  "evidence": {
+    "built_chunk_before": "let s=\"http://<ip>:3000n\";  (bytes ...33 30 30 30 6E 22 = '000n\"')",
+    "env_remote_before": "NEXT_PUBLIC_SSE_URL=http://<ip>:3000n",
+    "built_chunk_after": "http://<ip>:3000\"  (bytes ...33 30 30 30 22 = '3000\"')",
+    "url_validation": "PowerShell [Uri]'http://<ip>:3000n/events' -> 'Invalid URI: Invalid port specified.'"
+  },
+  "what_went_wrong": "An environment file value was written without validating the resulting URL. The trailing stray character was not caught because the build still succeeded (it is a runtime, not build-time, failure) and no headless/browser smoke test was run on the initial deploy. Verification relied on HTTP 200 + chunk 200 checks, which cannot detect a client-side runtime exception.",
+  "contributing_factors": [
+    "No client Error Boundary existed, so the real error message was hidden behind Next.js's generic 'Application error' text.",
+    "Deploy verification was limited to HTTP status codes and asset 200s; no browser-level execution check.",
+    "NEXT_PUBLIC_* inlining means a bad env value silently ships into the bundle."
+  ],
+  "corrective_action_taken": [
+    "Corrected .env.production to NEXT_PUBLIC_SSE_URL=http://<ip>:3000 and rebuilt remotely.",
+    "Hardened useFeed.ts: EventSource construction wrapped in try/catch with backoff retry so a bad URL degrades to 'disconnected' rather than crashing the app.",
+    "Added app/error.tsx and app/global-error.tsx to surface real error messages instead of the generic crash page.",
+    "Re-verified with a headless Chrome CDP run capturing exceptions and console errors."
+  ],
+  "preventive_action": "Add a browser-level (headless CDP/Playwright) smoke check to the deploy checklist so client-side runtime exceptions are caught, and validate env-derived URLs before/after build.",
+  "status": "resolved-verified"
+}
