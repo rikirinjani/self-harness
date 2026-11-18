@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "g2-final-reconciliation",
+  "timestamp": "2026-10-11T23:54:31.700398+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 22,
+  "key_files": [
+    "Agentic Layer/qms/records/verifications/VER-2026-10-12-G2-FINAL-RECONCILIATION.md",
+    "Agentic Layer/qms/records/nonconformities/NCR-2026-10-12-001.md",
+    "self-harness/failures/20261011T2355Z-g2-reconcile-dispatch-premise-unsupported.json",
+    "self-harness/outbox/mempalace-pending-20261011T2335Z-g2-terminal-state.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "g2-final-reconciliation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Final G2 lane reconciliation (orchestrator-requested): terminal state re-verified intact read-only on-box (3rd confirmation - unit dr-bench parked rc=3 since 23:21:10Z, state.json stageB_ladder/percent=90, G2 three-count A==B==C 1460 rows/Rp142,947,833 exact per component, delta 0, replay hash fee58826a759d35d, mtimes unchanged, no processes). Dispatch premise of 24 unreconciled sessions fix-4..fix-27 NOT found on disk; actual population 1 substantive + 18 traced ack sessions all reconciled (17 redundant, 10 dispatched after documented stop). No implementation, box untouched. Lane CLOSED: QMS VER-2026-10-12-G2-FINAL-RECONCILIATION + NCR-2026-10-12-001 + failure record filed; no further G2 reconcile sessions."
+}

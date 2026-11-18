@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "bm25-new-pairs-delta",
+  "timestamp": "2026-09-24T07:55:12.673915+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\compute_bm25_new_pairs.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\ab_results\\vultr_si_deepseek\\bm25_new_pairs.json",
+    "C:\\Users\\think\\self-harness\\failures\\20260924-075000-external-fixer-bm25s-funds.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "bm25-new-pairs-delta",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "bm25 new-pair delta: 5976 new / 6000 / 24 overlap; est cost \\.03; failure record written for fixer funds"
+}

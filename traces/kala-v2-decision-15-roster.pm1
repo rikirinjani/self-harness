@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "kala-v2-decision-15-roster",
+  "timestamp": "2026-09-27T03:59:49.683548+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 200,
+  "tool_calls": 5,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\kala_v2_decisions.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kala-v2-decision-15-roster",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Decision session: user ruled DECISION#15 (roster): newly commissioned ~112, novel identities win with corrected NZ aggregate, Wren=sixth follower, Davan bicultural family. Proceeding to #18 NZ revision scope."
+}

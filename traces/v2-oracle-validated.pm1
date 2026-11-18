@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "v2-oracle-validated",
+  "timestamp": "2026-10-10T15:19:18.990325+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 45,
+  "key_files": [
+    "/opt/simrs-khanza/consumer/KhanzaBillingConsumer.java",
+    "C:/Users/think/real_form_validation_v2.md",
+    "C:/Users/think/khanza_report.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v2-oracle-validated",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "Re-ran v2 consumer (512 ENC/321 visits) after 5 replica fixes; PPN 11% whole-rupiah confirmed, no Tagihan, reg=biaya_reg, obat nama_brng(jenis), row-density now 17.3/visit (matches real form 13-19). Cleaned no_rawat-keyed derived tables (billing, detail_nota_jalan, nota_jalan, tagihan_sadewa via no_nota), re-ran real DlgBilingRalan harness under Xvfb with general_log ON (441 inserts). Diff vs v2 consumer snapshots: 9/10 visits 100% exact value rows, PPN 6/6 exact (4901/44722/3194/261/1750/218962), reg=biaya_reg all match, no PPN-reg row, no Tagihan. Verdict: VALIDATED ORACLE. khanza_report.json depth updated, pendingValidation refreshed. Benchmark password rotated to bench_6Ovp... (root-only VPS file)."
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "overhead.v1",
+  "record_id": "ov-task-004",
+  "task_id": "verify-codeowners",
+  "type": "task",
+  "pair_id": "pair-none",
+  "task_class": "verification",
+  "revision": "e8e699d12b77144ec3253a6d8baa20a807f44614",
+  "suite_id": "l2-acceptance-gate-install",
+  "implementer_id": "verifier",
+  "mode": "delegated",
+  "status": "completed",
+  "accounting_complete": false,
+  "started_at": "2026-10-02T01:55:00Z",
+  "ended_at": "2026-10-02T02:00:00Z",
+  "duration_seconds": 300.0,
+  "cost_usd": null,
+  "human_seconds": null,
+  "input_tokens": null,
+  "output_tokens": null,
+  "context_tokens": null
+}

@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "kaggle-judge-batch-setup",
+  "timestamp": "2026-09-25T07:37:53.955535+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 22,
+  "key_files": [
+    "api/drugs.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kaggle-judge-batch-setup",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Kaggle batch setup: stored user KGAT key to ~/.kaggle/access_token and verified auth (rikirinjani); built judge_input.json (89 drugs, 3182 drug-anchored sentences, 750KB); pushed private dataset rikirinjani/dqf-l3-judge-input; wrote + pushed notebook rikirinjani/dqf-llm-judge-batch-mistral-7b-t4x2 (Mistral-7B-Instruct 4-bit, evidence-constrained judge prompt with salt-guard rules, GPU+internet enabled)"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "2026-10-08-XXXXXX-model-proxy-inference-failure",
+  "date": "2026-10-08T05:15:00Z",
+  "category": "infrastructure-limitation",
+  "severity": "high",
+  "agent": "external-agent",
+  "task": "Run Astra benchmark assessment on Kaggle",
+  "what_happened": "Agent exhaustively probed the Kaggle Model Proxy API and found it to be a read-only stub with no inference endpoints. All POST requests to /v1/chat/completions returned 405 (Method Not Allowed). No inference endpoints exist at any path.",
+  "endpoints-probed": {
+    "GET / (staging)": "200 OK - root endpoint responds",
+    "GET /models": "401 Unauthorized - auth required but no endpoint defined",
+    "POST /v1/chat/completions": "405 Method Not Allowed - only GET, HEAD allowed",
+    "All other paths": "404 Not Found or 405 Method Not Allowed"
+  },
+  "root_cause": "The Kaggle Model Proxy (mp-staging.kaggle.net) is configured as a read-only stub. It responds to requests but does not support POST inference calls. This is an infrastructure limitation, not a code issue.",
+  "why-previous-runs-succeeded": "Previous successful assessments (this session's v2-v4 runs) used the kaggle-benchmarks SDK which handles model routing internally. The SDK likely uses direct API access or a different proxy configuration than the raw Model Proxy endpoints the external agent probed.",
+  "impact": "External agents attempting to probe the Model Proxy directly for inference will fail. They must use the kaggle-benchmarks SDK's task/run mechanism instead of direct API calls.",
+  "resolution": "Documented in KAGGLE-ASTRA-BENCHMARK-GUIDE.md: use `kaggle benchmarks tasks run -m gpt-6-astra` via the SDK, not direct HTTP calls to the proxy.",
+  "corrective-action": "The guide now includes explicit warnings about proxy limitations and directs users to the SDK approach.",
+  "evidence": [
+    "External agent probe results (see failure report)",
+    "Successful runs in this session used kaggle-benchmarks SDK (task push/run/download pattern)"
+  ],
+  "linked-records": [
+    "docs/KAGGLE-ASTRA-BENCHMARK-GUIDE.md"
+  ]
+}

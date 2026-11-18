@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "restore-r292-pending",
+  "timestamp": "2026-09-15T07:05:01.285994+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 6,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "restore-r292-pending",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........................................................-.--...-",
+  "action": "Restored R292: admin had /edit'd it with R291's answer (wrong answer sent to Rina 8018513235), and R292 was consumed from pendingReviews so re-send failed. Extracted ORIGINAL R292 draft from audit log (src=review 13:43:45) and re-inserted into pendingReviews; bot restarted, R292 confirmed pending (74 total). Admin can now /edit R292 <correct answer> to send the right reply"
+}

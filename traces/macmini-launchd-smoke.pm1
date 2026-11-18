@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "macmini-launchd-smoke",
+  "timestamp": "2026-09-28T06:39:11.996723+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\macmini-launchd.sh",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\macmini-postlaunch.sh",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\macmini-verify1.sh"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "macmini-launchd-smoke",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........................-.--...-........................................-.--...-",
+  "action": "Mac Mini persistence + smoke: created launchd plist com.pubmedrag.api (KeepAlive, mirrors bot pattern), killed nohup pid 65849, loaded plist -> pid 67927, openapi 200; abstain smoke PASS; paper endpoint PASS (found:true pmid 31904444); full ask 200 in 72.2s retrieving 3 docs from S3 LanceDB. Open defect: LLM n_ok=0 n_err=1 (Mac .env DeepSeek key ****2820 invalid). cloudflared 2026.9.3 installed to ~/bin."
+}

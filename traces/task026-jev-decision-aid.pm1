@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "task026-jev-decision-aid",
+  "timestamp": "2026-09-23T00:52:53.238349+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 12,
+  "key_files": [
+    "morse/experiments/pm1-rx/scripts/task026_jev_decision.py",
+    "morse/experiments/pm1-rx/task026_jev_decision.json",
+    "morse/experiments/pm1-rx/raw_jev/t026_dispose__rot0.json",
+    "morse/experiments/pm1-rx/raw_jev/t026_dispose__rot1.json",
+    "morse/experiments/pm1-rx/raw_jev/t026_dispose__rot2.json",
+    "morse/experiments/pm1-rx/raw_jev/t026_sufficiency.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task026-jev-decision-aid",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "TASK-026 Jev advisory decision aid: diagnosed Cloudflare 1010 UA block (F-AUTH misdiagnosis, failure record filed), injected UATransport wrapper without modifying frozen adapter, re-ran probes 4/4 200 OK; 3/3 APPROVE majority across rotations (positions A/C/B, no position prior), sufficiency noul 0.16/0.88, negative control noul 0.03 PASS; advisory result reported to human for FIRST STOP protocol approval"
+}

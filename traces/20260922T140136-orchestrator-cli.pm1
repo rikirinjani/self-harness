@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260922T140136-orchestrator-cli",
+  "timestamp": "2026-09-22T14:01:36.900071+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 150,
+  "tool_calls": 4,
+  "key_files": [
+    "eval/calibration/GATE_DECISION.md",
+    "eval/calibration/nvidia-rerun1/metrics.json",
+    "NEXT-TASK-AB-PREP.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260922T140136-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Verified v4 judge re-calibration: consensus weighted kappa 0.857, MAE 0.183, one-directional share 0.565, ge2 delta +5.56pp, min tier kappa 0.50, divergence 15.08%. Confirmed PASS depends on 3-run consensus (no single run clears). Sized A/B: 42000 judgments at ~15 calls/min = ~47h single run. Prepared A/B prep handoff with dedup, throughput pilot, and single-run+subsample recommendation."
+}

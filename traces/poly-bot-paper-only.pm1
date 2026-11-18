@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "poly-bot-paper-only",
+  "timestamp": "2026-10-10T22:47:37.624821+00:00",
+  "agent": "poly-bot-paper-only",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "poly-bot-paper-only",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........................................................................................................-.--...-",
+  "action": "Poly bot is paper/training mode only - no live CLOB integration. Crypto bot is live with real Indodax orders."
+}

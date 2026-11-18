@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "dr-auth-cors-verify",
+  "timestamp": "2026-10-01T19:31:39.906002+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 20,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\src\\api\\rest.ts",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\verify-dr-api.ps1"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dr-auth-cors-verify",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Verified final state: npm run lint exit 0; npx vitest run tests/fhir-export.test.ts 6/6 passed exit 0; npm run build exit 0. Runtime vs node dist/cli/index.js up 3197 (all OBSERVED): no key -> /api/patients 200 + exactly 1 stderr warning, FHIR 200, unknown /api route 404; DR_API_KEY=k1 -> no header 401+WWW-Authenticate:Bearer+JSON error, X-API-Key k1 200, Bearer k1 200, wrong key 401 (both schemes), GET / 200, GET /api/status 200 keyless, /api/fhir/Patient 401, 0 warning lines, 0 key leaks in logs; DR_CORS_ALLOW_ORIGINS=https://app.test -> OPTIONS matching Origin 204 with echoed origin + Allow-Methods/Allow-Headers (no auth), evil Origin 403 (GET and OPTIONS), matching Origin + key 200 echoed, CORS unset -> Access-Control-Allow-Origin * still present. Server killed after each scenario, port free, only src/api/rest.ts modified."
+}

@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "glm-key-recheck",
+  "timestamp": "2026-09-25T06:19:54.149675+00:00",
+  "agent": "coordinator",
+  "outcome": "fail",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {
+    "category": "expired-credential",
+    "severity": "low"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "glm-key-recheck",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........-.--...-........................................................................-.--...-........-.--...-",
+  "action": "Re-checked GLM key glm_xjkanh99apa2adfqwebbcdajasdfpixgs (previously 401). Confirmed EXPIRED across all official Zhipu endpoints: api.z.ai/api/paas/v4 and open.bigmodel.cn/api/paas/v4 both return 401 'token expired or incorrect' (EN and CN) on /models and on chat completions for glm-4.5/glm-4.6; api.z.ai/api/paas/v4/chat/completions same. api.zhipuai.cn unreachable (WinError 10060). Key format glm_* (37 chars) is non-standard for Zhipu (normally uuid.secret). Found sibling env var UTIM_GLM_AJIANAZ_KEY = glm_xjkanh99apa2naefapixga5gs (29 chars) sharing identical 16-char prefix glm_xjkanh99apa2 — also 401 expired on both official endpoints. Conclusion: key is dead on official Zhipu; if issued by a third-party GLM router, its base URL is needed to test properly."
+}

@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "g8-close-disposition",
+  "timestamp": "2026-09-28T04:42:16.319489+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\PRE-PRODUCTION-TODO.md",
+    "C:\\Users\\think\\self-harness\\failures\\2026-09-28-infrastructure-verifier-session-compaction-limit.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "g8-close-disposition",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "G8 closure: post-abort state check (pid 2656, identity b0cbd33590213e1e), ver-1 compaction failure recorded, fresh verifier dispatched -> VER-G8-001 APPROVE 6/6, closed G8 gate + wrote FINAL RELEASE DISPOSITION (PRODUCTION/LIVE) in PRE-PRODUCTION-TODO.md"
+}

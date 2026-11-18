@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-b2-partial-reconciled",
+  "timestamp": "2026-10-03T12:10:55.606431+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\VER-2026-10-03-PM1-B2-PARTIAL.json",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\frozen\\gemma-b2-notice-partial\\sweep\\summary.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-b2-partial-reconciled",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "B2-NOTICE PARTIAL RECONCILED (6/24 chains recovered from stopped v16): probe50 CONFIRMED at h250 scale - P-pos AND P-postarget comply (241/240 post-K declare 2, ~10 minor failures each) while P-full held at 0 all 250 hops (240 failures) DESPITE visible notice 50/50 hops. Field-level authority dissociation CONFIRMED: explicit contradicting target field flips compliance off; removing it flips on. Stall diagnosed: zero chain output after smoke for ~12h (user web-log check), 6 chains completed before stall, user stopped kernel. Frozen frozen/gemma-b2-notice-partial; VER-2026-10-03-PM1-B2-PARTIAL (PASS, partial 6/24). Next: post-reset re-push completes remaining 18 chains (skip-completed on recovered files via seed or fresh-dir + separate merge)."
+}

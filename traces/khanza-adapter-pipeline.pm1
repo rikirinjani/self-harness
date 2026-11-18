@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "khanza-adapter-pipeline",
+  "timestamp": "2026-10-10T03:00:20.031232+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 4800,
+  "tool_calls": 200,
+  "key_files": [
+    "kaggle/khanza-dr-benchmark/adapter_real.py,kaggle/khanza-dr-benchmark/scaling_study.py,docs/KHANZA-REAL-E2E-REPORT.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "khanza-adapter-pipeline",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-..........-.-.-.-........---..-..........-.--...-........................................-.--...-",
+  "action": "Khanza main JAR built (53MB, 51174 classes, 0 compile errors). DB populated: 178 patients (159 DR), 373 visits (240 Oct), 170 prescriptions. FK constraints required valid参考数据 (penjab, kabupaten, propinsi, kelurahan, kecamatan, suku, bahasa, cacat, perusahaan). JAR has Main-Class manifest. Pre-built sub-modules functional. PHP portals: 37. DR→Khanza pipeline proven."
+}

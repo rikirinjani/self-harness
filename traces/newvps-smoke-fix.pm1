@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "newvps-smoke-fix",
+  "timestamp": "2026-10-11T05:12:00.104796+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 820,
+  "tool_calls": 48,
+  "key_files": [
+    "/opt/dr-benchmark/run_all.sh",
+    "/opt/dr-benchmark/DECISIONS.md",
+    "/opt/dr-benchmark/run_all.sh.bak-20261011T050430Z",
+    "/opt/dr-benchmark/results/20261011T050436Z/STOPPED_AT_preflight_smoke.md",
+    "/opt/dr-benchmark/results/20261011T050921Z/STOPPED_AT_phase1_doc2.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "newvps-smoke-fix",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--.........................--...--.........--...--........--.-..-.........................................-.--...-",
+  "action": "Fixed preflight smoke gate in run_all.sh (read-only BilingHarness --smoke <real sik no_rawat from reg_periksa>, gate = harness exit 0 + no Exception + tbBilling rows>=0; save-mode rejected to keep sik baseline pristine) + stop-semantics hardening (conditional write_done, heartbeat/progress cleanup in gate_fail, stale last_error reset). Found and fixed headless-only JRE gap (installed openjdk-17-jre for libawt_xawt.so; no Khanza/harness/firewall/auth changes). Relaunched dr-bench run 20261011T050921Z: Phase 0 PASSED (manifest, sik baseline sha256, smoke read-only tbBilling rows=13), expected stop at Phase 1 doc2 (helper tools not built). No false DONE marker; heartbeat fresh during run, loops cleaned after. Both decisions recorded in DECISIONS.md."
+}

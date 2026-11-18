@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "real-form-validation",
+  "timestamp": "2026-10-10T13:34:47.575328+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 3480,
+  "tool_calls": 42,
+  "key_files": [
+    "/tmp/real_form_validation.md",
+    "C:\\Users\\think\\real_form_validation.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "real-form-validation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "Real DlgBilingRalan headless run on 10 visits (Xvfb+benchmark TCP+Connector/J 8.4 shim), general_log diff vs Java replica, PPN rounding check: 11% Math.round half-up (4900.5->4901); verdict PARTIAL - drug/procedure rows exact, PPN Obat/Registrasi/Tagihan-row divergent; report at /tmp/real_form_validation.md"
+}

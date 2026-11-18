@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "kala-v2-decision-22-comms-keepers",
+  "timestamp": "2026-09-27T04:04:44.428473+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 200,
+  "tool_calls": 5,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\kala_v2_decisions.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kala-v2-decision-22-comms-keepers",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Decision session: user ruled DECISION#22 (comms/Keeper): Order relay canon-fast, engineered simultaneous delivery, layered custody+observation charter with no initiation, 12-year knowledge canon with 40-year claim quarantined. Proceeding to #24 Rule 7."
+}

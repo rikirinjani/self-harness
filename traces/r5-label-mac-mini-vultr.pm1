@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "r5-label-mac-mini-vultr",
+  "timestamp": "2026-10-23T09:04:04.424125+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 6,
+  "key_files": [
+    "khanza-r5/docs/asset_export_20261023.md",
+    "khanza-r5/.gitignore"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "r5-label-mac-mini-vultr",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Labeled the replacement VPS as 'mac mini vultr' per owner instruction: hostnamectl set-hostname mac-mini-vultr + /etc/hosts entry + /etc/machine-label file on the box; ssh alias 'Host mac-mini-vultr' added to ~/.ssh/config (verified: ssh mac-mini-vultr connects and reports the new hostname); env file renamed khanza-r5/.vps2.env -> .vps-mac-mini.env with gitignore updated; naming section added to docs/asset_export_20261023.md. Owner decision recorded: both boxes stay live, .vps.env keeps pointing at the older vultr box until decommission is decided. Commit eac3230."
+}

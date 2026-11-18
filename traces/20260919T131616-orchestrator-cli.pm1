@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260919T131616-orchestrator-cli",
+  "timestamp": "2026-09-19T13:16:16.435876+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 7200,
+  "tool_calls": 50,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\morse\\experiments\\pm1-rx\\TASK_024_RESULTS.md",
+    "C:\\Users\\think\\Agentic Layer\\morse\\experiments\\pm1-rx\\TASK_024_CELL_DATA\\scoring_results.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260919T131616-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........-.--...-........................................-.--...-",
+  "action": "Task 024 full experiment: 40 cells complete, all SHA256 verified, Matcher 1.0/2.0 scored, Arm F strongest (M1=0.1186, M2=0.1943)"
+}

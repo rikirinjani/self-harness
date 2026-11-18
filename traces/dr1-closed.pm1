@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "dr1-closed",
+  "timestamp": "2026-10-10T16:46:24.006421+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 40,
+  "key_files": [
+    "C:/Users/think/khanza_report.json",
+    "C:/Users/think/khanza_validation_protocol.md",
+    "C:/Users/think/consumer_current.java"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dr1-closed",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "DRU-1 closed and verified: consumer now dedups identical OBAT lines per pair with idempotent absolute UPSERT. Post-fix exported deduped SUM(jml)=7597 == dpo actual=7597, 0 per-pair mismatches. Revenue corrected to Rp 291.28M. Resolved tagging: 000222/000198/000225/0014 are SEED; DR-only filter=354, 0 DR zero-fee, 67 unbilled DR. Protocol v3 re-aimed at DR visits with all round-5 fixes. Report updated with preDRU1 key + SEED sample provenance."
+}

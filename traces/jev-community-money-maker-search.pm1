@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "jev-community-money-maker-search",
+  "timestamp": "2026-09-24T09:05:54.844385+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 14,
+  "key_files": [
+    "C:\\Users\\think\\jev-crypto-trader\\web\\src\\lib\\format.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "jev-community-money-maker-search",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Researched the Jev (TypeSafe AI) community, GitHub, and reviews for ANY Jev trade bot that is a money maker. ANSWER: none exists on the public record; every measured Jev trading system loses money, and the flagship is an explicit demo. EVIDENCE: (1) flagship jarrodwatts/jev-trader = 2,233 stars / 425 forks, written in one evening (Sep 16 2026, last push Sep 17), MIT; SPEC.md says 'the model is not trying to be profitable'; MrJev review verdict 'As a live trading bot, it's a demo... Treat it as a published experiment, not a maintained trading system'; burns ~360 MON/hour of gas whether or not orders fill. (2) PRE-REGISTERED STUDY r4topunk/jev-trading-study: four Base markets over 90 days, 34,496 decisions scored at a 15-minute horizon -> AUC 0.475 (95% CI 0.468-0.482), i.e. WORSE THAN A COIN FLIP; Jev tracks momentum (rank corr ~0.75 with past 15-60 min), 'a weaker copy of a free logistic regression'; positive control scored AUC 1.000 so the method is sound; required hit rates to beat taker costs 88-100%+. (3) dev.to 'Jev Decoded': Waxmell114514/jev-trade 339 decisions, 67.8% hit rate, gross +28.90 but fees -91.60 -> NET -62.69, break-even fee threshold <0.316 bps (below any real venue); egrm07/jev_bitcoin_backtest best holdout AUC 0.503 (indistinguishable from random); 'both projects lost money'. (4) OneBullEx: a ,000 simulated CME micro-futures Jev account, 731 trades -> -,150 with ~,650 fees, only 21% of trades profitable after fees. (5) Widely-circulated developer report 'So far it has lost me ,680' overnight on a dry run, with visible BUY/SELL flip-flopping every block; another screenshot 'ran 14 hours and lost more than 300%' (dry run). (6) MrJev on aowang-ai/jev-trade (Hyperliquid, real fills): no stop-loss, no position cap, case-sensitive direction parsing that turns SHORT into long -> 'Read it for the state builder. Do not run it with money.' (7) TypeSafe's own docs: 'Jev should not be trusted with arithmetic'. Only positive claims are unverified: @BrendanPlayford 375 PAPER trades 41.1% win rate PF 1.38 ('still early'); @w1nklerr promo tweet ' to ,202' with an EVM address. This corroborates my own port's finding: realized gross edge ~0, so the only viable design is market-making where the venue spread exceeds cost (reference's spread > 2x fee rule), not Jev's predictions. Sources gathered directly because the librarian lane failed with 'Insufficient account funds'."
+}

@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261017T144013-orchestrator-cli",
+  "timestamp": "2026-10-17T14:40:13.331603+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "api/evidence.json",
+    "rag-queries/curation/migrate_typed_evidence.py",
+    "rag-queries/test_typed_evidence.py",
+    "rag-queries/curation/n6b-phase2-typed-evidence-plan.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261017T144013-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "DQF Phase 2 P2-0: 77 nested endpoints -> typed legacy_unsourced records in evidence.json (delegated with rubric, audited); Kaggle PASS pre-commit and @ d673c61; D1-D4 recorded"
+}

@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "ajianaz-403-confirmed",
+  "timestamp": "2026-11-05T05:51:29.136641+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ajianaz-403-confirmed",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................................................................-.--...-",
+  "action": "Confirmed GLM Ajianaz key still returning 403 Forbidden (not just 429 lockout). Both User and Machine scope keys fail. Root cause likely: the 257-min escalating lockout from earlier today, or the provider has revoked/degraded the key. Fresh handoff sessions defaulting to glm-ajianaz/glm-5.3 will error or fall through. User acknowledged they are running a new session from a handoff of the big thread. Recommended repoint default to z-ai/glm-4.7-flash (free tier, always available) to unblock immediate work while ajianaz recovers or is replaced."
+}

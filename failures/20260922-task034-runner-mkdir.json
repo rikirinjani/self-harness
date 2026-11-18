@@ -1,0 +1,11 @@
+{
+  "id": "20260922-task034-runner-mkdir",
+  "task": "TASK-034",
+  "category": "code-defect",
+  "severity": "low",
+  "what_went_wrong": "runner.main() raised FileNotFoundError when out_dir did not yet exist (first run into a fresh directory).",
+  "root_cause": "Missing out_dir.mkdir(parents=True, exist_ok=True) before writing SCENARIOS/REPLAY_RESULTS/METRICS.",
+  "impact": "First clean-directory run failed; no data corruption.",
+  "fix": "Added mkdir in main().",
+  "status": "closed"
+}

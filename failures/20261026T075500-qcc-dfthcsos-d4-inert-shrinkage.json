@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-10-26T07:55:00Z",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "category": "tool",
+  "severity": "low",
+  "summary": "DFTHCSOS D4 v1/v2 post-hoc W-rescale lever was inert (identical metrics across all 4 lambda-penalty weights) because the rescale touched trained.params['W'] but evaluate_words reads the SEPARATE inputs.w/inputs.W field from load_inputs, not params. v3 fixed the plumbing (fresh SubmissionInputs from rescaled params) but the underlying 50/50/50 factorization's error_2 (62 mHa) is over the 20 mHa gate, so no D4 candidate passes — the lever is gate-limited, not a bug. v3 CPU run cancelled after the gate-failure evidence was sufficient. D4 logged a dead end; the phase hands back at the baseline 3.356e9 with all four levers (D2/D2b/D3/D4/D5) logged dead.",
+  "root_cause": "Post-hoc rescale of trained.params['W'] did not propagate to the evaluate_words path (which reads the inputs dataclass's w/W fields, derived separately in load_inputs). Even when the plumbing was fixed, the smaller-rank factorization's two-body accuracy was below the 20 mHa gate, so no Lambda candidate could pass.",
+  "trace_id": "20261026T063046-orchestrator-cli.pm1"
+}

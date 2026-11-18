@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261005T003524-orchestrator-cli",
+  "timestamp": "2026-10-05T00:35:24.270018+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 50,
+  "key_files": [
+    "src/engine/drug-catalog.ts,src/engine/ina-cbg.ts,src/engine/clinical-knowledge.ts,src/patient/generator.ts,src/engine/pharmacy-knowledge.ts,src/engine/pharmacy.ts,src/engine/ai-pharmacy.ts,src/engine/central-supply.ts,src/api/rest.ts,public/index.html,tests/central-supply.test.ts,docs/adr/ADR-010-clinical-fidelity-expansion.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261005T003524-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "ADR-010 clinical fidelity expansion: 73-drug formulary, 146-ICD generator, 144-CBG tariffs with SEP scoring, full protocol coverage. All 189 tests pass. Live box running tick 2941 with 386 outcomes."
+}

@@ -1,0 +1,11 @@
+{
+  "id": "20260922-task034-scenarios-path",
+  "task": "TASK-034",
+  "category": "code-defect",
+  "severity": "medium",
+  "what_went_wrong": "task034/scenarios.py used Path.parents[2] which resolved ASTRA-001 evidence path to the workspace root (Agentic Layer/) instead of the pm1-rx experiment root, so the Astra replay scenario failed to locate frozen evidence on first run.",
+  "root_cause": "Off-by-one in pathlib parent traversal relative to package location under morse/experiments/pm1-rx/task034/.",
+  "impact": "First replay run aborted; no incorrect metrics were accepted.",
+  "fix": "Corrected path resolution before final deterministic double-run.",
+  "status": "closed"
+}

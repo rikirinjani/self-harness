@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261010T162328-poly-bot-folder-moved-cli",
+  "timestamp": "2026-10-10T16:23:28.902395+00:00",
+  "agent": "poly-bot-folder-moved",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261010T162328-poly-bot-folder-moved-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........................................................................................................-.--...-",
+  "action": "User moved files to C:\\Users\\think\\Project_v2\\Jev Bot\" --slug poly-bot-folder-moved"
+}

@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-arc-research-mode-decision",
+  "timestamp": "2026-10-05T03:25:12.116065+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\arc-transfer\\ARC-AGI-master\\data",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\arc-transfer\\ARC-AGI-2-main\\data"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-arc-research-mode-decision",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "ARC DECISION FLIPPED (user): PARKED-for-2026-submission -> RESEARCH MODE, NO SUBMISSION. Rationale accepted: drop Nov-2 submission collision entirely; ARC-AGI becomes a standing AGI research track (PM-1 transfer experiment + eventual ARC-AGI-3 agentic line) with no competition obligations, no open-source-schedule pressure, no offline-solver rush. 2027 entry seed kept optional, not committed. Fetched public data: ARC-AGI-1 (fchollet/ARC-AGI: 400 train + 400 eval) and ARC-AGI-2 (arcprize/ARC-AGI-2: 1000 train + 120 eval) into pm1-continuation/arc-transfer/ (466KB + 646KB zips). Note: earlier URL guess fchollet/ARC-AGI-1 404'd -> located repos via GitHub search API. Paper deadline (Nov 12) remains the only hard gate."
+}

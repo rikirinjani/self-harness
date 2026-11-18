@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261009T083617-orchestrator-cli",
+  "timestamp": "2026-10-09T08:36:17.797789+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 60,
+  "tool_calls": 0,
+  "key_files": [
+    "docs/CODEX-E2E-REPORT.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261009T083617-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........................-.--...-........................................-.--...-",
+  "action": "CODEX E2E report updated: all 5 P0/P1 blockers were already fixed post-Oracle rework (outcome field, FHIR endpoints, severity data, query filters, readmission tracking). 377 tests pass, tsc clean. Remaining: adapter transferred status, API-key in E2E, pre-existing determinism flake."
+}

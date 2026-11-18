@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "two-stage-backtest-reconcile-session-wrap",
+  "timestamp": "2026-09-25T08:12:22.739335+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 14,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\20260925-pass-two-stage-backtest-compile-failfast.json",
+    "C:\\Users\\think\\.opencode\\skills\\STATE.md",
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest\\run.ts",
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest\\RESULTS_SUMMARY.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "two-stage-backtest-reconcile-session-wrap",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................--.-..-.........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Session wrap: RECONCILE_ONLY close finished. Re-verified on disk (no source edits): npx tsc --noEmit exit=0, fail-fast guard at run.ts:176-180 (missing TYPESAFE_AI_API_KEY -> exit 1, 'no numbers will be fabricated'), RESULTS_SUMMARY.md BLOCKED - NO RESULTS intact. Wrote QMS verification 20260925-pass-two-stage-backtest-compile-failfast.json (verdict pass on compile+fail-fast+honesty, backtest itself BLOCKED) and updated STATE.md to CLOSED/BLOCKED with unblock steps. Gate checks: retrace clean (2838 traces, 0 untraced), crashlog --recover clean, crashlog --complete issued, MemPalace close drawer already filed."
+}

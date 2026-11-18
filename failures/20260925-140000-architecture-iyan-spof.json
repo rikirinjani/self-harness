@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-09-25T14:00:00+08:00",
+  "category": "architecture",
+  "severity": "high",
+  "agent": "coordinator",
+  "title": "Single point of failure: all OMO agents routed to one unvetted third-party provider",
+  "what_happened": "Configured iyan-router as the sole model backend for all 8 OMO agents plus opencode.jsonc oracle and vision. Within the same session the provider began returning HTTP 401 'This account credential was rejected' on every chat completion, leaving the entire agent stack pointed at a dead endpoint.",
+  "root_cause": "Consolidated all agent traffic onto one third-party personal-domain router with no fallback preset ready. I had explicitly flagged this as a risk ('single point of failure: third-party, flaky, no fallback configured') but did not prepare a fallback before switching, so the risk materialized immediately.",
+  "what_i_did_wrong": [
+    "Made a provider with known flakiness (transient rate limits observed earlier) the default for 100% of agents.",
+    "Flagged the SPOF risk to the user but did not pre-stage a fallback preset, despite the cost of being wrong being a fully broken stack.",
+    "Verified model availability and tool-calling but did not re-verify at switchover time that the account was still in good standing."
+  ],
+  "evidence": "All 17 configured models returned HTTP401 authentication_error 'This account credential was rejected'. /v1/models returned 200 with the same key, proving the key itself was valid and the upstream inference account was rejected.",
+  "corrective_action": "Reverted active preset to 'deepseek' (the only verified-working provider), set default model to deepseek/deepseek-chat and oracle to deepseek/deepseek-v4-pro. Kept the iyan preset dormant for reuse if the account recovers.",
+  "prevention": "Before switching any provider to primary: (1) stage a working fallback preset in the same edit, (2) re-verify auth at switchover, (3) never make a third-party router the sole backend for the whole agent stack.",
+  "resolved": true,
+  "resolution": "Config repaired and validated; active preset deepseek, no active dead-provider references."
+}

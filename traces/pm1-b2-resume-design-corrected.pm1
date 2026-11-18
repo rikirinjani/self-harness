@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-b2-resume-design-corrected",
+  "timestamp": "2026-10-03T12:14:48.142418+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\kaggle\\kernel-metadata.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-b2-resume-design-corrected",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "B2-NOTICE RESUME DESIGN CORRECTED before launch: discovered skip-completed keying cannot distinguish notice vs no-notice runs of the same cell - the uploaded seed dataset (16 no-notice v11 runs + 6 v16 notice runs sharing identical cell names) would cause the fresh session to SKIP 10 no-notice runs that B2-notice needs re-run WITH notice, producing a mixed-condition contamination. Fix: detach pm1-sweep-partial seed dataset from kernel metadata; B2-notice runs all 24 chains WITH notice into a fresh results dir (one ~5h session, +6 duplicate calls ~1h, buys single-source clean data). The 16 no-notice runs remain the frozen control set (frozen/phase2-sweep-nonotice), the 6 v16 notice chains are valid notice runs mergeable at analysis time. Dataset version upload of the mixed seed is harmless (detached, unused)."
+}

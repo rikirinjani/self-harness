@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "r5-asset-export-for-new-vps",
+  "timestamp": "2026-10-23T06:52:19.898595+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1500,
+  "tool_calls": 14,
+  "key_files": [
+    "khanza-r5/docs/asset_export_20261023.md",
+    "khanza-r5/scripts/push_asset.sh",
+    "khanza-r5/docs/khanza_r5_release_manifest.md",
+    "khanza-r5/evidence/p11/r5_p11_negative_controls_20261020T073218Z.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "r5-asset-export-for-new-vps",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Built and verified a portable asset export on the source VPS at /opt/dr-asset-export/20261023T0633Z (692 MB): simrs-khanza tree (jar md5 25acbbbe, matches recorded build), dr-benchmark minus results/ (p-chain + d1 snapshot + orchestrator), Deers-Rock tools at the final P11 pin 0bba1931, and sik + sik_bench mysqldumps. Verified: gzip -t on all five, sha256sum -c OK, 0 credential files in the archives, sik 1179 tables, sik_bench restored into a scratch DB reproducing the canonical ledger hash 356355:a66a3a54... exactly (scratch dropped, live untouched at 356355 rows). Wrote RESTORE.md with the corrected restore procedure (dumps carry no CREATE DATABASE; the ledger lives in sik_bench) and push_asset.sh that streams source->local->dest and verifies on the target. Commits af97c45, 0101c22. Not pushed to a target yet: no target host given."
+}

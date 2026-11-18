@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "task027-pm1-evidence-synthesis",
+  "timestamp": "2026-09-23T01:44:21.224685+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 22,
+  "key_files": [
+    "morse/experiments/pm1-rx/TASK_027_PM1_EVIDENCE_SYNTHESIS.md",
+    "morse/experiments/pm1-rx/TASK_027_EVIDENCE_MATRIX.json",
+    "morse/experiments/pm1-rx/TASK_027_STATE_FREEZE.json",
+    "morse/experiments/pm1-rx/TASK_027_PROVENANCE_AUDIT.md",
+    "qms/records/requirements/REQ-2026-09-23-TASK027.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task027-pm1-evidence-synthesis",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "TASK-027 PM-1 evidence synthesis and state freeze after Tasks 015-026: read 015-026 artifacts; produced synthesis (propositions P1-P7, evidence matrix, falsification record, 10 methodological lessons, state model), evidence matrix JSON, state freeze JSON (9 known/7 supported/7 unknown/6 withdrawn/5 frozen/8 open), provenance audit; preserved 6 discrepancies incl Task-numbering collision; Task 016 recorded MISSING; no Task 028 created; no inference; no frozen artifact modified; FINAL STOP"
+}

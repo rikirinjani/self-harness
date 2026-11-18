@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "scope-a-transfer-check-final",
+  "timestamp": "2026-09-26T12:23:03.581981+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 7200,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\SCOPE-A-RESULT.md",
+    "C:\\Users\\think\\.opencode\\skills\\scope_a_report_final.json",
+    "C:\\Users\\think\\.opencode\\skills\\build_scope_a_notebook.py",
+    "C:\\Users\\think\\.opencode\\skills\\compute_scope_a_metrics.py",
+    "C:\\Users\\think\\.opencode\\skills\\scope_a_judge_vps.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "scope-a-transfer-check-final",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-........................--.-..-.........................................-.--...-",
+  "action": "Scope A transfer check complete: 28.4M production index nDCG@10 0.9558 (strict) vs 0.8353 500k baseline = +12.05pp positive transfer, validated. Retrieval on Kaggle (6000 pairs via LanceDB ANN search), judging on VPS (5911/6000 scored, 98.5pct coverage). Final report SCOPE-A-RESULT.md."
+}

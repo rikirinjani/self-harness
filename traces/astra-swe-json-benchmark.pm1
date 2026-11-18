@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "astra-swe-json-benchmark",
+  "timestamp": "2026-10-10T14:42:35.782310+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 25,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\benchmarks\\swe_json_compliance_task.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\benchmarks\\swe-json-out\\swe-json-compliance\\1\\gpt-6-astra\\4628739\\swe-json-compliance_output.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "astra-swe-json-benchmark",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Created real Kaggle Astra benchmark task swe-json-compliance (embedded verbatim SWE harness prompt+parser, observed Modal chain stats: 0 EDIT/174 HOLD/76 PARSE_ERROR, excluded Kaggle localhost infra failures). Pushed via kaggle benchmarks tasks push, ran on gpt-6-astra (run 4628739), downloaded output. Assessment: dominant cause = code-bearing JSON serialization in content field + impoverished state/contradictory merge policy (HOLD attractor), NOT fences/quantization; verdict = switch SWE pivot to deepseek-v4.1-flash with  paired 48-call pilot (24 states x 2 arms: code-in-JSON vs scalar edit_id), fix task spec, frame as within-model extension."
+}

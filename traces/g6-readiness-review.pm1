@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "g6-readiness-review",
+  "timestamp": "2026-09-26T21:01:08.532363+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 540,
+  "tool_calls": 22,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\G6-READINESS-REPORT.md",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\PRE-PRODUCTION-TODO.md",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\reviews\\G6-READINESS-2026-09-27.json",
+    "C:\\Users\\think\\.opencode\\skills\\g6_evidence_analysis.py",
+    "C:\\Users\\think\\.opencode\\skills\\g6_evidence.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "g6-readiness-review",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "G6 false-confidence monitoring readiness review (read-only, no implementation): mapped production instrumentation (CLI has L1+scores but single overwritten artifact; API path bypasses Layer-1 gate entirely and drops score field; zero logging/metrics/alerting repo-wide); computed deterministic-feasibility evidence from frozen benchmark: top-1 false-confidence 21/27=0.778 (records' 0.85 is stale top-5-era figure), post-L1 residual 18/18=100% (L1 removes only 3 FC cases), per-query score separability NOT viable (AUC 0.685/0.742/0.635, FPR 45-58% at TPR 0.8, unanswerable score HIGHER than answerable p50 0.804 vs 0.769). Verdict: online absolute FC rate NOT deterministically computable; G6-lite (canary+drift+abstain telemetry, no LLM) viable after re-specification. Blocking finding G6-FINDING-1: /api/ask Layer-1 bypass (release-integrity). Minimum experiment criteria E1-E6 defined. Report + QMS review record written."
+}

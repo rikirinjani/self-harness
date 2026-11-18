@@ -1,0 +1,11 @@
+{
+  "timestamp": "20261002T180412",
+  "category": "tooling",
+  "slug": "librarian-session-too-large",
+  "agent": "librarian",
+  "outcome": "fail",
+  "what_happened": "Dispatching the librarian for the MiniMax-H3/Kaggle research failed immediately with: Session too large to compact - context exceeds model limit even after stripping media. No research was returned.",
+  "root_cause": "Recurring librarian session/context failure (same error seen previously on the quota-reset research). The librarian agent session cannot be compacted within the model context limit, so it errors before doing work.",
+  "impact": "Research had to be performed directly by the orchestrator via webfetch. One wasted dispatch.",
+  "corrective_action": "Treat librarian as unreliable for this environment; prefer direct webfetch for bounded research, or investigate the librarian agent context configuration (system prompt/skills size) causing the compaction failure."
+}

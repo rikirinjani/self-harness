@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "task-009-budget-reality",
+  "timestamp": "2026-09-15T06:05:23.072407+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 1200,
+  "tool_calls": 0,
+  "key_files": [
+    "experiments/pm1-rx/TASK_009_BUDGET_REALITY.md",
+    "experiments/pm1-rx/TASK_009_MANIFEST.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task-009-budget-reality",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........---..-..........................-.--...-........................................-.--...-",
+  "action": "Task 009 budget reality: full replication DEFERRED - no free tier covers GPU. Verified budgets: Replicate 2.95 USD (1% coverage at 32K), Vultr 254.35 (GPU not on free credits), AWS 110.15 (GPU quota 0). Full replication N=40 median 712K costs 125.17 (Replicate deepseek-v3) / 21.58 (llama-3-8b) / 20.47 (AWS GPU) / 18.38 (Vultr GPU) - all unaffordable or blocked. Affordable now: A Vultr CPU pilot 0 USD 12.4h 3B 64K N=10 (RECOMMENDED); B AWS CPU 14.81 USD; C Replicate micro 2.94 USD. CRITICAL: none test the Exp 001 hypothesis (different model/cap/N, biased to short sessions) - they validate the PIPELINE only. New blocker T29/G26. TODO 24 RESOLVED / 2 ACCEPTED-AS-LIMITATION / 1 BLOCKING of 27. Commit 92b3323. No experiment run; Experiment 001 unchanged."
+}

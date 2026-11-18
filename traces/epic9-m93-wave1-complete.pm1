@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "epic9-m93-wave1-complete",
+  "timestamp": "2026-10-06T09:56:14.255183+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 0,
+  "key_files": [
+    "src/referral/geo.ts,src/referral/system.ts,src/engine/emergency.ts,src/engine/outpatient.ts,src/engine/state-store.ts,tests/referral.test.ts,tests/emergency-esi.test.ts,ROADMAP.md,STATE.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "epic9-m93-wave1-complete",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........................-.--...-........................................-.--...-",
+  "action": "Epic IX M9.3 wave 1 complete: geo hierarchy, ESI-lite, fixed draw discipline, phantom-patient removal, slot budget. 300 tests pass. ADR-016 wave 1 committed."
+}

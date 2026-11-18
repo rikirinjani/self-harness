@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-09-26T00:00:00Z",
+  "category": "environment-mismatch",
+  "slug": "kaggle-nvidia-judge-throughput-collapse",
+  "severity": "medium",
+  "outcome": "fail",
+  "what-was-attempted": "Run the Scope A LLM-judge workload (6000 DeepSeek v4.1-flash calls via integrate.api.nvidia.com) on free Kaggle CPU notebooks to avoid VPS/spend.",
+  "what-actually-happened": [
+    "Session 1 (concurrency 24): 500 pairs in first 85 min, then throughput collapsed to ~0 for the remaining 9h. Only 488 pairs banked by the 12h kill.",
+    "Session 2 (concurrency 6, resume): 500 pairs in 12355s = 2.43/min. Projection 38h for 5512 pairs. Killed via no-op version push.",
+    "Same workload on the eval VPS: 12.4-29 calls/min, full 5911 pairs in ~7h total."
+  ],
+  "root-cause": "Kaggle's egress network path to the NVIDIA inference endpoint is the bottleneck (8x slower than VPS at equal or higher concurrency), NOT the API key rate limit and NOT the judge code. Concurrency changes did not help: 24 concurrent was no better than 6 on Kaggle.",
+  "what-i-did-wrong": [
+    "Initially assumed throughput would match the VPS A/B run (7/min) and projected session-1 completion from a single early data point (500 pairs), predicting 3700-4200 banked. Actual: 488. Should have re-measured mid-session instead of extrapolating from one sample taken before the collapse.",
+    "Burned ~3h of monitoring on a dead-end environment before pivoting to the VPS.",
+    "Spent multiple tool-cycles reverse-engineering the Kaggle SDK to retrieve logs instead of pushing a self-diagnosing notebook earlier."
+  ],
+  "lesson": "For API-bound batch workloads, environment network path dominates. Measure sustained throughput (not burst) at the target concurrency before committing to a host. When a host shows 8x degradation, pivot immediately rather than tuning concurrency.",
+  "fix-applied": "Moved judging to VPS (proven path), added exponential backoff + mop-up retry pass for errored pairs (388/477 recovered, final coverage 98.5%)."
+}

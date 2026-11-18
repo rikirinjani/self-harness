@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261008T124313-orchestrator-cli",
+  "timestamp": "2026-10-08T12:43:13.975496+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "kaggle-ai\\niji_prompts_adelinde.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261008T124313-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Updated Adelinde Niji 7 master sheet to match author's preferred layout: three-view character sheet (3/4 bust top-left, profile headshot bottom-left, full-body front right) + high structured collar + shoulder capelet. Removed --q 1 (not supported on Niji 7). File niji_prompts_adelinde.md updated."
+}

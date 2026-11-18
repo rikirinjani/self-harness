@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "kala-prose-fix-nz",
+  "timestamp": "2026-09-28T10:25:16.734718+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 25,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\novella_fixed.txt"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kala-prose-fix-nz",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "KALA prose-fix Lane NZ: created novella_fixed.txt from novella.txt; applied NZ-D15-1 gender-aggregate fix (4 women/2 men), NZ-D15-2 (three years of training), NZ-D15-3 (newly commissioned clarification), NZ-D18 departure write-in (Draft one + Face beats + annoyance echo); verified E19/E20/D18-V no-change; git diff confirms only intended changes."
+}

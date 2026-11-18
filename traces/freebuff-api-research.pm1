@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "freebuff-api-research",
+  "timestamp": "2026-09-28T01:23:48.492079+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 420,
+  "tool_calls": 11,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "freebuff-api-research",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........................................................-.--...-",
+  "action": "Researched whether freebuff.com exposes an API for user. Method: fetched marketing site + GitHub README (CodebuffAI/freebuff, Apache-2.0, 12.8k stars), then read source via GitHub raw API: common/src/env-schema.ts, common/src/constants/hosts.ts, byok.ts, common/src/api-keys/constants.ts, cli/package.json. Findings: NO public/OpenAI-compatible API. CLI authenticates and talks to Freebuff/Codebuff's own closed backend. Programmatic access only via @codebuff/sdk (embeds orchestration, still routes through their backend). BYOK supports exactly one route: x-openrouter-api-key header / CODEBUFF_BYOK_OPENROUTER env var. User API keys accepted only for anthropic/gemini/openai (AES-256-GCM encrypted at rest) - GLM/ajianaz NOT supported, so user cannot plug their GLM key. Free models via products only: GLM 5.3 Flash unmetered, DeepSeek V4.1 Flash, MiMo 2.6 Flash, Solar Mini/Pro 4 unmetered; 100 Freebucks/day. Flagged privacy caveat: prompts analyzed to personalize ads, some models may retain prompts for training - relevant to user's medical/research content."
+}

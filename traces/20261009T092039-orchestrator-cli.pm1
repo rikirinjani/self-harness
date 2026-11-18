@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261009T092039-orchestrator-cli",
+  "timestamp": "2026-10-09T09:20:39.231152+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 0,
+  "key_files": [
+    "docs/CODEX-E2E-REPORT.md",
+    "kaggle/codex-dr-e2e/kernel.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261009T092039-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........................-.--...-........................................-.--...-",
+  "action": "CODEX-DR E2E integration test complete. 6/6 mapper tests PASS on Kaggle: outcome_meninggal(severity=2icu+24ventHours), outcome_sembuh, outcome_transfer, backward_compat, active_encounter(masih_dirawat). INA-CBG parity skipped(no clone). codex-interpretum#effef05 pushed."
+}

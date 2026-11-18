@@ -1,0 +1,13 @@
+{
+  "id": "2026-09-23-infrastructure-qwen3-c1-modal-preemption",
+  "timestamp": "2026-09-23T02:44:00Z",
+  "category": "infrastructure",
+  "severity": "medium",
+  "component": "modal_embed / qwen3 chunk c1",
+  "summary": "qwen3 chunk c1 (range 125000-250000, original batch-64 client) was preempted by Modal at ~49% (60864/125000 docs, 16507s) and auto-restarted from 0%.",
+  "root_cause": "Modal container preemption (https://modal.com/docs/guide/preemption). Not OOM. The qwen3_chunks.sh launcher or Modal retry re-launched the client; log shows 'Container terminated due to preemption' then model reload and 0% progress. Original client pid 323720 still shows alive but log restarted — client process may have re-entered run after preemption.",
+  "impact": "c1 loses ~4.6h of chunk progress; wall clock for qwen3 parallel merge delayed by one full chunk runtime (~8.7h from restart). c0/c2/c3 unaffected (~50-55%).",
+  "action_taken": "Observed; 4 chunk clients still alive; no manual kill. Will monitor for repeated preemption. If c1 dies completely, relaunch via scripts/qwen3_chunks.sh c1 path-anchored pgrep.",
+  "action_required": "Watch c1 progress; consider modal retry/backoff awareness; after all chunks finish, modal_embed.py --merge must validate contiguous ranges before writing qwen3.npy.",
+  "detected_by": "orchestrator poll 2026-09-23T02:44"
+}

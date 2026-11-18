@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-10-11T00:00:00Z",
+  "category": "implementation",
+  "severity": "low",
+  "slug": "swe-tool-pilot-embed-newline",
+  "agent": "fixer",
+  "task": "create_swe_tool_pilot.py generator for Kaggle swe-tool-pilot notebook",
+  "what_went_wrong": "First version of the generator wrote CELL3_HEAD with a trailing newline after the r''' opener, so the pilot script embedded in notebook cell 3 started with a leading blank line (28565 chars vs 28564). The written /kaggle/working/swe_gemma_tool_pilot.py would have carried that blank first line (coding declaration shifted to line 2 — still valid per PEP 263, but not byte-lossless against the protocol source).",
+  "root_cause": "Multi-line raw-string template ended with a structural newline that became string content when concatenated directly before PILOT_SCRIPT.",
+  "detection": "Own extra validation gate: byte-identical round-trip assertion (cell-3 PILOT_SRC vs generator PILOT_SCRIPT) failed; two validator iterations were also needed (stale nb loaded before exec_module re-ran; exec-context __builtins__ dict incompatibility with the verbatim _SAFE_BUILTINS — an artifact of the test harness, not the deliverable).",
+  "correction": "CELL3_HEAD now ends exactly at r''' with no trailing newline; validator switched to subprocess-based dry-run. Final artifacts regenerated and all checks re-passed.",
+  "outcome": "fixed before delivery; final artifacts re-validated and pass all required checks"
+}

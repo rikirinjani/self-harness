@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-classifier-audit",
+  "timestamp": "2026-09-25T23:22:50.870465+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1500,
+  "tool_calls": 16,
+  "key_files": [
+    "rag-queries/classifier_audit.py",
+    "rag-queries/fixtures/classifier_artifacts.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-classifier-audit",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "DQF item 3: built classifier_audit.py gate (R1 absence, R2 direction with per-dim renal lexicon, R3 dim-fit salt-masked, R4 pk-mechanistic) + committed fixtures from the 12 rejected Batch-4 cells and 5 genuine controls; selftest 12/12 artifacts flagged, 5/5 controls clean; real Batch-4 run 19/54 suspect = 12/12 artifacts + 7 extras matching all manual holds; pushed 72a6633"
+}

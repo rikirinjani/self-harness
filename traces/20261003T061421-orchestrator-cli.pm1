@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261003T061421-orchestrator-cli",
+  "timestamp": "2026-10-03T06:14:21.588631+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 12,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\2026-10-03-fail-deers-rock-adr004-10k-validation.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261003T061421-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "ADR-004 10k Kaggle validation verdict analyzed and recorded: FAIL 2/4 gates (rssCeiling 641.9/450 - resume-parse spike at tick 5000 plus post-resume baseline 481-606; journalCeiling 441.8/300 = 5 retained snapshots x ~88MB state JSON). Pruning engaged (charges 136493->104530). D1 durable queue proven (queueLen 131-137 stable across crash-resume). Discharge gate structurally weak: cleanup.ts:58 deletes non-active encounters within <=10 ticks once active>500, so 1000-tick samples cannot show discharges post-tick-2000. QMS verification record filed."
+}

@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "kala-book2-ch9-written",
+  "timestamp": "2026-09-28T02:56:58.879533+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\book2_ch9.md",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\story_so_far.md",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\book2_spend.csv"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kala-book2-ch9-written",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Ch9 'The Order of the Letters' written via Astra after quota reset (30328 chars, 3 letters, 0 Kyerke, 0 Wren, months clean, no red flags, cost 0.45156, cumulative 3.653). Auto-verified and digested."
+}

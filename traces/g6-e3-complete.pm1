@@ -1,0 +1,36 @@
+{
+  "pm1_version": 1,
+  "session_id": "g6-e3-complete",
+  "timestamp": "2026-09-27T04:13:59.534815+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 12600,
+  "tool_calls": 46,
+  "key_files": [
+    "Project_v2/LocalNotebook/rag-service/G6-E3-REPORT.md",
+    "Project_v2/LocalNotebook/rag-service/PRE-PRODUCTION-TODO.md",
+    "Project_v2/LocalNotebook/rag-service/scripts/run_g6_e3.py",
+    "Project_v2/LocalNotebook/rag-service/data/g6_e3_results.json",
+    "Project_v2/LocalNotebook/rag-service/data/g6_events_e3.jsonl",
+    "Project_v2/LocalNotebook/rag-service/data/g6_e3_metric_probe.json",
+    "Project_v2/LocalNotebook/rag-service/data/e3_probe_output.txt",
+    "Project_v2/LocalNotebook/rag-service/eval/g6_e3_canary.json",
+    "Agentic Layer/qms/records/verifications/VER-G6-E3-001.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "g6-e3-complete",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "G6-E3 complete: 57-probe frozen canary x3 runs on 28.4M production index, ACCEPTANCE MET (9/9 fabricated abstain x3, 0/48 false-abstain x3, bit-identical scores/PMIDs across runs, 171/171 strict-valid events, 0 errors, no L2/judge). Metric semantics resolved: IVF_PQ-approximate 1-cos (refine_factor=1 returns exact 1-cos), lancedb_l2_distance label inaccurate - deferred to E4. Report written, verified APPROVE by ver-1 (latency-row erratum fixed), QMS VER-G6-E3-001 pass, TODO updated. E4/E5/E6 not begun per STOP."
+}

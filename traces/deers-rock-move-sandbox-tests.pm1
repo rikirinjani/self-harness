@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "deers-rock-move-sandbox-tests",
+  "timestamp": "2026-10-01T14:07:26.734486+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\tests\\sandbox.test.ts",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\tests\\core-isolation.test.ts",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\src\\sandbox\\sandbox.test.ts",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\src\\sandbox\\core-isolation.test.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "deers-rock-move-sandbox-tests",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................................................-.--...-........................................-.--...-",
+  "action": "Moved Phase-G sandbox tests out of src/ into tests/ (sandbox.test.ts, core-isolation.test.ts), rewrote relative imports to ../src/sandbox/*.js and ../src/engine/world.js, deleted 6 stale dist/sandbox/*.test.* artifacts. Verified: tsc --noEmit exit 0, vitest 17/17 pass across 2 files, npm run build exit 0, dist *.test.* search returns 0 matches."
+}

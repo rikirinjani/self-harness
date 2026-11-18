@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "poly-bot-astra-assessment",
+  "timestamp": "2026-10-07T07:45:16.133883+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 10,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\ASTRA_ASSESSMENT.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "poly-bot-astra-assessment",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Delivered Astra-level assessment for Polymarket crypto binaries. Top recommendation: SELL overpriced longshots (BTC  Dec 2027 at 30c vs 10c fair value). Kelly sizing: 19% bankroll. Next step: deploy to geo-unrestricted VPS."
+}

@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "r1-r900-full-report",
+  "timestamp": "2026-10-04T06:29:48.385339+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 6,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\chatbot\\R1-R900_full_report.xlsx"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "r1-r900-full-report",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Generated R1-R900_full_report.xlsx (900 rows, 1.37MB): No, Nama Penanya, ID Penanya, ID Pertanyaan, Pertanyaan, Status, Jawaban Bot, Jawaban Admin, Admin. Stats: 719 solved, 108 unresolved, 73 gaps, 320 admin edits, 783 with names. Investigation: gap count shrank 78->73 because admins processed 8 ancient pending reviews (R1,R2,R6,R9,R34,R48,R49,R51 — earliest bot era) between reports, creating their first audit entries; new range 627-900 has only 3 gaps"
+}

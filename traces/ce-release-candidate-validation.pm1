@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "ce-release-candidate-validation",
+  "timestamp": "2026-10-08T05:44:55.823768+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1200,
+  "tool_calls": 40,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\ce-fix-v2\\kernel.py",
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\poc\\persistence-equivalence.test.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ce-release-candidate-validation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "Built and ran immutable release candidate validation on Kaggle (commit 3eec73f): npm tarball built (185KB, sha256 recorded), consumer integration PASS (installed from tarball, imported causality-engine/engine, ran world simulation), full suite 761/761 pass. WARN: version not consistently documented in README/COMPAT; Godot addon has no .gdextension file."
+}

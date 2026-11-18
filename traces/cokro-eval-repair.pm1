@@ -1,0 +1,36 @@
+{
+  "pm1_version": 1,
+  "session_id": "cokro-eval-repair",
+  "timestamp": "2026-09-18T01:31:43.467850+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 45,
+  "key_files": [
+    "eval/eval_ab_retrieval.py",
+    "eval/eval_ab_judge.py",
+    "eval/eval_ab_metrics.py",
+    "eval/calibration_generator.py",
+    "eval/query_audit.py",
+    "build_corpus.py",
+    "ANNOTATION_SCHEMA.md",
+    "EXPERIMENT_MANIFEST.json",
+    "VERSION.txt"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "cokro-eval-repair",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........--.-..-.........................................-.--...-",
+  "action": "COKRO eval harness repair: 12 phases completed. Fixed judge model (deepseek-chat→deepseek-flash), corpus sampling (sequential→random seed=42), text truncation (500→full), added Precision/HitRate/Wilcoxon tests, created calibration generator, annotation schema, query audit, experiment manifest. All syntax checks pass, metrics smoke test passes. Verdict: READY FOR CALIBRATION."
+}

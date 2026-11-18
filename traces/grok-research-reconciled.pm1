@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "grok-research-reconciled",
+  "timestamp": "2026-10-03T12:26:39.990621+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 4,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "grok-research-reconciled",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........................................................-.--...-",
+  "action": "Reconciled librarian lane lib-2 (ses_efe4e8b52ffeux272mcoh3DLBF). Independently verified the load-bearing pricing claims by fetching docs.x.ai/developers/pricing and /developers/models directly: every figure the librarian reported matches exactly, including grok-4.7 /.50/ under 200k and /.00/ at/above 200k, the 1M-context grok-4.3 at .25/.20/.50, and the 200k long-context all-tokens rule. Model lineup also matches. Confirmed sub-agent trace present (grok-provider-research.pm1) - Rule 1 satisfied. Flagged for user: corporate-history claims (SpaceX/xAI merger, Cursor acquisition) are Wikipedia single-source and could not be corroborated via Reuters/TechCrunch per the sub-agent's own report; model retirement (Grok 3/4/Code Fast 1 May 15 2026) is from a migration doc not independently re-fetched by me."
+}

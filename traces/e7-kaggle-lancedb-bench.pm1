@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "e7-kaggle-lancedb-bench",
+  "timestamp": "2026-10-19T07:51:17.291627+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 9000,
+  "tool_calls": 40,
+  "key_files": [
+    "_kaggle_e7_ds/dataset-metadata.json",
+    "_kaggle_e7_kernel/kernel.py",
+    "_kaggle_e7_kernel/kernel-metadata.json",
+    "_kaggle_e7_err/cokro-e7-idx-bench.log",
+    "_kaggle_e7_results/e7_results.json",
+    "_kaggle_e7_results/cokro-e7-idx-bench.log"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "e7-kaggle-lancedb-bench",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--.........................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "E7 Kaggle run: uploaded dataset rikirinjani/cokro-e7-idx (fixed metadata: licenses must be a list + owner-prefixed id; kaggle CLI 2.2.4), pushed kernel rikirinjani/cokro-e7-idx-bench v2 (fixed lancedb 0.40 exists_ok->exist_ok), kernel COMPLETE in ~125min, fetched e7_results.json (p50 15.8ms/14.7ms at nprobes 20/10, disk 33.1MB, embed 7487s)"
+}

@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-continuation-cost-estimate",
+  "timestamp": "2026-09-24T23:44:25.909227+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 4,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\PM1_CONTINUATION_COST_ESTIMATE.md",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\pm1_cost_estimate.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-continuation-cost-estimate",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................-.--...-........-.--...-........................................-.--...-",
+  "action": "Estimated Vultr/deepseek cost+time for PM-1 continuation. Verified supplied pricing (in 0.15/1M, out 0.60/1M; ref recompute 28.84 vs 28.85). Calibrated on frozen V0.5 per-horizon totals (54.35M tokens = 8.63). Tiers: pilot 0.57 / ultra-lean 2.62 / core 5.10 / core+ 9.26 / full 18.53 / worst 22.87. Wall clock 9min-22.7h by concurrency. Key driver: C at H250 = 38.4M tok = 6.04. Assumes forced 2048-tok compaction cap."
+}

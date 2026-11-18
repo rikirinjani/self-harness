@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "restore-deps-after-mangadex-install",
+  "timestamp": "2026-09-23T01:30:25.948386+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 45,
+  "tool_calls": 2,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "restore-deps-after-mangadex-install",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................-.--...-........-.--...-........................................................-.--...-",
+  "action": "Restored requests 2.34.2, Pillow 12.3.0, dnspython 2.8.0 after mangadex-downloader downgrade; verified mangadex-dl --version still works"
+}

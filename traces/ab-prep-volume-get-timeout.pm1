@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "ab-prep-volume-get-timeout",
+  "timestamp": "2026-09-23T01:52:57.732239+00:00",
+  "agent": "coordinator",
+  "outcome": "partial",
+  "duration_s": 180,
+  "tool_calls": 5,
+  "key_files": [
+    "scripts/ab_embed_supervisor.sh",
+    "scripts/modal_embed.py"
+  ],
+  "failure": {
+    "category": "infrastructure",
+    "severity": "medium"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ab-prep-volume-get-timeout",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........--.-..-.........--.-..-.........-.--...-........-.--...-........................--.-..-.........-.--...-",
+  "action": "modal volume get nomic.npy timed out at 180s; listed need to inspect volume paths; patched supervisor with ensure_npy() volume pull; download not yet confirmed"
+}

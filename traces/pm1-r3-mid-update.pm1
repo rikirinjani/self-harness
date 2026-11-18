@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-r3-mid-update",
+  "timestamp": "2026-09-29T14:56:15.728165+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\diff_blocks.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-r3-mid-update",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "R3 mid-run update + new findings: (1) Condition A baseline COMPLETE: 0/12 comply, all OTHER(1->1), detector 12/12 CLEAN - combined with R2, 0/44 baseline draws complied (Wilson 95% upper on p(comply) ~8% in batch context). (2) Condition B early read: 0/5 comply - the schema-nudge rule+example is NOT fixing the conflation so far (7 runs left). (3) Batch-vs-mech mystery escalated: byte-level diff of run_chain-style vs mech-style builder blocks = ALL BYTE-IDENTICAL (diff_blocks.py) - prompts provably equal, so 2/2 mech comply vs 0/49 batch collapse is generation-side. (4) Decisive test LAUNCHED: mech replication run2 (PID 9376, preserved run1 evidence to results/mech/run1/), ~13 min .17. 3/3 mech comply -> real context effect worth chasing; collapse -> mech was a fluke and collapse is simply the dominant branch."
+}

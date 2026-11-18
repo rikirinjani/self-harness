@@ -1,0 +1,36 @@
+{
+  "pm1_version": 1,
+  "session_id": "ce-review-dossier-assembly",
+  "timestamp": "2026-10-02T00:44:25.247910+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 210,
+  "tool_calls": 9,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\ce-review\\build_dossier.py",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\ce-review\\fetch_web.py",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\ce-review\\dossier\\premise.md",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\ce-review\\dossier\\workflow.md",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\ce-review\\dossier\\code.md",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\ce-review\\dossier\\result.md",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\ce-review\\dossier\\rigor.md",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\ce-review\\dossier\\MANIFEST.json",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\ce-review\\web\\fetch_log.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ce-review-dossier-assembly",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................--.-..-.........-.--...-........--.-..-.........................................-.--...-",
+  "action": "Assembled CE review dossier: 5 slice files + MANIFEST.json via build_dossier.py, 5 web snapshots + fetch_log.json via fetch_web.py, all in temp ce-review dir; source repo read-only, verified clean"
+}

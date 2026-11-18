@@ -1,0 +1,35 @@
+{
+  "pm1_version": 1,
+  "session_id": "exp-002-v2-climate-coupling-defect",
+  "timestamp": "2026-09-21T06:33:50.841388+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "src/experiment/experiments/exp-002-activation-threshold.ts",
+    "docs/experiments/EXP-002-V2-CLIMATE-COUPLING-DEFECT.md",
+    "experiment-results/exp-002/exp-002-results.json",
+    "src/sectors/climate.ts",
+    "experiment-results/phase-f/results.json"
+  ],
+  "failure": {
+    "category": "model-coupling-unit-error",
+    "severity": "critical"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "exp-002-v2-climate-coupling-defect",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........................................--.-..-.........................................-.--...-",
+  "action": "EXP-002 v2: FIXED era-state aliasing (loadEraState moved into runArm) - reproducibility gate now passes (replay identical: true). FOUND pre-existing critical defect: economy->climate coupling unit error (climate.ts:69 emissionsFactor=0.00005 applied to USD GDP deltas -> 7.29e7 Gt/tick vs 37 Gt baseline, ~2e6x). CO2 explodes to 4.18e8 ppm, eventChance pinned at 0.5 cap from tick 3. Present in FROZEN Phase F (tick 4 onward, 85% of horizon). EXP-002 threshold scan invalid as dose-response. Escalated."
+}

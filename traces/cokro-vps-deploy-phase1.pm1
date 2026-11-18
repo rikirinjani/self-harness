@@ -1,0 +1,36 @@
+{
+  "pm1_version": 1,
+  "session_id": "cokro-vps-deploy-phase1",
+  "timestamp": "2026-09-29T14:18:22.337806+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 32,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\api_server.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\auth.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\query_lancedb_fulltext.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\request_events.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\layer1_abstain.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\drug_synonyms.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\bot_poller.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\api-requirements.txt",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\data\\entity_presence_index.json.gz"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "cokro-vps-deploy-phase1",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........--.-..-.........................................-.--...-",
+  "action": "VPS deployment phase 1: SSH key auth, hardening (swap4G/ufw/fail2ban), uv venv + deps (torch CPU), code upload to /opt/cokro-api, systemd cokro-api live - openapi 200, layer1 abstain probe PASS, paper probe graceful without AWS creds, system RSS 803Mi"
+}

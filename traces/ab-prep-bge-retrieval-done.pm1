@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "ab-prep-bge-retrieval-done",
+  "timestamp": "2026-09-23T02:36:47.529505+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 40,
+  "tool_calls": 7,
+  "key_files": [
+    "eval/ab_plan/embed_cost_table.json",
+    "eval/ab_plan/AB_PLAN.md",
+    "eval/ab_results/2026-09-23T02-32-57/results.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ab-prep-bge-retrieval-done",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................-.--...-........-.--...-........-.--...-........................................-.--...-",
+  "action": "bge-large retrieval OK 98.5s; scp results local 11526741 bytes; updated embed_cost_table and AB_PLAN (3 retrieval_done); e5 at 97pct; supervisor waiting e5"
+}

@@ -1,0 +1,35 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261027T120335-orchestrator-cli",
+  "timestamp": "2026-10-27T12:03:35.800101+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 7200,
+  "tool_calls": 120,
+  "key_files": [
+    "C:/Users/think/Agentic Layer/pm1-continuation/quantum/RUN_LOG.md",
+    "C:/Users/think/Agentic Layer/pm1-continuation/quantum/PACKET_dfthcsos.md",
+    "C:/Users/think/Agentic Layer/pm1-continuation/quantum/src/dfthcsos/dfthcsos_d2b.py",
+    "C:/Users/think/Agentic Layer/pm1-continuation/quantum/src/dfthcsos/dfthcsos_d3.py",
+    "C:/Users/think/Agentic Layer/pm1-continuation/quantum/src/dfthcsos/dfthcsos_d4.py"
+  ],
+  "failure": {
+    "category": "tool",
+    "severity": "low"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261027T120335-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-..........-.-.-.-........---..-..........--.-..-.........-.--...-........-.--...-........-.--...-",
+  "action": "Reopened dfthcsos phase after STOP-1. D0c pulled full starter_kit (correction). D2b error-aware rounding at brot 10/11 (nearest+floor) COMPLETE - confirmed re-quantisation dead (brot 11 nearest 25.04 mHa FAIL, brot 10 40 mHa). D3 rank 50/45/40 COMPLETE - all fail 20 mHa gate (error_2 62/151/312 mHa). D4 Lambda L1 at rank 50 COMPLETE - inert post-hoc rescale, gate-limited. D5 re-batch dead-end confirmed. All 4 levers exhausted at shipped baseline; STOP rule met; handed back at 3.356e9. No submissions, 0 verifier slots."
+}

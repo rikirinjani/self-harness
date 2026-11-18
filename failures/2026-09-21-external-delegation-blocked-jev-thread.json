@@ -1,0 +1,8 @@
+{
+  "category": "external-dependency-blocked",
+  "severity": "low",
+  "root_cause": "The delegated librarian lane could not start because the upstream specialist service reported insufficient account funds.",
+  "actual_effect": "No specialist research result was returned.",
+  "recovery": "Fetched the public X thread directly and assessed its listed Jev use cases without modifying project files.",
+  "task": "Assess Jev use-case thread"
+}

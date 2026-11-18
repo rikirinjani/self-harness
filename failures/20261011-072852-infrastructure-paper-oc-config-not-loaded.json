@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-10-11T07:28:52Z",
+  "category": "infrastructure",
+  "slug": "paper-oc-config-not-loaded",
+  "severity": "high",
+  "task": "Gemma paper revision round 2 (pap-4 dispatch)",
+  "what_happened": "Dispatch of paper-oc subagent failed with: 'Model not found: opencode/deepseek-v4-flash-free. Did you mean: ling-3.0-flash-fin-free, ling-3.1-flash-free, mimo-v2.6-flash-free?'. Board shows pap-4 / ses_ed7a3f14dffegXiogNAjsF3nz0 / error.",
+  "root_cause": "Agent model config fix (paper-oc, 4 agents, librarian remapped from dead deepseek-v4-flash-free / overflow-prone glm-5.3 to opencode/mimo-v2.6-flash-free in C:\\Users\\think\\.config\\opencode\\oh-my-opencode-slim.json) is written and JSONC-validated on disk, but opencode does not hot-reload agent configuration. The running process still holds the old config. This is the second dispatch after the edit (pap-3 also failed with old model), confirming restart is mandatory.",
+  "what_i_did_wrong": "After the first post-edit dispatch failure (pap-3), I documented the no-hot-reload root cause but still attempted another dispatch (pap-4) instead of unconditionally gating all paper-oc/librarian dispatches behind the restart. The edit-to-reload gap was known; the retry was speculative.",
+  "recovery": "Manual user step: quit opencode, restart from C:\\Users\\think\\Agentic Layer, resume, say 'go'. Then re-dispatch paper-oc fresh. All paper-oc/librarian dispatches are blocked until then.",
+  "impact": "Paper revision lane blocked; no data lost; citations file (results/candidate-references.md) completed independently and ready for consumption."
+}

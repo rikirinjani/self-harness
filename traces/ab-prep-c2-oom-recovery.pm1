@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "ab-prep-c2-oom-recovery",
+  "timestamp": "2026-09-22T22:10:47.906222+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 14,
+  "key_files": [
+    "scripts/modal_embed.py",
+    "scripts/ab_embed_supervisor.sh",
+    "eval/ab_plan/embed_cost_table.json",
+    "failures/2026-09-22-infrastructure-qwen3-c2-oom-batch64-supervisor-pgrep.json"
+  ],
+  "failure": {
+    "category": "infrastructure",
+    "severity": "high"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ab-prep-c2-oom-recovery",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................--.-..-.........--.-..-.........-.--...-.........................--...--........-.--...-",
+  "action": "Recovered qwen3 c2 CUDA OOM: batch_size 64->32, relaunched c2 (pid 325026), fixed supervisor pgrep -- patterns, restarted supervisor; failure record written; cost table updated"
+}

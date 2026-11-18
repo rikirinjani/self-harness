@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "task-009-cpu-feasibility",
+  "timestamp": "2026-09-15T01:33:19.163037+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 2400,
+  "tool_calls": 0,
+  "key_files": [
+    "experiments/pm1-rx/TASK_009_CPU_FEASIBILITY.md",
+    "experiments/pm1-rx/TASK_009_VULTR_INFRA.md",
+    "experiments/pm1-rx/TASK_009_TODO_RESOLUTION.md",
+    "experiments/pm1-rx/TASK_009_PRE_RUN_GATE.md",
+    "experiments/pm1-rx/TASK_009_MANIFEST.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task-009-cpu-feasibility",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........---..-..........................--.-..-.........................................-.--...-",
+  "action": "Task 009 CPU feasibility assessment: GPU plan unavailable on free credits. Measured CPU-only inference on Vultr PM-1 (AMD EPYC-Turin 4vCPU, Ollama CPU-only): 3B prefill 55.8 tok/s, 7B 26.4, 14B 13.2. Measured real transcript sizes across 462 boundaries: median 712K tokens, p75 1.77M, max 30.8M; only 3/462 (1%) fit in 32K. Full protocol N=40: 18.2d (3B) / 38.4d (7B) / 76.5d (14B). Chunking no help. VERDICT: CPU-only INFEASIBLE. New blocker T25/G22. Options A restore GPU / B reduce scope / C truncate (invalid) / D defer; recommend A or D. Benchmark models removed, Ollama stopped+disabled. No paid inference, no shadow processing. Commit 4fa3580. Experiment 001 unchanged."
+}

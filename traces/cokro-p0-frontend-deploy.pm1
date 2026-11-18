@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "cokro-p0-frontend-deploy",
+  "timestamp": "2026-10-01T04:22:53.813211+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 18,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\web\\out\\index.html",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\web\\next.config.js"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "cokro-p0-frontend-deploy",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "P0 frontend deploy to Cloudflare Pages: wrangler token auth (user OAuth failed CSRF, issued API token), first deploy landed as preview because project production_branch=main (wrangler auto-detected other branch), redeployed with --branch main -> production 95583732. Verified: apex cokro-tech.my.id serves new build (37093 B content-identical, +367 B Cloudflare Insights beacon injection only), /contact 200 (was 404), all Pages URLs byte-identical to local, baked API base https://api.cokro-tech.my.id present in chunk 435. Token used as env var only, not written to files."
+}

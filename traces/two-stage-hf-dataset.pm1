@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "two-stage-hf-dataset",
+  "timestamp": "2026-09-26T03:39:20.374055+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3000,
+  "tool_calls": 26,
+  "key_files": [
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest-hf\\README.md",
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest-hf\\metadata\\run_config.json",
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest-hf\\metadata\\DATA_DICTIONARY.md",
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest-hf\\data\\per_pair_metrics.csv",
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest-hf\\data\\pooled_metrics.csv",
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest-hf\\data\\per_pair_results.jsonl",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\20260926-pass-two-stage-hf-dataset.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "two-stage-hf-dataset",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Built and published a full structured HF dataset (balade/jev-two-stage-backtest-runs, PRIVATE, commit 84555c63) with dataset card + validity warning, per-pair/pooled CSVs and JSONL, shard logs, run_config, data dictionary, and the frozen evidence archive. Redacted host IP/localhost before upload, scanned for secrets (clean), and passed independent verification with all three key artifact hashes matching the private GitHub snapshot."
+}

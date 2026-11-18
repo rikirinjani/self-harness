@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "batch4-apply",
+  "timestamp": "2026-09-25T20:09:29.967661+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 18,
+  "key_files": [
+    "api/drugs.json",
+    "rag-queries/batch4_rescore.json",
+    "rag-queries/l3_output/_backups/drugs_20260925_batch4_apply.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "batch4-apply",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Batch 4 evidence-strength adjudication applied: 54 still_diluted cells re-scored from 300-sentence triage; rule fired 33 raises + 5 drops; manual review rejected 12 classifier artifacts (wrong-dim/direction errors), held 4 borderline; applied 17 raises to 3 + 5 drops to 1 (dbdba95); verified 89 drugs, 22 exact diffs, 25 prior fixes preserved"
+}

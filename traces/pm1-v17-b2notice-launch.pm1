@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-v17-b2notice-launch",
+  "timestamp": "2026-10-03T12:15:33.825651+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\kaggle\\kernel-metadata.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-v17-b2notice-launch",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "v17 PUSHED (B2-notice completion): RUN_QUEUE=smoke,sweep, seed dataset DETACHED (contamination fix), fresh results/phase2-sweep-notice run of all 24 notice-carrying chains. ETA ~5h. The 6 v16 chains merge at analysis."
+}

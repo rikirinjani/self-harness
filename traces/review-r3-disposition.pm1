@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "review-r3-disposition",
+  "timestamp": "2026-10-10T15:51:41.076315+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 2100,
+  "tool_calls": 26,
+  "key_files": [
+    "C:/Users/think/khanza_report.json",
+    "C:/Users/think/khanza_validation_protocol.md",
+    "C:/Users/think/strat_select.sh"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "review-r3-disposition",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "External review round 3 disposition: items 1-7 all resolved with forensics (biaya_reg=10000 is original DR adapter data from dr_inserts.sql, not a post-hoc patch; 000222=0 because poli U0027/MCU has registrasi=0; 441=3x147 accumulated general_log across 3 harness runs threads 67140/67171/67200; 000014 nonexistent - real key is 2026/10/18/0014 4-digit; 523->492 dedup already carries summed qty via GROUP BY, wrong sentence deleted; depth label downgraded to ORACLE CANDIDATE; stale totals replaced with 5566/176.92M). Hygiene done: v1 md scrubbed (0 secrets), clean v2 DB state restored (321 visits x 17.34 rows), faketime installed. Protocol drafted at khanza_validation_protocol.md; stratified set selected: 33 visits (25 core strata + 8 fill), D-multi-proc stratum infeasible (0 visits with >=2 rawat_jl_dr lines), half-rupiah PPN only 1 case. 4 fixer dispatches failed at context ceiling; stratified run not yet executed."
+}

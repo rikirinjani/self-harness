@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-reeval-execution",
+  "timestamp": "2026-09-29T14:25:08.857464+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 1500,
+  "tool_calls": 14,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-reeval-execution",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........---..-..........--.-..-.........................................................-.--...-",
+  "action": "DQF re-assessment executed on Kaggle (dqf-reeval v1): Gemini full report 12/14 CORRECT + 2 PARTIAL, score 1.0, .11; Astra 2/5 chunks then 400 null-content conversation poisoning (failure record filed), .11. Host-side data checks adjudicated model claims: anticoagulant gi_bleeding_risk gap CONFIRMED, pregnancy negation bug CONFIRMED, selectivity/special nulls latent-only. QMS verification + failure record written"
+}

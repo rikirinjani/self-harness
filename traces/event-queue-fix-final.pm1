@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "event-queue-fix-final",
+  "timestamp": "2026-10-06T13:13:21.211938+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "src/engine/event-queue.ts",
+    "tests/snapshot-v2.test.ts",
+    "docs/adr/evidence/ADR-004-100k-kaggle/longrun-report-fixed.json",
+    "docs/adr/evidence/ADR-004-100k-kaggle/validation-fixed.log",
+    "STATE.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "event-queue-fix-final",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................--.-..-.........................................-.--...-",
+  "action": "Fixed O(n^2) event queue to O(n log n): 100k ticks 482s→33s (14.6x speedup). 300 tests pass, CI green."
+}

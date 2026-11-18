@@ -1,0 +1,10 @@
+{
+  "ts": "2026-10-05T10:30:00Z",
+  "agent": "coordinator",
+  "category": "tooling-mishap",
+  "slug": "ledger-bom-and-junk-entry",
+  "what": "While cleaning an accidental '__proj' entry from vultr_spend_ledger.json, PowerShell Set-Content -Encoding UTF8 (PS 5.1) wrote a UTF-8 BOM -> vultr_spend_ledger.py json.load() crashed with 'Unexpected UTF-8 BOM'. Also, the junk '__proj' entry itself came from a careless `ledger add __proj 0.00 0` probe line in a chained command.",
+  "root_cause": "PS 5.1 UTF8 default writes BOM (known quirk, already documented in session notes for write-tool work but not applied to Set-Content); chained probe command created data it wasn't meant to.",
+  "impact": "None to sweep data or spend totals; gate script broken for ~1 min, fixed by rewriting file with UTF8Encoding($false). Junk entry removed.",
+  "action_taken": "Rewrote ledger without BOM (json.load OK, $2.21 intact); no further Set-Content -Encoding UTF8 on JSON consumed by Python."
+}

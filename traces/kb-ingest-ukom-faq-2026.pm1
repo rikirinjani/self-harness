@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "kb-ingest-ukom-faq-2026",
+  "timestamp": "2026-10-09T01:15:42.354342+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 10,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\chatbot\\kb-staging\\Registrasi (STR)_FAQ UKOMNAS Resertifikasi 2026.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kb-ingest-ukom-faq-2026",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "UKOM FAQ 2026 KB ingest completed: deployed Registrasi (STR)_FAQ UKOMNAS Resertifikasi 2026.md (12 chunks) to Mac knowledge/; updated 4 curated entries + added 2 new curated entries for schedule/eligibility queries; index 858->900 chunks, 31->35 files; bot healthy PID 90946"
+}

@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "kala-calendar-draft",
+  "timestamp": "2026-09-27T04:25:30.617474+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\kala_calendar_draft.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kala-calendar-draft",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................................................-.--...-........................................-.--...-",
+  "action": "Built kala_calendar_draft.md (29.8KB): 8-section calendar proposal from B1/NZ/bible evidence - 7 attested month names censused with citations, 9 given constraints verified (+4 strengthened) and 11 new constraints/findings added, 12-month cycle with 5 unattested slots and 365-day split (Coldmonth=29 per D8), season map with Option A primary plus discovered Option C (bible registry vs NZ spring word, with impossibility proof for re-dating Option B), New Year=1st Coldmonth with elapsed/inclusive counting convention, Third Pipe rule CR-85 ruling bible 97th an error for 27th, 30-row implied date-edit table, 12 open items"
+}

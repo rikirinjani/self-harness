@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "task026-audit-execution",
+  "timestamp": "2026-09-23T01:09:05.918989+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 25,
+  "key_files": [
+    "morse/experiments/pm1-rx/scripts/task026_audit.py",
+    "morse/experiments/pm1-rx/TASK_026_PROTOCOL.md",
+    "morse/experiments/pm1-rx/TASK_026_COMPARISON.json",
+    "morse/experiments/pm1-rx/TASK_026_AUDIT"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task026-audit-execution",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "TASK-026 audit executed after human APPROVE-as-written: 40/40 cells, QC gate PASS, Rule D equivalence PASS, determinism double-run PASS 0 diffs; primary 7 cells / 9 atoms changed all REJECT-to-ACCEPT via M2_MATCHER_ACCEPT; dF1 +0.0635 pooled"
+}

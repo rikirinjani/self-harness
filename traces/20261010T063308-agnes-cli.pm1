@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261010T063308-agnes-cli",
+  "timestamp": "2026-10-10T06:33:08.521854+00:00",
+  "agent": "agnes",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\All Users\" C:\\Users\\think\\ --duration-s 300 --slug storage-audit-2026-10-10"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261010T063308-agnes-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........................................................-.--...-........................................-.--...-",
+  "action": "Scanned C:\\Users\\All Users\\ and C:\\Users\\think\\ for storage audit; reported all folders with descriptions, safe-to-delete targets, and lock status; deleted WPS from user profile; 3 system-level Kingsoft remnants remain locked requiring admin"
+}

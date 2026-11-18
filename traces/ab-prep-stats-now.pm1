@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "ab-prep-stats-now",
+  "timestamp": "2026-09-23T03:11:38.815413+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 40,
+  "tool_calls": 2,
+  "key_files": [
+    "eval/ab_plan/embed_cost_table.json",
+    "eval/ab_plan/AB_PLAN.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ab-prep-stats-now",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................-.--...-........-.--...-........-.--...-........................................-.--...-",
+  "action": "Current stats poll: apps, processes, billing, npys, retrievals, qwen3 progress after abort"
+}

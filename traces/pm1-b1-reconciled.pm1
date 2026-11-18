@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-b1-reconciled",
+  "timestamp": "2026-10-01T03:44:51.351065+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\frozen\\gemma-baseline1\\FREEZE_MANIFEST.md",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\VER-2026-10-01-PM1-B1.json",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\RUN_REGISTRY.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-b1-reconciled",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "B1 RECONCILED - PHASE 1 FULLY CLOSED: 15/15 chains (FLAT/P-FMT/RET x 5 horizons), 1305/1305 calls, pass 1.0, \\, QUEUE DONE fails=0. Ordering h250: FLAT 57,750 < P-FMT 63,500 < RET 70,743 < P 82,000 - minimal-packet family within 1.4x, order below transcript arms (6-46x). Registry hypothesis refined (recorded). Frozen frozen/gemma-baseline1 + manifest; VER-2026-10-01-PM1-B1 (PASS); RUN_REGISTRY completed with actuals. D3 GATE TO PHASE 2 OPEN."
+}

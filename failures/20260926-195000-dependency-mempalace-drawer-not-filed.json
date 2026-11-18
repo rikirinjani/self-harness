@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-09-26T19:50:00+07:00",
+  "agent": "orchestrator",
+  "category": "dependency-unavailable",
+  "severity": "low",
+  "slug": "mempalace-drawer-not-filed",
+  "summary": "Rule 10 (MemPalace filing) unmet for the POCO M3 audit and debloat session outcomes.",
+  "root_cause": "mempalace MCP server was intentionally disabled on 2026-09-25 as part of the MCP-overhead reduction (81.9k -> 23.3k tokens/call). No shell fallback exists; the mempalace CLI is not installed on PATH.",
+  "what_actually_went_wrong": "Attempted mempalace_mempalace_add_drawer as a shell command; tool does not exist outside MCP. Findings were preserved only in PM-1 traces and QMS records, not in MemPalace knowledge base.",
+  "evidence": {
+    "traces_holding_findings": [
+      "self-harness/traces/poco-m3-security-audit.pm1",
+      "self-harness/traces/poco-m3-debloat-7pkgs.pm1"
+    ],
+    "qms_records": [
+      "Agentic Layer/qms/records/verifications/20260926-pass-poco-m3-debloat.json"
+    ]
+  },
+  "remediation": "When MCP servers are re-enabled (or mempalace CLI installed), file drawer: wing=projects room=android-audit with audit + debloat outcomes. Re-enable is a user trade-off decision due to token overhead.",
+  "no_whitewash": "Findings are durable in traces/QMS; knowledge-base filing is genuinely missing until then."
+}

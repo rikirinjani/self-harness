@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "r4-a1-f8-pass",
+  "timestamp": "2026-10-13T11:17:21.052331+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3300,
+  "tool_calls": 40,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\build_dr_charge_ledger_onbox.py",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\r4_bat4b.sh",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\r4_status_final.sh",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\r4_lockprobe.sh"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "r4-a1-f8-pass",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "A1+F8: patched builder DR-cohort filter (proc/drug join reg_periksa DR%); cleaned 1 non-DR residue key via KILL+PK-DELETE after O(n^2) anti-join incident; clean single-run builder PASS (values identical 356355|34870243633, Oct labels 25499/25499, proc=7708); reprice no-op; gates green; F8 dr_tariff+5000 -> 5 UNEXPLAINED drug lines DETECTED; revert+reprice -> sum restored, gates green. Battery verdict F1-F8 all PASS."
+}

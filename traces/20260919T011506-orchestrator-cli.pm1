@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260919T011506-orchestrator-cli",
+  "timestamp": "2026-09-19T01:15:06.745506+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 10,
+  "key_files": [
+    "eval/calibration_generator.py",
+    "eval/ab_results/2026-09-19T01-05-11/calibration_candidates.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260919T011506-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Generated 126 calibration candidates (18 queries, 3/category, 7 tiers). Determinism PASS. Schema validation PASS. PMID overlap: 119 unique, 7 in >1 query, max 2 appearances."
+}

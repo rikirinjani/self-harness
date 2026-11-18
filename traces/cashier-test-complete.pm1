@@ -1,0 +1,35 @@
+{
+  "pm1_version": 1,
+  "session_id": "cashier-test-complete",
+  "timestamp": "2026-10-10T11:03:04.242563+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 80,
+  "key_files": [
+    "khanza_report.json",
+    "dr_khanza_adapter_v7.py",
+    "trigger_billing.py",
+    "clean_all_dr.sql",
+    "gen_dr_json.py",
+    "khanza_cashier_consumer.py",
+    "fix_billing_format.py",
+    "cashier_test.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "cashier-test-complete",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--.........--...--........--.-..-.........................................-.--...-",
+  "action": "Khanza cashier test: built consumer that processes 177 DR encounters through cashier-compatible billing logic. 177/177 visits billed, 0 orphans, Rp 13.76M revenue across 1,816 billing rows. Format matches seed pattern exactly. Key finding: doctor fee embedded in procedure biaya_rawat, not separate row."
+}

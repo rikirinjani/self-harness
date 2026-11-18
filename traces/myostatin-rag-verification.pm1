@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "myostatin-rag-verification",
+  "timestamp": "2026-10-05T05:05:31.834066+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 5,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\verify_myostatin.py",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\verify_pubmed.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "myostatin-rag-verification",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "RAG bypass verification of myostatin query: 3 PMIDs confirmed real via corpus direct lookup + PubMed esummary; 13/13 content claims PASS vs stored abstracts; journals/years match; 1 minor discrepancy (39340593 corpus year 2024=epub, PubMed print 2025 Mar); answer correctly typed 2 reviews + 1 computational study, no primary trials"
+}

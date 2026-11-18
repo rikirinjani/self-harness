@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "g6-e3-runner-hardened",
+  "timestamp": "2026-09-27T00:18:15.588904+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 480,
+  "tool_calls": 14,
+  "key_files": [
+    "Project_v2/LocalNotebook/rag-service/scripts/run_g6_e3.py",
+    "self-harness/failures/20260927-071341-timeout-g6-e3-first-attempt.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "g6-e3-runner-hardened",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "G6-E3 runner hardened after 30-min timeout: per-query try/except with error-event emit, per-query flushed progress, per-run checkpoint to g6_e3_results.partial.json, acceptance extended with retrieval_errors==0; failure record written; rerun launched python -u with 130-min budget; partial event store cleaned"
+}

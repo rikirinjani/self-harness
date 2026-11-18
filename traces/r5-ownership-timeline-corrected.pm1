@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "r5-ownership-timeline-corrected",
+  "timestamp": "2026-10-23T13:07:23.224714+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 8,
+  "key_files": [
+    "khanza-r5/docs/asset_export_20261023.md",
+    "khanza-r5/docs/khanza_session_handoff_20261017.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "r5-ownership-timeline-corrected",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........-.--...-........-.--...-........................................-.--...-",
+  "action": "Corrected a dangerous durability inversion before it could mislead a future session. Owner clarified: the old/source box is NOT on Vultr and terminates ~2026-10-25 (2 days) - the whole migration existed because of that. Verified readiness instead of assuming: final delta scan of the old box (dr-benchmark, Deers-Rock, simrs-khanza, newer than the 06:33Z export) found 0 changed files, so mac-mini-vultr is already fully current; state sweep (root crontab, cron.d, enabled units, /root, /home) found no custom state to replicate (box is a VMware VM); snapshot saved to the export dir on the new box. Docs corrected in migration doc + handoff: mac-mini-vultr becomes the ONLY durable home ~2026-10-25; .vps.env flip policy = on old-box unreachability or owner word (not mid-flight for the parallel session); next deadline 2026-11-20 when mac-mini-vultr itself decommissions - third home or paid plan needed before. Env header fixed. Commit df2c1c9."
+}

@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-dedup-audit",
+  "timestamp": "2026-10-02T11:56:55.623997+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\BUDGET.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-dedup-audit",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "Filesystem deduplication audit per user request: checked PM1_ALL (frozen original), Agentic Layer/results/v07 (pre-consolidation leftover, 46 files, 185KB, Aug 21), and pm1-continuation (working). VERDICT: NO duplicates exist. Local v07 files are UNIQUE raw captures (timestamps 1787298xxx/1787307545 differ from all frozen raws 1787307630+/1787311xxx); frozen v07 holds processed reports + a different raw set. PM1_ALL is the original protocol + frozen evidence base (read-only, HF-published) - NOT a duplicate, must stay. NOTHING DELETED. Recommendation: leave Agentic Layer/results/v07 in place (unique evidence, 185KB)."
+}

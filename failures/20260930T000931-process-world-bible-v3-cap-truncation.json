@@ -1,0 +1,11 @@
+{
+  "timestamp": "20260930T000931",
+  "category": "process",
+  "slug": "world-bible-v3-cap-truncation",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "what_happened": "Two Astra passes for KALA World Bible v3 both hit the max_completion_tokens cap and truncated. Pass1 (cap15500) produced WORLD-01..06 with WORLD-06 cut mid-bullet. Pass2 (cap9000) produced WORLD-06..10 with WORLD-10 cut mid-sentence.",
+  "root_cause": "Prompt asked the model to expand ten dense fact-sheet sections (target 55-65k chars) but set an output cap sized for far less; the model over-expanded early sections and ran out of tokens before finishing. Cap was under-provisioned relative to the requested output length.",
+  "impact": "Deliverable completed by stitching two runs; WORLD-06 recovered from pass2; only WORLD-10s final sentence was lost (trimmed cleanly). Spend .250 vs ~.0 budget (~25% over).",
+  "corrective_action": "Next bulk-generation task: size max_completion_tokens from the requested output length (or split into per-section tasks) instead of a fixed small cap; instruct a per-section length budget to cap over-expansion."
+}

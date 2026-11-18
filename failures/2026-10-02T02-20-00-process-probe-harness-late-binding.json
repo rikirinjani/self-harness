@@ -1,0 +1,17 @@
+{
+  "record_type": "failure",
+  "id": "2026-10-02T02-20-00-process-probe-harness-late-binding",
+  "category": "process",
+  "severity": "medium",
+  "date": "2026-10-02",
+  "slug": "probe-harness-late-binding",
+  "summary": "Tamper-probe harness v1 produced false conclusions: all 4 adversarial probes reported the real verify-change gate ACCEPTS tampered evidence.",
+  "what_actually_went_wrong": "In tamper_probes.py v1, the tamper functions were invoked at list-construction time (inside the probes tuple), which created and tampered each probe store immediately. The main loop then called fresh_store(name) for every probe, which re-copied PRISTINE evidence over the already-tampered stores. Every probe therefore ran the gate against pristine evidence and correctly PASSED - but the harness labeled this as the gate accepting tampering (FAIL-PROBE lines). The gate was never at fault; the harness destroyed its own tamper before testing.",
+  "root_cause": "Late-binding error: side-effectful probe preparation executed eagerly during data-structure construction instead of inside the execution loop. The control probe (pristine, expect PASS) passing was consistent, which masked the bug as plausible results rather than flagging the impossibility of all four tamper variants passing.",
+  "how_detected": "Result pattern was suspicious (all 4 tamper variants 'accepted' despite the gate's require() chain making each individually impossible: checksum comparison, timestamp bounds, coverage subset checks). Reasoned through the gate code before accepting the conclusion, then traced the probe script's execution order and found fresh_store() overwriting the tampered stores.",
+  "fix": "v2 harness: probes are (name, desc, expect, tamper_fn) tuples; tamper_fn(store) is applied INSIDE the loop after fresh_store(). Re-run: 5/5 correct (control PASS; all 4 tamper variants REJECT with the exact expected gate reasons).",
+  "lesson": "Never accept a security-test result that claims every attack succeeds; that pattern usually means the attacks never executed. Verify the negative path actually exercised the mutated state before concluding anything about the system under test.",
+  "evidence_files": [
+    "Temp/opencode/tamper_probes.py"
+  ]
+}

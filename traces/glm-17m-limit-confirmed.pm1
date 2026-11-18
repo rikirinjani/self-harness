@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "glm-17m-limit-confirmed",
+  "timestamp": "2026-10-01T08:12:32.890317+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 40,
+  "tool_calls": 1,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "glm-17m-limit-confirmed",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................-.--...-........-.--...-........................................................-.--...-",
+  "action": "Confirmed GLM ajianaz per-5h limit raised to 17,000,000 on the same key (created 2026-03-27, not reissued - server-side tier upgrade). Verified arithmetically: 13,870,734 used + 3,129,266 remaining = exactly 17,000,000. Upgrade occurred between 2026-09-29 and 2026-10-01. Quota draining again: remaining fell 4,801,911 -> 3,129,266 within minutes of prior check."
+}

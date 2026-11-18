@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "l2-gate-install",
+  "timestamp": "2026-10-02T03:14:56.517687+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 30,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\Somnium-gate\\verify-change",
+    "C:\\Users\\think\\Project_v2\\Somnium-gate\\.github\\workflows\\verify-change.yml",
+    "C:\\Users\\think\\Project_v2\\Somnium-cod\\.github\\CODEOWNERS",
+    "C:\\Users\\think\\evidence-store\\records\\e8e699d12b77144ec3253a6d8baa20a807f44614\\traces\\gate-exercise-001.json",
+    "C:\\Users\\think\\evidence-store\\records\\e8e699d12b77144ec3253a6d8baa20a807f44614\\qms\\gate-exercise-001.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "l2-gate-install",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........--.-..-.........................................-.--...-",
+  "action": "L2 gate install: bootstrap push 41df4b7 (verify-change at repo root + CI workflow) to main; operator config via API (TYPECHECK_COMMAND var, ACCEPTANCE_HUMAN_IDS, change-acceptance env with prevent_self_review + can_admins_bypass=false, branch protection main + acceptance-evidence); 2 PRs through full chain (policy PASS + verify-exact-change PASS both, approval PENDING fail-closed single-human); first CI run caught real autocrlf checksum bug, fixed via blob-byte re-mint (56f885b)"
+}

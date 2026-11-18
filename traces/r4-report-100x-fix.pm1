@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "r4-report-100x-fix",
+  "timestamp": "2026-10-13T12:08:19.705690+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 240,
+  "tool_calls": 14,
+  "key_files": [
+    "C:\\Users\\think\\khanza_benchmark_report_R3.md",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\e1_claims_ledger_20261013T043444Z.md",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\r2_2_corrected.md",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\p1_rootcause.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "r4-report-100x-fix",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Report R3-to-R4 revision finished (sections 10-13 + B2 row RUNNING); on-box 100x corrections deployed to e1 ledger, r2_2_corrected.md, p1_rootcause.md; r2_2_corrected.txt verified raw-only; unit-lint failure record written"
+}

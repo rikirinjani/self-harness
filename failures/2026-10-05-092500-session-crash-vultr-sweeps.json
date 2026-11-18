@@ -1,0 +1,33 @@
+{
+  "record_type": "failure",
+  "timestamp": "2026-10-05T09:25:00+08:00",
+  "category": "session-crash",
+  "severity": "medium",
+  "slug": "vultr-sweeps-session-crash-during-live-sweep",
+  "detected_by": "orchestrator (Kronos batch session) via `crashlog.py --recover` at Rule 9 session checkpoint",
+  "what_happened": "crashlog.json recorded a previous session death at 2026-10-05T00:59:31Z (07:59 local) while task `vultr-model-sweeps` was mid-flight. Reported dirty files: C:\\Users\\think\\Agentic Layer\\pm1-continuation\\RUN_REGISTRY.md and C:\\Users\\think\\Agentic Layer\\pm1-continuation\\vultr-ds41-run2.log.",
+  "root_cause": "The PM-1 session that launched the VULTR-SWEEP experiment terminated without writing a session-wrap trace or completing its crash log. The launch session and the sweep process are separate: the crash is in the session, not in the experiment. Underlying cause of the session death is unknown from this session - no traceback was preserved.",
+  "what_i_actually_did_wrong": "Nothing in the crashing session is recoverable from here - there is no preserved traceback and no session trace, so the death itself cannot be diagnosed retroactively. This record exists because the crash would otherwise be silently re-discovered at every future session start with no attached decision.",
+  "evidence_checked": [
+    "crashlog.json LastWriteTime 2026-10-05 07:59:31 local; task=vultr-model-sweeps",
+    "RUN_REGISTRY.md VULTR-SWEEP entry: sweep-1 deepseek-v4.1-flash LAUNCHED 06:35 local, PID 6368, 8/24 chains at 78 min, ETA ~10:30, $0 spent",
+    "Get-Process -Id 6368 -> python, StartTime 2026-10-05 06:35:33, alive",
+    "Newest output results/vultr-deepseek-v4.1-flash/chain-01_K150_t2_P_h250.json LastWriteTime 09:13:38 local (minutes before this check) - the sweep is still writing",
+    "vultr-ds41-run2.log tail shows chains completing (chain-01 K=150 t2 P h=250 in 399.8s) with no ERROR line"
+  ],
+  "decision": "SKIP (do not resume, do not retry) - recorded 2026-10-05 09:25 local",
+  "decision_reason": "The sweep process survived the session death and is producing output. Resuming the crashed session would create a second writer against RUN_REGISTRY.md and vultr-ds41-run2.log, which are owned by the live process. Retrying would double-spend the Vultr budget cap ($50 across 4 models).",
+  "recovery_owner": "human / PM-1 lane owner - not the Kronos orchestrator",
+  "follow_up_for_owner": [
+    "Confirm sweep-1 reaches 24/24 chains and the per-model compliance table is produced (acceptance criterion in RUN_REGISTRY VULTR-SWEEP).",
+    "Check whether last_cls=ACTION_ERROR dominance late in chains reflects the model or the harness; sweep stop rule says stop + diagnose on first ERROR and no ERROR was raised.",
+    "After the process exits, reconcile RUN_REGISTRY ACTUAL (in progress) and run `crashlog.py --complete` or `--clear` for the vultr-model-sweeps entry.",
+    "Do not let the next session 'recover' this entry blindly - the correct disposition is skip, already recorded here."
+  ],
+  "evidence_files": [
+    "C:\\Users\\think\\self-harness\\crashlog.json",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\RUN_REGISTRY.md",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\vultr-ds41-run2.log"
+  ],
+  "scope_note": "Out of scope for the Kronos batch-improvement task. Recorded only because Rule 9 recovery surfaces it and an unrecorded skip decision would leave the crash indeterminate for every later session."
+}

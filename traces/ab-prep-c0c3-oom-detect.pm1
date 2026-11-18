@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "ab-prep-c0c3-oom-detect",
+  "timestamp": "2026-09-22T22:36:57.053678+00:00",
+  "agent": "coordinator",
+  "outcome": "partial",
+  "duration_s": 920,
+  "tool_calls": 5,
+  "key_files": [
+    "scripts/modal_embed.py",
+    "scripts/ab_embed_supervisor.sh"
+  ],
+  "failure": {
+    "category": "infrastructure",
+    "severity": "high"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ab-prep-c0c3-oom-detect",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........--.-..-.........---..-..........-.--...-........-.--...-.........................--...--........-.--...-",
+  "action": "15min poll: large 33-37%; c1/c2 alive; c0+c3 missing from ps — suspected batch64 OOM, confirming logs before relaunch"
+}

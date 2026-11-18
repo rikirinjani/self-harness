@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1all-app-sync",
+  "timestamp": "2026-09-23T10:16:31.508604+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 400,
+  "tool_calls": 20,
+  "key_files": [
+    "C:\\Users\\think\\.local\\bin\\pm1-trace.cmd",
+    "C:\\Users\\think\\.opencode\\loop-budget.md",
+    "C:\\Users\\think\\.opencode\\skills\\auto-trigger\\SKILL.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1all-app-sync",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Repointed 3 live PM-1 references from Agentic Layer morse to PM1_ALL 03_PM-1_Protocol pro-memoria-protocol: pm1-trace.cmd PYTHONPATH, loop-budget.md auto_trigger path, auto-trigger SKILL.md command. Reference re-scan residual = 1 harmless Electron codex state blob (no dependency). Smoke PASS: pm1-trace --help + info exit=0 via new path, auto_trigger compile() clean with --dry-run flag, pro_memoria and pm_adapter import from site-packages non-editable so pip deps unaffected by original deletion. KEEP-live sanity confirmed for self-harness tools/state, .local bin, .config pm1 dirs, qms."
+}

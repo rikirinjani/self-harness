@@ -1,0 +1,12 @@
+{
+    "severity": "high",
+    "timestamp": "2026-11-18T00:00:00Z",
+    "trace_id": "vps-staging-deploy-progress",
+    "category": "dependency",
+    "summary": "doc-manager container crash-looped on VPS staging with RuntimeError: Form data requires \"python-multipart\" to be installed; service unavailable until image rebuilt.",
+    "outcome": "fixed",
+    "agent": "orchestrator",
+    "root_cause": "doc-manager/requirements.txt omitted python-multipart although FastAPI File/Form endpoints require it. The dependency was declared only in platform/backend requirements.",
+    "recovery": "Appended python-multipart==0.0.12 to doc-manager/requirements.txt locally and on /opt/chatbot/doc-manager, rebuilt image, restarted. /docs/health returned 200.",
+    "prevention": "Smoke-test every FastAPI service container startup in staging before declaring a build complete; add requirements parity check across services."
+}

@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "phase3-g1-tool",
+  "timestamp": "2026-10-11T17:47:37.270455+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 4500,
+  "tool_calls": 42,
+  "key_files": [
+    "/opt/Deers-Rock/tools/oracle_diff_30_50.py",
+    "/opt/dr-benchmark/results/20261011T173055Z/g1_validation.md",
+    "/opt/dr-benchmark/results/20261011T173055Z/g1_oracle.log"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "phase3-g1-tool",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--.........................-.-.-.-.........--...--........-.--...-........................................-.--...-",
+  "action": "Built Phase 3 GATE G1 oracle diff tool v2 (30-50 DR-only stratified MD5-ordered incl. 2 force-included half-rupiah PPN visits; real-form vs consumer bidirectional per-visit value-row exactness; Java Math.round floor(x+0.5) PPN check; source-drift hash excl status_bayar; fresh-truncated single-clean general_log as hard gate). Root causes fixed from prior v1: reset must clear detail_nota_jalan + tagihan_sadewa (keyed no_nota=no_rawat) or BtnSimpan duplicate-PK rolls back the whole save; v1 match-rate was one-directional (106 unmatched consumer rows had passed). Manual RUN_ID=test attempt1 PASS (207/207 rows, 50/50 sukses, 847==847 gl, drift none, half-PPN 4900.5->4901 + 15735.5->15736 exact on consumer AND real form). Re-launched dr-bench run 20261011T173055Z: Phase 0-2 re-passed, Phase 3 G1 PASS first attempt, advanced to Phase 4 Stage A (GATE G2) and stopped there as expected (Stage A tools not built; STOPPED_AT_phase1_G2.md written with diagnosis - filename prefix is a run_all gate_fail naming quirk, actual phase stageA_G2). AES key material redacted from archived general_log artifacts (52 files, insert counts intact)."
+}

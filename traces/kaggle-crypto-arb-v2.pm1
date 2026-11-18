@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "kaggle-crypto-arb-v2",
+  "timestamp": "2026-10-07T06:14:15.117566+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 12,
+  "key_files": [
+    "C:\\Users\\think\\jev-crypto-trader\\research\\poly-bot\\kaggle-run-v2.log"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kaggle-crypto-arb-v2",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Ran crypto arb bot v2 on Kaggle with live data fallback. Connected to Polymarket API, found opportunities, executed trades. Kernel: https://www.kaggle.com/code/rikirinjani/crypto-arbitrage-bot-v2-live-data"
+}

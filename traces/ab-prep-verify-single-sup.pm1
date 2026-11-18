@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "ab-prep-verify-single-sup",
+  "timestamp": "2026-09-23T01:57:28.859281+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 15,
+  "tool_calls": 2,
+  "key_files": [
+    "scripts/ab_embed_supervisor.sh",
+    "scripts/modal_embed.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ab-prep-verify-single-sup",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................-.--...-........-.--...-........-.--...-........................................-.--...-",
+  "action": "Verified supervisor + nomic retrieval FAISS build; embed progress bge90 e587 qwen3 ~40-45pct"
+}

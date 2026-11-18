@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-continuation-phase1",
+  "timestamp": "2026-09-25T23:51:09.153967+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\harness\\core.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\harness\\arms.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\harness\\llm.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\harness\\runner.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\run_pilot.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\PROTOCOL.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-continuation-phase1",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................--.-..-.........................................-.--...-",
+  "action": "Phase 1 complete: built PM-1 continuation harness (faithful port of frozen V0.5 core: state/PM-1 packet/LCG schedules/task spec/prompt/parse byte-identical; pm1_chars=318 matches frozen 314-319). New: 4 arms (P, C, C-win cap 2048, C-oc forced AI compaction same-model), truncation detector + positive control, sanity gate vs frozen V0.5 values, resume-safe runner, Vultr client w/ usage capture + 429 backoff. Verified: dry-run 4 arms OK; cap test C-win bounds 2044/2048, C-oc 1 compaction event bounded 1704, correctness 100%; live smoke 2 calls \\.0001 PASS with prompt_tokens captured. Protocol pinned. Awaiting go for T1 pilot (\\.36)."
+}

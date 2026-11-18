@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "gemma4-openai-compat-research",
+  "timestamp": "2026-09-29T21:11:24.062011+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 1260,
+  "tool_calls": 26,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "gemma4-openai-compat-research",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--.........................---..-..........--.-..-.........................................................-.--...-",
+  "action": "Web research: how to call Gemma 4 via OpenAI-compatible free/min-cost APIs. Verified: generativelanguage.googleapis.com/v1beta/openai/ base URL (ai.google.dev/gemini-api/docs/openai); gemma-4 model IDs gemma-4-31b-it / gemma-4-26b-a4b-it on Gemini API (gemma/docs/core/gemma_on_gemini_api); Gemma 4 free-tier-only on AI Studio (pricing page); per-model quotas login-gated (rate-limits page); OpenRouter google/gemma-4-31b-it + :free pricing (.09/.34, 0) and 15 serving providers with response_format+structured_outputs support (api/v1/models + endpoints API); OpenRouter free limits 20 RPM / 50 RPD / 1000 RPD at >=10 credits (docs/api_reference/limits.md); reasoning default_enabled=false mandatory=false; Ollama Cloud gemma4:31b .14/.40 base https://ollama.com/v1; Together google/gemma-4-31B-it .39/.97; Fireworks gemma-4-31b-it available (price TBD); Groq has no gemma. Compiled recommendation + 3000-call wall-clock math."
+}

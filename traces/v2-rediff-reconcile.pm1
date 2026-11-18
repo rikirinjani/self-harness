@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "v2-rediff-reconcile",
+  "timestamp": "2026-10-10T14:36:30.862722+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 300,
+  "tool_calls": 20,
+  "key_files": [
+    "/opt/simrs-khanza/consumer/KhanzaBillingConsumer.java",
+    "khanza_report.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v2-rediff-reconcile",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-..........--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Reconciled consumer v2 re-run: clean-state rebuild produced 9037 rows/321 visits (28.2 rows/visit vs real 13-19) — 2x density bug: consumer rebuilds each multi-ENC visit 191 extra times, delete-then-rebuild not eliminating prior blocks' rows within same no_rawat. PPN now whole-rupiah 11% (verified 8/8 sample), no Tagihan rows, obat naming confirmed. 5 fixer dispatches all failed with context-limit; executor took over mechanical steps directly."
+}

@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-gemma-pilot-reconciled",
+  "timestamp": "2026-09-30T19:53:46.549640+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\analyze_gemma_pilot.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\fix_leg1.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\PAPER_MATERIALS.md",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\frozen\\gemma-pilot\\FREEZE_MANIFEST.md",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\VER-2026-09-30-PM1-GEMMA-PILOT.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-gemma-pilot-reconciled",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................--.-..-.........................................-.--...-",
+  "action": "Gemma pilot RECONCILED - GEMMA LEG FULLY CLOSED: 20/20 runs (4 arms x 5 horizons), pass_rate 1.0, \\. Economics REPLICATE cross-model (h250 per-run): C/P=15.2x, C-win/P=7.6x, C-oc/P=6.1x on Gemma vs 18.1/7.7/6.1 on deepseek. MAJOR CORRECTION owned: economics direction was inverted in session prose - P (bounded PM-1 packet) is the CHEAPEST arm (constant ~318 chars/hop on both models, by design); transcript arms cost 6-18x more. Failure record written; PAPER_MATERIALS Leg 1 + Leg 4 corrected via anchor splice; Ollama usage validated cross-run (chars/4 estimator undercounts digit-dense JSON ~4x - documented). Frozen frozen/gemma-pilot + manifest; VER-2026-09-30-PM1-GEMMA-PILOT (PASS). All staged for paper-oc."
+}

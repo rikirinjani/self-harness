@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-09-26T15:25:00Z",
+  "category": "dependency",
+  "severity": "low",
+  "title": "librarian session error — Kaggle quota-reset research not obtained",
+  "agent": "librarian",
+  "session": "ses_f21be80e7ffe72y6HT0RjDPuT0",
+  "what_happened": "Dispatched librarian to research Kaggle LLM proxy quota reset cadence; session failed immediately with 'Session too large to compact - context exceeds model limit even after stripping media'. Not retried (known recurring librarian failure in this environment).",
+  "root_cause": "Pre-existing oversized librarian session context; compaction cannot reduce below model limit. Environmental, not task-related.",
+  "impact": "Quota-reset cadence research missing. User supplied the answer directly (resets midnight UTC), so no work blocked.",
+  "action_taken": "Recorded; answer sourced from user instead. Reuse of this session prohibited (errored sessions are not reusable)."
+}

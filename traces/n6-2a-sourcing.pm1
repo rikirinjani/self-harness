@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "n6-2a-sourcing",
+  "timestamp": "2026-10-01T07:47:57.718269+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 16,
+  "key_files": [
+    "rag-queries/curation/label_sourcing_n6_batch2a.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "n6-2a-sourcing",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "N6.2a sourcing: 13 high-impact risk cells with verbatim DailyMed SPL quotes (11 setids resolved live, vildagliptin confirmed no-US-label, dabigatran via in-pool meta RR 1.51, E1 records re-cited for rivaroxaban/enoxaparin). Proposes 6 changes + 7 keeps. Committed 0925eb0 (evidence only, no drugs.json changes per N6 approval gate)"
+}

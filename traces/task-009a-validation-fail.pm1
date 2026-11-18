@@ -1,0 +1,36 @@
+{
+  "pm1_version": 1,
+  "session_id": "task-009a-validation-fail",
+  "timestamp": "2026-09-15T08:19:39.261050+00:00",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "duration_s": 3600,
+  "tool_calls": 0,
+  "key_files": [
+    "experiments/pm1-rx/TASK_009A_RESULT.md",
+    "experiments/pm1-rx/harness/pm1rx/shadow_producers.py",
+    "experiments/pm1-rx/harness/pm1rx/shadow_oracle.py",
+    "experiments/pm1-rx/harness/pm1rx/shadow_coverage.py",
+    "experiments/pm1-rx/harness/tests/test_shadow_009a.py",
+    "experiments/pm1-rx/pilot_009a_results.json"
+  ],
+  "failure": {
+    "category": "validation_failure",
+    "severity": "high"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task-009a-validation-fail",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................-.--...-.........-.-.-.-........................--.-..-..........................--...--........-.--...-",
+  "action": "Task 009A VALIDATION FAIL. Phase 1: F sufficiency contract implemented (shadow_producers.py, 2271-char contract verified in prompt) but DID NOT FIX the defect - F still emits 0 actionable items on all 10 boundaries (mean fields 3.0/10 vs Pilot A 3.3/10) despite transcripts containing constraint cues 2-30, decision cues 0-7, dependency cues 3-29. Hypothesis: Qwen2.5-3B too small to follow the contract; satisfies schema keys while leaving arrays empty. Phase 2: oracle implemented (shadow_oracle.py, L0/L1/L3/L4, F1-F11, all independence constraints satisfied) but CALIBRATION FAILED - L3=0.0000 for EVERY arm including full transcript; root cause reference extractor matches every cue-word sentence yielding 19-29 required items/boundary. Phase 3: coverage gate implemented and WORKS (task-relative, plant_omission tested). Phase 4: pilot executed 10 boundaries/4 arms/40 executions/0 USD/44m42s/0 failures. Boundary safety ALL PASS. Tests 46 new + 188 = 234 passed. Success criteria 8/10; criteria 1 and 2 FAIL. STOP CONDITIONS triggered: oracle cannot score; coverage cannot be determined. No automatic repair. Commit c8404b7. No paid inference; Experiment 001 unchanged."
+}

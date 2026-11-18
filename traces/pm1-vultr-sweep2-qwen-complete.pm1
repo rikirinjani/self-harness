@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-vultr-sweep2-qwen-complete",
+  "timestamp": "2026-10-05T07:27:27.359040+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 6060,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\results\\vultr-qwen3.8-27b\\summary.json",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\vultr_spend_ledger.json",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\chain-sweeps.log"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-vultr-sweep2-qwen-complete",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---.........................-.-.-.-........................-.--...-........................................-.--...-",
+  "action": "VULTR SWEEP-2 COMPLETE (qwen3.8-27b): 24/24 chains in 167 min, 4793 calls, \\.60 actual, inertness gate PASS. CHAIN-RUNNER HANDOFF VERIFIED: auto-gated (\\.21+2.75<=45), smoke PASS, glm-5.3 sweep launched 12:56 (PID 15860), 2/24 chains at 14:26. GLM EARLY SIGNAL: P arm fail=240/250 (constant ACTION_ERROR - deviates from base policy, notice-following TBD from final table), P-pos fail=11 with PASS nearly throughout (opposite signature to deepseek/qwen - possible cross-model divergence worth watching). GAP CLOSED: chain_sweeps.py does not ledger the model it waits on (qwen) - manual add qwen3.8-27b \\.60/24 done now; ledger \\.81/\\. Revised ETA: glm done ~17:30 (11.5 min/chain pace), nemotron ~20:30-21:30."
+}

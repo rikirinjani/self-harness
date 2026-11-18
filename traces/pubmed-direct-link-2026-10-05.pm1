@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "pubmed-direct-link-2026-10-05",
+  "timestamp": "2026-10-05T10:13:40.797135+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 60,
+  "tool_calls": 6,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\web\\src\\app\\answer\\content.tsx",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\web\\out\\answer.html"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pubmed-direct-link-2026-10-05",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "PMID citations now open PubMed directly: inline PMID buttons and Sources list CitationBeads both navigate to https://pubmed.ncbi.nlm.nih.gov/{pmid}/ via window.open. Drawer logic kept for now (dead code, no functional change)."
+}

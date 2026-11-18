@@ -1,0 +1,37 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-phase1-implemented-s1",
+  "timestamp": "2026-10-01T02:16:26.475948+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\harness\\metrics.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\harness\\accounting.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\harness\\arms.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\harness\\core.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\harness\\runner.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\run_pilot.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\audit_failures.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\validate_arms.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\RUN_REGISTRY.md",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\V04A_EXCLUSION.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-phase1-implemented-s1",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................--.-..-.........................................-.--...-",
+  "action": "PHASE 1 IMPLEMENTED + S1 LAUNCHED (Gemma-first, D1-D3): metrics.py (canonical verdicts, Wilson CI, non-inferiority replacing ±5pp, survival tables) + tests PASS; accounting.py (provider-precedence, mismatch detector catching Ollama cache-adjusted + digit-dense undercount) + tests PASS; arms FLAT/P-FMT/RET (+P packet_flat + hybrid decoder, StubWorker wire, RET deterministic relevance rule, C-oc rule doc) + validate_arms 27/27 PASS incl h250 bounds (FLAT 46, P-FMT 73, RET <=168); run_pilot --arms (pilot/dry-run only, T2/sleeper untouched); audit_failures.py: 641 frozen+continuation files ALL CLEAN; V04A_EXCLUSION.md (exclude policy); RUN_REGISTRY B1 entry; validate ladder green (units, scripted e2e, stub dry-runs). Notebook RUN_QUEUE mechanism + baselines mode (--pilot --arms FLAT,P-FMT,RET --results-dir results/baseline1). v10 pushed, S1 RUN_QUEUE=smoke,baselines RUNNING (~45min ETA)."
+}

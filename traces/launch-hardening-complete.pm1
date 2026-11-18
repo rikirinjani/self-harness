@@ -1,0 +1,35 @@
+{
+  "pm1_version": 1,
+  "session_id": "launch-hardening-complete",
+  "timestamp": "2026-10-06T04:20:46.963141+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 20,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\probe_health.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\cokro-probe.service",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\cokro-probe.timer",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\web\\src\\app\\status\\page.tsx",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\web\\src\\components\\disclaimer.tsx",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\web\\src\\app\\privacy\\page.tsx",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\web\\src\\app\\terms\\page.tsx",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\api_server.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "launch-hardening-complete",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Implemented launch hardening: (1) SSH hardened root+password disabled, (2) PMID filter already digit-validated, (3) Contact async non-blocking, (4) Privacy/terms pages + collapsible medical disclaimer banner on ask/answer, (5) External health probe: systemd timer runs every 5min, tests vitamin D query, logs to probe_status.json, sends Resend alert after 3 consecutive failures, /api/status + /status frontend page shows live health."
+}

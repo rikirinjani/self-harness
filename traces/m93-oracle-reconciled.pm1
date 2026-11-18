@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "m93-oracle-reconciled",
+  "timestamp": "2026-10-06T09:48:49.905003+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "m93-oracle-reconciled",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................................................................-.--...-",
+  "action": "Reconciled ora-1: Oracle M9.3 design review complete. 10 recommendations, 3-wave plan, 6 blockers captured in ADR-016 + M9.3-BLOCKER-DECISIONS.md."
+}

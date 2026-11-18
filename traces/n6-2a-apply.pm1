@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "n6-2a-apply",
+  "timestamp": "2026-10-01T08:01:03.024356+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1200,
+  "tool_calls": 8,
+  "key_files": [
+    "rag-queries/curation/n6_batch2a_resolutions.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "n6-2a-apply",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........-.--...-........-.--...-........................................-.--...-",
+  "action": "N6.2a apply (user-approved all 6): pre-check 6/6 matched, applied hypo drops (metformin 3->1, liraglutide/sitagliptin 3->2, acarbose 2->1) + GI-bleed raises (edoxaban/dabigatran 2->3), diff exactly 6/6 lines no noise. Verified: grid 352/0, both suites pass, smoke 18/18. Committed 278fccd and pushed"
+}

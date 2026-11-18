@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-sleeper-final-diagnosis",
+  "timestamp": "2026-09-28T01:01:22.297854+00:00",
+  "agent": "coordinator",
+  "outcome": "partial",
+  "duration_s": 900,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\results\\sleeper\\summary.json",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\diag_chain02.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\harness\\sleeper.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-sleeper-final-diagnosis",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........--.-..-.........---..-..........................-.--...-........................................-.--...-",
+  "action": "Sleeper run complete (80/80, .9927, 15876 calls, detectors CLEAN x16, gates PASS, economics replicated: C 14.9x / C-win 5.47x / C-oc 4.51x / P+FACTS 1.13x vs P at h250). DIAGNOSIS: chain-01 vs chain-02 recall split (1.0 vs 0.0) root-caused as design degeneracy - every notice-visible arm does BUY qty=1 every hop on BOTH chains; chain-01 L=1 coincides with that constant policy (recall 1.0 artifact), chain-02 L=3 does not and even P (no notice) does BUY qty=1 there (base fair policy). Design cannot discriminate notice compliance from collapse on either chain. RETRACTED interim conclusions: H1/H2 falsifications, transcripts-self-document story, H4 P+FACTS 1.00. SURVIVES: token economics leg, gates, P-arm schema-omission control (no carrier -> fact lost, 0.0 both chains)."
+}

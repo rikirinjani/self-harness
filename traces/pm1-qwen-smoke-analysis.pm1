@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-qwen-smoke-analysis",
+  "timestamp": "2026-10-02T03:16:35.810592+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\read_v13_log.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-qwen-smoke-analysis",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "Qwen smoke timing/behavior analysis: decode 80 tok/s steady-state (6.79 was warmup), prefill 784 tok/s (307-tok prompt), pull 162s, load 146s. KEY FINDING: Qwen outputs 164-227 tokens/hop on the harness task vs Gemma ~60 - 3-4x more verbose, consistent with Qwen3 thinking-mode default (raw text not persisted; inferred from token counts + tag semantics). Tolerant JSON parser handled it (2/2 PASS). Implications: (1) r3fix_a est ~4-6h, fits one session; (2) REGIME DIFFERENCE vs deepseek/Gemma direct-answer - thinking gives more scratch space to track hop count, a confound for the inhibition comparison; (3) thinking on/off is itself a direct test of H2 (reasoning depth -> inhibition). Decision needed pre-r3fix_a: /no_think or instruct tag for comparability, plus optional thinking-mode arm as the H2 manipulation."
+}

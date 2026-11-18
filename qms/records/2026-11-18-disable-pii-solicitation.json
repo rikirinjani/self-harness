@@ -1,0 +1,34 @@
+{
+    "record_id": "QR-2026-11-18-001",
+    "type": "requirement_change",
+    "status": "implemented_staging_unverified",
+    "date": "2026-11-18",
+    "requested_by": "owner",
+    "requirement": "Bot tidak boleh meminta nama, NIK, email (atau data pribadi lain) untuk semua jenis query. Query di luar KB harus dijawab dengan pernyataan bahwa informasi belum tersedia di materi, bukan dengan permintaan data pribadi.",
+    "scope": {
+        "included": "jawaban bebas hasil LLM pada bridge (SYSTEM_PROMPT)",
+        "excluded": "alur form /laporan (router.ts fields: nama, nik, profesi, no_str, email, kendala) — hanya aktif bila pengguna mengetik /laporan"
+    },
+    "change": {
+        "file": "/opt/chatbot/bridge/.env (staging) dan ~/chatbot/bridge/.env (Mac, belum dijalankan)",
+        "key": "SYSTEM_PROMPT",
+        "new_value_summary": "Jawab dari materi; jika tidak ada di materi, sampaikan terus terang belum tersedia dan arahkan ke helpdesk resmi; jangan pernah meminta nama/NIK/email/nomor STR/data pribadi.",
+        "tooling": "ops/disable-pii-prompt.sh (backup bertimestamp, prompt ditanam dalam heredoc)"
+    },
+    "evidence": {
+        "applied_staging": "OK — backup /opt/chatbot/bridge/.env.bak.20261118-030311; container docker-bridge-1 recreated, healthy; prompt terlihat via docker exec env",
+        "production_impact": "none — 4 channel bridge VPS masih disabled",
+        "behaviour_verified": "NO — LLM credential expired (401 api_key_expired); endpoint juga butuh header x-opencode-session (400 MissingSessionID)"
+    },
+    "acceptance_criteria": [
+        "Query di luar KB (contoh: harga tiket pesawat) → jawaban menyatakan informasi belum tersedia / arahkan helpdesk",
+        "Tidak ada permintaan nama, NIK, email, atau STR pada jawaban tersebut",
+        "Query di dalam KB tetap dijawab dari materi"
+    ],
+    "rollback": "cp <backup> /opt/chatbot/bridge/.env && docker compose up -d --no-deps bridge",
+    "open_items": [
+        "API key LLM valid untuk bridge + expert",
+        "Header x-opencode-session di llm-client.ts (rebuild) atau pindah ke api.deepseek.com",
+        "Jalankan ops/disable-pii-prompt.sh di Mac + restart (hold sampai owner setuju)"
+    ]
+}

@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "p0-1-embedding-parity",
+  "timestamp": "2026-09-26T14:58:03.419295+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\VER-SCOPE-A-PARITY-001.json",
+    "C:\\Users\\think\\.opencode\\skills\\parity_output\\parity_report.json",
+    "C:\\Users\\think\\.opencode\\skills\\build_parity_notebook.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "p0-1-embedding-parity",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........................-.--...-........................................-.--...-",
+  "action": "P0-1 embedding parity check PASS: production bge-base stored vectors match fresh eval-settings embeddings at cosine >= 0.999997 (mean 0.999999), norms unit, max_seq_length 512 confirmed. Code review of reembed_modal.py, query_lancedb_fulltext.py, eval_ab_retrieval.py all consistent (only delta: fp16 inference on doc build, empirically negligible). 30 samples spanning 9-4000 char texts."
+}

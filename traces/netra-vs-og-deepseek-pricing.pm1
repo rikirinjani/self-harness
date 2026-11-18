@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "netra-vs-og-deepseek-pricing",
+  "timestamp": "2026-10-02T12:01:33.633240+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 3,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "netra-vs-og-deepseek-pricing",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Compared Netra Runtime pricing vs official DeepSeek api.deepseek.com (deepseek-flash / DeepSeek-V4.1-Flash). Netra flat: .20 input / .05 cached / .50 output per 1M. OG has peak/off-peak split (peak 01:00-04:00 + 06:00-10:00 UTC weekdays): off-peak .15/.003/.60, peak .30/.006/.20. Netra wins on output (flat .50 beats .60/.20). OG wins decisively on cached input - 8-17x cheaper (.003-0.006 vs .05); OG discounts cache ~50x off fresh vs Netra's 4x. For the user's cache-heavy 65k-context agent loops OG is ~5x cheaper per turn. Corrected earlier framing that overstated Netra's cache advantage. Noted Netra's flat pricing benefits Indonesian WIB timezone since OG peak hours = 08:00-11:00 and 13:00-17:00 WIB."
+}

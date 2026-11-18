@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-paper-materials-pack",
+  "timestamp": "2026-09-30T03:13:43.144945+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\PAPER_MATERIALS.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-paper-materials-pack",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "PAPER_MATERIALS.md assembled (paper-oc input pack): venue facts (Nov 12 deadline, writeup format, unpublished->arXiv-after sequencing, 5 unknown criteria), Leg 1 token economics FINAL (T2: C 15.68x / C-win 6.74x / C-oc 5.41x, 180 runs \\.3428), Leg 2 harness-artifact case study FINAL (frozen state root cause, R3fix A 12/12 Wilson lower 0.758, QMS chain, lessons), Leg 3 zero-inhibition F1 FINAL (23/24 early adoption, 1/27 genuine failure, nudge no benefit), Leg 4 Gemma placeholders (r3fix_a + pilot pending), writeup skeleton. No new specialist spawns (board labels acknowledged as cosmetic; substance reconciled). Still holding for user Kaggle smoke output."
+}

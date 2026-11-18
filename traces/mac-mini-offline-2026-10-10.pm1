@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "mac-mini-offline-2026-10-10",
+  "timestamp": "2026-10-11T13:38:49.771303+00:00",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "duration_s": 60,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "mac-mini-offline-2026-10-10",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................-.--...-........--.-..-.........................................................................-.--...-",
+  "action": "Mac mini offline - cannot SSH. Vision capability code deployed but cannot verify. Admin invitation logic explained: admin baru tinggal di-invite ke group Telegram review, tidak perlu registrasi khusus."
+}

@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-09-28T00:00:00Z",
+  "agent": "orchestrator",
+  "category": "infrastructure",
+  "slug": "verifier-session-compaction-limit",
+  "severity": "minor",
+  "summary": "Resuming reusable verifier session ver-1 (ses_f20761999ffeap344PiKk0DOdy) for G8 independent verification errored: 'Conversation history too large to compact - exceeds model context limit'. The board listed it as reusable but the session is at capacity and cannot be resumed.",
+  "root_cause": "ver-1 accumulated session history across E6/G7 verification work beyond what the model's context window allows after compaction; background-job-board reusability does not account for context-limit state.",
+  "what_i_did_wrong": "Trusted the board's 'reusable' label without accounting for the prior resume failure; the first resume attempt of ver-1 for G8 already hit this error and the session should have been treated as exhausted.",
+  "corrective_action": "Dispatched a FRESH verifier session (no task_id) for VER-G8-001 with a self-contained verification spec. Future: when a resume fails with compaction/context-limit errors, record it immediately and route subsequent objectives to a fresh session instead of retrying the same session.",
+  "status": "closed"
+}

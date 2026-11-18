@@ -1,0 +1,39 @@
+{
+  "type": "validation_failure",
+  "timestamp": "2026-09-15",
+  "agent": "orchestrator",
+  "task": "Task 009A - F Sufficiency Repair + Oracle + Free Pilot Revalidation",
+  "category": "instrument_calibration_failure",
+  "severity": "high",
+  "verdict": "VALIDATION FAIL",
+  "summary": "Two independent defects found. (1) The oracle reference extractor over-extracts cue-word sentences, producing 19-29 'required items' per boundary, so L3=0.0000 for EVERY arm including the full transcript - the instrument cannot discriminate. (2) The repaired F sufficiency contract did not change model behaviour: F still emits 0 actionable items on all 10 boundaries despite transcripts containing constraints, decisions, and dependencies.",
+  "defect_1_oracle": {
+    "description": "Reference extractor matches every sentence containing a cue word and treats it as required state, without filtering to what is actually required for continuation.",
+    "evidence": "L3 by arm: A=0.0000, B=0.0000, C=0.0074, F=0.0000. The full transcript (richest possible representation) scores 0.00, which proves the reference is miscalibrated rather than the representations being inadequate.",
+    "required_items_per_boundary": [4, 26, 23, 29, 19, 28, 29, 28, 19, 21],
+    "root_cause": "Cue-word matching without a relevance filter or per-field cap. The extractor conflates 'candidate state' with 'required state'.",
+    "stop_condition": "oracle cannot independently score cases"
+  },
+  "defect_2_f_repair": {
+    "description": "The F sufficiency contract (2271 chars, verified present in the prompt) did not change the model's output. F emits empty arrays for all actionable fields.",
+    "evidence": "F actionable-field totals across 10 boundaries: active_constraints=0, commitments=0, pending_decisions=0, unresolved_questions=0, known_failures=2, relevant_dependencies=0. Mean F fields 3.0/10 vs Pilot A 3.3/10 (no improvement). Transcripts contain the state: constraint cues 2-30, decision cues 0-7, dependency cues 3-29 per boundary.",
+    "root_cause_hypothesis": "Qwen2.5-3B is too small to follow a 2271-char contract reliably. The model satisfies the schema (emits all keys) while leaving the arrays empty - schema compliance without content compliance.",
+    "stop_condition": "required-state coverage cannot be determined"
+  },
+  "what_worked": {
+    "coverage_gate": "shadow_coverage.py is task-relative and correct: omitting irrelevant fields passes, omitting required elements fails, plant_omission() detects planted gaps. 46/46 tests pass.",
+    "oracle_independence": "All independence constraints satisfied: no arm identity, no token count, no field count, no producer/consumer self-report.",
+    "boundary_safety": "All 6 checks pass. No live-session mutation. Experiment 001 unchanged.",
+    "pipeline": "40/40 executions, 0 inference failures, 0 parse failures, $0 cost, 44m42s."
+  },
+  "test_gap": "The 46 new tests pass because they test the contract TEXT and the gate MECHANICS, not the model's compliance with the contract. A model that ignores the contract entirely still passes every test. This gap is itself a finding.",
+  "required_fixes": [
+    "Recalibrate the oracle reference extractor: filter cue-word matches to items actually required for continuation; cap per field; require discriminative specificity (HIGH)",
+    "Fix F compliance: use a larger model, restructure the prompt as a per-field checklist with explicit extraction steps, or add a post-generation validation loop that re-prompts on empty required fields (HIGH)",
+    "Add a contract-compliance test that asserts the model populates required fields when the transcript contains them (MEDIUM)",
+    "Add an oracle sanity check: the full transcript must score above a floor; if not, the reference is miscalibrated (MEDIUM)"
+  ],
+  "corrective_action": "Stopped per the task's STOP CONDITIONS. No automatic repair attempted. Control returned to the user. Do not proceed to the paid replication.",
+  "cost": 0,
+  "commit": "c8404b7"
+}

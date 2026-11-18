@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "kala-bible-cleanup-task",
+  "timestamp": "2026-09-26T12:40:35.727522+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1100,
+  "tool_calls": 12,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\build_cleanup.py",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\task_cleanup.py",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\out_cleanup\\kala-bible-cleanup\\1\\gpt-6-astra\\3236732\\kala_cleanup.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kala-bible-cleanup-task",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Fed Astra BOTH documents as-is (novella 36k chars + KALA bible 144k chars) in private task kala-bible-cleanup; produced 61k-char Bible Cleanup Directive: cross-reference verdict table with quotes from both docs (17 UNSOURCED flags incl. spring-evening vs autumn chronology, Foundersmonth prologue-header claim), 55 numbered cleanup directives (38 AUTHOR-DECISION), pressure dataset rebuild proposal (0.81-0.77=0.04-not-0.15 fix, seasonal-reference vs annual-minimum distinction), 12-month calendar proposal with absolute-day rules, prioritized decisions ledger."
+}

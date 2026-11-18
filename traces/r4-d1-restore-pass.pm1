@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "r4-d1-restore-pass",
+  "timestamp": "2026-10-13T11:40:08.527943+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1200,
+  "tool_calls": 15,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\d1_restore.sh",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\r4_d1demo.sh"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "r4-d1-restore-pass",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "D1 restore rewritten snapshot-based (SHA256SUMS verify + counts.json verify + billing/bench/verify-only modes); naive prefix-DELETE script superseded; demo PASS: damage 111277 rows 2027/02 -> unbilled=1 -> snapshot restore -> 1464593|34895128580 -> untouched components verified -> gates green. Evidence: d1_restore_demo_20261013T113359Z.md"
+}

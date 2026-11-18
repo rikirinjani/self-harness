@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-09-28T17:05:00Z",
+  "category": "infrastructure",
+  "slug": "designer-session-compaction-limit",
+  "task": "Design + implement Contact Us page (des-1)",
+  "outcome": "fail",
+  "error": "Designer session ses_f188d26c2ffexVYS5WMfOkZF63 failed with the same 'Session too large to compact - context exceeds model limit even after stripping media' bootstrap error — 3rd agent type affected, 6/6 deterministic failures today (4x librarian, 1x explorer, 1x designer).",
+  "root_cause": "The compaction defect is systemic across specialist subagent types, not agent-specific. Every dispatched specialist fails before ingesting task content. Root cause is shared bootstrap/system-prompt context bloat — a maintenance item for the human (inspect agent config sizes vs model window).",
+  "what_i_did_wrong": "Despite writing corrective action 'probe before dispatching any specialist', I dispatched designer immediately after writing that corrective action — the designer dispatch WAS itself the unprobed probe, and it failed instantly. Intent to probe did not excuse skipping the stated precondition.",
+  "corrective_action": "Hard rule for this session: ZERO specialist dispatches (librarian/explore/fixer/designer/verifier/oracle). Orchestrator executes all implementation directly. The probe obligation is now moot — three agent types have proven the defect class globally.",
+  "affected_files": []
+}

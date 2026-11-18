@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "save-non-ukom-batch",
+  "timestamp": "2026-10-12T10:00:48.782987+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 3,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "save-non-ukom-batch",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Saved 163 non-UKOM unresolved queries (Oct 1-11) with draft answers to batch_acc_non_ukom_oct1-11.txt. Admin can review and use /acc or /edit for each R-ID."
+}

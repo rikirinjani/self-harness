@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-n1-batch5-rescore-apply",
+  "timestamp": "2026-09-28T03:28:33.147197+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1200,
+  "tool_calls": 24,
+  "key_files": [
+    "api/drugs.json",
+    "rag-queries/curation/batch5_rescore_adjudication.json",
+    "rag-queries/curation/batch5_rescore_draft.json",
+    "rag-queries/curation/batch5_rescore_draft.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-n1-batch5-rescore-apply",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "N1 applied: user approved 11 vetted changes (8 raises, 3 drops) from 36-proposal batch-5 rescore; scripted apply with pre-check (11/11 currents match) + git diff verified (exactly 11 changed lines, no formatting noise); 25 questionable proposals demoted to open questions with reasons; adjudication record written; committed 767d1d9 and pushed"
+}

@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "reconcile-path-a",
+  "timestamp": "2026-10-10T12:34:29.699089+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 6,
+  "key_files": [
+    "khanza_report.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "reconcile-path-a",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Reconciled fix-1 (Path A real Khanza HMS integration): verified khanza_report.json pass. E2E Java consumer: 512 encounters, 321 distinct billed visits, 2722 billing rows, Rp 179,151,063.50 revenue, 12.2ms/visit. 321/321 arithmetic checks pass. Key discovery: VPS #2 runs MySQL 8.4.11 Ubuntu, not MariaDB 11.8. root@localhost switched to caching_sha2_password empty-pw for TCP JDBC."
+}

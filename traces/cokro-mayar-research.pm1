@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "cokro-mayar-research",
+  "timestamp": "2026-10-02T10:48:34.951065+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 12,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\RESEARCH-MAYAR-2026-10-02.md",
+    "C:\\Users\\think\\self-harness\\failures\\2026-10-02-subagent-librarian-compaction-mayar-research.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "cokro-mayar-research",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Mayar.id gateway research completed orchestrator-direct after librarian lane compaction failure (2 spawns); wrote URL-cited research report with pricing/fees/recurring-billing/API/webhook-signature-gap/KYC/integration outline/FIT-WITH-CAVEATS verdict; recorded librarian lane failure record"
+}

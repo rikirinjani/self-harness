@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "n6-4-batch",
+  "timestamp": "2026-10-02T00:53:16.942521+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3600,
+  "tool_calls": 60,
+  "key_files": [
+    "rag-queries/curation/n6_batch4_scope.json",
+    "rag-queries/curation/label_sourcing_n6_batch4.json",
+    "rag-queries/curation/n6_batch4_resolutions.json",
+    "api/drugs.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "n6-4-batch",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........-.--...-........................................-.--...-",
+  "action": "N6.4 complete: mechanical scope (52 cells/42 drugs), DailyMed SPL fetch v1-v4 (setid ranking, HL7 title/content/flat section parsing, rx two-pass gate), phrase-search evidence for 15 dims, adjudication = 7 cell changes + 2 specials (amlodipine HR -> none, lovastatin nnt_mace_5yr = 50 from LIPID label rates) + 45 keeps; evidence commit cfc65bc, user-approved apply 1da2dd4; verification 352/352 grid, scorer suites, 18/18 audit smoke; flags: PPI cdi spread 1/1/1/2/3, terazosin/propranolol electrolyte kw-inflation, ACEi HR strings for N6.5"
+}

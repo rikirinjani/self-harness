@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "dr-fix-m25-los-doc",
+  "timestamp": "2026-10-07T00:06:24.794885+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "Project_v2/Deers-Rock/docs/benchmarks/los-validation.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dr-fix-m25-los-doc",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................................................-.--...-........................................-.--...-",
+  "action": "Epic II M2.5: created docs/benchmarks/los-validation.md — documents 3-7 day LOS (4320-10080 ticks, 1 tick=1min, avg 5d), compares vs MoH RI Tier A 4-6 day data, marks formal validation as ongoing (Epic III/ADR-009). Commit 74aa6dd."
+}

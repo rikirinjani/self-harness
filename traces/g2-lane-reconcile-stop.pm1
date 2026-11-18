@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "g2-lane-reconcile-stop",
+  "timestamp": "2026-10-11T23:42:47.875061+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "g2-lane-reconcile-stop",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................................................................................................-.--...-",
+  "action": "Reconciled G2 tool-build lane closure: verified crash log clean (no active checkpoint), retrace scanner passed with 0 untraced project files (3708 traces loaded). Confirmed G2 lane complete - 6/6 tool files on-box and verified, G2 composite gate passed, orchestrator parked at Phase 5 Stage B (stageB_B1, expected). No source changes made; lane closed per orchestrator instruction."
+}

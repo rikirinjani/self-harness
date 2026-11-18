@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "task026-jev-advisory-close",
+  "timestamp": "2026-09-23T00:53:58.070969+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 8,
+  "key_files": [
+    "morse/experiments/pm1-rx/TASK026_JEV_ADVISORY_NOTE.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task026-jev-advisory-close",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Filed Jev advisory note to MemPalace (mine), failure record, retrace clean 0 untraced, crashlog checkpointed; Task 026 still at FIRST STOP awaiting human protocol approval"
+}

@@ -1,0 +1,36 @@
+{
+  "recorded": "2026-10-24",
+  "session": "2026-10-24-opencode-rework-r1-r7",
+  "failures": [
+    {
+      "id": "F1",
+      "what": "fixer subagent for R3 (analyze_retrieve_log) terminated twice with no result (task ses_e9292345affegPPym8X4pwxitj, ses_e92616dadffe0TJaayoAzH2Tp)",
+      "root_cause": "unconfirmed harness-side termination; both attempts died before any file edit appeared (worktree showed no analyze_retrieve_log.py changes either time). Long brief + large multi-doc read set is the suspected trigger, not proven.",
+      "recovery": "orchestrator implemented R3 directly; all 5 required fixes delivered, test_e6_fixtures.py 23/23 PASS"
+    },
+    {
+      "id": "F2",
+      "what": "cross-lane race: lane B's seeded-bug restore (git checkout -- api_server.py) reverted lane A's concurrent R1 edits to api_server.py mid-session",
+      "root_cause": "orchestrator allowed a shared-worktree lane to run destructive git restore on a file another lane owned; no per-lane file ownership enforcement",
+      "recovery": "lane A detected the revert (md5 changed unexpectedly), re-applied and re-validated; orchestrator confirmed final md5 c81400229e42cb432a7f3cb742a18fe4 and re-ran both suites (exit 0). Process fix: lanes never run mutating git commands; only the orchestrator commits."
+    },
+    {
+      "id": "F3",
+      "what": "R6 first suite pass showed 4 failures (e1/e2/e5 exit 1, bm25 ModuleNotFoundError); a later isolated e5 rerun still failed step 8 with 'DEEPSEEK_API_KEY not set'",
+      "root_cause": "two stacked causes: (1) untracked eval/ + scripts/ artifacts (layer1_acceptance_test.py, judge_prompt_v4.py, g6_e3_canary.json, g6_e5_seed.py) exist only in the main checkout, so worktree runs missed them; (2) the isolated e5 rerun was launched from a fresh shell without the .env-preloaded process env, so api_server saw no DEEPSEEK_API_KEY and the persona assertions failed",
+      "recovery": "copied the untracked eval/ (376 MB) and missing scripts/ files into the worktree (untracked, not committed); re-ran all 10 suites in ONE preloaded-env process -> 10/10 exit 0. Lesson recorded: suite runs needing env must run inside the preloaded process."
+    },
+    {
+      "id": "F4",
+      "what": "kaggle datasets create failed with a non-JSON API response (BOM in metadata was fixed first, then the create endpoint itself kept failing) while datasets VERSION of an existing dataset worked",
+      "root_cause": "new-dataset creation quota/endpoint rejection (exact server message unavailable through CLI 2.2.4); versioning unaffected",
+      "recovery": "uploaded the built table as version 3 of the existing cokro-r7-input dataset (--dir-mode zip) and pointed the kernel at it"
+    },
+    {
+      "id": "F5",
+      "what": "R7 needed five kernel iterations (v1 ERROR after 7.8h, v2 ERROR, v4 ERROR, v5 COMPLETE-with-all-phases-failing, v6 success)",
+      "root_cause": "all self-inflicted harness bugs, each root-caused from fetched logs: (1) table dir is embeddings.lance not embeddings; (2) bench child opened window.json for WRITE before reading it -> truncated -> JSONDecodeError (this one also killed v1's phases and was invisible there); (3) dl.min.io blocked by Kaggle proxy -> switched to moto from PyPI; (4) copytree nested the table one level too deep; (5) my normalization rmtree'd the destination while the source was inside it; (6) proxy stripped Content-Length and re-chunked, which lance's S3 client rejects; (7) moto 5.x module path changed",
+      "recovery": "v6 measures 17/17 phases rc=0; the 7.8h embedding from v1 was salvaged (vecs + built table) and reused by all later kernels, so nothing was re-embedded"
+    }
+  ]
+}

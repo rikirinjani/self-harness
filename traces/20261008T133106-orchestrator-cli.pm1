@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261008T133106-orchestrator-cli",
+  "timestamp": "2026-10-08T13:31:06.961866+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "kaggle-ai\\niji_prompts_adelinde.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261008T133106-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Corrected Niji-7 param set after user error '--oref is not compatible with --niji 7': my claim that omni-reference worked on Niji 7 was wrong (verified V7-lineage feature, unverified on Niji 7 specifically). Rewrote consistency workflow to seed-reuse + verbatim facial anchors + strengthened --no negatives; cheet-sheet/migration note now mark --oref/--ow and --q as NOT supported; removed stale --cref refs in expressions intro."
+}

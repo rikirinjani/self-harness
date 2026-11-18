@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261009T081759-orchestrator-cli",
+  "timestamp": "2026-10-09T08:17:59.392796+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 60,
+  "tool_calls": 0,
+  "key_files": [
+    "docs/CODEX-E2E-REPORT.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261009T081759-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........................-.--...-........................................-.--...-",
+  "action": "CODEX↔DR E2E report written: 3 APIs used (/api/encounters, /api/patients, /api/charts), 394 tests pass, 14/14 E2E tests (38s @ tick 5700), INA-CBG parity verified (I10→K-1-01-I/5M IDR), 8 findings documented (2 P0 blockers: no outcome, no severity data)."
+}

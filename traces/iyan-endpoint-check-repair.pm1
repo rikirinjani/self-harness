@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "iyan-endpoint-check-repair",
+  "timestamp": "2026-09-25T06:12:14.323043+00:00",
+  "agent": "coordinator",
+  "outcome": "partial",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\.config\\opencode\\opencode.jsonc",
+    "C:\\Users\\think\\.config\\opencode\\oh-my-opencode-slim.json"
+  ],
+  "failure": {
+    "category": "provider-outage",
+    "severity": "high"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "iyan-endpoint-check-repair",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........--.-..-.........................................-.--...-.........................--...--........-.--...-",
+  "action": "Endpoint health check on iyan-router after making it the OMO default: 401 'This account credential was rejected' on all chat completions (key still authenticates /v1/models, so upstream inference account was rejected, not a bad key). Probed all 9 configured providers: ONLY DeepSeek works (deepseek-chat/v4-flash/v4-pro all OK ~0.6-1.1s, tool-calling verified). Others: iyan 401, ollama-cloud 429 monthly limit, nvidia list-OK but inference 500/timeout, atria odd response format, tokenrouter 503, zai 429 insufficient balance, xiaomimimo 402, opencode-go 403, openai no credits. Repaired config: preset iyan->deepseek (8 agents -> deepseek-v4-flash), default model ollama-cloud/glm-5.3-flash -> deepseek/deepseek-chat, oracle -> deepseek/deepseek-v4-pro, vision reverted to pre-iyan openai/gpt-5.6-luna per user. Kept dormant iyan preset for reuse. Both configs parse valid, no active dead-provider refs. Partial: no working vision provider currently exists."
+}

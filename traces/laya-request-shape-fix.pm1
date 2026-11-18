@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "laya-request-shape-fix",
+  "timestamp": "2026-09-26T01:28:22.949335+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 16,
+  "key_files": [
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest\\run.ts",
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest\\persist.ts",
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest\\regime.ts",
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest\\strategies.ts",
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest\\dist\\run.js",
+    "C:\\Users\\think\\.opencode\\skills\\STATE.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "laya-request-shape-fix",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................---..-..........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Fixed the Laya request-shape defect and added self-guarding gates. run.ts: new buildAnswerQuestion(prompt,first,second,swap) returns {type:choice, instructions:<string>, criteria} where instructions = prompt + newline + the previous goal text (no dict); askChoice is the single live call site (state:prompt, maxRetries:0 unchanged) and jevClient.predict delegates to it. Added runFidelityProbe (20-day monotonic downtrend with price at the 20-day low; UP/DOWN asked swap=false and swap=true; both must be DOWN or exit 1 'refusing to run'; SKIP_FIDELITY_CHECK=1 skips). Added live-answer degeneracy gate (GATE_AT default 100, GATE_DISABLED=1) exiting 1 if one answer value >95%. Added entry-point guard so tests can import dist/run.js without running main. persist.ts: assertCacheNotDegenerate(file,map) exits 1 if >=200 entries and one value >98%, naming file/share and telling operator to delete; wired into regime.ts/strategies.ts via ensureRegimeCacheChecked/ensureDirectionCacheChecked (flush path uses the pure loader so exit handlers cannot trigger it). npx tsc exit 0. Verified in dist: goal:/question:/instructions:{ all 0 in run.js/regime.js/strategies.js; SKIP_FIDELITY_CHECK/GATE_AT/GATE_DISABLED/refusing to run/CACHE SANITY present. Stub harness 16/16 PASS incl. probe exit 1 when answers follow option order and exit 0 when both are DOWN; guard-check import prints exports only; direct node dist/run.js still exits 1 on missing key. Methodology untouched (mtime shows only the 4 files; prompts, parseRegimeResponse/parseDirection, cacheKey, MODEL_ID jev-latest, transactionCostsBps 0.74, startIndex 60, metrics.ts sqrt(252), poolCurves/pooledMetrics all verified unchanged). NOT deployed, no long run started, no cache data deleted (local test's two empty {} placeholders removed)."
+}

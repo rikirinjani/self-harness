@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1all-file-index",
+  "timestamp": "2026-09-23T11:23:11.598588+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1400,
+  "tool_calls": 12,
+  "key_files": [
+    "C:\\Users\\think\\PM1_ALL\\FILE_INDEX.tsv",
+    "C:\\Users\\think\\PM1_ALL\\README.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1all-file-index",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Answered user: no complete per-file index existed (MANIFEST=gather stats only, git=index of 7959 tracked only). Built FILE_INDEX.tsv: single-pass SHA-256 of all working files, 109077 files / 1082 MB / 0 errors / 1174s / 20.9 MB sorted TSV; 89 history stores (10828 files, 7380 MB) counted separately not hashed. Explained benchmark 8GB: results working content 1012.7 MB = fixture 913.0 MB (90.2 pct third-party repo checkouts) + artifacts 99.6 MB (9.8 pct incl v05 checkpoint 30.4 MB hop records 28.3 MB); disk total ~8GB because 7380 MB is duplicated .git histories of 86 embedded fixture clones (v08 541 MB + v07c 385 MB segments dominate). Committed 312cd90 with README index docs; spot-check 5/5 PASS; repo CLEAN tracked=7959."
+}

@@ -1,0 +1,12 @@
+﻿{
+  "id": "NCR-2026-10-05-SECRET-ECHO-RESEND-001",
+  "date": "20261005-145536",
+  "category": "security-hygiene",
+  "severity": "low",
+  "title": "Unredacted RESEND_API_KEY printed in chat transcript",
+  "root_cause": "First grep command on Mac Mini .env had no redaction filter; the sed redaction was only applied to the second output line, so the raw .env line (full key) was echoed to the conversation transcript before the redacted version.",
+  "what_i_did_wrong": "Sent a raw grep of a secret-bearing .env line to stdout in chat, violating the standing rule 'never read .env contents in chat; grep OK but redact keys'.",
+  "impact": "Full Resend API key (re_FWTW...) visible in this session transcript. Key is a low-privilege sending-only key; transcript access is local/controlled. No external exposure identified.",
+  "corrective_action": "All subsequent secret greps must redact in the same pipeline (sed/regex before stdout). Key pipe Mac->VPS done without echoing. Rotation optional if user desires; key is actively needed for sign-in.",
+  "status": "closed"
+}

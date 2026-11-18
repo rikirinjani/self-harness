@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261004T080203-orchestrator-cli",
+  "timestamp": "2026-10-04T08:02:03.327126+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 9000,
+  "tool_calls": 20,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\STATE.md",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\docs\\adr\\evidence\\ADR-004-10k-kaggle-v5\\longrun-report.json",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\docs\\adr\\evidence\\ADR-004-10k-kaggle-v5\\validation.log",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\docs\\adr\\evidence\\ADR-004-10k-kaggle-v5\\kernel.log",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\2026-10-04-pass-deers-rock-adr004-10k-boxfit.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261004T080203-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "ADR-004 D5 box-fit validation complete: Kaggle v5 (node --max-old-space-size=350, pinned reviewed candidate 906f245) PASS 4/4 - maxRss 417.3/450, journal 265.1/300, dischargedAfterResume 850, crashed null, ~3h, VALIDATE_EXIT=0 verified in kernel log; cross-host determinism proven (byte-identical world evolution across local Windows true-peak + Kaggle v4 unconstrained + v5 constrained); v5 evidence archived hash-verified (commit ca45991 pushed); STATE.md updated with full arc + staging open items; QMS record 2026-10-04-pass-deers-rock-adr004-10k-boxfit.json filed; awaiting owner staging decision (wipe data, flags ON, NODE_OPTIONS hardening, restart, issue #3 correction, docs URL swap)"
+}

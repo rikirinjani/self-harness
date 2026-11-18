@@ -1,0 +1,13 @@
+{
+  "schema": "failure/1",
+  "ts": "2026-10-05T12:35:00Z",
+  "agent": "orchestrator",
+  "task": "review-kronos-fixed pre-flight import test",
+  "category": "process-violation",
+  "severity": "high",
+  "summary": "Pre-flight check used importlib.exec_module on the generated task file. kaggle_benchmarks import succeeded that time (network-dependent: it raises on load_default_model other times), so the module bottom block executed review_ke_fixed.run() LOCALLY: web-dossier live fetches + model prompt calls began from this machine until the 120s timeout killed it.",
+  "root_cause": "Task modules execute their pipeline at import when kbench imports cleanly. Treated generated task source as inert data; it is not. AST/regex checks used for all other tasks were the safe pattern and were abandoned here.",
+  "evidence": "tool-output/tool_10a2b4444001RgM6U1afd9DDvd (586KB prompt echo); direct import test raises at kaggle_benchmarks/__init__.py:57 load_default_model (flaky).",
+  "containment": "Verified via kaggle b t list --all (45 tasks, newest is the intentional kronos-fork-apply-fixes): NO remote task or run was created. No local repo files touched. Up to 8 model calls may have been attempted/billed before the timeout; unverifiable from here. Stray local report file check performed.",
+  "correction": "RULE: never import/exec generated kbench task modules locally. Pre-flight = py_compile + AST structural checks + manual base64-decode verification only. Added to batch process notes."
+}

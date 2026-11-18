@@ -1,0 +1,39 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-009b-pre-final-gate-2026-09-16",
+  "timestamp": "2026-09-16T01:04:44.597462+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 5400,
+  "tool_calls": 95,
+  "key_files": [
+    "experiments/pm1-rx/harness/pm1rx/shadow_boundaries.py",
+    "experiments/pm1-rx/harness/pm1rx/shadow_safety.py",
+    "experiments/pm1-rx/harness/pm1rx/shadow_oracle.py",
+    "experiments/pm1-rx/harness/pm1rx/loopguard.py",
+    "experiments/pm1-rx/harness/tests/test_shadow_boundaries.py",
+    "experiments/pm1-rx/harness/tests/test_shadow_d3_aliases.py",
+    "experiments/pm1-rx/harness/tests/test_live_context_guard.py",
+    "experiments/pm1-rx/TASK_009B_PRE_D1_AUDIT.md",
+    "experiments/pm1-rx/TASK_009B_PRE_D2_AUDIT.md",
+    "experiments/pm1-rx/TASK_009B_PRE_D3_AUDIT.md",
+    "experiments/pm1-rx/TASK_009B_PRE_D4_AUDIT.md",
+    "experiments/pm1-rx/TASK_009B_PRE_FINAL_GATE.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-009b-pre-final-gate-2026-09-16",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "TASK 009B-PRE COMPLETE. All four issues RESOLVED. D2: boundary provenance versioned (shadow_boundaries.py + shadow_safety.py), thresholds recovered as historical facts, regeneration BYTE-IDENTICAL (sha 35e42b8e), 28 tests. D3: serialization dependence PROVEN (0.4286 vs 1.0 identical content) and REMOVED via FIELD_ALIASES canonical alias map derived from schema definitions; arm C not modified; history untouched; 18 tests incl. 2 regression tests. D1: LiveContextGuard implemented with three-state classification (READ_ONLY_VERIFIED/MUTATION_DETECTED/MUTATION_DETECTION_UNIMPLEMENTED), fingerprinting, protected paths, read-only DB write probe, snapshot_copy concurrency isolation, hard-stop escalation no auto-repair, static SQL audit; syscall auditing documented as Windows limitation; 20 tests. D4: documentary only (2357 = 2353 + 4-char placeholder; no measurement impact). FINAL GATE 10/10 PASS: git state intentional-only, Exp001 tag 8304262 unchanged, frozen hashes unchanged, historical 009A artifacts byte-identical, Pilot A boundary set byte-identical, boundary selection reproducible from committed code (CRLF-normalized sha match), C schema semantics documented, serialization dependence understood+repaired, mutation mechanism explicitly classified, 300 tests passed (234+28+18+20) no regressions. Committed 7c2ed59 on pm1-rx-v14. VERDICT: PRE-GATE PASS WITH LIMITATIONS. Task 009B NOT launched. 5 limitations documented (reference over-extraction deferred to 009B; C semantic breadth deferred to 009B; protocol criterion 5 never implemented; syscall auditing infeasible on Windows; 462-boundary census provenance still unversioned)."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "2026-09-30-economics-direction-inversion",
+  "category": "summary-interpretation-error",
+  "severity": "medium",
+  "detected": "2026-09-30",
+  "summary": "Session summaries repeatedly stated the T1/T2 economics finding INVERTED: 'context-handoff arms are 6-16x cheaper than packed context' with 'ratios vs P: C 15.68x'. The frozen artifacts show the opposite direction: the bounded PM-1 packet (P) is the CHEAPEST arm (constant ~318 chars/hop by design), and the transcript-carrying arms cost MORE (T2 per-run h250: C=18.1xP, C-win=7.7xP, C-oc=6.1xP). Detected while reconciling the Gemma pilot: P blocks are constant-size on BOTH deepseek and Gemma (318 chars/hop, byte-identical pattern), which contradicts the 'packed/expensive P' framing.",
+  "root_cause": "The ratio_vs_P direction was misread once and then carried forward in prose across sessions without re-checking against the raw sums; the term 'packed context' was wrongly attached to P (the minimal packet) instead of the transcript-carrying arms.",
+  "what_i_did_wrong": [
+    "Interpreted ratio_vs_P as 'handoff savings' instead of 'transcript-arm premium'.",
+    "Repeated the inverted framing in multiple summaries and in the PAPER_MATERIALS Leg 1 claim-shape line.",
+    "Also briefly hypothesized 'Ollama cache-adjusted usage reporting' to explain constant P reporting - wrong; the constant is the true packet size. Cross-run validation (Gemma reported vs deepseek reported: 82,000 vs 78,750 tokens) settles it."
+  ],
+  "impact": "Frozen artifacts (T1/T2/Gemma summaries) contain correct raw numbers - unaffected. Paper thesis UNCHANGED and in fact cleaner: the minimal packet sustains performance at 6-18x lower input cost than transcript-carrying contexts, replicating cross-model. Only session prose and PAPER_MATERIALS needed correction.",
+  "corrective_action": "PAPER_MATERIALS Leg 1 rewritten with correct direction and per-run normalized numbers; failure record written; all future prose uses 'bounded packet (cheap) vs transcript-carrying (expensive)'.",
+  "status": "closed - corrected same day"
+}

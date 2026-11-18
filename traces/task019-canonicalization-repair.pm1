@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "task019-canonicalization-repair",
+  "timestamp": "2026-09-19T01:08:05.072263+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 25,
+  "key_files": [
+    "experiments/pm1-rx/harness/pm1rx/atomic_matcher_v2.py",
+    "experiments/pm1-rx/canon_diagnostic.py",
+    "experiments/pm1-rx/TASK_019_MATCHER_AUDIT.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task019-canonicalization-repair",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Task 019 canonicalization repair: expanded synonym groups (admin, delete, create, fix, deploy, update), removed management group, fixed pipeline order, iterative _canon_token. Convergence 30/30, adversarial 10/10, idempotence 85/85, 94 tests pass. Commit 01b0b4a."
+}

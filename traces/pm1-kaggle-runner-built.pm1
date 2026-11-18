@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-kaggle-runner-built",
+  "timestamp": "2026-09-30T03:09:40.356788+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\run_pilot.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\make_kaggle_notebook.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\kaggle\\gemma4_t4x2_runner.ipynb",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\kaggle\\pm1-harness-gemma.zip"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-kaggle-runner-built",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................---..-..........................-.--...-........................................-.--...-",
+  "action": "Kaggle T4x2 free runner BUILT: (1) run_pilot.py --r3-conditions flag added + dry-run validated (A-only and default-both); (2) kaggle/gemma4_t4x2_runner.ipynb generated via make_kaggle_notebook.py, valid nbformat 4, 7 cells: sanity / llama.cpp pinned-b10679 install (prebuilt->source fallback, dataset reuse) / gemma-4-26b-a4b QAT Q4_0 GGUF download (google|ggml-org fallback) / llama-server launch (ngl99 c65536 cache-reuse256 fa-on jinja, health+test call) / harness runner (smoke|r3fix_a|pilot, PM1 env to localhost) / results zip + binary persistence; (3) kaggle/pm1-harness-gemma.zip packaged clean (run_pilot.py + harness/*.py, no pycache). Design per lib-2 feasibility report: vLLM sm75 showstopper -> llama.cpp only; 26B-A4B single-session; resume via skip-completed. Board note: lib-1 error (superseded probe), lib-2/3 consumed - no board-clearing tool on my side; substance reconciled. User next: phone-verify Kaggle, upload dataset, import notebook, smoke first."
+}

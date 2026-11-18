@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "niji-mj-local-research",
+  "timestamp": "2026-10-08T13:46:40.006288+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "niji-mj-local-research",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--.........................................................................................................-.--...-",
+  "action": "Researched Niji/Midjourney local generation: Niji is hosted-only, no local weights exist. Best laptop paths identified: ComfyUI+AnimagineXL for 6GB+ VRAM, Fooocus for 4GB, FastSDCPU for CPU-only. Key finding: anime models use Danbooru tag prompts, not natural language."
+}

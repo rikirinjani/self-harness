@@ -1,0 +1,11 @@
+{
+  "category": "infrastructure",
+  "severity": "medium",
+  "root_cause": "Specialist subagent dispatch failed twice with 'Upstream request failed: Insufficient account funds' — the subagent model account has no balance. Both sessions (fix-1/ses_f3537fe96ffeM2TezmefJs6Uu3 for Lane A, fix-2/ses_f3537b0d9ffekvfQ4McpIBUXV5 for Lane B) errored before execution and are marked non-reusable by the Background Job Board.",
+  "what_actually_happened": "Two task() calls were issued in parallel to dispatch Lane A (embed 5 models) and Lane B (dedup + judge pilot) of NEXT-TASK-AB-PREP.md. Both returned the same insufficient-funds error immediately. Verified afterward that eval/ab_plan/ was never created and git status showed no modifications — the errored sessions performed zero work and left no partial writes.",
+  "impact": "Delegation path for the A/B prep task is unavailable until the subagent account is topped up. No data or artifacts lost; no partial changes to reconcile.",
+  "recovery": "Orchestrator executes both lanes directly (modal_embed.py timeout/commit hardening, VPS embed launch, dedup + 200-pair pilot, resume test). Error sessions left unreused per board rules.",
+  "prevention_applied": "Verify subagent account balance before dispatching parallel lanes; after any errored writer session, always confirm no partial writes before proceeding (done: none found).",
+  "task": "A/B Benchmark Prep (NEXT-TASK-AB-PREP.md)",
+  "evidence": "task results: 'Upstream request failed: Insufficient account funds' x2; git status clean; eval/ab_plan absent"
+}

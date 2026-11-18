@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-run-recovery-status-check",
+  "timestamp": "2026-09-27T20:36:14.492619+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 900,
+  "tool_calls": 18,
+  "key_files": [
+    "rag-queries/curation/batch5_rescore_draft.json",
+    "rag-queries/curation/batch5_rescore_draft.md",
+    "validation/v3-scenarios.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-run-recovery-status-check",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Recovered aborted run: verified position (HEAD d5789c4 pushed; N1 draft untracked awaiting approval), reconciled failed specialist dispatches (fix-3..fix-8 session-too-large, imp-1 rate-limit), found imp-2 N3 partial (only v3-scenarios.json written) and imp-3 N2 completed with zero output on disk; user stopped the run"
+}

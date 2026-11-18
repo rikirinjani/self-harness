@@ -1,0 +1,16 @@
+{
+  "timestamp": "20260928-041647",
+  "task": "G6-E5 Seeded Regression Validation - implementation lane",
+  "category": "implementation-defect",
+  "severity": "medium",
+  "what_went_wrong": "First version of scripts/g6_e5_monitor.py fired spurious category-A page alerts (a_downstream, a_event_abstains) on the events_missing and schema_unknown seeded cases, where the frozen oracle allows only category C. verify_g6_e5.py caught it: step 3 exact-match FAIL, 7/8 steps green.",
+  "root_cause": "Event-derived A rules compared verify_store() counts without gating on telemetry evaluability: missing file yields abstain_events=0, unknown-schema line short-circuits verify_store before abstain counting yielding 26 != 27. Counts are undefined/incomplete precisely when category C already pages, so A duplicated C.",
+  "what_i_did_wrong": "Lane prompt specified rule (d) events abstain_events != 9*n_runs without specifying a fail-closed/evaluable guard; lane self-tests covered single-category firing but not cross-category suppression, which only the independent harness oracle exposed.",
+  "detection_worked": "Independent hardcoded oracle in verify_g6_e5.py (exact (category,severity) set equality) detected the defect before acceptance.",
+  "corrective_action": "Bounded fix dispatched: gate a_downstream/a_event_abstains on events_evaluable (lines>0, strict_valid==lines, no unexpected schema), keep results-derived A rules primary, expose suppression in observed.abstention; full harness rerun required.",
+  "fix_verified": "Fix landed in scripts/g6_e5_monitor.py; full harness rerun: ALL G6-E5 TESTS PASS, 14/14 cases exact-match; independently recomputed by ver-1 (VER-G6-E5-001, APPROVE).",
+  "files": [
+    "Project_v2/LocalNotebook/rag-service/scripts/g6_e5_monitor.py"
+  ],
+  "outcome": "fixed"
+}

@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "glm-quota-check",
+  "timestamp": "2026-09-25T06:38:03.962140+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "glm-quota-check",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................................................................-.--...-",
+  "action": "Queried GLM quota dashboard backend at https://gdash.ajianaz.dev (client-side Svelte SPA; extracted API contract from bundled /assets/index-o_evpaHQ.js). Endpoint is GET https://glm.ajianaz.dev/stats with headers Authorization: Bearer <key> and x-api-key: <key>; dashboard stores key in localStorage under glm-dash.apikey. /me /usage /quota /key all 404. Result for key glm_...xgs: owner name 'riki', nominally bound model glm-5.3-flash (glm-5.3 also works, so binding is soft), quota 15,000,000 tokens per 5h rolling window, used 1,970 / remaining 14,998,030 (0.013%), window 06:24:27-11:24:27 UTC, expires 2026-10-25, is_expired false, 22 total requests, total_lifetime_tokens 1970 == current window meaning first-ever use occurred today despite created_at 2026-03-27."
+}

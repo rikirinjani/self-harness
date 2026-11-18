@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "n6-2b-sourcing",
+  "timestamp": "2026-10-01T08:18:22.929125+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3000,
+  "tool_calls": 34,
+  "key_files": [
+    "rag-queries/curation/label_sourcing_n6_batch2b.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "n6-2b-sourcing",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "N6.2b sourcing: ddi block (13 E-drops + 22 B-conflicts, 27 distinct drugs) via DailyMed Rx SPLs + openFDA prescription-filter labels (verbatim Section 7 quotes; OTC-monograph + truncation pitfalls routed to brand/openFDA). Proposes 11 changes + 17 keeps with rank-order preservations (PPI 3,3,2,1; H2RA 3,2,1; ARBs 1). Committed ea205c1 (evidence only, no drugs.json changes per N6 approval gate)"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "2026-09-30-paper-oc-lane-unavailable",
+  "category": "specialist-lane-unavailable",
+  "severity": "low",
+  "detected": "2026-09-30",
+  "summary": "paper-oc specialist lane (pap-1) errored on dispatch: its configured model 'opencode/deepseek-v4-flash-free' no longer exists on the provider ('Model not found'). The user had explicitly ordered the paper drafted ('do the paper'), so the coordinator drafted the writeup directly - a role-boundary crossing (Coordinator drafting publication work) sanctioned by the user's explicit instruction and forced by the dead lane.",
+  "root_cause": "specialist agent model configuration references a delisted provider model",
+  "impact": "none on output quality - the coordinator drafted from the verified PAPER_MATERIALS.md pack with all numbers cross-checked; paper-oc was not recoverable (errored sessions are not reusable per board policy)",
+  "corrective_action": "coordinator drafted kaggle/GEMMA_PAPER_WRITEUP.md directly; numbers verified against PAPER_MATERIALS.md; user should fix the paper-oc agent model config for future sessions",
+  "status": "closed - coordinator fallback delivered"
+}

@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "phase-f-coupling-impact-assessment",
+  "timestamp": "2026-09-21T06:44:44.114351+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "docs/experiments/PHASE-F-ECONOMY-CLIMATE-COUPLING-IMPACT.md",
+    "qms/records/nonconformities/2026-09-21-ncr-001-climate-coupling-unit-error.json",
+    "src/sectors/climate.ts",
+    "src/sectors/economy.ts",
+    "experiment-results/phase-f/statistical-summary.json",
+    "experiment-results/phase-f/report.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "phase-f-coupling-impact-assessment",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................--.-..-.........................................-.--...-",
+  "action": "Phase F economy-climate coupling IMPACT ASSESSMENT (investigation only, no frozen artifact modified, no rerun). Defect site climate.ts:69: emissionsFactor=0.00005 applied to USD gdpDelta -> 7.289e7 Gt/tick vs 37 Gt baseline = 1.97e6x. Mechanism COMMON-MODE (both arms get identical +4.65e6 ppm at tick3, 0.011% apart) but COMPARISON-DESTROYING: eventChance saturates at 0.5 in both arms by tick 3, differential exposure window collapses from counterfactual 20 ticks to observed 3 ticks (85% loss). Frozen Phase F stats confirm: directionConsistency 0/0/0/0.2 vs pre-registered >=80%; 4/5 seeds all-zero deltas; firstEventTick identical across arms for all 5 seeds. Phase F report honestly self-classifies as 'E - Null stochastic result' and states criterion NOT MET - no overclaim; defect renders the honest null UNINTERPRETABLE. Classification: pathway-validity impact. Recommendation: C (correct + new Phase F version) with D-component (dimensional-consistency audit of all cross-sector couplings)."
+}

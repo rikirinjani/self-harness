@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "kaggle-run-triage-v2",
+  "timestamp": "2026-09-25T08:05:44.564512+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1500,
+  "tool_calls": 18,
+  "key_files": [
+    "api/drugs.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kaggle-run-triage-v2",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "DQF Kaggle run triage: pulled run log, confirmed T4x2 (2x Tesla T4 15.6GB) + Mistral-7B loaded OK, diagnosed FileNotFoundError (dataset not mounted at run time despite metadata attach); verified dataset rikirinjani/dqf-l3-judge-input present (147KB); pushed v2 notebook with fail-fast input check before model load to protect GPU quota"
+}

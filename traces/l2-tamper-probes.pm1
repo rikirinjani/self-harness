@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "l2-tamper-probes",
+  "timestamp": "2026-10-02T03:15:04.923092+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 12,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\tamper_probes.py",
+    "C:\\Users\\think\\self-harness\\failures\\2026-10-02T02-20-00-process-probe-harness-late-binding.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "l2-tamper-probes",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Adversarial tamper probes vs real verify-change gate: v1 harness had late-binding bug (tamper ran at list-construction, fresh_store overwrote with pristine -> false 'gate accepts tampering'); v2 fixed, 5/5 correct (control PASS; checksum/stale/coverage/orphan all REJECT with exact expected reasons); failure record written"
+}

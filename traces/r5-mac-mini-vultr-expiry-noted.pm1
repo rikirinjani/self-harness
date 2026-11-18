@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "r5-mac-mini-vultr-expiry-noted",
+  "timestamp": "2026-10-23T13:00:48.873919+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 5,
+  "key_files": [
+    "khanza-r5/docs/asset_export_20261023.md",
+    "khanza-r5/docs/khanza_session_handoff_20261017.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "r5-mac-mini-vultr-expiry-noted",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Recorded owner deadline: mac-mini-vultr is TEMPORARY - the new Vultr account runs on a \\ free credit expiring ~2026-11-22 and the box will be decommissioned by ~2026-11-20 (28 days). Written into the migration doc (expiry warning block with consequences: older vultr box stays the durable asset home, keep .vps.env on it, pull any evidence from mac-mini-vultr into the repo before the deadline, prefer old box for runs near it), the session handoff connection block, and the .vps-mac-mini.env header. Commit c826b54. No action needed before decommission as long as the old box lives; hardening/verification on the temp box is reproducible from the runbook."
+}

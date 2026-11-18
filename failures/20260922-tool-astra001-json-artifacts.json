@@ -1,0 +1,17 @@
+{
+  "record_type": "failure",
+  "fail_id": "FAIL-2026-09-22-ASTRA001-JSON-ARTIFACT",
+  "timestamp": "2026-09-22",
+  "agent": "orchestrator",
+  "category": "tool",
+  "severity": "low",
+  "summary": "ASTRA-001 evidence_hashes.json was written as two concatenated JSON arrays with a UTF-8 BOM; REQUEST_LEDGER.json also carried a BOM. Additionally an earlier RETRY_ANALYSIS.md write failed with an unterminated-string JSON parse error, and the first draft of tests/test_astra001.py raised SyntaxError from backslash escapes in a non-raw docstring.",
+  "root_cause": "Artifact writes used PowerShell-style multi-array dumps and BOM-prefixed encoding without a single-JSON-doc validation step; docstring paths were not raw strings.",
+  "what_i_did_wrong": "Failed to validate each written JSON artifact as a single parseable document immediately after write; wrote a non-raw docstring containing Windows paths.",
+  "detection": "Close-out verification: json.load raised 'Unexpected UTF-8 BOM' and 'Unexpected data' (two arrays); test run raised SyntaxError unicodeescape; one unittest regex mismatch on backtick-quoted `0`.",
+  "corrective_action": "Merged hashes file into one valid JSON list (7 entries) and revalidated; loaded ledger with utf-8-sig; converted test docstring to raw string; relaxed never-zero regex to tolerate `0` backticks.",
+  "recurrence_prevention": "After any JSON write, immediately json.load the file; use utf-8 (no BOM) and a single top-level document; use r-docstrings for paths.",
+  "resolved": true,
+  "evidence_path": "ASTRA-001/hashes/evidence_hashes.json",
+  "linked_trace": "ASTRA-001_TRACE"
+}

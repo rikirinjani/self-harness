@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-09-22T22:37:00Z",
+  "category": "infrastructure",
+  "severity": "high",
+  "slug": "qwen3-chunks-oom-batch64",
+  "root_cause": "qwen3 Modal L4 chunks CUDA OOM at batch_size=64 across multiple slices: c2 (start=250000) tried 3.01 GiB with 19.19 GiB resident; later c0 (start=0) tried 3.26 GiB / 18.92 GiB resident and c3 (start=375000) tried 3.15 GiB / 18.94 GiB resident. expandable_segments was already set; batch 64 is simply too large for gte-Qwen2-1.5B activations on 22 GiB L4 once KV/activation peaks hit. Separate from earlier full-corpus OOM at batch 96/128 and VPS host RAM OOM during BM25.",
+  "what_i_did_wrong": "Relaunched all four qwen3 chunks at batch 64 after a single full-corpus batch-64 sample looked stable, without reducing batch for every chunk; also left supervisor qwen3 waits using pgrep patterns containing '--start' which pgrep parses as options (only safe after --). c1/c2 still running at batch 64 from earlier launches — at risk of the same OOM.",
+  "impact": "Lost c2 then c0+c3 GPU time (minutes each); supervisor qwen3 wait would have false-WARN and skipped merge until fixed.",
+  "recovery": "Set qwen3 batch_size to 32 in MODEL_REGISTRY; relaunched c2 then c0/c3 at batch 32; patched ab_embed_supervisor.sh to pgrep -f -- and to accept chunk-npy-present as completion. c1/c2 (old batch-64 clients) left running; relaunch at 32 if they OOM.",
+  "files": [
+    "scripts/modal_embed.py",
+    "scripts/ab_embed_supervisor.sh"
+  ],
+  "detection": "ps missing c2/c0/c3; embed_qwen3_c*.log OutOfMemoryError on down_proj"
+}

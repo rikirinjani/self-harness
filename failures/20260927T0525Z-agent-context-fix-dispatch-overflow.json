@@ -1,0 +1,10 @@
+{
+  "timestamp_utc": "2026-09-27T05:25:00Z",
+  "category": "agent-context",
+  "slug": "fix-dispatch-overflow",
+  "severity": "medium",
+  "what_happened": "Three fixer dispatches for the G6-E4 Phase A schema fix (fix-1/2/3; sessions ses_f1edf3fbfffe1YX6vERXmWaDwr, ses_f1edaa3c0ffeNGVAYRjM1MH3Jy, ses_f1ed99009ffetyKSoZzY25zX7t) all terminated with: 'Session too large to compact - context exceeds model limit even after stripping media'. A follow-up minimal prompt pointing at the spec file (C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\e4-phase-a-spec.md) also failed -> systemic, not prompt-size related.",
+  "root_cause": "The fixer sessions were already at or over the model context limit before dispatch; compaction could not bring them under the limit. Dead on arrival regardless of prompt content.",
+  "what_i_did_wrong": "Did not verify fixer session health before committing the Phase A plan to delegation; burned three dispatch attempts before falling back. Should have failed fast to a fresh session or direct execution after the first identical error.",
+  "action_taken": "Reconciled partial on-disk fixer edits by inspection (request_events.py, verify_g6_e1.py, run_g6_e3.py), executed Phase A directly (justified after 3 delegation failures), marked the three error sessions non-reusable, and added a failure record. Future: probe session health or prefer fresh sessions for dispatch-heavy plans."
+}

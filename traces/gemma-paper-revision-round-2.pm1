@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "gemma-paper-revision-round-2",
+  "timestamp": "2026-10-11T02:43:38.403733+00:00",
+  "agent": "paper-oc",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 14,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\kaggle\\GEMMA_PAPER_WRITEUP_REVISED.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "gemma-paper-revision-round-2",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Revision round 2 of Kaggle Gemma paper writeup to satisfy Astra review (9/25 REVISE-THEN-SUBMIT): added auditable design ledger (L1-L14) reconciling all denominators/arms/run counts; promoted matched crossed 3-model x 2-domain comparison to primary result with headline 'deferred-action reliability depends on task/state representation'; added real SWE outcomes section (edit_fix_bad/ok honest, json budget artifact vs line interface effect vs tool robust, finish=length EMPTY details); repaired references using only candidate-references.md (10 verified citations) leaving 3 REF-TODO markers where no verified citation exists; softened causal/architectural claims per claim-check; reconciled token ratio to 15.2-18.0x and cost to Vultr ledger .9339/."
+}

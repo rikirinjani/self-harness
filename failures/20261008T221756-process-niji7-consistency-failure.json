@@ -1,0 +1,11 @@
+{
+  "timestamp": "20261008T221756",
+  "category": "process",
+  "slug": "niji7-consistency-failure",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "what_happened": "Adelinde Niji 7 prompt set generated and delivered; user cannot achieve face consistency across composition changes. --oref unsupported on Niji 7 (--quality also unsupported). Seed reuse insufficient when prompt composition changes. --sref with --sw up to 1000 fails to lock face. User will consult community.",
+  "root_cause": "Over-promised on Niji 7 consistency capabilities; did not verify that --sref/--seed work across composition changes before declaring workflow complete. V7-lineage documentation says sref works but performance on Niji 7 is not guaranteed; tested only via prompt text, not actual generation.",
+  "impact": "User must await community guidance before continuing character design lane.",
+  "corrective_action": "Niji prompts still delivered with all working parameters; failure noted in trace and todo. Design lane remains open pending community response."
+}

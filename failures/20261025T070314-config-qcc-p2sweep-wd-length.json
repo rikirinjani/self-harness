@@ -1,0 +1,10 @@
+﻿{
+    "severity":  "low",
+    "timestamp":  "2026-10-25T00:03:14.8697655Z",
+    "trace_id":  "20261025T000307-orchestrator-cli.pm1",
+    "category":  "config",
+    "summary":  "kaggle P2-SWEEP v1 (pm1-qcc-invsqrt-p2sweep-20261025-1) FAILED: IndexError tuple index out of range in table_poly_model.quantise. Root cause: sweep2.py\u0027s un-tuned (A,deg) fallback synthesised a degree-2 W/D pair (2 elements) for deg=3 combos (A=7/9, deg=3 have no tuned point), which table_poly_model.quantise indexed into with des.D[des.deg-1] -\u003e out of range. Fixed by making the fallback emit W/D of length matching deg (deg 2 -\u003e 2, deg 3 -\u003e 3); re-pushed as -2 which completed.",
+    "outcome":  "fail",
+    "agent":  "orchestrator",
+    "root_cause":  "sweep2.py fallback W/D synthesis not length-matched to deg; table_poly_model.quantise assumes len(D)==deg."
+}

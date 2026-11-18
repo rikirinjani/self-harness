@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-009b-phase8-pilot-2026-09-16",
+  "timestamp": "2026-09-16T03:52:41.547745+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 5400,
+  "tool_calls": 30,
+  "key_files": [
+    "experiments/pm1-rx/pilot_009b_results.json",
+    "experiments/pm1-rx/pilot_009b_run.log"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-009b-phase8-pilot-2026-09-16",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-..........-.-.-.-.........--...--........-.--...-........................................-.--...-",
+  "action": "TASK 009B Phase 8 real-data pilot EXECUTED (10 boundaries, 40/40 executions, 45m50s, zero-cost, Vultr CPU qwen2.5:3b). Reference v2 works: 3-6 required items per boundary (vs 19-29 in 009A), currency/relevance filters functioning, 3-18 candidates rejected per boundary with recorded reasons. Parse status: A 9/10, B/C/F 10/10. L3 means: A=0.0833 B=0.0667 C=0.1250 F=0.1250. F semantic coverage: 0-0.333, mean ~0.07. DEFECT DISCOVERED DURING PILOT - STOPPED PER PROTOCOL: the containment matcher (_contains, min_overlap=0.5 forward token overlap) requires the consumer to echo reference sentences verbatim. Verified case b2: consumer reconstruction 'Search for papers on Musikalisches Wurfelspiel and install Xpktro/wurfelspiel GitHub repo' is SEMANTICALLY FAITHFUL to reference 'look for paper on Musikalisches Wurfelspiel, technical paper on music theory etc' but scores 0.4 forward (below 0.5) because the consumer compressed the trailing fragment. A faithful paraphrase test scores 0.72 forward / 0.87 backward - the matcher accepts close paraphrases but rejects compressed ones. This is an ORACLE defect (reference-side serialization dependence): the oracle evaluates whether the consumer echoed the reference sentence, not whether it preserved the semantic state. CLASSIFICATION: F6 oracle/scoring failure (containment matcher strictness). Per the no-retroactive-changes rule and the task's 'if a defect is discovered during the real-data pilot: STOP, record it, classify it, do not repair automatically' - NOT repaired in this task. Also confirmed: consumer capability limitation (3B) is real - b0 consumer produced an objective from the wrong session content entirely (F5). Artifacts fetched: pilot_009b_results.json (157KB), pilot_009b_run.log, f_capability_results.json."
+}

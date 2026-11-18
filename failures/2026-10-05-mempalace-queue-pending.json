@@ -1,0 +1,20 @@
+{
+  "queued_at": "2026-10-05T07:55:00Z",
+  "system": "MemPalace",
+  "status": "PENDING_DELIVERY",
+  "reason": "MemPalace mutating tools are not exposed in this session (no mempalace_* tool available), and prior sessions reported 'Peer MCP writer active; this server is read-only for mutating tools'. This is the documented memory-archive-unavailable condition under RULES.md Rule 11.3.",
+  "wing": "projects",
+  "room": "kronos-assessment",
+  "task": "review-kronos-stack / GPT-6 Astra independent assessment of the Kronos Engine",
+  "content": "Independent GPT-6 Astra assessment run on Kaggle (task rikirinjani/review-kronos-stack v3). VERDICT: re-scope the JAMIA manuscript to a simulator-verification case study; withdraw the present claim of demonstrated macro-to-hospital observability; proceed only with narrower claims plus an execution-backed evidence record. Scores /10: premise 6, workflow 2, code-quality 3, end-result 3, external-web 4, rigor 4, fix-verification 6. Strongest defensible lead: 'Verification of this coupled simulator shows that deterministic execution and passing tests are insufficient to establish valid macro-to-hospital signal transmission.' Biggest hidden risk: circular validation - tuning undocumented mappings until hospital outputs separate and then presenting that programmed separation as evidence of observability. NEW FINDINGS TO ACT ON: (1) stale EXPERIMENT-FREEZE-2026-09-07 value mean-delta 0.034 (Windows) vs canonical 0.044 (Mac), and seed-46 +0.17 vs +0.219 - reconcile before any release; (2) severity upper bound claimed as 1-5.28 is inconsistent with its own formula (anomaly 4.555 gives ~7.28); (3) the emissions-factor defect sits on the economy-to-climate INPUT edge, not climate-to-economy - our fix-verification framing had the direction reversed; (4) headline 'three confirmed scalar-times-USD defects' should be restated as two supported scale inconsistencies + one unexercised suspected energy inconsistency + a downstream severity cascade; (5) decision brief's additive-vs-multiplicative framing called a false dichotomy with a multiplier-domain error. TOP FIX: claim-to-execution release gate - machine-readable manifest linking every manuscript number to producing commit, dependency versions, config, seeds, raw outputs and calculation script, with CI regeneration.",
+  "artifacts": [
+    "C:\\Users\\think\\Project_v2\\kaggle-bench\\kr2\\review-kronos-stack\\3\\gpt-6-astra\\4070009\\review-kronos-stack_output.md",
+    "C:\\Users\\think\\Project_v2\\kaggle-bench\\review-kronos-stack.py",
+    "C:\\Users\\think\\Project_v2\\kaggle-bench\\kronos_task_body.py",
+    "C:\\Users\\think\\Project_v2\\kaggle-bench\\build_kronos_task.py",
+    "C:\\Users\\think\\Project_v2\\kaggle-bench\\validate_task.py",
+    "C:\\Users\\think\\self-harness\\traces\\kaggle-gpt6-astra-kronos-review.pm1"
+  ],
+  "delivery_owner": "human",
+  "reconciliation_required": "On MemPalace restoration, file this drawer, verify retrieval, and record the receipt. Do not claim it is archived until then."
+}

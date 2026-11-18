@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "kaggle-batch-stage1a-static-probes",
+  "timestamp": "2026-10-05T02:06:07.332636+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 25,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\kaggle-bench\\stage1_static_probes.py",
+    "C:\\Users\\think\\Project_v2\\kaggle-bench\\stage1-static-probes.json",
+    "C:\\Users\\think\\Project_v2\\kaggle-bench\\W1-divergence-report.json",
+    "C:\\Users\\think\\Project_v2\\kaggle-bench\\BATCH-IMPROVEMENT-DESIGN.md",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\VER-KAGGLE-BASELINE-STAGE0-001.json",
+    "C:\\Users\\think\\self-harness\\failures\\2026-10-05-085930-kaggle-kernel-output-bloat-kernel-without-run.json",
+    "C:\\Users\\think\\self-harness\\failures\\2026-10-05-090500-mempalace-queue-pending-stage0.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kaggle-batch-stage1a-static-probes",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Stage-1a read-only probes over origin/master blobs: extracted 8-sector cross-sector contract with cadences and handlers (R3), recomputed severity bound 1.0-5.0 at anomaly 0 growing to 7.3 at anomaly 4.555 (E2), found diagnosisWeightOverrides constructed+forwarded with 0 readers in public tree (C3), found 0 hits for all six stale values in public tree (W3), 0 missing cited scripts (W4), W1 divergence 0/33 experiment reports and 0/8 NCRs public. Filed W1 report, QMS verification VER-KAGGLE-BASELINE-STAGE0-001, failure record and MemPalace queue entry."
+}

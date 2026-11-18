@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-e1-label-sourcing",
+  "timestamp": "2026-09-26T23:06:48.925198+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 18,
+  "key_files": [
+    "rag-queries/curation/label_sourcing_e1.json",
+    "rag-queries/curation/anticoagulant_adjudication_draft.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-e1-label-sourcing",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "E1 label-sourcing pass + adjudication draft v2. DailyMed v2 SPL fetched for 4 setids (openFDA spl_set_id 404'd); verbatim quotes sliced from label text for 5/6 cells: rivaroxaban GI HR 1.61 (1.30-1.99) -> 3, rivaroxaban/dabigatran/edoxaban monitoring -> 1, enoxaparin ddi confirmed 2; enoxaparin GI recorded not_found (no GI-specific rate in label) and left null. Regenerated draft with 13 sourced overrides, 14/42 cells changed. Two specialist dispatches (fixer, librarian) both failed with session context-limit errors and were completed directly instead. api/drugs.json untouched."
+}

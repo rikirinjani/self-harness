@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "explorer-rag-service-medcpt-recon",
+  "timestamp": "2026-10-18T23:20:24.971525+00:00",
+  "agent": "explorer",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "explorer-rag-service-medcpt-recon",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........---..-..........................................................................................................-.--...-",
+  "action": "Read-only recon in rag-service: confirmed .env.example has no MEDCPT_* vars; listed title_only_results/ (logs only, no fixtures); extracted G7-REFRESH-2026-10-17b.md sec8 drop-ins (LANCEDB_NPROBES=10, RETRIEVE_FALLBACK_K=48, RETRIEVE_FALLBACK_ABSTRACTS=4 default, MEDCPT knobs OFF); RERANK-COST-2026-10.md rec 256/batch4 superseded"
+}

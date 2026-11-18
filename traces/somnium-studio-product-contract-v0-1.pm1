@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "somnium-studio-product-contract-v0-1",
+  "timestamp": "2026-09-17T09:37:54.969381+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "c:\\Users\\think\\Project_v2\\Somnium Studio\\PRODUCT-CONTRACT-v0.1.md",
+    "c:\\Users\\think\\Project_v2\\Somnium Studio\\qms\\records\\requirements\\REQ-S001-product-contract-v0.1.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "somnium-studio-product-contract-v0-1",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Wrote Somnium Studio Product Contract v0.1 grounded in repository inspection; identified Core/Studio boundary, four research-track escalation questions (R1-R4), and conservative treatment of S035/repo discrepancies. node_modules absent so acceptance tests not run; relied on repository evidence and documented acceptance contracts."
+}

@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261005T021417-orchestrator-cli",
+  "timestamp": "2026-10-05T02:14:17.191441+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 20,
+  "key_files": [
+    "src/patient/generator.ts,src/engine/clinical-knowledge.ts,src/engine/ina-cbg.ts,src/engine/drug-catalog.ts,src/engine/central-supply.ts,src/engine/pharmacy-knowledge.ts,tests/central-supply.test.ts,docs/adr/ADR-013-chapter-ix-x-expansion.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261005T021417-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "ADR-013: 25 new ICD codes (Ch IX circulatory + Ch X respiratory + R/N/E), 6 new drugs (Cilostazol, Nebivolol, Oseltamivir, Tenecteplase, Hyoscine, Colchicine), 165 protocols, 150 CBG tariffs. Live box: tick 8604, outcomes growing."
+}

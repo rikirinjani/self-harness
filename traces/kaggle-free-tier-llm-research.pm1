@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "kaggle-free-tier-llm-research",
+  "timestamp": "2026-09-29T12:57:20.374693+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 14,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kaggle-free-tier-llm-research",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--..........................--...--........--.-..-.........................................................-.--...-",
+  "action": "Read-only research: verified live Kaggle docs (P100/T4x2/TPUv3-8 lineup, 30h GPU + 20h TPU weekly quota, 12h/9h sessions, Colab Pro +15/+30h promo), HF API model sizes (Llama-3.3-70B-AWQ 39.8GB, Qwen3-32B-AWQ 19.3GB, Qwen3-30B-A3B Q4_K_M 18.6GB, gpt-oss-20b ~12GB), vLLM docs (CC>=7.5 incl T4; TPU backend v6e/v7x only), Kaggle notebook search evidence (Qwen3-32B-AWQ+vLLM on T4). No files modified. Note: MemPalace MCP tool unavailable in this session."
+}

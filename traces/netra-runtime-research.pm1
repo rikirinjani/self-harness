@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "netra-runtime-research",
+  "timestamp": "2026-10-02T11:50:35.394393+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 6,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "netra-runtime-research",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Researched Netra Runtime (netraruntime.com, GitHub org NetraRuntime) after librarian lane errored (session too large to compact). Did web research directly. Found: Indonesian AI inference startup, founder Rifky Bujana Bisri, Komdigi/PSE-registered, payments via Doku. Pricing = prepaid credits (=1 credit; =1100 credits +10%; enterprise custom). Models listed: DeepSeek V4 Flash 0731 and DeepSeek V4.1 Flash at .20 input / .05 cached / .50 output per 1M tokens. Vendor benchmark (June 22 2026, Qwen3.6-35B-A3B FP8, single H200, 32K-in/16K-out): up to 4.4x vLLM output, 22,400 tok/s total, 5.5x faster streaming. Flagged: only 2 models on models page vs LinkedIn announcing Qwen 3.6 35B + Gemma 4 26B."
+}

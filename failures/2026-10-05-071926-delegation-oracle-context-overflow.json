@@ -1,0 +1,10 @@
+﻿{
+  "timestamp": "2026-10-05",
+  "category": "delegation-failure",
+  "severity": "low",
+  "what_happened": "Two Oracle dispatches (ses_ef6949c5cffelnSnEpGX96d5G2, ses_ef693ca76ffenCkcItURiZN73k) both terminated with 'Session too large to compact - context exceeds model limit even after stripping media' before returning any analysis. First attempt pointed Oracle at a 263 KB reference file by mistake; second attempt imposed a strict 5-file read limit and still overflowed.",
+  "root_cause": "First: orchestrator included ce_task_reference.py (263 KB, single-line-heavy Python) in the read list. Second: residual session/system context plus allowed evidence files exceeded the Oracle session compaction limit; failure is environmental, not a rejection of the review request.",
+  "what_i_did_wrong": "Issued a review prompt referencing a 263 KB file without checking its size, then retried without first measuring whether the failure was systemic to oracle sessions.",
+  "impact": "No prompt-neutrality review obtained. Assessment task construction proceeded with orchestrator self-review only unless a third adjusted attempt or an alternative reviewer succeeds.",
+  "preventive": "Check file sizes before naming files in a delegation prompt. After two environmental dispatch failures on the same specialist, stop retrying that specialist and switch reviewers."
+}

@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "poll-55qq",
+  "timestamp": "2026-09-24T03:23:31.917583+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "poll-55qq",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................................................................-.--...-",
+  "action": "5460+ 55s poll; .01 ETA 4.0h"
+}

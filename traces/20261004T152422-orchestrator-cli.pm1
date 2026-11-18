@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261004T152422-orchestrator-cli",
+  "timestamp": "2026-10-04T15:24:22.625791+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 40,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\STATE.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261004T152422-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "Ran post-deployment durability test: durable queue PASS (4 post-restart discharges, no dropped warnings). New finding: resume OOM at --max-old-space-size=350 (96MB snapshot parse exceeds 350MB heap); upgraded to 400MB to restore service — needs owner review of heap vs cgroup tradeoff. SERVICE RESTARTED and STABLE at tick 10601, RSS 328MB+192MB swap"
+}

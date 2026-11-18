@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "ab-prep-c0c3-relaunch-b32",
+  "timestamp": "2026-09-22T22:38:05.391639+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 8,
+  "key_files": [
+    "scripts/modal_embed.py",
+    "scripts/ab_embed_supervisor.sh",
+    "eval/ab_plan/embed_cost_table.json",
+    "failures/2026-09-22-infrastructure-qwen3-c2-oom-batch64-supervisor-pgrep.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ab-prep-c0c3-relaunch-b32",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "c0+c3 batch64 OOM confirmed; relaunched both at batch32 (pids 326482/326495); c1/c2 still alive at 5%; updated failure record + cost table batch history"
+}

@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "dr-ground-truth",
+  "timestamp": "2026-10-10T12:54:58.976045+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 960,
+  "tool_calls": 35,
+  "key_files": [
+    "C:\\Users\\think\\khanza_report.json",
+    "C:\\Users\\think\\dr_vs_khanza_report.txt",
+    "/tmp/dr_content_map.py",
+    "/tmp/dr_ground_truth.py",
+    "/tmp/content_map_A01.0.json",
+    "/tmp/dr_vs_khanza_report.txt"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dr-ground-truth",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................---..-...........--...--........--.-..-.........................................-.--...-",
+  "action": "Fixed 48 resep_obat zero tgl_perawatan rows (+72 zero tgl_penyerahan on same bug) from reg_periksa.tgl_registrasi (prefix-verified, 43 distinct visits); rawat_jl_dr/detail_pemberian_obat had none. Built /tmp/dr_content_map.py (ICD-10 -> verified databarang+jns_perawatan codes, demo A01.0: 4 drugs + 4 procedures, 0 orphans). Built /tmp/dr_ground_truth.py: DR vs Khanza 321/321 exact Tagihan matches, 0 within-1, 0 mismatch. NOTE: mempalace_add_drawer MCP tool unavailable in fixer session - knowledge drawer NOT filed, orchestrator should file per Rule 10."
+}

@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "adapter-review-and-queue-bug",
+  "timestamp": "2026-10-02T10:14:39.741385+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "Deers-Rock/src/engine/world.ts",
+    "Deers-Rock/src/engine/markov.ts",
+    "Deers-Rock/STATE.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "adapter-review-and-queue-bug",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Adapter conformance review complete + engine bug discovered. codex-interpretum (user GH repo, pushed, 7 commits): DeersRockClient verified against live DR through SSH tunnel - auth X-API-Key, all 4 endpoints exist with exact wire-shape match (encounters/patients/charts/status, direct arrays), GrouperInput mapping correct (5/5 cases, icd10 dx, LOS/dates via sim-epoch, ICD-9-CM procedures verified on 160 live charts). Findings for adapter repo: transferred status missing from encounter type+mapper; live E2E test lacks apiKey support. ENGINE BUG discovered via incident: EventQueue not persisted (resumeWorld returns fresh empty queue; state-store has no queue) - every restart loses all scheduled events (discharges due tick 4320+, lab/rad/surgery results); live evidence 3422/3422 encounters active at tick 12k post-crash-loop; local controlled run 3000 ticks all-active is EXPECTED (earliest discharge tick 4320) ruling out units bug. Frozen research unaffected (single-pass). Filed GH issue with evidence; STATE.md updated+pushed (8c2900c). Live service remains stopped per owner decision."
+}

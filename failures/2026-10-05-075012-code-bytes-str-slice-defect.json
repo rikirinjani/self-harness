@@ -1,0 +1,12 @@
+﻿{
+  "timestamp": "2026-10-05",
+  "category": "code-defect",
+  "severity": "medium",
+  "what_happened": "Kaggle benchmark task review-kronos-stack v1 ran to COMPLETED but 6 of 7 sections returned '[ERROR] TypeError: can only concatenate str (not bytes) to str'. Only external-web produced content, because it alone used build_web_dossier() (str) rather than a dossier slice constant.",
+  "root_cause": "build_kronos_task.py emitted SLICE_* as raw base64.b64decode(...) which returns bytes, while BASE/ask are str. The reference task ce_task_reference.py ends each slice line with .decode(\"utf-8\"); I transcribed the pattern from a truncated grep display that cut the line at 140 chars, hiding the trailing .decode() call.",
+  "what_i_did_wrong": "Copied a code pattern from a truncated line display without verifying the line ending, and shipped the task to a real (costly) run without a type-level pre-flight check of the exact expression executed at runtime.",
+  "secondary_defect": "kbench assertions do NOT gate run status: 8 of 10 assertions FAILED on v1 yet the run reported COMPLETED. The CLI 'All runs completed: COMPLETED' signal is therefore not evidence of success.",
+  "impact": "One wasted benchmark run (gpt-6-astra) plus a wasted creation-time smoke run. Reported scores on v1 were 0 for six sections and must not be cited.",
+  "remediation": "Builder now emits .decode(\"utf-8\"); validator executes the exact BASE + slice + ask concatenation in-process and asserts str type, section count = 7, question count = 7, and evidence needles per slice; task now prints RUN_ERRORS= and raises on partial failure. Re-run v3: 10/10 assertions PASSED, 0 [ERROR] markers.",
+  "preventive": "Never trust a copied expression from a truncated display. Before any external run, execute the exact runtime expression locally and assert its type. Verify success by assertion payload, never by run status alone."
+}

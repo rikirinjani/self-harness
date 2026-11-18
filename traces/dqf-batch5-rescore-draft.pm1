@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-batch5-rescore-draft",
+  "timestamp": "2026-09-27T05:02:22.706293+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 22,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\drug-quantification-framework\\rag-queries\\curation\\batch5_rescore_draft.json",
+    "C:\\Users\\think\\Project_v2\\drug-quantification-framework\\rag-queries\\curation\\batch5_rescore_draft.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-batch5-rescore-draft",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "N1 Batch-5 consumption: 4 fixer dispatches failed at spawn (session-too-large, all cancelled, no stray writes) so built the rescore draft directly. Rule N mirrors batch4_rescore (clean=strong->3/moderate->2/else 1, ddi=_score_risk on pk/pd) + two-signal guard (kw scorer must confirm drops, support>=2 for raises). 413 groups -> 36 proposals (17 raises/19 drops/0 fills), 192 holds, 44 open questions, 44 conflicts vs prior adjudication (54 batch4 + 62 ddi cells locked), 25 categorical heart_rate_effect cells skipped. Spot-checks: current values match drugs.json, basis verbatim from pools, 0 anticoagulants in output (batch5 never contained them - 89 drugs)"
+}

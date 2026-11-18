@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-09-23T00:52:00Z",
+  "task": "TASK-026-Jev-decision-aid",
+  "category": "transport-external-api",
+  "severity": "low",
+  "what_went_wrong": "First Jev probe run failed all 4 probes with F-AUTH/HTTP 403. Raw response bodies were Cloudflare error 1010 (Browser Integrity Check) rejecting urllib's default User-Agent 'Python-urllib/3.12' — not an authentication failure. The frozen task029 HttpTransport does not set a User-Agent header.",
+  "root_cause": "Cloudflare BIC block on default Python UA; adapter transport lacks custom UA. Initially misdiagnosed as key rejection (F-AUTH, non-retryable).",
+  "what_i_did_wrong": "Treated 403 as F-AUTH without inspecting the response body first; the body (error 1010) would have immediately identified Cloudflare vs real auth.",
+  "fix": "Wrapped frozen HttpTransport in UATransport inside scripts/task026_jev_decision.py injecting user-agent 'task026-jev-decision/1.0' (frozen adapter module not modified). Re-run: all 4 probes 200 OK.",
+  "recovered": true,
+  "outcome_after_fix": "3/3 APPROVE majority, position-prior broken (A/C/B), negative control noul=0.03 pass."
+}

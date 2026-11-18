@@ -1,0 +1,11 @@
+{
+  "timestamp": "20261008T193034",
+  "category": "process",
+  "slug": "niji-params-stale-model-version",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "what_happened": "Delivered a Niji prompt set authored for niji 6 (--niji 6, --style scenic, --cref/--cw workflow). User is on Niji 7 (live 2026-01-09); the prompts failed to submit: --style scenic is niji-6-only, --cref/--cw were removed on the V7 lineage (replaced by --oref/--ow), and the --niji 6 flag conflicted with the selected model.",
+  "root_cause": "Target-platform version was never verified before authoring; niji 7 shipped after orchestrator training data and was assumed not to exist. Docs site (docs.midjourney.com) and nijijourney.com block fetching, delaying discovery; niji 7 existence was ultimately confirmed via Wikipedia + the official updates.midjourney.com announcement post.",
+  "impact": "One wasted user attempt; consistency workflow would also have failed at the --cref step.",
+  "corrective_action": "For any generative-platform deliverable: verify the current platform version and parameter surface at authoring time (fetch release notes/changelog), and ask the user which version they run when unverifiable. File updated: all 12 prompts now --niji 7 (scenic removed, wording carries the look), workflow moved to --oref/--ow with weight ladder, niji 6 fallback in appendix."
+}

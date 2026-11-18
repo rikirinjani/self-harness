@@ -1,0 +1,36 @@
+{
+  "pm1_version": 1,
+  "session_id": "task032-representation-availability",
+  "timestamp": "2026-09-21T08:11:41.195800+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 900,
+  "tool_calls": 15,
+  "key_files": [
+    "morse/experiments/pm1-rx/TASK_032_PROTOCOL.md",
+    "morse/experiments/pm1-rx/TASK_032_PREFLIGHT.md",
+    "morse/experiments/pm1-rx/TASK_032_RESULTS.md",
+    "morse/experiments/pm1-rx/TASK_032_DIAGNOSTIC.md",
+    "morse/experiments/pm1-rx/task032_availability_matrix.json",
+    "morse/experiments/pm1-rx/task032_retrieval_gap.json",
+    "morse/experiments/pm1-rx/task032_representation_evidence.json",
+    "morse/experiments/pm1-rx/scripts/task032/analyze.py",
+    "morse/experiments/pm1-rx/scripts/task032/tests/test_task032.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task032-representation-availability",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........---..-..........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Task 032 stopped per protocol after deterministic availability evidence failed its negative-control gate. Target rescue atoms: b0_a1 and b4_a1. Frozen M_suff reused (.56/.22); no typed result existed for singleton fields. Deterministic representation token evidence preliminarily classified both as DISTRIBUTED_SUPPORT, but 2/6 frozen cross-boundary negative controls also classified DISTRIBUTED_SUPPORT. Gate INVALID_CONTAMINATED. Final availability and retrieval-gap classifications set UNRESOLVED; no B/retrieval conclusion forced. 15 deterministic tests pass; second run byte-identical. No Jev, producers, models, Matcher, Judge, RuleD, or thresholds changed."
+}

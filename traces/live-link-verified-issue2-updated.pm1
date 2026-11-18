@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "live-link-verified-issue2-updated",
+  "timestamp": "2026-10-02T09:35:48.560813+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "live-link-verified-issue2-updated",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................................................................-.--...-",
+  "action": "Live link verification + issue #2 closure for hosting item. Independently confirmed from operator machine: deers-rock.cokro-tech.my.id returns 302 to lingering-dew-c692.cloudflareaccess.com login on /, /api/status, /api/patients (Access gate); RAG api.cokro-tech.my.id/openapi.json 200. On-box: 5/5 units active (deers-rock cokro-api nginx litestream cloudflared), app still 127.0.0.1:3000 only, ufw unchanged, sim healthy at tick 700. Posted issue #2 comment declaring P1-7 hosting residual RESOLVED with evidence + follow-up note: scripted API access now requires CF Access Service Token (CF-Access-Client-Id/Secret headers) layered with X-API-Key; end-to-end chain test pending token creation (token to be stored 600-perm on box, never in chat). No project files modified this turn."
+}

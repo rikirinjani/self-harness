@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "mac-mini-opencode-inspect",
+  "timestamp": "2026-10-12T07:22:33.075176+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 240,
+  "tool_calls": 16,
+  "key_files": [
+    "C:\\Users\\think\\.opencode\\memory.txt"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "mac-mini-opencode-inspect",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Inspected OpenCode Desktop on Mac mini over SSH: app v2.0.19 at /Applications/OpenCode.app (running since login), bundled CLI v2.0.19 not on PATH, config at ~/.config/opencode/opencode.json with Agnes AI provider (agnes-3.0-flash, agnes-2.5-flash), desktop+CLI service servers on localhost:49467/49374 with service.json password auth. Also re-checked TCC: Screen Recording grant still absent."
+}

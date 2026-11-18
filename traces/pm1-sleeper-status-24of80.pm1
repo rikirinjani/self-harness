@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-sleeper-status-24of80",
+  "timestamp": "2026-09-27T11:10:58.828661+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 400,
+  "tool_calls": 4,
+  "key_files": [
+    "Agentic Layer/pm1-continuation/results/sleeper"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-sleeper-status-24of80",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Sleeper status check: 24/80 alive PID 3488; H3+H4 confirmed (P 0.00 / P+FACTS 1.00 recall), H1 cliff falsified + H2 bimodality absent (transcripts self-document via reasoning echoes - failure is delivery not retention); cost overrun flagged and user-approved (projected .64 vs .8 quoted); checkpoint updated with revised ETA ~01:00"
+}

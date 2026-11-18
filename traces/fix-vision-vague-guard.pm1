@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "fix-vision-vague-guard",
+  "timestamp": "2026-10-15T21:29:44.315633+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 4,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "fix-vision-vague-guard",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Fixed vision bug: photo-only messages (no caption) were caught by vague guard. Added !incoming.image check so image messages skip vague filter and go to LLM with vision."
+}

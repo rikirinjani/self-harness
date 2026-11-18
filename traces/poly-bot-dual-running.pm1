@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "poly-bot-dual-running",
+  "timestamp": "2026-10-08T00:38:00.229144+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 10,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\crypto_bot_v2.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "poly-bot-dual-running",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Both bots running: 1) Poly trainer Atlanta - cycle 63,900+, ,465 total (+78,831%), 90% WR. 2) Crypto bot NY - paper trading with Coinbase live prices ( BTC). Indodax API not working but website accessible. Ready for live funding."
+}

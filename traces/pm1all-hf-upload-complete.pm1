@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1all-hf-upload-complete",
+  "timestamp": "2026-09-24T09:37:25.444670+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\PM1_ALL\\.gitattributes",
+    "C:\\Users\\think\\PM1_ALL\\FILE_INDEX.tsv",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\2026-09-24-pass-pm1all-hf-upload.json",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\nonconformities\\NCR-2026-09-24-PM1ALL-001.json",
+    "C:\\Users\\think\\self-harness\\failures\\2026-09-24-publication-preflight-gaps.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1all-hf-upload-complete",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................--.-..-.........................................-.--...-",
+  "action": "Redacted 36 credential-bearing files (396 replacements), added .gitattributes LFS patterns, installed hf_xet/upgraded hub 1.32, deleted poisoned repo + recreated public, uploaded full PM1_ALL (105,093 files, missing=0) to https://huggingface.co/datasets/balade/PM1_ALL; remote secret scan 38/38 clean; QMS VER-2026-09-24-PM1ALL-002; NCR closed pending user key rotation."
+}

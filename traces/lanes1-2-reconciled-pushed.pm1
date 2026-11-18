@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "lanes1-2-reconciled-pushed",
+  "timestamp": "2026-10-02T12:46:08.655103+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "Deers-Rock/src/engine/finance.ts",
+    "Deers-Rock/src/engine/cleanup.ts",
+    "Deers-Rock/tests/bounded-charges.test.ts",
+    "Deers-Rock/tests/bounded-orders.test.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "lanes1-2-reconciled-pushed",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Reconciled Lane 1 + Lane 2 (ADR-004 implementation). Lane 1: diff audit + lint 0 + new tests 6/6 + full suite 21/158 exit 0; committed ce07e01, pushed. Lane 2: finance.ts pruneAgedCharges audit (flag/cadence gates, deterministic age math, terminal-claims rule, lazy copy, no rng) + lint 0 + new tests 20/20 + full suite 23/178 exit 0; committed and pushed. Next: Kaggle 100k-tick long-run validation (script needs Lane-1 touch-up: queue arg + pending() vs size())."
+}

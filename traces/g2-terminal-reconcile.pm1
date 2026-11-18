@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "g2-terminal-reconcile",
+  "timestamp": "2026-10-12T00:44:07.064132+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 90,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "g2-terminal-reconcile",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................--.-..-.........................................................................-.--...-",
+  "action": "Reconcile-and-stop for G2 session: read-only confirmation of G2 terminal state intact on VPS, no action taken, no files modified. G2 PASS evidence verified on-box. Orchestrator parked at stageB_ladder/stageB_B1 at 90 percent. Reconciliation results: retrace scanner clean (0 untraced project files, 3725 traces loaded); crashlog clean start, nothing to recover. MemPalace drawer NOT filed — add_drawer MCP tool unavailable in this environment and mempalace CLI v3.6.0 exposes no direct add-drawer command; drawer content (G2 terminal state confirmed intact, PASS evidence on-box, orchestrator parked at stageB_ladder/stageB_B1 90%) preserved in this trace pending archival by a session with MCP access."
+}

@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-09-24T085500Z",
+  "category": "infrastructure/billing",
+  "severity": "low",
+  "slug": "librarian-lane-insufficient-funds-jev-repo-research",
+  "agent": "orchestrator",
+  "project": "jev-crypto-trader",
+  "summary": "The @librarian specialist lane (alias lib-2, session ses_f2d6df791ffeDN8vurN9lcv2mB) failed with upstream error 'Insufficient account funds' while researching the jev-trader repo, blocking the external-research lane. This is the fourth specialist lane to fail the same way in this session (earlier: librarian ses_f2db7808, fixer ses_f2db44747, designer ses_f2db3e584).",
+  "impact": "No specialist delegation is usable in this environment; all delegated work must be performed directly by the orchestrator. Slower and against the intended routing model.",
+  "root_cause": "Upstream provider/account funding exhausted for the model backing the specialist sub-agents. Not a code or prompt error.",
+  "workaround_applied": "Researched the repo directly: git clone --depth 1 https://github.com/jarrodwatts/jev-trader.git into the approved temp dir, then read README.md, SPEC.md, CLAUDE.md, .env.example, src/config.ts, src/trader.ts, src/model.ts, src/market.ts and grepped for fee/gas/profit. Completed the research without the lane.",
+  "what_went_wrong": "I dispatched a background specialist expecting it to work despite three prior identical failures in the same session; the retry added latency before I fell back to direct execution.",
+  "corrective_action": "For the remainder of this session, treat all specialist delegation as unavailable and execute directly, noting the deviation from the routing model.",
+  "preventive_action": "Probe lane viability (or check remaining account funds) before dispatching when prior dispatches in the same session have failed with a billing error; do not re-dispatch the same lane type more than once per session under this condition.",
+  "status": "worked-around"
+}

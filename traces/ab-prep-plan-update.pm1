@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "ab-prep-plan-update",
+  "timestamp": "2026-09-22T21:58:24.654764+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 240,
+  "tool_calls": 18,
+  "key_files": [
+    "eval/ab_plan/AB_PLAN.md",
+    "eval/ab_plan/embed_cost_table.json",
+    "scripts/qwen3_chunks.sh",
+    "scripts/patch_retrieval_skip_bm25.py",
+    "eval/ab_results/2026-09-22T21-53-11/results.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ab-prep-plan-update",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................--.-..-.........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Updated AB_PLAN.md + embed_cost_table.json: minilm retrieval done (21.9s FAISS), qwen3 4-way chunk strategy documented, BM25 OOM blocker called out, budget ~\\; launched qwen3 c1-c3 after pgrep wrapper false-positive fix"
+}

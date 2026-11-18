@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-09-28T05:34:00Z",
+  "updated": "2026-09-28T08:35:00Z",
+  "category": "infrastructure",
+  "slug": "librarian-session-compaction-limit",
+  "task": "Research CF Containers + R2 fit (lib-1..3) and Resend email integration (lib-1 rerun) — 4 consecutive librarian failures",
+  "outcome": "fail",
+  "error": "Four librarian sessions failed identically: 'Session too large to compact - context exceeds model limit even after stripping media'. Sessions: ses_f1981c5f3ffeKdrSMgaMIinuz1, ses_f19811c98ffePe9AkLVF6x5CdU, ses_f198106daffep6ENmULJ9voJih, ses_f18a6ccbdffeVMskiju0AjWyaM (2026-09-28T08:35Z, Resend research).",
+  "root_cause": "Librarian specialist sessions are poisoned at startup — base/system context exceeds model limit before any research content is ingested. Confirmed by lib-2/lib-3: tightly scoped prompts (≤4 questions, ≤6 page budget) still failed instantly, so prompt scope is NOT the cause. The librarian agent definition or session bootstrap context is oversized. The 4th identical failure confirms it is deterministic, not load-dependent.",
+  "what_i_did_wrong": "Two violations: (1) After lib-1 failed originally I assumed scope was too broad and retried twice instead of recognizing identical instant-failure as an agent-level defect. (2) After the failure record set corrective action 'Do not dispatch librarian again this session', I dispatched librarian AGAIN for Resend research (fresh session) — it failed instantly, wasting a dispatch. I treated the corrective action as scoped to the earlier task instead of the session. Both are process violations of my own record.",
+  "corrective_action": "Librarian is DISABLED for this session, no exceptions (4/4 deterministic failures). Orchestrator performs bounded research directly via webfetch against primary sources (resend.com/docs, publicsuffix.org). Root-cause librarian agent context bloat is a separate maintenance item for the human.",
+  "affected_files": []
+}

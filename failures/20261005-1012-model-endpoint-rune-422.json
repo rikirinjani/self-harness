@@ -1,0 +1,10 @@
+{
+  "ts": "2026-10-05T10:12:00Z",
+  "agent": "coordinator",
+  "category": "model-endpoint-incompatible",
+  "slug": "rune-422-decision-model",
+  "what": "Selected rune-26b-a4b-v3 as sweep-3 candidate from the Vultr catalog; smoke returned HTTP 422: 'Model rune-26b-a4b-v3 is a decision model; use /v1/systemone'. Harness speaks /v1/chat/completions only.",
+  "root_cause": "Vultr /v1/models catalog does not annotate model types; rune is a decision-model endpoint, not a chat model. Slug was chosen from a priority list made during earlier catalog review without re-verifying endpoint class.",
+  "impact": "None to data or spend (smoke gate caught it pre-batch, ~$0.003 spent). Sweep-3 slot replaced with glm-5.3 (smoke PASS 1.5s/2.2s).",
+  "action_taken": "Dropped rune; validated glm-5.3; smoke-gate encoded in chain_sweeps.py so any future slug failure aborts before a sweep starts."
+}

@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-09-27T01:36:00Z",
+  "category": "process",
+  "severity": "medium",
+  "title": "Autopilot resume script failed - Start-Process had no working directory",
+  "agent": "coordinator",
+  "what_happened": "resume_reconcile.ps1 waited correctly until 00:05Z, but push failed instantly with \"File 'task_reconcile.py' does not exist\" and the script stopped (\"push failed outright; stopping\"). Job aborted at 00:05:21Z; had to push manually at 01:36Z after user said 'resume reconcile'.",
+  "root_cause": "Script invoked via Start-Process -FilePath powershell -File ... without -WorkingDirectory; kaggle CLI resolves -f task_reconcile.py relative to process CWD (System32 or parent shell cwd), not the script's $wd. Script used $wd for log/result paths but never Set-Location $wd before calling kaggle.",
+  "what_i_did_wrong": "Assumed the detached process would inherit the working directory used in interactive pushes. Did not dry-run the actual push path (dry-run only exercised status/log, not the push command's file resolution).",
+  "corrective_action": "Added Set-Location $wd (and full-path -f) to resume_reconcile.ps1; manual push v5 succeeded same day. Rule for future detached automation: always set CWD inside the script, never rely on launch-time environment.",
+  "cost": "Delayed completion ~1.5h (00:05 -> 01:36 UTC); no quota spent on the failed attempt."
+}

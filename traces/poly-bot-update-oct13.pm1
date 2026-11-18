@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "poly-bot-update-oct13",
+  "timestamp": "2026-10-12T23:40:20.657488+00:00",
+  "agent": "poly-bot-update-oct13",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "poly-bot-update-oct13",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........................................................................................................-.--...-",
+  "action": "BTC position -0.95%, holding near SL, Poly bot "
+}

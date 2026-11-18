@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pilot-v3-analysis",
+  "timestamp": "2026-09-18T00:11:56.034263+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "morse/experiments/pm1-rx/PILOT_V3_ANALYSIS.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pilot-v3-analysis",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Wrote PM-1-RX Pilot V3 analysis document: negative result (3B model cannot reconstruct state, micro-F1 0.000-0.050), implications, recommended next steps"
+}

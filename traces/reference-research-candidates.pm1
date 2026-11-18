@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "reference-research-candidates",
+  "timestamp": "2026-10-11T00:27:43.662936+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\results\\candidate-references.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "reference-research-candidates",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Direct reference research completed: verified tool-calling-vs-JSON/structured-output citations (JSONSchemaBench arXiv:2501.10868, Natural Language Tools arXiv:2510.14453, STED arXiv:2512.23712, SoEval), wrote candidate-references.md with per-slot provenance, verification marks, no-fabrication guardrails, and explicit 'no LLM delayed-gratification citation found'"
+}

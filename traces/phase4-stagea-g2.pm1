@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "phase4-stagea-g2",
+  "timestamp": "2026-10-11T23:28:22.284833+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 5800,
+  "tool_calls": 34,
+  "key_files": [
+    "/opt/Deers-Rock/tools/stage_a_g2.py",
+    "/opt/Deers-Rock/tools/load_354_dr_visits.py",
+    "/opt/Deers-Rock/tools/three_count_reconcile.py",
+    "/opt/Deers-Rock/tools/charge_delta_per_component.py",
+    "/opt/Deers-Rock/tools/replay_determinism_check.py",
+    "/opt/Deers-Rock/tools/run_jasper_reports.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "phase4-stagea-g2",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--.........................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "Reconciled+completed GATE G2 on new VPS: all 6 tools existed from prior sessions but were wrong (read sik_bench.billing=0 rows false-PASS; ledger empty because builder read sik_bench which has no DR rows; ledger drug price-source detail_pemberian_obat.h_beli diverged 287 visits; stage_a_g2 NameError; jasper fallback missing 4 required reports). Rewrote all 6: consumer counts from sik.billing (database.ini target); ledger built from sik DR sources (resep_dokter*jml*databarang.ralan + rawat_jl_dr.biaya_rawat + REG 10000 + PPN java_round 11pct) into sik_bench; load tool stages A.encounters.txt for orchestrator; guards against empty-vs-empty false PASS. Composite RUN_ID=g2test PASS. Orchestrator relaunched (20261011T230938Z): GATE G2 passed 23:21:10Z, advanced to Phase 5 Stage B, stopped at stageB_B1 as expected (generate_scale_encounters.py/collect_scale_telemetry.py not built). Results: A==B==C 1460 rows/142947833 Rp exact per component (reg 354/3540000, proc 354/21071450, drug 465/106609356, tax 287/11727027); charge delta 0 unexplained; replay identical (hash fee58826a759d35d, no source drift); Jasper: engine unavailable, 4 reports via template-SQL (top_dx empty: diagnosa_pasien 0 rows for DR cohort)"
+}

@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "mcp-token-ab-test",
+  "timestamp": "2026-09-25T08:15:26.807104+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 14,
+  "key_files": [
+    "C:\\Users\\think\\.config\\opencode\\opencode.jsonc",
+    "C:\\Users\\think\\.config\\opencode\\oh-my-opencode-slim.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "mcp-token-ab-test",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Controlled A/B of MCP overhead. Method: opencode run --format json --agent orchestrator --model deepseek/deepseek-flash with identical message, fresh process each time, opencode.jsonc flipped to all-enabled then all-disabled, original bytes restored (byte-identical verified). Result: MCP ON = 81,915 prompt tokens (input 74,875 + cacheRead 7,040); MCP OFF = 23,315 (input 147 + cacheRead 23,168). SAVED 58,600 tokens per call = 71.5%. Baseline native build agent = 21,334, so OMO adds ~1,981. Source of truth: step_finish.tokens in opencode.db part table. Prior estimate of 61,797 for MCP schemas was a char/4 approximation; real tokenizer delta is 58,600. Post-test state verified: all 10 servers enabled=False, 0 connected, model unchanged glm-ajianaz/glm-5.3."
+}

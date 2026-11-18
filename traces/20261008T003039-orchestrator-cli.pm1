@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261008T003039-orchestrator-cli",
+  "timestamp": "2026-10-08T00:30:39.207478+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 0,
+  "key_files": [
+    "/etc/systemd/system/deers-rock.service"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261008T003039-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........................-.--...-........................................-.--...-",
+  "action": "Fixed OOM crash on server: cleared 292MB snapshot from journal, increased MemoryMax 512M->1G, service running at tick 11 with 50 patients, 18 active encounters, 122 agents"
+}

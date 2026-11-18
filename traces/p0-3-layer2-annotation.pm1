@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "p0-3-layer2-annotation",
+  "timestamp": "2026-09-26T15:42:29.112949+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 2400,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\VER-P0-3-LAYER2-ANNOTATION-001.json",
+    "C:\\Users\\think\\.opencode\\skills\\l2_p0_3_eval.py",
+    "C:\\Users\\think\\.opencode\\skills\\l2_p0_3_cases.json",
+    "C:\\Users\\think\\.opencode\\skills\\l2_p0_3_report.json",
+    "C:\\Users\\think\\.opencode\\skills\\build_l2_cases.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "p0-3-layer2-annotation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........---..-..........................--.-..-.........................................-.--...-",
+  "action": "P0-3 Layer-2 annotation-only evaluation (isolated harness, not production). 34 one-call/query cases (premise n=6, scope n=8, control n=20) via Vultr SI deepseek-v4.1-flash (NVIDIA endpoint was unresponsive). Cost/latency: p50 3530ms, p95 6402ms, in 988.5/out 771.2 tokens, 0.000611 USD/query, 0% errors. ACCURACY FAILS R2 target: premise 2/6 (0.33), scope 6/8 (0.75), control false-warning 1/20 (0.05). Run-to-run unstable vs prior v3 (3 label flips at temp 0). Conclusion: do NOT enable L2 warnings in production; no suppression implemented. Production path audit clean (0 layer2 refs)."
+}

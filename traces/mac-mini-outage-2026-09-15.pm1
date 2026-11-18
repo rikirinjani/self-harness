@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "mac-mini-outage-2026-09-15",
+  "timestamp": "2026-09-15T06:20:37.348753+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 240,
+  "tool_calls": 9,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "mac-mini-outage-2026-09-15",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Mac mini outage diagnosis: machine rebooted twice (13:12 + 13:19, ~7min gap), no kernel panics, no crash reports; power settings show autorestart=1 (auto-reboot on power failure) and sleep=0 — pattern consistent with power loss/UPS failure; bridge auto-recovered via launchd, Telegram polling OK, data intact (1163 questions, 59 unanswered, today's audit exists); WhatsApp sidecar lost pairing after reboot, QR code waiting for re-scan"
+}

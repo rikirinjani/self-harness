@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-scorer-hardening",
+  "timestamp": "2026-09-25T22:28:11.115321+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 24,
+  "key_files": [
+    "rag-queries/extract_l3.py",
+    "rag-queries/test_scorer_hardening.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-scorer-hardening",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "DQF scorer hardening: (1) compacted punctuation-insensitive keyword matching guarded to >=5 chars, (2) absence-of-effect negation phrases, (3) wired dead negations param + ddi 'limited'/'few' at 8 call sites; committed test 18/18 checks; full before/after 421 cells x 32 dim sites = exactly 2 intended changes, zero collateral; pushed a3e454b; found Antacid block has no ddi_risk call (legacy values)"
+}

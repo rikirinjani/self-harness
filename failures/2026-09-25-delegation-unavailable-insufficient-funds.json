@@ -1,0 +1,16 @@
+{
+  "record_type": "failure",
+  "timestamp": "2026-09-25",
+  "task": "Delegate PM-1 recon + opencode compaction research to specialists",
+  "outcome": "fail",
+  "category": "delegation-unavailable-insufficient-funds",
+  "severity": "medium",
+  "root_cause": "All subagent dispatches (2x explorer, 1x librarian) returned Upstream request failed: Insufficient account funds.",
+  "impact": "Recon and assessment had to be performed directly by the orchestrator; specialist parallelism unavailable.",
+  "sessions": [
+    "ses_f2a3dae07ffeZwVuxcRTbTrb0o",
+    "ses_f2a3da3cbffe3TlfPY6hA6y5ot",
+    "ses_f2a3d9e58ffevDqT4tsuIGgFW9"
+  ],
+  "resolution": "Continued directly with read-only recon; no work lost. Specialist lanes remain unavailable until account funds are restored."
+}

@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "unresolved-impact",
+  "timestamp": "2026-09-24T09:42:33.486366+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\unresolved_impact.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "unresolved-impact",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "unresolved impact: 100 pairs -> 161/36000 slots (0.447%), near-uniform across models (bm25 1, bge-large 41 = 0.683%); 39 fall in unanswerable category"
+}

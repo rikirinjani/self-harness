@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-009b-pre-d3-2026-09-16",
+  "timestamp": "2026-09-16T00:54:21.061404+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 28,
+  "key_files": [
+    "experiments/pm1-rx/harness/pm1rx/shadow_oracle.py",
+    "experiments/pm1-rx/harness/tests/test_shadow_d3_aliases.py",
+    "experiments/pm1-rx/TASK_009B_PRE_D3_AUDIT.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-009b-pre-d3-2026-09-16",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "TASK 009B-PRE D3 complete. Documented both schemas: C emits objective/phase/constraints/commitments/decisions/questions/failures/dependencies/status/next_actions; oracle expects active_constraints/commitments/pending_decisions/unresolved_questions/known_failures/relevant_dependencies/objective/phase/current_task_status/next_actionable_state. 7 of 10 field names differ; only 3 align by coincidence. Semantic axis documented separately: C fields are unfiltered supersets of canonical task-relative fields. Absence semantics: missing (no not-applicable concept). PROVED serialization-dependence by controlled experiment: identical content under C keys scored coverage 0.4286/L3 0.4286(F1) vs canonical keys 1.0/1.0(none) - penalty 0.5714 purely from field naming. Penalty lands in 3 places: coverage gate (reads producer rep with canonical names), oracle L3 (consumer key-set compliance: C full-canonical only 2/10 vs F 10/10 - F holds structural serialization advantage), and failure attribution (misclassified F4 instead of F9). Historical re-score shows ZERO delta because the 009A reference defect binds first on real data and masks the naming defect - defects are independent and compound. REPAIR IMPLEMENTED (instrument, not arm C): FIELD_ALIASES canonical alias map derived from schema definitions never from scores; canonical_field/canonicalize_keys; _field_values now alias-aware (canonical first, alias fallback, canonical wins, empty falls through). Arm-agnostic, omission detection preserved, history untouched (pilot_009a_results.json sha 7d4db221 asserted by test). Post-repair: C-style and canonical both score 1.0. Added 18 tests incl. 2 D3 regression tests. Full suite 280 passed (262+18). Residual limitation documented: semantic breadth/validity filtering deferred to 009B oracle repair. Wrote TASK_009B_PRE_D3_AUDIT.md. Verdict: RESOLVED. No inference."
+}

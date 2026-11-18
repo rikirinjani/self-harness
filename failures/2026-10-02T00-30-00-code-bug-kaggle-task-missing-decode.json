@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-10-02T00:30:00Z",
+  "category": "code-bug",
+  "slug": "kaggle-task-missing-decode",
+  "severity": "medium",
+  "task": "Kaggle benchmark push: review-agent-stack (gpt-6-astra stack review)",
+  "what_went_wrong": "v1 run failed all 3 review sections with TypeError: can only concatenate str (not 'bytes') to str. CONTENT = base64.b64decode(...) yields bytes; BASE + '\\n\\n' + CONTENT concatenation requires str. The verifier recorded errors=3, the run still showed 'Completed', and only the synthesis (which received no bytes) produced usable output. Cost: one wasted run (~$0.011 + queue time).",
+  "root_cause": "When mirroring the reference benchmark source, my notebook-display tooling truncated source lines >200 chars, hiding the reference's trailing .decode(\"utf-8\") on the CONTENT line. I copied the visible (truncated) form. Secondary process gap: I did not read the reference file with a line-tail-aware method before claiming the structure was 'extracted exactly'.",
+  "second_order_error": "My first repair used a blanket PowerShell .Replace('\")', '\").decode(\"utf-8\")') which corrupted 12 unrelated call sites (os.environ.setdefault, decorator, open(), assertions, model registry). Caught only because I explicitly re-scanned all .decode occurrences after the edit; file was regenerated from template instead of patched.",
+  "what_i_actually_did_wrong": "1) Trusted a truncated display of reference source as ground truth. 2) Applied an unanchored global string replace to fix it. 3) Did not locally execute the task file (kaggle skill explicitly recommends python task.py validation before push) which would have caught the TypeError before spending a server run.",
+  "fix": "Regenerated task file from a clean template with .decode(\"utf-8\") only on CONTENT; verified decode hit-count == 1 and ast.parse OK; re-pushed as v2; run completed in 2m47s with full report (13.5/25 rubric).",
+  "preventive": "For future Kaggle task authoring: (a) read reference sources line-by-line with explicit tail inspection, never trust truncated renders; (b) run local validation (python task.py) before push; (c) never global-replace on partial delimiters — regenerate from template."
+}

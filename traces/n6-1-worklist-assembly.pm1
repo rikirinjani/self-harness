@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "n6-1-worklist-assembly",
+  "timestamp": "2026-09-30T21:03:19.937365+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1500,
+  "tool_calls": 9,
+  "key_files": [
+    "TODO.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "n6-1-worklist-assembly",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........-.--...-........-.--...-........................................-.--...-",
+  "action": "N6.1: assembled machine-readable adjudication worklist (n6_worklist.json) - diffed batch4 (54) and ddi (37) proposals against current drugs.json: 32+14 unapplied, 8 superseded (corrects TODO undercount of 22); embedded current values for all 25+44+44 backlog items; full-corpus scan found 33 string heart_rate_effect cells (distinct: bradycardia/tachycardia/none; beta-blocker bradycardia real, DHP-CCB artifacts); no missing drug ids; committed ab3aeec and pushed"
+}

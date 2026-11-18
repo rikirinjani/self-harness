@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "kaggle-manual-smoke-pass",
+  "timestamp": "2026-09-25T08:54:38.995528+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 3,
+  "key_files": [
+    "rag-queries/kaggle_judge_manual.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kaggle-manual-smoke-pass",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Manual judge run smoke test passed on fresh notebook: ibuprofen/gi_risk scored 3 in 8.3s with valid strict JSON + PMID rationale, matching keyword score (agreement 1/1). Box healthy; full batch (cell 4, ~350 calls) underway, ETA ~45-60min at measured pace."
+}

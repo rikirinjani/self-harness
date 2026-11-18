@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "r5-vps-migration-executed",
+  "timestamp": "2026-10-23T09:00:51.696275+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 5400,
+  "tool_calls": 30,
+  "key_files": [
+    "khanza-r5/docs/asset_export_20261023.md",
+    "khanza-r5/.gitignore",
+    "khanza-r5/scripts/push_asset.sh"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "r5-vps-migration-executed",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........-.--...-........................................-.--...-",
+  "action": "Migrated the benchmark asset to the replacement VPS (Vultr 2 vCPU/16GB/94GB, Ubuntu 24.04.5 x86_64, IPv6 2401:c080:...:fd68, same ed25519 key installed by the user via console). Sequence: preflight; apt install JDK17/Xvfb/faketime/mysql-server; mysql tuned buffer_pool 6G + skip-log-bin; pushed the 692MB verified export old->local->new with sha256 manifest verified ON the target; extracted trees; jar md5 25acbbbe MATCH; seven tools OK vs p11_frozen_20261020T0739Z.sha256 then chattr +i; loaded sik (1179 tbl, 63s) + sik_bench (23 tbl, 21s); restored-ledger hash 356355:a66a3a54 MATCH; created benchmark@localhost with fresh password (benchmark_pw 600) and old-box-identical grants (initially added a standing sik_p6f grant, REVOKEd after catching it would violate the zero-grant live-proof invariant); re-encoded both database.xml copies with PatchDbXml (classpath lessons: mariadb.jar IS Connector/J 8.4.0; EnkripsiAES root is KhanzaSecurity16bit/build/classes; commons-codec needed; all five XML properties are AES-encoded); parity JDBC probe identical on both boxes (benchmark db=sik billing_rows=1464593); results/ copied 1.3GB/8633 files matching; RESTORE.md addendum appended on the box and in repo docs. Committed 8c9db21. .vps2.env created for the new box; .vps.env still targets the old box pending decommission agreement with the other agent session."
+}

@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "task015-ambiguity-resolution",
+  "timestamp": "2026-09-17T04:16:13.808727+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3600,
+  "tool_calls": 45,
+  "key_files": [
+    "experiments/pm1-rx/TASK_015_PROGRESS.md",
+    "experiments/pm1-rx/TASK_015_AMBIGUITY_CONSUMER.md",
+    "experiments/pm1-rx/TASK_015_AMBIGUITY_F1.md",
+    "experiments/pm1-rx/TASK_015_AMBIGUITY_REFERENCE_HASH.md",
+    "experiments/pm1-rx/TASK_015_AMBIGUITY_ARM_A.md",
+    "experiments/pm1-rx/TASK_015_AMBIGUITY_TIMEOUT.md",
+    "experiments/pm1-rx/TASK_015_HUMAN_DECISIONS.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task015-ambiguity-resolution",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "Task 015 ambiguity resolution: documentation only. Wrote 7 records (PROGRESS, 5 ambiguity docs, human decision sheet). Established: infrastructure RECONSTRUCTABLE, runner source ABSENT, obsolete Vultr runner must not be used, no inference executed, local machine control-only. Blocking ambiguities: consumer stage, primary F1, Arm A length. Non-blocking: reference hash (documentary), timeout (inherit Task 014). Commit d38a287."
+}

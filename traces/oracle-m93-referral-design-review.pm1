@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "oracle-m93-referral-design-review",
+  "timestamp": "2026-10-06T09:41:06.059131+00:00",
+  "agent": "oracle",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 12,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "oracle-m93-referral-design-review",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........-.-.-.-........................---..-..........--.-..-.........................................................-.--...-",
+  "action": "Read-only architecture design review for Deers-Rock Epic IX M9.3 referral redesign. Read and verified: src/referral/system.ts (full), src/identity/types.ts L50-87, src/identity/data.ts L240-281, src/engine/outpatient.ts L1-130, src/engine/emergency.ts L1-120, src/engine/world.ts L350-389, src/patient/schema.ts L212-236, tests/determinism.test.ts, docs/adr/ADR-015 D5/D7/D8, ROADMAP.md L255-289; greps for dead exports, arrivalMode/JR consumers, road-accident wiring. Produced R1-R10 recommendations, 3-wave implementation order with gates, and 6 owner blockers to shape ADR-016. No files modified."
+}

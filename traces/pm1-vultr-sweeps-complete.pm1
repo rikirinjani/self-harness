@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-vultr-sweeps-complete",
+  "timestamp": "2026-10-06T03:12:23.082910+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 18733,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\results\\vultr-deepseek-v4.1-flash\\summary.json",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\results\\vultr-qwen3.8-27b\\summary.json",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\results\\vultr-glm-5.3\\summary.json",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\results\\vultr-nemotron-3-nano-omni-30b-a3b-reasoning\\summary.json",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\vultr_spend_ledger.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-vultr-sweeps-complete",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---.........................-.-.-.-........................--.-..-.........................................-.--...-",
+  "action": "VULTR SWEEP SERIES COMPLETE: 4/4 models (deepseek-v4.1-flash .21, qwen3.8-27b .60, glm-5.3 .68, nemotron .43; total .92 of  cap). FIELD-AUTHORITY DISSOCIATION REPLICATED across all 4 models: P inert (NO_EFFECT) on 3/4 (nemotron K50 partial anomaly), P-pos IMMEDIATE_COMPLIANCE recall 0.985-0.995 on ALL 4. P-postarget K-dependence DIVVERGES: deepseek weak@K10 (0.66)->strong@K50/150 (0.95); GLM weak@K50/150 (0.75-0.79)->strong@K10 (0.98); qwen/nemotron uniform high (0.99). Paper implication: dissociation generalizes, K-dependence is model-specific. Ledger updated with all 4 models."
+}

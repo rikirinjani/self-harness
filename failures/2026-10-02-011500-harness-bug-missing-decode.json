@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-10-02T01:15:00+07:00",
+  "agent": "orchestrator",
+  "category": "harness-bug",
+  "severity": "medium",
+  "task": "kaggle-astra-ce-review",
+  "root_cause": "task_ce_review.template.py declared SLICE_RIGOR = base64.b64decode(...) without the .decode('utf-8') suffix that the other four slice lines carried. At runtime the missing decode produced a bytes object where the prompt assembly concatenated strings, raising TypeError: can only concatenate str (not bytes) to str, which killed section 6 (rigor) in run 1 of the Kaggle benchmark task.",
+  "what_i_did_wrong": "Wrote five near-identical slice declarations by hand and validated the generated task file only with ast.parse(), which proves syntax but not type correctness. Did not grep that all five SLICE_* declarations shared the identical decode suffix before pushing.",
+  "detection": "verifier reward reported errors=1.0 in result.json, and the RIGOR heading in review-ce-stack_output.md had no sub-headings unlike every other section; the synthesis explicitly scored rigor 3/10 noting 'the rigor review itself failed and supplies no assessment'.",
+  "fix": "Added .decode(\"utf-8\") to the template, re-ran embed.py, verified all five SLICE_* declarations print the same suffix, pushed task version 2, re-ran gpt-6-astra. Run 2 returned errors=0 with report_chars=62927.",
+  "cost": "One wasted Astra run: approximately $0.92 and 4 minutes of wall time, plus a v1 task version that remains on Kaggle as a partial result.",
+  "prevention": "Add a guard in embed.py asserting every SLICE_* line matches the canonical pattern ending in .decode(\"utf-8\") before writing the task file; also assert decoded types are str rather than relying on ast.parse.",
+  "status": "fixed",
+  "verified_by": "Run 2 verifier_result.errors == 0.0 and all six section headings present with sub-sections."
+}

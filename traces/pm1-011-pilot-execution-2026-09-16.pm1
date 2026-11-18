@@ -1,0 +1,40 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-011-pilot-execution-2026-09-16",
+  "timestamp": "2026-09-16T15:18:20.584102+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 10800,
+  "tool_calls": 30,
+  "key_files": [
+    "experiments/pm1-rx/pilot_011_preflight.json",
+    "experiments/pm1-rx/pilot_011_boundaries.json",
+    "experiments/pm1-rx/pilot_011_data_freeze.json",
+    "experiments/pm1-rx/pilot_011_reference.json",
+    "experiments/pm1-rx/pilot_011_reference_freeze.json",
+    "experiments/pm1-rx/pilot_011_representations.jsonl",
+    "experiments/pm1-rx/pilot_011_arm_manifest.json",
+    "experiments/pm1-rx/pilot_011_runner_hash.txt",
+    "experiments/pm1-rx/TASK_011_PROGRESS.md",
+    "experiments/pm1-rx/TASK_011_RESULT.md"
+  ],
+  "failure": {
+    "category": "infrastructure",
+    "severity": "high"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-011-pilot-execution-2026-09-16",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-..........-.-.-.-.........--...--........--.-..-..........................--...--........-.--...-",
+  "action": "TASK 011 PARTIAL - pilot stopped at Stage 4 by the protocol escalation rule. Committed bd3e08c on pm1-rx-v14 (10 files, 1323 insertions). Executed the frozen protocol d7afc3a (instrument pm1-rx/atomic-matcher/1.0, matcher commit 90cec75) faithfully through Stage 3. STAGE 1 PRE-FLIGHT PASS 13/13: HEAD=protocol commit d7afc3a, matcher hash dda56a4508d5c145 verified, reference_v2.py sha 3cfb0eca verified, calibration FROZEN 0.60/0.75/0.30 22/22, model qwen2.5:3b digest 357c53fb Q4_K_M context_length 32768 recorded per Phase 12 Q12, DB read-only verified with a write probe (sqlite3.OperationalError raised as required), freeze tag 8304262 intact, clean start (no pilot_010/011 artifacts). STAGE 2 DATA FREEZE FROZEN: 10 boundaries via the unmodified frozen procedure extract_and_select(n=10), sha256 35e42b8e - BYTE-IDENTICAL to the historical Pilot A set because the relevant DB rows have not changed since 009A; the frozen deterministic procedure reproduced it, resolving the Phase 0 provenance concern (cross-pilot comparison remains prohibited - different instrument). DB fingerprint message 71120/session 622/part 286961. STAGE 3 REFERENCE FREEZE: contamination barrier verified (no consumer artifact existed at freeze time, asserted; extractor takes transcript only). GATE DEFECT RECORDED AND CORRECTED: the F-REFERENCE gate was implemented counting ReferenceState.items (cue candidates 0-3/boundary) and failed 9/10 boundaries; diagnosis = gate metric mis-specification by the executing session (the pre-registered 2-8 range refers to required_items(), the L3 denominator, which includes objective/phase/status); gate re-evaluated with the correct metric against the ALREADY-FROZEN reference file, reference artifacts NOT regenerated or modified; corrected result PASS (required_items 3-6/boundary, 3-18 rejections/boundary). Failure record 2026-09-16T16-25-22-protocol-gate-metric-defect-011.json. Protocol gap recorded: gate G2 does not define which quantity 'reference item counts' refers to. STAGE 4 ARM GENERATION STOPPED: systematic inference capacity failure. b0/A (prompt 34,619 chars, ~8.6K estimated tokens) F-TIMEOUT at the frozen 300s producer timeout (wall 338.3s); b0/B ran 7,115.8s without completing; a direct probe of the same prompt with a 900s budget produced no output after >1000s (SSH connection reset). CPU inference at this prompt size exceeds 15 min/call; 40 cells would take 10+ hours vs the frozen 6h global timeout. Escalation rule applied: timeout > 20% of calls -> STOP; 2/2 attempted cells timed out (100%). NO timeout changed, NO model substituted, NO boundary skipped, NO arm dropped, NO rerun attempted (structural cause, not transient). Failure record 2026-09-16T22-17-01-infrastructure-inference-capacity-011.json. ROOT CAUSE: the frozen computational budget extrapolated from 009B's measured 55.4s mean producer wall time without validating actual prompt token counts - the 009B data showed ~2,050 ACTUAL producer prompt tokens per call vs ~8,500 estimated by chars//4 (the heuristic overestimates ~4x on this content); the budget should have included a PRE-FLIGHT latency probe at real prompt sizes. Protocol gap recorded. ANTI-CONTAMINATION AUDIT: all 13 answers YES. SAFETY: no violation (DB read-only throughout, no live-context mutation, no protected-path write, no representation injected into the real agent). HISTORICAL ARTIFACTS UNCHANGED: freeze tag verified, no historical file modified, no rescore. 0/40 evaluations completed; 0 exclusions; 2 F-TIMEOUT failures recorded and preserved (append-only JSONL, no silent discard). NEXT EXACT ACTION: a NEW protocol version is required before resumption - either (a) revised timeout budget with a PRE-FLIGHT latency probe at real prompt sizes (same model/boundaries/instrument), or (b) a different inference backend (model substitution requiring a new frozen version). Do not resume this run; the 2 F-TIMEOUT cells are excluded and must be re-run from scratch under the new budget."
+}

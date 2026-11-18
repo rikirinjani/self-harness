@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261008T151743-orchestrator-cli",
+  "timestamp": "2026-10-08T15:17:43.518300+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "kaggle-ai\\niji_prompts_adelinde.md",
+    "kaggle-ai\\_fix_niji_params.py",
+    "kaggle-ai\\_fix_q.py",
+    "kaggle-ai\\_fix_oref.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261008T151743-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........................................-.--...-........................................-.--...-",
+  "action": "Niji 7 Adelinde prompt set delivered (niji_prompts_adelinde.md, 12 prompts). Niji 7 rejects --q and --oref/--ow. Seed reuse + sref both fail to lock face across composition changes (user confirmed at --sw 1000). User will consult community. Wrapping this lane; Brynn/OC3 design deferred until after author reads."
+}

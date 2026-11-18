@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "router-iyantama-check",
+  "timestamp": "2026-09-25T01:05:48.346270+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "router-iyantama-check",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................................................................-.--...-",
+  "action": "Tested third-party router key rtr_geWx-... at routers.iyantama.tech/v1. GET /v1/models returned 22 models (owner iyan-router, bn/ prefix). Ran chat completion against all 22: 17 OK, 5 fail from upstream router credentials (claude-haiku-4-5, claude-haiku-4-5-thinking, grok-4-5, laguna-s-2-1, mimo-v2-5) not the user key. Key valid. Caveat: third-party personal-domain router, prompts route through unknown operator. Awaiting decision to add to opencode.jsonc."
+}

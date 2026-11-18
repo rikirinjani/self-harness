@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "ce-hashfix-delegation-failures",
+  "timestamp": "2026-10-02T06:06:54.009374+00:00",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "duration_s": 600,
+  "tool_calls": 12,
+  "key_files": [
+    "C:\\Users\\think\\self-harness\\failures\\2026-10-02-060000-delegation-failure-subagent-spawn.json"
+  ],
+  "failure": {
+    "category": "delegation-failure",
+    "severity": "medium"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ce-hashfix-delegation-failures",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................-.--...-.........--...--........--.-..-.........-.--...-........................--.-..-.........-.--...-",
+  "action": "Four consecutive subagent dispatches for the kernel-authoring lane failed (1x 404, 3x context-limit at spawn/resume); fell back to direct orchestrator execution. Also shipped 2 broken kernel versions before base64-embedding source files. Failure record filed."
+}

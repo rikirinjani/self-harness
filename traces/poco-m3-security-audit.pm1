@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "poco-m3-security-audit",
+  "timestamp": "2026-09-26T12:34:58.742689+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 24,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "poco-m3-security-audit",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........................................................-.--...-",
+  "action": "Full read-only security+system audit of POCO M3 over WiFi ADB (paired 10.129.158.96, connect port 41703 discovered via runspace TCP scan after pairing). Results: bootloader locked, verified boot green+dm-verity enforcing, FBE encryption on, no root/Magisk/Xposed, Play Protect on, no hostile accessibility/device-admin/VPN/guest users, official user build. TOP RISK: security patch 2022-08-01 (49+ months stale, MIUI 12.5.8 is final). Secondary: wireless debugging left on (port 41703), 5 telemetry bloat packages, 2 unvetted 3rd-party apps (com.reelbuzz.tv, io.qrcode.scanner.qrcs). Battery healthy but aged (last boot=shutdown,battery). Storage 65% used, 7d uptime, no real crashes. Zero modifications performed per user instruction."
+}

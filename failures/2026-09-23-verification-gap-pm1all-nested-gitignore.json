@@ -1,0 +1,19 @@
+{
+  "failure_id": "2026-09-23-verification-gap-pm1all-nested-gitignore",
+  "timestamp": "2026-09-23T17:15:16+07:00",
+  "category": "verification-gap",
+  "severity": "medium",
+  "detected_by": "self (orchestrator), in-session, before any deletion or user handoff",
+  "task": "PM1_ALL git repository creation (commit 56d0404)",
+  "what_actually_happened": "The initial commit's completeness check used `git status` untracked-non-ignored = none as evidence that all archive content was versioned. That check is blind to content hidden by nested .gitignore files copied into the archive from the source repos (morse/.gitignore lines ab1_repo/, dist/, bench/results/, opencode_plugin/verify_results.json; pm-adapter/.gitignore dist/; plus root line 90 hf_space_deploy/). 54+ real content files (including QMS-referenced evidence wheels and bench reports) were silently on-disk-but-untracked. Only a subsequent `git status --ignored` audit caught it.",
+  "secondary_defect": "The first byte-fidelity check reported a false FAIL (all index lookups None) because path-separator normalization double-escaped the lookup keys in a shell-embedded python one-liner. Diagnostic bug only; fixed by rewriting as a file script and rerunning - PASS 11/11.",
+  "root_cause": "Verification methodology relied on git porcelain status heuristics instead of reconciling source trees against the git index/content. A status-based check cannot see ignored-but-present files, and nested .gitignores from archived source repos were not anticipated. Secondary: embedding non-trivial Python in a PowerShell single-quoted command line corrupted escape sequences.",
+  "impact": "Zero user-facing loss: caught in-session before the delete-list was produced. No originals deleted. Remediated in commit 9a993c4 (force-add of all content, junk excluded, staged counts reconciled: ab1_repo 42+5pyc=47, hf_space_deploy 21+4pyc=25, 91 files) plus a full `status --ignored` classification audit (remaining ignored = fixtures per user decision, caches, egg-info, raw gitdirs only).",
+  "corrective_action": [
+    "Ongoing: content completeness of archive commits is verified by SHA-256 source<->dest tree compare AND index hash spot-checks, never by status-only heuristics.",
+    "Ongoing: after any archive commit, run `git status --ignored` and classify every ignored entry as fixture/cache/gitdir or force-add as content.",
+    "Non-trivial Python diagnostics run from written .py files, not inline PowerShell command lines (matches existing environment-quirk note)."
+  ],
+  "linked_qms": "Agentic Layer/qms/records/verifications/2026-09-23-pass-pm1all-repo-appsync.json",
+  "status": "closed"
+}

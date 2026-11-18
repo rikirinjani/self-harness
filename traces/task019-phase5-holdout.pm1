@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "task019-phase5-holdout",
+  "timestamp": "2026-09-19T01:45:42.233983+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 45,
+  "tool_calls": 8,
+  "key_files": [
+    "experiments/pm1-rx/results/task019/TASK_019_HOLDOUT_RESULTS.json",
+    "experiments/pm1-rx/TASK_019_HOLDOUT_REPORT.md",
+    "experiments/pm1-rx/run_holdout_eval.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task019-phase5-holdout",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................-.--...-........-.--...-........-.--...-........................................-.--...-",
+  "action": "Task 019 Phase 5: Blind holdout evaluation complete. 45 pairs. v2 sensitivity 12.0% (+4.0pp over v1). 0 regressions. Category B confirmed. Commit e1b84c0."
+}

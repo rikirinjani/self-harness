@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "designer-contact-fail",
+  "timestamp": "2026-09-28T09:58:34.488452+00:00",
+  "agent": "designer",
+  "outcome": "fail",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {
+    "category": "infrastructure",
+    "severity": "high"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "designer-contact-fail",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........----...........-.--...-.........................................................................--...--........-.--...-",
+  "action": "des-1 contact page dispatch failed: same compaction bootstrap error, 3rd agent type (librarian, explorer, designer), 6/6 deterministic failures today. Failure record written. All specialist dispatches suspended for session; orchestrator implements Contact Us page directly."
+}

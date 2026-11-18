@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "metrics-unicode-crash",
+  "timestamp": "2026-09-24T07:34:57.850076+00:00",
+  "agent": "coordinator",
+  "outcome": "partial",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\ab_results\\vultr_si_deepseek\\metrics.json"
+  ],
+  "failure": {
+    "category": "encoding",
+    "severity": "low"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "metrics-unicode-crash",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........--.-..-.........................................-.--...-........................-.--...-........-.--...-",
+  "action": "eval_ab_metrics.py wrote metrics.json; console print_report crashed on Delta Unicode (cp1252); re-running with PYTHONIOENCODING=utf-8"
+}

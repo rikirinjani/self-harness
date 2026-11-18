@@ -1,0 +1,22 @@
+{
+  "schema": "overhead.v1",
+  "record_id": "ov-task-003",
+  "task_id": "gate-files-worktree",
+  "type": "task",
+  "pair_id": "pair-worktree-install",
+  "task_class": "infra",
+  "revision": "41df4b78cb0fb5ecb65527010d2f37da2cd4cf4f",
+  "suite_id": "l2-acceptance-gate-install",
+  "implementer_id": "fixer",
+  "mode": "delegated",
+  "status": "completed",
+  "accounting_complete": false,
+  "started_at": "2026-10-02T01:40:00Z",
+  "ended_at": "2026-10-02T01:45:00Z",
+  "duration_seconds": 300.0,
+  "cost_usd": null,
+  "human_seconds": null,
+  "input_tokens": null,
+  "output_tokens": null,
+  "context_tokens": null
+}

@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261105T054238-orchestrator-cli",
+  "timestamp": "2026-11-05T05:42:38.330298+00:00",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "discovery/exp_e2/exp_e2.py"
+  ],
+  "failure": {
+    "category": "external",
+    "severity": "medium"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261105T054238-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................-.--...-........................................-.--...-........................--.-..-.........-.--...-",
+  "action": "Fresh gate probe silently passed on a 401-aborted run; added non-200 abort and empty-result guard to fresh_probe"
+}

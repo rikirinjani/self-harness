@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "glm-burst-forensics",
+  "timestamp": "2026-09-27T05:56:04.157479+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 9,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\glm_burst.py",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle_activity.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "glm-burst-forensics",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Forensics on 14.47M-token GLM window drain. Query via json_extract on opencode.db message table. Results: Kaggle benchmarks session 5.14M tokens / 36 GLM calls with monotonically growing cacheRead 164k-188k (context never compacts) - largest single consumer, 35% of window; remaining 65% from subagent swarm on glm preset (fixer x5 + librarian x2 + PM-1 part4) each re-billing full context on no-cache-discount router. Session still potentially active (last message 12:33:32 vs overall DB max 12:36:05). Process audit: all 7 OpenCode processes are the Electron desktop app (main/crashpad/gpu/network/node/renderer/audio-service) - no isolatable PID for the runaway; killing renderer/node would kill app and this session. Audio service PID 2776 at 2.2s CPU - not implicated in speaker distortion. USER DECISION: leave runaway running and leave glm preset as-is despite repeating-burn risk."
+}

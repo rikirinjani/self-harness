@@ -1,0 +1,12 @@
+{
+  "record_type": "failure",
+  "timestamp": "2026-09-21T07:30:00Z",
+  "category": "implementation_bug",
+  "severity": "minor",
+  "task": "TASK 030",
+  "what_went_wrong": "The first deterministic runner completed oracle scoring but failed while serializing task030_typed_results.json because an internal dictionary used tuple keys.",
+  "root_cause": "Internal lookup structure was written directly instead of converted to a list of row records.",
+  "correction": "Converted tuple-keyed typed results to deterministic list records; reran successfully. No frozen artifacts or oracle outputs were invalidated.",
+  "verification": "Eight Task 030 tests passed after correction; final transition matrix regenerated.",
+  "status": "resolved"
+}

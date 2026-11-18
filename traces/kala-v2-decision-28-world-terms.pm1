@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "kala-v2-decision-28-world-terms",
+  "timestamp": "2026-09-27T04:08:45.125800+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 200,
+  "tool_calls": 5,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\kala_v2_decisions.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kala-v2-decision-28-world-terms",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Decision session: user ruled DECISION#28 (world terminology): AC-civil Aurath, one faith with regional aliases, 3 language families + borrowing, Gaea author-facing only. Proceeding to #29 physical mechanisms (final decision)."
+}

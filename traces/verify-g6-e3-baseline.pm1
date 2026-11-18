@@ -1,0 +1,36 @@
+{
+  "pm1_version": 1,
+  "session_id": "verify-g6-e3-baseline",
+  "timestamp": "2026-09-27T04:08:27.226255+00:00",
+  "agent": "verifier",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 14,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\G6-E3-REPORT.md",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\data\\g6_e3_results.json",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\data\\g6_events_e3.jsonl",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\g6_e3_canary.json",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\scripts\\run_g6_e3.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\G6-READINESS-REPORT.md",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\scripts\\e3_probe.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\data\\e3_run.log",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\VER-G6-E3-001.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "verify-g6-e3-baseline",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------.........................--...--........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "G6-E3 independent verification (read-only; recomputed every numeric claim from raw artifacts with .venv python, no S3/network): VERDICT APPROVE with 1 documented mismatch. Verified ALL match: Sec1 acceptance (9/9 x3, 0/48 x3, 171/171 events, strict-valid 171, 0 contract violations, 0 dup request_ids, emitted171/drop0/rot0, abstain 27 + 0 downstream, layer2 scan empty, errors 0, llm false x171, wall 11234.1s), Sec3 determinism (churn 0, topk order/set diff 0, 960/960 score deltas exactly 0.0, 0/48 top1 diffs, n_docs{20}) + profiles/cohorts exact at 4dp x3 runs, Sec4 embed and search p50/mean cells, Sec2 canary (9/18/30, idx 291-299, 5 cats x6, rebuild byte-identical, sha 669ae5206399f9a9 = LF-normalized text digest matching summary+runlog; raw CRLF bytes e4fcff1f - convention note), events store structure + probe-hash mapping 57x3 + 3 identical L1 outcomes per probe, runner exit checks cover 8/9 report rows (LLM row by-construction, dup-id not gated - both independently true), scope fully conformant (no thresholds/alerts/Layer-1/ranking/model/Layer-2/G8 changes; layer1_abstain.py and query_lancedb_fulltext.py mtimes unchanged), Sec6 500K column exact from 2026-09-19 results.json. MISMATCH found: Sec4 'search min/p90/max' row is source-mixed - p90 cells = retr_ms (121.3/114.4/117.7) but labeled search (search gives 121.2/114.3/117.5), max cells search(run1)/retr(run2,3) (162.3 vs 162.2; 166.0 vs 165.7), min cells = search; <=0.3s absolute, zero acceptance impact, erratum recommended. Uncertainty: Sec5 refine-factor constants, IVF_PQ metadata, e3_probe timings, S3 throttle log lines have no offline artifact. QMS VER-G6-E3-001.json written (utf-8 no BOM, json.load-validated, result=pass, verifier=ver-1)."
+}

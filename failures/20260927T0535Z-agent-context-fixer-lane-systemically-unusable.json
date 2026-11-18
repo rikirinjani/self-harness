@@ -1,0 +1,10 @@
+{
+  "timestamp_utc": "2026-09-27T05:35:00Z",
+  "category": "agent-context",
+  "slug": "fixer-lane-systemically-unusable",
+  "severity": "high",
+  "what_happened": "A FOURTH fixer dispatch (fix-4, ses_f1eade08effeNVyI8LJ2wzELnj) for the G6-E4 Phase B documentation task failed with the same error as the three Phase A dispatches: 'Session too large to compact - context exceeds model limit even after stripping media'. fix-4 was a brand-new session (no task_id passed), disproving the hypothesis in 20260927T0525Z-agent-context-fix-dispatch-overflow.json that pre-existing session bloat was the cause.",
+  "root_cause": "The fixer lane itself cannot start within the model's context limit (likely system prompt + tool definitions + harness minimum context exceeds the window on this model). Systemic across sessions, not session-specific.",
+  "what_i_did_wrong": "The earlier failure record's corrective action ('prefer fresh sessions') was wrong; I dispatched fix-4 on the strength of that unverified hypothesis instead of treating 3 identical failures as sufficient evidence to abandon the lane. 4 dispatches total were spent before abandoning fixer.",
+  "action_taken": "Fixer lane abandoned for this session. Supersedes the 'prefer fresh sessions' recommendation of the earlier record. Phase B documentation executed directly by the orchestrator (no other write-capable lane: oracle/verifier/explorer/librarian are read-only, designer is UI-only). Reusable lanes unaffected: ver-1 (verifier), lib-1 (librarian) still available."
+}

@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-batch5-alltriage",
+  "timestamp": "2026-09-26T05:26:41.644720+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 6,
+  "key_files": [
+    "rag-queries/batch5_sentences.json",
+    "rag-queries/kaggle_batch5_alltriage.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-batch5-alltriage",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........-.--...-........-.--...-........................................-.--...-",
+  "action": "Built Batch 5 full-corpus triage for the half-day downtime: 413 (drug,dim) groups / 2573 unique sentences / 25 dims from judge_input (609 dupes removed), per-group desc embedded; resumable dim-aware Kaggle script (ddi pk/pd/none; others strong/moderate/negative/none), output batch5_verdicts.json; py_compile OK; committed ab3426d"
+}

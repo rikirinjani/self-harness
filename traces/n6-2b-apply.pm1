@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "n6-2b-apply",
+  "timestamp": "2026-10-01T08:22:17.396992+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1200,
+  "tool_calls": 8,
+  "key_files": [
+    "rag-queries/curation/n6_batch2b_resolutions.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "n6-2b-apply",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........-.--...-........-.--...-........................................-.--...-",
+  "action": "N6.2b apply (user-approved all 11): pre-check 11/11 matched, applied ddi changes (lansoprazole/ranitidine/metoprolol/captopril 3->2, famotidine/atenolol/bisoprolol/pantoprazole/irbesartan/acarbose 2->1, piroxicam 1->2), diff exactly 11/11 lines no noise. Verified: grid 352/0, both suites pass, smoke 18/18. Committed 24decb4 and pushed"
+}

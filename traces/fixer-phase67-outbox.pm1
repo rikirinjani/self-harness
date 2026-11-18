@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "fixer-phase67-outbox",
+  "timestamp": "2026-10-12T05:40:07.596505+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\self-harness\\outbox\\mempalace-queued-phase67-tools.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "fixer-phase67-outbox",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................................................-.--...-........................................-.--...-",
+  "action": "Housekeeping: MemPalace MCP add-drawer unavailable in session; queued drawer content durably to self-harness/outbox/mempalace-queued-phase67-tools.md per degraded-mode rule (delivery pending, next MCP-capable session). Crashlog marked complete."
+}

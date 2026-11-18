@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "jev-fee-model-and-edge-gate",
+  "timestamp": "2026-09-24T08:37:46.518667+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1500,
+  "tool_calls": 40,
+  "key_files": [
+    "C:\\Users\\think\\jev-crypto-trader\\src\\config.ts",
+    "C:\\Users\\think\\jev-crypto-trader\\src\\types.ts",
+    "C:\\Users\\think\\jev-crypto-trader\\src\\paper.ts",
+    "C:\\Users\\think\\jev-crypto-trader\\src\\trader.ts",
+    "C:\\Users\\think\\jev-crypto-trader\\tests\\trader.test.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "jev-fee-model-and-edge-gate",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........--.-..-.........................................-.--...-",
+  "action": "Fixed the structurally-negative P&L on the JEV crypto trader. Diagnosis: loss was 95% fees (feesUsd 171.98 of pnl -180.38); realized only -8.41. Cause: taker-both-legs fee model (FEE_BPS=10) plus a quote on EVERY decision tick (quotes==decisions==8881) on a 1-tick-spread BTCUSDT book (spread 0.001bps) with ~zero directional edge. Fix: (1) fee model set to realistic maker rate (FEE_BPS 10->2, documented venue tiers); (2) added an expected-edge gate in trader.ts (edgeGate) that only rests a quote when |pBuy-pSell| x EDGE_MOVE_BPS clears 2*FEE_BPS+spread+margin, else stands down AND cancels resting liquidity (new Exchange.cancelOrders) so stale quotes cannot be filled; added gatedTicks counter to Totals. Tests updated with StubModel/SeqModel; 15/15 pass locally and on VPS; typecheck clean. Deployed to VPS (.env FEE_BPS=2/MIN_CONVICTION=0.5/EDGE_MOVE_BPS=5) and restarted jev-crypto-trader.service. Verified over 983 decisions: quote rate 100%->36.9%, gated 63.1%, fills/decision 0.33->0.13, fee drag per decision 0.01936->0.00141 (~13.7x reduction), realized -0.02 (flat). Dashboard re-verified via headless CDP: 0 exceptions, renders new payload."
+}

@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "website-store-launch",
+  "timestamp": "2026-09-19T01:06:34.141852+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 420,
+  "tool_calls": 12,
+  "key_files": [
+    "web/index.html"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "website-store-launch",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Website updated for npm + Godot Asset Store launch: replaced 'Not on npm yet / will 404' notice with 'Now on npm and the Godot Asset Store', TypeScript track now shows plain 'npm install causality-engine' (was manual curl+tgz), Godot track links the live store page, footer status lists On npm + On the Godot Asset Store. Committed 552c218, pushed, Pages workflow 35411443788 completed success, live site verified end-to-end."
+}

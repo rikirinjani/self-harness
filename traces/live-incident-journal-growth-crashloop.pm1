@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "live-incident-journal-growth-crashloop",
+  "timestamp": "2026-10-02T10:00:01.786330+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "Deers-Rock/src/engine/markov.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "live-incident-journal-growth-crashloop",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........................................-.--...-........................................-.--...-",
+  "action": "LIVE INCIDENT: deers-rock crash-loop on Tencent box (17 restarts in 3h), service STOPPED as containment. Root cause: unbounded world growth (P1-8) - world-journal.db grew 3MB to 980MB in ~8h (tick 12k), boot-time snapshot JSON.parse exceeds 512M MemoryMax (V8 OOM in JsonParser, ABRT, not cgroup kill). Cap protected RAG: cokro-api/nginx/litestream active throughout, 2.8GB avail after stop. Also captured mid-incident adapter findings: codex-interpretum DeersRockClient works against live DR (auth, all 4 endpoints, 5/5 GrouperInputs, ICD-10 mapped, 160 charts with ICD-9-CM procedures); found anomaly: /api/encounters showed 3422/3422 active, 0 discharged despite discharge paths setting status in-place (markov.ts:142, outpatient.ts:173) and unique per-admission ids ENC-tick-patient - unresolved why zero discharged rows; matters because coding apps need completed episodes. Incident decision pending from owner: A wipe+fresh world with size-guard stopgap, B raise cap (breaks cohost budget, needs RAG DEV), C keep stopped until P1-8, D prioritize P1-8 pruning now."
+}

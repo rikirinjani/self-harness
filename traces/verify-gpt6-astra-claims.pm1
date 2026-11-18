@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "verify-gpt6-astra-claims",
+  "timestamp": "2026-10-02T01:14:21.281830+00:00",
+  "agent": "explorer",
+  "outcome": "pass",
+  "duration_s": 240,
+  "tool_calls": 12,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "verify-gpt6-astra-claims",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........---..-..........................--.-..-.........--.-..-.........................................................-.--...-",
+  "action": "Read-only verification of 5 external-reviewer claims against Causality Engine codebase (hash.ts proto-key defect, type canonicalization, differential persistence tests, package entry points, docs consistency). Verdicts: 1 TRUE, 2 PARTLY, 3 PARTLY, 4 PARTLY, 5 PARTLY. No files modified."
+}

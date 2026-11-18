@@ -1,0 +1,42 @@
+{
+  "pm1_version": 1,
+  "session_id": "lane-a-full-judge",
+  "timestamp": "2026-10-03T17:09:43.277604+00:00",
+  "agent": "implementer",
+  "outcome": "partial",
+  "duration_s": 65000,
+  "tool_calls": 47,
+  "key_files": [
+    "eval/ab_plan/modal_judge/full_judge_app.py",
+    "eval/ab_plan/modal_judge/build_qrels_and_metrics.py",
+    "eval/ab_plan/modal_judge/items_v1.jsonl.gz",
+    "eval/ab_plan/modal_judge/pool_report.json",
+    "eval/ab_plan/modal_judge/judgments_openai_gpt-oss-20b.jsonl",
+    "eval/ab_plan/modal_judge/judgments_openai_gpt-oss-20b.gate200.bak.jsonl",
+    "eval/ab_plan/modal_judge/run_meta_full_v1.json",
+    "eval/ab_plan/modal_judge/graded.json",
+    "eval/ab_plan/modal_judge/metrics.json",
+    "eval/ab_plan/modal_judge/metrics_full.json",
+    "eval/ab_plan/modal_judge/comparison_table.md",
+    "eval/ab_plan/modal_judge/volume_snapshot_chunk5.jsonl",
+    "eval/ab_plan/modal_judge/full_run_verification.md",
+    "self-harness/failures/2026-10-02T23-23-34-code_bug-lane-a-full-judge-items-missing-fields.json",
+    "self-harness/failures/2026-10-03T17-00-10-budget_overrun-lane-a-full-judge-spend-tracking-miss.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "lane-a-full-judge",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........--.-..-..........-.-.-.-.........--...--.........--...--........................................-.--...-",
+  "action": "Lane A full judge run: 6-system pool 19404 unique pairs + 10pct 3x repeats = 23284 work items; 23282/23284 valid (99.99pct, 2 residual reasoning-truncation failures after 4-8 retries), resume keys unique, 0 keys outside pool; model openai/gpt-oss-20b (gate-passed, prompt sha verified); TRUE spend USD 11.00 GPU-basis vs USD 10 lane guidance (USD 1.00 over, disclosed; ledger showed USD 7.42 - watchdog auto-close quirk left chunks 2/5/6 uncounted ~USD 4.17); metrics via eval_ab_metrics.py + nDCG@20 extension: headline minilm--medcpt 0.8785 nDCG@20, all 5 medcpt rerankers beat all dense baselines and both msmarco variants, bm25-v2 last 0.7966; evidence in eval/ab_plan/modal_judge/"
+}

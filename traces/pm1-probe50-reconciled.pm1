@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-probe50-reconciled",
+  "timestamp": "2026-10-02T12:41:30.835247+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\frozen\\phase2-probe50\\FREEZE_MANIFEST.md",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\VER-2026-10-02-PM1-PROBE50.json",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\RUN_REGISTRY.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-probe50-reconciled",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "PROBE50 RECONCILED (v15, ~16min, \\): notice delivery PROVEN live (visible 50/50 both arms) with INVERTED outcome - P (full packet + notice) NO_EFFECT recall 0.000 (50x HOLD); P-pos (no target + notice) IMMEDIATE_COMPLIANCE recall 0.975 (0->1->2 by hop 2). Mechanism: structured packet target outranks appended override text; without the field the notice wins. Bonus: Gemma shows F1-style early adoption on the packet arm (inhibition is arm-dependent, not just model-dependent). Frozen frozen/phase2-probe50 + manifest; VER-2026-10-02-PM1-PROBE50 (PASS); registry updated; B2-notice predictions set (P/P-postarget inert, P-pos complies)."
+}

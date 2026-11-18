@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "g7-deliverables",
+  "timestamp": "2026-09-28T03:24:44.394945+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "Project_v2/LocalNotebook/rag-service/G7-RELEASE-DIFF-REPORT.md",
+    "Project_v2/LocalNotebook/rag-service/data/g7_release_manifest.json",
+    "Project_v2/LocalNotebook/rag-service/scripts/g7_build_manifest.py",
+    "Project_v2/LocalNotebook/rag-service/PRE-PRODUCTION-TODO.md",
+    "Agentic Layer/qms/records/verifications/VER-G7-001.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "g7-deliverables",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................--.-..-.........................................-.--...-",
+  "action": "G7: RC frozen (identity 89586c18..., git HEAD 2874587, manifest g7-release-manifest/1), full production diff classified to accepted work (P0-2, G6-E1/E2/E4), boundary scan clean (1 dispositioned display-field hit), G6 fail-open verified, 5 regression suites re-run exit 0 unchanged; ver-1 independent verification APPROVE (VER-G7-001, 8 checks, identity recomputed exact); pre-G8 requirements recorded (token remediation + manifest refresh + human go-ahead); TODO G7 closed"
+}

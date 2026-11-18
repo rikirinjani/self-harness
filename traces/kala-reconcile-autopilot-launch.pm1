@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "kala-reconcile-autopilot-launch",
+  "timestamp": "2026-09-26T22:16:58.093425+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 15,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\resume_reconcile.ps1",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\verify_reconcile.py",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\RESUME-PLAN.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kala-reconcile-autopilot-launch",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---.........................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Sprites parked (user will resub MJ later). Built unattended reconcile resume: verify_reconcile.py (validated - correctly fails v1: 20 empty-digest mentions, 55/55 D-n coverage check, 5 parts, utf8) + resume_reconcile.ps1 (wait to 00:05Z, push x4 with 403 cooldown, poll, download newest version, verify, write RESUME_RESULT.json). Dry-run passed, launched detached PID 11976 at 22:16Z."
+}

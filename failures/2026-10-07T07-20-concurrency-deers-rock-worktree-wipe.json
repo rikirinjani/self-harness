@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-10-07T07:20:00+07:00",
+  "category": "environment-concurrency",
+  "slug": "deers-rock-concurrent-worktree-wipe",
+  "severity": "high",
+  "project": "Deers-Rock",
+  "repo": "C:/Users/think/.opencode/skills/Deers-Rock",
+  "summary": "While fixer session was completing an inherited interrupted rebase, a concurrent actor pushed from the same clone (reflog: 'update by push' 07:01:42 +0700, not executed by this session) and then deleted 246 tracked files from the working tree (~07:02:07), including src/, tests/, public/. A second clone at C:/Users/think/Project_v2/Deers-Rock concurrently ran npm test/vitest.",
+  "root_cause": "Two agent sessions operated on the same git clone simultaneously without coordination. This session inherited a crashed session's mid-rebase state and completed it without first checking for concurrent actors (recent .git/index mtime, live node/git processes, other clones).",
+  "what_i_did_wrong": "Did not check for concurrent actors before mutating shared repo state (rebase --continue). Detected the concurrency only after the working tree was shredded. No destructive action was taken by this session; recovery was evidence-preserving.",
+  "impact": "Working tree of 246 tracked files deleted on disk; unknown-actor push of 5a3a048 to origin/main. No git objects lost; index intact; recovery via git restore . was complete (0 dirty entries, fsck clean, only dangling post-rebase objects).",
+  "recovery": [
+    "Froze all mutations; polled status 30s for quiescence",
+    "Preserved evidence: C:/Users/think/AppData/Local/Temp/opencode/deers-rock-incident-20261007.txt (status porcelain + reflog)",
+    "git restore . restored all 246 files; verified via status/fsck",
+    "Rebased own 2 commits onto the actor's 4 newer commits (no overlap), pushed 93d25df..65fab97"
+  ],
+  "lesson": "Before any git mutation on a shared clone: (1) check .git/index and reflog mtimes vs wall clock, (2) list running node/git processes and sibling clones, (3) if a rebase/merge is inherited, confirm the prior session is actually dead."
+}

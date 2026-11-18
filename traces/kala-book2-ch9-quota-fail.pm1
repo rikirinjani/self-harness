@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "kala-book2-ch9-quota-fail",
+  "timestamp": "2026-09-27T21:16:48.643437+00:00",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "duration_s": 2400,
+  "tool_calls": 12,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\build_book2_task.py",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\book2_spend.csv",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\task_book2_ch9.py"
+  ],
+  "failure": {
+    "category": "resource-exhaustion",
+    "severity": "low"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kala-book2-ch9-quota-fail",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................-.--...-........---..-..........--.-..-.........-.--...-........................-.--...-........-.--...-",
+  "action": "ch9 blocked by day-quota floor: v1 403 at 16000 cap (reservation .94469), v2 retry at 10000 cap also 403 (.64469 > remaining ~.5). No tokens billed (rejected at reservation). Builder cap resized 16000->10000; ch9 v2 pushed+compiled awaiting post-reset run; ch10-12 scoped and ready. 8/12 chapters complete, .201 spent"
+}

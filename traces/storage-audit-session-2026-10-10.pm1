@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "storage-audit-session-2026-10-10",
+  "timestamp": "2026-10-10T11:06:23.721506+00:00",
+  "agent": "agnes",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Kingsoft",
+    "C:\\Users\\think\\AppData\\Roaming\\kingsoft",
+    "C:\\Users\\think\\AppData\\Local\\Microsoft\\Edge"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "storage-audit-session-2026-10-10",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------.........................--...--........................-.--...-........................................-.--...-",
+  "action": "Storage audit: scanned C:\\Users\\All Users (2.9 GB) and C:\\Users\\think (75 GB); provided detailed breakdown of every major folder with safe-to-delete targets. Deleted WPS remnants from user profile (4.9 GB). Kingsoft system remnants (4 MB) and Edge system folders (1.7 GB) remain locked — need admin."
+}

@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-vultr-sweep1-launch",
+  "timestamp": "2026-10-04T23:31:41.701075+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\run_pilot.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\smoke_vultr_model.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\vultr_spend_ledger.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-vultr-sweep1-launch",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "VULTR SWEEP 1 LAUNCHED (user approved, \\ cap): deepseek-v4.1-flash, 12-run r3fix_a (C arm L=2 4 cells x 3 trials, notice ON) detached PID 12348, results/vultr-deepseek-v4.1-flash/. Smoke PASSED first (JSON compliant, 15k ctx probe OK, prefill ~6k tok/s, est ~\\.75/sweep at assumed \\.30/\\.90). Spend ledger vultr_spend_ledger.py with \\ cap gate (assumed pricing = conservative estimate; actual charge on Vultr side). run_pilot.py --sweep-label passthrough added (+compile OK + stub dry-run green) after my earlier malformed-edit syntax break was fixed. Next: poll heartbeat, on completion run remaining 3 models (qwen3.8-27b, rune-26b-a4b-v3, nemotron-reasoning) gated by ledger."
+}

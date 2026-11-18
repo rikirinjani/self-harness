@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "lancedb-cosine-distance-research",
+  "timestamp": "2026-09-27T03:38:52.697101+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 1140,
+  "tool_calls": 24,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "lancedb-cosine-distance-research",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--.........................---..-..........--.-..-.........................................................-.--...-",
+  "action": "Researched LanceDB 0.36 / lance engine cosine _distance semantics from official docs (docs.lancedb.com) and Rust source (lance-format/lance, lancedb/lancedb). Established: cosine=1-dot/(|x||y|) exact; PQ ANN returns approximate distance on compressed normalized vectors (Cosine->L2 conversion, squared L2); refine_factor default off; create_index default IVF_PQ 8-bit; flat L2 returns squared distance in code despite docs sqrt formula. No project files modified - read-only research."
+}

@@ -1,0 +1,15 @@
+﻿{
+  "timestamp": "2026-09-16T16:25:22",
+  "category": "protocol",
+  "severity": "high",
+  "slug": "gate-metric-defect-011",
+  "task": "PM-1-RX 011 Stage 3 REFERENCE FREEZE",
+  "what_failed": "The F-REFERENCE gate as implemented in the Stage 3 freeze script counted ReferenceState.items (cue-pattern candidates) and found 9/10 boundaries below the pre-registered 2-8 range, triggering a FAIL and a mandatory stop.",
+  "root_cause": "Gate metric mis-specification by the executing session. The pre-registration gate says 'reference item counts within 2-8'. The 009B measured range of 3-6 that motivated the gate referred to REQUIRED ITEMS - the L3 denominator (reference.required_items()), which includes objective/phase/current_task_status plus cue-extracted fields. The Stage 3 script counted the wrong quantity: cue-candidate items (0-3 per boundary) instead of required items (3-6 per boundary). The reference extractor itself is correct and unmodified; its output is identical to what the frozen instrument produces.",
+  "measured_evidence": "items per boundary: [0,1,0,1,3,0,1,0,0,0]. required_items() per boundary: [3,4,3,4,6,3,3,3,3,3] - all within 2-8. required_fields per boundary: [3,4,3,4,5,3,3,3,3,3].",
+  "classification": "OPERATIONAL/PROTOCOL defect in the gate implementation, NOT a reference defect (F-REFERENCE does not apply - the extractor is unmodified and its output is within the pre-registered range when measured with the correct metric).",
+  "disposition_per_protocol": "STOP -> record -> classify -> decide by review. Decision: the correct metric is defined by the frozen instrument itself (required_items() is the L3 denominator and is what H4 constrains). The gate is re-evaluated with the correct metric. The reference artifacts are NOT regenerated or modified - only the gate check is re-evaluated against the already-frozen reference file.",
+  "what_i_did_wrong": "Implemented the gate metric from memory of the 009B narrative ('3-6 required items per boundary') without checking which quantity the pre-registration gate referred to. The gate should have been specified against required_items() explicitly in the protocol.",
+  "protocol_gap_identified": "TASK_010_PREREGISTRATION.md gate G2 says 'reference item counts within 2-8' without defining which quantity. This ambiguity is a protocol defect to record for the next protocol version. It is resolved here by the only reading consistent with the frozen instrument (required_items() is the L3 denominator).",
+  "retry_policy": "One corrective re-evaluation of the gate metric only. No regeneration of reference artifacts. No change to the extractor, matcher, thresholds, or protocol documents."
+}

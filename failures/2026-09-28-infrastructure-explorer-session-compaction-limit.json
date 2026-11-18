@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-09-28T16:55:00Z",
+  "category": "infrastructure",
+  "slug": "explorer-session-compaction-limit",
+  "task": "Recon web deploy + auth patterns for Contact Us feature (exp-1)",
+  "outcome": "fail",
+  "error": "Explorer session ses_f1890f561ffeR8kE6FtHC1pp1G failed with 'Session too large to compact - context exceeds model limit even after stripping media' — the SAME deterministic bootstrap failure class that killed 4/4 librarian sessions earlier today (see 2026-09-28-infrastructure-librarian-session-compaction-limit.json).",
+  "root_cause": "The 'Session too large to compact' defect is NOT librarian-specific — it now affects explorer as well. Likely a shared agent bootstrap/system-prompt context bloat issue affecting specialist subagents generally, hitting before any task content is ingested.",
+  "what_i_did_wrong": "After 4/4 librarian failures proved the defect class was agent-level, I still dispatched a specialist (explorer) without first validating that the defect class was librarian-only. The failure record corrective action was scoped to librarian, but the prudent move for a same-day identical error class was a cheap probe or direct execution.",
+  "corrective_action": "Do not dispatch ANY background specialist (librarian, explorer, fixer, designer, verifier) for the remainder of this session unless a probe first proves the class works. Orchestrator performs the bounded recon directly. Root-cause of specialist session bootstrap bloat is a maintenance item for the human.",
+  "affected_files": []
+}

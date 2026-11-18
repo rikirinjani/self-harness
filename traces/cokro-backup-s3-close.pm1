@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "cokro-backup-s3-close",
+  "timestamp": "2026-10-02T09:55:17.351641+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3000,
+  "tool_calls": 20,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "cokro-backup-s3-close",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........................................................-.--...-",
+  "action": "Backup task CLOSED: operator fixed IAM (added s3:GetBucketLocation), litestream replicating to S3 (wal segment written INFO), restore drill v3 PASSED end-to-end (snapshot generation f9cc10c6caf543e3 restored, WAL applied, integrity ok, DRILL-OK). Config pinned ?region= in URL (backup at litestream.yml.bak-20261002). Two lessons recorded: restore needs GetBucketLocation even with region param; nested sudo strips env (drill sources env as ubuntu single hop). QMS VER-COKRO-BACKUP-S3-REPLICA-001."
+}

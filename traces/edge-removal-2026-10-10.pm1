@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "edge-removal-2026-10-10",
+  "timestamp": "2026-10-10T11:06:22.877637+00:00",
+  "agent": "agnes",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Program Files (x86)\\Microsoft\\Edge",
+    "C:\\Users\\think\\AppData\\Local\\Microsoft\\Edge"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "edge-removal-2026-10-10",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........................--.-..-.........................-.--...-........................................-.--...-",
+  "action": "Edge browser removal: killed all msedge.exe processes, disabled 3 Edge services, removed 11 auto-launch registry entries, deleted user data folder (1.3 GB). System-level Edge (886 MB) and WebView2 (861 MB) in Program Files remain locked — require admin. WebView2 is actively used by WhatsApp Desktop and Windows Search."
+}

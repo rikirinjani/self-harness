@@ -1,0 +1,38 @@
+{
+  "pm1_version": 1,
+  "session_id": "task030-discriminative-actionable",
+  "timestamp": "2026-09-21T07:41:34.260840+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 26,
+  "key_files": [
+    "morse/experiments/pm1-rx/TASK_030_PROTOCOL.md",
+    "morse/experiments/pm1-rx/TASK_030_PREFLIGHT.md",
+    "morse/experiments/pm1-rx/TASK_030_RESULTS.md",
+    "morse/experiments/pm1-rx/TASK_030_DIAGNOSTIC.md",
+    "morse/experiments/pm1-rx/task030_transition_matrix.json",
+    "morse/experiments/pm1-rx/task030_candidate_pools.json",
+    "morse/experiments/pm1-rx/task030_assembly_results.json",
+    "morse/experiments/pm1-rx/task030_oracle_results.json",
+    "morse/experiments/pm1-rx/scripts/task030/run_task030.py",
+    "morse/experiments/pm1-rx/scripts/task030/analyze.py",
+    "morse/experiments/pm1-rx/scripts/task030/tests/test_task030.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task030-discriminative-actionable",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Task 030 complete: offline discriminative-to-actionable replay using frozen Task029 outputs and frozen Task024 Arm-A representations. Frozen boundaries b0,b1,b4,b7,b9; 15 cells G/T/S. No Jev calls, no producer reruns, no 7B/14B. Candidate pools: 18 applicable atoms, 4 options each, identical T/S. Frozen shadow oracle used unchanged (L3 principal acceptance). Transition results: G 0/5 accepted, T 2/5 accepted and 7/18 accepted atom-equivalents (38.9% among correct selected), S 0/5 accepted after M_suff>=0.80 gate with 5/18 eligible. T selection was 18/18 correct; three T cells remained partial, locating loss at composition/actionability. Eight integrity tests pass. Deliverables and hashes written. STOP."
+}

@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-budget-cutoff-probe",
+  "timestamp": "2026-10-02T10:25:59.796064+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\BUDGET.md",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\probe_proxy_quota.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-budget-cutoff-probe",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "Budget corrected (2nd): remaining this month = \\ (user-reported), cutoff UNKNOWN. Attempted to discover cutoff: Kaggle docs JS-walled (empty fetch); Model Proxy API probed at 9 usage/quota paths (/usage /quota /me /account /limits /v1/usage /openapi/*) - all 404, no quota endpoint exposed (base mp-staging.kaggle.net/models). Conclusion: cutoff only visible on Kaggle website. Practical impact nil: planned spend ~\\.8 = 3.3% of \\, safe regardless of cutoff. BUDGET.md updated."
+}

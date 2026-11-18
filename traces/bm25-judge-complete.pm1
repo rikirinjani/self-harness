@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "bm25-judge-complete",
+  "timestamp": "2026-09-24T09:34:39.205531+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\ab_results\\vultr_si_deepseek\\judge_records_bm25.jsonl",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\ab_results\\vultr_si_deepseek\\bm25_judge_budget.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "bm25-judge-complete",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "bm25_judge segment COMPLETE: 5943/5976 valid, 6088 lines, seg \\.2967 total \\.9467, 64.4/min"
+}

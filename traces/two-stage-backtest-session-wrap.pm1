@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "two-stage-backtest-session-wrap",
+  "timestamp": "2026-09-25T07:58:07.819376+00:00",
+  "agent": "fixer",
+  "outcome": "partial",
+  "duration_s": 180,
+  "tool_calls": 6,
+  "key_files": [
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest\\RESULTS_SUMMARY.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "two-stage-backtest-session-wrap",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........--.-..-.........--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Session wrap: two-stage-backtest fixed and compiling clean (npx tsc exit=0) but execution stopped at step 4 - TYPESAFE_AI_API_KEY unavailable locally, so no backtest metrics were observed and results.json was deliberately not written. RESULTS_SUMMARY.md records the observed output (tsc 0, run exit 1 missing-key message). Retrace scan clean (0 untraced files), crashlog marked complete, failure record filed for ast_grep_replace no-op."
+}

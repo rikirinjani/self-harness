@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "two-stage-laya-run-fidelity",
+  "timestamp": "2026-09-26T01:23:29.643654+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 86400,
+  "tool_calls": 70,
+  "key_files": [
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest\\results.json",
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest\\RESULTS_SUMMARY.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "two-stage-laya-run-fidelity",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-..........-.-.-.-.........--...--........-.--...-........................................-.--...-",
+  "action": "Resumed the aborted two-stage backtest from its last position: added disk-persisted resumable caches + per-pair sharding + MERGE mode (imp-4), applied LAYA_THREADS=2 (throughput 0.63->0.93 req/s), ran 7 shards (15h04m, 40210 Laya calls, 0 errors) and merged to results.json/RESULTS_SUMMARY.md. Verification FAILED validity: 4-payload order-swap probe proved the TypeSafe dict instructions sent by run.ts are not consumed by Laya, so choices follow option order (regime 100% TRENDING, direction 99% up) and regimeOnly/twoStage/jevMomentumFilter are artifacts. Records: NCR-2026-09-26-LAYA-001, failure 20260926T082305Z-validation-gap-laya-request-shape-fidelity, VER 20260926-fail-two-stage-laya-fidelity."
+}

@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "p028-vx1-rerun",
+  "timestamp": "2026-09-16T01:25:20.709889+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 60,
+  "key_files": [
+    "scripts/p028/p028-persistence-resurrection.ts",
+    "scripts/p028/p028-control-worker.ts",
+    "scripts/p028/p028-producer-worker.ts",
+    "scripts/p028/p028-resumer-worker.ts",
+    "docs/P-028-VX1-SUMMARY.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "p028-vx1-rerun",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........--.-..-.........................................-.--...-",
+  "action": "P-028 VX1 rerun: 13/13 PASS after 3 fixes (iv-file flag mismatch, intervention ID prefixes, dimE empty-history compaction). Commits ef2ded2, 3045258, 8f19480, 2d426b4"
+}

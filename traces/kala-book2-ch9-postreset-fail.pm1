@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "kala-book2-ch9-postreset-fail",
+  "timestamp": "2026-09-28T00:14:09.179471+00:00",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\task_book2_ch9.py",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\run_chapter.ps1"
+  ],
+  "failure": {
+    "category": "resource-exhaustion",
+    "severity": "medium"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kala-book2-ch9-postreset-fail",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................-.--...-........................................-.--...-........................--.-..-.........-.--...-",
+  "action": "Attempted ch9 run after midnight UTC reset; Astra returned 403 quota reservation rejection (.64469 at cap 10000); quota had NOT reset as expected"
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "timestamp": "2026-10-05T08:59:30+08:00",
+  "category": "kaggle-kernel-output-bloat",
+  "slug": "kernel-without-run-seven-pushes",
+  "task": "Kaggle CPU Stage-0 baseline (baseline-kronos-suite)",
+  "outcome": "fail",
+  "attempts": 7,
+  "severity": "medium",
+  "summary": "Seven consecutive Kaggle benchmark task creations failed with KERNEL_WITHOUT_RUN ('notebook completed but did not produce any run output') because build artifacts were written into /kaggle/working, which Kaggle uploads as notebook output.",
+  "root_cause": "The Node.js tarball (~31 MB), its extraction (~100 MB), node_modules and the cloned repo were all created under /kaggle/working. Kaggle uploads that directory as the notebook's run output; exceeding the practical output budget makes the upload fail, so kbench records no run at all. The run status is reported only as KERNEL_WITHOUT_RUN with no log and no traceback, because a rejected creation exposes no run from which to read logs.",
+  "what_i_did_wrong": [
+    "Assumed KERNEL_WITHOUT_RUN meant a wall-clock timeout and spent four pushes varying BUDGET (150s, 90s, 75s) instead of testing the output-artifact hypothesis first.",
+    "Wrapped the .run() call in try/except, which would have swallowed any real exception and left only the same opaque KERNEL_WITHOUT_RUN symptom; error-surfacing should have been the first change, not the sixth.",
+    "Had no cheap control experiment until attempt 8: a pure time.sleep(75) task that completed proved wall-clock was not the limit, and only then was the artifact-location hypothesis tested.",
+    "Attempted to delegate the initial codebase recon and the Kaggle capability research; all 7 specialist dispatches failed with 'Session too large to compact', so the reconnaissance had to be redone inline after the fact."
+  ],
+  "diagnosis_method": "Bisected structure vs duration: phase-probe (structure identical, no heavy work) created successfully; sleep-probe (75 s of pure sleep) created successfully; only tasks writing large artifacts into /kaggle/working failed. Moving the build to tempfile.gettempdir()/kronos and redirecting child stdout/stderr to files (avoiding pipe-hold hangs on process-group kill) fixed it on the first retry.",
+  "correct_procedure": [
+    "Never write build output, node_modules, clone directories or archives into /kaggle/working; use /tmp (≈1.1 TB free, not uploaded).",
+    "Write only the small result JSON into /kaggle/working so it can be downloaded with `kaggle b t download`.",
+    "Run subprocesses with stdout/stderr redirected to temp files and start_new_session=True plus os.killpg on timeout; subprocess.run(capture_output=True, timeout=...) can hang when grandchildren hold the pipes.",
+    "Before diagnosing an opaque benchmark failure, push a minimal control task: a successful control distinguishes 'the environment is broken' from 'my task is broken' in about two minutes.",
+    "Judge runs by their assertion payload and output files, never by the run status line."
+  ],
+  "evidence": {
+    "failed_versions": "baseline-kronos-suite v2, v3, v4, v5, v6, v7 (KERNEL_WITHOUT_RUN)",
+    "successful_control": "sleep-probe v1 (75 s sleep, Completed)",
+    "first_success_after_fix": "baseline-kronos-suite v8, run 4072644, Completed, 29.5 s total",
+    "baseline_result": "tsc --noEmit rc=2 (5 x TS2307 in src/sectors/deers-rock-adapter.ts for undeclared sibling repo ../../../Deers-Rock/dist); vitest rc=1, 6 failed / 30 passed of 36 test files"
+  },
+  "related": [
+    "2026-10-05-071926-delegation-oracle-context-overflow.json",
+    "2026-10-05-072145-delegation-oracle-context-overflow-retry.json",
+    "2026-10-05-075012-code-bytes-str-slice-defect.json"
+  ],
+  "recovered": true,
+  "recovered_at": "2026-10-05T08:50:00+08:00"
+}

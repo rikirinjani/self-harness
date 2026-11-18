@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "kala-book2-ch7-written",
+  "timestamp": "2026-09-27T20:49:47.922383+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1300,
+  "tool_calls": 8,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\book2_ch7.md",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\story_so_far.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kala-book2-ch7-written",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........-.--...-........-.--...-........................................-.--...-",
+  "action": "Book 2 Ch7 'No Return Recorded' written via kaggle task kala-book-two-chapter-seven (run 3330654): 31170 chars, 11 scene breaks (silence structure), 1 letter; .365694 (12117 in/7071 out); cumulative .819. Verified: 0 Kyerke, 0 Wren, months valid, no red flags, lag exact (28 Deepmonth 115 -> ~11 Deepwinter 116); hinge landed: Brynn's stated intention + Adelinde's 'If there is an assembly to bring...' reply"
+}

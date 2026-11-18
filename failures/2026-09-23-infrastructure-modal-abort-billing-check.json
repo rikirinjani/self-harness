@@ -1,0 +1,30 @@
+{
+  "id": "2026-09-23-infrastructure-modal-abort-billing-check",
+  "timestamp": "2026-09-23T03:12:00Z",
+  "category": "infrastructure",
+  "severity": "info",
+  "component": "modal cokro-embed / A/B prep Lane A",
+  "summary": "User requested abort to check Modal billing. All ephemeral cokro-embed apps stopped; local clients and supervisor killed; GPU burn halted at ~03:08 UTC.",
+  "root_cause": "User-initiated abort (billing review), not a technical failure. Preceded by qwen3 c1 Modal preemption at 49% and supervisor volume-get hangs.",
+  "billing_snapshot_this_month": {
+    "metered_cost_usd": 47.43984019,
+    "ephemeral_apps_usd": 47.40564928,
+    "volumes_usd": 0.02984019,
+    "credits_usd": -30.0,
+    "free_storage_usd": -0.02984019,
+    "billed_cost_usd": 17.41
+  },
+  "cokro_embed_daily_approx_usd": {
+    "2026-09-18": 2.91,
+    "2026-09-22": 18.67,
+    "2026-09-23_until_abort": 19.23
+  },
+  "state_at_abort": {
+    "modal_apps": "all stopped",
+    "npys_complete": ["bge-base", "minilm", "nomic", "bge-large", "e5-large"],
+    "retrievals_complete": ["minilm", "nomic", "bge-large", "e5-large"],
+    "qwen3_status": "aborted mid-run; c0~54% c1~3% c2~58% c3~53%; no chunk npy committed"
+  },
+  "action_taken": "modal app stop --yes on 4 running apps; pkill modal run / qwen3 / supervisor; billing summary+report captured via modal billing CLI.",
+  "action_required": "User decision: resume qwen3 (~$15-20 more GPU) or accept 5-model prep subset; refresh embed_cost_table actuals before any full A/B."
+}

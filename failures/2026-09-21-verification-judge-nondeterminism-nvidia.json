@@ -1,0 +1,12 @@
+{
+  "category": "verification",
+  "severity": "medium",
+  "root_cause": "The NVIDIA-hosted deepseek-ai/deepseek-v4.1-flash judge is a reasoning model whose hidden reasoning tokens introduce sampling variability even at temperature 0. Concurrency, retries, and prompt construction were identical across runs, so the divergence is model-side, not harness-side.",
+  "what_actually_happened": "Two full calibration runs over the same frozen 126 candidates produced different scores for 13 candidates (10.32% divergence). Every divergence was a single ordinal step, clustered at the 0/1 and 1/2 rubric boundaries. 85 of 126 candidate reason strings also differed between runs even when the score matched. A single true_negative control candidate flipped from 0 (run1) to 1 (run2), collapsing that tier's weighted kappa from 1.0 to 0.0.",
+  "impact": "Judge output is not reproducible at temperature 0. A ~10% score-flip rate means graded-relevance metrics (nDCG@10, Recall@20, MRR@10) computed from judge grades can shift run-to-run, so A/B conclusions may not be stable without either averaging repeated runs or fixing the nondeterminism.",
+  "recovery": "Before authorizing the A/B benchmark: (a) tighten the judge prompt to reduce boundary ambiguity, (b) either run the judge N times and take the modal/median grade per candidate, or (c) record the divergence rate as a metric uncertainty band alongside every A/B result. Re-run calibration after any prompt change.",
+  "related_finding": "Separately, and independently of nondeterminism, the judge is one-directionally stricter than the human annotators: 57/57 (run1) and 56/56 (run2) disagreements were judge < human, with zero judge > human. Mean human grade 1.2143 vs mean judge 0.7619. This is a systematic bias that the stated gate ('no category with kappa < 0.40') does not detect, because quadratic weighting tolerates uniform one-step downward shifts.",
+  "verified_working": "Calibration harness itself is sound: 126/126 candidate-to-human-label join on (query_id, pmid); 126/126 schema-valid responses in both runs; raw responses persisted before parsing; weighted/unweighted kappa and MAE validated on synthetic perfect-agreement and synthetic biased inputs.",
+  "task": "LLM Judge Calibration on the Frozen 126 Candidates",
+  "evidence": "C:/Users/think/Project_v2/LocalNotebook/rag-service/eval/calibration/nvidia-run1/metrics.json and nvidia-run2/metrics.json"
+}

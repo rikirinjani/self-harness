@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "polymarket-strategies-research",
+  "timestamp": "2026-10-07T08:17:46.373536+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 480,
+  "tool_calls": 14,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "polymarket-strategies-research",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--..........................--...--........--.-..-.........................................................-.--...-",
+  "action": "Research brief delivered: advanced Polymarket strategies beyond longshot bias. Verified 12 primary sources via arXiv API + OpenAlex covering: (1) cross-venue arb vs Binance/Deribit options [Portnaya arXiv:2606.19517: 5.6-6.3pp Binance gap, 11pp Deribit, 4h AR(1) half-life], (2) combinatorial arb [Saguille arXiv:2508.03474 ~ realized; Gebele arXiv:2608.00666 NegRisk .12M; NBA study arXiv:2605.00864 101bps median, depth-capped 14.8 shares], (3) time decay [Gebele arXiv:2605.31431 ASW settlement-discount term structure, 48-88% horizon gradient], (4) microstructure [Dubach arXiv:2604.24366 + 2610.06412: longshot spread premium, 59% feed trade-sign accuracy, on-chain ground truth needed], (5) alt strategies [Feil-Nendel arXiv:2607.17991 HJB optimal MM; PolySwarm arXiv:2604.03888 LLM+latency arb; null-result cautions arXiv:2607.26245 + SSRN 7115858]. NOTE: MemPalace archival queued in this trace - mempalace MCP tool unavailable in this session environment (Rule 11.3 outage recorded here)."
+}

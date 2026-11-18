@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "ddi-conflict-review-apply",
+  "timestamp": "2026-09-25T18:53:38.222031+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 12,
+  "key_files": [
+    "api/drugs.json",
+    "rag-queries/l3_output/_backups/drugs_20260925_ddi_conflict_review.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ddi-conflict-review-apply",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Reviewed 28 held ddi_risk conflicts with sentence evidence + v2 rationales; grouped into 3 clusters (comparison-language artifacts, weak-diluted evidence, empty-pool defaults); user approved dispositions; applied 14 drops (4 to 1, 10 to 2), kept 14; verified 89 drugs, exact diff set, 11 prior fixes preserved; pushed e00cab0"
+}

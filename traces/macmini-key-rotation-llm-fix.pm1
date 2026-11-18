@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "macmini-key-rotation-llm-fix",
+  "timestamp": "2026-09-28T06:54:18.791416+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 420,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\macmini-stepA.sh"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "macmini-key-rotation-llm-fix",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........................-.--...-........................................-.--...-",
+  "action": "Mac Mini secret rotation + LLM fix: user-approved .env edit on PTs-Mac-mini. Validated new DeepSeek key via /models (http=200), surgically replaced DEEPSEEK_API_KEY line (1 of 4 lines, masked old len 35), restart via launchctl kickstart com.pubmedrag.api (openapi 200) and com.pubmedrag.telegram-bot (pid 70272), local LLM smoke ask http=200 79.9s llm n_ok=1 n_err=0 with grounded answer excerpt. Cloudflare tunnel login cert.pem present."
+}

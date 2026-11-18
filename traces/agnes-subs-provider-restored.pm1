@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "agnes-subs-provider-restored",
+  "timestamp": "2026-10-21T01:42:50.845214+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "agnes-subs-provider-restored",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................................................................-.--...-",
+  "action": "Restored agnes-ai-subs provider that was accidentally dropped during config trim. Both Agnes keys now configured: agnes-ai (PAYG, sk- key) and agnes-ai-subs (Token Plan, cpk- key). Same models, separate limit pools per Agnes docs."
+}

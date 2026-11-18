@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "metrics-report",
+  "timestamp": "2026-09-24T07:35:29.823025+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\ab_results\\vultr_si_deepseek\\metrics.json",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\ab_results\\vultr_si_deepseek\\graded.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "metrics-report",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "eval_ab_metrics success with PYTHONIOENCODING=utf-8: bge-large nDCG 0.8443 > e5 0.8405 > bge-base 0.8324 > nomic 0.8243 > minilm 0.8047"
+}

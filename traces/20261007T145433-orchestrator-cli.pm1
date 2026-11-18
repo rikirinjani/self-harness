@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261007T145433-orchestrator-cli",
+  "timestamp": "2026-10-07T14:54:33.939959+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 0,
+  "key_files": [
+    "src/engine/markov.ts",
+    "src/patient/generator.ts",
+    "src/patient/schema.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261007T145433-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........................-.--...-........................................-.--...-",
+  "action": "Epic VI M6.2 morgue/patient lifecycle: added morgueId to Patient schema, excluded deceased from admission, separated rujuk balik from death outcomes"
+}

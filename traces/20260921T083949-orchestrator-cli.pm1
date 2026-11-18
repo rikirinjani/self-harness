@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260921T083949-orchestrator-cli",
+  "timestamp": "2026-09-21T08:39:49.144228+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 45,
+  "tool_calls": 2,
+  "key_files": [
+    "NEXT-TASK-JUDGE-CALIBRATION.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260921T083949-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................-.--...-........-.--...-........-.--...-........................................-.--...-",
+  "action": "Prepared next-task handoff: LLM judge calibration on frozen 126 candidates with weighted kappa/MAE gate, output paths, determinism check, and explicit constraints against A/B or Jev runs."
+}

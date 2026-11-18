@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-10-11T17:55:00Z",
+  "agent": "fixer",
+  "category": "wrong-output",
+  "severity": "medium",
+  "slug": "phase3-g1-selection-swap-bug",
+  "task": "phase3-g1-tool",
+  "what_went_wrong": "First v2 selection logic force-included half-rupiah visits by popping the LAST fill-pass visit to make room. One of the two dataset half-rupiah visits (2026/10/24/000423) was itself an untagged fill-pass visit at the tail, so the swap popped exactly the visit the feature was meant to protect. Result: RUN_ID=test run at 17:07Z produced a PASS report claiming half-rupiah coverage while only 1 of 2 half-rupiah visits was in the sample (the other verified nowhere against the real form).",
+  "root_cause": "Membership tagging happened after the swap decision, and the pop-based swap could not protect a set it did not know belonged to the protected class. Classic order-of-operations bug: protect-then-fill was needed, not fill-then-swap.",
+  "detection": "Post-run selftest asserted half-rupiah membership of the selected list and failed for 000423. No false artifact reached the orchestrator (the fixed tool ran the 17:20Z and 17:29Z validation runs and the final orchestrator run 20261011T173055Z).",
+  "fix": "Rewrote selection tail: quota pass -> protected pass (all half-rupiah visits, never removable) -> fill pass. Both half-rupiah visits now in-sample; verified across two consecutive deterministic runs.",
+  "lesson": "Coverage claims in gate reports must be asserted (visit X of protected class IS in the sample), not assumed from feature flags. Selection invariants deserve their own selftest before any run that will be cited as evidence.",
+  "related_artifacts": [
+    "/opt/dr-benchmark/results/test/g1_validation.md (superseded)",
+    "/opt/dr-benchmark/results/20261011T173055Z/g1_validation.md (valid)"
+  ]
+}

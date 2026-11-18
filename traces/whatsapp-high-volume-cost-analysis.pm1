@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "whatsapp-high-volume-cost-analysis",
+  "timestamp": "2026-09-16T08:29:39.823469+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 4,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "whatsapp-high-volume-cost-analysis",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........................................................-.--...-",
+  "action": "Analyzed WhatsApp cost at scale for 200 chats/day: 6000 convos/mo x 3 bot replies = 18000 service messages, 17000 billable after 1000 free tier = Rp6.7jt/bln at Rp395.88/msg (Rp356.65+PPN). Researched Meta official pricing: service messages have NO volume tiers (flat rate), Meta Business Agent is MORE expensive (~Rp700-880/msg, no free tier), WA Business App is free but no API. Cost levers: reduce messages per convo (1 dense reply = Rp1.98jt), shift traffic to Telegram (80% shift = Rp1.03jt), utility/auth volume tiers don't apply to service"
+}

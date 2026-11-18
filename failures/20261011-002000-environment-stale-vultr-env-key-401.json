@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-10-11T00:20:00+08:00",
+  "category": "environment",
+  "slug": "stale-vultr-env-key-401",
+  "severity": "minor",
+  "task": "SWE-SWEEP-DEEPSEEK smoke gate (chain-07 re-run after harness fixes)",
+  "what_happened": "First smoke run after harness fixes completed 1 hop with http_status 401 'Invalid API key', producing a chain file with parse_kind=EMPTY, pre_recall=0.0, INSUFFICIENT_DATA - i.e. a failed smoke that looked like a model/harness failure at first glance.",
+  "root_cause": "The user-level environment variable VULTR_INFERENCE_KEY had been rotated to a different key (ML5DEYIDZYRL356VT2EY4ZYQ25MUUV5SPSKQ) that is not valid for api.vultrinference.com; the working key from the user's original grant (AXFP6GOXSG5YXBS6UXBE5KKPE7C2THLLR7HQ) was no longer in the environment. The script trusts the env var without a preflight auth check.",
+  "what_i_did_wrong": "Launched the smoke relying on ambient env without a cheap preflight validation (single 1-token call or key check) first; also initially hypothesized a harness bug before checking http_status in the hop record.",
+  "corrective_action": "Both keys probed with a minimal chat completion; dead key confirmed 401, working key 200; user-level env var restored to the working key; stale failed chain file deleted; smoke re-run passed (pre=1.0, post=1.0, parse_err=0). Suggest adding a preflight auth probe to sweep scripts before batch launch.",
+  "cost": "one wasted 1-hop call (~$0.0001) + one debugging cycle; no batch impact",
+  "status": "closed"
+}

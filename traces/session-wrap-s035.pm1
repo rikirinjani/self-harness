@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "session-wrap-s035",
+  "timestamp": "2026-09-25T02:18:56.250185+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 30,
+  "key_files": [
+    "experiments/s035/REPORT.md",
+    "qms/records/verifications/2026-09-25T02-20-00-ver-007-s035-probe.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "session-wrap-s035",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--.........--...--........-.--...-........................................-.--...-",
+  "action": "Session wrap: S035 completed PASS (6582/6582), pushed to GitHub (s035@5e50683), QMS ver-007 record created and pushed, retrace clean, MemPalace checkpoint filed (4 drawers + diary). VPS asset survey + pre-delete audit completed: no orchestrator assets on any of 3 instances; all 3 unsafe to delete (non-git unbacked projects, running services, 7d activity); user chose abort — no destructive action. Session-close gates: traces OK, QMS OK, MemPalace OK."
+}

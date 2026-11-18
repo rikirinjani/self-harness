@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-b2-notice-correction",
+  "timestamp": "2026-10-01T19:23:27.007609+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\harness\\runner.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\harness\\arms.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\validate_arms.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\RUN_REGISTRY.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-b2-notice-correction",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "B2 DESIGN CORRECTION from recoverables: packet arms were notice-blind (transcript notice invisible to build_block; 16/16 inert recall 0.000). Root-fixed: runner.py wires facts_line into all packet arms; arms.py appends notice to packet text (frozen-safe: byte-identical without notice); regression coverage added to validate_arms (all green incl. full suite). 16 recovered runs re-designated as the no-notice CONTROL set. B2 re-planned: 24 notice-carrying runs post-reset (~5h); v13 packaged+verified (zip 35701b, embed OK) but NOT pushed (push auto-starts; quota 2.5h insufficient). RUN_REGISTRY revised. v12 Friday h50 session still RUNNING."
+}

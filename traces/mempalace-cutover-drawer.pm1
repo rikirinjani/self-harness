@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "mempalace-cutover-drawer",
+  "timestamp": "2026-09-28T07:43:55.097270+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 14,
+  "key_files": [
+    "C:\\Users\\think\\mempalace\\projects\\general\\cokro-api-cutover-macmini-tunnel.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "mempalace-cutover-drawer",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Filed MemPalace drawer for the cutover (Rule 10): wrote drawer md into projects/general, mined via temp-dir trick (CLI mine needs a directory; direct dir would have re-mined 12 existing files) -> 6 drawers + 361 hallway links + 361 entity links into wing=projects room=general"
+}

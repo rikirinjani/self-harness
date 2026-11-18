@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "p002-decision-brief",
+  "timestamp": "2026-09-21T08:08:27.289929+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "docs/experiments/P-002-DECISION-BRIEF.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "p002-decision-brief",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "P-002 decision brief (decision support only, NO decision taken). Four specification decisions presented with five evidence classes ([DOC] documented fact / [OBS] observed implementation / [CAL] calibration / [INF] modelling inference / [UNK] unresolvable). D1 admissionMultiplier semantics (multiplicative vs additive; meaning of 1.0; domain [1.0,inf) vs [0,inf); is 2.5 normative or illustrative; reachable domain keep m_max=2.3 vs relax; accept vs change DR 3-state quantisation). D2 activeDisasterType vocabulary (adapter emits scenario types vs macro categories; 7 DR types vs 2 categories; natural-disaster/earthquake/pandemic/mass-casualty treatment; producer-consumer mapping table). D3 climate severity transmission (not transmitted vs normalized mapping; documented unit incompatibility unbounded magnitude vs normalised [0,1]; constraint NOT to invent a normalization for sensitivity). D4 primary endpoint (interface target vs diagnostic endpoint; supplyStress vs occupancyRate vs icuOccupancyRate; P-002 assigns ROLES not PRIORITIES; constraint NOT to select by sensitivity). Section 5 'What we must NOT infer from calibration' lists 5 prohibited inferences (stronger effect != correct semantics; more sensitive != correct endpoint; reachable != normative; DR behaviour != interface specification; implementation != intended model). ALL decisions marked [UNK] - none resolvable from existing evidence. JEV (3 sets, 21 questions): confirms NEUTRAL (1.56), NO smuggling via implementation (0.44) / calibration (0.36) / P-002 examples (0.44), NO recommendation (1.63), evidence classes correct (1.75), implementation NOT treated as specification (0.42), interface-target vs endpoint correct (1.87 conf .81), both constraints respected 1.99 conf .98. QUALIFIES: possible hidden default option (0.87); Option A/B asymmetry (1.47); 'must not infer' only partially adequate (1.15); calibration may partly justify options (1.16); [UNK] usage only partially correct (1.28) and some decisions may be wrongly marked UNK (1.26 conf 0.00); decision set possibly incomplete (0.83/0.76); brief NOT sufficient for decision (0.38 conf .43). Qualifications RECORDED AS OPEN not resolved. No P-002 amendment, no adapter/DR change, no rerun, no further calibration, no MemPalace repair, no manuscript change."
+}

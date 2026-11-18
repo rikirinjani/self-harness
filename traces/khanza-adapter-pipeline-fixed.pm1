@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "khanza-adapter-pipeline-fixed",
+  "timestamp": "2026-10-10T05:22:39.353850+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1200,
+  "tool_calls": 80,
+  "key_files": [
+    "dr_khanza_adapter_v7.py",
+    "clean_all_dr.sql",
+    "fix_orphans.sql"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "khanza-adapter-pipeline-fixed",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "Fixed DR->Khanza E2E adapter: 177 patients, 177 visits, 212 prescriptions, 0 orphans. Root causes: (1) pasien INSERT had 35 vals instead of 36 cols, (2) datetime.date objects not quoted in SQL, (3) rx counter was 4-digit but column is varchar(14) needing 6-digit, (4) drug table was 'brng' but actual table is 'databarang', (5) FK int columns needed integer not string values. Pipeline proven operational on VPS #2 (4 vCPU, 15GB RAM, MariaDB 11.8.6)."
+}

@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "e4-validation-run",
+  "timestamp": "2026-09-27T11:22:21.343527+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\data\\g6_e4_validation_results.json",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\data\\g6_events_e4.jsonl",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\data\\e4_validation_run.log",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\data\\g6_e4_validation_results.partial.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "e4-validation-run",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "G6-E4 corrected canary validation run (N_RUNS=3, frozen canary sha 669ae5206399f9a9, env overrides to g6_e4_validation_results.json + g6_events_e4.jsonl): acceptance met in 8948.6s (9/9 fabricated x3, 0/48 real x3, 0 retrieval errors); 171/171 strict-valid g6-events/2 events with metric lancedb_ivfpq_approx_one_minus_cos; scores/PMIDs bit-identical to E3 baseline (0 churn, 960/960 zero deltas, 0 PMID diffs cross-session); E3 artifacts untouched"
+}

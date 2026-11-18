@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "p002-implementation-reconciliation",
+  "timestamp": "2026-09-21T08:01:19.835256+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "docs/experiments/P-002-IMPLEMENTATION-RECONCILIATION.md",
+    "experiment-results/adapter-dr-calibration/p002-reconciliation.json",
+    "docs/proposals/P-002-deers-rock-adapter.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "p002-implementation-reconciliation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "P-002 contract vs implementation reconciliation. P-002 treated as primary authoritative [Jev 1.86 conf .79]. MATRIX: admissionMultiplier IMPLEMENTATION DIVERGENCE (P-002 'x2.5' unreachable - impl additive 1.0+0.3w+0.2k, w<=1 since climate emits max 1 weather/tick, k<=5 since 5 nations have relation<-60, so m_max=2.3<2.5; ordinary value 1.3; nuance: P-002's declaration LINE says only '1.0 = baseline' which IS satisfied, the multiplicative scale appears only in narrative/validation tables [Jev only Partially correct 1.33 conf .40]); supplyChainPressure CONFORMING (range 0-1 respected; thresholding + restock-boundary time quantization are DR MODEL properties not adapter divergences since P-002 promises a range not continuity [Jev 1.91 conf .86]); activeDisasterType DR CONSUMPTION DIVERGENCE (P-002 names 'pandemic, earthquake, etc.' but adapter emits ONLY natural-disaster; 'pandemic' has NO DR mapping; mass-casualty recognized by DR but never emitted; adapter emits a CATEGORY where P-002 names SCENARIO TYPES [Jev 1.62]); staffAvailabilityModifier CONFORMING (range respected, consumed, but no endpoint effect - P-002 never promised one [Jev 1.93 conf .90]); diagnosisWeightOverrides DEAD/UNCONSUMED + UNRESOLVED lifecycle (declared in P-002 but never scheduled/consumed; NOT classified divergence since P-002 does not establish required behaviour [Jev 1.84]); climate severity SPECIFICATION AMBIGUOUS (absent from P-002's packet; non-transmission is NOT a divergence since P-002 never promised it; MAPPING=UNDEFINED; activeDisasterType categorical + fixed DR severity 0.6 IS consistent with P-002 [Jev 1.96 conf .95]). REOPENING AUDIT RECONCILED: 'inert' = meaning(1) implementation absent, correct for its date, SUPERSEDED by Phase E (DR now dispatches all 4 events); CURRENT inertness is a DIFFERENT phenomenon = meaning(2) below thresholds (m=1.3<1.50, p=0.4<0.475) + meaning(3) semantically divergent + meaning(4) endpoint-insensitive; SUPERSEDED not refuted [Jev 1.95 conf .93, four-way distinction 1.92]. CORRECTION BOUNDARY: SPECIFICATION CHANGE REQUIRED for admissionMultiplier scale, activeDisasterType vocabulary, severity transmission, primary endpoint; UNRESOLVED for diagnosisWeightOverrides; OPTIONAL MODELING CHANGE for supplyChainPressure shape and staffModifier endpoint; MUST CORRECT TO CONFORM = NONE outright (P-002 too imprecise for unambiguous obligations [Jev 1.85 conf .78]). Jev qualifies: admissionMultiplier class only partial; possible behaviour-mistaken-for-spec (0.67 conf 0.00); possible corrections lacking spec support (0.58); boundary only mostly sufficient (0.77); minimum set only partially sufficient (0.80 conf 0.00). NOTHING IMPLEMENTED. PHASE F RERUN ELIGIBLE: NO."
+}

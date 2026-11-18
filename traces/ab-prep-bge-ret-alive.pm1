@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "ab-prep-bge-ret-alive",
+  "timestamp": "2026-09-23T02:32:03.243983+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 20,
+  "tool_calls": 2,
+  "key_files": [
+    "scripts/ab_embed_supervisor.sh",
+    "scripts/check_npy_shapes.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ab-prep-bge-ret-alive",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................-.--...-........-.--...-........-.--...-........................................-.--...-",
+  "action": "Confirmed bge retrieval alive pid 333738 RSS 2.4G loading 500000x1024; killed hung modal volume get 333366; supervisor 333610 up; e5 95pct qwen3 46-51pct"
+}

@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "swe-tool-pilot-mt2000-control",
+  "timestamp": "2026-10-10T23:43:06.183759+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3600,
+  "tool_calls": 45,
+  "key_files": [
+    "create_swe_tool_pilot.py",
+    "kaggle/swe-tool-pilot/__notebook__.ipynb",
+    "kaggle/swe-tool-pilot/kernel-metadata.json",
+    "RUN_REGISTRY.md",
+    "compare_mt_budget.py",
+    "kaggle/swe-tool-pilot-out/swe-tool-pilot-mt2000/summary.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "swe-tool-pilot-mt2000-control",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "SWE-TOOL-PILOT-MT2000 budget-control run: added --max-tokens/--out-dir to generator, regenerated+validated notebook, amended registry, pushed kernel v2, 9/9 chains complete, pulled output, wrote compare_mt_budget.py. Verdict: json 14->0 EMPTY (budget artifact), line 20->9 (persists at 2000: interface effect), tool 0->0 (robust). Temporal pattern stable across budgets (P DELAYED, P-pos IMMEDIATE, P-postarget DELAYED)."
+}

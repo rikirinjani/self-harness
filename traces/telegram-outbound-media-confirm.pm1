@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "telegram-outbound-media-confirm",
+  "timestamp": "2026-09-17T02:59:55.242983+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 30,
+  "tool_calls": 1,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "telegram-outbound-media-confirm",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................-.--...-........-.--...-........................................................-.--...-",
+  "action": "Confirmed Telegram outbound media: Bot API natively supports sendPhoto/sendDocument(PDF)/sendVideo/sendMediaGroup/sendLocation/sendContact — all free (Rp0), 50MB per file, no Meta-style template restrictions. Combined with web chat, both channels offer unlimited outbound rich media vs WA's restricted templates at Rp396/msg. node-telegram-bot-api already in stack supports all these methods"
+}

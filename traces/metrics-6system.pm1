@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "metrics-6system",
+  "timestamp": "2026-09-24T09:38:50.709703+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\ab_results\\vultr_si_deepseek\\metrics.json",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\ab-bm25-leg-6system-metrics-20260924.json",
+    "C:\\Users\\think\\self-harness\\failures\\20260924-budget-estimate-undercount.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "metrics-6system",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "6-system metrics computed; BM25 last (nDCG 0.8028); best bge-large 0.8443; QMS verification + budget failure record written"
+}

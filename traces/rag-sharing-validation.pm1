@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "rag-sharing-validation",
+  "timestamp": "2026-10-02T01:21:38.164743+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "Deers-Rock/docker-compose.yml",
+    "Deers-Rock/Dockerfile"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "rag-sharing-validation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Validated RAG DEV cohabitation table for Hetzner CX21 sharing: their numbers match my independent measurements (62MB RSS, 512MB cap, 2-9 percent CPU, 66MB disk + ~10MB per 1k ticks journal). Arithmetic confirmed: worst-case simultaneous caps 2.5GB + 0.512GB = ~3.0GB vs ~3.6GB usable leaves ~600MB spare. Only contention scenario (4 concurrent asks + local embedding fallback) and only shared-disk risk (unbounded journal, P1-8 open) both acknowledged as correct. User will send instance creds; deployment on hold until then."
+}

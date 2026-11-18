@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "n6b-design-review",
+  "timestamp": "2026-10-02T03:43:14.577496+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3300,
+  "tool_calls": 55,
+  "key_files": [
+    "rag-queries/curation/n6b-indication-boundary-design.md",
+    "rag-queries/curation/n6b-review-gpt6-astra.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "n6b-design-review",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "N6b design reviewed by GPT-6 Astra via Kaggle benchmarks (task dqf-n6b-review, run 3914507): built harness kaggle-ai/dqf_n6b_review_task.py (clone master @6c02909 -> architecture + calibration chunks -> synthesis), pushed, ran --wait, downloaded (PYTHONIOENCODING=utf-8 needed). Review: 23 findings (8 critical/12 major/3 minor), 6 factual errors, verdict 'not ready to implement as specified' - eligibility-first architecture approved, clinical semantics + release boundary revised. Reconciled into design v2 (commit 572a337): eligibility!=rankability (eligible_unranked, no neutral imputation); typed evidence contract; cross-endpoint fallback removed; global contraindication rules + unknown!=false; all recommendation paths gated (legacy, combo disabled, mechanism condition-aware); corrected taxonomy; versioned contracts; evidence-readiness audit + narrow vertical slice; structured reasons[]; GET /api/conditions. Review artifact committed (n6b-review-gpt6-astra.md). QMS VER-2026-10-02-N6B-DESIGN-REVIEW-001 + REQ updated."
+}

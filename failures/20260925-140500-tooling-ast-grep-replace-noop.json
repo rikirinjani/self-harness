@@ -1,0 +1,12 @@
+﻿{
+  "timestamp": "2026-09-25T14:05:00+08:00",
+  "category": "tooling",
+  "severity": "low",
+  "agent": "fixer",
+  "task": "two-stage-backtest-import-extension-fix",
+  "what_happened": "ast_grep_replace returned '[APPLIED] N replacements' for 8 import-extension rewrites in research/two-stage-backtest, but the files on disk were byte-identical afterwards (verified by grep + mtime).",
+  "root_cause": "The ast_grep_replace tool in this environment reports APPLIED without persisting writes to the filesystem (dry-run behaviour leaking into the non-dryRun path, or writes sandboxed away). Search side works; write side did not.",
+  "what_i_did_wrong": "I trusted the tool's APPLIED status without verifying, and only caught it because I grepped the files before compiling. Had I compiled straight away the failure would have surfaced as ERR_MODULE_NOT_FOUND and cost a debugging cycle.",
+  "fix": "Re-did the same 6 edits with the edit tool and re-verified with grep before compiling.",
+  "actionable": "After any bulk AST rewrite, grep the target pattern before moving on."
+}

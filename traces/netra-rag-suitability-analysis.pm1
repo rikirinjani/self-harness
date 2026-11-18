@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "netra-rag-suitability-analysis",
+  "timestamp": "2026-10-02T12:13:25.998784+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 150,
+  "tool_calls": 4,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "netra-rag-suitability-analysis",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Analyzed Netra Runtime fit for the user's PubMed RAG project. Corrected prior conclusion: RAG has mostly-FRESH input (different retrieved chunks per query, ~10% cache hit), unlike the user's agent loops (90% cache). Modeled per 1,000 queries at 3.5k in / 400 out: Netra .85, OG DeepSeek peak .43, OG off-peak .71. Netra 41% cheaper than OG peak, which matters because Indonesian WIB working hours map almost entirely to OG peak. In high-cache regime OG still wins by 29%. Found blocker: Netra catalog has only 2 chat models, NO embedding model - so Netra covers generation but retrieval/embeddings needs a separate provider (OpenAI text-embedding-3-small or local BGE). Also noted Netra's own comparison tables show Baseten (.13 in on V4 Flash) and CoreWeave (.20/.03/.65) are cheaper on several axes - Netra is not the cheapest reseller, just flat-priced with Indonesian Doku payments."
+}

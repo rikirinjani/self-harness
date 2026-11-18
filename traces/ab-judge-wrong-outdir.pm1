@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "ab-judge-wrong-outdir",
+  "timestamp": "2026-09-23T05:09:22.403326+00:00",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\ab_plan\\full_judge.py"
+  ],
+  "failure": {
+    "category": "tool",
+    "severity": "medium"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ab-judge-wrong-outdir",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................-.--...-........................................-.--...-........-.--...-........--.-..-.........-.--...-",
+  "action": "full_judge AB_PLAN path wrong: partial written to eval/full_judge/ not eval/ab_plan/full_judge/; live API running on wrong OUT_DIR"
+}

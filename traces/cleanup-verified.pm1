@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "cleanup-verified",
+  "timestamp": "2026-09-24T09:55:37.679738+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\cleanup_unresolved.py",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\ab-cleanup-pass-unresolved-zero-20260924.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "cleanup-verified",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "cleanup 100/100 recovered, 0 unresolved, metrics refreshed ranking unchanged; QMS verification written"
+}

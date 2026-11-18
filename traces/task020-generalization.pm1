@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "task020-generalization",
+  "timestamp": "2026-09-19T01:58:01.302192+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 60,
+  "tool_calls": 12,
+  "key_files": [
+    "experiments/pm1-rx/TASK_020_REPORT.md",
+    "experiments/pm1-rx/TASK_020_RESULTS.json",
+    "experiments/pm1-rx/run_task020_eval.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task020-generalization",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Task 020: Generalization check complete. Matcher 2.0 on Task 018 corpus (97 pairs). Sensitivity 46.0% (v1: 28.6%) +17.5pp. 12 improvements, 4 regressions. Semantic-judge justified. Commit 48df79a."
+}

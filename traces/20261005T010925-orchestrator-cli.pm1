@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261005T010925-orchestrator-cli",
+  "timestamp": "2026-10-05T01:09:25.968600+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 30,
+  "key_files": [
+    "src/engine/drug-catalog.ts,src/engine/central-supply.ts,src/engine/pharmacy-knowledge.ts,src/engine/ai-doctor.ts,tests/central-supply.test.ts,docs/adr/ADR-011-runner-tuning.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261005T010925-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--.........--...--........-.--...-........................................-.--...-",
+  "action": "ADR-011 runner tuning: added 19 drugs (AZM, PCN, DAP, VALA, LVT, PTU, KET, METO, NIM, PRA, MAG, DON, MPH, SUM, BET, MOR5, NAC, TOB, PREDN, FOL), alias mapping in ai-doctor.ts. Live box: tick 4918, 653 outcomes, RSS 154MB/512MB."
+}

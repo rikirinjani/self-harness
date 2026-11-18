@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-12T01:05:00Z",
+  "category": "process-violation",
+  "slug": "g2-stageb-dispatch-premise-recurrence",
+  "agent": "fixer",
+  "summary": "Second phantom-backlog dispatch for the closed G2/Stage B lane: claimed '30 unreconciled sessions fix-4..fix-33 on the board'; zero such sessions exist on disk (actual: 24 sessions, all traced, 0 unreconciled). Recurrence of 20261011T2355Z failure after NCR-2026-10-12-001 documented preventive rules that were never implemented.",
+  "what_went_wrong": [
+    "Dispatcher issued a reconciliation task for 30 nonexistent sessions after the lane was formally closed at 2026-10-11T23:52Z with an explicit no-further-dispatch instruction.",
+    "NCR-2026-10-12-001 preventive actions (stop-condition gate, premise validation vs trace store, bookkeeping fix) were recorded but not implemented.",
+    "4 ack sessions (00:40-00:44Z) ran after the closure without the human override required by NCR-2026-10-12-001 preventive rule 1."
+  ],
+  "root_cause": "Board/bookkeeping layer increments an unreconciled-session counter per dispatch without marking reconciliation on completion, and the dispatcher does not consult recorded stop conditions or validate premises against the trace store. The phantom count grows monotonically with each ack session, self-justifying further dispatches.",
+  "actual_action_taken": "Validated premise against disk (unsupported); reconciled the actual 24-session population (all consistent); fourth read-only on-box terminal-state confirmation (G2 PASS evidence intact, orchestrator parked stageB_ladder/stageB_B1 percent=90, only delta = legitimate Stage B tools build from traced session phase5-stageb-tools); recorded NCR-2026-10-12-002 + VER-2026-10-12-G2-STAGEB-FINAL-RECONCILIATION; dispatched nothing; no synthetic records created for phantom session IDs (Rule 4).",
+  "evidence": [
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\nonconformities\\NCR-2026-10-12-002.md",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\VER-2026-10-12-G2-STAGEB-FINAL-RECONCILIATION.md",
+    "self-harness/traces/*.pm1 (24 G2/Stage B sessions, 2026-10-11T23:28Z through 2026-10-12T00:44Z)",
+    "retrace.py clean run 2026-10-12T00:56Z (0 untraced files)"
+  ]
+}

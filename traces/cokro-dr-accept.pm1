@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "cokro-dr-accept",
+  "timestamp": "2026-10-02T02:13:13.237737+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1200,
+  "tool_calls": 14,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\VPS-COHOST-NOTES.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "cokro-dr-accept",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Deers-Rock co-host accepted: independently verified tenant (uid 999, 512M/weight-50 caps, 127.0.0.1:3000 node, keyless 200/200, patients 401 keyless), RAG stack untouched (all active, 2.86GB avail, 45G free). Found matrix discrepancy: unknown routes return 401 not 404 (auth-before-routing). Extended nightly bundle v2 with DR unit + journal DB via .backup as tenant user + exports (guarded, tenant failure cannot fail main bundle); decrypt-verified 12/12 files, DR db integrity ok (32MB). Tenant .env deliberately excluded. Committed acceptance record (e3f726e+1) and pushed."
+}

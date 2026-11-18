@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261008T123035-orchestrator-cli",
+  "timestamp": "2026-10-08T12:30:35.431794+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "kaggle-ai\\niji_prompts_adelinde.md",
+    "kaggle-ai\\_fix_niji_params.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261008T123035-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........................................-.--...-........................................-.--...-",
+  "action": "Niji 7 param fix: researched current platform (docs 403; confirmed via Wikipedia + updates.midjourney.com that Niji 7 is live since 2026-01-09, V7 lineage). Root-caused failure: --style scenic niji-6-only, --cref/--cw removed (-> --oref/--ow), --niji 6 flag conflicting. Updated niji_prompts_adelinde.md: 12 prompt lines -> --niji 7, migration note, oref/ow consistency workflow + weight ladder, parameter cheat-sheet, niji 6 appendix. Failure record filed (stale model version, unverified platform)."
+}

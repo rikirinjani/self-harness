@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-09-27T05:30:00Z",
+  "agent": "verifier",
+  "category": "process",
+  "slug": "qms-record-malformed",
+  "severity": "minor",
+  "summary": "Prior QMS verification record (2026-09-27-pass-layer1-api-parity.json) was written with a UTF-8 BOM and a missing closing brace and had to be repaired by the lead.",
+  "root_cause": "Used PowerShell 5.1 Set-Content -Encoding UTF8 (which prepends a BOM) with a hand-typed here-string JSON, and closed the task without validating parseability (no json.load / ConvertFrom-Json check).",
+  "what_i_did_wrong": "Relied on manual JSON construction and PS encoding quirks instead of programmatic json.dumps, and skipped a parse-validation step before finishing.",
+  "corrective_action": "All future JSON records written via Python json.dump with encoding utf-8 (no BOM) and validated with json.load before task close. Applied this session: VER-2026-0927-G6E1-VERIFY validated in-line.",
+  "status": "closed"
+}

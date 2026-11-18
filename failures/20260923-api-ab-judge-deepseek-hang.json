@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-09-23T08:05:00Z",
+  "category": "api",
+  "severity": "high",
+  "task": "ab-full-judge-vultr-true-3x",
+  "root_cause": "NVIDIA deepseek-ai/deepseek-v4.1-flash chat completions hang (ReadTimeout 45-180s) from both local Windows and Vultr VPS; /v1/models works (key valid). First run wrote 102 partial lines with ok=1 (95+ ReadTimeout after 6x90s), ETA ~527h. Alternate listed models mostly 404 on this account; nvidia/nemotron-3-super-120b-a12b returns 200 in ~1.7s and produces valid judge_prompt_v4 JSON (score+reason). Occasional 503 overload.",
+  "what_i_did_wrong": "Assumed pilot latency (~38.6s) still held; launched full judge without a single live chat smoke gate after start; treated 0 partial lines for minutes as first-batch delay; PowerShell inline python -c quoting burned several probes. Launcher also wiped partial/manifest on every relaunch (resume-unsafe) — fixed before relaunch.",
+  "evidence": {
+    "local_nvidia": "ReadTimeout 45s and 180s on deepseek-v4.1-flash stream and non-stream",
+    "vps_nvidia": "ReadTimeout 45s; partial 102 lines ok=1",
+    "failed_models": "meta/llama-3.1-8b-instruct EOL 410; many listed IDs 404 Function not found",
+    "working": "nvidia/nemotron-3-super-120b-a12b 200 ~1.7s valid {score,reason}",
+    "failure_file": "C:\\Users\\think\\self-harness\\failures\\20260923-api-ab-judge-readtimeout.json"
+  },
+  "impact": "First launch unusable (~2.5h wall, 1 valid judgment); would have burned days at 527h ETA.",
+  "corrective_action": "Stop PID 342420; keep invalid lines out of resume set (valid_score filter); switch NVIDIA_JUDGE_MODEL to nemotron-3-super-120b-a12b; preserve partial on relaunch; record model_switch in manifest/timing; smoke-gate first scores before detaching long-run confirmation."
+}

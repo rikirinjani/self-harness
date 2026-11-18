@@ -1,0 +1,11 @@
+{
+  "record_type": "failure",
+  "agent": "orchestrator",
+  "task": "TASK033",
+  "category": "scientific_preflight_gate",
+  "summary": "Cannot construct authorized hard-negative probes from frozen material",
+  "root_cause": "The 144 arm records deduplicate to 36 atoms. b0_a1 is the only phase-labeled atom and b4_a1 the only active_constraints-labeled atom. Labels are derived on composite atoms. Both have zero same-field different-boundary atomic alternatives; even the referenced raw field inventory supplies no cross-boundary constraint item for b4.",
+  "response": "STOP before execution, preserve audit, mark twenty slots unavailable and all metrics unmeasured. No relabeling, invented candidates, fallback easy negatives, or inference.",
+  "trace_id": "task033-contrastive-retrieval",
+  "status": "blocked_as_required"
+}

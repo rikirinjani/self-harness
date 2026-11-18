@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-10-11T05:14:00Z",
+  "agent": "fixer",
+  "task": "newvps-smoke-fix (session ses_ed6c06fddffeiWJMReO1TfZCDi, VPS port 20153)",
+  "category": "verification-order",
+  "severity": "low",
+  "outcome_impact": "One wasted unattended launch (run 20261011T050436Z) that re-stopped at preflight_smoke for a different root cause; produced an extra STOPPED artifact and ~5 min of session time. No data written to sik (smoke is read-only); no source modified beyond run_all.sh.",
+  "what_went_wrong": "I relaunched the unattended run_all.sh right after fixing the smoke gate, without first exercising the fixed smoke path manually. The relaunch failed at the same gate for a DIFFERENT reason: only openjdk-17-jre-headless was installed (no libawt_xawt.so) so the real Swing dialog threw HeadlessException even with Xvfb running.",
+  "root_cause": "I validated the gate logic statically (read BilingHarness.java source) but did not run the actual failing step end-to-end before relaunching. On a freshly provisioned box, environment gaps (headless-only JRE) only surface at execution; the original AIOOBE had masked this deeper gap.",
+  "actual_damage": "Extra launch + diagnosis cycle; STOPPED_AT_preflight_smoke.md for run 20261011T050436Z retained as evidence (diagnosis section filled).",
+  "remediation_done": "Isolated via test matrix (Xvfb up, DISPLAY set, faketime env check, full harness run), installed openjdk-17-jre, then MANUALLY ran the exact smoke command to green (rc=0, tbBilling rows=13, sik.billing 6288 unchanged before/after) BEFORE relaunch 2 (run 20261011T050921Z), which passed Phase 0 and stopped at the expected Phase 1 gate.",
+  "remediation_recommended": "Before any unattended relaunch after a fix: reproduce the previously failing step manually to green on the target box. A static code read is not runtime validation, especially on fresh infrastructure.",
+  "rule_references": ["RULES.md Rule 2 (record failures)"]
+}

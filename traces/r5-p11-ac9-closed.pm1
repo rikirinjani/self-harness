@@ -1,0 +1,38 @@
+{
+  "pm1_version": 1,
+  "session_id": "r5-p11-ac9-closed",
+  "timestamp": "2026-10-20T08:20:56.328266+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1500,
+  "tool_calls": 24,
+  "key_files": [
+    "khanza-r5/tools/p11_negative_controls.sh",
+    "khanza-r5/evidence/p11/r5_p11_negative_controls_20261020T073218Z.md",
+    "khanza-r5/evidence/p11/r5_p11_frozen_manifest_20261020T0739Z.sha256",
+    "khanza-r5/docs/khanza_r5_task_p11_negative_controls.md",
+    "khanza-r5/docs/khanza_r5_release_manifest.md",
+    "khanza-r5/docs/khanza_benchmark_report_R5.md",
+    "khanza-r5/docs/khanza_r5_p11_opencode_report.md",
+    "khanza-r5/records/qms/VER-2026-10-19-DR-KHANZA-R5-P11-001.json",
+    "khanza-r5/records/qms/VER-2026-10-18-DR-KHANZA-R5-P8-001.json",
+    "khanza-r5/records/failures/20261018T1630Z-evidence-integrity-r5-p10-nondiscriminating-checks.json",
+    "khanza-r5/records/failures/20261019T2135Z-process-r5-p11-concurrent-writer-evidence-unbinding.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "r5-p11-ac9-closed",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".--.-.----./-.-..-..---....-../-.-.-.........../........-/------...-....-.--------....--.----/-.-.-------..-/..--------..-...--..---....-",
+  "action": "Closed AC-9. Fixed p11_negative_controls.sh ensure_fx to verify the five STRATA- reg rows and rebuild an unusable fixture. Re-pinned 0bba1931, re-froze all seven tools (sha256sum -c OK, local LF == VPS). Final NC run 20261020T073218Z: DISCRIMINATING=5 NOT-DISCRIMINATING=0, exit 0, fixture dropped. Amended QMS VER-...-P11-001 (result PASS), closed failure 20261018T1630Z residual, amended 20261019T2135Z, fixed invalid JSON in QMS VER-...-P8-001 (escaping only). Committed 20ea324."
+}

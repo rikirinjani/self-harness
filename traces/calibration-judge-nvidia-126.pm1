@@ -1,0 +1,35 @@
+{
+  "pm1_version": 1,
+  "session_id": "calibration-judge-nvidia-126",
+  "timestamp": "2026-09-22T03:26:52.197386+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 14,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\calibration_judge.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\calibration\\nvidia-run1\\metrics.json",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\calibration\\nvidia-run2\\metrics.json",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\calibration\\nvidia-run1\\judge_raw.jsonl",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\calibration\\nvidia-run1\\judge_scores.json",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\calibration\\nvidia-run1\\disagreements.jsonl",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\calibration\\nvidia-run1\\manifest.json",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\2026-09-21-pass-judge-calibration-nvidia.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "calibration-judge-nvidia-126",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Built and ran eval/calibration_judge.py for the frozen 126-candidate judge calibration gate, on NVIDIA-hosted deepseek-ai/deepseek-v4.1-flash after the DeepSeek account returned 402 Insufficient Balance. Two full runs: schema validity 126/126 both; weighted kappa 0.6683/0.6790; MAE 0.4524/0.4444; no category kappa <0.40. All four stated gate rows PASS. Findings: all 57/56 disagreements are downward (judge stricter than humans), and 10.32% score divergence at temperature 0. Frozen artifacts untouched; A/B benchmark and Jev not run."
+}

@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-decision-wait-kaggle-oct10",
+  "timestamp": "2026-10-07T01:01:36.563350+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\results\\phase2-sweep\\summary.json",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\vultr_spend_ledger.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-decision-wait-kaggle-oct10",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "DECISION: Wait for Kaggle GPU (Oct 10) for B2-notice completion. Modal + Gemma 4 26B tested - facts_line stripped by Modal proxy, unfixable. 4/4 Vultr sweeps complete (.92). Cross-model compliance table done (field-authority replicated across deepseek/qwen/glm/nemotron). Paper revision pending B2 completion. Next: Oct 10 resume B2-notice (8 chains) on Kaggle T4x2."
+}

@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261005T042102-orchestrator-cli",
+  "timestamp": "2026-10-05T04:21:02.958542+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 25,
+  "key_files": [
+    "src/api/fhir.ts,src/api/rest.ts,public/report.html,tests/fhir-compliance.test.ts,.github/workflows/ci.yml"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261005T042102-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "ADR-014 Epic IV complete: FHIR Condition/Claim/Encounter endpoints, Conformance statement, CSV exports (patients/encounters/charges), HTML report page, 8 FHIR compliance tests, GitHub Actions CI. 197 tests pass. Live box deployed."
+}

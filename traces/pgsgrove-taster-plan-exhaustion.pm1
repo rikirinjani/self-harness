@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "pgsgrove-taster-plan-exhaustion",
+  "timestamp": "2026-11-05T05:44:04.271001+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 3,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pgsgrove-taster-plan-exhaustion",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Discovered the actual plan tier on PGS Grove is 'taster', NOT Basic+. Critical finding: taster has a FIXED DAILY allowance, and when it hits 0% ALL models return 402 plan_allowance_exhausted - including the 6 'near-endless floor' models the docs advertised. The docs page describes the floor/banking behavior as belonging to Basic and above tiers ('This tier carries a fixed allowance; Basic and above run on paced usage with banking instead of a fixed cap'). So the near-endless-floor feature does NOT apply to the taster plan the user is on. Confirmed via live API test: all 6 floor models returned 402 at 106.3% daily. Daily resets 2026-11-06 04:08 UTC, weekly at 31.9% with ~92% headroom. Also found the 4th model in the floor list (deepseek-v4-flash base) returns 400 for an unrelated reason (invalid model ID)."
+}

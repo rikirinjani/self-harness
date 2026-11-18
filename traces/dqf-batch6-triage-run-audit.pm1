@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-batch6-triage-run-audit",
+  "timestamp": "2026-09-26T22:39:00.290743+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 26,
+  "key_files": [
+    "rag-queries/batch6_verdicts.json",
+    "rag-queries/classifier_audit.py",
+    "rag-queries/kaggle_batch6_triage.py",
+    "rag-queries/kaggle_batch5_alltriage.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-batch6-triage-run-audit",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Batch-6 Kaggle triage run COMPLETE (~16 min, T4x2): 42/42 groups, 310/313 sentences labelled. Auditor anticoagulant vocabulary added (DIM_BENEFIT_TERMS +2, DIM_HARM_TERMS +4, R4 exempts renal_clearance_dependence): flags 56->8, suspect groups 25->5, selftest still 12/12 + 5/5. Harness one-verdict-per-sentence fix + completeness-aware resume applied to batch6+batch5. 3 sentences remain unlabelled (documented, not fabricated). Pushed 325ce7f"
+}

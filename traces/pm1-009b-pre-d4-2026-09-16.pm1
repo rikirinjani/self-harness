@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-009b-pre-d4-2026-09-16",
+  "timestamp": "2026-09-16T01:00:07.408395+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 8,
+  "key_files": [
+    "experiments/pm1-rx/TASK_009B_PRE_D4_AUDIT.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-009b-pre-d4-2026-09-16",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "TASK 009B-PRE D4 complete. Root cause found: the 009A diagnostic final_diag.py measured len(prompt_F('TEST')) where TEST is a 4-char placeholder -> 2353+4=2357, and the report quoted that as the prompt length without subtracting the placeholder. Correct fixed overhead is 2353 (contract 2271 + 82 chars framing). Impact assessed across all 5 dimensions: token accounting NO (rep_tokens_est measured on actual output), representation comparison NO, compression ratios NO, budget calculations NO, reproducibility NO (2357 exactly reproducible as len(prompt_F(4-char placeholder))). Classification: DOCUMENTARY ONLY, no measurement-relevant impact. Wrote TASK_009B_PRE_D4_AUDIT.md. Verdict: RESOLVED. No inference."
+}

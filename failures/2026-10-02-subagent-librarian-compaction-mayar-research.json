@@ -1,0 +1,26 @@
+{
+  "id": "2026-10-02-subagent-librarian-compaction-mayar-research",
+  "timestamp": "2026-10-02T17:44:07+07:00",
+  "category": "subagent-lane-failure",
+  "severity": "medium",
+  "related_ncr": "NCR-2026-09-28-SUBAGENT-COMPACTION-001",
+  "is_recurrence": true,
+  "session_ids": [
+    "ses_f03d2701efferKScdjymj3B0Br",
+    "ses_f03cc9dc6ffeE7WOpVDBNtTpYl"
+  ],
+  "summary": "Librarian lane failed twice on the Mayar.id research dispatch with 'Session too large to compact - context exceeds model limit even after stripping media'. Both spawns errored before doing any work; second session (lib-2 / ses_f03cc9dc6ffeE7WOpVDBNtTpYl) left unreconciled on the board as errored/non-reusable.",
+  "root_cause": "Persistent librarian session bloat: pre-existing sessions exceed compaction threshold, and fresh spawns of the same specialist still inherit a context state that cannot compact. Matches the standing compaction NCR opened 2026-09-28; not fixed by that NCR's actions so far.",
+  "what_i_did_wrong": [
+    "Reissued the Mayar research to @librarian despite the standing compaction NCR already documenting this failure mode; should have routed web research direct first (as done for the QRIS analysis on 2026-10-01).",
+    "First failure was reattempted without a scope/context change, producing an identical second failure."
+  ],
+  "impact": "Two wasted spawns; no data loss. Research completed orchestrator-direct instead.",
+  "mitigation_taken": [
+    "Completed the mayar.id research directly via webfetch/websearch in the orchestrator.",
+    "Librarian lane treated as unavailable for web research until NCR-2026-09-28-SUBAGENT-COMPACTION-001 is closed; prefer orchestrator-direct or a different specialist.",
+    "Board entry lib-2 recorded as errored and non-reusable."
+  ],
+  "fail_category": "specialist-lane-unavailable",
+  "status": "mitigated-lane-blocked"
+}

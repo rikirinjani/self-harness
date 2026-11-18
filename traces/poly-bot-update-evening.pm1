@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "poly-bot-update-evening",
+  "timestamp": "2026-10-08T21:38:16.176569+00:00",
+  "agent": "poly-bot-update-evening",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "poly-bot-update-evening",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........................................................................................................-.--...-",
+  "action": "BTC down 1.3%, position -1.7%, still holding, SL at -3%"
+}

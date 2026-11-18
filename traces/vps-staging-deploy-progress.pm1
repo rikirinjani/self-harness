@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "vps-staging-deploy-progress",
+  "timestamp": "2026-11-17T14:42:58.053927+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3600,
+  "tool_calls": 40,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\chatbot\\platform\\backend\\app\\models\\conversation.py",
+    "C:\\Users\\think\\Project_v2\\chatbot\\platform\\backend\\app\\models\\document.py",
+    "C:\\Users\\think\\self-harness\\tools\\docker-compose.override.yml"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "vps-staging-deploy-progress",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........-.--...-........................................-.--...-",
+  "action": "VPS Hostinger staging deploy progress: Docker 29 installed, SSH key hardened, ufw active; source copied to /opt/chatbot; .env staged (bridge Telegram disabled to avoid Mac polling conflict); MinIO image unavailable (410) -> replaced with SeaweedFS via compose override; SQLAlchemy metadata bug fixed in conversation/document models; platform-api UP OK 8 tables indexed, bridge container running (channels inert by staging design); bridge+frontend images built; expert/doc-manager builds still downloading deps (torch 539MB) in background"
+}

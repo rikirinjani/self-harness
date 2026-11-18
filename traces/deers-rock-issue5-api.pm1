@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "deers-rock-issue5-api",
+  "timestamp": "2026-10-05T07:35:12.110032+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "Project_v2/Deers-Rock/src/engine/encounter-insights.ts",
+    "Project_v2/Deers-Rock/src/api/rest.ts",
+    "Project_v2/Deers-Rock/src/api/fhir.ts",
+    "Project_v2/Deers-Rock/src/engine/fhir-export.ts",
+    "Project_v2/Deers-Rock/tests/api-encounters.test.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "deers-rock-issue5-api",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................................................--.-..-.........................................-.--...-",
+  "action": "Implemented issue #5 gaps in Deers-Rock: encounter outcome/icuDays/ventilatorDays/readmissionWithin30d/lengthOfStay derivation (pure, serialization-time), status/type/limit/since filters on /api/encounters + /api/charts, per-ICD stats on /api/outcomes, FHIR dischargeDisposition; 25 new vitest tests; suite 259 passed/1 skipped; tsc clean; commit 4f0210a (no push)"
+}

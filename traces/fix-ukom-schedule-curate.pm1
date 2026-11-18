@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "fix-ukom-schedule-curate",
+  "timestamp": "2026-10-09T02:19:27.098866+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 6,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "fix-ukom-schedule-curate",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........................................................-.--...-",
+  "action": "Fixed UKOM schedule answer: updated 5 curated entries with exact schedule (9-16 Oct registration, 30-31 Oct briefing, 1 Nov exam); bot restarted PID 96348; verified match works for query 'apakah ada jadwal ukom dalam waktu dekat' - returns correct schedule answer"
+}

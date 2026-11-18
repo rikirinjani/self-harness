@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "mcp-disable-all",
+  "timestamp": "2026-09-25T07:57:45.601937+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 420,
+  "tool_calls": 12,
+  "key_files": [
+    "C:\\Users\\think\\.config\\opencode\\opencode.jsonc",
+    "C:\\Users\\think\\.config\\opencode\\oh-my-opencode-slim.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "mcp-disable-all",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Disabled all 13 MCP servers to cut ~66k tokens/request tool-schema overhead. 10 user servers -> enabled:false in opencode.jsonc mcp block (first attempt failed: duplicate key, pre-existing enabled:true at object end won last-wins; removed 10 dup inserts and flipped 10 flags). 3 OMO builtins (websearch/context7/gh_grep) -> disabled_mcps corrected to builtin names (original list of 10 user names had no effect: key only feeds createBuiltinMcps). Verified opencode mcp list: 10 disabled + 3 builtins absent, 0 MCP tools."
+}

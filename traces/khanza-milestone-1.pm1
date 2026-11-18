@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "khanza-milestone-1",
+  "timestamp": "2026-10-10T02:09:56.635502+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 4200,
+  "tool_calls": 150,
+  "key_files": [
+    "docs/KHANZA-INSTALL-REPORT.md,kaggle/khanza-dr-benchmark/adapter_real.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "khanza-milestone-1",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-..........-.-.-.-........---..-..........-.--...-........................................-.--...-",
+  "action": "Khanza main JAR build: 11259 classes, 12MB, 4 errors (readAllBytes Java 9+ API in RMRiwayatPerawatan.java blocking main class compile). DB: 318 tables on MariaDB 11. Pre-built sub-modules functional. PHP portals: 37. DR data adapter script generated but FK constraints block insertion (penjab.kd_pj mismatch). Next: fix FK constraints or use alternate approach for 1-month pilot."
+}

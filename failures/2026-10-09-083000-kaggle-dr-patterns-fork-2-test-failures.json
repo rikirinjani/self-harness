@@ -1,0 +1,13 @@
+{
+  "schema": "failure/1",
+  "ts": "2026-10-09T08:30:00Z",
+  "agent": "orchestrator",
+  "task": "kronos-dr-patterns-fork v7",
+  "category": "partial-failure",
+  "severity": "low",
+  "summary": "2 of 272 tests failed after PAT1 (test-output-to-tmp) modification. Tests in dr-counterfactual.test.ts, p003-calibrated.test.ts, sensitivity-sweep.test.ts fail when KRONOS_TEST_OUT env is set. Root cause: the path redirect changes __dirname-based relative paths to absolute /tmp paths, which may cause module-resolution or file-access issues in the Kaggle kernel environment.",
+  "root_cause": "PAT1 replaces __dirname-based relative paths with env-var-based absolute paths. The tests themselves pass when run from the original path, but fail with the modified path. Likely cause: the test framework resolves __dirname differently when the path string is changed, or the /tmp directory has different permissions.",
+  "evidence": "fork-dp-evidence.json run 4595629: tests 272 total, 270 passed, 2 failed. Same 8 suites failed as baseline (6 DR collection + 3 modified + 1 extra).",
+  "containment": "Fork runs entirely in-kernel; no local files affected. 11/13 gates pass. The 2 failures are isolated to PAT1 test modifications.",
+  "correction": "Alternative PAT1 approach: instead of modifying test source, use vitest config alias or environment variable injection to redirect output without changing test code."
+}

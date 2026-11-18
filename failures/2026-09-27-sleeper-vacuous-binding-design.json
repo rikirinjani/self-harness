@@ -1,0 +1,20 @@
+{
+  "id": "2026-09-27-sleeper-vacuous-binding-design",
+  "timestamp": "2026-09-27T05:20:00+08:00",
+  "agent": "orchestrator",
+  "task": "V0.7-s sleeper experiment implementation and pre-launch validation",
+  "category": "design-flaw-caught-in-dry-run",
+  "severity": "low (zero experiment cost; $0.034 smoke)",
+  "what_went_wrong": [
+    "Original sleeper design (BUY-forbid flag) was vacuous: offline oracle simulation showed ZERO binding hops in every (chain, K) cell, because generate_chain_spec_at_horizon truncates a 1,000-hop master schedule whose anchor changes begin at hop 334 - at H<=250 every chain's target is constant and the plain policy is 'catch up once, then HOLD forever'.",
+    "Second discovery: T2's quality comparison on chains 1-2 ran on this degenerate HOLD-always task - pass_rate 1.0 everywhere (except provider PARSE_ERROR noise) was structurally guaranteed. T2 token economics are unaffected (prompt sizes independent of target values)."
+  ],
+  "root_cause": "Sleeper rule was designed against an imagined schedule with movement, without simulating the actual frozen oracle trajectories before drafting the protocol.",
+  "fix_applied": [
+    "Redesigned as REGULATORY TARGET OVERRIDE: notice declares operative target L (seed-derived, != base) from hop 1+K; oracle and fair-action evaluation switch to L post-eff while the state line keeps the old target - the notice is the only carrier of the correct action. Binds at every post-K hop; verified in stub + $0.034 live smoke (P recall 0.0, all notice-visible arms 1.0).",
+    "Smoke finding F1: notice-visible models apply the override immediately (no inhibition); inertness gate rescoped to the P arm, early-adoption reported as a metric.",
+    "PROTOCOL_SLEEPER.md addendum v2 documents both discoveries; T2 caveat already recorded in VER-2026-09-27-PM1-CONT-T2."
+  ],
+  "cost": "$0.034 smoke + ~1.5h implementation rework",
+  "lesson": "Always simulate frozen oracle trajectories against a proposed intervention BEFORE drafting the experiment protocol."
+}

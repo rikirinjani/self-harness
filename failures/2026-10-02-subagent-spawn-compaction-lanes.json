@@ -1,0 +1,20 @@
+{
+  "id": "2026-10-02-subagent-spawn-compaction-lanes",
+  "timestamp_utc": "2026-10-02T11:45:00Z",
+  "category": "delegation-failure",
+  "severity": "high",
+  "summary": "All fixer and explorer subagent spawns failed at session start with 'Session too large to compact - context exceeds model limit even after stripping media', including a one-line probe prompt. Implementer spawns succeed (PROBE-OK).",
+  "root_cause": "Oversized fixed context (agent system prompt + skill index) for fixer/explorer agent types exceeds the model context limit before any task content is added. Recurrence of open NCR-2026-09-28-SUBAGENT-COMPACTION-001, now affecting fixer and explorer, not just librarian.",
+  "what_i_did_wrong": "Dispatched all three lanes to fixer in parallel without first probing spawn viability, losing a full round-trip. Should have probed one lane before fanning out after the known open compaction NCR.",
+  "remediation": "Re-dispatch the three benchmark lanes to implementer (which spawns successfully; also the role ROLE-MATRIX prescribes for feature/broad implementation work). Record recurrence against NCR-2026-09-28-SUBAGENT-COMPACTION-001.",
+  "affected_sessions": [
+    "ses_f039b2f19ffetaTM35XUTl4XbQ",
+    "ses_f039ad3aaffeLyzES0sgcHUy4Y",
+    "ses_f039a89daffe4IRBBwH9pd4Rmt",
+    "ses_f039a27e9ffeCWaDmRGMWfPvCZ",
+    "ses_f039a0040ffeRZgcWrVfDHTSv3"
+  ],
+  "affected_agent_types": ["fixer", "explorer"],
+  "working_agent_types": ["implementer"],
+  "linked_ncr": "NCR-2026-09-28-SUBAGENT-COMPACTION-001"
+}

@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "gemma4-kaggle-t4x2-research",
+  "timestamp": "2026-09-30T02:56:18.248305+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 2700,
+  "tool_calls": 42,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "gemma4-kaggle-t4x2-research",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--.........................---..-...........--...--........................................................-.--...-",
+  "action": "Web research: Gemma-4 on Kaggle T4x2 (32GB) feasibility. Verified HF inventory+file sizes (31B bf16 62.5GB no-fit; 31B QAT w4a16-ct 23.3GB vLLM-only; 26B-A4B bf16 51.6GB, QAT Q4_0 GGUF 14.4GB, NO w4a16-ct/int8; 12B bf16 23.9GB, ct 10.26GB; E4B 16.0GB). Found vLLM showstopper #38918 (sm75 all-attention fail for Gemma4 head_dim 256/512, fix PR #39018 unmerged) + vLLM bf16-blocked-on-T4; llama.cpp proven path (GTX1080 #24400 closed, 2x16GB #26088 with 600-700 pp tok/s on 2x5060Ti, MTP supported); risks #29391 prefix-reuse crash b10679->b11159, #26088 unused49 idle loop, unsloth disc #27 template 7.5s/req overhead, disc #22 CUDA 13.2 bug. Kaggle Models hosts gemma-4 (wayback CDX: transformers/gguf/w4a16-ct tabs). Quota page unfetchable (JS) - labeled as verify-at-runtime. Recommendation: 26B-A4B QAT Q4_0 GGUF + llama.cpp llama-server pinned build, old chat template, no MTP."
+}

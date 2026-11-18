@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-t2-chain03-diagnosis",
+  "timestamp": "2026-09-26T14:37:31.040425+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 12,
+  "key_files": [
+    "Agentic Layer/pm1-continuation/results/t2/chain-03_P_h10.json",
+    "Agentic Layer/pm1-continuation/results/t2/chain-03_C_h25.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-t2-chain03-diagnosis",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "T2 status: process died at 20:28 (empty stderr, external kill, unexplained), 128/180 done; diagnosed chain-03 uniform STATE_CORRUPTION from hop2 across ALL 4 arms incl P (digest mismatch div=1, action matches, deterministic, ran 20:24-20:28 post-storm at normal speed) = endpoint-specific model incapacity on chain-03 trajectory (fp8/version vs frozen api.deepseek.com where chain-03 mostly survived), NOT compaction and NOT provider storm; all-arm-uniform so token ratios unbiased, excluded from quality analysis; relaunched PID 9264 resume-safe skipping 128"
+}

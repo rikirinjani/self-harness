@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "session-wrap-20260926-poco",
+  "timestamp": "2026-09-26T12:45:28.791302+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 7200,
+  "tool_calls": 40,
+  "key_files": [
+    "C:\\Users\\think\\.config\\opencode\\opencode.jsonc",
+    "C:\\Users\\think\\.config\\opencode\\oh-my-opencode-slim.json",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\20260925-pass-iyan-removal.json",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\20260926-pass-poco-m3-debloat.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "session-wrap-20260926-poco",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........-.--...-........................................-.--...-",
+  "action": "Session wrap 2026-09-26. Tasks: (1) removed dead iyan-router provider+preset, configs revalidated, live-verified 0 iyan refs; (2) GLM 429 monitoring - Retry-After 728s confirmed, user proceeded without fallback; (3) POCO M3 tether verified via netsh (BSSID d2:b7:d6:da:aa:29, WPA2, internet OK); (4) full read-only security audit over WiFi ADB pairing (port discovered via runspace TCP scan): clean device, locked BL, green verified boot, no root, patches stale 2022-08-01 flagged HIGH; (5) debloat per user approval: 7 packages removed via pm uninstall -k --user 0, verified 369->362 packages, 65%->64% storage, Gboard preserved. User closed developer options post-debloat. Gates: retrace clean (0 untraced), all 4 task traces verified on disk, QMS verification records written for iyan removal and debloat. Failure record filed for MemPalace drawer gap (MCP disabled by design, CLI absent). Crashlog intentionally NOT completed: slot holds pm1-continuation-t2 Vultr pilot checkpoint pending per earlier user WAIT decision - not synthetic-completed."
+}

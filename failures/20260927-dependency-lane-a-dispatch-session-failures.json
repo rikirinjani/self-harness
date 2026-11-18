@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-09-27T09:30:00Z",
+  "category": "dependency",
+  "slug": "lane-a-dispatch-session-failures",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "summary": "Five consecutive subagent dispatch attempts for the bible v2 clean pass (Lane A) failed at session creation/compaction; work was completed directly by the orchestrator instead.",
+  "what_happened": [
+    "Attempt 1 (fixer, resume fix-2 ses_f1ef06573ffeWGre3pCOes5aBs): failed - 'Conversation history too large to compact - exceeds model context limit'. fix-2 is listed reusable but its accumulated history cannot be resumed.",
+    "Attempt 2 (fixer, fresh session): failed - 'Session too large to compact - context exceeds model limit even after stripping media'.",
+    "Attempt 3 (fixer, fresh session, slimmed prompt): failed - same session-too-large error.",
+    "Attempt 4 (implementer, fresh session): failed - 'Error from provider (Console): Rate limit exceeded'.",
+    "Attempts 5-6 (implementer, fresh session x2): failed - 'Provider response headers timed out after 300000ms' both times.",
+    "Attempt 7 (implementer, gap-completion prompt): failed - 'Session too large to compact'."
+  ],
+  "root_cause": "Environment-level instability in the subagent dispatch lane: the fixer agent's system payload exceeds the model context limit on session creation (every fixer session fails, regardless of prompt size), and the provider intermittently rate-limits/times out on implementer sessions. Not a prompt-size problem - slimmed prompts failed identically.",
+  "what_was_actually_wrong": "I retried the same full-scope dispatch pattern three times before recognizing the failure was environmental, not scope-dependent. Each retry cost ~5 minutes of wall time. I should have switched to direct execution after the second identical session-too-large failure.",
+  "mitigation": "Orchestrator completed Lane A directly (bounded, mechanical work with grep + targeted edits). Partial work from timed-out sessions was recovered via marker scan (they had applied D10, D12, D15, D18, D20, D26 + AUTO 17,19,25,30 before dying). Lane B (prose checklist) succeeded earlier via implementer (imp-1).",
+  "lesson": "When two identical dispatch failures occur with the same error signature, stop retrying and take over directly. Check for partial work from timed-out sessions via marker/file-state scans before re-dispatching.",
+  "related_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\kala_v2_draft.md",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\kala_v2_changelog.md"
+  ]
+}

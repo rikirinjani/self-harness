@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-anticoagulant-profile-docs",
+  "timestamp": "2026-09-27T01:51:47.122473+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 420,
+  "tool_calls": 14,
+  "key_files": [
+    "Project_v2/drug-quantification-framework/profiles-anticoagulants/warfarin.md",
+    "Project_v2/drug-quantification-framework/profiles-anticoagulants/apixaban.md",
+    "Project_v2/drug-quantification-framework/profiles-anticoagulants/rivaroxaban.md",
+    "Project_v2/drug-quantification-framework/profiles-anticoagulants/edoxaban.md",
+    "Project_v2/drug-quantification-framework/profiles-anticoagulants/dabigatran.md",
+    "Project_v2/drug-quantification-framework/profiles-anticoagulants/enoxaparin.md",
+    "Project_v2/drug-quantification-framework/profiles-anticoagulants/comparison.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-anticoagulant-profile-docs",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--.........................--...--........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Created 7 markdown docs in new profiles-anticoagulants/ folder at DQF repo root (warfarin, apixaban, rivaroxaban, edoxaban, dabigatran, enoxaparin, comparison), mirroring profiles-statins/ house format; all numbers traced to api/drugs.json, curation drafts, adjudication JSON, and label_sourcing_e1.json; enoxaparin GI kept null per rule; verified 7 files, git status clean of unintended changes, no em-dashes in table cells"
+}

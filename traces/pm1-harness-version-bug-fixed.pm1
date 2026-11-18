@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-harness-version-bug-fixed",
+  "timestamp": "2026-10-10T02:05:10.668436+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\kaggle\\kernel-metadata.json",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\kaggle\\pm1_b2_notice.ipynb"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-harness-version-bug-fixed",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "Identified root cause: harness code changed between old kernel (working) and new kernel (broken). Old kernel gemma4-t4x2-runner had proven harness. New kernel pm-1-b2-notice-gemma-4 used current repo harness with bug. Fixed by updating kernel v2 with B2-notice experiment code."
+}

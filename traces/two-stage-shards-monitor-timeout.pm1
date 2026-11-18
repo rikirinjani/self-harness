@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "two-stage-shards-monitor-timeout",
+  "timestamp": "2026-09-25T18:47:47.425224+00:00",
+  "agent": "fixer",
+  "outcome": "partial",
+  "duration_s": 30000,
+  "tool_calls": 12,
+  "key_files": [
+    "C:\\Users\\think\\.opencode\\skills\\STATE.md",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\tsb-status.sh",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\tsb-diag.sh",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\tsb-logs.sh"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "two-stage-shards-monitor-timeout",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........--.-..-..........-.-.-.-........--.-..-.........-.--...-........................................-.--...-",
+  "action": "VPS sharded two-stage backtest monitoring: TIMEOUT at 8h33m runner uptime (run_shards.sh pid 298499, xargs -P 4). NOT finished: only 4 of 7 shards started (EURUSD GBPUSD AUDUSD NZDUSD); each has 3/5 strategies done (buyAndHold, momentumOnly, jevMomentumFilter at 13:20); currently on regimeOnly; no shard exited, shards.done has no lines, no results-*.json, merge NOT run, nothing scp'd. Verified NOT a stall: two samples 151s apart show regime caches growing 86732 -> 87432/87467 bytes, laya ~64 POST/2min and 96 POST/3min (~0.53 req/s), node CPU advancing; logs frozen only because result lines print per completed strategy. Failure markers 0/0/0/0 across the 4 logs (Direction prediction failed, Regime detection failed, Error:, 402, billing); warning grep also 0. No recovery actions needed. Blocker: laya throughput ~0.53 req/s aggregate vs ~2600 direction + ~2650 regime calls per shard; shards 5-7 (USDCAD/USDCHF/USDJPY) have not started because -P 4 slots are still held. ETA ~04:00 UTC for all 7 + merge if left running (caches are the checkpoint, so restart resumes cheaply). No numbers fabricated: pooled table/per-pair best unavailable because results.json was never produced."
+}

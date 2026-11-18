@@ -1,0 +1,38 @@
+{
+  "pm1_version": 1,
+  "session_id": "jev-faithful-venue-port-pepe",
+  "timestamp": "2026-09-24T08:57:43.075607+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 52,
+  "key_files": [
+    "C:\\Users\\think\\jev-crypto-trader\\src\\config.ts",
+    "C:\\Users\\think\\jev-crypto-trader\\src\\types.ts",
+    "C:\\Users\\think\\jev-crypto-trader\\src\\paper.ts",
+    "C:\\Users\\think\\jev-crypto-trader\\src\\trader.ts",
+    "C:\\Users\\think\\jev-crypto-trader\\src\\model.ts",
+    "C:\\Users\\think\\jev-crypto-trader\\tests\\trader.test.ts",
+    "C:\\Users\\think\\jev-crypto-trader\\web\\src\\lib\\format.ts",
+    "C:\\Users\\think\\jev-crypto-trader\\web\\src\\components\\DecisionPanel\\DecisionPanel.tsx",
+    "C:\\Users\\think\\jev-crypto-trader\\web\\src\\components\\PriceChart\\PriceChart.tsx",
+    "C:\\Users\\think\\jev-crypto-trader\\web\\src\\app\\page.tsx",
+    "C:\\Users\\think\\jev-crypto-trader\\web\\src\\app\\layout.tsx"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "jev-faithful-venue-port-pepe",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........--.-..-.........................................-.--...-",
+  "action": "Faithful venue port of the original jev-trader onto the Binance bot, after researching the original repo (which is explicitly NOT profitable and not trying to be: SPEC.md footer 'the model is not trying to be profitable'; it trades MON-USDC on Kuru/Monad with GAS as its only cost and a ~7 bps spread). MEASURED Binance spot spreads (via a script run on the VPS because api.binance.com is unreachable locally): BTCUSDT ~0.001 bps (unmakeable) vs PEPEUSDT ~23.02 bps (its 1e-8 tick is ~23 bps of its ~4.3e-6 price) with ~/day volume -> structural edge +8.0 bps at 7.5 bps maker fee. CHANGES: (1) SYMBOL default PEPEUSDT + TICK_SIZE config so post-only pricing steps by the real exchange tick (paper.ts quotePrice rewritten; previously it inferred tickSize = half-spread which collapsed to mid); (2) venue cost model - FEE_BPS maker fee per fill (7.5 = Binance spot maker with BNB) plus COST_PER_ORDER_USD (the gas analogue, 0 on a CEX), P&L = realized + unrealized - fees - cost; (3) REMOVED the edge gate to match the reference's one-quote-every-tick rule (quotes == decisions); (4) added upIn10 (= buy probability) to Decision/TickEvent per the reference; (5) fixed the inherited inverted prompt - the original's question says the order crosses the spread and 'must beat that cost' while its code is post-only and EARNS the spread; ours now states the maker earns the spread and the cost to beat is the round-trip maker fee; (6) adaptive price precision (config priceDp from tickSize; web fmtPrice/priceDp + fmtSize) because 2-dp formatting rendered PEPE as 0.00, plus removed a hardcoded 'BTC' in the PriceChart position pill. VERIFIED: 14/14 tests pass locally and on the VPS, typecheck exit 0, bot restarted on PEPEUSDT, dashboard rebuilt. LIVE over ~1713 decisions: quotes/decision = 1.000 (reference behaviour), spread 23.1 bps, costUsd 0, feesUsd 1.4806, realizedUsd +1.5751, pnlUsd +0.10 (+0.01%); gross realized per fill 0.013236 vs fees per fill 0.012442 -> net +0.000794/fill. From a -18% bleed to marginally positive. Headless CDP on the dashboard: 0 exceptions, renders 'JEV Trader . PEPEUSDT', prices 0.00000433, label 'SHORT 6,364,984 PEPEUSDT'."
+}

@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-vultr-sweep2-qwen-launch",
+  "timestamp": "2026-10-05T03:00:57.249859+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\vultr-qwen-run.log",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\vultr_spend_ledger.json",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\smoke_vultr_model.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-vultr-sweep2-qwen-launch",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "QWEN3.8-27B SMOKE PASS (1.4s/2.0s, parse_ok, ~\\.0032) + SWEEP-2 LAUNCHED (PID 2036, --sweep-label vultr-qwen3.8-27b, heartbeat hop 75/250 within 3 min, same pace as deepseek ~2.4s/hop -> ETA ~13:15). Ledger gate PASS (\\.21+2.75proj = 4.96 <= 50). Also: fixed UTF-8 BOM my PS cleanup wrote into vultr_spend_ledger.json (broke json.load) via UTF8Encoding(\\False); removed accidental __proj ledger entry."
+}

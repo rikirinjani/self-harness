@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-n3-v3-inter-rater-instrument",
+  "timestamp": "2026-09-28T05:23:00.272445+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1500,
+  "tool_calls": 28,
+  "key_files": [
+    "validation/v3-scenarios.json",
+    "methodology/v3-inter-rater-protocol.md",
+    "validation/v3_rater_sheet.md",
+    "validation/v3_agreement.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-n3-v3-inter-rater-instrument",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "N3 completed directly: GH sync verified (cafe082 both sides); found v3-scenarios.json rankings stale (computed pre-N1) - recomputed all 12 against post-N1 drugs.json via server.py scoring functions, 11/12 byte-identical, V3-S04 refreshed (meloxicam safety 1.5->3.0, overall 3.5->4.2, rank 6->5; N1 changed meloxicam gi_risk 3->2); wrote protocol (2-3 pharmacist design, blinding/anchoring, weighted kappa primary + Kendall's W + Spearman + top-k, precision reasoning, disagreement documentation), rater sheet, agreement script (pure Python, no deps, --help, --selftest SYNTHETIC passes, tie-aware top-1 fix after selftest exposed edge case); committed 1a2716d and pushed"
+}

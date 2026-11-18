@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "vps-staging-deploy-complete",
+  "timestamp": "2026-11-17T21:22:23.086831+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 30,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\chatbot\\doc-manager\\requirements.txt",
+    "C:\\Users\\think\\Project_v2\\chatbot\\platform\\backend\\requirements.txt",
+    "C:\\Users\\think\\Project_v2\\chatbot\\docker\\nginx\\default.conf",
+    "C:\\Users\\think\\.opencode\\STATE.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "vps-staging-deploy-complete",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "VPS staging deploy completed: expert+doc-manager+frontend+nginx up (9 containers). Fixed doc-manager python-multipart crash, passlib/bcrypt5 500 on login, nginx upstream port 5173->80 502. Public smoke test 200 on /, /api/health, login, knowledge, conversations, stats, /expert/health, /docs/health. Open: /api/auth/me 500 placeholder dependency; bridge knowledge 440 chunks vs Mac 1006 pre-cutover"
+}

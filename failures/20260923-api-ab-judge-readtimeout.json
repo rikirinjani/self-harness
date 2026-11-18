@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-09-23T07:49:00Z",
+  "category": "api",
+  "severity": "high",
+  "task": "ab-full-judge-vultr-true-3x",
+  "root_cause": "NVIDIA integrate.api.nvidia.com read timeouts from Vultr VPS: 95/96 written records failed with ReadTimeout after 6 attempts x 90s; only 1 valid score (ok=1/80 printed). Connections ESTAB but no response body within 90s. Pilot latency was ~38.6s on a different host/path.",
+  "what_i_did_wrong": "Launched 6-worker detached judge without a post-start single-call smoke gate; monitored only PID/partial presence for ~3 minutes then treated 0 records as 'delay', not failure. Continued multi-probe ssh churn under PowerShell quoting failures instead of failing fast on the first ok-rate.",
+  "evidence": {
+    "partial": "/root/cokro-eval/eval/ab_plan/full_judge/judge_records.partial.jsonl",
+    "progress": "96 lines, ok=1 bad=95 all ReadTimeout read timeout=90",
+    "elapsed_ms_samples": [571044, 571038, 571139],
+    "judge_out": "done=0 todo=19632 workers=6; 0.6/min eta=544h"
+  },
+  "impact": "True-3x full judge unusable at current path; ETA 544h vs planned ~46h; wasted ~2.5h VPS wall time.",
+  "corrective_action": "Write fail records; single clean API probe (timeout 180); if still timeout, stop run, compare local vs VPS path, raise JUDGE_TIMEOUT / lower workers / switch provider; keep resume-safe partial (invalid scores are retried)."
+}

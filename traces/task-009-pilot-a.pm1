@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "task-009-pilot-a",
+  "timestamp": "2026-09-15T07:02:18.584788+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3600,
+  "tool_calls": 0,
+  "key_files": [
+    "experiments/pm1-rx/TASK_009_PILOT_A_RESULT.md",
+    "experiments/pm1-rx/pilot_a_results.json",
+    "experiments/pm1-rx/pilot_a_run.log"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task-009-pilot-a",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-........................-.--...-........................................-.--...-",
+  "action": "Task 009 Pilot A EXECUTED (Vultr CPU, Qwen2.5-3B, 10 boundaries, 8.5-14.4K tokens). Cost 0 USD; runtime 49m40s (~5 min/boundary, 15x faster than estimate). PIPELINE PASS: 10/10 boundaries, 40/40 arm executions, 0 errors, 40/40 JSON-parseable reconstructions, read-only invariant held, loop guard no triggers. Sizes: A=2738 B=912 C=1150 F=745 chars (F smallest 0.015x). Timing: A=113.2 B=58.6 C=71.4 F=54.9 s. DEFECT FOUND: F over-filters - field coverage A=4.0 B=4.1 C=5.7 F=3.3 of 10; F omits commitments 8/10, constraints 5/10, dependencies 4/10 that C captures. Root cause: F prompt says 'omit anything not needed' without specifying minimum required content; 3B model over-minimizes. Prompt defect, not scientific result. Fixes needed: rewrite F prompt (HIGH), implement oracle (HIGH), field-coverage gate (MED), recalibrate runtime (LOW). Commit 165ff1d. No paid inference; Experiment 001 unchanged."
+}

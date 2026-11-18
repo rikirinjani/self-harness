@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "fixer-p1-5-fhir-mount-json-errors",
+  "timestamp": "2026-10-01T14:37:05.462111+00:00",
+  "agent": "Fixer",
+  "outcome": "pass",
+  "duration_s": 1620,
+  "tool_calls": 19,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\src\\api\\rest.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "fixer-p1-5-fhir-mount-json-errors",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "GH issue 1 P1-5: mounted createFhirEndpoints in src/api/rest.ts - GET /api/fhir/Patient search with name filter, GET /api/fhir/Patient/:id plus README lowercase variant, GET /api/fhir/Observation aggregating vitals across all patients with optional patient filter. Existing /api/fhir/encounter/:id route preserved (only its 404 changed from plain text to JSON). Normalized error contract: API catch-all 404, encounter 404, patient-read 404, static 404 and 403 now return JSON error objects with application/json content type. No test asserted the old plain-text body so no test edits were needed. Verified: npm run lint exit 0; vitest tests/fhir-export.test.ts + tests/sandbox.test.ts 21/21 pass exit 0; world.test.ts soak failure is a pre-existing vitest RPC timeout flake (all 9 tests passed on rerun, exit 1 from unhandled worker error only); live smoke on port 3199: /api/fhir/Patient=200 total 50, /api/fhir/Patient/PAT-0050=200, /api/fhir/patient/PAT-0050=200, /api/fhir/Observation=200 total 200, /api/fhir/encounter/ENC-7-PAT-0009=200 regression OK, /api/fhir/encounter/ENC-NOPE=404 JSON, /api/nonexistent=404 JSON no-route-for-GET; server stopped after test."
+}

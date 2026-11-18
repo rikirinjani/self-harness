@@ -1,0 +1,12 @@
+{
+    "severity": "high",
+    "timestamp": "2026-11-18T00:00:00Z",
+    "trace_id": "vps-staging-deploy-progress",
+    "category": "dependency",
+    "summary": "POST /api/auth/login returned HTTP 500 with ValueError: password cannot be longer than 72 bytes raised inside passlib bcrypt backend detection.",
+    "outcome": "fixed",
+    "agent": "orchestrator",
+    "root_cause": "Unpinned bcrypt resolved to 5.x on build; passlib 1.7.4 is incompatible with bcrypt>=4.1/5.x backend detection. Reproducible on a fresh image build despite the service having booted 6h earlier.",
+    "recovery": "Pinned bcrypt==4.0.1 under passlib[bcrypt] in platform/backend/requirements.txt (local and VPS), rebuilt platform-api, re-seeded admin hash with the fixed lib. Login returned 200 with token.",
+    "prevention": "Pin transitive crypto deps in every service that hashes passwords; add auth login to the staging smoke checklist."
+}

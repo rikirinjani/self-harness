@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "poly-bot-indodax-failed",
+  "timestamp": "2026-10-08T01:04:33.823983+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 60,
+  "tool_calls": 8,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\test_indodax_v2.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "poly-bot-indodax-failed",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Indodax API key test failed with 'Invalid TAPI version key' error. Key format recognized but invalid for current API. Trainer Atlanta running cycle 66,775+ (,465, +78,831%). Crypto bot NY running paper mode with Coinbase prices."
+}

@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "r4-b2-1000-sample-pass",
+  "timestamp": "2026-10-13T14:07:29.212468+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 420,
+  "tool_calls": 18,
+  "key_files": [
+    "C:\\Users\\think\\khanza_benchmark_report_R3.md",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\r4_b2_postcheck.md",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\VER-2026-10-13-DR-BENCHMARK-R4-BATTERY-001.json",
+    "C:\\Users\\think\\mempalace_queue\\dr_khanza_r4_battery_d1.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "r4-b2-1000-sample-pass",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Sample r4_b2_1000 completed: 999/999 visits through real form, 0/999 drift (0.00%), COVERAGE_OK (224 union subset), 4 historical drift visits clean; post-run gates PASS; report finalized (B2 row TESTED, drift bound ~0.3% rule of three); QMS + MemPalace updated"
+}

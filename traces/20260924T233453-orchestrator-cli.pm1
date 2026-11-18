@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260924T233453-orchestrator-cli",
+  "timestamp": "2026-09-24T23:34:53.542581+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 3,
+  "key_files": [
+    "PRE-PRODUCTION-TODO.md",
+    "scripts/build_subcorpus.py",
+    "scripts/quick_500k.py",
+    "scripts/runpod_launch.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260924T233453-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Reviewed pre-production TODO. Confirmed index-scope gap: production LanceDB ~28.4M vs eval 500k subcorpus; benchmark is ranking evidence not absolute-performance evidence, and eval used flat FAISS vs likely ANN in prod. Recommended ship bge-large+Layer1 together, Layer2 fast-follow, clinical sign-off before user-facing scope warning, query logging for traffic weighting, and resolve index scope first."
+}

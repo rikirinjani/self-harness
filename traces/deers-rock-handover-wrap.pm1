@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "deers-rock-handover-wrap",
+  "timestamp": "2026-10-04T14:55:21.995116+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 4,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\DEERS-ROCK-POST-DEPLOY-HANDOVER.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "deers-rock-handover-wrap",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Deers-Rock deployment wrapped and handed over to DR DEV. Service verified at 5h39min uptime, 295MB RSS, 287MB stable journal, zero OOM. All acceptance criteria pass except post-restart durability (pending DR DEV test). Handover doc written."
+}

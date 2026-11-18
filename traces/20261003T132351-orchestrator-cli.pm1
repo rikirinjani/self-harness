@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261003T132351-orchestrator-cli",
+  "timestamp": "2026-10-03T13:23:51.432033+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 420,
+  "tool_calls": 10,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\docs\\adr\\evidence\\ADR-004-10k-FAIL\\longrun-report.json",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\docs\\adr\\evidence\\ADR-004-10k-FAIL\\validation.log",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-10k\\deers-rock-bounded-10k-validation.ipynb",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-10k\\kernel-metadata.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261003T132351-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "F4 closed + kernel re-validation prep: archived first-10k FAIL evidence hash-verified into docs/adr/evidence/ADR-004-10k-FAIL (report 89850C25..., log A24D718F...), committed 300b634 + pushed (a9568db..300b634); Kaggle kernel files pinned to reviewed candidate a9568db with Amendment-1 tuned config noted (charges TTL 1000, snapshot retention 3); 6k-tick PROFILE=1 heap-attribution run relaunched detached via WMI Win32_Process (PID survives harness kill) after first Start-Process launch was killed with its parent shell"
+}

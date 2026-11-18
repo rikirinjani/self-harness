@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "khanza-report-final",
+  "timestamp": "2026-10-10T11:03:22.117819+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 10,
+  "key_files": [
+    "khanza_report.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "khanza-report-final",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Updated JSON report with verified DB state: 177 patients, 177 visits, 223 prescriptions, 0 orphans, Rp 13.76M billable revenue, 1,816 billing rows. Cashier consumer verified against seed format."
+}

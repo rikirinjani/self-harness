@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "adapter-dr-interface-calibration",
+  "timestamp": "2026-09-21T07:45:08.740886+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "docs/experiments/ADAPTER-DR-CALIBRATION.md",
+    "scripts/adapter-dr-calibration.ts",
+    "experiment-results/adapter-dr-calibration/calibration-results.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "adapter-dr-interface-calibration",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Adapter-DR interface calibration (diagnostic only, no tuning). ADMISSION: 2-step staircase, lower threshold EXACTLY 1.50 (fine scan 1.40-1.48 no change, 1.50 first change); 1.0<=m<1.5 -> occ 0.5420; 1.5<=m<2.0 -> 0.5725; m>=2.0 -> 0.6031. Mechanism markov.js floor(baseAdmit*m), baseAdmit=floor(rng()*3) in {0,1,2}, max(1,.) masks decreases. Adapter supplies 1.30 -> step 0 -> ZERO effect confirmed every tick. SUPPLY: lower threshold 0.475, narrow band 0.475-0.525, saturates at 0.0060 above 0.525; dead below 0.45; restock only at clock.tick%50 so identical through KE tick 14, divergence at tick 15 (restock boundary), response is a STEP not gradient. Adapter supplies 0.40 -> dead zone -> ZERO effect. DISASTER: categorical + effective but magnitude-free - natural-disaster -> earthquake, severity hardcoded 0.6, icuOcc 0.0357->0.0714 doubles, occ 0.5420->0.5496. INFORMATION LOSS: admission QUANTISED (2 steps), pressure THRESHOLDED, disaster CATEGORICAL, staffModifier DISCARDED, diagnosisWeightOverrides DISCARDED, climate severity DISCARDED, mortalityPressure STRUCTURALLY ABSENT (morgue empty always), admissionSurge THRESHOLD-UNREACHABLE (needs >0.9, max 0.6031). DEAD FIELD CONFIRMED: diagnosisWeightOverrides declared:23 init:158 populated:169/175/181 returned:189 NEVER consumed (zero DR refs); DR has own ICD mechanism via SCENARIO_DEFS.icdWeights. SEVERITY SEMANTICS: DR severity is NORMALISED [0,1] interpolation (surgeMultiplier = surgeMin + (surgeMax-surgeMin)*severity); DR native spawning samples 0.3+rng*0.7 -> [0.3,1.0]; macro override hardcodes 0.6; variable severity input DOES exist; transmitting climate severity would REPEAT THE UNIT-ERROR CLASS (DR expects [0,1], climate is unbounded ~1-7.5 intended / ~30 under defect) -> requires MODELLING DECISION not bug fix. JEV: thresholds are implementation behaviour (0.81/0.60); staircase genuine quantisation (0.91); delay genuine (0.96); severity transmission incompatible (0.72); raising adapter values for effect = OUTCOME-DRIVEN TUNING (0.98); wire severity needs prior modelling decision (1.00); current sentinel CANNOT support interpretable experiment (0.68); more calibration dimensions required (0.88); declared assumption required (0.91); Jev declines to assign fix to adapter (0.14) or DR model (0.40). UNRECONCILED: severity 0.6 canonical (KE) vs arbitrary (Jev 0.35). MAPPING CHANGE JUSTIFIED: NO. PHASE F RERUN ELIGIBLE: NO. No production code, mapping, threshold or severity changed; no rerun; no GPU."
+}

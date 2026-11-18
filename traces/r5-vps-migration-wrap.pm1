@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "r5-vps-migration-wrap",
+  "timestamp": "2026-10-23T09:09:24.633373+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 8,
+  "key_files": [
+    "khanza-r5/docs/asset_export_20261023.md",
+    "khanza-r5/records/failures/20261023T0830Z-process-r5-vps-migration-stumbles.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "r5-vps-migration-wrap",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Wrapped the VPS migration stream. Durable records: deferred sshd hardening written into docs/asset_export_20261023.md as an open item (owner decision, both boxes stay live, .vps.env unchanged); failure record 20261023T0830Z-process-r5-vps-migration-stumbles.json filed (5 in-flight stumbles, all self-caught, none landed harm - local-vs-remote wrapper, wrong-DB probe, classpath x2, standing sik_p6f grant caught and revoked); MemPalace outbox queue appended with drawer 3 (migration facts + box naming + deferred items, delivery still PENDING). Commit 0d985b0. Session state: mac-mini-vultr live and verified, older vultr box untouched and still owned by the other session, P11 closed PASS in repo, nothing running from this stream."
+}

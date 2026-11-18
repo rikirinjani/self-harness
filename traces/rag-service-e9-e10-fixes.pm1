@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "rag-service-e9-e10-fixes",
+  "timestamp": "2026-10-19T08:19:16.441229+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:/Users/think/Project_v2/LocalNotebook/rag-service/eval/eval_ab_metrics.py",
+    "C:/Users/think/Project_v2/LocalNotebook/rag-service/eval/bm25_judge.py",
+    "C:/Users/think/Project_v2/LocalNotebook/rag-service/eval/test_bm25_judge_fields.py",
+    "C:/Users/think/Project_v2/LocalNotebook/rag-service/PRE-PRODUCTION-TODO.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "rag-service-e9-e10-fixes",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................................................-.--...-........................................-.--...-",
+  "action": "E9+E10 on rag-service branch eng/opencode-backlog-2026-10: E9 eval_ab_metrics.py ASCII-safe delta headers + guarded stdout reconfigure (cp1252 crash fixed, verified exit 0 with/without PYTHONIOENCODING, metrics.json hash unchanged DF897E1F); E10 bm25_judge.py parse_source/used_json_mode restored onto serialized record dict with offline requests.post-monkeypatch unit check; commits 38d9702 (E9) and e1fe10b (E10); worked in existing checkout of target branch (worktree impossible, branch already checked out)"
+}

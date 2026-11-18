@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "khanza-report-v2",
+  "timestamp": "2026-10-10T06:24:53.499969+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 50,
+  "key_files": [
+    "khanza_report.json",
+    "dr_khanza_adapter_v7.py",
+    "trigger_billing.py",
+    "clean_all_dr.sql"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "khanza-report-v2",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "Fixed 2 reviewer items: (1) 0 orphans via drug pre-validation + duplicate prevention, (2) real diverse pricing — 719 procedure codes (Rp 5K–195K), 1439 drug prices from databarang.ralan. Revenue: Rp 54.6M across 177 visits, 3061 billing rows. Full reconciliation table shows 0 gaps."
+}

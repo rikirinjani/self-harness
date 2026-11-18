@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-mech-launch",
+  "timestamp": "2026-09-28T09:48:51.707179+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\mech_run.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-mech-launch",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "Mechanism re-run LAUNCHED per user directive (r2 complete + frozen first): mech_run.py PID 424 detached, one cell (chain-01 K=10 L=2 h250) x 2 arms (C verbatim+notice, P+FACTS in-packet), capturing raw worker responses incl. reasoning per hop to results/mech/{arm}_responses.jsonl. Question: why position 1 - BUY-1 conflation hypothesis (worker conflates BUY quantity with resulting position; 1 exists nowhere as a target). Temperature 0 -> representative of frozen r2 behavior. Cost ~.22 (500 calls), ETA ~17 min. R2 freeze complete prior: frozen/v07s-r2/ 41 files + manifest, QMS VER written, crashlog completed."
+}

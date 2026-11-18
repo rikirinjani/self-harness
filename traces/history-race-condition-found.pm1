@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "history-race-condition-found",
+  "timestamp": "2026-09-15T06:57:10.344295+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 12,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "history-race-condition-found",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........................................................-.--...-",
+  "action": "Root-caused missing conversation context: hafidz (608079824) absent from conversation-history.json despite R268 flow persisting before review send. Audit window 13:23-13:30 shows ~10 concurrent LLM flows; each does read-modify-write on the single conversation-history.json — a concurrent flow's stale read clobbers earlier writes. Race explains both (a) hafidz vanishing and (b) LLM not seeing prior Q&A when '?' arrived. Fix planned: per-user history files"
+}

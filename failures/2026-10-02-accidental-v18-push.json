@@ -1,0 +1,13 @@
+{
+  "id": "2026-10-02-accidental-v18-push",
+  "category": "process-error",
+  "severity": "low",
+  "detected": "2026-10-02",
+  "summary": "While assembling a status-check command (quota + CLI help), an unrelated 'kaggle kernels push' was accidentally included in the same command block and executed - launching kernel v18 (RUN_QUEUE=smoke,sweep) without user approval.",
+  "root_cause": "hasty command-block assembly combining a read-only check with a state-changing command",
+  "what_i_did_wrong": "combined validation and state-changing commands in one block without review",
+  "impact": "GPU quota burn (~4-8h of the remaining 24.96h) - BUT v18 runs exactly the planned B2-notice sweep (RUN_QUEUE smoke,sweep with the validated notice-carrying code), so the burn executes on-plan work. First ~8 chains duplicate already-recovered t1s (still valid replicates).",
+  "mitigation": "left running (advances planned work); adoption of 'kaggle kernels push -t TIMEOUT' runtime caps on all future pushes to bound any accidental or stalled run",
+  "lesson": "never assemble state-changing commands into diagnostic command blocks; validate before execute",
+  "status": "closed - v18 left running as on-plan work"
+}

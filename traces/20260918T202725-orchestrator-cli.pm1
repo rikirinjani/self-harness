@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260918T202725-orchestrator-cli",
+  "timestamp": "2026-09-18T20:27:25.876403+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 0,
+  "key_files": [
+    "morse/experiments/pm1-rx/TASK_017_PROTOCOL.md",
+    "morse/experiments/pm1-rx/TASK_017_DATASET.json",
+    "morse/experiments/pm1-rx/TASK_017_DATASET_FREEZE.json",
+    "morse/experiments/pm1-rx/task017_runner.py",
+    "morse/experiments/pm1-rx/task017_tests.py",
+    "morse/experiments/pm1-rx/TASK_017_REPORT.md",
+    "morse/experiments/pm1-rx/TASK_017_RESULTS.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260918T202725-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........................--.-..-.........................................-.--...-",
+  "action": "Task 017 complete. 20 synthetic cases, 40 model calls (U vs S). U F1=0.5048, S F1=0.4372. U outperforms S by 6.8pp. Both achieve tp=0 on active_constraints/commitments/pending_decisions due to matcher phrasing mismatch. 110/110 pre-flight tests pass."
+}

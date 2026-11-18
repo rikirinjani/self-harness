@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "ab-prep-bge-ret-crash",
+  "timestamp": "2026-09-23T02:31:44.561005+00:00",
+  "agent": "coordinator",
+  "outcome": "fail",
+  "duration_s": 30,
+  "tool_calls": 3,
+  "key_files": [
+    "scripts/check_npy_shapes.py",
+    "scripts/ab_embed_supervisor.sh"
+  ],
+  "failure": {
+    "category": "infrastructure",
+    "severity": "medium"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ab-prep-bge-ret-crash",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........-.--...-........-.--...-........-.--...-........-.--...-........................--.-..-.........-.--...-",
+  "action": "bge-large retrieval died during FAISS build with leaked semaphore warning; process gone; investigating OOM/dim mismatch (npy 2048000128 bytes suggests 1024-dim vs registry dim=768)"
+}

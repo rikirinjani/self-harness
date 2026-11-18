@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "invoice-001-kolegium-farmasi",
+  "timestamp": "2026-10-05T10:01:25.123428+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 5,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\chatbot\\INVOICE-001-Kolegium-Farmasi-20261005.md",
+    "C:\\Users\\think\\Project_v2\\chatbot\\INVOICE-001-Kolegium-Farmasi-20261005.pdf"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "invoice-001-kolegium-farmasi",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Built invoice 001/INV/X/2026 for Kolegium Farmasi Indonesia dated 5 Okt 2026: VPS 2yr Rp4.2jt + dev Rp10jt + DeepSeek  @ live kurs Rp17.915 (exchangerate-api.com 5 Okt 2026) = Rp716.600; total Rp14.916.600. Cross-checks: VPS figure exceeds proposal research (Rp3.114M incl PPN) by ~Rp1.1jt — possible tier/renewal/addon difference, flagged; dev fee ~5% below proposal PPN figure (Rp10.545M), provider's own pricing;  credit covers ~60-120k queries (10-20 months at current volume). PDF generated (58KB)"
+}

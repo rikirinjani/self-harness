@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "phase-g-test-placement-fix",
+  "timestamp": "2026-10-01T14:11:04.238837+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "Deers-Rock/tests/sandbox.test.ts",
+    "Deers-Rock/tests/core-isolation.test.ts",
+    "Deers-Rock/docs/productization/PHASE-G1-G2-REPORT.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "phase-g-test-placement-fix",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Repo issue found and fixed. Diagnosis: Phase-G tests placed in src/sandbox but repo convention is tests/ (17 existing); tsconfig include src / exclude tests caused npm run build to emit dist/sandbox test files importing vitest into production output. Root cause: did not check tsconfig layout before placing new tests. Fix: relocated both tests to tests/ with corrected relative imports, removed 6 stale dist artifacts, did NOT touch tsconfig per zero-core-modification. Doc refs corrected. Verified: tsc 0, 17/17 tests, build 0, zero *.test.* in dist, zero vitest imports in dist, no tracked file modified. Failure record written."
+}

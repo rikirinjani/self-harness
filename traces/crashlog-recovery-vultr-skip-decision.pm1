@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "crashlog-recovery-vultr-skip-decision",
+  "timestamp": "2026-10-05T02:21:04.677266+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 12,
+  "key_files": [
+    "C:\\Users\\think\\self-harness\\failures\\2026-10-05-092500-session-crash-vultr-sweeps.json",
+    "C:\\Users\\think\\self-harness\\failures\\2026-10-05-090500-mempalace-queue-pending-stage0.json",
+    "C:\\Users\\think\\self-harness\\crashlog.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "crashlog-recovery-vultr-skip-decision",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Rule 9 recovery found a crashed session from task vultr-model-sweeps (dirty: RUN_REGISTRY.md, vultr-ds41-run2.log). Verified the underlying sweep process PID 6368 is alive and still writing chain files (newest 09:13 local), so recorded a SKIP decision with recovery owner = PM-1 lane owner rather than resuming or retrying (would create a second writer on the registry and double-spend the  cap). Appended Stage-1b MemPalace drawer to the pending queue (mutating tools still unavailable), then checkpointed and completed the crash log for the Kronos task."
+}

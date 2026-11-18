@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "kaggle-re-review-v2-result",
+  "timestamp": "2026-10-02T01:26:32.770345+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 20,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\astra-fixes\\results-v2\\review-agent-stack-v2\\1\\gpt-6-astra\\3908963\\review-agent-stack-v2_output.md",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\astra-fixes\\stack_description_v2.md",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\2026-10-02T01-35-00-VER-KAGGLE-STACK-FIXROUND-001.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kaggle-re-review-v2-result",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Re-review completed: review-agent-stack-v2 gpt-6-astra run 3908963 (2m44s) downloaded; score comparison vs v1: total unchanged 13.5/25 (arch 3->3.5, verification 3.5->3, gov/cost/ext flat); reviewer called adopted-vs-enforced distinction 'honest and decisive', verdict Needs rework, next milestone = protected exercised acceptance path; gemini cross-review 12.5/25; QMS verification record VER-KAGGLE-STACK-FIXROUND-001 filed"
+}

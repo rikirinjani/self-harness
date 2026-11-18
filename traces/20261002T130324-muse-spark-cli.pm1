@@ -1,0 +1,35 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261002T130324-muse-spark-cli",
+  "timestamp": "2026-10-02T13:03:24.289752+00:00",
+  "agent": "muse-spark",
+  "outcome": "partial",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "src/engine/world.ts",
+    "src/engine/journal.ts",
+    "src/engine/cleanup.ts",
+    "scripts/kaggle-longrun/validate-bounded.mjs",
+    "docs/adr/ADR-004-bounded-state-durable-scheduling.md",
+    "tests/bounded-reporting.test.ts",
+    "tests/discharge-resume.test.ts",
+    "tests/resume-warnings.test.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261002T130324-muse-spark-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........--.-..-.........................................--.-..-.........................................-.--...-",
+  "action": "ADR-004 six non-blocking pre-staging findings: findings 1-4,6,7 fixed as specified with 3 new test files; finding 5 completed-gate fixed as specified but supersedes 1 pre-existing bounded-orders expectation (owner disposition needed); OFF 1050-tick journal digest byte-identical"
+}

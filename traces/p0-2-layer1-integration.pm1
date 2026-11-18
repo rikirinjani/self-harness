@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "p0-2-layer1-integration",
+  "timestamp": "2026-09-26T15:09:59.782204+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\query_lancedb_fulltext.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\layer1_abstain.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\data\\entity_presence_index.json.gz",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\scripts\\build_entity_index.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\scripts\\verify_layer1_integration.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\layer1_acceptance_test.py",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\VER-P0-2-LAYER1-ABSTAIN-001.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "p0-2-layer1-integration",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........................--.-..-.........................................-.--...-",
+  "action": "P0-2 integration APPLIED and verified: query_lancedb_fulltext.py now runs the Layer-1 entity-presence gate before embedding, with guaranteed early-return abstain. Tests PASS: fabricated query abstains with 0 embed/search/NCBI/LLM calls (sentinel-enforced) and writes abstain record; real query passes gate and the unchanged [1/4]-[4/4] pipeline returns citations intact. Dependency audit: 0 eval-only tokens in production path; import closure stdlib+requests+layer1_abstain+drug_synonyms only. Layer 2 not implemented; suppression not enabled."
+}

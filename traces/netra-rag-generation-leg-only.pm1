@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "netra-rag-generation-leg-only",
+  "timestamp": "2026-10-02T12:17:22.229286+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 90,
+  "tool_calls": 3,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "netra-rag-generation-leg-only",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "User confirmed embeddings are already done; Netra would serve only the generation leg (answer synthesis from retrieved PubMed context). Confirmed this is the fresh-input regime where Netra beats OG DeepSeek peak by 41%. Checked rate limits: only the ,000 Partners tier publishes 'No rate limit'; the  pay-as-you-go tier has NO published RPM/TPM limit anywhere on the site - a real gap for batch RAG workloads. Flagged that DeepSeek Flash is general-purpose not biomedical-tuned, so domain answer quality on PubMed clinical nuance is the actual open question, not price. Recommended a  evaluation pass: burst-test rate limit + compare answers against current generator on 50-100 real queries."
+}

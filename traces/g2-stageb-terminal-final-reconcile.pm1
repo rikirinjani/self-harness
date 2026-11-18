@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "g2-stageb-terminal-final-reconcile",
+  "timestamp": "2026-10-12T01:01:37.689554+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 18,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\VER-2026-10-12-G2-STAGEB-FINAL-RECONCILIATION.md",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\nonconformities\\NCR-2026-10-12-002.md",
+    "C:\\Users\\think\\self-harness\\failures\\20261012T0105Z-g2-stageb-dispatch-premise-recurrence.json",
+    "C:\\Users\\think\\self-harness\\outbox\\mempalace-pending-20261011T2335Z-g2-terminal-state.md",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\g2_stageb_final_verify.sh"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "g2-stageb-terminal-final-reconcile",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................---..-..........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Terminal reconciliation G2/Stage B lane: dispatch premise (30 unreconciled sessions fix-4..fix-33) NOT supported by disk — zero fix-N G2/StageB sessions exist; actual population 24 sessions (2 substantive + 22 acks), all traced, 0 unreconciled. Fourth read-only on-box confirmation of terminal state: unit dr-bench parked rc=3 since 23:21:10Z, state.json stageB_ladder percent=90 unmodified, G2 evidence A==B==C 1460/Rp142,947,833 delta 0 hash fee58826a759d35d intact, no processes; only delta = Stage B tools built by traced session phase5-stageb-tools (B1 dry-run PASS). Recorded NCR-2026-10-12-002 (second phantom-backlog dispatch; NCR-001 preventive rules unimplemented), failure record, QMS VER, MemPalace outbox queue. No synthetic records, no dispatches, no box mutation. LANE STOPPED."
+}

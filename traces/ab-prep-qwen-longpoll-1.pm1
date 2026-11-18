@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "ab-prep-qwen-longpoll-1",
+  "timestamp": "2026-09-23T02:53:16.376582+00:00",
+  "agent": "coordinator",
+  "outcome": "partial",
+  "duration_s": 185,
+  "tool_calls": 1,
+  "key_files": [
+    "scripts/ab_embed_supervisor.sh",
+    "scripts/qwen3_chunks.sh"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ab-prep-qwen-longpoll-1",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........--.-..-.........--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Wait 180s; c1 resumed to 3pct; supervisor re-running retrieval checks"
+}

@@ -1,0 +1,29 @@
+{
+  "record_type": "failure",
+  "timestamp": "2026-09-24 16:37:19",
+  "task": "PM1_ALL publication to HF public dataset",
+  "outcome": "fail",
+  "category": "publication-preflight-gaps",
+  "severity": "medium",
+  "root_cause": "No pre-publication preflight: (a) no credential scan before public push, (b) no binary/LFS classification check, (c) no plan for per-hour commit rate limits.",
+  "what_went_wrong": [
+    "Secret scan skipped -> live credentials reached a public repo (see separate high-severity record)",
+    "Binary files rejected: Hub requires LFS/Xet for binary blobs; small binaries (<10MB) were sent as plain git blobs",
+    "Repeated retry uploads exhausted the 128 commits/hour rate limit -> HTTP 429",
+    "First secret scan missed 06_Source_Repos/hf_space_deploy.git/config because it filtered by text-file extension only"
+  ],
+  "remediation_applied": [
+    "Full-tree secret scan incl. .git dirs and extensionless files; 36 files redacted (396 token replacements)",
+    "Added .gitattributes LFS patterns (*.bundle, *.pack, *.idx, *.rev, *.mtimes, 06_Source_Repos/*.git/*)",
+    "Installed hf_xet and upgraded huggingface_hub to 1.32.0",
+    "Switched to single create_commit for the final 516 files to avoid rate limit"
+  ],
+  "lessons": [
+    "Preflight checklist before any public publish: secret scan, binary inventory, rate-limit plan, history-clean guarantee",
+    "Secret scanners must not filter by extension; include dotfiles, .git internals, extensionless files"
+  ],
+  "evidence": [
+    "C:/Users/think/AppData/Local/Temp/opencode/redact_report.txt",
+    "C:/Users/think/AppData/Local/Temp/opencode/verify_remote_secrets.py"
+  ]
+}

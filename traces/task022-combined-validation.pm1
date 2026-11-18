@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "task022-combined-validation",
+  "timestamp": "2026-09-19T03:32:03.073228+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 15,
+  "key_files": [
+    "experiments/pm1-rx/TASK_022_REPORT.md",
+    "experiments/pm1-rx/TASK_022_RESULTS.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task022-combined-validation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Task 022: Combined measurement validation complete. 4 rules evaluated. Rule D (SAFETY-VETO) selected: 73.2% sensitivity, 83.8% accuracy, 1 FA. Judge adds 19 cases, matcher retains 3. Stability 100%. Combined instrument validated for historical rescore. Commit 4117b01."
+}

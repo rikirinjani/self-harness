@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "interface-semantics-provenance-audit",
+  "timestamp": "2026-09-21T07:54:44.248951+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "docs/experiments/INTERFACE-SEMANTICS-PROVENANCE-AUDIT.md",
+    "docs/proposals/P-002-deers-rock-adapter.md",
+    "docs/sentinel-integration-map.md",
+    "docs/handoffs/DR-HANDOFF-2026-09-01-adapter-consumption-path.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "interface-semantics-provenance-audit",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Interface semantics provenance audit. Searched 9 authoritative sources (P-002 adapter proposal, deers-rock-sentinel contract, sentinel-integration-map, REOPEN-AUDIT-2026-08-31, DR-HANDOFF-2026-09-01, admission-threshold-design, DR reopening paper, both implementations). CENTRAL CORRECTION: previous spec's claim 'no declared semantic contract' was WRONG - P-002 DOES declare semantics and ranges. FINDINGS: supplyChainPressure EXPLICITLY SPECIFIED (range 0-1, consistent); staffAvailabilityModifier EXPLICITLY SPECIFIED (range 0-1, consistent); admissionMultiplier CONTRADICTORY (P-002 declares MULTIPLICATIVE 'x2.5' but implementation is ADDITIVE 1.0+0.3w+0.2k; reaching 2.5 needs 5 events/tick, climate caps at 1/tick so unreachable); activeDisasterType CONTRADICTORY (P-002 declares 'pandemic, earthquake, etc.' but adapter emits ONLY natural-disaster; 'pandemic' has no DR mapping); diagnosisWeightOverrides IMPLICIT BUT DOCUMENTED (semantics declared, never implemented/scheduled/consumed, lifecycle UNKNOWN); climate severity UNDEFINED (no authoritative claim in either repo). C3: the S5 handoff is STALE not contradictory (claims 2 of 5 fields scheduled; current implementation schedules 4 of 5). SEVERITY MAPPING STATUS = UNDEFINED (no authoritative mapping; no formula created). 7 decisions derived D1-D7 (D1/D3/D4/D7 minimum). JEV (3 sets, 22 questions): CONFIRMS C1 (1.97 conf .95), C3 stale (1.97 conf .95), severity UNDEFINED (1.95 conf .92), admissionMultiplier CONTRADICTORY (1.97 conf .96), supplyChainPressure EXPLICITLY SPECIFIED (1.98 conf .97), climate severity UNDEFINED (1.99 conf .98), activeDisasterType CONTRADICTORY (1.88), staffModifier EXPLICITLY SPECIFIED (1.91), correction adequate (1.80), NO behaviour promoted to semantics (0.11), NO hidden decisions (0.22). QUALIFIES: claims not all fully sourced (1.38 conf .06), diagnosisWeights classification only partial (0.88 conf 0.00), 'no field IMPLEMENTATION-ONLY' only partial (0.56 conf .16), decisions only mostly complete (0.52), minimum-set only partial (1.02), contract producible now only partial (0.80), audit sufficient for v2 only partial (0.79). Jev proposed no unsupported semantics so no 'JEV PROPOSAL' item. LEGITIMATE INTERFACE CONTRACT POSSIBLE NOW: NO. Prior specification NOT modified. No mapping/adapter/DR/threshold/severity change, no rerun."
+}

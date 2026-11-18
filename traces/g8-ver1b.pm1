@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "g8-ver1b",
+  "timestamp": "2026-09-28T04:39:39.549185+00:00",
+  "agent": "verifier",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\VER-G8-001.json",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\G8-LIVE-SMOKE-REPORT.md",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\data\\g7_release_manifest.json",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\data\\g6_events.jsonl"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "g8-ver1b",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........................................................-.--...-........................................-.--...-",
+  "action": "G8 independent verification: APPROVE - all 6 checks pass; RC identity b0cbd335... independently re-derived (14/14 file hashes match), live service 127.0.0.1:8000 pid 2656 + openapi 200, fresh smoke A abstained with exact Layer-1 message and appended a 21st strict-valid event (store 21/21, metric lancedb_ivfpq_approx_one_minus_cos, smoke B n_docs=3/n_ok=3/total_ms=152685.7), retired and rotated token suffixes 0 hits tree-wide + logs clean, pollers env-only fail-fast, report not contradicted (2 minor non-blocking notes)"
+}

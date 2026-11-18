@@ -1,0 +1,35 @@
+{
+  "pm1_version": 1,
+  "session_id": "newvps-launch",
+  "timestamp": "2026-10-11T04:52:02.978524+00:00",
+  "agent": "fixer",
+  "outcome": "partial",
+  "duration_s": 1500,
+  "tool_calls": 32,
+  "key_files": [
+    "/opt/dr-benchmark/run_all.sh",
+    "/opt/dr-benchmark/run_all.sh.bak-20261011T044427Z",
+    "/opt/dr-benchmark/DECISIONS.md",
+    "/opt/Deers-Rock/tools/README.md",
+    "/etc/ssh/sshd_config",
+    "/etc/ssh/sshd_config.d/50-cloud-init.conf",
+    "/etc/ssh/sshd_config.d/99-root.conf",
+    "/opt/dr-benchmark/results/20261011T044455Z/STOPPED_AT_preflight_smoke.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "newvps-launch",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........--.-..-.........---..-...........--...--........--.-..-.........................................-.--...-",
+  "action": "Secured SSH (key-based verified pre/post, password auth off), benchmark_pw existed+verified (grants sik+sik_bench), prepared run_all.sh (guard + phase0 mkdir fix, DECISIONS.md, Deers-Rock stub), launched systemd unit dr-bench run_id 20261011T044455Z; run stopped at preflight_smoke NOT phase1 (draft bugs: missing no_rawat arg + unsatisfiable sukses=true check + false DONE marker removed); diagnosed + documented in DECISIONS.md"
+}

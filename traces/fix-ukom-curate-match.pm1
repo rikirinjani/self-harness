@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "fix-ukom-curate-match",
+  "timestamp": "2026-10-09T02:29:30.649706+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 5,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "fix-ukom-curate-match",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Fixed UKOM schedule answer: removed 2 old generic curated entries that had coverage 1.00 but contained outdated Q4 2026 estimate; new specific schedule entry now matches correctly (coverage 1.00) with exact dates 9-16 Oct registration, 30-31 Oct briefing, 1 Nov exam. Bot restarted."
+}

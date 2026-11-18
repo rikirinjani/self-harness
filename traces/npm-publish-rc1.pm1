@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "npm-publish-rc1",
+  "timestamp": "2026-09-16T02:07:29.348044+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 15,
+  "key_files": [
+    "package.json",
+    "causality-engine-1.0.0-rc.1.tgz"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "npm-publish-rc1",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "npm publication COMPLETE: causality-engine@1.0.0-rc.1 published to registry.npmjs.org (public, tag latest, shasum b769a6ed). Fresh-project smoke test: npm install succeeds, ESM import works (33 exports), createGame+buildIntervention+apply+step produce identical hashes from npm tarball and local dist (tick 10, stateHash e1e4b07ce2bb2342, traceHash 3cd6860d46293c3f). Blocker resolved: first token lacked bypass-2FA, second token published."
+}

@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-09-23T01:45:00Z",
+  "category": "network",
+  "severity": "low",
+  "task": "Run live mangadex-downloader advanced search (isekai + erotica + English scans + order by popularity)",
+  "root_cause": "api.mangadex.org and mangadex.org unreachable from the local network (TCP connect timeout). Verified with curl: mangadex domains return http_code 000 after 10s while google.com returns 200 in 0.5s — region/ISP-level block, not a tool or syntax defect.",
+  "what_i_did_wrong": "Attempted live execution without first probing connectivity to the target API; first attempt burned 90s on retry loop before diagnosing the block.",
+  "actual_result": "Search never reached MangaDex API. Command syntax verified correct from official docs but unproven live.",
+  "corrective_action": "Probe target host with curl --max-time before running network-bound CLI tools; if blocked, offer proxy (-p socks5://...) path immediately.",
+  "status": "open-external-block"
+}

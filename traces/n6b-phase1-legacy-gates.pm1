@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "n6b-phase1-legacy-gates",
+  "timestamp": "2026-10-16T06:06:44.793472+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 45,
+  "key_files": [
+    "api/eligibility.py",
+    "api/server.py",
+    "rag-queries/test_indication_gate.py",
+    "rag-queries/smoke_api_grid.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "n6b-phase1-legacy-gates",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "N6b Design Phase 1: hard contraindication gates on legacy /api/query. eligibility.hard_gate() shared by scoped+legacy (all failed/unknown rules reported); legacy failed->excluded[] never scored, unknown->eligible_unranked[]; combo add-ons skip blocked drugs; legacy schema 1.1 (hard_gates_applied/excluded/eligible_unranked, results shape kept). Recovered 352-grid from Kaggle kernel dqf-n6b-slice-verify-cpu into rag-queries/smoke_api_grid.py with gate invariants. Gate: indication_gate 27/27, scorer_hardening PASS, anticoagulant PASS, merge_lock 8/8, grid 352/0, scoped smoke unchanged. Open: 50 drugs null pregnancy/hepatic safety pass gate silently (policy), hepatic rule fires on mild, smoke_audit_fixes.py lost. Commit 6164210. QMS VER-2026-10-16-N6B-PHASE1-001."
+}

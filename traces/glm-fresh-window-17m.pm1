@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "glm-fresh-window-17m",
+  "timestamp": "2026-10-01T18:59:05.393210+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 40,
+  "tool_calls": 1,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "glm-fresh-window-17m",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................-.--...-........-.--...-........................................................-.--...-",
+  "action": "GLM ajianaz window rolled over: HTTP 200, used 0, remaining full 17,000,000 (100%). New window 18:58 -> 23:58 UTC (5h). Confirms the earlier predicted drain-and-lockout completed, then reset clean. Lifetime tokens 273.3M -> 295.3M and requests 1,808 -> 2,080 since prior check (~22M consumed in that burst - larger than the September lockout bursts). Key valid to 2026-10-25."
+}

@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-modal-facts-line-failure",
+  "timestamp": "2026-10-07T00:39:01.566791+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\pm1_modal_b2.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-modal-facts-line-failure",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "Modal + Gemma 4 tested. Endpoint works for simple inference but facts_line (notice channel) is stripped by Modal's proxy. Root cause: Modal endpoint modifies request body. Running harness ON Modal won't fix (issue is in transit, not execution). Recommendation: Fall back to Kaggle GPU Oct 10. Credits preserved (~.93)."
+}

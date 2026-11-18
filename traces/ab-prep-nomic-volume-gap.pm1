@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "ab-prep-nomic-volume-gap",
+  "timestamp": "2026-09-23T01:47:33.799440+00:00",
+  "agent": "coordinator",
+  "outcome": "partial",
+  "duration_s": 120,
+  "tool_calls": 6,
+  "key_files": [
+    "scripts/ab_embed_supervisor.sh",
+    "scripts/modal_embed.py"
+  ],
+  "failure": {
+    "category": "infrastructure",
+    "severity": "medium"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ab-prep-nomic-volume-gap",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........--.-..-.........--.-..-.........-.--...-........-.--...-........................--.-..-.........-.--...-",
+  "action": "nomic embed complete on Modal volume but absent from VPS embeddings/; supervisor checks local path only — volume download step missing; investigating modal volume get"
+}

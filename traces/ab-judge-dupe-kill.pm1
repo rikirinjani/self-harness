@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "ab-judge-dupe-kill",
+  "timestamp": "2026-09-23T05:05:46.929673+00:00",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {
+    "category": "workflow",
+    "severity": "medium"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ab-judge-dupe-kill",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................-.--...-.........................................................--...--........--.-..-.........-.--...-",
+  "action": "Accidentally launched two full_judge PIDs (339880, 339939) racing on same partial; killing duplicate 339939"
+}

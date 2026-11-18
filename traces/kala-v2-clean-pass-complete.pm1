@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "kala-v2-clean-pass-complete",
+  "timestamp": "2026-09-27T11:02:12.559179+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 40,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\kala_v2_draft.md",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\kala_v2_changelog.md",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\_auto_directives.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kala-v2-clean-pass-complete",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "Bible v2 clean pass completed directly (5 subagent dispatches failed: rate-limit, 2x provider timeout, 2x session-too-large). Applied remaining 8 AUTO rows (4,5,9,11,13,14,21,31) + D22 ruling + changelog. Recovered partial work from timed-out sessions (D10,D12,D15,D18,D20,D26 + AUTO 17,19,25,30 already applied). Verified: 195,815 chars, 19/19 AUTO + 12/12 DEC + CAL complete, no BOM, 0 Kyerke, sources content-intact (normalized sizes match: kala 143875, book1 237850, novella 36009)"
+}

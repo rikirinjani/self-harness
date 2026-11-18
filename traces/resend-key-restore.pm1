@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "resend-key-restore",
+  "timestamp": "2026-10-05T07:56:57.039058+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 25,
+  "key_files": [
+    "/opt/cokro-api/.env"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "resend-key-restore",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Restored sign-in email delivery: located existing Resend key (re_FWTW...) on Mac Mini ~/rag-service/.env via Tailscale SSH, piped it Mac->VPS without echoing, replaced empty RESEND_API_KEY= in /opt/cokro-api/.env, restarted cokro-api, smoke POST /api/auth/request -> 200 {ok:true} with no dev_otp/dev_link (production path, Resend accepted send, journal clean). Also filed NCR for earlier unredacted key echo."
+}

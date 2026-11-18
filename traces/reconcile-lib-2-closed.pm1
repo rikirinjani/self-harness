@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "reconcile-lib-2-closed",
+  "timestamp": "2026-10-07T08:38:17.031943+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 5,
+  "tool_calls": 1,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "reconcile-lib-2-closed",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................-.--...-........-.--...-........................................................-.--...-",
+  "action": "Reconciling lib-2 (ses_eea93436dffeJmEivikREezu3i) — research brief on Polymarket edge strategies already incorporated into v3 backtest. See reconcile-lib2-exp1.pm1."
+}

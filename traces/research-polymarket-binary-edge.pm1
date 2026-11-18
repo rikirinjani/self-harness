@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "research-polymarket-binary-edge",
+  "timestamp": "2026-10-07T07:28:14.350182+00:00",
+  "agent": "librarian",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 15,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "research-polymarket-binary-edge",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--..........................--...--........--.-..-.........................................................-.--...-",
+  "action": "Literature research: Polymarket crypto price-target binary market edge. Verified papers via arXiv API and Crossref: Portnaya 2026 (BTC threshold vs Binance option-implied binaries), Cardozo & Rivero-Wildemauwe 2026 (Polymarket favorite-longshot bias), Young 2026 (OpenMarket BTC 15-min binaries null-edge result), Saguillo et al. 2025 (Polymarket arbitrage taxonomy), Dalen 2025 (logit jump-diffusion Black-Scholes analogue), plus verified classics (Wolfers-Zitzewitz 2004, Snowberg-Wolfers 2010, Page-Clemen 2013, Katsiampa 2017, Boyle-Broadie-Glasserman 1997). No files modified; read-only research."
+}

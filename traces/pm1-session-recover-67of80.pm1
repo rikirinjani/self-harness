@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-session-recover-67of80",
+  "timestamp": "2026-09-27T23:58:11.020660+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-session-recover-67of80",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................................................................-.--...-",
+  "action": "Session-start housekeeping: crashlog --recover detected crash from DIFFERENT session (kala-book2-final-chapters, died 21:17 UTC / ~04:17 local; ch9 blocked at day-quota floor, two 403s, nothing billed, failure already recorded). Decision: SKIP - resume window is after midnight UTC (~07:00 local), not yet open; crash log left in place. Sleeper run status: PID 3488 alive, 67/80, storm cleared (recent runs 435-876s), 13 remain, ETA ~06:40 local, cost ~.9 of .64 approved. PM-1 plan unchanged: completion -> gate battery -> freeze -> halt -> Gemma writeup."
+}

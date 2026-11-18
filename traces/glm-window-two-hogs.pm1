@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "glm-window-two-hogs",
+  "timestamp": "2026-09-27T08:57:01.749374+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 2,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\swarm_split.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "glm-window-two-hogs",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Corrected earlier swarm framing with per-session role split. Since 12:36: subagents 18.6M tokens across all providers (mimo, glm-5.1, z-ai/glm-5.3-flash, gemma, deepseek), parents 11.1M (glm-5-turbo, Atria, deepseek, z-ai). But ajianaz 15M window is consumed by essentially TWO sessions: PM-1 part4 parent on glm-5-turbo 7.84M (53%) + Bible v2 gap completion implementer on glm-5.1 6.65M (45%); all other sessions ~0.2M. User belief 'subagents use GLM' is only half right - most subagents route through non-ajianaz providers and don't touch the window. Highest-leverage fix: repoint PM-1 part4 (the Vultr t2 pilot) off glm-5-turbo to deepseek to free 53% of the window, no subagent config change needed."
+}

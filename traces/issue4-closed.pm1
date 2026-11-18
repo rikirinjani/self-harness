@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "issue4-closed",
+  "timestamp": "2026-10-05T09:14:30.577394+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 10,
+  "tool_calls": 0,
+  "key_files": [
+    "src/engine/ai-doctor.ts,STATE.md,kaggle/issue4-cpu-scaling/kernel.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "issue4-closed",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................-.--...-........................-.--...-........................................-.--...-",
+  "action": "Issue #4 closed: CPU scaling fix committed (75dfb99), tested, determinism verified, Kaggle kernel deployed"
+}

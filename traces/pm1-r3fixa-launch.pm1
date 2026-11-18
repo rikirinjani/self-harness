@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-r3fixa-launch",
+  "timestamp": "2026-09-30T04:51:47.411170+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\make_kaggle_notebook.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\kaggle\\gemma4_t4x2_runner.ipynb"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-r3fixa-launch",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "r3fix_a LAUNCHED on Kaggle (kernel v8, EXPERIMENT=r3fix_a): 12 chains (4 cells K{10,50,150}xh{50,250} x 3 trials), C arm, override L=2, gemma4:26b-a4b on T4x2, \\. Est ~3-6h (2400 calls, prefill-bound ~16.8M tokens at Ollama speeds). Setup phase (~8 min: install/serve/pull/load) is the risky part - polling to confirm it reaches the chains. Smoke already validated the full pipeline (v7 COMPLETE, pass_rate 1.0)."
+}

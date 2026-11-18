@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "macmini-cutover-closeout",
+  "timestamp": "2026-09-28T07:32:14.572141+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 420,
+  "tool_calls": 9,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\FINAL-STACK.md",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\VER-CUTOVER-001.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "macmini-cutover-closeout",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---.........................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Post-cutover closeout: reconciled FINAL-STACK.md (topology row 3 now audited RC via CF tunnel cokro-api on Mac Mini; 2.5 storage map updated; 2.6 Vultr section marked superseded/retired; gap register item 1 CLOSED with residual risks; 6 verification section extended) and wrote QMS VER-CUTOVER-001 (APPROVE, 5/5, independent ver-2 evidence)"
+}

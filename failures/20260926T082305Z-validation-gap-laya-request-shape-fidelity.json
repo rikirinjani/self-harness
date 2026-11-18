@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-09-26T08:23:05Z",
+  "category": "validation-gap",
+  "severity": "high",
+  "slug": "laya-request-shape-fidelity",
+  "agent": "orchestrator",
+  "task": "Point two-stage FX backtest at self-hosted Laya (open-source Jev substitute) and run it",
+  "what_went_wrong": "A 15h04m backtest run (7 pair shards, 40,210 Laya calls, 0 HTTP errors) produced results in which the three Jev-dependent strategies are invalid artifacts. `regimeOnly` is numerically identical to `momentumOnly` and `twoStage` identical to `jevMomentumFilter` in all 7 pairs: regime cache = 18,571/18,571 TRENDING, direction cache = 99.0% 'up'.",
+  "root_cause": "The substituted runtime's fitness for the task was assumed from wire-format compatibility and never measured at the decision level. Laya's base checkpoint has no zero-shot discriminative signal on the backtest's numeric-only FX prompts (its own model card warns the base checkpoints are near chance and are 'a fast base to specialise, not a zero-shot decision engine'). A pre-flight smoke test on a convenient payload shape passed while the production ask was unanswerable.",
+  "evidence": [
+    "Order-swap probe, identical unambiguous 20-day downtrend state: (A) dict instructions, UP listed first -> choice=UP, probabilities 0.5227/0.4773, confidence 0.0015 (near-tie, no signal). (B) dict instructions, DOWN listed first -> choice=DOWN, 0.8633. Same state, answer followed option ORDER.",
+    "(C) string instructions, UP first -> choice=DOWN 0.815; (D) string instructions, DOWN first -> choice=DOWN 0.9115. State-driven and order-independent - but ONLY because that probe's state contained the explicit sentence 'The price has fallen every day for 20 days straight'.",
+    "Production cache truth: cache/regime-<pair>.json = 2653 entries all 'TRENDING' for all 7 pairs; cache/direction-<pair>.json = 2575-2649 'up' vs 4-78 'down'.",
+    "Consequence: regime detection never returned MEAN_REVERTING, so regimeOnly == momentumOnly and twoStage == jevMomentumFilter exactly."
+  ],
+  "impact": "The Jev-dependent conclusions of the two-stage backtest are unsupported. The API-free strategies (buyAndHold, momentumOnly) are unaffected and valid. ~15h of compute spent producing unusable Jev numbers.",
+  "correction": "Characterised the failure with probes rather than guessing; results kept on disk unmodified (archived to prior-invalid-run/ on the VPS) and clearly reported as invalid for the Jev strategies.",
+  "preventive_action": [
+    "A smoke test must mirror the EXACT production request shape - assert on the real payload, not a convenient variant.",
+    "Measure decision-level capability, not just wire compatibility, before adopting a substitute runtime: include a state-discrimination test (two opposite states must yield different answers) and an order-swap test (swapping option order must not change the answer).",
+    "Gate long runs on a degeneracy check: after a small sample (e.g. 100 calls), abort if one class/option exceeds ~95% of answers or if confidence is pinned near ~0.",
+    "Document the substitution deviation (TypeSafe Jev -> Laya) and its required call-shape adaptation in the study record before any re-run."
+  ],
+  "secondary_failure": "The original single-process run had in-memory-only caches and wrote artifacts only at completion, so the mid-run abort discarded all Jev inference work. Fixed: caches persist per (pair,date) to cache/*.json and the run is shardable/resumable.",
+  "correction_2026-09-26": {
+    "note": "The root cause above was REFINED after the first fix attempt. The original write-up over-attributed the degeneracy to a request-shape (first-option) bias. A 2x2 isolation experiment (12 payloads on production-style prompts) and a checkpoint probe show that is only part of the story.",
+    "refined_findings": [
+      "REGIME question: returns a CONSTANT 'TRENDING' regardless of option order AND regardless of state (a strongly mean-reverting state also answered TRENDING, confidence 0.59-0.79, in both criteria wordings and both orders). So it is NOT order bias - the model has no discriminative signal for this question.",
+      "DIRECTION question with numeric-only prompts: answers follow option ORDER (up-state -> UP when UP listed first, DOWN when DOWN listed first; down-state -> UP when UP listed first, DOWN when DOWN listed first), i.e. no signal.",
+      "Instruction shape (dict vs string) mattered only for the probe whose state carried an explicit directional sentence, which is not the production prompt.",
+      "Answer distribution across the completed 15h run (100% TRENDING; 99% up) is therefore a capability failure of the substitute, not merely a wire-format defect.",
+      "A checkpoint probe on the fine-tuned 'typed-decisions' checkpoint had to be abandoned: requesting it loaded a second 421M model and drove the 3.3 GiB box into swap (3.1 GiB swap in use). Labelled as a resource failure, server recovered by restart. Note: that checkpoint is fine-tuned for invoice/security/CS/agent-trace workflows, not FX."
+    ],
+    "process_win": "The fidelity probe + degeneracy gate added after the first invalid run caught the defect in about one minute and refused to start a second 15h run; the gate and cache-sanity guard both behaved as designed.",
+    "conclusion": "Laya as shipped is not a usable substitute for Jev on this task. Local options are exhausted; the faithful paths are a fine-tuned checkpoint (needs labels + GPU time) or the real TypeSafe Jev (needs credits)."
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "kala-v2-decision-06-vii-viii",
+  "timestamp": "2026-09-27T03:18:04.652906+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 6,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\kala_v2_decisions.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kala-v2-decision-06-vii-viii",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---.........................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Decision session: user ruled DECISION#6 (VII/VIII): two-real-events draft sequence, Corvin-names/Tess-articulates, approved held-comms disclosure scene. Logged to kala_v2_decisions.md; proceeding to #8 calendar."
+}

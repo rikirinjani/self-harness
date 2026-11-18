@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "task029-jev-pilot-design",
+  "timestamp": "2026-09-21T06:43:30.206350+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1500,
+  "tool_calls": 22,
+  "key_files": [
+    "morse/experiments/pm1-rx/TASK_029_JEV_TYPED_QUESTION_PILOT.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task029-jev-pilot-design",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Task 029: designed Jev typed-question consumer pilot + validated live API contract. PHASE 0 DONE: executed real Jev calls. Verified endpoint POST https://api.typesafe.ai/v1/systemone, Bearer auth, body {model,state,questions}. Model resolved jev-1.13.0. CONFIRMED noul = P(proposition TRUE): true props scored 0.97/0.98, false prop 0.01. choice returns choice+confidence+probabilities (blocked/1.0). Latency 0.74-0.98s. ~370 in/~50 out tokens per 3-question call. Operational finding: 503 'no healthy upstream' intermittent (2 of 5 attempts) - retry with backoff mandatory. DATA CONSTRAINT discovered: 7B producer representations NOT persisted (representation_tokens=0, hash only); 3B representation.json stored for all arms; Arm A representation == raw transcript (hash match). DESIGN: 3 instruments on same frozen reps - M_gen (existing generative consumer), M_suff (Jev noul support probe), M_typed (Jev choice forced-selection, true atom + 3 same-field distractors, chance 25%). Mandatory negative control (other-boundary atoms). Pre-registered: C confirmed if M_suff>=0.80 AND M_typed>=0.60 on M_gen failure subset; B confirmed if M_suff<=0.30. Staged: preflight 4 cells -> pilot 20 cells -> full 40 cells. Cost ~\\.01. No new inference executed beyond contract validation. No Task 024-028 artifacts modified."
+}

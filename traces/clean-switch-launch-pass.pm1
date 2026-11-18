@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "clean-switch-launch-pass",
+  "timestamp": "2026-09-24T01:52:27.304437+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "eval/ab_plan/full_judge.py",
+    "eval/ab_plan/launch_full_judge.sh",
+    "eval/ab_plan/budget_guard.py",
+    "eval/ab_plan/clean_switch_archive.sh",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\requirements\\REQ-AB-JUDGE-BUDGET-CAP-20260924.json",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\ab-full-judge-clean-switch-launch-20260924.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "clean-switch-launch-pass",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................--.-..-.........................................-.--...-",
+  "action": "Clean-switch archive+launch PASS: 19632 todo, judge+guard running,  cap armed"
+}

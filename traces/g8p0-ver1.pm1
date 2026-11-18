@@ -1,0 +1,35 @@
+{
+  "pm1_version": 1,
+  "session_id": "g8p0-ver1",
+  "timestamp": "2026-09-28T03:49:10.568262+00:00",
+  "agent": "verifier",
+  "outcome": "pass",
+  "duration_s": 1200,
+  "tool_calls": 11,
+  "key_files": [
+    "Agentic Layer/qms/records/verifications/VER-G8-P0-001.json",
+    "Project_v2/LocalNotebook/rag-service/bot_poller.py",
+    "Project_v2/LocalNotebook/rag-service/bot_poller_deploy.sh",
+    "Project_v2/LocalNotebook/rag-service/data/g7_release_manifest.json",
+    "Project_v2/LocalNotebook/rag-service/scripts/g7_build_manifest.py",
+    "Project_v2/LocalNotebook/rag-service/scripts/verify_layer1_api_parity.py",
+    "Project_v2/LocalNotebook/rag-service/scripts/verify_g6_e5.py",
+    "Project_v2/LocalNotebook/rag-service/data/g6_e5_seeded_results.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "g8p0-ver1",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........................---..-..........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "G8 Phase 0 verification: remediation + refreshed RC identity verified. VERDICT APPROVE, VER-G8-P0-001.json written+validated (6 checks, 6 findings, result APPROVE). NEW RC IDENTITY VERIFIED: b0cbd33590213e1eaa4eba97cc432c73e44a52bdd4e7e0f0bfbd2ff41d2e3328 (recomputed per builder recipe from disk-re-hashed files; == claimed == manifest field; old identity 89586c18... retired, absent from manifest). Claim1: old token 8002227393:AAF5 = 0 hits tree-wide (text scan; gz entity index decompressed + scanned, 4.9MB payload clean). Claim2: bot_poller.py py_compile exit 0, env-only TOKEN + fail-fast sys.exit; deploy-script heredoc uses os.environ[TELEGRAM_BOT_TOKEN] (KeyError fail-fast) + G8 comment; heredoc python extracted + compiled OK (81 lines); bash -n unavailable on Windows - stated, compensated by extraction-compile + inspection. Claim4: diff scope exact - only bot_poller.py + bot_poller_deploy.sh changed vs VER-G7-001 values; other 12 files hash-identical; git HEAD/tracked-diffs/untracked-status unchanged. Claim5: parity exit 0 ALL PASS (sentinels 0-heavy) + E5 exit 0 ALL PASS 8/8 14/14 (privacy 0/57, observability, E4 recheck 171/171; step 8 re-ran e1+e2 exit 0); suite/tool mtimes all predate remediation - no test edits. Claim6: boundary rescan of remediated files = only known benign rerank_score display reads (legacy Space). FINDINGS: (1) remediation minimal+correct per G7 STOP rule; (2) MINOR operational: VPS Restart=always + fail-fast token = restart loop if env unset - set env before start (documented in script); (3) MINOR: heredoc poller remains divergent legacy variant (pre-existing); (4) instructed side effects only, no source modified; (5) retirement verified beyond manifest; (6) no material uncertainty (bash -n compensated; external hosts out of scope per no-network)."
+}

@@ -1,0 +1,35 @@
+{
+  "pm1_version": 1,
+  "session_id": "ncr-2026-001-proto-hash-fix",
+  "timestamp": "2026-10-02T01:52:34.905929+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 540,
+  "tool_calls": 16,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\ce-fix\\wt\\src\\core\\hash.ts",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\ce-fix\\wt\\src\\poc\\hash-proto.test.ts",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\ce-fix\\wt\\src\\poc\\hash-probe.ts",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\ce-fix\\wt\\src\\poc\\max-soak.ts",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\ce-fix\\fix.patch",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\ce-fix\\hash-probe.ts",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\ce-fix\\max-soak.ts",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\ce-fix\\FIX-EVIDENCE.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ncr-2026-001-proto-hash-fix",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--.........................--...--........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "NCR-2026-001: authored __proto__ sortKeys fix (defineProperty branch) + 6-case regression test (pre-fix 5 failed incl. literal hash collision, post-fix 752/752 full suite) + hash-probe/max-soak harness scripts, all verified in dedicated worktree; artifacts emitted to ce-fix. Minor self-corrected hiccup: first soak transcript capture truncated by Select-Object -First, re-ran with full capture"
+}

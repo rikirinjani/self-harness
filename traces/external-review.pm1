@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "external-review",
+  "timestamp": "2026-10-10T12:56:19.504061+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 18,
+  "key_files": [
+    "C:/Users/think/khanza_report.json",
+    "C:/Users/think/reconciliation.md",
+    "C:/Users/think/dr_vs_khanza_report.txt"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "external-review",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "External review addressed: security hardening done (bind-address 127.0.0.1 + INPUT DROP confirmed; benchmark@localhost user created w/ pw; root@localhost reverted to auth_socket, TCP empty-pw revoked), three-count reconciliation (512 prescription events -> 321 visits, no data loss; report at reconciliation.md), 0000-00-00 fixed at source (48+72 rows via reg_periksa), DR ground truth 321/321 exact (report dr_vs_khanza_report.txt), khanza_report.json re-labeled: self_consistency=pass, depth=replica-computed (Java) unvalidated, environment corrected to MySQL 8.4.11, seed/commit/security recorded"
+}

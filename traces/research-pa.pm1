@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "research-pa",
+  "timestamp": "2026-10-10T11:13:47.529217+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 4,
+  "key_files": [
+    "khanza_report.json",
+    "DESIGN.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "research-pa",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Researched Khanza Java consumer path A. Found AESsecurity/EnkripsiAES in KhanzaSecurity16bit.jar. DB config at /opt/simrs-khanza/setting/database.xml (AES encrypted). koneksiDB.condb() initializes from that XML. Need to build Java consumer with full Khanza classpath."
+}

@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "task014-preflight-complete",
+  "timestamp": "2026-09-17T03:22:09.751182+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 7200,
+  "tool_calls": 120,
+  "key_files": [
+    "experiments/pm1-rx/pilot_v2_preflight.json",
+    "experiments/pm1-rx/pf_token_results.json",
+    "experiments/pm1-rx/pf3_latency_probe.json",
+    "experiments/pm1-rx/TASK_014_RESULT.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task014-preflight-complete",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-........---..-..........-.--...-........................................-.--...-",
+  "action": "Task 014: PRE-FLIGHT measurement complete. All 10 boundaries measured (cache-busted), latency probe b0/A passed (1119s wall, 6.6 tok/s gen), per-boundary timeouts derived (stage 54,156s/15h), GATE PASS. Committed a9c8e61."
+}

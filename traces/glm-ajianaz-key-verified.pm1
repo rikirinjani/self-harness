@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "glm-ajianaz-key-verified",
+  "timestamp": "2026-09-25T06:25:57.540304+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\.config\\opencode\\opencode.jsonc"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "glm-ajianaz-key-verified",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "GLM key glm_xjkanh99apa2adfqwebbcdajasdfpixgs VERIFIED WORKING after user supplied endpoint https://glm.ajianaz.dev/v1 (explains sibling env var UTIM_GLM_AJIANAZ_KEY). /models returns 11 models: glm-4.5, glm-4.5-air, glm-4.6, glm-4.7, glm-5, glm-5-turbo, glm-5.1, glm-5.2, glm-5.3, glm-5.3-flash, glm-5.3-flashx. Auth enforced (no-auth 401, bad key 401). Chat verified on glm-5.3/5.3-flash/5.2/4.7/5 all OK 1.6-2.2s. Tool-calling verified on glm-5.3 (1.4s), glm-5.3-flash (10.8s), glm-5.2 (5.4s), glm-4.7 (4.5s). Sibling stored key glm_xjkanh99apa2naefapixga5gs is INVALID here (401). Prior 401s on official Zhipu endpoints were expected - key was never a Zhipu key. This is a SECOND working provider alongside DeepSeek, resolving the SPOF risk."
+}

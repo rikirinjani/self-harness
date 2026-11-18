@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "lane-dispatch-spawn-failure",
+  "timestamp": "2026-10-02T11:47:06.950571+00:00",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "duration_s": 300,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\self-harness\\failures\\2026-10-02-subagent-spawn-compaction-lanes.json"
+  ],
+  "failure": {
+    "category": "delegation-failure",
+    "severity": "high"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "lane-dispatch-spawn-failure",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................-.--...-.........--...--........................-.--...-.........................--...--........-.--...-",
+  "action": "Lane dispatch attempt failed: all fixer/explorer spawns error with context-over-limit even on one-line probe; implementer probe OK; failure record written; re-dispatching lanes to implementer"
+}

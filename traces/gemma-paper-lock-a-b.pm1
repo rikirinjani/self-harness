@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "gemma-paper-lock-a-b",
+  "timestamp": "2026-10-13T06:15:08.528309+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\kaggle\\GEMMA_PAPER_WRITEUP_REVISED.md",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\create_matched_replication.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\benchmarks\\classify_fix\\classify_fix.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\benchmarks\\classify_fix\\SCORING.md",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\RUN_REGISTRY.md",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\kaggle\\matched-replication-out\\matched-replication\\replication_table.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "gemma-paper-lock-a-b",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................--.-..-.........................................-.--...-",
+  "action": "Locked Gemma paper (Path A consistency pass + Path B matched 3-trial replication). A: fixed 450/150 denominators, P-post threshold, version map, 2.4/3.5 conflict, pooled rows, L9-L14 metadata. B: built create_matched_replication.py, pushed rikirinjani/pm-1-matched-task-replication, 18/18 chains COMPLETE + 10/10 oracle, replication table unanimously replicates frozen v2.2 labels. Added Section 6 review-status note. Re-encoded v11 (roundtrip OK, 52054 bytes)."
+}

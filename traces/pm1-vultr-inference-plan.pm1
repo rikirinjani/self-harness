@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-vultr-inference-plan",
+  "timestamp": "2026-10-04T18:47:10.155294+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\RUN_DESIGN_VULTR_INFERENCE.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-vultr-inference-plan",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "Wrote RUN_DESIGN_VULTR_INFERENCE.md (Vultr inference run plan, DRAFT for approval): endpoint/api.vultrinference.com/v1, env-switch integration (no harness code change except P-1 sleeper-r3 --results-dir passthrough ~5 lines), 4 models priority-ordered (deepseek-v4.1-flash lineage / qwen3.8-27b dense / rune-26b-a4b-v3 architecture-controlled / nemotron-30b-a3b-reasoning H2 test), per-model r3fix_a 12 runs ~8.7M in +150k out, cost ~\\.74-5/model (P-0 smoke measures actuals), wall ~1.5-2h/model, 4 models ~\\-14 + 6-8h fits 7-day credit. Instance option: GPU instance -> vLLM serve Gemma4/Qwen at zero per-token cost (need type from user); CPU-only -> skip. Risks: unknown pricing/ctx windows/thinking modes -> P-0 smoke gates. Decision points D-V1/D-V2/D-V3. Nothing launched."
+}

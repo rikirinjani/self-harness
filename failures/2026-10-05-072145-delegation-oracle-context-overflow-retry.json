@@ -1,0 +1,11 @@
+﻿{
+  "timestamp": "2026-10-05",
+  "category": "delegation-failure",
+  "severity": "low",
+  "what_happened": "Third Oracle dispatch (ses_ef691ac84ffeEXlXEBzFAFFl57 / ora-3) failed with the identical error 'Session too large to compact - context exceeds model limit even after stripping media'. This attempt contained NO file paths and NO read instructions -- all prompt material was inlined in the message. Oracle therefore cannot open a session at all in this environment; the failure is systemic to the oracle specialist, not caused by prompt content.",
+  "root_cause": "Oracle session baseline context exceeds the compaction limit before any tool use.",
+  "what_i_did_wrong": "After the second failure I should have inferred the failure was systemic rather than content-related and stopped.",
+  "impact": "No independent prompt-neutrality review available from Oracle. Fell back to (a) an alternative reviewer specialist and (b) an empirical check on the produced assessment for signs of leading.",
+  "preventive": "Two identical environmental failures on a specialist = stop retrying that specialist. Switch specialist or switch verification method. Oracle escalation is optional for tasks outside Rule 11.1 mandatory triggers; this task matched none, so absence of Oracle does not block acceptance.",
+  "failed_sessions": ["ses_ef6949c5cffelnSnEpGX96d5G2", "ses_ef693ca76ffenCkcItURiZN73k", "ses_ef691ac84ffeEXlXEBzFAFFl57"]
+}

@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-implementation-fix-spec",
+  "timestamp": "2026-10-01T01:47:15.417594+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\IMPLEMENTATION_FIX_PM1.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-implementation-fix-spec",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "Wrote IMPLEMENTATION_FIX_PM1.md (detailed implementation fix spec, for approval): answers 'how much can I do' = everything in §1-§4 inside the continuation harness (frozen PM1_ALL audit-only). §1 evidence repair (audit_failures.py, harness/metrics.py, V0.4a policy); §2 three new baseline arms (FLAT state-only key control, P-FMT matched-format, RET retrieval) + validate_arms.py; §3 fallible-state experiments A (corruption schedule + recovery metrics), B (decoy/retraction/scope injector), C (packet-sweep frontier = the missing minimality argument), D out of scope, E cross-model; §4 measurement hardening (accounting.py, survival tables, Wilson non-inferiority, RUN_REGISTRY); §5 free validation ladder; §6 batch plan (~\\-5.5 Vultr or \\ Kaggle). Decision points D1-D3 flagged. No code changed, nothing launched."
+}

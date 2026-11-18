@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "pgsgrove-provider-added-final",
+  "timestamp": "2026-11-05T04:24:51.145547+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pgsgrove-provider-added-final",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................................................................-.--...-",
+  "action": "Added PGS Grove as 6th provider with 17 models. Removed non-working deepseek-v4-flash base ID, kept dated variants (-0731, -1017). Set UTIM_PGS_KEY env var (74 chars). Smoke tested: deepseek-v4.1-flash-1017, glm-5.3-flash, mimo-v2.6-flash all OK. Total config: 6 providers, ~43 models. Best cache price: deepseek-v4.1-flash-1017 at .004/M cached input (75x cheaper than Ajianaz)."
+}

@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "poly-bot-edge-final",
+  "timestamp": "2026-10-07T07:44:33.634961+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 20,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\polymarket-edge\\analysis.ipynb,C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\polymarket-edge\\kernel-metadata.json,C:\\Users\\think\\.opencode\\skills\\polymarket-crypto-binary-edge-analysis.log,C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\polymarket-edge-REPORT.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "poly-bot-edge-final",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Completed full Polymarket crypto binary edge analysis. Found 5 research papers, built BS edge model, ran on Kaggle. Key finding: naive 50c model was wrong — all 6 markets are OVERPRICED. Only real edge is SELLING longshots per Cardozo bias. Kernel v2 running on Kaggle."
+}

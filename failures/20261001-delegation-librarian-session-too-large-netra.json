@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-10-01T00:00:00Z",
+  "category": "delegation-infrastructure",
+  "slug": "librarian-session-too-large-netra-research",
+  "agent": "orchestrator",
+  "outcome": "recovered",
+  "root_cause": "Librarian subagent session ses_f03916a46ffeKXQpqC2y5sdWHD failed with 'Session too large to compact - context exceeds model limit even after stripping media'. The specialist session had accumulated more context than the model window could compact, so the delegation could not run at all.",
+  "what_went_wrong": "Dispatched a web-research task (Netra Runtime pricing/background) to the librarian lane. The specialist session was too large to start work. The failure was infrastructure-level, not a research or output failure.",
+  "actual_impact": "No research output from the specialist. Orchestrator recovered by performing the web research directly via webfetch (Bing, Brave, GitHub, netraruntime.com pricing/models/learn/blog pages). Full research completed successfully with all requested facts obtained.",
+  "recovery": "Direct webfetch research by orchestrator. All target facts retrieved: company background, credit-based pricing, two listed models with per-token prices, and the vendor vLLM benchmark details.",
+  "follow_up": "None blocking. If the librarian lane is needed again, start a fresh session rather than resuming; the errored session is not reusable per the background job board.",
+  "task_id": "ses_f03916a46ffeKXQpqC2y5sdWHD"
+}

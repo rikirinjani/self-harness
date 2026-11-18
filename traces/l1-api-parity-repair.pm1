@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "l1-api-parity-repair",
+  "timestamp": "2026-09-26T22:04:41.812088+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 780,
+  "tool_calls": 26,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\api_server.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\scripts\\verify_layer1_api_parity.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\P0-CLOSURE-REPORT.md",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\PRE-PRODUCTION-TODO.md",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\VER-P0-2-LAYER1-ABSTAIN-001.json",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\reviews\\G6-READINESS-2026-09-27.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "l1-api-parity-repair",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Release-integrity repair: Layer-1 API parity. Traced /api/ask path (entrypoint -> ask() -> _retrieve -> embed+LanceDB -> personas); integrated layer1_abstain.analyze at top of ask() via asyncio.to_thread (detection semantics unmodified, layer1_abstain.py untouched). New tests scripts/verify_layer1_api_parity.py: fabricated HTTP query abstains with byte-identical CLI text + sentinel counters 0 for embed/search/pmid/fetch/llm; real HTTP query passes through with citations+personas intact; CLI regression suite green. Frozen acceptance re-run 9/9+0/10 PASS. Dependency re-audit 58 files 0 markers. Independent verifier APPROVE (trace verify-layer1-api-parity; QMS 2026-09-27-pass-layer1-api-parity.json). Records updated: VER-P0-2 http_path_addendum (CLI vs HTTP verification distinction), P0-CLOSURE-REPORT sec3 correction, TODO G6 note, G6-READINESS finding resolved. No G6, no Layer 2, no judge, no G8."
+}

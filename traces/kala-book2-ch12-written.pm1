@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "kala-book2-ch12-written",
+  "timestamp": "2026-09-28T06:06:08.572538+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\book2_ch12.md",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\book2_spend.csv"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kala-book2-ch12-written",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Ch12 'The Difference Between the Ends' (final chapter) written via Astra (29057 chars, 0 letters, 0 Kyerke, 0 Wren, months clean, no red flags, cost 0.37234, cumulative 4.721). Book Two drafting complete: 12/12 chapters."
+}

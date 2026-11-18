@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "kingsoft-cleanup-2026-10-10",
+  "timestamp": "2026-10-10T06:33:08.521854+00:00",
+  "agent": "agnes",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Kingsoft",
+    "C:\\Users\\think\\AppData\\Roaming\\kingsoft"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kingsoft-cleanup-2026-10-10",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........................--.-..-.........................-.--...-........................................-.--...-",
+  "action": "Killed WPS processes (wps.exe x3, wpscloudsvr.exe), unregistered 5 WPS scheduled tasks, deleted C:\\Users\\think\\AppData\\Local\\Kingsoft (3.3 GB) and C:\\Users\\think\\AppData\\Roaming\\kingsoft (1.6 GB). 3 Admin-locked remnants remain: All Users\\Kingsoft, Program Files\\Kingsoft, Program Files (x86)\\Kingsoft plus 3 recreated scheduled tasks and wpscloudsvr service"
+}

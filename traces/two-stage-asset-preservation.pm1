@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "two-stage-asset-preservation",
+  "timestamp": "2026-09-26T01:56:05.873770+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 12,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\20260926-pass-two-stage-asset-preservation.json",
+    "C:\\Users\\think\\jev-crypto-trader\\backups\\run-archive-v1.tgz",
+    "C:\\Users\\think\\jev-crypto-trader\\backups\\MANIFEST.sha256",
+    "C:\\Users\\think\\jev-crypto-trader\\backups\\MANIFEST-local.sha256",
+    "C:\\Users\\think\\jev-crypto-trader\\backups\\local-results.json",
+    "C:\\Users\\think\\jev-crypto-trader\\backups\\local-RESULTS_SUMMARY.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "two-stage-asset-preservation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Audited durability of all two-stage backtest run assets: found the VPS /tmp is a 1.7GiB tmpfs holding 21 run scripts/payloads that would be lost on reboot, and v1 evidence existing on a single VPS disk only. Rescued the 21 files to persistent /opt/jev-crypto-trader/research/run-archive-v1/scripts, built a verified archive run-archive-v1.tgz (4041700 B, sha256 5c7d8239...) containing v1 evidence + sources + dist + shard logs, wrote manifests (VPS 38 lines, local 24 lines), fetched a byte-identical off-box copy to C:\\Users\\think\\jev-crypto-trader\\backups\\, and cross-checked hashes (results.json 113ec3f4..., RESULTS_SUMMARY.md 8cfe1a99..., archive 5c7d8239...). QMS record 20260926-pass-two-stage-asset-preservation filed."
+}

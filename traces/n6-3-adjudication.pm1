@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "n6-3-adjudication",
+  "timestamp": "2026-10-01T14:26:28.510214+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 7,
+  "key_files": [
+    "rag-queries/curation/n6_batch3_adjudication.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "n6-3-adjudication",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........-.--...-........-.--...-........................................-.--...-",
+  "action": "N6.3 benefit-cell adjudication: 35 items (6 A-demoted, 15 B-conflicts, 14 C-open) all resolved KEEP with vetting citations - 0 value changes. Every sup>=2 raise failed vetting (atenolol clearance-PK = bisoprolol precedent; clonidine safety-in-CKD; alogliptin 'weight neutral' contradicts raise; rosiglitazone CV harm/null; gliclazide/repaglinide safety!=benefit; chlorthalidone BP-in-CKD dimension mismatch; losartan rat models). Pool-refresh candidates logged (RENAAL, DPP/UKPDS). Committed 14f1442 and pushed"
+}

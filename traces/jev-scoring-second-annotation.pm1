@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "jev-scoring-second-annotation",
+  "timestamp": "2026-09-21T08:09:46.127802+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 45,
+  "tool_calls": 4,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\second_annotation_scored.xlsx",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\jev_score_second.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "jev-scoring-second-annotation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................-.--...-........-.--...-........-.--...-........................................-.--...-",
+  "action": "Scored 30 rows in second_annotation.xlsx via Jev API (same ondansetron QTc query); wrote integer annotations to column 6; saved second_annotation_scored.xlsx. 0 errors. Distribution 0:5, 1:16, 2:8, 3:1."
+}

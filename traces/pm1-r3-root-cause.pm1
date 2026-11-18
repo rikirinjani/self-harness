@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-r3-root-cause",
+  "timestamp": "2026-09-29T16:01:43.855625+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\harness\\runner.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\mech_run.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\diff_blocks.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\analyze_r3_final.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-r3-root-cause",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "R3 + mech run2 reconciled; ROOT CAUSE found for batch-vs-mech mystery: harness/runner.py never advances actual_pos (frozen received state for all hops, all batch runs) while mech_run.py advances; diff_blocks 'byte-identical' verdict retracted (it advanced both simulated states). R2/R3 compliance + fix verdicts marked CONFOUNDED (failure record + QMS addendum written); T1/T2 economics, mech results, detector gates intact. R3 cost \\.5215, A 0/12, B 0/12, mech run2 COMPLIES 249/250. Proposed: 1-line fix + dry-run + compact R3-fix re-run est \\.8-2.2 pending approval."
+}

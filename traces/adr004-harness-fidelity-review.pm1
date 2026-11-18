@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "adr004-harness-fidelity-review",
+  "timestamp": "2026-10-03T14:37:22.472617+00:00",
+  "agent": "reviewer",
+  "outcome": "pass",
+  "duration_s": 420,
+  "tool_calls": 11,
+  "key_files": [
+    "scripts/kaggle-longrun/validate-bounded.mjs",
+    "docs/adr/ADR-004-bounded-state-durable-scheduling.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "adr004-harness-fidelity-review",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------.........................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Scoped re-review adr004-harness-fidelity 300b634..906f245: delta exactly 2 files, diff SHA 3A076CF4, both 200-tick smokes PASS/12/exit 0, tsc 0, vitest 26/189 exit 0, 6k claims verified from hash-matched stdout log; APPROVE, 3 non-blocking findings"
+}

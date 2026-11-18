@@ -1,0 +1,35 @@
+{
+  "pm1_version": 1,
+  "session_id": "coffee-cardio-explainer-v4",
+  "timestamp": "2026-10-08T21:48:29.561467+00:00",
+  "agent": "agnes-2.5-flash",
+  "outcome": "pass",
+  "duration_s": 63,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\.opencode\\skills\\explainer-motion-studio\\benchmark\\coffee-cardio\\coffee_cardio_explainer.py",
+    "C:\\Users\\think\\.opencode\\skills\\explainer-motion-studio\\benchmark\\coffee-cardio\\kernel-metadata.json",
+    "C:\\Users\\think\\.opencode\\skills\\explainer-motion-studio\\benchmark\\coffee-cardio\\README.md",
+    "C:\\Users\\think\\.opencode\\skills\\explainer-motion-studio\\benchmark\\coffee-cardio\\results-v4\\benchmark_report.json",
+    "C:\\Users\\think\\.opencode\\skills\\explainer-motion-studio\\benchmark\\coffee-cardio\\results-v4\\master_16x9.mp4",
+    "C:\\Users\\think\\.opencode\\skills\\explainer-motion-studio\\benchmark\\coffee-cardio\\results-v4\\cut_9x16.mp4",
+    "C:\\Users\\think\\.opencode\\skills\\explainer-motion-studio\\benchmark\\coffee-cardio\\results-v4\\cut_1x1.mp4",
+    "C:\\Users\\think\\.opencode\\skills\\explainer-motion-studio\\benchmark\\coffee-cardio\\results-v4\\captions.srt"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "coffee-cardio-explainer-v4",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........................--.-..-.........................--.-..-.........................................-.--...-",
+  "action": "Coffee Cardio Explainer Benchmark v4: pushed to Kaggle (rikirinjani/coffee-cardio-explainer-v4-cpu-benchmark), ran on CPU-only kernel, generated 3 format videos (16:9 master, 9:16 vertical, 1:1 square) + captions.srt + benchmark_report.json. 8 beats, 60s duration, 63.2s wall clock, 0 errors. Pipeline: HTML SVG scenes -> Playwright headless Chrome screenshots -> ffmpeg libx264 CRF23."
+}

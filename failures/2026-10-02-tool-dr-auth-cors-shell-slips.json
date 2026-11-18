@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-10-02T02:36:53Z",
+  "category": "tool",
+  "slug": "dr-auth-cors-shell-slips",
+  "severity": "low",
+  "phase": "L2 fix + verify",
+  "component": "session shell discipline (Deers-Rock/src/api/rest.ts task)",
+  "title": "Two command invocations failed for preventable reasons: malformed PowerShell cmdlet syntax, then git executed without workdir",
+  "what_happened": "1) Attempted `Get-Date -Format o; Get-Date.ToUniversalTime().ToString(\"o\")` in one line; PowerShell parsed `Get-Date.ToUniversalTime()` as a command with a member-access call and threw a ParseException, so the first command produced no output. 2) Ran `git status/diff` for final confirmation without setting the workdir parameter, so git executed in C:\\Users\\think\\.opencode\\skills (not a repository) and printed 'fatal: not a git repository' plus the full diff usage text (~90 lines of noise). Both were immediately re-run correctly.",
+  "root_cause": "1) Used JavaScript-style method chaining directly after a cmdlet name without a parenthesized expression, and tried to combine two independent queries in one statement instead of using the dedicated tools. 2) Assumed the shell was still in the repo directory after earlier calls; each bash invocation starts in the default working directory, so the workdir parameter must be set on every git call.",
+  "what_i_did_wrong": "Issued commands without validating syntax or the current directory first; produced wrong output twice and wasted a tool call on usage-spam. No task result was affected — both commands were re-run with correct syntax/workdir and returned the intended data (UTC timestamp; 'M src/api/rest.ts', 84 insertions/5 deletions, port free, 0 node processes).",
+  "detection": "PowerShell parser error surfaced immediately in tool output; git 'fatal: not a git repository' surfaced immediately on the next call.",
+  "correction": "Re-ran timestamp as `(Get-Date).ToUniversalTime().ToString(\"o\")`; re-ran git status/diff with workdir=C:\\Users\\think\\Project_v2\\Deers-Rock, confirming only src/api/rest.ts is modified by this lane.",
+  "corrective_action": "Use parenthesized expressions for member access on cmdlet results; never chain two unrelated queries in one line when the first can fail. Always pass workdir explicitly for git and other repo-relative commands — do not rely on remembered cwd.",
+  "verification": "Re-run outputs captured in session: UTC time 2026-10-01T19:30:57Z; git diff --stat -> src/api/rest.ts | 89 ++++, 1 file changed, 84 insertions(+), 5 deletions(-); port 3197 listener count 0; node process count 0.",
+  "prevented_regressions": true
+}

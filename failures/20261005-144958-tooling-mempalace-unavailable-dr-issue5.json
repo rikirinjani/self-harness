@@ -1,0 +1,11 @@
+﻿{
+    "recovery_owner":  "human/orchestrator to restore MemPalace CLI, then file queued_content",
+    "slug":  "mempalace-unavailable-dr-issue5",
+    "delivery_status":  "pending",
+    "category":  "tooling",
+    "root_cause":  "MemPalace CLI not installed or not on PATH in this shell environment.",
+    "what_went_wrong":  "mempalace_mempalace_add_drawer CLI not found on PATH during Rule 10 archival for deers-rock issue #5 verification (task deers-rock-issue5-api-gaps). Command attempted: mempalace_mempalace_add_drawer --wing projects --room deers-rock --content \u003creview outcome\u003e.",
+    "timestamp":  "2026-10-05T07:49:58.3281964Z",
+    "queued_content":  "Issue #5 API gaps verification (candidate 4f0210a1, base 5d9564f3): APPROVED. Diff SHA256 51765CD25EF2FC4994712A507C7561228E87FC8C3A14ABDDDB946116FAD32235 (39211 bytes). tsc clean; vitest 259 passed/1 skipped; no rng additions; additive backward-compatible shapes verified against engine truth. 3 non-blocking findings: O(n^2) encounter-view derivation at scale; unrelated untracked worktree artifacts; readmission semantics include later outpatient encounters and deceased patients (documented, tested as designed).",
+    "impact":  "Knowledge archival queued, not delivered. Acceptance of the reviewed candidate is NOT blocked: the review verdict is preserved in PM-1 trace deers-rock-issue5-verification.pm1 and in the review report returned to the orchestrator."
+}

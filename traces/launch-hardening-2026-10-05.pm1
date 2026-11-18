@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "launch-hardening-2026-10-05",
+  "timestamp": "2026-10-06T04:10:42.310302+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 15,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\web\\src\\app\\privacy\\page.tsx",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\web\\src\\app\\terms\\page.tsx",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\web\\src\\components\\footer.tsx",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\web\\src\\components\\disclaimer.tsx",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\web\\src\\app\\ask\\content.tsx",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\web\\src\\app\\answer\\content.tsx"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "launch-hardening-2026-10-05",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Hardening for launch: (1) SSH hardened - PermitRootLogin no + PasswordAuthentication no, (2) PMID filter already validated digits-only from prior containment, (3) Contact async already uses asyncio.to_thread from prior containment, (4) Added privacy/terms pages + medical disclaimer banner (collapsible amber alert) on ask and answer pages. Footer links added. All deployed to cokro-web Pages."
+}

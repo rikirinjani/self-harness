@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "overhead-measurement",
+  "timestamp": "2026-10-02T04:45:41.949092+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 10,
+  "key_files": [
+    "C:\\Users\\think\\self-harness\\governance\\overhead-metrics\\measure_overhead.py",
+    "C:\\Users\\think\\self-harness\\governance\\overhead-metrics\\records\\ov-task-001.json",
+    "C:\\Users\\think\\self-harness\\governance\\overhead-metrics\\records\\ov-acc-002.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "overhead-measurement",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Overhead measurement (P2): 18 overhead.v1 records built from real session task data (Kaggle runs with real cost/tokens, specialist dispatches, activities, acceptances, failure); measure_overhead.py ran clean - PROVISIONAL, no ingestion diagnostics; delegated arm 40% acceptance yield; multipliers 2x/5x/67-84% remain unvalidated by design (reporter states so)"
+}

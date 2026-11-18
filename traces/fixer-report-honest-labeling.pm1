@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "fixer-report-honest-labeling",
+  "timestamp": "2026-10-12T05:57:12.934109+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 780,
+  "tool_calls": 14,
+  "key_files": [
+    "/opt/Deers-Rock/tools/build_benchmark_report.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "fixer-report-honest-labeling",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--.........................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Patched /opt/Deers-Rock/tools/build_benchmark_report.py (41,779 -> 43,493 B) folding in the 7 B1/B2 audit flags: (1) 0-byte general-log capture -> 'no real-form SQL capture' evidence-basis line + limitation; (2) stale information_schema rows(est) footnote with computed contrast (billing est 6,619 vs 483,359 inserted from consumer OK lines); (3) top_diagnoses 0-rows empty-set-cost label in per-rung tables + notes; (4) lifetime labels on InnoDB hit/buffer/slow-q + long_query_time=10s blindness note (max p99 1.4s); (5) Count-B-derived note in exec summary + section 3.1 + limitations; (6) per-visit CSV latest-rung-only label; (7) October-only SCOPE notes directly under three-count and charge-delta sections. Added Data-size-per-1k-visits subsection preferring marginal (21.2 MB/1k B1->B2) over raw cumulative ratios. Fixed history lookup to fall through verdict-less artifacts (jasper_report_status.md has no gate verdict -> falls to jasper_A.log PASS) + Jasper engine-UNAVAILABLE/template-SQL depth note. Validated: py_compile clean (-W error), scratch dry-run regenerates both reports with all footnotes present, publishable scrub grep 0 matches, results tree unchanged, run_all.sh sha unchanged, dr-bench active."
+}

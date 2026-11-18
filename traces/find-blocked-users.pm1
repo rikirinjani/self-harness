@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "find-blocked-users",
+  "timestamp": "2026-09-17T04:17:31.389899+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 4,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "find-blocked-users",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........................................................-.--...-",
+  "action": "Identified blocked users: probed all 319 users from audit logs via sendChatAction (harmless typing indicator, no message sent). Found 5 blocked: Yelda Aprilia (1601823701, last 13/9), cha (5323491833, 15/9), fefeeel (902689960, 15/9), Viorina (8566039216, 16/9), Puskesmas (8890551031, 17/9). Results saved to /tmp/blocked_users.json on Mac mini. Method: 403 'bot was blocked' on sendChatAction probe = definitive block detection"
+}

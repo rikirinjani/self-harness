@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "khanza-milestone-1-complete",
+  "timestamp": "2026-10-10T03:01:10.537922+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 4800,
+  "tool_calls": 200,
+  "key_files": [
+    "kaggle/khanza-dr-benchmark/adapter_real.py,kaggle/khanza-dr-benchmark/scaling_study.py,docs/KHANZA-REAL-E2E-REPORT.md,docs/KHANZA-SCALING-STUDY.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "khanza-milestone-1-complete",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-........---..-..........-.--...-........................................-.--...-",
+  "action": "Milestone 1 COMPLETE: Khanza main JAR built (54MB, 51174 classes, Main-Class manifest set). DB populated with DR synthetic data: 178 patients (159 DR), 373 visits (240 October). Pre-built sub-modules (Updater/HMSAutoVerify/Security16bit) functional. PHP portals: 37. FK constraints resolved for pasien (penjab/kabupaten/propinsi/kelurahan/kecamatan/suku/bahasa/cacat/perusahaan). Core DR→Khanza pipeline proven. Next: generate PDF reports from DR data for benchmarking."
+}

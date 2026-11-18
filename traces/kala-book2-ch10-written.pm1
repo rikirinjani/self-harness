@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "kala-book2-ch10-written",
+  "timestamp": "2026-09-28T03:37:16.422630+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\book2_ch10.md",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\book2_spend.csv"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kala-book2-ch10-written",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Ch10 'Provision for Silence' written via Astra (30969 chars, 2 letters, 0 Kyerke, 0 Wren, months clean, no red flags, cost 0.37293, cumulative 4.026). Auto-verified."
+}

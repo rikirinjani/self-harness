@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "kala-book2-ch5-written",
+  "timestamp": "2026-09-27T13:55:14.700430+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1350,
+  "tool_calls": 8,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\book2_ch5.md",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\story_so_far.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kala-book2-ch5-written",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........-.--...-........-.--...-........................................-.--...-",
+  "action": "Book 2 Ch5 'The Order of Interruption' written via kaggle task kala-book-two-chapter-five (run 3279815): 34426 chars, 2 letters, 8 scene breaks; .378978 (11051 in/7358 out); cumulative .931. Verified: 0 Kyerke, 0 Wren, months valid, no red flags, lag math consistent; scope beats landed (summary softening caught, essential-services matures, institutional resistance, ch3 payoff: official stops supply before being required to)"
+}

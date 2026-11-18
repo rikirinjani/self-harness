@@ -1,0 +1,12 @@
+﻿{
+    "slug":  "dr-issue5-derivation-reject",
+    "evidence":  "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\dr5-probe.ts; oracle trace dr-issue5-oracle-review.pm1",
+    "category":  "implementation-approach",
+    "root_cause":  "Implementer (and verifier) did not check pruning pressure; test fixtures hand-insert orders into fresh worlds so pruning never triggered. Serialization-time pure derivation is wrong layer for facts that must survive discharge.",
+    "correct_approach":  "Snapshot outcome+severity once at discharge (outcome-tracker _outcomeRecords append-only precedent); byIcd from stable records; omit dirujuk until real encounter-linked referral event exists.",
+    "what_went_wrong":  "Fixer derived outcome/dirujuk and icuDays/ventilatorDays at serialization time from state.socialWorkNotes and state.respiratoryOrders, which cleanup.ts prunes at ~900/~400-tick retention vs 4320+ tick LOS. Oracle proved via cleanupHandler probe: ventilatorDays decays to 0, dirujuk flips to sembuh over poll time. dirujuk signal additionally fabricated: social-work dispositions are 4/6 random non-home placement notes, not referral events. byIcd computed over pruned rolling encounters window vs all-time records.",
+    "timestamp":  "2026-10-05T07:59:24.7217014Z",
+    "disposition":  "Candidate rejected pre-push, no integration occurred. Rework dispatched to fixer (resume fix-1). Verifier APPROVE invalidated by Oracle REJECT; stricter review governs.",
+    "task_id":  "deers-rock-issue5-api-gaps",
+    "candidate":  "4f0210a1404fbb3553b6c78b210bd6b31208667d"
+}

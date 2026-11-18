@@ -1,0 +1,38 @@
+{
+  "pm1_version": 1,
+  "session_id": "judge-recalibration-v4",
+  "timestamp": "2026-09-22T13:45:29.200063+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 7200,
+  "tool_calls": 40,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\judge_prompt_v4.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\judge_prompt_v3.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\judge_prompt_v2.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\calibration_judge.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\calibration_aggregate.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\calibration\\bias_report.json",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\calibration\\GATE_DECISION.md",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\calibration\\nvidia-rerun1\\metrics.json",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\calibration\\nvidia-rerun2\\metrics.json",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\calibration\\nvidia-rerun3\\metrics.json",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\2026-09-21-pass-judge-recalibration-v4.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "judge-recalibration-v4",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "Completed judge recalibration cycle 2 on the frozen 126 candidates. Diagnosed the v1 downward bias as a rubric that never encoded the annotators' decision tree (annotation_guide.md); authored prompt v4 in eval/judge_prompt_v4.py mirroring that tree with 'useful context' as the 1-vs-2 discriminator. Ran 3x on NVIDIA deepseek-ai/deepseek-v4.1-flash (temp 0), added judge_records.partial.jsonl resume support to the runner, and built eval/calibration_aggregate.py. Amended-gate CONSENSUS PASSES all rows: schema 126/126, weighted kappa 0.8569, MAE 0.1825, one-directional share 0.5652, ge2 delta +5.56pp, min tier kappa 0.5000, divergence via majority vote. Bias direction now balanced (13 down/10 up vs 57/57 down in v1). Divergence 15.08% carried as uncertainty band. Frozen artifacts untouched; A/B not run; Jev not run."
+}

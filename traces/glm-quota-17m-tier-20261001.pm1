@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "glm-quota-17m-tier-20261001",
+  "timestamp": "2026-10-01T08:10:30.819442+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 40,
+  "tool_calls": 1,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "glm-quota-17m-tier-20261001",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................-.--...-........-.--...-........................................................-.--...-",
+  "action": "GLM ajianaz quota check 2026-10-01: HTTP 200. Per-5h limit raised 15M -> 17,000,000. Window started 07:09 UTC, 12,198,089 used (71.8%), remaining 4,801,911 (28.2%). Window ends 12:09 UTC (~3.2h left). No lockout. Key expires 2026-10-25. Lifetime 273.3M tokens over 1,808 requests."
+}

@@ -1,0 +1,36 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-phase2-implemented-s2",
+  "timestamp": "2026-10-01T04:09:45.940687+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\harness\\core.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\harness\\arms.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\harness\\runner.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\harness\\metrics.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\harness\\sleeper.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\run_pilot.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\validate_phase2.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\analyze_frontier.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\RUN_REGISTRY.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-phase2-implemented-s2",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................--.-..-.........................................-.--...-",
+  "action": "PHASE 2 IMPLEMENTED + S2 LAUNCHED: packet variants (core pm1_packet_subset; arms P-pos/P-postarget/P-full with field-filtered JSON, decode-tolerant); corruption (runner _corrupt_at_hop/_apply_corruption/_decoy_at_hop, HopRecord corrupt/decoy fields defaulted, received stays truthful, loop integration, TRUNCATE 200); decoy injector (seeded every/modes, retract+scope notices, decoy target truth+3); metrics (detection_hop, hops_to_recovery, recovery_rate, false_adoption_rate with ambiguity exclusion); sleeper corrupt_builder/decoy passthrough; run_pilot --phase2 sweep/corrupt/decoy branches (B2: 3 arms x 4 cells x 2 trials = 24 runs; B3a: 3 modes x 2 cells x 1 trial; B3b: 2 cells x 3 trials); analyze_frontier.py validated on dry-run; validate_phase2.py 14/14 PASS. Validation caught 3 real bugs: unguarded stub-worker branch (now guarded, frozen-safe), P-pos kinds wiring, validator adopter design. Old files load fine (defaults); sleeper loader tolerant. Notebook RUN_QUEUE sweep/corrupt/decoy; RUN_REGISTRY B2/B3a/B3b written. v11 pushed, S2 RUN_QUEUE=smoke,sweep RUNNING (~4-5h ETA)."
+}

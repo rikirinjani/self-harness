@@ -1,0 +1,10 @@
+﻿{
+    "severity":  "medium",
+    "timestamp":  "2026-10-25T13:41:39.8042859Z",
+    "trace_id":  "20261025T081359-orchestrator-cli.pm1",
+    "category":  "process",
+    "summary":  "P3 E2 radix-4 Booth rows FAILED: 2485/2560 y1 mismatches vs model_booth, toffoli_static 4430 (\u003e E1 baseline 2834). Two design-level root causes: (1) digit decomposition wrong -- used an overlapping (l,m,h) triple d=l+m-2h, but the 14 delta bits should group into 7 NON-overlapping pairs (bit_2j + 2*bit_2j+1); (2) floor-truncation mismatch -- the model floors each digit\u0027s magnitude floor(|d|*operand*2^e) at ONE exponent, while the circuit\u0027s 3 separate gated l/m/h rows floor at 3 different exponents, so they cannot recombine exactly without a full radix-4 mux (negate+carry) that costs ~2x the ANDs. Reverted; --booth stays off; logged as a DEAD END per the loop contract.",
+    "outcome":  "fail",
+    "agent":  "orchestrator",
+    "root_cause":  "E2 radix-4 Booth digit decomposition used an overlapping l/m/h triple and 3 independently-floored rows, which cannot match the model\u0027s single-magnitude floor; also the digit value formula d=l+m-2h is the wrong (overlapping) scheme rather than the non-overlapping pair bit_2j+2*bit_2j+1."
+}

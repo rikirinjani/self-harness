@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "production-live-check",
+  "timestamp": "2026-11-18T02:55:11.381781+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 4,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\chatbot\\bridge\\src\\core\\knowledge-base.ts",
+    "C:\\Users\\think\\.opencode\\STATE.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "production-live-check",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Owner confirmed production Mac bot answered 2 consecutive queries (live evidence; remote verification still impossible). Analyzed out-of-KB guardrail in bridge source: retrieval has no score threshold (topK=20, 5000-token budget), fallback is prompt-only (ask nama/NIK/email). Recommended one out-of-domain test to confirm behavior."
+}

@@ -1,0 +1,43 @@
+{
+  "pm1_version": 1,
+  "session_id": "g7-ver1",
+  "timestamp": "2026-09-28T03:22:38.058405+00:00",
+  "agent": "verifier",
+  "outcome": "pass",
+  "duration_s": 2700,
+  "tool_calls": 15,
+  "key_files": [
+    "Agentic Layer/qms/records/verifications/VER-G7-001.json",
+    "Project_v2/LocalNotebook/rag-service/G7-RELEASE-DIFF-REPORT.md",
+    "Project_v2/LocalNotebook/rag-service/data/g7_release_manifest.json",
+    "Project_v2/LocalNotebook/rag-service/scripts/g7_build_manifest.py",
+    "Project_v2/LocalNotebook/rag-service/api_server.py",
+    "Project_v2/LocalNotebook/rag-service/query_lancedb_fulltext.py",
+    "Project_v2/LocalNotebook/rag-service/layer1_abstain.py",
+    "Project_v2/LocalNotebook/rag-service/request_events.py",
+    "Project_v2/LocalNotebook/rag-service/auth.py",
+    "Project_v2/LocalNotebook/rag-service/telegram_bot.py",
+    "Project_v2/LocalNotebook/rag-service/bot_poller.py",
+    "Project_v2/LocalNotebook/rag-service/data/entity_presence_index.json.gz",
+    "Project_v2/LocalNotebook/rag-service/G6-E4-ENGINEERING-FINDINGS.md",
+    "Project_v2/LocalNotebook/rag-service/G6-E1-REPORT.md",
+    "Project_v2/LocalNotebook/rag-service/docs/RAILWAY-DEPLOY-TODO.md",
+    "Project_v2/LocalNotebook/rag-service/PRE-PRODUCTION-TODO.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "g7-ver1",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........................---..-..........--.-..-..........--...--........................................-.--...-",
+  "action": "G7 independent diff verification (strict release gate; read-only; system Python 3.12). VERDICT APPROVE, VER-G7-001.json written+validated (8 checks, 8 findings, result APPROVE). RC IDENTITY VERIFIED: recomputed all 14 inventoried files from disk (sha256+bytes+mtime all OK incl. request_events/api_server/layer1_abstain/entity_presence_index), re-derived identity per builder recipe = 89586c181b380815ee956763696db880b10f1c0c5363f157e65adf561f5a0aed exact match. Git truthfulness: HEAD 2874587 matches, 3 commits, all closure files untracked, tracked mods exactly 5 legacy eval/data files + 3 parent deletions, no tracked production file modified; untracked count drifted 245->249 (verification/telemetry artifacts only, identity unaffected). Classification: E4 present in request_events (g6-events/2 + metric constants + version-aware verify_store w/ metric_value); Layer-1 gate in BOTH entry points (api L241 gate-first, CLI L214); emit on all 4 HTTP exits; E1 L11 + P0-CLOSURE/VER-P0-2 authorization chain holds. Prohibited-mechanism scan (17 patterns, broader than report's 13): only bot_poller.py:50 rerank_score display-field read from LEGACY HF Space - disposition confirmed (no reordering, display only); title-only filter assessed = composition rule not score suppression (agreed); extra bare-clinical hits benign (personas/vocab/docstring). Fail-open: emit never-raise wrapper exactly L267-271, _LOCK_SPIN_S=5.0 degrade-to-drop, call sites unwrapped-safe, abstain->zero downstream proven live (parity sentinels 0/0/0/0/0). Suites re-run unchanged all exit 0: parity, E1 (T1-T10 incl T9 9/9+0/10, T10 E4-compat), E2 (800/0/0, 4604 events), E5 (8/8, 14/14). Deferred: EF-1/EF-2/fixer-lane/resume tracked not fixed - matches findings doc + failure records. FINDINGS: (1) MINOR untracked drift 245->249, recommend manifest rebuild before G8; (2) MINOR identity_basis ambiguity (per-group vs global sort, builder recipe authoritative); (3) MEDIUM security hygiene: bot_poller.py L11 hardcodes Telegram bot token as getenv fallback - pre-P0 unchanged transport file, none of the four REJECT triggers, but rotate token + remove default before G8 public exposure; (4-6) verified-OK dispositions; (7) deployed-revision non-determinability accepted on documented evidence (no-network constraint); (8) instructed side effects only, no source modified. Unverifiable: external deploy hosts (no-network)."
+}

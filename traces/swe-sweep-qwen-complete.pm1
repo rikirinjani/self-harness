@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "swe-sweep-qwen-complete",
+  "timestamp": "2026-10-10T22:25:59.327090+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2700,
+  "tool_calls": 35,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\swe_sleeper_vultr.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\results\\swe-sweep-qwen3.8-27b\\summary.json",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\RUN_REGISTRY.md",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\vultr_spend_ledger.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "swe-sweep-qwen-complete",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "SWE-SWEEP-QWEN complete (matched crossed experiment 2nd model): parameterized swe_sleeper_vultr.py (--model/--out-dir + preflight 1-token auth gate), registry entry pre-batch, ran 24/24 chains qwen3.8-27b for .799 (ceiling .5). P=DELAYED x8 (pre 0.90-1.00), P-pos=IMMEDIATE x8, P-postarget=DELAYED x8 no K-dependence - replicates deepseek pattern. Parse errors concentrated at K=150 (max 13) vs deepseek max 1. Ledger .93/."
+}

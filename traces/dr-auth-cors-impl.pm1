@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "dr-auth-cors-impl",
+  "timestamp": "2026-10-01T19:31:27.586903+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 780,
+  "tool_calls": 12,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\src\\api\\rest.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dr-auth-cors-impl",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--.........................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Implemented opt-in auth (DR_API_KEY, constant-time SHA256+timingSafeEqual, Bearer/X-API-Key, 401+WWW-Authenticate, exempt GET / and GET /api/status, checked before routing/body) and CORS (DR_CORS_ALLOW_ORIGINS allow-list with Vary:Origin, 403 on mismatch, OPTIONS 204 preflight with Allow-Methods/Headers, no auth on preflight) at the request-handler entry of createRestServer in src/api/rest.ts; json() now echoes per-response origin via WeakMap instead of unconditional '*'. Single file touched, no restructure."
+}

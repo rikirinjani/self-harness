@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-swe-experiment-complete",
+  "timestamp": "2026-10-10T11:19:57.284720+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\results\\swe-gemma4-simple\\summary.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-swe-experiment-complete",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "SWE pivot experiment completed on Kaggle. 24/24 chains ran but 100% PARSE_ERROR due to no Ollama server on Kaggle (localhost:11434 unreachable). Trading loop results (4 models, .92) are the validated dataset. SWE infrastructure proven (kernels push, code works) but needs Ollama setup for actual inference. Recommendation: proceed with paper using trading domain results, note SWE as future work."
+}

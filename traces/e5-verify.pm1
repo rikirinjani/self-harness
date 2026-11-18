@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "e5-verify",
+  "timestamp": "2026-09-27T21:13:40.303213+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "Project_v2\\LocalNotebook\\rag-service\\scripts\\verify_g6_e5.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "e5-verify",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................................................-.--...-........................................-.--...-",
+  "action": "G6-E5: acceptance harness, 14-case oracle, repro/privacy/observability/regression checks"
+}

@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261008T031525-orchestrator-cli",
+  "timestamp": "2026-10-08T03:15:25.713164+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 0,
+  "key_files": [
+    "docs/benchmarks/calibration-benchmarks.md",
+    "tests/calibration.test.ts",
+    "ROADMAP.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261008T031525-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........................-.--...-........................................-.--...-",
+  "action": "Epic II M2.5 calibration complete: benchmark doc with Indonesian hospital data sources (RISNA/BPS/Riskesdas/BPJS), 4-pass test suite created (BPJS 80.2% pass, allergy 68.8% documented gap). All 351 tests pass. Kernel v3 pushed to Kaggle (COMPLETE status)."
+}

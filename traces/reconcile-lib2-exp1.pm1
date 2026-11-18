@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "reconcile-lib2-exp1",
+  "timestamp": "2026-10-07T08:37:22.901481+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 30,
+  "tool_calls": 3,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "reconcile-lib2-exp1",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................-.--...-........-.--...-........................................................-.--...-",
+  "action": "Reconciled lib-2 (ses_eea93436dffeJmEivikREezu3i): 5 papers on Polymarket edge, findings used in v3 backtest. Reconciled exp-1 (ses_eea8d9e3cffe4zSUacSqX6V135): verified brief integration, confirmed all sources incorporated."
+}

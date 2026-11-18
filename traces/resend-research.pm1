@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "resend-research",
+  "timestamp": "2026-09-28T09:44:36.004267+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 420,
+  "tool_calls": 9,
+  "key_files": [
+    "C:\\Users\\think\\self-harness\\failures\\2026-09-28-infrastructure-librarian-session-compaction-limit.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "resend-research",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Resend integration research from primary sources: domain verification flow (TXT+MX or CNAME DKIM/SPF, DMARC p=none after verify), sandbox rule (resend.dev 403: only to account owner email), free tier 3000/mo 100/day 3 domains 10 rps, send payload {from,to,subject,html} Bearer auth, Python SDK raises ResendError (auth.py uses raw requests - unaffected), my.id IS on Public Suffix List (PSL-aware verification may require cokro-tech.my.id-level control, user controls zone in Cloudflare), Cloudflare CNAME must not be proxied (orange cloud off). Pre-reqs: user creates account+API key, domain verify, .env RESEND_API_KEY authorization."
+}

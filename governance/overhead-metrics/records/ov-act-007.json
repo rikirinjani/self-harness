@@ -1,0 +1,13 @@
+{
+  "schema": "overhead.v1",
+  "record_id": "ov-act-007",
+  "task_id": "kaggle-re-review-v2",
+  "type": "activity",
+  "category": "synthesis",
+  "duration_seconds": 164.0,
+  "cost_usd": 0.42,
+  "human_seconds": null,
+  "input_tokens": 10311,
+  "output_tokens": null,
+  "context_tokens": null
+}

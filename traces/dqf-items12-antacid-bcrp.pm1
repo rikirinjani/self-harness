@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-items12-antacid-bcrp",
+  "timestamp": "2026-09-25T23:22:49.197233+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1500,
+  "tool_calls": 20,
+  "key_files": [
+    "rag-queries/extract_l3.py",
+    "rag-queries/l3_query_templates.json",
+    "rag-queries/test_scorer_hardening.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-items12-antacid-bcrp",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "DQF items 1+2: Antacid ddi_risk made end-to-end real (producer + DDI class_mechanism query + l3_fields entry; build_l3_queries now emits the probe); Statin ddi keywords gained bcrp (rosuvastatin pool 1->2, the coverage gap); test 22/22; full 421-cell before/after showed exactly 1 intended change, zero collateral; all 6 statin ddi values now match drugs.json; pushed 2ebb8e8"
+}

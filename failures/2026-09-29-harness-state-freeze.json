@@ -1,0 +1,33 @@
+﻿{
+  "id": "2026-09-29-harness-state-freeze",
+  "category": "harness-bug",
+  "severity": "high",
+  "detected": "2026-09-29",
+  "summary": "harness/runner.py run_chain never advances actual_pos: the received state shown to the worker is frozen at the initial position for EVERY hop of EVERY batch run (verified in results/sleeper, sleeper-r2, sleeper-r3/A+B, dryruns: position_qty=0 at hop 1, hop 11, and hop last). mech_run.py L64 does advance (actual_pos = next_pos), which fully explains the batch-vs-mech compliance contrast (0/N batch vs 3/3 mech). Second failure: diff_blocks.py, the test used to declare prompts 'byte-identical / generation-side difference', advanced BOTH simulated states (L69: a1 = a2 = o[2]) and therefore never exercised the real runner loop - its verdict was invalid.",
+  "root_cause": "missing 'actual_pos = next_pos' assignment in the run_chain hop loop (actual_pos is assigned only once, at runner.py L195)",
+  "what_i_did_wrong": [
+    "Declared the batch-vs-mech contrast 'generation-side, prompts provably equal' based on a test that simulated state advancement on both sides rather than running the actual runner path.",
+    "Built the R2 compliance conclusions ('conflation with quantity', '0% compliance') and the R3 schema-nudge design on top of the confounded state feedback without ever inspecting received_state trajectories across hops.",
+    "The R2 addendum's 'identical prompt, generation-level flip at hop 2' claim is retracted: the two paths are NOT prompt-identical at hop >= 2 (batch shows position_qty=0, mech shows the advanced position)."
+  ],
+  "impact": {
+    "invalid_or_confounded": [
+      "R2 compliance verdict (0%, conflation theory) - confounded",
+      "R3-A/B fix verdict (schema nudge fails) - confounded; the nudge could not fix a harness artifact and its rule ('position_qty=1 with BUY 1 -> next=2') was inapplicable to a prompt that always shows position_qty=0",
+      "diff_blocks 'byte-identical' conclusion - retracted",
+      "V0.7-s compliance-adjacent claims - already retracted for coincidence confound; additionally state-frozen"
+    ],
+    "intact": [
+      "T1/T2 token-economics ratios - the artifact is uniform across all arms, input tokens dominate cost, and transcript growth (which drives the ratios) is independent of the frozen digit",
+      "mech_run results (run1 + run2) - correct state feedback, self-consistent",
+      "detector verbatim checks and P-inertness gates - measure notice visibility, state-independent"
+    ]
+  },
+  "discovery_evidence": [
+    "grep runner.py: 'actual_pos =' matches only L195",
+    "results/sleeper-r3/A/chain-01_K010_t1_C_h250.json: received_state.position_qty = 0 at hop_index 1, 2, 11, and 250",
+    "results/mech/C_responses.jsonl (run2): walks 0->1->2 and holds next=2 on 249/250 hops because the state advances"
+  ],
+  "corrective_action": "Add actual_pos = next_pos at the end of the hop loop; dry-run validation asserting received position advances and blocks match the mech path under identical trajectories; then a compact R3-fix re-run (conditions A'/B', K=10, h=50 and h=250, 3 trials, 12 runs, est $1.8-2.2, ~70-90 min) - NOT YET EXECUTED, pending user approval per rerun directive. QMS: supersede the R2 verdict records.",
+  "status": "RESOLVED 2026-09-30 - fix applied, validate_fix 8/8, full re-run frozen at frozen/r3fix, QMS VER-2026-09-30-PM1-R3FIX (PASS)"
+}

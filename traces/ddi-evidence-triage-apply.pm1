@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "ddi-evidence-triage-apply",
+  "timestamp": "2026-09-25T18:33:45.837230+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 480,
+  "tool_calls": 9,
+  "key_files": [
+    "api/drugs.json",
+    "rag-queries/ddi_rescore.json",
+    "rag-queries/l3_output/_backups/drugs_20260925_ddi_triage_apply.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ddi-evidence-triage-apply",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Applied Batch-3 ddi evidence-pool adjudication: 9 ddi_risk drops where both signals (cell LLM v2 + clean-pool re-score) agreed current too high; 28 conflicting suggestions held; verified 89 drugs, collateral diff = exactly 9 ddi_risk fields; committed+pushed 0dbf909; QMS verification + backup recorded"
+}

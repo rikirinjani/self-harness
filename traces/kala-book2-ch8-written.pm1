@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "kala-book2-ch8-written",
+  "timestamp": "2026-09-27T21:00:51.149558+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1400,
+  "tool_calls": 8,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\book2_ch8.md",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\story_so_far.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kala-book2-ch8-written",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........-.--...-........-.--...-........................................-.--...-",
+  "action": "Book 2 Ch8 'The Names That Travelled' written via kaggle task kala-book-two-chapter-eight (run 3331328): 29800 chars, 5 letters, 10 scene breaks; .382694 (11667 in/7420 out); cumulative .201. Verified: 0 Kyerke, 0 Wren, months valid, no red flags, all 5 letter lags exact; hinge landed: permission granted, unpacking protocol names Brynn as authorised overseer ('Not mine')"
+}

@@ -1,0 +1,36 @@
+{
+  "pm1_version": 1,
+  "session_id": "deers-rock-adr-005-007-terminology",
+  "timestamp": "2026-10-07T00:02:28.024107+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 24,
+  "key_files": [
+    "Deers-Rock/docs/adr/ADR-005-department-addition-pattern.md",
+    "Deers-Rock/docs/adr/ADR-006-agent-learning-architecture.md",
+    "Deers-Rock/docs/adr/ADR-007-referral-system-architecture.md",
+    "Deers-Rock/ROADMAP.md",
+    "Deers-Rock/STATE.md",
+    "Deers-Rock/docs/MODULE-CONTRACTS.md",
+    "Deers-Rock/docs/integration-depth-ledger.md",
+    "Deers-Rock/docs/adr/ADR-010-clinical-fidelity-expansion.md",
+    "Deers-Rock/docs/adr/M9.3-BLOCKER-DECISIONS.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "deers-rock-adr-005-007-terminology",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................................--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Deers-Rock docs pass: wrote ADR-005 (department addition pattern), ADR-006 (agent learning / DR_FREEZE_LEARNING), ADR-007 (referral Rujukan Berjenjang); normalized Tier A/B/C/D terminology across docs/ + root md (kept Tipe in PMK citation + papers); STATE.md run record. Rebased onto remote main (resolved STATE.md conflict), pushed c7cfb31..5a3a048. Pre-existing unstaged deletions preserved via stash round-trip."
+}

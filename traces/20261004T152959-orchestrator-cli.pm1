@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261004T152959-orchestrator-cli",
+  "timestamp": "2026-10-04T15:29:59.044789+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 60,
+  "tool_calls": 5,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\2026-10-04-verify-deers-rock-live-box-acceptance.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261004T152959-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Wrote QMS verification record for live box acceptance: durable queue PASS, heap 350->400MB exception accepted, all gates pass with F4 warning"
+}

@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "task-009-shadow-protocol",
+  "timestamp": "2026-09-15T00:37:47.482813+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 3600,
+  "tool_calls": 0,
+  "key_files": [
+    "experiments/pm1-rx/TASK_009_PROTOCOL.md",
+    "experiments/pm1-rx/TASK_009_VULTR_INFRA.md",
+    "experiments/pm1-rx/TASK_009_TODO_RESOLUTION.md",
+    "experiments/pm1-rx/TASK_009_READ_ONLY_AUDIT.md",
+    "experiments/pm1-rx/TASK_009_PRE_RUN_GATE.md",
+    "experiments/pm1-rx/TASK_009_MANIFEST.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task-009-shadow-protocol",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-..........-.-.-.-........................--.-..-.........................................-.--...-",
+  "action": "Task 009 COMPLETE (design+validation only): 6 deliverables committed 24d8d29. All 22 Task 008 TODOs classified (19 RESOLVED, 2 ACCEPTED-AS-LIMITATION, 1 BLOCKING). Verified 487 resumptions + 297 compactions across 93 sessions (784 candidates). Vultr GPU pricing from public API (15 plans); selected A40 24GB \\.856/hr; Qwen2.5-14B producer + 7B consumer; vLLM. Long-context inference VRAM-bound (KV cache). VERDICT: BLOCKED on T23 - Vultr credit unverifiable (no API key found in credentials.md, auth.json, env, server, or opencode DB). Tests: 27 loopguard + 188 full suite pass. No experiment run, no paid inference, live agent unmodified. Experiment 001 tag 8304262 + archive 4364fd88 unchanged."
+}

@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "tea-answer-bypass-verification",
+  "timestamp": "2026-10-05T08:17:45.707440+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 20,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\api_server.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\request_events.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "tea-answer-bypass-verification",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Bypass verification of tea-health answer: all 3 cited PMIDs (10697388/11015751/27682392) confirmed real via PubMed esummary/efetch from local machine; claims match abstracts nearly verbatim; 1 minor imprecision (11015751 has no abstract). Diagnosed clinical-persona failure: event store shows n_err=1-2 per ask with retrieval 43-54s and REQ_TIMEOUT=60s per persona; concurrent 3-persona calls + refresh double-fire (6 concurrent) cause timeouts; clinical-only repro succeeded (606-char answer) proving non-deterministic load/timeout issue, not content refusal. Frontend renders fallback copy for answer:null."
+}

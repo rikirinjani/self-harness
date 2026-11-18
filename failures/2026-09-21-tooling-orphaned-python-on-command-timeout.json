@@ -1,0 +1,11 @@
+{
+  "category": "tooling",
+  "severity": "medium",
+  "root_cause": "When the shell tool terminates a long-running command on timeout, it kills the PowerShell wrapper but not the Python worker process it spawned. Because calibration_judge.py used a ThreadPoolExecutor with several concurrent in-flight HTTP requests, each killed run left an orphaned Python process that kept issuing NVIDIA API calls.",
+  "what_actually_happened": "Two calibration passes were killed by the 28-30 minute command timeout. Their orphaned Python processes persisted. Subsequent commands including 'python -c import ...' and 'Get-Process' stalled for 60-90 seconds, and the aggregation step appeared to hang, because the machine was saturated by orphaned workers still hitting the API. Six orphaned python.exe processes were found and terminated with taskkill /F /IM python.exe, after which the environment returned to normal.",
+  "impact": "Roughly 40 minutes of wall-clock time was lost, two runs had to be restarted, and the aggregator initially appeared broken when it was actually contention. No data was permanently lost because raw responses were flushed per call.",
+  "recovery": "After any killed background run, verify and clear orphans with 'taskkill /F /IM python.exe' before starting a new Python command. Prefer bounded commands that finish inside the tool timeout, or add incremental checkpointing so a run can be resumed rather than restarted.",
+  "prevention_applied": "calibration_judge.py now writes judge_records.partial.jsonl incrementally and supports --resume, so runs are chunkable and restartable instead of long single shots.",
+  "task": "Harden Judge Rubric & Re-Calibrate",
+  "evidence": "Orphaned PIDs terminated: 1296, 14228, 4912, 1096, 14600, 13200"
+}

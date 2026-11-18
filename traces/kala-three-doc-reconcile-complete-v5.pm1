@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "kala-three-doc-reconcile-complete-v5",
+  "timestamp": "2026-09-27T01:45:34.124489+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 25,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\task_reconcile.py",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\resume_reconcile.ps1",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\verify_reconcile.py",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\out_reconcile\\kala-three-doc-reconcile\\5\\gpt-6-astra\\3242298\\kala_reconcile.md",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\20260927-pass-kala-three-doc-reconcile.json",
+    "C:\\Users\\think\\self-harness\\failures\\20260927-process-autopilot-no-working-directory.json",
+    "C:\\Users\\think\\mempalace\\projects\\general\\kala-reconcile-complete-v5.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kala-three-doc-reconcile-complete-v5",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................---..-..........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Reconcile COMPLETE: autopilot CWD failure diagnosed + fixed (Set-Location), manual push v5 after midnight UTC quota reset, gpt-6-astra completed 6min, verifier pass:true (5 parts, 55/55 directives, 0 empty-digest). Results: 24 resolved/31 open directives, 42 new findings (10 blockers), 23 decisions (17 open), 31 bible-v2 edits (19 auto/12 decision). QMS verification + failure record + MemPalace results drawer filed."
+}

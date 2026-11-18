@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "orchestrator-b1-fix-relaunch",
+  "timestamp": "2026-10-12T05:02:39.517082+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 20,
+  "key_files": [
+    "/opt/dr-benchmark/run_all.sh"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "orchestrator-b1-fix-relaunch",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Diagnosed B1 rung gate failure: resume path skipped results-dir mkdir, tee -a failed under pipefail even though generate succeeded. Fixed run_all.sh with mkdir -p after export RUN_ID. Relaunched B-series as Bseries_20261012T045027Z. B1 rung PASSED: consumer 7237 visits/122555 rows/Rp 2.92B/34.4ms avg, telemetry p95 59-444ms, innodb hit 99.997%, sampled-form drift 0.0000, three-count PASS, charge-delta all components 0. B2 now running."
+}

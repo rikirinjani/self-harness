@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "swe-paired-pilot-pass",
+  "timestamp": "2026-10-10T16:06:38.649974+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 480,
+  "tool_calls": 12,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\swe_paired_pilot.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\results\\swe-paired-pilot\\summary.json",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\results\\swe-paired-pilot\\pilot_calls.jsonl",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\vultr_spend_ledger.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "swe-paired-pilot-pass",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Ran Astra-designed paired SWE viability pilot on Vultr deepseek-v4.1-flash (48 calls, 24 states x 2 arms, temp0 max_tokens500). RESULT: Arm A (code-in-JSON contract) 24/24 = 100% JSON-valid, 100% action-valid, 100% oracle-accurate, 8/8 edit snippets correct. Arm B (scalar edit_id) 22/24 = 91.7% (2 EMPTY truncations: finish=length at 500 tokens, reasoning channel consumed budget - config artifact not format failure). REVERSES Astra hypothesis: serialization burden is NOT the blocker for a capable model; Gemma SWE failure is model-specific. Cost .0129. GO for full SWE sleeper sweep on deepseek."
+}

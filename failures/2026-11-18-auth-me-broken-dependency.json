@@ -1,0 +1,12 @@
+{
+    "severity": "medium",
+    "timestamp": "2026-11-18T00:00:00Z",
+    "trace_id": "vps-staging-deploy-progress",
+    "category": "code-defect",
+    "summary": "GET /api/auth/me returns HTTP 500: the route declares token: str = Depends(lambda: None), so token is always None and jwt.decode raises.",
+    "outcome": "open",
+    "agent": "orchestrator",
+    "root_cause": "Placeholder dependency never replaced with a real bearer-token extractor; no other router consumes Authorization, and the frontend does not call this endpoint, so it went unnoticed.",
+    "recovery": "Not yet fixed. Non-blocking for staging smoke (login, knowledge, conversations, stats all 200). Recommended fix: HTTPBearer security dependency returning the decoded payload, and enforce auth on data routers.",
+    "prevention": "Add negative/positive auth route tests; flag endpoints with lambda dependencies in review."
+}

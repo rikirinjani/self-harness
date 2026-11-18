@@ -1,0 +1,37 @@
+{
+  "pm1_version": 1,
+  "session_id": "lane-a-judge-gate",
+  "timestamp": "2026-10-02T13:03:08.667454+00:00",
+  "agent": "implementer",
+  "outcome": "pass",
+  "duration_s": 3900,
+  "tool_calls": 45,
+  "key_files": [
+    "eval/ab_plan/modal_judge/judge_app.py",
+    "eval/ab_plan/modal_judge/gate_report.py",
+    "eval/ab_plan/modal_judge/verify_gate.py",
+    "eval/ab_plan/modal_judge/gate_report.json",
+    "eval/ab_plan/modal_judge/judgments_openai_gpt-oss-20b.jsonl",
+    "eval/ab_plan/modal_judge/run_meta_openai_gpt-oss-20b.json",
+    "eval/ab_plan/modal_judge/modal_run_primary.log",
+    "eval/ab_plan/modal_judge/modal_run_primary.err.log",
+    "eval/ab_plan/modal_judge/modal_run.pid",
+    "eval/ab_plan/modal_watchdog_ledger.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "lane-a-judge-gate",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------.........................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "Lane A GPU judge gate: GATE-PASSED. Modal vLLM L4 app cokro-judge-gate, primary openai/gpt-oss-20b (fallback Qwen3-14B-AWQ NOT needed, attempts_log empty). 200/200 valid judgments; metrics over n=199 scored (1 gold-invalid key 295:25257412): within-1=0.9347 (>=0.90), quadratic weighted kappa=0.6358 (>=0.60), MAE=0.4121, exact=0.6533. Prompt sha 58f5cb5ce847... verified. Evidence: eval/ab_plan/modal_judge/{gate_report.json,verify_gate.py,run_meta_*.json}. Watchdog lane A closed, global ledger est \\.2950 (cap \\). Incidents recorded in self-harness/failures/2026-10-02-lane-a-modal-run-launch-incidents.json."
+}

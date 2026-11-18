@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "glm-ajianaz-primary",
+  "timestamp": "2026-09-25T06:32:50.943825+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\.config\\opencode\\opencode.jsonc",
+    "C:\\Users\\think\\.config\\opencode\\oh-my-opencode-slim.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "glm-ajianaz-primary",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "Promoted verified ajianaz GLM router to PRIMARY per user choice. Stored working key as User env UTIM_GLM_AJIANAZ_KEY (overwrote invalid glm_...naefapixga5gs). Added provider 'glm-ajianaz' to opencode.jsonc (baseURL https://glm.ajianaz.dev/v1, 11 models glm-4.5 through glm-5.3-flashx). Set default model and agent.oracle to glm-ajianaz/glm-5.3; updated oracle description. Created OMO preset 'glm' (copied proven deepseek structure incl. skills/mcps, all 8 agents -> glm-ajianaz/glm-5.3) and set active preset glm. Kept deepseek and iyan presets as dormant fallbacks. Vision left as pre-iyan openai/gpt-5.6-luna per earlier user instruction. Validation: both configs parse valid; live E2E 10/11 OK (all 8 agents + default + oracle ~1.7-2.2s; only vision fails, OpenAI 429 no credits - known/accepted); content emission confirmed 'READY'; tool-calling confirmed get_weather with correct args at 1367ms. Restart opencode required."
+}

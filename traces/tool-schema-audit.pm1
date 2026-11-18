@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "tool-schema-audit",
+  "timestamp": "2026-09-25T07:35:28.613090+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\.config\\opencode\\opencode.jsonc"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "tool-schema-audit",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "Investigated which tool schemas ship on every request (user: agent reported too many tool schemas). Enumerated via MCP stdio probe (initialize+tools/list on all 10 configured servers) + opencode debug agent orchestrator. RESULTS: built-in tools = 16 (invalid, question, bash, read, glob, grep, edit, write, task, webfetch, todowrite, skill, cancel_task, wait_for_user, ast_grep_search, ast_grep_replace); system prompt 17,909 chars ~4,500 tok; MCP = 256 tools ~61,797 tok across 5 connected servers: hexstrike 150 tools/39,142 tok (63% of all schema), replicate 35/13,479, mempalace 36/4,959, pharmacy 30/3,845, google-workspace 5/371. vision/draft-detective/substack/substack-interact/agent-mesh fail to start (dead, contribute 0). Total per-request overhead ~66k tokens => only ~227 requests per 15M/5h quota window. Root cause of fast quota burn confirmed: no cache discount + 66k of schema re-billed every call. Found OMO per-agent mcps filtering implemented ONLY as permission allow/deny (dist/index.js:40213-40217 parseList -> permission[mcp_*]=allow|deny), not schema removal. Available levers unused in config: disabled_mcps, disabled_tools, disabled_skills (all absent from opencode.jsonc)."
+}

@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "omo-iyan-preset",
+  "timestamp": "2026-09-25T02:59:20.752305+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\.config\\opencode\\oh-my-opencode-slim.json",
+    "C:\\Users\\think\\.config\\opencode\\opencode.jsonc"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "omo-iyan-preset",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "Re-pointed OMO specialist agents to iyan-router (was opencode-go, credits exhausted). Added 'iyan' preset to oh-my-opencode-slim.json and switched active preset opencode-go->iyan: orchestrator=deepseek-v4.1-flash, oracle=claude-sonnet-4-5-thinking, council=claude-sonnet-4-5, librarian=hy3, explorer=mimo-v2.6-flash, designer=glm-5, fixer=deepseek-v4.1-flash, observer=mimo-v2.6-flash. Also updated opencode.jsonc agent block: oracle openai/gpt-5.6-luna->iyan claude-sonnet-4-5-thinking, vision openai/gpt-5.6-luna->iyan claude-sonnet-4-5. Excluded bn/qwen-3-8-max (no tool-calling). Verified all agent models support tool calling and router supports vision. Both configs parse valid."
+}

@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "session-wrap-2026-11-18",
+  "timestamp": "2026-11-18T03:32:02.194647+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 1800,
+  "tool_calls": 12,
+  "key_files": [
+    "C:\\Users\\think\\self-harness\\qms\\records\\2026-11-18-disable-pii-solicitation.json",
+    "C:\\Users\\think\\Project_v2\\chatbot\\ops\\VPS_HANDOFF.md",
+    "C:\\Users\\think\\.opencode\\STATE.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "session-wrap-2026-11-18",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Session wrap. Delivered: VPS staging deployment (9 containers, smoke 200), VPS_HANDOFF.md, ops/disable-pii-prompt.sh (validated), PII prompt applied+loaded on staging, QMS record QR-2026-11-18-001. Blocked: LLM key expired on VPS (and x-opencode-session requirement); production Mac unreachable (Tailscale offline 12d) so prompt change there is owner-action. Production confirmed alive by owner via 2 consecutive answered queries."
+}

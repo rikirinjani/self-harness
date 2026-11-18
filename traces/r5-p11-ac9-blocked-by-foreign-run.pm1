@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "r5-p11-ac9-blocked-by-foreign-run",
+  "timestamp": "2026-10-20T01:45:52.202229+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 240,
+  "tool_calls": 6,
+  "key_files": [
+    "khanza-r5/evidence/p11/r5_p11_foreign_activity_20261020T0145Z.txt",
+    "khanza-r5/records/failures/20261019T2135Z-process-r5-p11-concurrent-writer-evidence-unbinding.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "r5-p11-ac9-blocked-by-foreign-run",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Checked whether AC-9 could be closed now: read-only VPS probe at 01:44:58Z found the other agent session running p11_negative_controls.sh (799464) and p10_preservation_check.sh (810597) with sik_p6f present, while all seven frozen tools verified OK and the live invariant held (sik_bench ledger 356355 rows, 0 writer-exclusion markers). Did not attempt the NC run and did not touch the fixture. Filed evidence/p11/r5_p11_foreign_activity_20261020T0145Z.txt and added a provenance guard to the concurrent-writer failure record; committed 3c1324e."
+}

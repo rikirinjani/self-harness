@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-session-wrap-20261005",
+  "timestamp": "2026-10-06T09:42:19.368185+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\results\\vultr-deepseek-v4.1-flash\\summary.json",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\results\\vultr-qwen3.8-27b\\summary.json",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\results\\vultr-glm-5.3\\summary.json",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\results\\vultr-nemotron-3-nano-omni-30b-a3b-reasoning\\summary.json",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\vultr_spend_ledger.json",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\harness\\llm_keras.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-session-wrap-20261005",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................--.-..-.........................................-.--...-",
+  "action": "SESSION WRAP 2026-10-05: 4/4 Vultr sweeps complete (\\.92 spent). Cross-model compliance: P inert (3/4), P-pos comply (4/4), P-postarget K-dependence diverges. TPU adapter built but dropped due to Kaggle V5E-8 queue. USER DECISION: Research hosted GPU options (Together AI / Colab) independently; wrap until next Saturday. Next session: decide on hosted inference path, run B2-notice on Gemma 4, complete paper revision for Nov 12."
+}

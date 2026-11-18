@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "two-stage-shards-complete",
+  "timestamp": "2026-09-26T01:22:02.426957+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 20000,
+  "tool_calls": 14,
+  "key_files": [
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest\\results.json",
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest\\RESULTS_SUMMARY.md",
+    "C:\\Users\\think\\.opencode\\skills\\STATE.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "two-stage-shards-complete",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--.........................-.-.-.-........--.-..-.........-.--...-........................................-.--...-",
+  "action": "VPS sharded two-stage backtest COMPLETED and merged. All 7 shards exit=0 with ALL_SHARDS_DONE; 0 failure markers per log (Direction/Regime failed, Error:, 402, billing); no recovery actions needed. Laya 40,210x HTTP 200 / 0 non-200. Per-shard runtimes: EURUSD 30958.0s GBPUSD 30962.4s AUDUSD 30964.4s NZDUSD 30960.3s (wave 1); USDCAD 23304.1s USDCHF 23303.9s USDJPY 23303.7s (wave 2); sum 193756.9s, wall ~15h05m from 10:14:22Z to 01:18:48Z. MERGE=1 node dist/run.js exit 0; results.json 14,260,284 B verified results=35 pooled=5 pairs=7 strategies=5 model=jev-latest method 0.74bps/startIndex60; RESULTS_SUMMARY.md 3,390 B with pooled table + 35 pair rows. Both scp'd to local research/two-stage-backtest/ and re-verified locally with identical counts. Pooled: buyAndHold -0.18%/-0.04/9.58%/7, momentumOnly -3.03%/-0.57/28.39%/2300, jevMomentumFilter -1.61%/-0.52/15.91%/1302, regimeOnly -3.03%/-0.57/28.39%/2300, twoStage -1.61%/-0.52/15.91%/1302. Best per pair = buyAndHold x7. FINDING: all 7 regime caches 2653/2653 = TRENDING (zero MEAN_REVERTING) so regimeOnly == momentumOnly and twoStage == jevMomentumFilter (stage 1 degenerate); direction caches 98%+ up, no neutral, no fallback days. Read-only monitoring; no code or methodology changed."
+}

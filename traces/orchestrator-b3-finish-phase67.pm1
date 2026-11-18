@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "orchestrator-b3-finish-phase67",
+  "timestamp": "2026-10-12T09:28:28.449218+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 30,
+  "key_files": [
+    "/opt/dr-benchmark/run_all.sh",
+    "/opt/dr-benchmark/results/Bseries_20261012T045027Z/BENCHMARK_REPORT_publishable.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "orchestrator-b3-finish-phase67",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "Finished B3 rung (sampled-diff drift 4/216=0.0185, three-count+charge-delta PASS, consumer ran ONCE not twice); made run_all.sh rung-aware resume + reports branch; neutralized stale STOPPED_AT marker (NCR-003); resumed Phase 6/7 unattended to DONE 08:37:48Z. Reports+tarball built, publishable scrub grep=0. Noted: manifest.sha256 empty (pre-existing xargs-skip bug), B3 report p50 ~41s = headline-rung latency degradation."
+}

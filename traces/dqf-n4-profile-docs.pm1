@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-n4-profile-docs",
+  "timestamp": "2026-09-28T07:09:51.289104+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 34,
+  "key_files": [
+    "profiles-antihypertensives/comparison.md",
+    "profiles-diabetes/comparison.md",
+    "profiles-statins/lovastatin.md",
+    "profiles-antihypertensives/losartan.md",
+    "profiles-diabetes/metformin.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-n4-profile-docs",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........--.-..-.........................................-.--...-",
+  "action": "N4 executed generator-assisted: 64 profile docs (33 antihypertensive + 28 diabetes + 2 comparison.md + lovastatin) built strictly from drugs.json records + adjudication records, no fabrication; L3 basis column cites governing record (N1 applied 9, b4 applied/hold 16/11, ddi applied 37, auto 304); 22 unapplied prior-rescore proposals documented in-doc; lovastatin doc flags data-poor record + Statin class query crash; mojibake fixup applied; diabetes L4 misnamed-key note added; verified 62/62 docs, no mojibake; committed 3612e16 and pushed"
+}

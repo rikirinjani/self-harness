@@ -1,0 +1,12 @@
+{
+  "record_type": "failure",
+  "timestamp": "2026-09-21T08:30:00Z",
+  "category": "measurement_gate_failure",
+  "severity": "high",
+  "task": "TASK 032",
+  "what_went_wrong": "The deterministic representation-evidence procedure classified 2 of 6 frozen cross-boundary negative controls as DISTRIBUTED_SUPPORT.",
+  "root_cause": "Canonical token-overlap evidence is not specific enough for availability attribution in these topic-overlapping transcripts.",
+  "impact": "Target b0_a1 and b4_a1 availability classifications cannot be trusted; the task was stopped without forcing AVAILABLE or UNAVAILABLE.",
+  "corrective_action": "Retained raw evidence, marked the negative-control gate INVALID_CONTAMINATED, set both final availability classifications to UNRESOLVED, and prohibited further interpretation or inference.",
+  "status": "closed_with_stop"
+}

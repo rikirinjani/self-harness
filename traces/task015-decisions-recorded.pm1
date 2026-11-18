@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "task015-decisions-recorded",
+  "timestamp": "2026-09-17T04:29:58.306928+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 12,
+  "key_files": [
+    "experiments/pm1-rx/TASK_015_DECISIONS_RESOLVED.md",
+    "experiments/pm1-rx/TASK_015_HUMAN_DECISIONS.md",
+    "experiments/pm1-rx/TASK_015_PROGRESS.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task015-decisions-recorded",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Task 015 decisions recorded verbatim (no interpretation, no implementation). D1 CONSUMER=A; D2 PRIMARY F1=micro-F1 over atomic reference-state items pooled within arm, TP=EXACT/PARAPHRASE/COMPRESSED_BUT_EQUIVALENT, contradictions separate, execution failures separate from semantic F1; D3 ARM A=original frozen transcript directly, no model regeneration. Flagged not actioned: D3 changes arm definition (V2 §5/§22.4/§24.2 may require V3), D1 diverges from §9 wording, D2 implementation mapping. No protocol modified, no inference, no runner. Commit 41a6d1c. Status BLOCKED awaiting explicit implementation authorization."
+}

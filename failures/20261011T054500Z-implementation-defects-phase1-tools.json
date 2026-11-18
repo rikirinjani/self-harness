@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-10-11T05:45:00Z",
+  "agent": "fixer",
+  "task": "phase1-tools (new VPS, DR-benchmark Phase 1 helper tools)",
+  "category": "implementation-defects-iteration",
+  "severity": "low",
+  "outcome_impact": "Two helper tools failed on first execution (map_dr_doctors FK error x2, verify_resend_idempotent digest crash x1); both fixed within 3 attempts; no data damage (first failure was blocked by the FK itself before any write landed; digest crash was read-only). Final orchestrator run passed all Phase 1 steps.",
+  "what_went_wrong": [
+    "map_dr_doctors.py v1: dokter INSERT cloned the D0000002 template row -> ERROR 1216 because dokter.kd_dokter FKs pegawai.nik (hashed codes have no pegawai row; the shipped dump was loaded with FOREIGN_KEY_CHECKS=0 so it carries such rows). v2 set FOREIGN_KEY_CHECKS=0 but in a SEPARATE dbutil.execute() call = separate mysql process = separate session, so the setting did not cover the INSERT (second 1216). v3 batches SET+INSERT+SET in one stdin batch = one session -> passed.",
+    "verify_resend_idempotent.py v1: billing digest summed float(r[9]) where col 9 is status ('Dokter' string) and totalbiaya is col 8 -> ValueError after ~50s of successful checks. Fixed to r[8].",
+    "Repeated PowerShell quoting failures against ssh (double-quoted strings expanded $(...)/$locally; wrong key path typed 3x 'newvus'; Set-Content -Encoding ASCII nearly corrupted UTF-8 em-dashes in run_all.sh). Mitigated by switching to script-file upload + python patch files."
+  ],
+  "root_cause": "dbutil.execute() opens a fresh mysql CLI session per call, so session-scoped SQL (FK checks) does not persist; wrote SQL against column indexes without a dry-run parse of the SELECT column order; PowerShell interpolation rules differ from bash expectations for nested quoting.",
+  "contributing": "No python MySQL driver on-box (CLI-only access pattern); time pressure to run tools end-to-end.",
+  "actual_damage": "None persistent. Tool 4 wrote 0 rows on failed attempts (verified dokter counts 5/5 before fix). Digest crash read-only.",
+  "remediation_done": "v3 batching (FK-safe, documented in tool comments + DECISIONS.md); index fix; local files now patched via python scripts; UTF-8 preserved (bash -n + grep verified on VPS after redeploy).",
+  "remediation_recommended": "Add a tiny dbutil.execute_session(statements[]) helper that always batches into one session; add py_compile + a --dry-run mode to tool preflight; prefer scp+file over inline ssh quoting for anything non-trivial.",
+  "rule_references": ["RULES.md Rule 2 (record failures)", "Rule 11.3 (failure behavior: preserve evidence, fix, re-verify)"]
+}

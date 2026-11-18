@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "task019-phase4-calibration",
+  "timestamp": "2026-09-19T01:30:17.039967+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 30,
+  "key_files": [
+    "experiments/pm1-rx/generate_task019_corpus.py",
+    "experiments/pm1-rx/run_task019_eval.py",
+    "experiments/pm1-rx/test_task019_calibration.py",
+    "experiments/pm1-rx/TASK_019_PHASE4_REPORT.md",
+    "experiments/pm1-rx/results/task019/TASK_019_CALIBRATION_DATASET.json",
+    "experiments/pm1-rx/results/task019/TASK_019_EVALUATION.json",
+    "experiments/pm1-rx/results/task019/TASK_019_HOLDOUT_FREEZE.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task019-phase4-calibration",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--.........--...--........--.-..-.........................................-.--...-",
+  "action": "Task 019 Phase 4 complete. Independent corpus: 133 pairs, 8 fields, 14 variation classes. Dev/holdout 88/45. Matcher 2.0: 35.2% accuracy, 36% sensitivity (dev). 4 antonym false accepts documented as Category B limitation. 25/25 tests pass. Commit 0e3ddfd."
+}

@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "fixer-g2-terminal-ack",
+  "timestamp": "2026-10-11T23:48:55.691282+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "fixer-g2-terminal-ack",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................................................................................................-.--...-",
+  "action": "Session close reconciliation: acknowledged G2 terminal state per orchestrator; crashlog --recover clean (no crash), retrace scanner clean (0 untraced project files); no source or project files modified; no further action taken"
+}

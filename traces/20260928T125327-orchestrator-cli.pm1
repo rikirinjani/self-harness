@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260928T125327-orchestrator-cli",
+  "timestamp": "2026-09-28T12:53:27.381751+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 4,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\api_server.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\auth.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260928T125327-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Production smoke tests through public domain: POST /api/contact -> 200 ok:true (real email accepted by Resend); POST /api/auth/request -> 200 ok:true with dev_otp/dev_link ABSENT - MATERIAL dev-mode disclosure finding closed"
+}

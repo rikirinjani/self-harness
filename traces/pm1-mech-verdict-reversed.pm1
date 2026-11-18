@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-mech-verdict-reversed",
+  "timestamp": "2026-09-28T23:22:55.730013+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\VER-2026-09-28-PM1-SLEEPER-R2-ADDENDUM.json",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\results\\mech\\C_responses.jsonl",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\results\\mech\\P+FACTS_responses.jsonl"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-mech-verdict-reversed",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "MECHANISM FOUND - verdict REVERSED. Mech run (500 calls, .17) inspected: the model CAN comply perfectly - C arm walked 0->1->2 by unit-steps and HELD at position 2 for 248 hops with reasoning explicitly citing the override target every hop. The r2 collapse is a HOP-2 BIFURCATION: identical action+quantity (BUY 1), different declared position (r2: next_pos=1 conflated with quantity; mech: next_pos=2 computed current+1). Branch locks in via transcript self-reinforcement (r2 drew collapse 32/32; mech drew comply 2/2). F1 confirmed with cleanest evidence: hop-1 reasoning states 'effective from hop 11' AND applies immediately in the same sentence. QMS addendum VER-2026-09-28-PM1-SLEEPER-R2-ADDENDUM written revising the 0%-compliance verdict to bimodal/path-dependent. Write-off 'delivery -> compliance' REVERSED - failure mode is a fragile early formatting choice, fixable."
+}

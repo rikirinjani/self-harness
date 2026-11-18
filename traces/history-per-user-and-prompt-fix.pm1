@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "history-per-user-and-prompt-fix",
+  "timestamp": "2026-09-15T07:02:14.329088+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 10,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\chatbot\\bridge\\src\\core\\conversation-store.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "history-per-user-and-prompt-fix",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Implemented both fixes: (1) conversation-store.ts rewritten to per-user history files (data/history/<channel>_<userId>.json) eliminating cross-user read-modify-write races; auto-migration moved 22 user histories from legacy file on startup, legacy renamed .migrated; (2) SYSTEM_PROMPT updated: short messages treated as follow-ups using conversation context, general-direction answers (cek media sosial) are valid answers. Verified Hasan (8385654203) also affected by race — his follow-up 'Untuk pendaftaran nya bagaimana?' got wrong answer for same reason"
+}

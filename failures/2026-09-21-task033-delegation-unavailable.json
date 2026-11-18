@@ -1,0 +1,12 @@
+{
+  "record_type": "failure",
+  "agent": "orchestrator",
+  "task": "TASK033",
+  "category": "external",
+  "summary": "Explorer audit dispatch failed: Insufficient account funds",
+  "task_id": "ses_f3cef201efferYIuMsIQJ36RUE",
+  "root_cause": "Specialist upstream account could not fund the request; no successful specialist work was returned",
+  "response": "Did not retry or assume a specialist review. Performed the bounded offline gate audit directly and disclosed the fallback.",
+  "trace_id": "task033-delegation-unavailable",
+  "status": "reconciled_as_failed_no_reuse"
+}

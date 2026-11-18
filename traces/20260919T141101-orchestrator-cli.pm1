@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260919T141101-orchestrator-cli",
+  "timestamp": "2026-09-19T14:11:01.282954+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 45,
+  "key_files": [
+    "morse/experiments/pm1-rx/TASK_024_FULL_RESULTS.md",
+    "morse/experiments/pm1-rx/TASK_024_CELL_DATA/judge_rule_d_full_results.json",
+    "morse/experiments/pm1-rx/scripts/judge_and_rule_d_all.py",
+    "morse/experiments/pm1-rx/scripts/aggregate_results.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260919T141101-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "Task 024: Semantic Judge 1.0 + Rule D scoring completed on all 40 cells. 5/40 ACCEPT, 35/40 REJECT. Judge verdict distribution: 62% PARTIAL, 26% UNRELATED, 4.5% PARAPHRASE, 0.6% CONTRADICTORY. Rule D safety veto working correctly."
+}

@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-09-27T21:10:00Z",
+  "category": "resource-exhaustion",
+  "slug": "ch9-quota-reservation-wall",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "summary": "Book 2 Chapter 9 run rejected by Kaggle 403: max estimated cost of operation ($0.94469) exceeds available quota. Reservation formula = input tokens x $10/M + max_completion_tokens x $50/M; with the 16000 cap the reservation is ~$0.92, so the remaining day-quota is below ~$0.94 after $3.20 of Book 2 spend.",
+  "what_happened": [
+    "ch9 task kala-book-two-chapter-nine pushed and created fine (creation is free).",
+    "run submit succeeded (scheduling is free); the 403 fired at model invocation when the harness computed the cost reservation.",
+    "No tokens were billed - the request was rejected at reservation check.",
+    "Evidence: gpt-6-astra run 21:06:57-21:06:57 UTC, Error openai.PermissionDeniedError 403 'max estimated cost of operation ($0.94469) exceeds your available quota (based on max_output_tokens)'"
+  ],
+  "root_cause": "Day-quota window nearly exhausted (~$0.90 remaining after 8 chapters, $3.201 cumulative). The 16000-token completion cap inflates the reservation far above actual usage (~7000-8500 output tokens, ~$0.36-0.52 per chapter).",
+  "what_was_actually_wrong": "I kept the 16000 cap from the reconcile era without revisiting it once actual per-chapter usage proved to be ~7000-8500 output tokens. The cap is a reservation lever, not just a safety net, and should be sized to expected output.",
+  "mitigation": "Retry with 10000-token cap ALSO rejected (reservation $0.64469 > remaining) - the day window is drained below ~$0.62. Rejected attempts cost nothing. Builder cap left at 10000 (~40k chars, above chapter norm) for the resumed run. ch9 task v2 is already pushed and compiled; resume after the midnight UTC reset with: run_chapter.ps1 -N 9 -SkipPush, then -N 10/11/12 full pipeline. ~$1.55 estimated for all four chapters.",
+  "lesson": "Size completion caps to expected output, not to worst case, when running against a metered daily quota near its floor.",
+  "related_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\build_book2_task.py",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\book2_spend.csv"
+  ]
+}

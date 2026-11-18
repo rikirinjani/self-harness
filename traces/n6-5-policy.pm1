@@ -1,0 +1,39 @@
+{
+  "pm1_version": 1,
+  "session_id": "n6-5-policy",
+  "timestamp": "2026-10-02T01:29:12.780849+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2700,
+  "tool_calls": 65,
+  "key_files": [
+    "rag-queries/curation/n6_batch5_policy.json",
+    "rag-queries/merge_l3.py",
+    "rag-queries/test_merge_lock.py",
+    "rag-queries/l3_query_templates.json",
+    "rag-queries/classifier_audit.py",
+    "api/drugs.json",
+    "rag-queries/l3_output/enalapril_l3_profile.json",
+    "rag-queries/l3_output/ramipril_l3_profile.json",
+    "rag-queries/l3_output/_backups/drugs_20261002_082221_n65.json",
+    "rag-queries/curation/n6_worklist.md",
+    "rag-queries/curation/n6_worklist.json",
+    "TODO.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "n6-5-policy",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........--.-..-.........................................-.--...-",
+  "action": "N6.5 policy batch complete: DailyMed label adjudication of enalapril/ramipril heart_rate suspects (both ->none); user-approved decisions (lock Option B 25 dims, HR typing option b, template shared stem, 2 cell fixes); merge_l3 deletion-respecting lock + --unlock CLI + test_merge_lock 8/8; AH template '{drug} side effect'; classifier_audit HR policy comment; worklist/TODO refreshed; gate green (grid 352/0, suites, smoke 18/18); commits 9b8c85f evidence + 3a80033 apply, pushed"
+}

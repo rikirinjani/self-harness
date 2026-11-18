@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-r3-launch",
+  "timestamp": "2026-09-29T12:40:07.219503+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\harness\\sleeper.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\run_pilot.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-r3-launch",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "R3 LAUNCHED (PID 13104, detached, log pm1_sleeper_r3.log, results results/sleeper-r3/{A,B}). Implementation: sleeper.py run_sleeper + system_prompt_suffix param (worker construction only); run_pilot.py --sleeper-r3 mode (2 conditions A baseline / B schema-nudge, C arm only, override L=2, 4 cells x trials [1,2,3] = 12 runs each; condition dirs separated; dry-run isolation fixed - r3 added to the dry-run-branch exclusion + dry results land in dryrun-r3). Stub dry-run validated end-to-end: 24/24 runs, summaries written per condition (gate REVIEW expected - no P arm in matrix). Bugs caught pre-launch: branch interception (again), dir pollution of live dirs. Live: 24 runs, est .6 (ceiling .0), ETA ~2.5-3h. Q1: p(comply) over 12 baseline draws (Wilson 95%); Q2: schema-nudge fix effect; Q3 free: branch lock-in from hop records."
+}

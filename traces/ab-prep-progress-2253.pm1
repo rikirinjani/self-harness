@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "ab-prep-progress-2253",
+  "timestamp": "2026-09-22T22:53:27.090314+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 920,
+  "tool_calls": 5,
+  "key_files": [
+    "scripts/ab_embed_supervisor.sh",
+    "scripts/modal_embed.py",
+    "eval/ab_plan/embed_cost_table.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ab-prep-progress-2253",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................---..-..........-.--...-........-.--...-........................................-.--...-",
+  "action": "15min poll: bge/e5 38%, nomic 44%; all four qwen3 chunks progressing (c0/c3 batch32 at 3%, c1/c2 at 8%); supervisor still waiting bge-large; no npy completions yet"
+}

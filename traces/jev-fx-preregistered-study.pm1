@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "jev-fx-preregistered-study",
+  "timestamp": "2026-09-24T09:52:10.447736+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 34,
+  "key_files": [
+    "C:\\Users\\think\\jev-crypto-trader\\research\\fx\\PRE_REGISTRATION.md",
+    "C:\\Users\\think\\jev-crypto-trader\\research\\fx\\study.ts",
+    "C:\\Users\\think\\jev-crypto-trader\\research\\fx\\run.sh",
+    "C:\\Users\\think\\jev-crypto-trader\\research\\fx\\REPORT.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "jev-fx-preregistered-study",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "Ran the pre-registered FX directional-edge study for Jev, chosen by the user as the cheap decisive test before any capital. PRE-REGISTERED FIRST (research/fx/PRE_REGISTRATION.md written before any call was scored): 7 FX majors derived from ECB reference rates via the frankfurter API (EURUSD, GBPUSD, AUDUSD, NZDUSD, USDJPY, USDCHF, USDCAD); period 2016-01-01..2025-12-31; horizons H=1 and H=5 trading days; past-only relative state; identical verbatim question; primary metric AUC with a 2000-replicate block bootstrap (blocks of 20 consecutive dates within each pair) to handle overlapping weekly observations; baselines = random 0.5 and trailing-20d momentum; positive control = score the realised outcome (must be AUC 1.000); verdict rule fixed in advance. RESULT after 35,770 scored decisions with 0 failed calls (755s): H=1 AUC 0.4913 (95% CI 0.4831-0.5001); H=5 AUC 0.4905 (95% CI 0.4780-0.5041); POOLED AUC 0.4912 (95% CI 0.4825-0.4992) -> the pooled CI lies entirely BELOW 0.5, i.e. worse than chance. Positive control returned AUC 1.0000 so the metric is valid. Momentum baseline AUC 0.4931 and naive momentum accuracy 0.4948 - Jev's AUC is indistinguishable from a simple momentum rule, exactly the pattern the crypto pre-registered study found (AUC 0.475). VERDICT per the pre-registered rule: NO evidence of directional edge in FX; Jev is finished for trading. Deviations logged (three plumbing-only pilots in separate output dirs, no design parameter changed; one additive descriptive line). Harness is cached/resumable and the full decisions log plus report.md are on the VPS under /opt/jev-crypto-trader/research/fx/full/. Delegation unavailable (librarian lane failing with 'Insufficient account funds') so executed directly."
+}

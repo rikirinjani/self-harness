@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "macmini-defect-diagnosis",
+  "timestamp": "2026-09-28T06:24:31.819086+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 480,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\macmini-diag3.sh",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\macmini-diag4.sh"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "macmini-defect-diagnosis",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........................-.--...-........................................-.--...-",
+  "action": "Mac Mini RC defect diagnosis: ran diag3/diag4 on PTs-Mac-mini. (1) /api/paper found:false root cause = lancedb table.to_lance() needs pylance; installed pylance 12.0.0 into ~/rag-service venv via uv, retest found:true for pmid 31904444. (2) retrieval latency 79-96s reproduced identically on Windows (full ask 99.6s, retr 95.8s) vs Mac (embed 9.9s + search 79s) => matches documented deferred EF-1 S3 reconnect behavior, NOT a Mac defect; fast 166-366ms probes were warm-connection runs. (3) bot 401 grep was false-positive (line numbers/timestamps), real bot LLM status still unknown."
+}

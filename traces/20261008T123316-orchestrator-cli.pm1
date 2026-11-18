@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261008T123316-orchestrator-cli",
+  "timestamp": "2026-10-08T12:33:16.585290+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "kaggle-ai\\niji_prompts_adelinde.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261008T123316-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Niji 7 param fix round 2: --quality is not compatible with --niji 7 (user-reported error). Removed --q 1 from all 12 prompt lines, cheat-sheet now marks --q unsupported on Niji 7. Remaining --q mentions are appendix-only (niji 6 fallback)."
+}

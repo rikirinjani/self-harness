@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "glm-quota-reset-ok",
+  "timestamp": "2026-09-27T01:52:54.562979+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 60,
+  "tool_calls": 1,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "glm-quota-reset-ok",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "GLM ajianaz quota check: HTTP 200. Key glm_...xgs (name riki), tier glm-5.3-flash, limit 15M/5h, window started 01:43 UTC, used 1,502,012 (10%), remaining 13,497,988 (90%), window ends 06:43 UTC. Key valid to 2026-10-25. Lifetime 93.1M tokens / 512 requests. Quota fully recovered; prior 429 was rolling-window pressure. Flagged: 1.5M burned within minutes of window start due to no-cache-discount interactive context re-billing."
+}

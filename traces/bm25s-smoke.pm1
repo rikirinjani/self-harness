@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "bm25s-smoke",
+  "timestamp": "2026-09-24T07:44:23.254597+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\ab_results\\2026-09-24T07-44-03\\results.json",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\run_bm25s_retrieval.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "bm25s-smoke",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................................................-.--...-........................................-.--...-",
+  "action": "bm25s smoke PASS: 5q x 20 hits, tokenize 85.9s + index 70.9s + retrieve 0.6s = 169.2s; wrote 2026-09-24T07-44-03/results.json"
+}

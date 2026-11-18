@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "lane-b2-bm25-v2",
+  "timestamp": "2026-10-02T20:47:18.499772+00:00",
+  "agent": "implementer",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 0,
+  "key_files": [
+    "eval/ab_plan/modal_bm25/run_bm25_modal.py",
+    "eval/ab_results/2026-10-02T15-09-10-bm25-v2/results.json",
+    "eval/ab_results/2026-10-02T15-09-10-bm25-v2/run_manifest.json",
+    "eval/ab_results/2026-10-02T15-09-10-bm25-v2/manifest.json",
+    "eval/ab_plan/modal_bm25/__pycache__/run_bm25_modal.cpython-312.pyc"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "lane-b2-bm25-v2",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........................---..-..........................--.-..-.........................................-.--...-",
+  "action": "Lane B2 BM25 rerun on volume corpus: eval/ab_results/2026-10-02T15-09-10-bm25-v2/results.json (300q x top-20, corpus_size 500000, frozen schema verified, non-empty, scores sorted). In-container preflight: rows=500000 cols=id/text/doi/journal/year/corpus first_id=28580715 last_id=37006201 text0_sha16=7acb33a04cab2f5f. Diff vs local-corpus run 2026-10-02T12-53-15-bm25: 300/300 pmid sets differ, 300/300 score sequences differ, 298/300 rank-1 differ, 3345 unique pmids retrieved. Wrapper corpus_path -> /data/subcorpus_v2.parquet, algorithm unchanged. Watchdog: lane B closed spend=$0.084 (cap $2), no STOP file, app cokro-bm25 ap-xH3kuHu0MwtUgEAGavDwuc auto-stopped."
+}

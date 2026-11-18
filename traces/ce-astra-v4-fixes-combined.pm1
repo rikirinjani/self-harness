@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "ce-astra-v4-fixes-combined",
+  "timestamp": "2026-10-08T05:57:22.294715+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 30,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\poc\\proto-reproducer.ts",
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\poc\\hash-proto.test.ts",
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\src\\poc\\persistence-equivalence.test.ts",
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\README.md",
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\docs\\COMPATIBILITY.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ce-astra-v4-fixes-combined",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........--.-..-.........................................-.--...-",
+  "action": "Verified all 3 Astra v4 fixes on Kaggle: #1 hash defect CLOSED (reproducer + 15 regressions pass), #2 release candidate VALIDATED (tarball 185KB sha256 recorded, consumer install PASS, docs fixed), #3 external integration BRIEF generated. 760/761 suite pass (1 timing-flaky WS test on shared CPU)."
+}

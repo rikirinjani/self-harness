@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "mac-mini-ssh-establish",
+  "timestamp": "2026-10-12T06:51:18.233763+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 14,
+  "key_files": [
+    "C:\\Users\\think\\.opencode\\memory.txt"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "mac-mini-ssh-establish",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Located Mac mini 'ptpakdefarma' (PTs-Mac-mini.local, M4) in memory.txt; Tailscale stuck NoState on Windows so established SSH over LAN via key auth to 192.168.1.2. Verified: macOS 26.6.2, uptime 17d, disk 92Gi free. Found com.bonsai.gateway crash-looping (Xcode license not accepted); Bonsai API on :8080 down."
+}

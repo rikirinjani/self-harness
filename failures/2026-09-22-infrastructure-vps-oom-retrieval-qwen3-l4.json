@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-09-22T21:55:00+00:00",
+  "category": "infrastructure",
+  "slug": "vps-oom-kills-retrieval-and-qwen3-l4-oom",
+  "severity": "high",
+  "what_actually_happened": "Two distinct OOM failures during AB prep Lane A. (1) VPS host (3.3Gi RAM) OOM-killed the minilm retrieval python process (dmesg: Out of memory: Killed process ... python3) after FAISS index build + full-text result formatting; log truncated at query-embed 100% with leaked-loky semaphore warning and no results.json. (2) Modal L4 (22Gi) qwen3 embed OOM at batch_size 96 after expandable_segments:True — tried to allocate 3.02 GiB with only 3.01 free (18.60 allocated by weights+activations). batch 128 previously OOM'd the same way; batch 64 runs at ~4 docs/s (~35h) which exceeds the 86400s Modal timeout.",
+  "root_cause": "VPS: rank_bm25.BM25Okapi tokenized 500K-doc corpus plus pandas full-text frame plus FAISS matrix exceeded 3.3Gi physical RAM (swap present but OOM killer still fired during peak). qwen3: gte-Qwen2-1.5B activations at batch>=96 need ~3Gi headroom the L4 container does not have once model+allocator reserved memory is counted.",
+  "detection": "dmesg oom-kill trace on VPS; Modal job logs ending mid-progress with OutOfMemoryError; missing results.json / missing npy commit.",
+  "immediate_action": "Added --skip-bm25 to eval_ab_retrieval.py on VPS; will re-run dense-only retrieval for minilm. Reworked modal_embed.py to support start/end corpus slices; qwen3 relaunched as four parallel 125K L4 chunks at batch_size 64 (~8.7h each, under 24h timeout) with a merge_chunks step.",
+  "preventive_action": "Never run BM25Okapi on 500K docs on the 3.3Gi VPS — use --skip-bm25 or a larger host. For 1.5B-class embed models on L4, cap batch at 64 or shard the corpus; do not raise batch to chase throughput without watching free VRAM. Keep PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True set before torch import.",
+  "related_task": "ab-prep",
+  "files_touched": [
+    "eval/eval_ab_retrieval.py (VPS patched --skip-bm25)",
+    "scripts/modal_embed.py (slice + merge support, qwen3 batch 64)"
+  ]
+}

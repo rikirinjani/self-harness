@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260921T081942-orchestrator-cli",
+  "timestamp": "2026-09-21T08:19:42.434090+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 90,
+  "tool_calls": 6,
+  "key_files": [
+    "extract_scores.py",
+    "calibration_candidates.json",
+    "extracted_scores.json",
+    "merged_annotations.json",
+    "agreement_report.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260921T081942-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........--.-..-.........................................-.--...-",
+  "action": "Validated scored annotation workbooks: 126 primary and 30 secondary labels, all scores 0-3. Merged against frozen artifact. Dual subset exact agreement 100%, Cohen kappa 1.0, zero disagreements. Corrected secondary-ID validation bug."
+}

@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "antacid-class-implemented",
+  "timestamp": "2026-09-25T05:21:11.209918+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 25,
+  "key_files": [
+    "rag-queries/extract_l3.py api/drugs.json rag-queries/l3_output/_backups/drugs_20260925_antacid_pre.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "antacid-class-implemented",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Implemented Antacid class in extract_l3_profile (calcium-carbonate, aluminum-magnesium-hydroxide previously had no scored dims). Added neutralization_capacity/acid_rebound/renal_toxicity_risk (1-3) + duration_min via new _extract_duration_min helper (prefers curated duration_h for single source of truth, else cue-gated text extraction). Caught and fixed 2 false positives during verification: renal_toxicity_risk 3->1 for calcium carbonate (was hitting therapeutic phosphate-binding context), duration_min 540->None for Al/Mg hydroxide (was grabbing unrelated alloy-study hours). Re-ran 88/88 reparse+merge; final diff = only 2 antacid duration_min reconciliations, zero non-antacid changes. Committed aa8b745, pushed to public repo."
+}

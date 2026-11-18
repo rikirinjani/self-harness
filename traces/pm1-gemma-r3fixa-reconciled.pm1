@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-gemma-r3fixa-reconciled",
+  "timestamp": "2026-09-30T14:20:13.904394+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\frozen\\gemma-r3fixa\\FREEZE_MANIFEST.md",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\VER-2026-09-30-PM1-GEMMA-R3FIXA.json",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\PAPER_MATERIALS.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-gemma-r3fixa-reconciled",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "Gemma r3fix_a RECONCILED: 12/12 compliance (9 DELAYED + 3 IMMEDIATE), recall 0.993-0.998, detectors 12/12 CLEAN, \\. CROSS-MODEL DISSOCIATION: deepseek zero inhibition (23/24 immediate) vs Gemma 4 75% inhibition (9/12 delayed - honors deferral, post-K recall ~1.0). Early adopters unstable pre-K (353/363 failures, post-K perfect). 189/2405 empty-content responses retried (~7.7%). Frozen frozen/gemma-r3fixa + manifest; VER-2026-09-30-PM1-GEMMA-R3FIXA (PASS); PAPER_MATERIALS Leg 4 filled (inhibition = discriminating variable). Next: pilot economics run (v9)."
+}

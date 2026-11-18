@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "ab-prep-e5-retrieval-done",
+  "timestamp": "2026-09-23T02:50:23.633569+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 60,
+  "tool_calls": 7,
+  "key_files": [
+    "eval/ab_plan/embed_cost_table.json",
+    "eval/ab_plan/AB_PLAN.md",
+    "eval/ab_results/2026-09-23T02-47-39/results.json",
+    "scripts/ab_embed_supervisor.sh"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ab-prep-e5-retrieval-done",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "e5 retrieval OK 102.7s scp local; cost table + AB_PLAN updated (4 retrieval_done); restarted supervisor; investigating c1 stuck after preemption"
+}

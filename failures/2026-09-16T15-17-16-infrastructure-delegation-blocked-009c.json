@@ -1,0 +1,13 @@
+﻿{
+  "timestamp": "2026-09-16T15:17:16",
+  "category": "infrastructure",
+  "severity": "high",
+  "slug": "delegation-blocked-009c",
+  "task": "PM-1-RX 009C matcher repair",
+  "what_failed": "task(subagent_type=explorer) returned: Subagent failed (task_id: ses_f56b585f0ffetcA8CWzykyAz0l): Insufficient balance. Manage your billing here: https://opencode.ai/workspace/wrk_01KSZQC9YVHQX9CBPZBFM4EE06/billing",
+  "root_cause": "External account-level billing exhaustion on the opencode workspace. Subagent spawning requires model credits; the balance is insufficient. Not a defect in the task specification, repo state, or prompt.",
+  "impact": "All specialist delegation (@explorer/@oracle/@fixer/@verifier) is unavailable. Orchestrator must execute the task directly, which violates the intended role separation (orchestrator is not the default implementation worker).",
+  "what_i_did_wrong": "Nothing in the dispatch itself; the brief was bounded and correctly scoped. However, the orchestrator initially planned a delegation-heavy multi-lane plan that the environment cannot support. The plan should have probed agent availability before committing to it.",
+  "mitigation": "Direct phased execution with the anti-stuck contract enforced; per-phase progress checkpoints; handoff file if context pressure rises. Recorded as an environment limitation, not a scientific one.",
+  "retry_policy": "Do NOT retry delegation for this session. One retry is pointless: the cause (balance) is understood and unchanged by retrying."
+}

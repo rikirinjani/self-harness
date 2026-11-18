@@ -1,0 +1,22 @@
+{
+  "id": "20260926-fail-blender-render-v1",
+  "type": "failure",
+  "date": "2026-09-26",
+  "category": "wrong-approach",
+  "severity": "low",
+  "task": "First attempt of the LLM->Blender render task (astra-blender-ship v1) scored 0.0",
+  "root_cause": [
+    "Prompt told the LLM to enable denoising with a try/except guard - assignment succeeds but the apt Blender 4.3.2 build lacks OpenImageDenoise, so bpy.ops.render.render() aborts at render time with RuntimeError: Failed to denoise, build has no OpenImageDenoise support",
+    "Dataset metadata file written as datasets-metadata.json (plural) but kaggle CLI requires dataset-metadata.json (singular) - export failed with Metadata file not found"
+  ],
+  "what_i_did_wrong": "Trusted a try/except guard to cover an optional render feature that only fails at render time, and did not verify the exact metadata filename required by the kaggle datasets CLI before pushing",
+  "corrective_actions": [
+    "v2: prompt explicitly forbids denoising + regex force-replace use_denoising = True -> False in generated code",
+    "v2: corrected to dataset-metadata.json",
+    "v2: added TELEMETRY expectation channel so every future failure self-reports env facts (python, blender version, env vars, rc codes)"
+  ],
+  "outcome_after_fix": "v2 rendered PNG successfully; v3 reached score 1.0",
+  "linked_records": [
+    "C:\\\\Users\\\\think\\\\self-harness\\\\traces\\\\kaggle-astra-blender-render.pm1"
+  ]
+}

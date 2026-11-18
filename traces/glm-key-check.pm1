@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "glm-key-check",
+  "timestamp": "2026-09-24T09:14:28.064565+00:00",
+  "agent": "coordinator",
+  "outcome": "fail",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {
+    "category": "invalid-credential",
+    "severity": "low"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "glm-key-check",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........-.--...-........................................................................-.--...-........-.--...-",
+  "action": "Tested GLM key glm_xjkanh99... across 4 endpoints (z.ai paas, bigmodel.cn, z.ai anthropic-compat, z.ai models) and 3 auth styles. All returned 401 token expired/incorrect. Key format non-standard (glm_ prefix, 37 chars vs Zhipu's id.secret). Verdict: invalid/expired, not addable to opencode.jsonc. Failure category: invalid-credential."
+}

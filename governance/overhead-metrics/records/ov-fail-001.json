@@ -1,0 +1,8 @@
+{
+  "schema": "overhead.v1",
+  "record_id": "ov-fail-001",
+  "task_id": "tamper-probes",
+  "type": "failure",
+  "reason": "probe harness v1 late-binding: tamper functions ran at list-construction time and fresh_store() re-copied pristine evidence over the tampered stores, producing false 'gate accepts tampering' conclusions; caught by reasoning before any decision; v2 harness 5/5 correct",
+  "at": "2026-10-02T02:20:00Z"
+}

@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "epic1-m14-final",
+  "timestamp": "2026-10-07T12:20:28.218264+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "ROADMAP.md",
+    "src/engine/markov.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "epic1-m14-final",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Epic I M1.4 verified: throughput balanced, full occupancy by tick 1000, inpatient discharges at tick ~4600. 326 tests pass, CI running."
+}

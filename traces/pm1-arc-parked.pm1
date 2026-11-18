@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-arc-parked",
+  "timestamp": "2026-09-30T15:06:23.411439+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-arc-parked",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................................................................-.--...-",
+  "action": "ARC decision: PARKED (option A - user choice). Rationale: ARC deadlines (submission Nov 2, paper Nov 9) precede the Gemma deadline (Nov 12), so a parallel entry would compete for the same drafting days; Accuracy-rubric cap (~4.3 max for a last-minute generalist entry) keeps prize odds poor. 2027 program seed recorded: PM-1-on-ARC-AGI-3 - 'minimal sufficient memory transfer as a measurable predictor of agent performance' - our offline Gemma 4 T4x2 stack matches ARC's no-internet constraint; the inhibition/state-feedback dissociation findings are the novel research contribution to test on interactive benchmarks. Focus now: Gemma pilot (RUNNING) -> reconcile -> paper-oc drafting (Nov 12)."
+}

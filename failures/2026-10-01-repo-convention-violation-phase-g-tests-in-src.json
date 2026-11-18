@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-10-01T21:20:00Z",
+  "category": "repo-convention-violation",
+  "slug": "phase-g-tests-in-src",
+  "severity": "medium",
+  "phase": "G1/G2 productization",
+  "component": "Deers-Rock/src/sandbox",
+  "title": "Phase-G test files placed in src/ instead of tests/, leaking vitest into production build output",
+  "what_happened": "Phase G1/G2 created its two test files (sandbox.test.ts, core-isolation.test.ts) inside src/sandbox/ rather than the repo's tests/ directory. tsconfig.json has include:[\"src\"] and exclude:[\"tests\",\"bin\",\"dist\",\"scripts\"], so `npm run build` (= tsc) compiled both test files into dist/sandbox/*.test.js + .d.ts + .js.map, and the emitted JS contained `import { describe, it, expect } from \"vitest\"` — a dev-only dependency in production build output. 6 stale artifacts were emitted before detection.",
+  "root_cause": "Did not verify existing repo layout/convention before placing new test files. The repo has 17 pre-existing tests, all under tests/ (already excluded from the build); no *.test.ts existed anywhere under src/. The convention was discoverable from tsconfig exclude and the tests/ directory, and was not checked.",
+  "what_i_did_wrong": "1) Assumed colocated tests (src/foo/foo.test.ts) were acceptable without checking the project's own tsconfig and test layout. 2) Reported the fix as 'all tests pass, build clean' in the Phase G1/G2 report while `npm run build` was quietly emitting test files into dist/. 3) The report documented test paths that did not match repo convention.",
+  "detection": "User prompted 'check repo, theres issue'. Independent recon found the mismatch: tsconfig include/exclude vs. actual test placement, and confirmed dist/sandbox/*.test.* containing vitest imports.",
+  "correction": "Moved both test files to tests/ (matching repo convention), rewrote their relative imports, deleted the 6 stale dist artifacts. Config change (tsconfig) deliberately NOT made — the fix is relocation, honoring the Phase-G zero-core-modification constraint.",
+  "corrective_action": "Before adding any new test file to a repo, inspect tsconfig include/exclude and the existing test directory layout first; place tests where the project already places them.",
+  "verification": "npx tsc --noEmit -> 0; npx vitest run tests/sandbox.test.ts tests/core-isolation.test.ts -> 17/17; npm run build -> 0; recursive dist search for *.test.* -> 0 matches; git status -> no tracked file modified.",
+  "prevented_regressions": true
+}

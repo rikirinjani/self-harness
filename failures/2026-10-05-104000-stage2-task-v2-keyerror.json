@@ -1,0 +1,21 @@
+{
+  "record_type": "failure",
+  "timestamp": "2026-10-05T10:40:00+08:00",
+  "category": "implementation-defect",
+  "severity": "medium",
+  "slug": "stage2-task-v2-keyerror-errored-task",
+  "what_happened": "Push of stage2-kronos-gates version 2 produced a task whose creation run ended with status Errored and no runs: `KeyError: 'failed'` at line `cmp_[\"c1_verdict\"] = (\"PASS\" if (ca[\"failed\"] > 0 ...` inside collect().",
+  "root_cause": "step_vitest built the c1 block with keys total / passed / failed_cases and never emitted `failed`; the comparison code indexed ca[\"failed\"] directly. The defect was introduced in the same edit that moved write_c1 ahead of pass A - a new code path was added without a matching field, and the field contract between the two functions was never checked.",
+  "what_i_actually_did_wrong": "I changed the comparison logic and the producer of its input in one edit and verified only the payload round-trip (edits/C1 bytes) and py_compile. Neither exercises the comparison block, so a missing key passed every local gate. The failure was only discovered from the Kaggle traceback - i.e. the kernel was used as the debugger instead of a local dry-run of the comparison function.",
+  "fix": "Emit `failed = len(ar) - passed` in step_vitest, index defensively (`ca.get(\"failed\") is not None` guard, `c.get(\"failed\") or 0` in strip()), and include tests_pristine/tests_patched in the comparison for readability. Local simulation of the comparison block with synthetic pass-A data (280 total / 7 failed) confirms non_c1 {272,0} on both sides, regressions 0, c1 7->0, verdict PASS, suites identical excluding C1.",
+  "impact": "One wasted task version (v2) and ~5 minutes. No evidence was lost: v1 output preserved as stage2-v1-output.json, and v1 itself had already confirmed the patched gates in-kernel.",
+  "evidence_files": [
+    "C:\\Users\\think\\Project_v2\\kaggle-bench\\stage2-kronos-gates.py",
+    "C:\\Users\\think\\Project_v2\\kaggle-bench\\build_stage2_task.py",
+    "C:\\Users\\think\\Project_v2\\kaggle-bench\\verify_stage2_payload.py",
+    "C:\\Users\\think\\Project_v2\\kaggle-bench\\stage2-v1-output.json"
+  ],
+  "lesson": "When a generated task has a producer/consumer field contract, simulate the consumer locally against known data before pushing. py_compile and payload round-trip do not cover runtime field access.",
+  "fail_category": "verification-gap",
+  "fail_severity": "medium"
+}

@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "session-wrap-ab-6system-ship",
+  "timestamp": "2026-09-24T09:39:00.775112+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\run_bm25s_retrieval.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\bm25_judge.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\compute_bm25_new_pairs.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\aggregate_judge_to_graded.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\ab_plan\\vultr_si_deepseek_pricing.json",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\ab_results\\vultr_si_deepseek\\graded.json",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\ab_results\\vultr_si_deepseek\\metrics.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "session-wrap-ab-6system-ship",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................--.-..-.........................................-.--...-",
+  "action": "SESSION WRAP: AB 6-system retrieval benchmark shipped — bm25s leg (300q, 500k corpus), 5975 BM25-new judge pairs, 6-system aggregate (36000 slots), metrics, QMS PASS, MemPalace filed, retrace clean"
+}

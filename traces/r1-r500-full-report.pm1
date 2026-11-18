@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "r1-r500-full-report",
+  "timestamp": "2026-09-17T04:31:06.630542+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 240,
+  "tool_calls": 5,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\chatbot\\R1-R500_full_report.xlsx"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "r1-r500-full-report",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Generated R1-R500_full_report.xlsx (500 rows, 665KB) with requested columns: No(R-ID), Nama Penanya, ID Penanya, ID Pertanyaan, Pertanyaan, Status(solved/unresolved/n-a), Jawaban dari Bot, Jawaban dari Admin(edit), Admin. Stats: 351 solved, 73 unresolved, 76 no-data gaps, 172 with admin edits, 399 with asker names (from questions.jsonl uname cross-reference)"
+}

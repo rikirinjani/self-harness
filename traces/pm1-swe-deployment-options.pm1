@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-swe-deployment-options",
+  "timestamp": "2026-10-10T12:03:40.418968+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\results\\swe-gemma4-simple\\summary.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-swe-deployment-options",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "SWE experiment deployment options analyzed. Local machine insufficient (7.4GB RAM, no GPU). Recommended: (A) Together AI .50 fastest, (B) AWS EC2 g4dn.xlarge ~-3 most reliable, (C) Lambda Labs ~-3 budget option. Modal confirmed facts_line stripping issue. Trading loop results (4 models) validated and ready for paper."
+}

@@ -1,0 +1,14 @@
+{
+  "failure_id": "FAIL-2026-09-23-PM1ALL-001",
+  "timestamp": "2026-09-23T162823",
+  "category": "implementation-defect",
+  "severity": "low",
+  "task": "pm1all-consolidation",
+  "what_went_wrong": "copy_dir(PM1_OG -> 04_PM1_OG/results) double-nested the tree because the source folder's only child is itself named 'results'. Destination path became 04_PM1_OG/results/results/assessments/... instead of 04_PM1_OG/results/assessments/... . Initial landmark check correctly reported OVERALL: FAIL.",
+  "root_cause": "Destination directory name chosen to describe intent ('results') rather than mirroring the source folder name ('PM1_OG'), so the source's own 'results' child was appended under it. copy_dir was given a semantic destination label instead of a structural one.",
+  "what_i_actually_did_wrong": "I set dst='.../results' for a source dir named 'PM1_OG' without checking that PM1_OG's internal layout would then be re-prefixed. I also pre-wrote the landmark path assuming the flattened layout instead of the layout the copy operation would actually produce.",
+  "detection": "Post-copy landmark existence check (self-run verification).",
+  "corrective_action": "Moved assessments/ up one level and removed the redundant nested 'results' directory; re-ran full verification (6/6 tree comparisons + 15/15 landmarks) -> PASS.",
+  "prevention": "When copying a directory whose internal structure is not yet inspected, derive the destination name from the source folder name, then flatten/adjust only after inspecting the source layout. Always assert landmark paths against the real post-copy layout, not the intended one.",
+  "status": "closed"
+}

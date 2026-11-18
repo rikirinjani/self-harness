@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "kala-book2-ch2-written",
+  "timestamp": "2026-09-27T13:16:42.016640+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1500,
+  "tool_calls": 14,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\build_book2_task.py",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\scopes_book2.md",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\run_chapter.ps1",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\story_so_far.md",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\book2_ch2.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kala-book2-ch2-written",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Book 2 Ch2 'The Length of a Memory' written via kaggle task kala-book-two-chapter-two (run 3276158): 31952 chars, 3 letters, 6 scene breaks; .358162 (11285 in/6937 out). Built chapter pipeline: build_book2_task.py generator (repr-embedded prompt chaining prev chapter + digests + scope), run_chapter.ps1 driver (push/wait-ready/run/poll/download/verify/digest/cost), scopes_book2.md 11 chapter scopes. Fixes: WORDS KeyError, wait-ready before run submit, scope span cascade ch3-12 re-sequenced from Harrowmonth 115. Verified: 0 Kyerke, 0 Wren, months valid, no red flags"
+}

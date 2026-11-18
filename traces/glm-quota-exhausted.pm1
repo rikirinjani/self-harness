@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "glm-quota-exhausted",
+  "timestamp": "2026-09-25T07:21:57.328313+00:00",
+  "agent": "coordinator",
+  "outcome": "fail",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {
+    "category": "quota-exhausted",
+    "severity": "high"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "glm-quota-exhausted",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........-.--...-.........................................................................--...--........-.--...-",
+  "action": "GLM quota CHECK -> EXHAUSTED. GET /stats and POST /v1/chat/completions both return 429 rate_limit_exceeded: tokens_used 15,456,800 / tokens_limit 15,000,000 (103.0%, over by 456,800), window_ends_at 2026-09-25T11:24:27Z, Retry-After 14638s (~4.04h). Usage climbed from 1,970 tokens to 15,456,800 between checks roughly one hour apart - approximately 15.45M tokens burned, confirming the router counts full input tokens with NO cache-read discount (earlier uncertainty resolved: counting is aggressive). /chat/completions without /v1 gives 404 (correct path is /v1/chat/completions per config baseURL). Verified DeepSeek fallback still alive: deepseek-chat OK 687ms. GLM throttles until 11:24 UTC / 18:24 WIB."
+}

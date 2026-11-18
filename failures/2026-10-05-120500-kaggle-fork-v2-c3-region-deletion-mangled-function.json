@@ -1,0 +1,13 @@
+{
+  "schema": "failure/1",
+  "ts": "2026-10-05T12:05:00Z",
+  "agent": "orchestrator",
+  "task": "kronos-fork-apply-fixes v2 (run 4083035)",
+  "category": "wrong-approach",
+  "severity": "medium",
+  "summary": "C3 region-based deletion swallowed live code in deers-rock-adapter.ts (the buildMacroPacket body), producing TS2355; plus the fork-note reintroduced the deleted identifier so hits_after was non-empty.",
+  "root_cause": "Balanced-region expansion from hit cluster 157-188 consumed ~35 non-hit lines (switch statement, return block). Guard first-line-contains-identifier was insufficient. Note text contained the literal diagnosisWeightOverrides, defeating the zero-hits check.",
+  "evidence": "fork-smoke/kronos-fork-apply-fixes/2/gemini-3.7-flash/4083035/fork-evidence.json: fork_verdict FORK-CHECK (tsc_5xTS2307_adapter, c3_removed); tsc error_count 6 incl. TS2355 at adapter(156,4); c3.removed_blocks shows swallowed body; c3.hits_after={adapter:[22]} (own note).",
+  "containment": "v2 outputs never used for the review task; no local files touched; kernel tree ephemeral. Gates (tsc content gate, zero-hits gate) caught both defects.",
+  "correction": "v3: all-or-nothing whole-line literal deletion of the 6 known lines (verified against v2 context dump), note text asserted locally to exclude the identifier, set-equality check literal-set==hit-set; restore experiment-results/ before diff; record test-rewritten artifacts as a finding."
+}

@@ -1,0 +1,38 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-009c-matcher-repair-2026-09-16",
+  "timestamp": "2026-09-16T08:29:37.507754+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2100,
+  "tool_calls": 46,
+  "key_files": [
+    "experiments/pm1-rx/TASK_009C_MATCHER_AUDIT.md",
+    "experiments/pm1-rx/TASK_009C_MATCHER_DESIGN.md",
+    "experiments/pm1-rx/TASK_009C_PROGRESS.md",
+    "experiments/pm1-rx/matcher_calibration.json",
+    "experiments/pm1-rx/matcher_test_report.md",
+    "experiments/pm1-rx/harness/pm1rx/atomic_matcher.py",
+    "experiments/pm1-rx/harness/pm1rx/matcher_calibration.py",
+    "experiments/pm1-rx/harness/pm1rx/shadow_oracle_v2.py",
+    "experiments/pm1-rx/harness/tests/test_atomic_matcher.py",
+    "experiments/pm1-rx/harness/tests/test_matcher_calibration.py",
+    "experiments/pm1-rx/harness/tests/test_shadow_oracle_v2.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-009c-matcher-repair-2026-09-16",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........--.-..-.........................................-.--...-",
+  "action": "TASK 009C COMPLETE. Committed 90cec75 on pm1-rx-v14 (11 files, 4082 insertions). STALL RECOVERY: prior session stalled in an unbounded Get-ChildItem over the OpenCode storage tree (session-context archaeology, not project work); no 009C artifact had been written, so resume point was R0. Verified repo = Agentic Layer/morse (NOT the cwd), HEAD b941215, freeze tag 8304262 intact, no 009C commits, no stash, no orphan 009C subprocess (all live python/node procs are this session's MCP servers). DELEGATION BLOCKED: task(explorer) returned 'Insufficient balance' - account-level billing exhaustion, so all specialist lanes were unavailable; executed the task directly under the anti-stuck contract (bounded commands, per-phase progress file). PHASE 1 AUDIT: measured the frozen 009B matcher (_contains, shadow_oracle.py:295-308, forward token-set containment len(needle AND haystack)/len(needle) >= 0.5, boolean) on a 16-case matrix -> 6 FALSE POSITIVES, 3 FALSE NEGATIVES. Reproduced F6 exactly (b2 = 4/10 = 0.40). Found a NEW critical class not recorded in 009B: A4 polarity blindness - accepted deploy after QA vs deploy without QA (0.67), delete after vs before verification (0.67), repo X vs repo Y (0.75), notify QA vs marketing (0.50), and a fully reversed negation at 1.00. Also found two inconsistent overlap formulas (shadow_oracle._contains needle-normalized vs reference_v2._overlap min-normalized), six hand-tuned thresholds, and that the matcher also decides F2/F4/F9 attribution. PHASE 2 DESIGN: four-field atom model (polarity, order, action, object); 7 verdicts; CONTRADICTORY tested before every similarity verdict; compression by union coverage; thresholds to be frozen from planted calibration only. PHASE 3 IMPLEMENTATION: new additive modules atomic_matcher.py, matcher_calibration.py, shadow_oracle_v2.py; shadow_oracle.py / reference_v2.py / shadow_coverage.py NOT modified. Fixed 2 defects during implementation: (1) morphology doubling-undo turned 'adding'->'ad', breaking the reorder case - now undoes doubling only when the stem exceeds 3 chars; (2) first freeze attempt raised DESIGN FAILURE (the designed STOP) because the compression model was too permissive - diagnosed as a model error, not a threshold problem, and corrected by requiring >=75% reference-object preservation with stopwords excluded from the object. PHASE 4 CALIBRATION: 1053 triples evaluated, 168 survived, strictest-consistent selection -> tau_paraphrase 0.60, tau_compress 0.75, tau_min 0.30; 22/22 planted cases pass. PHASE 5-6: 57 new tests; matcher_test_report.md. PHASE 7: full harness suite 402 passed 0 failed (345 at 009B + 57 new), no regressions. SCIENTIFIC CORRECTION: the 009B b2 pair is NOT a faithful compression - the consumer dropped a whole reference clause and added an unrelated one; it is now a reclassification case expecting PARTIAL, kept alongside a genuine compression case the legacy matcher rejects at 6/13=0.46. HISTORICAL ARTIFACTS UNCHANGED: Exp001 tag pm1-rx-confirmatory-001-final -> 8304262; no 009C code reads pilot_009a/009b results; no re-score; no real-data pilot run."
+}

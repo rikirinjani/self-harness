@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261105T124455-orchestrator-cli",
+  "timestamp": "2026-11-05T12:44:55.544075+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 48,
+  "key_files": [
+    "scripts/test_no_machine_paths.py OPENCODE-REPORT-ROUND3-2026-11.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261105T124455-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "S10: fixed the machine-path lint patterns (S9's double-backslash regex missed the single-backslash bug it was written to catch); added honest 3-seed check (plain C:\\Users, D:\\proj, /Users, no .opencode), 13-case table self-test built with chr(92), mutation proof showing S9 patterns fail 5/13 cases; re-ran fresh-clone portability on both autocrlf settings with PYTHONUTF8=1 - all 10 suite/test commands exit 0, 3 external files mtime-untouched, release identity a7e01542... unchanged; updated round-3 report with S10 section and S9 correction"
+}

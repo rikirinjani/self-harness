@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "vision-capability-plan",
+  "timestamp": "2026-09-17T00:49:53.548911+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 2,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "vision-capability-plan",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Added vision capability to roadmap: user sends image (screenshot error SatuSehat/SERKOM/SKP) with query. Analysis: DeepSeek/Groq have NO vision; gpt-5-nano and Gemini Flash-Lite support vision (~Rp1-2rb per image query, Gemini has free tier). Architecture: Telegram photo handler + WA image message -> download -> base64 -> vision LLM route in router (incoming.image flag), caption becomes question. Est 10% of traffic uses vision = ~Rp1jt/bln extra, or near-zero with Gemini free tier. Both web chat and vision added to plan, deferred to quiet hours"
+}

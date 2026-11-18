@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-09-27T00:00:00+08:00",
+  "category": "harness-misconfiguration",
+  "slug": "l2-stability-badkey-wrongcasecount",
+  "task": "Layer-2 stability measurement (14 cases x 5 reps x 2 conditions)",
+  "severity": "medium",
+  "outcome": "recovered",
+  "failures": [
+    {
+      "id": "F1",
+      "what": "First full run (340 calls attempted over 20 min) failed 100% with HTTPError: key() in l2_p0_3_eval.py fell back to UTIM_NVIDIA_KEY (nvapi-... NVIDIA key) and sent it to api.vultrinference.com -> 422 'Invalid API key'. Error handler recorded only exception type, discarding the HTTP status/body. No preflight existed, so ~250 garbage ERROR rows accumulated before the shell timeout killed the run.",
+      "root_cause": "Key-resolution fallback picked a provider-mismatched key; no preflight validation of key+endpoint before batch; error capture dropped status code making diagnosis blind.",
+      "what_i_did_wrong": "Trusted P0-3's implicit key resolution without verifying which key would be used against which endpoint; ran a 340-call batch with no smoke test; error path lost diagnostic detail.",
+      "fix": "Added preflight() single-call gate (aborts on http>=400 before any batch work), explicit 4xx fail-fast with status+body capture in call_one, and ran with VULTR_SI_API_KEY explicitly set (verified http 200 first)."
+    },
+    {
+      "id": "F2",
+      "what": "Harness loaded all 34 cases (including 20 controls) instead of the authorized 14-case series (6 premise + 8 scope); first run would have measured 340 observations instead of 140.",
+      "root_cause": "No group filter and no count assertion against the authorization scope.",
+      "what_i_did_wrong": "Translated 'same 14-case series' into 'load the cases file' without filtering to the specified groups; authorization scope not encoded as an assertion.",
+      "fix": "Filter SERIES_GROUPS=('premise','scope') + assert len(cases)==14; deleted stale records so resume started clean."
+    },
+    {
+      "id": "F3",
+      "what": "After the successful 140-call run, analyze() crashed with TypeError ('int' object is not iterable) on the cost calculation — a sum() misuse in a generator expression.",
+      "root_cause": "cost = (sum(t) * USD_PER_M_IN / 1e6 for t in tin) built a generator of floats but the next line called sum(cost) where cost was... actually the generator expression `sum(t)*rate for t in tin` — the bug: parenthesized generator assigned, then sum(cost) summed correctly, but the inner expression `sum(t)` treated each token count t as an iterable. Typo: meant `t * rate`.",
+      "what_i_did_wrong": "Wrote the cost generator without a syntax/dry-run check on the analysis path; the run itself (140 calls, ~$0.10, 9.3 min) was already complete and safe on disk, but the report was not produced on first try.",
+      "fix": "Corrected to sum(t * RATE / 1e6 ...); re-ran in resume mode (0 new API calls); added independent recomputation script (l2_stability_verify.py) that re-derives every headline metric from the raw JSONL via a separate code path."
+    }
+  ],
+  "impact": "Wasted one 20-minute shell window and ~250 invalid API attempts (all rejected at http 422 before inference — no model cost). No experiment data lost; the authorized 140-call measurement completed cleanly after fixes. Cost of the real measurement: $0.10245.",
+  "systemic_note": "Batch LLM harnesses in this project must (a) preflight key+endpoint, (b) assert authorization scope counts, (c) capture HTTP status+body in errors. P0-3's harness shared defects (a) and (c) but got lucky with the key."
+}

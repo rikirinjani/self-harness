@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-continuation-session-wrap",
+  "timestamp": "2026-09-26T01:10:16.602763+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3600,
+  "tool_calls": 60,
+  "key_files": [
+    "Agentic Layer/pm1-continuation/run_pilot.py",
+    "Agentic Layer/pm1-continuation/harness/runner.py",
+    "Agentic Layer/pm1-continuation/results/pilot/summary.json",
+    "Agentic Layer/qms/records/verifications/VER-2026-09-26-PM1-CONT-T1.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-continuation-session-wrap",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........-.--...-........................................-.--...-",
+  "action": "Session wrap: T1 pilot completed+verified (all gates PASS, \\.3368), fixed positive_control predicate defect + cwd/results-dir + resume-aggregation hazards, QMS VER-2026-09-26-PM1-CONT-T1, failure record filed, T2 launched detached PID 27472 ETA ~15:30, retrace scanner clean"
+}

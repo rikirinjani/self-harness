@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "poco-m3-debloat-7pkgs",
+  "timestamp": "2026-09-26T12:41:56.062428+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 480,
+  "tool_calls": 12,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "poco-m3-debloat-7pkgs",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........................................................-.--...-",
+  "action": "Removed 7 packages from POCO M3 over WiFi ADB per user request: wps.xiaomi.abroad.lite, amazon.appmanager, micredit.in, dubox.drive, facemoji.lite.xiaomi, reelbuzz.tv, qrcode.scanner.qrcs. Method pm uninstall -k --user 0 (reversible, APKs kept on /system for preloads). Pre-check: default IME is Gboard so Facemoji removal safe. One package (facemoji) printed MIUI Failure -1000 but re-verification proved removal committed (cmd package uninstall: not installed for 0; grep visible=0 disabled=0 for all 7). Package count 369 to 362, /data 65% to 64%. Zero collateral changes: no settings touched, Gboard and all system packages intact."
+}

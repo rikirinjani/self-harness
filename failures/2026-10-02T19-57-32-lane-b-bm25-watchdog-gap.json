@@ -1,0 +1,20 @@
+﻿{
+    "fix_verified":  true,
+    "slug":  "lane-b-bm25-watchdog-gap",
+    "what_i_did_wrong":  [
+                             "did not gate the modal run on the 15s recheck output (recheck showed B: closed but command proceeded anyway)",
+                             "shipped module-level path code without simulating the in-container import path",
+                             "allowed a crash-looping app to run for the full 45-min tool timeout instead of failing fast"
+                         ],
+    "ts":  "2026-10-02T12:57:32.4119452Z",
+    "category":  "process-deviation",
+    "root_cause":  [
+                       "modal CLI crashed on Windows cp1252 console when printing checkmark (UnicodeEncodeError U+2713) during first run attempt, aborting before execution",
+                       "module-level HERE.parents[2] assumed repo-relative path but Modal imports entry module as flat /root/run_bm25_modal.py in-container -\u003e IndexError crash-loop for ~45 min",
+                       "watchdog no_app_polls counter is not reset on relaunch; after first auto-close, lane B was re-closed within one poll of relaunch, so both the crash-loop window and the successful run window were untracked"
+                   ],
+    "agent":  "implementer",
+    "recovery":  "fixed path bug, re-ran successfully under a relaunched lane; all cokro-bm25 apps stopped; results verified 300x20",
+    "impact":  "ledger-tracked lane B spend .0899 (.0825+.0074); ~48 min of actual Modal container time ran outside a tracked lane-open window; global closed spend .2850/ cap",
+    "title":  "Modal runs executed while watchdog lane B showed closed"
+}

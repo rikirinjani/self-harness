@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "task026-jev-second-stop",
+  "timestamp": "2026-09-23T01:16:57.356719+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 6,
+  "key_files": [
+    "morse/experiments/pm1-rx/scripts/task026_jev_second_stop.py",
+    "morse/experiments/pm1-rx/task026_jev_second_stop.json",
+    "morse/experiments/pm1-rx/raw_jev/t026_ss_dispose__rot0.json",
+    "morse/experiments/pm1-rx/raw_jev/t026_ss_dispose__rot1.json",
+    "morse/experiments/pm1-rx/raw_jev/t026_ss_dispose__rot2.json",
+    "morse/experiments/pm1-rx/raw_jev/t026_ss_sufficiency.json",
+    "morse/experiments/pm1-rx/TASK_026_ADJUDICATION.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task026-jev-second-stop",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........--.-..-.........................................-.--...-",
+  "action": "TASK-026 SECOND STOP Jev advisory: 3/3 ACCEPT across rotations positions A/C/B, QC-ready noul 0.96, negative control noul 0.03 PASS; raw persisted; advisory noted in ADJUDICATION.md; human disposition still authoritative"
+}

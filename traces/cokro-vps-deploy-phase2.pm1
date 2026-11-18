@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "cokro-vps-deploy-phase2",
+  "timestamp": "2026-09-29T14:28:56.541310+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 1800,
+  "tool_calls": 26,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\api-requirements.txt",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\api_server.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\docs\\api-server.md"
+  ],
+  "failure": {
+    "category": "dependency-requirements-defect",
+    "severity": "medium"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "cokro-vps-deploy-phase2",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........---..-..........--.-..-.........-.--...-........................--.-..-.........-.--...-",
+  "action": "VPS deploy phase 2: .env transferred unopened (authorized), full smoke -> ask 200 33-38s retrieval+DeepSeek OK, /api/paper found:false traced to missing pylance (swallowed ImportError), installed pylance 12.0.0 + patched api-requirements.txt, paper found:true. Differential probe vs prod: persona empty-answer flaky on both (pre-existing). Records: VER-COKRO-VPS-P1-001, failure deploy-pylance-requirement-gap"
+}

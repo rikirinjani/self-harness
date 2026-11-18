@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-continuation-t1-pilot",
+  "timestamp": "2026-09-26T00:59:26.645081+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 40,
+  "key_files": [
+    "Agentic Layer/pm1-continuation/harness/runner.py",
+    "Agentic Layer/pm1-continuation/run_pilot.py",
+    "Agentic Layer/pm1-continuation/results/pilot/summary.json",
+    "Agentic Layer/qms/records/verifications/VER-2026-09-26-PM1-CONT-T1.json",
+    "self-harness/failures/2026-09-26-pm1-continuation-pilot-recompute-incident.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-continuation-t1-pilot",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........--.-..-.........................................-.--...-",
+  "action": "T1 pilot monitored to completion (1748 calls, \\.3368, 0 failures): sanity gate PASS, verbatim-C detector CLEAN x5, all cap-exercised positive controls OK after fixing bounded-predicate defect (est[0]*3 impossible bound); caught cwd-relative results_dir hazard (bogus duplicate tree deleted, \\.04 waste), fixed resume aggregation (load skipped results), rebuilt summary offline, QMS VER-2026-09-26-PM1-CONT-T1 PASS"
+}

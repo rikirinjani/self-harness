@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261003T221101-orchestrator-cli",
+  "timestamp": "2026-10-03T22:11:01.028275+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3600,
+  "tool_calls": 10,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\docs\\adr\\evidence\\ADR-004-10k-local-forecast\\longrun-report.json",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\docs\\adr\\evidence\\ADR-004-10k-local-forecast\\validation.log"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261003T221101-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Kaggle 10k official re-validation launched: kernel v3 pushed (rikirinjani/deers-rock-bounded-10k-validation, RUNNING), pinned to reviewed candidate 906f245 with Amendment-1 tuned config; local 10k true-peak forecast PASS 4/4 (maxRss 400.7/450, journal 265.1/300, dischargedAfterResume 850, resume spike 355.1 vs 641.9 in failed run) archived hash-verified into docs/adr/evidence/ADR-004-10k-local-forecast (commit 587905d, pushed); polling kernel to completion"
+}

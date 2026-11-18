@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "khanza-report-json",
+  "timestamp": "2026-10-10T05:51:25.617940+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 15,
+  "key_files": [
+    "khanza_report.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "khanza-report-json",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Generated comprehensive JSON report for Khanza DR E2E pipeline: 177 patients, 177 visits, 212 prescriptions, 0 orphans, Rp 107.7M billing revenue across 3031 billing rows. All reviewer findings addressed."
+}

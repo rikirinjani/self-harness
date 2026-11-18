@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "e4-phase-b-docs",
+  "timestamp": "2026-09-27T05:27:13.323743+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\G6-E4-BASELINE-AND-ALERTS.md",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\G6-E4-ENGINEERING-FINDINGS.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "e4-phase-b-docs",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "G6-E4 Phase B docs written directly after fixer lane abandoned (4th fresh-session overflow): baseline bands from E3 zero-variation, KS p<0.01 + envelope escalation, four alert categories, L1 abstention expectations; engineering findings EF-1 reconnect latency, EF-2 fallback-log append race, E2 test-fix traceability"
+}

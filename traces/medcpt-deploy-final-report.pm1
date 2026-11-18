@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "medcpt-deploy-final-report",
+  "timestamp": "2026-10-04T15:27:13.528611+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 15,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\medcpt_reranker.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\api_server.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "medcpt-deploy-final-report",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "MedCPT deploy complete: flag ENABLE_MEDCPT_RE_RANK=true set, service restarted, live test HTTP 200 in 32s with answer. Memory 1.9 GB (76% of 2.5 GB limit). Deers-Rock co-tenant healthy (254 MB). Recommendation: keep flag on for canary, or switch to ONNX int8 for 60% memory reduction."
+}

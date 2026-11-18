@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-r2-early-read",
+  "timestamp": "2026-09-28T06:58:57.619449+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-r2-early-read",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................................................................-.--...-",
+  "action": "R2 early read (trial 1 complete, all K cells peeked): the discriminating design WORKED - failure mode now IDENTIFIED. ALL carrier arms (C, C-win, C-oc, P+FACTS) at EVERY K: OTHER(1->1) - position 1 from hop 1 through hop 250, the collapse attractor, uniform across delivery channels. P: NO_EFFECT (0->0) at every K - control correct. Delayed-compliance question answered NO (collapse is immediate and total). Compliance with the override's actual target (L=2): 0% across every condition INCLUDING P+FACTS with the fact in-packet every hop. Position 1 is neither the notice target (2) nor the base (0) - exists nowhere as a target; likely the system prompt BUY-1 default with quantity conflated as position. V0.7-s recall 1.0 now fully explained (same collapse coincided with L=1). Open: mechanism (why position 1) needs transcript inspection - not saved per-hop. Run 26/40, trial 2 in progress, ETA ~16:00-17:00, cost ~.5."
+}

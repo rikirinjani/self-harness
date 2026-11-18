@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-continuation-vultr-pricing",
+  "timestamp": "2026-09-25T23:32:34.612092+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 3,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\PM1_CONTINUATION_COST_ESTIMATE.md",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\pm1_model_cost_compare.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-continuation-vultr-pricing",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................-.--...-........-.--...-........................................-.--...-",
+  "action": "Re-costed PM-1 continuation against Vultr inference price list. Recommended DeepSeek V4 Flash 0731 (0.10/0.25) - V0.5's original model family, 40% cheaper than V4.1 Flash. Tiers: pilot 0.36 / core 3.20 / full 11.50 / worst 14.39. Cross-model replication (V0.5 single-model gap): +3.13 via Qwen 3.8 Flash Next. Avoid GLM 5.x (92.67 full-tier)."
+}

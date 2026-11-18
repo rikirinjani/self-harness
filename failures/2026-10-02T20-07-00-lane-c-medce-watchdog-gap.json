@@ -1,0 +1,20 @@
+{
+    "ts": "2026-10-02T12:07:00Z",
+    "agent": "implementer",
+    "category": "process-deviation",
+    "severity": "medium",
+    "title": "Lane C Modal run executed while watchdog showed lane C closed",
+    "root_cause": [
+        "watch loop matches `marker in a[\"description\"]` against `modal app list` output; that CLI truncates the Description column in a narrow terminal, rendering marker `cokro-medce` as `cokro-medc...`, so has_app stayed False for AUTO_CLOSE_POLLS(4) consecutive polls and lane C auto-closed at +123s while the container was still scoring (with COLUMNS=400 the full description is visible - verified after the fact)",
+        "ledger stores only one segment per lane key (lanes.C is overwritten on relaunch), so the first auto-close segment ($0.0274) survived only in terminal output and disappeared from the file; the surviving segment (12:49:03->12:49:34, $0.007) ran after the app had already stopped",
+        "did not re-run `status` while the app was up to confirm lane C was still open; had only checked launch/close return codes, so the gap went unnoticed for the whole scoring window"
+    ],
+    "what_i_did_wrong": [
+        "launched lane C without first proving the marker would be visible to the watch loop in this terminal (no COLUMNS/wide-terminal check before launch, no post-launch `status` confirmation)",
+        "relied on ledger numbers for spend without cross-checking them against the app's actual wall-clock lifetime",
+        "accepted `close --lane C` / auto-close output at face value instead of treating 'lane closed while Modal app list still shows cokro-medce-lane-c running' as a contradiction to investigate"
+    ],
+    "impact": "container ap-91GdiSBw66yCxMY5i0tpZ7 ran 12:39:24->12:46:15 UTC (~411s ~= $0.091 at the declared $0.000222/s) but only ~155s was inside an open lane window; recorded lane C spend $0.0344 ($0.0274 + $0.007) vs ~$0.091 actual (~$0.057 / 62% undercount). Lane cap $1.5 and global $25 were never approached (global closed spend $0.2950), and the run itself completed correctly (16360 pairs x 2 models, reorder-only verification ALL OK), so impact is monitoring/evidence integrity rather than cost or output correctness.",
+    "recovery": "reconciled ledger vs modal app list timestamps, recorded the discrepancy here and in the lane C trace and final report; did not edit modal_watchdog.py (not in writable set) - marker/terminal fix must be handled by a human-authorized change. All cokro-* apps confirmed stopped.",
+    "fix_verified": false
+}

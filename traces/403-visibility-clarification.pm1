@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "403-visibility-clarification",
+  "timestamp": "2026-09-17T04:22:21.716259+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 30,
+  "tool_calls": 1,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "403-visibility-clarification",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................-.--...-........-.--...-........................................................-.--...-",
+  "action": "Clarified 403 visibility: error is server-side only (Telegram API -> bot server), never shown to users. Blocked user cannot send messages to bot at all (Telegram blocks client-side), so no follow-up conversation happens with them; from their view bot just never responds. Error only visible in bridge.err log and to admins in review group ('Gagal mengirim ke telegram'). Other users unaffected"
+}

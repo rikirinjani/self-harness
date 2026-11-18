@@ -1,0 +1,36 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-label-safety-fields",
+  "timestamp": "2026-10-17T13:57:29.772270+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 5400,
+  "tool_calls": 70,
+  "key_files": [
+    "rag-queries/curation/classify_label_safety.py",
+    "rag-queries/curation/kaggle_label_safety_sourcing.py",
+    "rag-queries/curation/label_sourcing_safety_fields.json",
+    "rag-queries/curation/label_safety_raw.json",
+    "rag-queries/curation/apply_label_safety.py",
+    "api/drugs.json",
+    "rag-queries/test_indication_gate.py",
+    "rag-queries/kaggle_gate_verify.py",
+    "rag-queries/curation/label-safety-verification.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-label-safety-fields",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "DQF safety-field label sourcing: Kaggle kernel dqf-label-safety-sourcing-cpu (v3+v4) fetched DailyMed SPL for 56 drugs (54 found; vildagliptin/gliclazide not US). classify_label_safety.py ordered rules -> proposals with deciding quotes (evidence 277962a). User APPROVED all incl. statin pregnancy X->D downgrade (FDA 2021). apply_label_safety.py: 152 cells / 53 drugs, warfarin E1 '(label)' values kept (a272dfe). Gate verified on Kaggle dqf-gate-verify-cpu @a272dfe: indication_gate 28/28, scorer PASS, anticoag PASS, merge_lock 8/8, grid 352/0, scoped unchanged; pregnancy_x={lovastatin,warfarin}; hepatic gate 10 drugs. Verification b7c2894. QMS VER-2026-10-17-DQF-LABEL-SAFETY-001. Classifier bugs fixed en route: combo label pick (hyphen), 'delivery'~'liver', embryo-fetal false P2, no-dose-adjustment read as caution."
+}

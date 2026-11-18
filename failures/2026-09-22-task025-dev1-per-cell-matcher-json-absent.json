@@ -1,0 +1,11 @@
+{
+  "record_type": "failure",
+  "agent": "orchestrator",
+  "task": "TASK025",
+  "category": "process",
+  "summary": "DEV-1: Task 024 scoring persisted only aggregate scoring_results.json; per-cell matcher JSON absent for 39 cells (protocol §2.2 expects them)",
+  "root_cause": "verify_and_score_all.py was written to emit only the aggregate; protocol per-cell matcher persistence requirement never translated into the script, and no post-scoring test asserted per-cell matcher file existence",
+  "what_i_did_wrong": "Task 024 scoring lane completed and passed its gates without anyone checking that the protocol's per-cell matcher artifact requirement was actually implemented — the gap was only discovered later during Task 025's independent QC",
+  "response": "Recorded DEV-1 in TASK_025_CELL_AUDIT.json; filed NCR-2026-09-22-TASK025-001; independently re-ran frozen M1/M2 locally (pure CPU) to reconstruct missing per-cell verdicts for analysis only; did not modify Task 024 artifacts",
+  "status": "recorded_pending_human_disposition"
+}

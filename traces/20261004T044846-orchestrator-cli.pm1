@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261004T044846-orchestrator-cli",
+  "timestamp": "2026-10-04T04:48:46.318096+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 7200,
+  "tool_calls": 12,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\docs\\adr\\evidence\\ADR-004-10k-kaggle-v4\\longrun-report.json",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\docs\\adr\\evidence\\ADR-004-10k-kaggle-v4\\validation.log",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\docs\\adr\\evidence\\ADR-004-10k-kaggle-v4\\kernel.log",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\docs\\adr\\ADR-004-bounded-state-durable-scheduling.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261004T044846-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Kaggle v4 official re-validation reconciled: FAIL 1/4 (rssCeiling 579/450 only; journal 265.1/300 PASS, dischargedAfterResume 850, charges 97765 declining, no crash) - cross-host determinism proven (charges/journal/encounters/queueLen byte-identical to local forecast); RSS divergence attributed to V8 lazy-GC on RAM-rich unconstrained hosts (live heap ~77MB post-gc), cgroups do not bound V8 heap sizing = live-incident mechanism; ADR Amendment 2 + v4 evidence archived (commit c69c4cb pushed); constrained-heap smoke PASS locally (2k ticks, --max-old-space-size=350, crash at 1000, resume parse survived); kernel v5 launched with node --max-old-space-size=350 (same constraint production will set), pinned 906f245"
+}

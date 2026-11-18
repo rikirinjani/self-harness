@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "vultr-si-gate-pass-hold",
+  "timestamp": "2026-09-24T01:45:05.347362+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "eval/ab_plan/smoke_vultr_si.py",
+    "eval/ab_plan/judge_smoke_vultr.py",
+    "eval/ab_plan/full_judge.py",
+    "eval/ab_plan/launch_full_judge.sh",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\ab-full-judge-vultr-si-gate-20260924.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "vultr-si-gate-pass-hold",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................--.-..-.........................................-.--...-",
+  "action": "Vultr SI gate PASS (models/chat/judge_prompt_v4); nemotron stopped; key in .env; full run held for user go"
+}

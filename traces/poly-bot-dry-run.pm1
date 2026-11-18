@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "poly-bot-dry-run",
+  "timestamp": "2026-10-07T08:04:12.129086+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 400,
+  "tool_calls": 20,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\poly_bot_v9.py,C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\polymarket-edge\\analysis.ipynb"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "poly-bot-dry-run",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Ran v9 BS edge model dry run on Singapore VPS (paper mode). Fixed target extraction. Results: BTC Dec 2027 SELL at -20pp edge. BTC Mar/Jun 2027 near-neutral. MegaETH SKIP (not price-target). AWS EC2 spun up in us-east-1 but SSH unreachable — geo-unrestricted deploy pending."
+}

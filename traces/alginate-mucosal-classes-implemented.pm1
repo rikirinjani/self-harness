@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "alginate-mucosal-classes-implemented",
+  "timestamp": "2026-09-25T05:28:50.947291+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1500,
+  "tool_calls": 20,
+  "key_files": [
+    "rag-queries/l3_query_templates.json rag-queries/extract_l3.py api/drugs.json rag-queries/l3_output/_backups/drugs_20260925_newclasses_pre.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "alginate-mucosal-classes-implemented",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Authored l3_query_templates.json entries for the last 2 unimplemented classes (Alginate, Mucosal Protectant) and their branches in extract_l3_profile. Alginate (sodium-alginate): raft_strength/reflux_suppression/ddi_risk 1-3 + sodium_load mg/dose. Mucosal Protectant (sucralfate): barrier_protection/ulcer_healing/aluminum_exposure/ddi_risk 1-3. Added _extract_sodium_mg helper (curated value first, else PK-note parse). All 88 drugs now scored (was 84/88). Repaired 2 malformed curated values (sucralfate ddi_risk 166->2, sodium-alginate 0->2, both off the 1-3 scale). Verified 88/88 reparse+merge; diff confined to the 2 drugs, zero collateral. Commit 3713746 pushed."
+}

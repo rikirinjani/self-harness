@@ -1,0 +1,11 @@
+{
+  "record_type": "failure",
+  "agent": "orchestrator",
+  "task": "TASK025",
+  "category": "process",
+  "summary": "DEV-2: Rule D matcher channel defaulted to UNKNOWN for 141/144 decisions; Matcher∪Judge fusion never engaged on the 39 main-run cells; F1_RuleD ≡ F1_Judge exactly",
+  "root_cause": "Composition of DEV-1 (missing per-cell matcher JSON) with judge_and_rule_d_all.py soft-defaulting missing verdicts to 'UNKNOWN' (lines 127–132) instead of hard-failing; no assertion required matcher_channel to contain real verdicts before accepting Rule D results",
+  "what_i_did_wrong": "Task 024's Rule D results were labeled and reported as full Rule D fusion outcomes when the matcher half of the fusion was silently starved — a misleading BOTH_REJECT reason code (136x) masked that the matcher never voted; this was only caught in Task 025's QC",
+  "response": "Recorded DEV-2 in TASK_025_CELL_AUDIT.json; filed NCR-2026-09-22-TASK025-002; quantified consequence (RuleD ≡ Judge in every arm); left true fusion counterfactual UNMEASURED because re-scoring is prohibited in Task 025; escalated to reviewer as decision item 2",
+  "status": "recorded_pending_human_disposition"
+}

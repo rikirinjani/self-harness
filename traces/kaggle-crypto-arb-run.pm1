@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "kaggle-crypto-arb-run",
+  "timestamp": "2026-10-07T06:03:36.630155+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 18,
+  "key_files": [
+    "C:\\Users\\think\\jev-crypto-trader\\research\\poly-bot\\kaggle-run.log",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-bot\\poly_bot.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kaggle-crypto-arb-run",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Ran crypto arb bot on Kaggle (from polymm architecture). Found 5 opportunities per cycle, executed 3 trades/cycle. Paper trading only. Kernel: https://www.kaggle.com/code/rikirinjani/crypto-arbitrage-bot-from-polymm"
+}

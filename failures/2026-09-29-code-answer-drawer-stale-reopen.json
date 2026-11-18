@@ -1,0 +1,18 @@
+{
+  "id": "2026-09-29-code-answer-drawer-stale-reopen",
+  "date": "2026-09-29",
+  "category": "code",
+  "severity": "medium",
+  "task": "P0 fix list from Astra's Cokro web-UI review (frontend web/src)",
+  "what_went_wrong": "First implementation of the citation drawer's stale-response guard (citationSeq counter) only handled overlapping FETCHES (rapid re-clicks). It did not handle CLOSE-vs-resolve: clicking a citation, closing the drawer (backdrop/close button/Escape) while fetchPaper was still in flight allowed the late response to call setActiveCitation(paper) and RE-OPEN the drawer with stale content. Detected during browser-smoke test design review (not in production).",
+  "root_cause": "State invalidation tied only to new-click events (seq++ inside handleCitationClick) and not to close events; close paths called setActiveCitation(null) directly, leaving citationSeq.current unchanged so the pending promise still matched the current seq.",
+  "what_i_actually_did_wrong": "Guarded the read path but not the close path when designing the race protection — the invariant should have been 'seq identifies the drawer session, and every session-ending event (close) invalidates it', written at the same time as the open path.",
+  "fix": "Added closeDrawer() which does citationSeq.current++ (invalidating in-flight fetches), setActiveCitation(null), setCitationLoading(false); all three close paths (backdrop onClick, close button, Escape keydown) now call it instead of setActiveCitation(null).",
+  "detection": "Self-caught while writing the browser smoke (the initial test design — rapid double-click behind the backdrop — was itself impossible, which exposed that the realistic race is close-then-late-resolve).",
+  "verification": "Rebuilt (next build clean) and re-ran playwright smoke: 'no_stale_reopen_after_close' PASS (close during 1s in-flight fetch, drawer stays closed for 1.3s past response), 'stale_guard_last_click_wins' PASS (late PMID1 response does not overwrite PMID2 drawer). Full smoke 30/30 PASS.",
+  "secondary_process_note": "First version of the static verification script produced 5 false-positive FAILs (React <!-- --> text-node separators, minified lowercase hex #5f7078, U+FFFD inside Next.js polyfills.js, framework 'not supported' strings). Root cause: over-strict exact-substring matching across framework assets. Triaged each with location dumps before drawing conclusions. Also: first browser-smoke draft used playwright sync-API route handlers with time.sleep — this blocks the driver thread and serialized fetch-response with assertions (2 false FAILs); fixed by moving the latency mock into an in-page fetch wrapper.",
+  "files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\web\\src\\app\\answer\\content.tsx"
+  ],
+  "status": "fixed-and-reverified"
+}

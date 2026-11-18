@@ -1,0 +1,16 @@
+﻿{
+  "timestamp": "2026-10-01",
+  "category": "environment-limitation",
+  "slug": "kaggle-kbench-cli-push-no-runtime",
+  "summary": "Two failed kernel-run attempts while trying to run a kaggle_benchmarks task via CLI push.",
+  "what_happened": [
+    "v1 push: papermill ValueError 'No kernel name found in notebook' - generated ipynb lacked top-level nbformat/nbformat_minor keys and cell id.",
+    "v2 push (nbformat fixed): kernel executed but failed with ModuleNotFoundError: No module named 'kaggle_benchmarks'."
+  ],
+  "root_cause": "kaggle_benchmarks is not installed in the standard image used by CLI-pushed kernels. Its LLM resolution requires MODEL_PROXY_URL + MODEL_PROXY_API_KEY (kaggle_benchmarks/kaggle/models.py), which only the Benchmarks-task runtime injects; the model gpt-6-astra exists only on that platform proxy (not on the user's local gateway, not pip-installable-with-creds). Benchmark tasks therefore must be created via the Kaggle Benchmarks UI, which provisions the runtime kernel (pattern: new-benchmark-task-* kernels).",
+  "fixes_applied": [
+    "nbformat 4/5 + cell id added (needed for any CLI-pushed notebook)",
+    "kernel metadata id must equal title-derived slug or SaveKernel returns 409"
+  ],
+  "lesson": "To run a kbench task: author the task .py (base64 content + @kbench.task + LLM_DEFAULT=gpt-6-astra setdefault pattern), then create the task through kaggle.com/benchmarks UI; afterwards fetch results with kaggle kernels output on the generated kernel slug."
+}

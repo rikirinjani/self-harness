@@ -1,0 +1,40 @@
+{
+  "pm1_version": 1,
+  "session_id": "r5-p11-report-and-commits",
+  "timestamp": "2026-10-20T01:30:40.733790+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 2100,
+  "tool_calls": 24,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\khanza-r5\\docs\\khanza_r5_p11_opencode_report.md",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\khanza-r5\\docs\\khanza_benchmark_report_R5.md",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\khanza-r5\\docs\\khanza_r5_release_manifest.md",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\khanza-r5\\docs\\khanza_r5_task_p11_negative_controls.md",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\khanza-r5\\docs\\khanza_session_handoff_20261017.md",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\khanza-r5\\records\\qms\\VER-2026-10-19-DR-KHANZA-R5-P11-001.json",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\khanza-r5\\records\\failures\\20261019T2135Z-process-r5-p11-concurrent-writer-evidence-unbinding.json",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\khanza-r5\\records\\failures\\20261018T1630Z-evidence-integrity-r5-p10-nondiscriminating-checks.json",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\khanza-r5\\evidence\\p11\\r5_p11_live_final_20261019T211234Z.txt",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\khanza-r5\\evidence\\p11\\r5_p11_frozen_manifest_20261020.sha256"
+  ],
+  "failure": {
+    "category": "workflow",
+    "severity": "low"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "r5-p11-report-and-commits",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........---..-..........--.-..-.........--.-..-..........--...--........-.--...-........-.--...-",
+  "action": "Staged and committed P11 work (90e981d) and the P11 opencode report (f935b1e) on khanza-r5-p6: helper-script cleanup, secret scan (0 hits for VPS_HOST/KEY/OPTS/PORT, private-key, password, ssh-rsa, AKIA patterns; tgz streams checked), report including all failed/aborted runs, clean live-state proof, 26/28 rubric self-score, AC-9 disclosed PARTIAL. No push. Tools on VPS remain chattr +i."
+}

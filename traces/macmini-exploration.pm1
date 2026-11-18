@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "macmini-exploration",
+  "timestamp": "2026-09-28T05:49:09.323584+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 14,
+  "key_files": [
+    "C:\\Users\\think\\self-harness\\failures\\2026-09-28-infrastructure-librarian-session-compaction-limit.json",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\query_lancedb_fulltext.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "macmini-exploration",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Explored Mac Mini as API host target per user direction: SSH probes confirmed M4/16GB/100GB free, existing ~/rag-service venv (py3.12.13 uv-managed, has lancedb/torch/transformers, missing fastapi/uvicorn/PyJWT/boto3), live telegram bot launchd job, port 8000 free, S3/HF/DeepSeek reachable, AWS+DeepSeek+Telegram secrets present but JWT_SECRET/RESEND missing, RC API files absent (api_server/auth/layer1_abstain/request_events), Mac query_lancedb_fulltext.py is an OLDER divergent copy. Research: CF Containers need Workers Paid, Python Workers can't run torch, R2 S3-compat confirmed suitable; 3 librarian sessions died at bootstrap (failure record written)"
+}

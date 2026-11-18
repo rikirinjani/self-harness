@@ -1,0 +1,27 @@
+{
+  "id": "2026-09-26-pm1-continuation-pilot-recompute-incident",
+  "timestamp": "2026-09-26T08:05:00+08:00",
+  "agent": "orchestrator",
+  "task": "T1 pilot result recomputation with fixed positive-control predicate",
+  "category": "check-logic-defect + process-hazard",
+  "severity": "medium",
+  "what_went_wrong": [
+    "positive_control() bounded predicate used est[0]*3 (=33 tokens) as the bound for a ~2048-token cap — impossible by construction, producing a false 'UNEXPECTED (cap set but grew like verbatim)' verdict for the correctly-bounded C-win arm at h=100 and h=250.",
+    "Recompute attempt launched run_pilot.py with relative default results_dir while shell cwd was 'Agentic Layer', creating a bogus duplicate results tree at 'Agentic Layer/results/pilot' and re-running h10/h25/P_h50 (~$0.04, 9 API runs wasted).",
+    "finalize() aggregates only the results list from the current invocation (re-run subset); a mixed skip/re-run resume would have written an incomplete summary.json."
+  ],
+  "root_cause": [
+    "bounded-check predicate written against est[0] (first hop, tiny) instead of the configured cap constant.",
+    "Default results_dir resolved against shell cwd instead of the script directory; finalize() had no defense against partial result sets."
+  ],
+  "what_i_actually_did_wrong": "Launched a recompute in a shell with a different cwd without checking that run_pilot's default results_dir is relative; did not audit the positive_control predicate when writing it (accepted an impossible bound).",
+  "detection": "Flagged 'UNEXPECTED' control verdict triggered manual verification of actual est sequences; suspicious re-run log lines revealed the duplicate tree.",
+  "fix_applied": [
+    "runner.py positive_control(): bounded = (not grew) or est[-1] <= cap*1.02 using WINDOW/COMPACTION_TOKENS constant.",
+    "run_pilot.py: BASE anchored to script dir, _rd() normalizes all results dirs; skip branch now loads completed results via new runner.load_result() so finalize() always aggregates the full matrix.",
+    "Deleted bogus 'Agentic Layer/results/pilot'; rebuilt pilot summary offline (zero API calls) — all 4 cap-exercised controls now OK.",
+    "Verified with two-pass dry-run into temp dir: skips load, full aggregate, no cwd tree created."
+  ],
+  "cost": "$0.04 wasted API spend, ~10 min",
+  "verified": "recompute_summary.py output + dry-run resume test"
+}

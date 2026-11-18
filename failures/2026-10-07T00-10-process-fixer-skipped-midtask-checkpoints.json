@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-10-07T00:10:00+00:00",
+  "category": "process",
+  "slug": "fixer-skipped-midtask-checkpoints",
+  "agent": "fixer",
+  "task": "Deers-Rock Epic I M1.4 / II M2.5 / VII M7.1 / VII M7.2 bounded fixes",
+  "what_went_wrong": "Rule 9 requires crashlog checkpoints after each significant subtask for tasks that touch more than one file or take more than 5 minutes. I ran --recover at start and --complete at end but wrote no mid-task checkpoints across the 4 subtasks (~15 min, 5 files).",
+  "root_cause": "Fixer-agent execution momentum: treated the delegation as a single bounded task instead of 4 significant subtasks; checkpoint obligation was deferred to 'the end' which defeats the crash-resume purpose.",
+  "impact": "None material — session completed cleanly, all evidence (tests, commits, push) retained. Had the session crashed mid-way, resume context would have relied on git state alone.",
+  "corrective_action": "For future multi-subtask fixer dispatches: run crashlog --checkpoint immediately after each subtask commit, before moving to the next task."
+}

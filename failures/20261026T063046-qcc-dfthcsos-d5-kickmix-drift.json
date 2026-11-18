@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-10-26T06:30:46Z",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "category": "external",
+  "severity": "low",
+  "summary": "DFTHCSOS D5 stage-isolation kernel failed twice on kickmix API drift: the Kaggle image's kickmix is the competition's bundled kickmix.so (read-only), which does not expose the same public surface the reference circuit builder assumed. v1: km.CircuitBuilder missing; v2: km.Circuit.from_file present but OperationStatistics.num_ops missing. Root cause: the reference example (angle_k_reference_circuit.py) was written against a newer kickmix than the competition ships. Fix: stop building circuits locally and instead READ the shipped .kmb files with the competition's own kickmix, which is the exact build that wrote them. v3 succeeded.",
+  "root_cause": "kickmix API version drift between the reference builder and the competition-shipped kickmix.so; the loop's 'build the circuits locally' step was not portable across kickmix versions.",
+  "trace_id": "20261026T063046-orchestrator-cli.pm1"
+}

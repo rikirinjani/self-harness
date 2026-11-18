@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261024T203230-orchestrator-cli",
+  "timestamp": "2026-10-24T20:32:30.637318+00:00",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "duration_s": 600,
+  "tool_calls": 15,
+  "key_files": [
+    "C:/Users/think/Agentic Layer/pm1-continuation/kaggle/phase0-qcc/kernel-metadata.json"
+  ],
+  "failure": {
+    "category": "config",
+    "severity": "medium"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261024T203230-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................-.--...-.........--...--........--.-..-.........-.--...-........--.-..-.........--.-..-.........-.--...-",
+  "action": "kaggle kernels push: first push used rikirinjani/-prefixed competition_sources which the CLI silently rejected (competition input not attached -> kernel v1 ERRORED with ModuleNotFoundError kickmix); second push with bare slug hit 409 SaveKernel Conflict; resolved by deleting the broken kernel and re-pushing with the bare-slug source (kernel v1 re-created, COMPLETE). Root cause: competition_sources must use the bare competition slug, not user/slug."
+}

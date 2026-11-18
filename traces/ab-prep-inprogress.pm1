@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "ab-prep-inprogress",
+  "timestamp": "2026-09-22T21:09:35.776288+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 7200,
+  "tool_calls": 0,
+  "key_files": [
+    "eval/ab_plan/throughput_pilot.json",
+    "eval/ab_plan/unique_pairs_estimate.json",
+    "scripts/modal_embed.py",
+    "eval/ab_plan/pilot/timing.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ab-prep-inprogress",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-..........-.-.-.-........................-.--...-........................................-.--...-",
+  "action": "A/B prep ongoing: Lane B pilot+dedup done; Lane A 4 embeds running; minilm retrieval + qwen3 relaunched detached on VPS; deliverables cost table + AB_PLAN pending embed completion"
+}

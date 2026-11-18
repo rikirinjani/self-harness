@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260920T235309-orchestrator-cli",
+  "timestamp": "2026-09-20T23:53:09.550628+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 30,
+  "key_files": [
+    "morse/experiments/pm1-rx/TASK_025_STATE_SURVIVAL_AUDIT.md",
+    "morse/experiments/pm1-rx/TASK_025_ATOMIC_ANALYSIS.json",
+    "morse/experiments/pm1-rx/TASK_025_FIELD_MATRIX.json",
+    "morse/experiments/pm1-rx/TASK_025_Q1_Q5_ANALYSIS.json",
+    "morse/experiments/pm1-rx/scripts/task025_audit.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260920T235309-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--.........--...--........--.-..-.........................................-.--...-",
+  "action": "Task 025 State Sufficiency Audit complete. 10 phases analyzed. 144 ref atoms (v2 decompose). 66.7% PARTIAL, 27.8% MISSING, 4.9% SEMANTIC_EQUIVALENT, 0.7% CONTRADICTORY. Rule D accept rate 12.5%. 3B model not viable. Dominant failure: task misidentification. Recommended: 7B scaling test."
+}

@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "glm-quota-31pct-draining",
+  "timestamp": "2026-09-28T07:57:45.953141+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 40,
+  "tool_calls": 1,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "glm-quota-31pct-draining",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................-.--...-........-.--...-........................................................-.--...-",
+  "action": "GLM quota check after reset: HTTP 200 but draining fast. 10,367,118 used (69.1%) in ~30 min since window start 07:26 UTC; remaining 4,632,882 (30.9%). Burn ~20M/hour - parallel workloads consuming at pre-lockout rate. At current pace locks out again in ~15 min with ~3.9h left on window (ends 12:26 UTC). Cycle repeating; user has declined all mitigations repeatedly."
+}

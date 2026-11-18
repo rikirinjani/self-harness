@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "r5-handoff-newbox-creds",
+  "timestamp": "2026-10-23T12:18:10.395913+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 4,
+  "key_files": [
+    "khanza-r5/docs/khanza_session_handoff_20261017.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "r5-handoff-newbox-creds",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Per owner request, wrote the mac mini vultr connection details into the session handoff (docs/khanza_session_handoff_20261017.md, new UPDATE 2026-10-23 block at top, commit c97ae1d): IPv6 host, port 22, user root, key path, ssh alias, env file, password-auth-enabled warning, verified-state summary and current open items. Flagged inline as an owner-directed exception to the repo's no-IP rule; no passwords stored (key-only auth). Also marked the owners quoted AC-9-blocked text as obsolete in the handoff: AC-9 was closed at 07:32Z by the parallel session (commit 20ea324), which the P11 UPDATE block already records."
+}

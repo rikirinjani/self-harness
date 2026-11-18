@@ -1,0 +1,10 @@
+{
+  "category": "infrastructure",
+  "severity": "high",
+  "root_cause": "The DeepSeek account backing DEEPSEEK_API_KEY has insufficient balance. Every API call to https://api.deepseek.com/v1/chat/completions returns HTTP 402 with error message 'Insufficient Balance', regardless of model or payload size.",
+  "what_actually_happened": "The calibration judge script was built and its non-API logic verified against synthetic inputs, but all 126 live DeepSeek Flash calls failed with 402 after 4 retries each (504 total failed requests). A direct single-call probe confirmed the failure is account-wide and not transient, rate-limit, or key-format related.",
+  "impact": "The LLM judge calibration gate on the frozen 126 candidates cannot be completed. No weighted Cohen's kappa, MAE, or confusion matrix can be produced until the account is topped up. The full A/B benchmark remains unauthorized and unstarted, as required.",
+  "recovery": "Top up the DeepSeek account balance, then re-run: python eval/calibration_judge.py. The script is idempotent and writes to a new timestamped directory, so no cleanup of the failed run is required. No frozen artifacts were modified.",
+  "verified_working": "126/126 candidate-to-human-label join on (query_id, pmid); JSON parser handles plain, code-fenced, embedded, and malformed responses; weighted/unweighted Cohen's kappa and MAE produce correct values on synthetic perfect-agreement (1.0 / 1.0 / 0.0) and synthetic biased (0.5286 / 0.9444) inputs.",
+  "task": "LLM Judge Calibration on the Frozen 126 Candidates"
+}

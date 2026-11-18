@@ -1,0 +1,8 @@
+{
+  "category": "workflow-bug",
+  "severity": "low",
+  "root_cause": "The first validation script assumed the secondary annotator IDs were contiguous 0..29, but the intentionally stratified subset retained original candidate IDs.",
+  "actual_error": "Validation falsely reported missing secondary candidate IDs.",
+  "correction": "Changed validation to enforce contiguous IDs only for the primary set and validate secondary completeness by row count and score validity; rerun passed.",
+  "status": "corrected"
+}

@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "gh1-p0-p1-direct-execution",
+  "timestamp": "2026-10-01T19:43:56.014198+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "Deers-Rock/tests/medical-records.test.ts",
+    "Deers-Rock/.github/workflows/ci.yml",
+    "Deers-Rock/src/api/rest.ts",
+    "Deers-Rock/vitest.config.ts",
+    "Deers-Rock/package.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "gh1-p0-p1-direct-execution",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................--.-..-.........................................-.--...-",
+  "action": "GH issue #1 direct-execution items after fixer lane collapse (4 consecutive session context errors; only fixer type affected, implementer lane healthy). (1) Root-caused and fixed an intrinsic test flake: tests/medical-records.test.ts asserted status coded after ONE accuracy roll gated by clock.rng()<coder.accuracy (0.85-0.92) with Date.now seed fallback -> ~8% failure (measured 1/12). Replaced with bounded retry (<=20 passes, P(fail)<=3e-17) plus assertion that the tick-12 pass actually ran. Re-verified 0/20 runs. (2) Added npm test to .github/workflows/ci.yml (P0-3) so the suite is actually gated. (3) Ran full suite after all accumulated changes: exit 0, 19 files, 152/152, 104.13s. Verified imp-1 P0-4 independently: tsc 0, fhir-export 6/6, auth/CORS markers present, diff confined to src/api/rest.ts. Verdict P0-1..P0-4, P1-5, P1-7 DONE; P1-6 pending."
+}

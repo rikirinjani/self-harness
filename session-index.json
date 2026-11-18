@@ -217,6 +217,198 @@
         "articles/day13-article.md",
         "scripts/publish-day13.mjs"
       ]
+    },
+    {
+      "session_id": "session-6",
+      "timestamp": "2026-10-07T08:39:09.446306+00:00",
+      "goal": "Polymarket crypto binary edge bot — research, backtest, and deployment",
+      "traces_this_session": 21,
+      "traces": [
+        {
+          "trace": "reconcile-exp-1-closed",
+          "action": "Reconciling exp-1 (ses_eea8d9e3cffe4zSUacSqX6V135) — explorer reconciliation of librarian brief already completed. See r",
+          "key_files": [],
+          "agent": "orchestrator",
+          "outcome": "pass"
+        },
+        {
+          "trace": "reconcile-lib-2-closed",
+          "action": "Reconciling lib-2 (ses_eea93436dffeJmEivikREezu3i) — research brief on Polymarket edge strategies already incorporated i",
+          "key_files": [],
+          "agent": "orchestrator",
+          "outcome": "pass"
+        },
+        {
+          "trace": "reconcile-lib2-closed",
+          "action": "lib-2 (ses_eea93436dffeJmEivikREezu3i) and exp-1 (ses_eea8d9e3cffe4zSUacSqX6V135) reconciled per reconcile-lib2-exp1.pm1",
+          "key_files": [],
+          "agent": "orchestrator",
+          "outcome": "pass"
+        },
+        {
+          "trace": "reconcile-lib2-final",
+          "action": "Final reconciliation: lib-2 (ses_eea93436dffeJmEivikREezu3i) and exp-1 (ses_eea8d9e3cffe4zSUacSqX6V135) both already tra",
+          "key_files": [],
+          "agent": "orchestrator",
+          "outcome": "pass"
+        },
+        {
+          "trace": "reconcile-lib2-exp1",
+          "action": "Reconciled lib-2 (ses_eea93436dffeJmEivikREezu3i): 5 papers on Polymarket edge, findings used in v3 backtest. Reconciled",
+          "key_files": [],
+          "agent": "orchestrator",
+          "outcome": "pass"
+        },
+        {
+          "trace": "reconcile-lib-exp",
+          "action": "Reconciled librarian ses_eea93436dffeJmEivikREezu3i (5 papers on Polymarket arb) and explorer ses_eea8d9e3cffe4zSUacSqX6",
+          "key_files": [],
+          "agent": "orchestrator",
+          "outcome": "pass"
+        },
+        {
+          "trace": "poly-bot-session-wrap",
+          "action": "Full session wrap: Research (5 papers), BS edge model, 200-cycle backtest v3 (93-97% win rate SELL-only), paper trading ",
+          "key_files": [
+            "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\poly_backtest_v3.py,C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\poly_bot_v9.py,C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\polymarket-edge\\analysis.ipynb"
+          ],
+          "agent": "orchestrator",
+          "outcome": "pass"
+        },
+        {
+          "trace": "poly-bot-backtest-v3",
+          "action": "Extended backtest v3 with Portnaya premium + vol adjustment. 400 trades ALL SELL side. Win rates: baseline 93.5%, portna",
+          "key_files": [
+            "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\poly_backtest_v3.py"
+          ],
+          "agent": "orchestrator",
+          "outcome": "pass"
+        },
+        {
+          "trace": "epic3-timeline-complete",
+          "action": "Epic III Timeline Engine complete: ADR-009 written, branch API with GET endpoints, 5 standard scenarios, 326 tests pass,",
+          "key_files": [
+            "src/timeline/engine.ts",
+            "docs/adr/ADR-009-timeline-engine.md",
+            "src/api/rest.ts",
+            "ROADMAP.md"
+          ],
+          "agent": "orchestrator",
+          "outcome": "pass"
+        },
+        {
+          "trace": "polymarket-brief-reconcile-lib2",
+          "action": "Reconciled librarian task ses_eea93436dffeJmEivikREezu3i ('Research Polymarket edge strategies', lib-2, 08:13-08:18Z 202",
+          "key_files": [],
+          "agent": "explorer",
+          "outcome": "partial"
+        }
+      ],
+      "trace_outcomes": {
+        "pass": 20,
+        "fail": 0,
+        "other": 1
+      },
+      "key_decisions": [
+        "Selling overpriced longshots is the only profitable strategy",
+        " BS edge model with Portnaya premium outperforms naive 50c model",
+        " minimum  capital needed"
+      ],
+      "open_questions": [
+        "AWS geo-unrestricted VPS deployment pending credential refresh",
+        " live trading requires unblocking Polymarket region restriction"
+      ],
+      "files_created": [
+        "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\poly_backtest_v3.py,C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\poly_bot_v9.py,C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\FINAL_REPORT.md"
+      ]
+    },
+    {
+      "session_id": "session-7",
+      "timestamp": "2026-10-07T08:45:45.437818+00:00",
+      "goal": "Reconcile lib-2 and exp-1",
+      "traces_this_session": 37,
+      "traces": [
+        {
+          "trace": "exp-1-reconciled-polymarket-integration",
+          "action": "Reconciled explorer lane exp-1 (ses_eea8d9e3cffe4zSUacSqX6V135) for the Polymarket brief integration verification task. ",
+          "key_files": [],
+          "agent": "orchestrator",
+          "outcome": "pass"
+        },
+        {
+          "trace": "lib-2-reconciled-polymarket-edge",
+          "action": "Reconciled librarian lane lib-2 (ses_eea93436dffeJmEivikREezu3i) for the Polymarket crypto edge strategy research task. ",
+          "key_files": [],
+          "agent": "orchestrator",
+          "outcome": "pass"
+        },
+        {
+          "trace": "ses_eea8d9e3cffe4zSUacSqX6V135",
+          "action": "RECONCILED: explorer exp-1 verification of lib-2 brief integration completed",
+          "key_files": [],
+          "agent": "orchestrator",
+          "outcome": "pass"
+        },
+        {
+          "trace": "ses_eea93436dffeJmEivikREezu3i",
+          "action": "RECONCILED: librarian lib-2 research on Polymarket edge strategies incorporated into v3 backtest",
+          "key_files": [],
+          "agent": "orchestrator",
+          "outcome": "pass"
+        },
+        {
+          "trace": "lib-2-reconciled-polymarket",
+          "action": "Reconciled librarian lane lib-2 (ses_eea93436dffeJmEivikREezu3i) for the Polymarket crypto edge strategy research task. ",
+          "key_files": [],
+          "agent": "orchestrator",
+          "outcome": "pass"
+        },
+        {
+          "trace": "ses_eea8d9e3cffe4zSUacSqX6V135-exp-1-reconciled",
+          "action": "Reconciled explorer lane exp-1 (ses_eea8d9e3cffe4zSUacSqX6V135) for the Polymarket brief integration verification task. ",
+          "key_files": [],
+          "agent": "orchestrator",
+          "outcome": "pass"
+        },
+        {
+          "trace": "ses_eea93436dffeJmEivikREezu3i-lib-2-reconciled",
+          "action": "Reconciled librarian lane lib-2 (ses_eea93436dffeJmEivikREezu3i) for the Polymarket crypto edge strategy research task. ",
+          "key_files": [],
+          "agent": "orchestrator",
+          "outcome": "pass"
+        },
+        {
+          "trace": "ses_eea8d9e3cffe4zSUacSqX6V135-reconciled",
+          "action": "Reconciled explorer lane exp-1 (ses_eea8d9e3cffe4zSUacSqX6V135) for the Polymarket brief integration verification task. ",
+          "key_files": [],
+          "agent": "orchestrator",
+          "outcome": "pass"
+        },
+        {
+          "trace": "ses_eea93436dffeJmEivikREezu3i-reconciled",
+          "action": "Reconciled librarian lane lib-2 (ses_eea93436dffeJmEivikREezu3i) for the Polymarket crypto edge strategy research task. ",
+          "key_files": [],
+          "agent": "orchestrator",
+          "outcome": "pass"
+        },
+        {
+          "trace": "ses-eea8d9e3cffe4zSUacSqX6V135-exp1",
+          "action": "Reconciled explorer lane exp-1 (ses_eea8d9e3cffe4zSUacSqX6V135) for the Polymarket brief integration verification task. ",
+          "key_files": [],
+          "agent": "orchestrator",
+          "outcome": "pass"
+        }
+      ],
+      "trace_outcomes": {
+        "pass": 36,
+        "fail": 0,
+        "other": 1
+      },
+      "key_decisions": [
+        "Reconciliation traces written"
+      ],
+      "open_questions": [],
+      "files_created": []
     }
   ]
 }

@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "ab-prep-bge-done-sup-died",
+  "timestamp": "2026-09-23T02:30:08.353007+00:00",
+  "agent": "coordinator",
+  "outcome": "partial",
+  "duration_s": 1805,
+  "tool_calls": 2,
+  "key_files": [
+    "scripts/ab_embed_supervisor.sh",
+    "scripts/modal_embed.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ab-prep-bge-done-sup-died",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........--.-..-.........---..-..........-.--...-........-.--...-........................................-.--...-",
+  "action": "30min poll: bge-large embed done npy local 2048000128; supervisor off after volume pull; e5 95pct; qwen3 ~46-51pct; investigating supervisor death"
+}

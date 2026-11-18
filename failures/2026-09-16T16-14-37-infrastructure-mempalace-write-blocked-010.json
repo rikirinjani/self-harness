@@ -1,0 +1,14 @@
+﻿{
+  "timestamp": "2026-09-16T16:14:37",
+  "category": "infrastructure",
+  "severity": "low",
+  "slug": "mempalace-write-blocked-010",
+  "task": "PM-1-RX 010 session close filing",
+  "what_failed": "mempalace_add_drawer returned: MCP error -32001: Peer MCP writer active; this server is read-only for mutating tools. Second consecutive session with this condition (see 2026-09-16T15-30-37-infrastructure-mempalace-write-blocked-009c.json).",
+  "root_cause": "Persistent MemPalace write lock held by another process across sessions. Contention, not data loss.",
+  "impact": "Rule 10 filing for Task 010 not completed. Content preserved in repo artifacts, PM-1 trace, and QMS records (REQ-2026-010, VER-2026-010).",
+  "what_i_did_wrong": "Nothing in the filing; one attempt made this session after two failed last session, per the maximum-retry rule.",
+  "mitigation": "Full payload preserved in this record's task description and in the committed artifacts. Re-file wing 'morse' rooms 'pm1-rx-009c' and 'pm1-rx-010' when the lock is released.",
+  "follow_up": "If the lock persists across a third session, investigate the holding process before any further filing attempts.",
+  "retry_policy": "Do NOT retry this session."
+}

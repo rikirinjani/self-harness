@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "poly-bot-session-wrap",
+  "timestamp": "2026-10-07T08:37:03.850224+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3600,
+  "tool_calls": 50,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\poly_backtest_v3.py,C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\poly_bot_v9.py,C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\polymarket-edge\\analysis.ipynb"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "poly-bot-session-wrap",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........-.--...-........................................-.--...-",
+  "action": "Full session wrap: Research (5 papers), BS edge model, 200-cycle backtest v3 (93-97% win rate SELL-only), paper trading dry run, AWS attempt. Key finding: selling overpriced longshots is the only profitable strategy. AWS credentials expired mid-deploy. Bot code ready for geo-unrestricted deployment."
+}

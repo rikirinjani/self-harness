@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-v12-reconciled",
+  "timestamp": "2026-10-01T21:34:43.641465+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\frozen\\phase2-sweep-nonotice\\FREEZE_MANIFEST.md",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\VER-2026-10-01-PM1-V12-RESUME.json",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\kaggle\\kernel-metadata.json",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\freeze_control_set.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-v12-reconciled",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "v12 Friday resume RECONCILED: seed step restored 16 files (log-verified), skip-completed all 16, ran the 3 missing K010-t2 h50s live (150 calls, correct no-notice signature). Merged 19-run no-notice CONTROL set frozen (frozen/phase2-sweep-nonotice + full summary: all 9 cells NO_EFFECT recall 0.000). Resume machinery PROVEN - de-risks post-reset. kernel-metadata seed detached so B2-notice starts clean. VER-2026-10-01-PM1-V12-RESUME (PASS)."
+}

@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "asset-store-fixes",
+  "timestamp": "2026-09-18T02:05:27.569676+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 10,
+  "key_files": [
+    "godot/addons/causality_engine/LICENSE"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "asset-store-fixes",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Godot store review feedback fixed: (1) rebuilt addon zip with Python zipfile to guarantee forward-slash entry paths (Compress-Archive on Windows can mangle paths with backslashes, breaking on Unix) — verified 7 entries, 0 backslashes, integrity OK; (2) added Apache-2.0 LICENSE inside addons/causality_engine/ folder per reviewer (license must travel with addon, not sit ambiguous at zip root) — committed 3645549. New zip 17338 bytes uploaded to release v1.0.0-rc.1 with --clobber."
+}

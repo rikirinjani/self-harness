@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-009b-phase7-capability-2026-09-16",
+  "timestamp": "2026-09-16T01:41:51.704210+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 3600,
+  "tool_calls": 40,
+  "key_files": [
+    "experiments/pm1-rx/harness/pm1rx/f_variants.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-009b-phase7-capability-2026-09-16",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-..........-.-.-.-.........--...--........-.--...-........................................-.--...-",
+  "action": "TASK 009B Phase 7 complete: Qwen2.5-3B F-producer capability test on Vultr (zero-cost, 15 runs = 3 variants x 5 planted cases). Results: parse_ok 15/15; irrelevant-item omission 15/15; stale/superseded omission 15/15; schema-agnostic content recall 0.750 (all variants); field-scoped recall F1=0.650 F2=0.850 F3=0.800; fully semantically compliant 0/15. KEY FINDING: the 3B model extracts state CONTENT but cannot reliably ASSIGN it to fields - commitments empty in 15/15 runs across all 3 prompt variants; dependency content mis-fielded into active_constraints/current_task_status. This is a MODEL_CAPABILITY_LIMITATION on field assignment, not a prompt defect (all 3 variants show the same pattern). Prompt variants: F1 (contract, 2357ch) F2 (checklist, 1135ch) F3 (structured extraction, 1092ch). No variant achieves reliable field assignment. DECISION: proceed to Phase 8 real-data pilot with MODEL_CAPABILITY_LIMITATION explicitly accepted and recorded - the pilot's purpose is instrument validation, not efficacy, and the producer capability limitation is exactly what the pilot should measure. No larger model substituted. Fixed 1 defect in f_variants.py (f1_prompt self-recursion). Artifacts: f_capability_results.json (fetched from Vultr), f_variants.py committed."
+}

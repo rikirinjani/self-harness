@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "fixer-fix1-reconcile",
+  "timestamp": "2026-10-14T06:49:19.235945+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 420,
+  "tool_calls": 7,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "fixer-fix1-reconcile",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--.........................--...--........-.--...-........................................................-.--...-",
+  "action": "Reconciled fix-1 (ICD-10 dx mapper wiring) against both repos. Local C:\\Users\\think\\Project_v2\\Deers-Rock: git log -5 shows latest commits are the Khanza scaling study (257e05f) + VPS E2E (021d9d3); git status clean except unrelated untracked kaggle/asset files; NO dx-mapper diff locally (no write_diagnosa.py / generate_scale_encounters.py anywhere; khanza-benchmark-asset/ is a G1-era October snapshot). VPS /opt/Deers-Rock: NOT a git repo (fatal: not a git repository) - the fix-1 work lives as files only: generate_scale_encounters.py 24,348 B (sha de2a4917..., backup .bak-dx 21,210 B) with build_dx_pools/dx_template_set/dx_visit_codes + dx=False param + --dx flag, and write_diagnosa.py 3,893 B (sha b0062ad7..., idempotent scoped delete+insert, prioritas 1/2). Validation evidence re-verified on-box in p-chain/p5_validation.md: top_diagnoses 8,353 rows PASS (top A01.0 typhoid 2,149), FK 0 violations, determinism MATCH, no-regression PASS, consumer totals identical to canonical B1, writer idempotent 8353==8353. Local ADR-021 (priority-based primary dx selection in the TS engine) is related pre-existing design, not fix-1. Open items: work not committed anywhere (VPS not a repo, local repo untouched); distribution uncalibrated (CALIBRATION note in p5_report.md); rx->dx plausibility + Lama/Baru left ungrounded; local sync of the two tool files is the integration gap."
+}

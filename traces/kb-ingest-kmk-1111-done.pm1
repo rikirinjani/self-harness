@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "kb-ingest-kmk-1111-done",
+  "timestamp": "2026-10-05T09:52:36.121171+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 10,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\chatbot\\kb-staging\\Satuan Kredit Profesi (SKP)_KMK 1111-2026 Pedoman Pemenuhan SKP (menggantikan KMK 1561-2024).md",
+    "C:\\Users\\think\\Project_v2\\chatbot\\kb-staging\\INGEST-CHECKLIST-KMK-1111.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kb-ingest-kmk-1111-done",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Executed KMK 1111/2026 KB ingest: SCP'd distilled .md (15 Q&A chunks) to Mac knowledge/ + 2 PDFs to Mac asset/; annotated 3 files' KMK 1561 legal-basis lines with revocation note (curated+resolved had 0 mentions); restarted bot; index 756 chunks/31 files -> 858 chunks/34 files (+102, matches expectation); retrieval tests pass (KMK 1561 query returns revocation Q&A top, SKP target + verification queries return KMK 1111 content); bot healthy"
+}

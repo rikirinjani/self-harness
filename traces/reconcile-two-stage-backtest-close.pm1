@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "reconcile-two-stage-backtest-close",
+  "timestamp": "2026-09-25T08:02:06.411225+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 8,
+  "key_files": [
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest\\RESULTS_SUMMARY.md",
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest\\run.ts",
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest\\strategies.ts",
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest\\backtest.ts",
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest\\metrics.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "reconcile-two-stage-backtest-close",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................--.-..-.........-.--...-........--.-..-.........................................-.--...-",
+  "action": "RECONCILE_ONLY close: verified accepted artifacts on disk - (1) 15 relative imports across 6 .ts files all carry .js extensions (tsc_exit=0), (2) fail-fast at run.ts:176-180 checks TYPESAFE_AI_API_KEY and process.exit(1) with 'Stopping without results - no numbers will be fabricated', (3) RESULTS_SUMMARY.md written 2026-09-25 14:56 reporting BLOCKED - NO RESULTS with verbatim observed output. No source changes made this task."
+}

@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "ab-prep-resume-deliverables",
+  "timestamp": "2026-09-22T21:44:22.359125+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 900,
+  "tool_calls": 40,
+  "key_files": [
+    "eval/ab_plan/throughput_pilot.json",
+    "eval/ab_plan/unique_pairs_estimate.json",
+    "eval/ab_plan/embed_cost_table.json",
+    "eval/ab_plan/AB_PLAN.md",
+    "scripts/modal_embed.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ab-prep-resume-deliverables",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........---..-...........--...--........--.-..-.........................................-.--...-",
+  "action": "A/B prep after crash: Lane B pilot summarized (7.07 cpm, resume PASS); wrote embed_cost_table.json + AB_PLAN.md; restarted qwen3 batch 96; minilm retrieval running on VPS precomputed npy; 3 embeds still in flight"
+}

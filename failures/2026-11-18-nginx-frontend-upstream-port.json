@@ -1,0 +1,12 @@
+{
+    "severity": "high",
+    "timestamp": "2026-11-18T00:00:00Z",
+    "trace_id": "vps-staging-deploy-progress",
+    "category": "configuration",
+    "summary": "nginx returned 502 on / because default.conf proxied platform_frontend to platform-frontend:5173 while the frontend image serves nginx on port 80 inside the container (5173 is only the host-published port).",
+    "outcome": "fixed",
+    "agent": "orchestrator",
+    "root_cause": "Upstream port was taken from the host port mapping instead of the container listen port; also the compose mount path is /opt/chatbot/docker/nginx/default.conf, not /opt/chatbot/nginx/default.conf.",
+    "recovery": "Changed upstream to platform-frontend:80 in both repo and /opt/chatbot/docker/nginx/default.conf, restarted nginx; root returned 200.",
+    "prevention": "Document that upstreams use container-internal ports; verify each upstream with docker exec curl before publishing."
+}

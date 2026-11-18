@@ -1,0 +1,35 @@
+{
+  "pm1_version": 1,
+  "session_id": "jev-trader-original-repo-research",
+  "timestamp": "2026-09-24T08:42:13.574921+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 720,
+  "tool_calls": 18,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\jev-trader-ref\\README.md",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\jev-trader-ref\\SPEC.md",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\jev-trader-ref\\src\\config.ts",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\jev-trader-ref\\src\\trader.ts",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\jev-trader-ref\\src\\model.ts",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\jev-trader-ref\\src\\market.ts",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\jev-trader-ref\\.env.example",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\jev-trader-ref\\CLAUDE.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "jev-trader-original-repo-research",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Researched the original jarrodwatts/jev-trader repo (librarian lane failed with upstream 'Insufficient account funds', so cloned the repo directly via git and read it). KEY FINDING: the original is NOT profitable and is explicitly NOT trying to be. SPEC.md footer: 'experimental demo, tiny bankroll, not financial advice, the model is not trying to be profitable.' Its success criterion is virality of a 20s clip, and its punchline is 'The AI costs less than the gas.' It is NOT a Binance bot: it trades MON-USDC on Kuru, an on-chain order book on Monad L1 (chainId 143), one decision per ~300ms Monad block, posting a post-only limit order 1 tick inside the touch and cancelling the previous one (README: 'so the bot earns the spread instead of paying it'; latest commit message: 'Post-only limit orders every block: earn the spread instead of paying it'). COST MODEL: there is NO trading fee at all - the only cost is Monad GAS (totals.gasMon/gasUsd; pnlUsd = realizedUsd + unrealized - gasUsd; gas charged on the gas LIMIT). Spreads are wide (~7.07 bps on MON-USDC) vs BTCUSDT spot (~0.0012 bps). Also found the original's model prompt text is internally inconsistent with its implementation (the question says the order is an 'immediate-or-cancel market order' that 'crosses the spread' while the code is post-only maker that EARNS the spread) - my port inherited this inconsistency. No recorded real P&L session exists in the repo (no data/ dir); the deployed demo is dry-run + mock model. Recommended implementation is a venue-faithful redesign (gas-style per-order cost + a market whose spread exceeds cost) rather than the CEX-taker-fee model my port used."
+}

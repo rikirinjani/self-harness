@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "two-stage-laya-diagnosis",
+  "timestamp": "2026-09-26T01:51:37.872991+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 5400,
+  "tool_calls": 30,
+  "key_files": [
+    "C:\\Users\\think\\self-harness\\failures\\20260926T082305Z-validation-gap-laya-request-shape-fidelity.json",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\nonconformities\\NCR-2026-09-26-LAYA-001.json",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\20260926-fail-two-stage-laya-fidelity.json",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\probe2.py",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\probe3.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "two-stage-laya-diagnosis",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-..........-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "Tested the approved shape fix (string instructions + fidelity probe + degeneracy gate + cache-sanity guard) on VPS: the probe correctly REFUSED to run (all 7 shards exit=1, 0 rows), preventing a second 15h waste. Then isolated the real cause with a 12-payload 2x2 experiment: regime question returns constant TRENDING independent of state AND option order; direction follows option order on numeric-only prompts - i.e. Laya base checkpoint has no zero-shot signal, not a wire-shape bug. Corrected the failure record and NCR (original first-option-bias attribution too narrow). Typed-decisions checkpoint probe abandoned (2nd 421M model drove 3.3GiB box into 3.1GiB swap); laya restarted clean (759Mi). Awaiting TypeSafe credit top-up for the faithful pre-registered run."
+}

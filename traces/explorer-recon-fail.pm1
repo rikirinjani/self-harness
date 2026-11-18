@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "explorer-recon-fail",
+  "timestamp": "2026-09-28T09:54:48.539476+00:00",
+  "agent": "explorer",
+  "outcome": "fail",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {
+    "category": "infrastructure",
+    "severity": "high"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "explorer-recon-fail",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........---..-..........-.--...-.........................................................................--...--........-.--...-",
+  "action": "exp-1 recon dispatch failed: identical 'Session too large to compact' bootstrap error as librarian (5th of the class today). Failure record written; orchestrator takes over recon directly; all specialist dispatches suspended for this session."
+}

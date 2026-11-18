@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-r3-draft",
+  "timestamp": "2026-09-29T12:30:17.944227+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\PROTOCOL_SLEEPER_R3.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-r3-draft",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "R3 protocol DRAFTED (PROTOCOL_SLEEPER_R3.md, awaiting approval): 24 runs = 2 conditions x 4 cells x 3 reps, C arm only. Condition A: baseline replication (12 fresh draws -> pin down p(comply) with Wilson interval). Condition B: schema-nudge fix (response example shows next_position_qty = current+1) -> test if the conflation is fixable by prompt. Q3 free: branch lock-in consistency from per-hop response logging. Cost: ~.6 (ceiling .0) from measured per-run spends (.195/h250-run, .010/h50-run). Time: ~2.5-3h serial detached, resume-safe. Gates: detector CLEAN, A-condition sanity check against R2's 32/32 collapse. Implementation (~40 lines) + dry-run pending approval."
+}

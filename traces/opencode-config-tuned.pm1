@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "opencode-config-tuned",
+  "timestamp": "2026-10-20T04:50:44.766234+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 12,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "opencode-config-tuned",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........................................................-.--...-",
+  "action": "Reduced subagent scaffold bloat by trimming oh-my-opencode-slim.json from 21,680 bytes (8 presets) to 1,269 bytes (1 preset). Saved ~5,100 tokens per session. Config now uses only glm preset with 4 providers (glm-ajianaz, deepseek, agnes-ai, z-ai), 15 models, 15 active skills. Total config: ~1,482 tokens down from ~6,500+. Backup saved to opencode-backup-20261020-114746."
+}

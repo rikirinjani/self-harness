@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "task021-judge-validation",
+  "timestamp": "2026-09-19T03:05:31.961814+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 25,
+  "key_files": [
+    "experiments/pm1-rx/TASK_021_REPORT.md",
+    "experiments/pm1-rx/TASK_021_RESULTS.json",
+    "experiments/pm1-rx/TASK_021_DATASET.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task021-judge-validation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Task 021: Semantic judge validation complete. Claude Opus 4.8 on 167 pairs. Holdout accuracy 78.7%, sensitivity 65.2%. 100% stability. Zero safety violations. 3 complementary cases. Judge validated as separate measurement instrument. Commit 225e614."
+}

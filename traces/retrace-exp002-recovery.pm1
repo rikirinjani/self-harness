@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "retrace-exp002-recovery",
+  "timestamp": "2026-09-21T05:57:07.218977+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "docs/experiments/EXP-002-AUDIT-REPORT.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "retrace-exp002-recovery",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Retroactive: session recovery after abort. Prior context: EXP-002 audit complete (RNG contamination found), dispatched @fixer to rewrite runner with fresh-world paired execution. No file changes pending in working tree."
+}

@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-09-25T14:59:00+08:00",
+  "category": "logic-error",
+  "severity": "low",
+  "agent": "orchestrator",
+  "task": "disable-all-mcp-servers",
+  "what_happened": "First pass inserted \"enabled\": false immediately after each of the 10 server openers in opencode.jsonc. The post-edit validator printed enabled=True for all 10 and `opencode mcp list` still showed every server connected. The change appeared to apply (script reported 'added to 10/10') but had no effect.",
+  "root_cause": "Every server object already carried \"enabled\": true at its END. My insert went at the START. JSON duplicate-key resolution is last-wins, so the pre-existing true value overrode my false. I edited by anchored regex on the opener line and never read the remainder of the object, so I never saw the existing key.",
+  "what_i_did_wrong": "I ran an edit against a JSON structure I had only partially inspected, and I trusted the tool's 'ADDED' success message as proof the semantic change landed. I only caught it because I re-parsed the file and re-ran `opencode mcp list` afterwards — the verification caught it, not the edit.",
+  "fix": "Removed the 10 duplicate inserts, then flipped the 10 pre-existing flags from true to false, scoped strictly to the mcp block (mstart..mend offsets). Re-parsed JSON and re-ran `opencode mcp list`: 10 servers report 'disabled'.",
+  "actionable": "When editing JSON/JSONC config by regex, read the whole target object first — duplicate keys are silent. Never treat an edit tool's 'APPLIED/ADDED' output as semantic proof; always re-parse and re-query the live system to confirm.",
+  "second_finding": "My first attempt at disabling the 3 OMO builtins listed the 10 user server names in `disabled_mcps`. That key only feeds createBuiltinMcps() (oh-my-opencode-slim/dist/index.js:39863), so the list was inert. Root cause: I inferred the key's scope from its schema description ('MCP server names to disable completely') instead of reading the one call site. Corrected to [websearch, context7, gh_grep].",
+  "trace": "C:\\Users\\think\\self-harness\\traces\\fail-mcp-disable-dupkey.pm1"
+}

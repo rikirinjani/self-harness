@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "kaggle-nfl-bdb-2027-phase2-complete",
+  "timestamp": "2026-10-09T03:49:52.838465+00:00",
+  "agent": "agnes",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\kaggle-nfl-2027\\phase2\\output\\phase2\\phase2_report.json,C:\\Users\\think\\AppData\\Local\\Temp\\kaggle-nfl-2027\\phase2\\output\\phase2\\top_anomalies.csv,C:\\Users\\think\\AppData\\Local\\Temp\\kaggle-nfl-2027\\phase2\\output\\phase2\\tracking_trad_correlations.csv"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kaggle-nfl-bdb-2027-phase2-complete",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........................................................-.--...-........................................-.--...-",
+  "action": "Phase 2 complete: UMAP embedding, KMeans clustering (k=3/5/8/12), Isolation Forest anomaly detection (250 anomalies = 5%), correlation analysis with traditional metrics. Top: s_mean correlates -0.45 with ten_yd_split, +0.38 with broad_jump. Position speed profiles: WR>TE>DB>DL>OL."
+}

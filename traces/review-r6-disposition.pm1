@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "review-r6-disposition",
+  "timestamp": "2026-10-10T22:32:48.209930+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3600,
+  "tool_calls": 12,
+  "key_files": [
+    "C:/Users/think/khanza_validation_protocol.md",
+    "C:/Users/think/khanza_report.json",
+    "C:/Users/think/consumer_current.java"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "review-r6-disposition",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-........--.-..-.........-.--...-........................................-.--...-",
+  "action": "External review round-6 disposition: (1) DRU-1 'CLOSED' claim corrected - my v2 sum-rule was wrong (reviewer's double-count warning was right); 14-pair classification from resep_dokter shows 5 identical + 9 re-rolled re-sends; fixed consumer to MAX(jml)-per-pair (deterministic), recompiled + re-ran, verified every dpo.jml == MAX(resep_dokter.jml); correct persisted revenue = Rp 157,409,383 (not 176.92/291.28/162.86). (2) Reconciled JSON contradictions: single DRU-1 CLOSED status, added DOC-2 (generator re-roll defect), preDRU1_superseded key with all 3 figures, removed 'nothing undercounted' circular claim, fixed notes. (3) Protocol v3.1 body now matches header: finance scope limited to billing+nota_jalan (jurnal/detailjurnal/piutang observed-not-replicated), half-rupiah 1e-6 tolerance, paid-visit check + status_bayar restore, intended-envelope wording, 34-seed-leakage + 67-unbilled + reg-only-unsatisfiable guards. (4) Identified 34 SEED no_rawat billed from DR export (287 DR + 34 seed = 321) - baseline not clean, flagged. All 5 protocol/fixer subagent dispatches hit the context ceiling; stratified run not yet executed - to be driven directly or on the new 10C/12GB VPS."
+}

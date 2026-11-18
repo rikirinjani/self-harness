@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-vultr-endpoint-verify",
+  "timestamp": "2026-09-25T23:37:27.572369+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\ENDPOINT.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-vultr-endpoint-verify",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Verified Vultr inference endpoint with user-supplied key: /models lists 19 models; deepseek-v4-flash-0731 available (1M ctx, fp8, \\.10/\\.25 per 1M, US/atl). Live smoke test POST /chat/completions: PONG, temp 0 accepted, 1797ms, provider usage block present (prompt/completion tokens) - satisfies V0.5 token methodology. Endpoint details recorded (key referenced via env var, not stored)."
+}

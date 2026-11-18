@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-budget-corrected",
+  "timestamp": "2026-10-02T09:25:36.388020+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\BUDGET.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-budget-corrected",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "Budget constraint corrected + recorded (BUDGET.md): Kaggle Model Proxy is \\/day AND \\/month (user correction; previously believed \\/month). Spent to date \\.23 (PM-1 review \\.766 + Gemma review \\.459); ~\\.77 remaining. Policy set: Astra for REVIEW/DESIGN only, never a runtime judge in the harness (deterministic metrics preferred); one review per artifact revision; log every spend. GPU remains the binding constraint (30h/week, 29.59h used this week). Post-reset plan unchanged (~21-23h GPU)."
+}

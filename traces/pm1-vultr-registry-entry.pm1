@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-vultr-registry-entry",
+  "timestamp": "2026-10-05T00:59:13.090246+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\RUN_REGISTRY.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-vultr-registry-entry",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "Added retroactive RUN_REGISTRY VULTR-SWEEP entry (24 runs/model: P/P-pos/P-postarget x 4 cells x t[1,2], 4 models, \\ ledger gate); checkpointed sweep-1 status (8/24 chains, PID 6368 alive, ETA ~10:30); confirmed misfire isolation (results/sleeper-r3/A summary restored, chain files untouched)."
+}

@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-qwen-smoke-launch",
+  "timestamp": "2026-10-01T23:50:45.973895+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\make_kaggle_notebook.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\RUN_REGISTRY.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-qwen-smoke-launch",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "Qwen validation session LAUNCHED (kernel v13): MODEL=qwen (qwen3:30b-a3b first, fallbacks), RUN_QUEUE=smoke (~30 min: pull ~19GB, serve, test calls, harness smoke 2 calls). Notebook generalized with MODEL selector (C3). RUN_REGISTRY QWEN-SMOKE entry written. Goal: prove pull/serve/test/smoke on Qwen to de-risk the post-reset Qwen r3fix_a leg."
+}

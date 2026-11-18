@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "task-009-launch-test",
+  "timestamp": "2026-09-15T05:42:16.260108+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 1200,
+  "tool_calls": 0,
+  "key_files": [
+    "experiments/pm1-rx/TASK_009_LAUNCH_TEST_RESULT.md",
+    "experiments/pm1-rx/TASK_009_PRE_RUN_GATE.md",
+    "experiments/pm1-rx/TASK_009_MANIFEST.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task-009-launch-test",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........---..-..........................-.--...-........................................-.--...-",
+  "action": "Task 009 AWS launch test EXECUTED: FAILED with VcpuLimitExceeded. g6e.xlarge launch rejected - G/VT vCPU quota = 0 in ALL regions (us-east-1, us-west-2, ap-northeast-1, eu-central-1, ap-southeast-1). Earlier DryRunOperation was misleading (--dry-run does not validate vCPU quota). Standard non-GPU quota = 16 vCPU. Quota increase requested: case 178945068100744 CASE_OPENED (no Premium Support; track in console). Cleanup verified: no instance launched, none running, key pair deleted, cost ~\\.00. CPU fallback 16 vCPU: 3B 6.1d / 7B 12.8d N=40 (infeasible); reduced pilot N=10-20 <=128K = 0.3-1.3d (biased). New blocker T27/G23. Verdict BLOCKED. Options A wait quota / B reduced CPU pilot / C Vultr / D defer; recommend A. Commit a3ec55b. No GPU ran, no paid inference, Experiment 001 unchanged."
+}

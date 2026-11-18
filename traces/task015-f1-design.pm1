@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "task015-f1-design",
+  "timestamp": "2026-09-17T08:22:52.124753+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3600,
+  "tool_calls": 40,
+  "key_files": [
+    "experiments/pm1-rx/harness/pm1rx/TASK_015_F1_IMPLEMENTATION.md",
+    "experiments/pm1-rx/harness/pm1rx/f1_aggregation.py",
+    "experiments/pm1-rx/harness/tests/test_f1_aggregation.py",
+    "experiments/pm1-rx/TASK_015_PROGRESS.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task015-f1-design",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........-.--...-........................................-.--...-",
+  "action": "Task 015 Phase II: F1 implementation design + micro-F1 aggregation. Traced existing structures (ReferenceItem, ref.items, required_items, _candidates, consumer JSON contract, decompose/classify_atom, MatcherScore). Confirmed no existing FP/precision/recall aggregation. Designed mapping: unit=Atom; ref atoms=decompose(required_items); recon atoms=decompose(_field_values) deduped by token sig; matching many-to-one both directions with DEFAULT_CONFIG; TP=ACCEPTED; FN=not ACCEPTED (contradictions/partials subsets); FP=distinct recon atom verdict in {MISSING,UNRELATED}; micro-F1 pooled within arm; F-PARSE excluded. Wrote TASK_015_F1_IMPLEMENTATION.md, pm1rx/f1_aggregation.py, tests/test_f1_aggregation.py. 19 new tests pass; full suite 421 passed. Frozen files verified unchanged. Commits b9041cf, 095f06a. No Ollama, no real data, no runner."
+}

@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "kala-calendar-approved-dcal",
+  "timestamp": "2026-09-27T04:28:16.637115+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 400,
+  "tool_calls": 12,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\kala_v2_decisions.md",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\kala_calendar_draft.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kala-calendar-approved-dcal",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---.........................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Calendar APPROVED (fix-2 output reconciled): Layout A k1=2, Option A seasons, conventions bundle (New Year 1st Coldmonth, hybrid counting, eight-days kept), Third Pipe CR-85 with 97->27, names Ventmonth/Gaugemonth/Ashmonth/Conduitmonth/Foundersmonth. DCAL logged; clean pass unblocked - dispatching bible-v2 + prose-fixes lanes."
+}

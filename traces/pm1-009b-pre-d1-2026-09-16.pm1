@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-009b-pre-d1-2026-09-16",
+  "timestamp": "2026-09-16T00:59:14.045938+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1500,
+  "tool_calls": 20,
+  "key_files": [
+    "experiments/pm1-rx/harness/pm1rx/loopguard.py",
+    "experiments/pm1-rx/harness/tests/test_live_context_guard.py",
+    "experiments/pm1-rx/TASK_009B_PRE_D1_AUDIT.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-009b-pre-d1-2026-09-16",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "TASK 009B-PRE D1 complete. Prior state honestly classified MUTATION_DETECTION_UNIMPLEMENTED (LIVE_CONTEXT_MUTATION documented in protocol/gate/manifest but grep across .py returned nothing). Implemented LiveContextGuard in loopguard.py (separate from LoopGuard - different failure classes, both fail closed, neither auto-repairs). Three-state classification: READ_ONLY_VERIFIED / MUTATION_DETECTED / MUTATION_DETECTION_UNIMPLEMENTED; guard refuses to claim safety it did not measure (verify returns UNIMPLEMENTED until snapshot called). Mechanism: fingerprint_paths (deterministic sha256, ABSENT recorded not skipped so file appearance/disappearance detected), snapshot/verify diff, protected paths (opencode.db/-wal/-shm, opencode.jsonc, config.json, custom) with artifact-dir exclusion, enforce_read_only_db (mode=ro + write probe requiring OperationalError readonly; WRITE SUCCEEDED reported as failure), snapshot_copy mode for concurrent live writes (shadow operates on copies; live mtime/size informational NEVER a failure), escalate hard stop (STOPPED, LIVE_CONTEXT_MUTATION, auto_repair disabled, auto_reset disabled, control returned_to_user, evidence preserved), audit_import_graph static SQL scan (syscall auditing NOT feasible on Windows - documented limitation). Added 20 tests incl. concurrent-live-write isolation and shadow-copy mutation detection. Existing 27 loopguard tests unchanged. Full suite 300 passed (280+20). Wrote TASK_009B_PRE_D1_AUDIT.md. Verdict: RESOLVED. No inference. No live-state modification."
+}

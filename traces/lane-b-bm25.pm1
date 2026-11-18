@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "lane-b-bm25",
+  "timestamp": "2026-10-02T12:58:15.770752+00:00",
+  "agent": "implementer",
+  "outcome": "pass",
+  "duration_s": 3700,
+  "tool_calls": 45,
+  "key_files": [
+    "eval/ab_plan/modal_bm25/run_bm25_modal.py",
+    "eval/ab_results/2026-10-02T12-53-15-bm25/results.json",
+    "eval/ab_results/2026-10-02T12-53-15-bm25/manifest.json",
+    "eval/ab_plan/modal_watchdog_ledger.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "lane-b-bm25",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------.........................-.-.-.-.........--...--........-.--...-........................................-.--...-",
+  "action": "Lane B BM25 on Modal CPU: eval/ab_results/2026-10-02T12-53-15-bm25/results.json, 300 queries x top-20, corpus 500000, bm25s 0.3.9, elapsed 89.2s; corpus from uploaded local parquet (volume subcorpus_v2.parquet verified mismatched); deviation: crash-loop + relaunch windows ran while lane B showed closed (failure record 2026-10-02T19-57-32-lane-b-bm25-watchdog-gap.json)"
+}

@@ -1,0 +1,11 @@
+{
+  "record_type": "failure",
+  "timestamp": "2026-09-21T08:00:00Z",
+  "category": "test_expectation_bug",
+  "severity": "minor",
+  "task": "TASK 031",
+  "what_went_wrong": "The first integrity-test version assumed 18 total provenance atoms and three T oracle rows, but the frozen five-boundary set contains 21 atoms and five T rows including accepted controls. It also compared a content hash to a file hash whose serialization added a newline.",
+  "root_cause": "Counts were copied from the three-cell primary population rather than the full primary-plus-control population; hash comparison ignored file serialization.",
+  "correction": "Tests now assert 21 provenance atoms, five T oracle rows, and exact T reconstruction text equality. Eleven tests pass.",
+  "status": "resolved"
+}

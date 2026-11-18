@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "glm-reset-recheck-429",
+  "timestamp": "2026-09-26T17:05:35.236690+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 2,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "glm-reset-recheck-429",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Re-checked GLM ajianaz quota. All endpoints rate-limited again: /stats HTTP 429 Retry-After 1583s, /v1/models and /v1/chat/completions HTTP 429 Retry-After 1234s. Inference had succeeded at 21:25 (controlled one-shot on glm-5.3), so the rolling window was consumed since. Retry-After grew from 728s earlier today to 1583s now, indicating each request pushes the window. Likely driver: ajianaz router has no prompt-cache discount so every interactive call re-bills full context (65k-93k tokens/turn this session) against the 15M/5h window. Recommendation given: wait ~20-26 min without polling; use deepseek preset (has cacheRead) for interactive sessions, reserve GLM for short one-shots."
+}

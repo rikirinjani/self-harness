@@ -1,0 +1,12 @@
+﻿{
+  "timestamp": "2026-10-01T10:40:00Z",
+  "category": "dependency",
+  "slug": "mempalace-session-knowledge-not-archived",
+  "agent": "orchestrator",
+  "outcome": "blocked-by-design",
+  "root_cause": "Rule 10 requires filing session knowledge into MemPalace. The MemPalace MCP server is disabled in this environment (token-overhead decision) and no shell CLI fallback exists. mempalace_mempalace_add_drawer is not resolvable.",
+  "what_went_wrong": "Session produced non-trivial knowledge (Netra Runtime pricing/background, GLM 17M tier raise, xrdp.ini port-misconfiguration root cause, brute-force mitigation playbook) that Rule 10 requires archiving to MemPalace. No write path to MemPalace exists in this session.",
+  "actual_impact": "Knowledge persists only in PM-1 traces and QMS/self-harness records, not in the MemPalace knowledge base. Durable cross-session retrieval of these findings is unavailable.",
+  "recovery": "Findings are preserved in pm1 traces (self-harness/traces/session-wrap-20261001-1022.pm1 and the per-task traces it references). If MemPalace is restored, file: projects/netra-runtime-research, projects/glm-ajianaz-quota, agentic-layer/remote-server-hardening.",
+  "follow_up": "Requires human action to enable MemPalace MCP or authorize a scoped archival-deferral exception per Rule 11.5. Not blocking on the user's stated work."
+}

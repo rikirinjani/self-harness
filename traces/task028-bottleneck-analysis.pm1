@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "task028-bottleneck-analysis",
+  "timestamp": "2026-09-21T06:23:14.944297+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 40,
+  "key_files": [
+    "morse/experiments/pm1-rx/TASK_028_BOTTLENECK_ANALYSIS.md",
+    "morse/experiments/pm1-rx/TASK_028_STATE_TRANSITION_MATRIX.json",
+    "morse/experiments/pm1-rx/TASK_028_3B_7B_FIELD_ANALYSIS.json",
+    "morse/experiments/pm1-rx/TASK_028_NEXT_EXPERIMENT_DECISION.md",
+    "morse/experiments/pm1-rx/scripts/task028_bottleneck_analysis.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task028-bottleneck-analysis",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........--.-..-.........................................-.--...-",
+  "action": "Task 028: State Reconstruction Bottleneck Analysis (analysis-only, no inference). Phases 1-12 complete. Authoritative schema: 10 fields, only 4 well-populated (objective/phase/current_task_status/next_actionable_state); commitments+unresolved_questions=0 atoms. Key finding: PARTIAL->PARTIAL dominant transition (74/169=44%); model scaling moves atoms out of UNRELATED but not into equivalence. 3B->7B: UNRELATED 27.8%->18.6%, Rule D 12.5%->37.1%, Matcher F1 flat (0.127->0.128). Bottleneck classified C (consumer prompt/schema focus) primary, D (schema) secondary, A (capacity) contributing. 14B NOT authorized; decision=C (representation intervention first). Next experiment: 5x2 prompt-focus pilot, success >=20% ACCEPTED. Determinism verified byte-identical."
+}

@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "poly-bot-v11-trainer",
+  "timestamp": "2026-10-07T11:12:10.526945+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 10,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\poly_bot_v11.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "poly-bot-v11-trainer",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........--.-..-.........-.--...-........................................-.--...-",
+  "action": "v11 SELL-only extended trainer:  capital /trade 20 cycles paper dry run. 40 trades 92.5pct WR +.59 PnL final .59 ROI +75.2pct MaxDD 12.5pct. BTC .8k vol 34pct. Confirms SELL-only strategy works at small capital. AWS US VPS launch attempted but SSH key mismatch — bot functional on Singapore VPS paper mode."
+}

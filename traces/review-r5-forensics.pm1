@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "review-r5-forensics",
+  "timestamp": "2026-10-10T16:35:12.700088+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 20,
+  "key_files": [
+    "C:/Users/think/khanza_report.json",
+    "C:/Users/think/khanza_validation_protocol.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "review-r5-forensics",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "External review round-5 disposition forensics: (1) resolved both tagging contradictions - 000222/000198/000225/0014 are SEED not DR (numeric no_rkm_medis 000048/000002/000053/000058), DR-only filter returns exactly 354, 0 DR zero-fee visits, 67 unbilled DR visits (all proc-only dpo=0/proc=1); (2) computed exact DRU-1 undercount = Rp 23,729,010.57 (431 units, 14 repeat pairs, 10 visits, price x qty x 1.11) replacing the ~3.5M estimate; (3) determined repeat-line nature: all 14 pairs have 1 distinct no_resep, 4 resep_obat rows each with identical jam (07:42/16:47/08:29), distinct_days=1 -> DUPLICATED export lines of one dispense, NOT additive and NOT re-rolled; correct jml = distinct value (9 for 000203 B000000003); (4) applied protocol v3 fixes: correct acceptance criterion (total rows not value rows), finance-table scope decision (consumer replicates billing+nota_jalan only; jurnal/detailjurnal/piutang marked observed-not-replicated), DR-visit re-aim, 67-unbilled reg-only guard, half-rupiah 1e-6 Java tolerance, faketime paid-visit check, synthetic dump-of-sik creation, envelope stated as intended; (5) updated khanza_report.json: preDRU1_superseded key, sampleProvenance SEED correction, 0014 SEED correction, DRU-1 exact amount + absolute-sum fix note, pendingValidation rebuilt. Protocol v3 now marked up. DRU-1 consumer code fix + recompile + re-run still pending."
+}

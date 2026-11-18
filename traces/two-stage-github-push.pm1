@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "two-stage-github-push",
+  "timestamp": "2026-09-26T02:54:46.716734+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 28,
+  "key_files": [
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest-publish\\README.md",
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest-publish\\.gitignore",
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest-publish\\SHA256SUMS.txt",
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest-publish\\results.json",
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest-publish\\RESULTS_SUMMARY.md",
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest-publish\\run-archive-v1.tgz",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\20260926-pass-two-stage-github-push.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "two-stage-github-push",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Sanitized the two-stage backtest snapshot, created approved private repo rikirinjani/jev-two-stage-backtest, committed e8da2ab on main, pushed, and passed independent verification: private visibility, matching remote HEAD, 25 files, matching artifact hashes, clean secret scan, and README validity warning present."
+}

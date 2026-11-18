@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "poly-bot-indodax-test",
+  "timestamp": "2026-10-08T00:56:05.026933+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 60,
+  "tool_calls": 10,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\test_indodax_api.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "poly-bot-indodax-test",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Indodax API test: Key rejected with 'Invalid credentials' error. Trainer Atlanta running at cycle 65,845, ,465 (+78,831%). Crypto bot NY running paper mode with Coinbase prices. Indodax integration blocked by invalid credentials."
+}

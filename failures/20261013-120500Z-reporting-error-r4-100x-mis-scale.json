@@ -1,0 +1,31 @@
+{
+  "timestamp_utc": "2026-10-13T12:05:00Z",
+  "category": "reporting-error",
+  "severity": "high",
+  "title": "100x percentage mis-scaling in R3 report and claims ledger (published 0.0185% for 4/216 = 1.85%)",
+  "root_cause": "Treated the unit fraction 0.0185 (= 4/216) as if it were a percentage, and inverted the unit-lint rule text so it claimed the correct 1.85% figure was the mis-scaling.",
+  "what_went_wrong": [
+    "Report R3 sections 1/2/3/5/10/13 published '0.0185%' - 100x too small; correct value is 4/216 = 1.85%.",
+    "e1_claims_ledger unit-lint rule was inverted: it rejected the correct figure and endorsed the wrong one.",
+    "r2_2_corrected.md:17 and p1_rootcause.md:118 carried the wrong 0.0185% figure."
+  ],
+  "detection": "External-review follow-up audit of report claims vs evidence arithmetic.",
+  "correction": {
+    "figures": "All claim figures corrected to n/N = x% form: 4/216 = 1.85% (or 0.0185 as explicit unit fraction).",
+    "lint_rule": "Rewritten to require both denominator and computed percentage; bare fractions/percentages and mismatched scalings are rejected.",
+    "files_local": [
+      "C:\\Users\\think\\khanza_benchmark_report_R3.md (sections 1,2,3,5,6,7,9,10,13)",
+      "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\e1_claims_ledger_20261013T043444Z.md",
+      "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\r2_2_corrected.md",
+      "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\p1_rootcause.md"
+    ],
+    "files_onbox": [
+      "/opt/dr-benchmark/p-chain/e1_claims_ledger_20261013T043444Z.md",
+      "/opt/dr-benchmark/p-chain/r2_2_corrected.md",
+      "/opt/dr-benchmark/p-chain/p1_rootcause.md"
+    ],
+    "verification": "grep -rn '0.0185' /opt/dr-benchmark/p-chain/ returns only historical raw logs (p1.log unit-fraction 'rate 0.0185', log timestamp false positive) and intentional correction prose; no remaining wrong claim figures. r2_2_corrected.txt verified raw-TSV evidence, no prose to fix."
+  },
+  "agent": "orchestrator",
+  "status": "corrected"
+}

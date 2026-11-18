@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "glm-reset-full-15m",
+  "timestamp": "2026-09-28T07:26:00.989792+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 40,
+  "tool_calls": 1,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "glm-reset-full-15m",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................-.--...-........-.--...-........................................................-.--...-",
+  "action": "GLM ajianaz reset confirmed: HTTP 200. New window 07:25 UTC, used 0, remaining 15,000,000 (100%), window ends 12:25 UTC. Key valid to 2026-10-25. Fully recovered after the ~191 min lockout."
+}

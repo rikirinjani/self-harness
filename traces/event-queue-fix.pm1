@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "event-queue-fix",
+  "timestamp": "2026-10-06T12:53:38.317073+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "src/engine/event-queue.ts",
+    "tests/snapshot-v2.test.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "event-queue-fix",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Fixed O(n^2) event queue: replaced flat-array filters with binary-search sorted insertion. ms/tick now flat (~350ms) instead of growing to 4827ms at 100k ticks. 300 tests pass."
+}

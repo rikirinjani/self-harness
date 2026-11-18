@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "salt-guard-v2-expansion",
+  "timestamp": "2026-09-25T05:09:41.609443+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2700,
+  "tool_calls": 35,
+  "key_files": [
+    "rag-queries/extract_l3.py rag-queries/rxnorm_validate.py rag-queries/rxnorm_report.json api/drugs.json rag-queries/l3_output/_backups/drugs_20260810_saltguard_v2_pre.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "salt-guard-v2-expansion",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "Salt-guard v2: audited SALT_NAME_RE vs real keyword set (found potassium 102 uncovered, stoich sodium, arb-in-carbonate, gi-in-alginate); expanded regex to full USP<1121>/RxNorm cation/anion/prefix/hydrate vocabulary with safe generic salt-suffix branch + keyword-prefix guard; restored curated comparator list; verified 28/28 masked + 18/18 legit kept; re-ran 88 drugs --reparse, merged, diffed = 1 change (losartan electrolyte_risk 2->1, own-name masking, no real electrolyte evidence in pool); built rxnorm_validate.py -> 52/88 drugs are salt forms; committed+pushed to public repo"
+}

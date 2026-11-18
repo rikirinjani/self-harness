@@ -1,0 +1,37 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-onboarding-recon-2026-09-16",
+  "timestamp": "2026-09-16T00:13:16.534148+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 38,
+  "key_files": [
+    "experiments/pm1-rx/TASK_009A_RESULT.md",
+    "experiments/pm1-rx/TASK_009_PILOT_A_RESULT.md",
+    "experiments/pm1-rx/TASK_009_PROTOCOL.md",
+    "experiments/pm1-rx/TASK_009_MANIFEST.json",
+    "experiments/pm1-rx/harness/CONFIRMATORY_001_FREEZE_RECORD.md",
+    "experiments/pm1-rx/harness/pm1rx/shadow_oracle.py",
+    "experiments/pm1-rx/harness/pm1rx/shadow_producers.py",
+    "experiments/pm1-rx/harness/pm1rx/shadow_coverage.py",
+    "experiments/pm1-rx/harness/pm1rx/loopguard.py",
+    "experiments/pm1-rx/harness/tests/test_shadow_009a.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-onboarding-recon-2026-09-16",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........--.-..-.........................................-.--...-",
+  "action": "PM-1 onboarding recon: reconstructed project state from repository only. Verified branch pm1-rx-v14, HEAD c8404b7, Exp001 freeze tag target 8304262 (matches onboarding), local Exp001 artifact hashes byte-identical to freeze record (final_analysis d0f5c200..., raw_H0 d73fddc2..., raw_H10_main ed1b17f7..., raw_H10_fill e440b8d3..., raw_H50_rerun 18ca6df7...). Confirmed Task 009A = VALIDATION FAIL, Task 009B NOT started (no artifacts). Read shadow_oracle.py, shadow_producers.py, shadow_coverage.py, loopguard.py, test_shadow_009a.py. Ran full harness suite: 234 passed. Found 4 divergences: (1) LIVE_CONTEXT_MUTATION documented as hard-stop in protocol/manifest but NOT implemented in loopguard.py; (2) Task 009/009A executed runner scripts (pilot_009a_runner.py, extract_boundaries.py, safety_checks.py, pilot_runner.py) exist ONLY in AppData Temp, not committed to repo - reproducibility gap; (3) C producer schema (constraints/decisions/questions/failures/dependencies/status/next_actions) does not match oracle schema (active_constraints/pending_decisions/unresolved_questions/known_failures/relevant_dependencies/current_task_status) - latent measurement defect biasing C; (4) minor numeric discrepancy contract 2271 chars, prompt_F-minus-transcript 2353 vs reported 2357. No files modified. No inference run. No repair attempted."
+}

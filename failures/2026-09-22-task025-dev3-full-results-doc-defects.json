@@ -1,0 +1,11 @@
+{
+  "record_type": "failure",
+  "agent": "orchestrator",
+  "task": "TASK025",
+  "category": "process",
+  "summary": "DEV-3: TASK_024_FULL_RESULTS.md has wrong total (154 = Task 015 field-atoms, rows sum 144), wrong accept-reason labels ('5 PARTIAL+MATCHER_ACCEPT'), and mixed-unit Task-015 comparison table",
+  "root_cause": "Full-Results report assembled without: (a) checking total-row denominators against verdict-row sum, (b) generating accept-reason breakdowns from results JSON instead of prose, (c) asserting metric units before building the Task-015 comparison table",
+  "what_i_did_wrong": "Task 024 report was published with hand-derived totals, hand-written accept reasons that contradicted the results JSON, and a comparison table that put micro-F1 next to cell-accept rates without unit labels — none caught before Task 025's reconciliation",
+  "response": "Documented all three defects in TASK_025_ANALYSIS.md §1/§4/§11; left TASK_024_FULL_RESULTS.md unmodified per analysis-only rules; filed NCR-2026-09-22-TASK025-003; deferred errata handling to reviewer as decision item 3",
+  "status": "recorded_pending_human_disposition"
+}

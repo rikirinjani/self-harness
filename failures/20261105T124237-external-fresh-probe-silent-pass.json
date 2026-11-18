@@ -1,0 +1,11 @@
+{
+ "timestamp": "2026-11-05T12:42:37+07:00",
+ "agent": "orchestrator",
+ "outcome": "fail",
+ "category": "external",
+ "severity": "medium",
+ "summary": "Fresh gate probe (--fresh-probe, pilot) returned gate_passed=true on a 0/18 score: every API call was HTTP 401, so all 18 first-attempt checks recorded failures and the gate silently passed.",
+ "root_cause": "exp_e2.fresh_probe had no error handling on the model call and a pass condition that only looked at the success rate. Any non-200 (401, transport) recorded as a failed model attempt, so an aborted probe read as 0% first-attempt success, below the 25% threshold. An API failure is not a no-memory data point.",
+ "recovery": "fresh_probe now checks resp.http_status after every call: on non-200 it writes the abort reason to fresh_probe.json, exits non-zero, and sets gate_passed=false; a separate guard aborts if no results were produced. Verified: a 401 now aborts loudly with calls=0, est 0.00, gate NOT passed. No paid data was involved (0 calls).",
+ "trace_id": "20261105T054221-orchestrator-cli.pm1"
+}

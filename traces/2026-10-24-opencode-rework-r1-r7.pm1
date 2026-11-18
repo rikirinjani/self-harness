@@ -1,0 +1,39 @@
+{
+  "pm1_version": 1,
+  "session_id": "2026-10-24-opencode-rework-r1-r7",
+  "timestamp": "2026-10-25T00:00:00+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 46800,
+  "tool_calls": 96,
+  "key_files": [
+    "Project_v2/LocalNotebook/rag-rework/api_server.py",
+    "Project_v2/LocalNotebook/rag-rework/scripts/test_e2_executor.py",
+    "Project_v2/LocalNotebook/rag-rework/scripts/verify_p1_paths.py",
+    "Project_v2/LocalNotebook/rag-rework/scripts/analyze_retrieve_log.py",
+    "Project_v2/LocalNotebook/rag-rework/scripts/test_e6_fixtures.py",
+    "Project_v2/LocalNotebook/rag-rework/e6_fixtures/journalctl_g7_17b_s9.txt",
+    "Project_v2/LocalNotebook/rag-rework/scripts/e11_top3_recall_diagnosis.py",
+    "Project_v2/LocalNotebook/rag-rework/scripts/verify_layer1_integration.py",
+    "Project_v2/LocalNotebook/rag-rework/.gitignore",
+    "Project_v2/LocalNotebook/rag-rework/web/src/app/status/page.tsx",
+    "Project_v2/LocalNotebook/rag-rework/INDEX-CACHE-FEASIBILITY-2026-10.md",
+    "Project_v2/LocalNotebook/rag-rework/r7_results/r7_results.json",
+    "Project_v2/LocalNotebook/rag-rework/OPENCODE-REPORT-REWORK-2026-10.md"
+  ],
+  "branches": ["eng/opencode-rework-2026-10 @ 549e0d2 (7 task commits)"],
+  "new_rc_identity": "61bb28f7a038734eb63b46a8fe97257b9096f9cb98de17df8d0d136f66c29e06 (only api_server.py changed vs round-1 RC)",
+  "suites": "10/10 exit 0 in worktree (5 existing + verify_p1_paths + test_e2_executor + test_e4_status + eval/test_bm25_judge_fields + test_e6_fixtures)",
+  "failure": {
+    "count": 5,
+    "recorded_in": "failures/2026-10-24-r3-lane-terminations.json"
+  },
+  "kaggle": {
+    "kernels": "cokro-r7-idx-cache-bench v1 (build, artifacts salvaged), cokro-r7-idx-cache-bench2 v6 (measured, 17/17 phases)",
+    "dataset": "rikirinjani/cokro-r7-input v3 (150k rows + built IVF-PQ table)"
+  },
+  "encoding": "morse",
+  "n_states": 7,
+  "state_width": 8,
+  "notes": "R1-R7 complete and committed; G7 self-check repro tests pass; all CPU-heavy work (embedding, benching) ran on detached Kaggle CPU kernels per handoff 2A. Five iterations on the R7 kernel harness were self-inflicted bugs, each root-caused and recorded."
+}

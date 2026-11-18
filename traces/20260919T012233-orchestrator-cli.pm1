@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260919T012233-orchestrator-cli",
+  "timestamp": "2026-09-19T01:22:33.720794+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 60,
+  "tool_calls": 8,
+  "key_files": [
+    "annotation/primary_annotation.csv",
+    "annotation/second_annotation.csv",
+    "annotation/validate_annotations.py",
+    "annotation/merge_annotations.py",
+    "annotation/annotation_guide.md",
+    "annotation/candidate_index.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260919T012233-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........--.-..-.........................................-.--...-",
+  "action": "Prepared blinded annotation workflow: primary_annotation.csv (126 candidates), second_annotation.csv (30 candidates, 24%), validation script, merge script with Cohen's kappa. All blinded (no rank/score/tier). Ready for human annotation."
+}

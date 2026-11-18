@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "verify-g6-e1-instrumentation",
+  "timestamp": "2026-09-26T22:33:29.910269+00:00",
+  "agent": "verifier",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 9,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\2026-09-27-pass-g6-e1-instrumentation.json",
+    "C:\\Users\\think\\self-harness\\failures\\2026-09-27T053000Z-process-qms-record-malformed.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "verify-g6-e1-instrumentation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........................................-.--...-........-.--...-........................................-.--...-",
+  "action": "G6-E1 verification (verify-only, no repo files modified): read request_events.py, api_server.py ask(), query_lancedb_fulltext.py main(), scripts/verify_g6_e1.py, G6-E1-REPORT.md. Confirmed: all 4 HTTP + 3 CLI exits emit exactly once before return; emit() never raises (try/except->dropped counter + guarded fallback log); append-only store (open-a, os.replace rotation, unlink-only retention); identical CLI/HTTP schema via shared emit constructor + outcome builders; scores raw _distance with honest lancedb_l2_distance/lower_is_better metadata; privacy = sha256[:16]+len, no auth/IP/user-id/raw text incl. errors.log; layer1_abstain.py mtime unchanged (detection untouched); no new LLM/network deps; T1-T9+baseline substantiate report claims (1357.3us/489B/rotated=44 confirmed in baseline json). DISCREPANCY flagged: report artifact 'trace g6-e1-instrumentation' does not exist in self-harness/traces - implementer must file retroactive trace (Rule 7) or correct report; minor test gaps noted (errors.log unasserted, T1-store strings outside T8 forbidden list). Verdict APPROVE. Wrote failure record for prior malformed QMS write (BOM+brace, root cause PS5.1 Set-Content + no parse validation; corrective action applied: json.dump/json.load pattern)."
+}

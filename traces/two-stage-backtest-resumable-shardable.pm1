@@ -1,0 +1,35 @@
+{
+  "pm1_version": 1,
+  "session_id": "two-stage-backtest-resumable-shardable",
+  "timestamp": "2026-09-25T10:10:35.159957+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 1500,
+  "tool_calls": 22,
+  "key_files": [
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest\\persist.ts",
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest\\regime.ts",
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest\\strategies.ts",
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest\\run.ts",
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest\\dist\\persist.js",
+    "C:\\Users\\think\\jev-crypto-trader\\research\\two-stage-backtest\\dist\\run.js",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\20260925-pass-two-stage-resumable-shardable.json",
+    "C:\\Users\\think\\.opencode\\skills\\STATE.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "two-stage-backtest-resumable-shardable",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................---..-..........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Made two-stage backtest resumable + shardable. NEW persist.ts: loadMap (empty on missing/corrupt), persistMap (2000ms debounce, atomic tmp+rename), flushMap (immediate, atomic), registerFlush (exit/SIGINT/SIGTERM/SIGHUP, idempotent, ensures load before flush). regime.ts/strategies.ts load caches from ../cache/{regime,direction}-TAG.json and persistMap after every set. run.ts: DEFAULT_PAIRS + PAIRS validation (exit 1 on unknown), TAG/RESULTS_NAME, shard mode writes results-TAG.json + prints pooled table and no summary, MERGE=1 reads all results-*.json (rows + curves, dedup by pair/strategy, requires 35 rows and 35 curves), recomputes pool and writes results.json + RESULTS_SUMMARY.md; full run writes results-all.json; every result file now carries curves. npx tsc exit 0. Isolated temp harness (stubbed ai/@ai-sdk typesafe-ai): MERGE exit 0 -> 35 rows/5 pooled/5x7 curves + md 35 rows; partial shard exit 1; PAIRS=BOGUS exit 1; no-key shard exit 1; persist smoke 7/7 PASS. Prompts, parsing, cache keys, metrics, 0.74bps, startIndex 60, MODEL_ID, experimental_evaluate shape unchanged. Not deployed to VPS."
+}

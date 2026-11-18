@@ -1,0 +1,10 @@
+﻿{
+    "severity":  "medium",
+    "timestamp":  "2026-10-24T20:32:35.3874648Z",
+    "trace_id":  "20261024T203230-orchestrator-cli.pm1",
+    "category":  "config",
+    "summary":  "kaggle kernels push for QCC Phase 0: competition input not attached (v1 ERRORED with ModuleNotFoundError: No module named \u0027kickmix\u0027); subsequent re-push hit 409 SaveKernel Conflict.",
+    "outcome":  "fail",
+    "agent":  "orchestrator",
+    "root_cause":  "kernel-metadata.json competition_sources used the user-prefixed form rikirinjani/google-verifiable-quantum-circuit-compilation, which the CLI silently rejects (it prints \u0027not valid competition sources and could not be added\u0027). The bare slug google-verifiable-quantum-circuit-compilation is required. The 409 followed because v1 already existed and re-pushing with changed inputs conflicted; resolved by kaggle kernels delete then re-push."
+}

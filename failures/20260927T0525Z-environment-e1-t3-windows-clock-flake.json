@@ -1,0 +1,10 @@
+{
+  "timestamp_utc": "2026-09-27T05:25:02Z",
+  "category": "environment",
+  "slug": "e1-t3-windows-clock-flake",
+  "severity": "low",
+  "what_happened": "G6-E1 T3 failed with 'assert e[total_ms] > 0'. On Windows, time.time() granularity is 15.625 ms (GetSystemTimeAsFileTime); the warm, stubbed T3 search path completes in ~4.9 ms, so total_ms rounded to 0.",
+  "root_cause": "Test asserted strictly positive wall-clock milliseconds on a path that can complete below the OS timer granularity. Environmental (Windows), not a product defect.",
+  "what_i_did_wrong": "Test was written assuming sub-millisecond clock resolution. Fixed test-only: the T3 search stub is wrapped with time.sleep(0.05) so elapsed time necessarily exceeds timer granularity; assertions unchanged.",
+  "action_taken": "Test-only sleep added to verify_g6_e1.py T3 stub (t3_search); E1 suite green T1-T10 + parity + acceptance 9/9 + 0/10. No product change."
+}

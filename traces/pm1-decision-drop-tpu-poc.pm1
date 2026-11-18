@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-decision-drop-tpu-poc",
+  "timestamp": "2026-10-06T03:50:25.463284+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\harness\\llm_keras.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\run_pilot.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-decision-drop-tpu-poc",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "DECISION: Drop TPU/GPU KerasHub adapter path. Kernel built but Kaggle V5E-8 queue too long. Fall back to Oct 10 GPU refresh for B2-notice completion (8 chains). Code saved in harness/llm_keras.py and run_pilot.py --backend flag for future use if queue clears."
+}

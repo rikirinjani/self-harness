@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "b1-fix-spec-apply",
+  "timestamp": "2026-09-29T12:42:35.339863+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\book1_fixed.txt"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "b1-fix-spec-apply",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................................................-.--...-........................................-.--...-",
+  "action": "Applied B1 fix spec (48 edits: 6 headers, 15 letter-chain dates, 9 E-items, 9 D-items, 7 D29 wording, 2 insertions) to book1_fixed.txt; all OLD strings matched exactly once; diff verified via git diff --no-index (workdir not a git repo); 2 stale-check strings remain but are unrelated pre-existing occurrences (L102 'six months later', L491 'fourteenth of Deepwinter') reported not fixed per spec"
+}

@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-e1-phase1-complete",
+  "timestamp": "2026-09-26T03:59:16.816015+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 16,
+  "key_files": [
+    "rag-queries/_add_e1_anticoagulants.py",
+    "api/drugs.json",
+    "rag-queries/curation/anticoagulant_values_draft.md",
+    "rag-queries/l3_output/_backups/drugs_20260925_e1_anticoag_pre.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-e1-phase1-complete",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "E1 Phase 1 complete: closed remaining nulls via openFDA (apixaban F 50, edoxaban 62, dabigatran 3-7, enoxaparin PK, Ki edoxaban 0.561/dabigatran 4.5); built and ran _add_e1_anticoagulants.py adding apixaban/rivaroxaban/edoxaban/dabigatran/warfarin/enoxaparin (drugs.json 89->95, existing unchanged, l3_systems seeded, m2 gains vd_l+protein_binding_pct, 7-field L4); committed da124aa"
+}

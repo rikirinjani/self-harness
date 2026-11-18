@@ -1,0 +1,35 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260918T204407-orchestrator-cli",
+  "timestamp": "2026-09-18T20:44:07.500089+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 0,
+  "key_files": [
+    "morse/experiments/pm1-rx/TASK_018_PROTOCOL.md",
+    "morse/experiments/pm1-rx/TASK_018_DATASET.json",
+    "morse/experiments/pm1-rx/TASK_018_DATASET_FREEZE.json",
+    "morse/experiments/pm1-rx/task018_runner.py",
+    "morse/experiments/pm1-rx/task018_tests.py",
+    "morse/experiments/pm1-rx/generate_task018.py",
+    "morse/experiments/pm1-rx/TASK_018_REPORT.md",
+    "morse/experiments/pm1-rx/results/task018/results.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260918T204407-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........................--.-..-.........................................-.--...-",
+  "action": "Task 018 complete. Matcher sensitivity: 28.6% (18/63). False rejection rate: 71.4%. The matcher rejects 71% of independently labeled legitimate equivalents. Only EXACT matches (100%) work. Paraphrase sensitivity: 0%. Interpretation: Category B — instrument insufficient for semantic endpoint. 97 pairs, 133 tests pass."
+}

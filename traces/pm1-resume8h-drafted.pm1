@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-resume8h-drafted",
+  "timestamp": "2026-10-04T04:31:39.126969+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\draft_resume_run.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\RUN_REGISTRY.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-resume8h-drafted",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "8H-CAPPED RESUME RUN DRAFTED (not launched per user): computed missing 16 runs = 8.3h est > 8.0h budget. Selected 10 runs (~7.5h): ALL 9 trial-2 h250s (P/P-pos/P-postarget x K{10,50,150}) + K150-t1-P-postarget - scientific priority = settling P-postarget K-dependence (complied K10 / inert K50 at n=1) + confirming P-full inertness and P-pos compliance at t2 scale. Deferred: 3x h50 + P-postarget-K150-t2 (6 runs, post-reset). Mechanics: seed dataset updated with 8 recovered chains, RUN_QUEUE=smoke,sweep, push -t 30000s self-limit guard. Draft in RUN_REGISTRY; implementation (seed update + zip/notebook + push) on user go."
+}

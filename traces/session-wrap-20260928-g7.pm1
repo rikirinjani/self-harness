@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "session-wrap-20260928-g7",
+  "timestamp": "2026-09-28T03:25:19.588323+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "Project_v2/LocalNotebook/rag-service/G7-RELEASE-DIFF-REPORT.md",
+    "Project_v2/LocalNotebook/rag-service/data/g7_release_manifest.json",
+    "Project_v2/LocalNotebook/rag-service/PRE-PRODUCTION-TODO.md",
+    "Agentic Layer/qms/records/verifications/VER-G7-001.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "session-wrap-20260928-g7",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "G7 session wrap: gate PASSED - RC frozen (89586c181b380815ee956763696db880b10f1c0c5363f157e65adf561f5a0aed, git HEAD 2874587), production diff fully classified (P0-2 + G6-E1/E2/E4 + pre-P0 unattributed files content-verified), no prohibited mechanisms, G6 fail-open confirmed, 5 suites exit 0 unchanged, ver-1 APPROVE with verified identity; pre-G8 requirements recorded (bot_poller token remediation MEDIUM, manifest refresh, explicit human authorization); stopped before G8 - no deployment performed"
+}

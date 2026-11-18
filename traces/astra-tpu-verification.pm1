@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "astra-tpu-verification",
+  "timestamp": "2026-09-26T01:24:33.717690+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 10,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\example_task.py",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\out\\what-is-kaggle\\1\\gpt-6-astra\\3228122\\What_is_Kaggle-run_id_Run_1_openai_gpt-6-astra.result.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "astra-tpu-verification",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................--.-..-.........-.--...-........................................-.--...-",
+  "action": "Proved GPT-6 Astra accessibility: local SDK allow-list = 7 models (server-determined, env override fails), but server-side 'kaggle b t run -m openai/gpt-6-astra' works - pushed private draft task what-is-kaggle, ran Astra (score 1.0, .00826, 4s), downloaded run artifacts. Confirmed TPU quota full 20h"
+}

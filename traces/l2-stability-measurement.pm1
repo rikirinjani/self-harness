@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "l2-stability-measurement",
+  "timestamp": "2026-09-26T17:47:14.892030+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 660,
+  "tool_calls": 30,
+  "key_files": [
+    "C:\\Users\\think\\.opencode\\skills\\l2_stability_eval.py",
+    "C:\\Users\\think\\.opencode\\skills\\l2_stability_records.jsonl",
+    "C:\\Users\\think\\.opencode\\skills\\l2_stability_report.json",
+    "C:\\Users\\think\\.opencode\\skills\\l2_stability_verify.py",
+    "C:\\Users\\think\\.opencode\\skills\\l2_stability_summary.py",
+    "C:\\Users\\think\\.opencode\\skills\\probe_stability.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "l2-stability-measurement",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--.........--...--........--.-..-.........................................-.--...-",
+  "action": "Authorized Layer-2 stability measurement: 14 cases x 5 reps x 2 conditions (sequential, concurrency-4) = 140 Vultr SI calls, layer2-v3 prompt imported byte-identical from P0-3 harness, temp 0, max_tokens 2048. Results: 7/14 cases unstable, 16/140 deviations (11.4%), cross-condition agreement 55/70 (78.6%), NO concurrency association (dev z=0.564 p=0.57; transition z=1.942 p=0.052, point estimates favor concurrency-4), latency p50 3979/4158ms seq/con4, p95 6206/6709ms, cost \\.10245 total (\\.000737/query), 1 parse ERROR. Independent recomputation all passed. Recovered from bad-key run (NVIDIA key sent to Vultr, 422) + wrong case count (34 vs 14) via preflight gate and group filter."
+}

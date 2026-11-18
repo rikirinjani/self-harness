@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-probe50-launch",
+  "timestamp": "2026-10-02T12:00:36.401429+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\run_pilot.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\make_kaggle_notebook.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-probe50-launch",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "50-hop probe LAUNCHED (kernel v15): RUN_QUEUE=smoke,probe50 - P + P-pos cell (50,10) t1 (2 runs, ~100 calls, ~16 min incl setup, fits 0.41h remainder). Proves facts-line notice delivery on a live model before the 5h B2-notice commitment. run_pilot --phase2 probe50 added (own results/phase2-probe50 dir, keeps B2 matrix clean) + stub-validated. Notebook probe50 command + rebuilt zip verified."
+}

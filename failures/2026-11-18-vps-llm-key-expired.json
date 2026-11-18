@@ -1,0 +1,12 @@
+{
+    "severity": "high",
+    "timestamp": "2026-11-18T03:10:00Z",
+    "trace_id": "vps-disable-pii-prompt",
+    "category": "credentials",
+    "summary": "VPS staging cannot produce any answer: the only LLM credential is expired. opencode.ai returns 401 api_key_expired; the same key and the expert key both fail at api.deepseek.com with 401 authentication_error.",
+    "outcome": "blocked",
+    "agent": "orchestrator",
+    "root_cause": "Rotated/expired OPENAI_API_KEY in /opt/chatbot/bridge/.env (provider opencode.ai/zen/go/v1) with no replacement; DEEPSEEK_API_KEY in /opt/chatbot/docker/.env and expert/.env are not valid DeepSeek credentials either. Secondary: the opencode endpoint additionally rejects requests without an x-opencode-session header (400 MissingSessionID), so a fresh key alone will not be enough.",
+    "recovery": "Not resolved; requires a new API key from the owner. Prompt change (disable name/NIK/email solicitation) is applied and loaded, but behavioural verification is impossible until a valid key exists.",
+    "prevention": "Alert on 401/api_key_expired from the LLM provider; store the live key in one secret store and document expiry/rotation; add the required x-opencode-session header to the client so key rotation alone restores service."
+}

@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "r001-r500-xlsx",
+  "timestamp": "2026-09-16T04:04:01.085226+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 240,
+  "tool_calls": 5,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\chatbot\\R001-R500_report.xlsx"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "r001-r500-xlsx",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Generated R001-R500_report.xlsx (500 rows, 175KB) with 5 columns: No/R-ID, Query, Status, Keterangan (classification: resolved/unresolved + duplikasi/ucapan terima kasih/single character/fragmen follow-up/perlu jawaban admin/tidak ada data), Jawaban terkirim. Breakdown: 303 resolved, 25+6+3+1=35 resolved-duplikasi, 8+1 resolved-thanks/fragmen, 64 unresolved-perlu-jawaban, 8 fragmen follow-up, 3+2 unresolved noise, 76 R-ID tidak tercatat (gaps in sequence)"
+}

@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260922T033334-orchestrator-cli",
+  "timestamp": "2026-09-22T03:33:34.510904+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 4,
+  "key_files": [
+    "eval/calibration/nvidia-run1/metrics.json",
+    "eval/calibration/nvidia-run2/metrics.json",
+    "NEXT-TASK-JUDGE-RECALIBRATION.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260922T033334-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Verified judge calibration report against run metrics: confirmed zero above-diagonal mass (one-directional downward bias), judge >=2 rate 18 vs human 42, borderline_low weighted kappa 0.267. Accepted conditional pass. Prepared rubric-hardening and re-calibration handoff with amended bias/stability gate rows."
+}

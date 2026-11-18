@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261017T145947-orchestrator-cli",
+  "timestamp": "2026-10-17T14:59:47.890057+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "api/drugs.json",
+    "api/l4_schema_map.json",
+    "rag-queries/curation/apply_a1c_efficacy.py",
+    "rag-queries/_add_e3_e4_drugs.py",
+    "rag-queries/test_typed_evidence.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261017T145947-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................--.-..-.........................................-.--...-",
+  "action": "DQF Phase 2 P2-1: l4_clinical.a1c_efficacy for 28 Diabetes drugs (evidence 005a7a0, apply 3ed7642, alias kept); Kaggle PASS pre-apply and post-push"
+}

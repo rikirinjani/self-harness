@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "v2-oracle-close",
+  "timestamp": "2026-10-10T15:20:06.728316+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 6,
+  "key_files": [
+    "C:/Users/think/khanza_report.json",
+    "C:/Users/think/real_form_validation_v2.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "v2-oracle-close",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Closed out external review round 2: security strip+rotation done (benchmark pw rotated, report redacted of AES key/IV/usere/IPs), v2 consumer re-run confirmed (PPN 11% whole-rupiah, no Tagihan, reg=biaya_reg, obat naming, density 17.34), real-form re-diff on 10 frozen visits -> 9/10 exact value rows, PPN 6/6, verdict VALIDATED ORACLE. khanza_report.json depth updated to validated."
+}

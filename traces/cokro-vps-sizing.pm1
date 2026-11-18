@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "cokro-vps-sizing",
+  "timestamp": "2026-09-29T13:46:55.254356+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 420,
+  "tool_calls": 9,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\FINAL-STACK.md",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\api-requirements.txt",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\cokro-api.service",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\query_lancedb_fulltext.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\api_server.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "cokro-vps-sizing",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........--.-..-.........................................-.--...-",
+  "action": "VPS capacity assessment for Cokro web+API: stack recon (FINAL-STACK topology, api-requirements deps, embed_query HF-serverless-first w/ torch fallback, LanceDB on S3, DeepSeek cloud) -> verdict on 2vCPU/2GB/40GB/512GB box"
+}

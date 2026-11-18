@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-arc-prize-briefing",
+  "timestamp": "2026-09-30T14:56:00.357132+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-arc-prize-briefing",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................................................................-.--...-",
+  "action": "ARC Prize 2026 research for user briefing: 3 tracks confirmed via CLI (arc-agi-3 \\ deadline Nov 2; arc-agi-2 \\ Nov 2; paper-track \\ Nov 9 23:59 UTC, 215 teams, userHasEntered=False). Mechanics: all via Kaggle, NO internet during evaluation (API-based systems banned), open-source mandatory (CC0/MIT-0), papers Nov 8/9, results Dec 4. ARC-AGI-3 = new interactive benchmark (novel game-like envs, no NL instructions, skill-acquisition efficiency over time, 100% human-solvable). Paper track: must link a real Kaggle code submission on AGI-2/3 (need not score high) + Accuracy rubric category fed by leaderboard score; rubric 6x0-5 (Accuracy/Universality/Progress/Theory/Completeness/Novelty); Top Paper \\ + \\ pool at >=4.5. CORRECTION of earlier assessment: deadline is 33 days away, not 3 (arithmetic error owned) - entering is physically feasible; prize odds still capped by Accuracy category (~4.3 max rubric < 4.5 pool) unless the agent scores. Synergy noted: our offline Gemma 4 T4x2 stack matches ARC's no-internet constraint for a future cycle. Pilot still RUNNING."
+}

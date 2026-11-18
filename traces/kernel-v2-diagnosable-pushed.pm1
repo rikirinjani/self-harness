@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "kernel-v2-diagnosable-pushed",
+  "timestamp": "2026-10-03T01:42:32.298267+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "Deers-Rock/scripts/kaggle-longrun/validate-bounded.mjs"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kernel-v2-diagnosable-pushed",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Kernel v1 10k validation ERRORED with undownloadable output (multi-GB package: repo+node_modules+journal; two download attempts timed out at 5min/15min). 100k kernel died at Kaggle 12h limit as predicted (CANCEL_ACKNOWLEDGED at 01:09 UTC, 7.5h+ past estimate - CPU-scaling wall per issue #4). Diagnosis path: API-check cleared script usage (pending() exists, saveSnapshot 3rd param ok), local smoke TICKS=300 PASSED (crash-resume works, report written, queueLen 87 proves durable-queue restore, 44 ED-discharges at tick 300) - so v1 ERROR was gate-FAIL-at-scale or mid-run crash, hidden by output size. Remediation: hardened validate script (progress lines every 1000 ticks, CRASH-RESUME marker, partial-report-on-crash with exit codes 0/1/2, guarded empty-sample report) - local re-smoke PASS; committed 16b0513, CI pushed. Kernel v2 pushed (same slug, pinned 16b0513): tee'd validation.log, report copied to working root, node_modules/.git/journal removed after run (slim package always downloadable), non-fatal final cell. v2 RUNNING, expect ~1-3h."
+}

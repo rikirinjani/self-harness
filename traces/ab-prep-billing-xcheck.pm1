@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "ab-prep-billing-xcheck",
+  "timestamp": "2026-09-23T03:20:33.176607+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\ab_plan\\embed_cost_table.json",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\ab-prep-five-model-freeze-20260923.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ab-prep-billing-xcheck",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Cross-checked embed_cost_table freeze.modal_billing_this_month (metered 47.49 / billed 17.46) vs QMS evidence.modal_billing — values match; property path corrected after empty first read"
+}

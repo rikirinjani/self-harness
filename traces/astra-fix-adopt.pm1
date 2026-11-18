@@ -1,0 +1,38 @@
+{
+  "pm1_version": 1,
+  "session_id": "astra-fix-adopt",
+  "timestamp": "2026-10-02T01:19:44.747186+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 18,
+  "key_files": [
+    "C:\\Users\\think\\self-harness\\governance\\ADOPTION.md",
+    "C:\\Users\\think\\self-harness\\governance\\evidence-binding\\EVIDENCE-SCHEMA.md",
+    "C:\\Users\\think\\self-harness\\governance\\evidence-binding\\run-evidence.py",
+    "C:\\Users\\think\\self-harness\\governance\\control-tests\\test_controls.py",
+    "C:\\Users\\think\\self-harness\\governance\\degraded-modes\\RULES-degraded-ops.md",
+    "C:\\Users\\think\\self-harness\\governance\\role-matrix-contracts\\ROLE-MATRIX.md",
+    "C:\\Users\\think\\self-harness\\governance\\role-matrix-contracts\\delegation-contract-template.md",
+    "C:\\Users\\think\\self-harness\\governance\\acceptance-gate\\verify-change",
+    "C:\\Users\\think\\self-harness\\governance\\acceptance-gate\\.github\\workflows\\verify-change.yml",
+    "C:\\Users\\think\\self-harness\\governance\\overhead-metrics\\measure_overhead.py",
+    "C:\\Users\\think\\self-harness\\governance\\overhead-metrics\\metrics.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "astra-fix-adopt",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Adopted Kaggle fix bundle apply-astra-fixes run 3907934 (9 files) into self-harness/governance; composited missing EVIDENCE-SCHEMA.md (gemini-3.7-flash draft sections 1-2 + local section 3 completed against run-evidence.py record writer); wrote ADOPTION.md provenance/status ledger; ran control-tests/test_controls.py -> 8/8 PASS on Windows/Python 3.12.10"
+}

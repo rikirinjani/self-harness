@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261025T081359-orchestrator-cli",
+  "timestamp": "2026-10-25T08:13:59.611216+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2700,
+  "tool_calls": 25,
+  "key_files": [
+    "C:/Users/think/Agentic Layer/pm1-continuation/quantum/src/invsqrt/stage_isolation.py",
+    "C:/Users/think/Agentic Layer/pm1-continuation/quantum/src/invsqrt/sweep2.py",
+    "C:/Users/think/Agentic Layer/pm1-continuation/quantum/RUN_LOG.md",
+    "C:/Users/think/Agentic Layer/pm1-continuation/quantum/PACKET_invsqrt.md",
+    "C:/Users/think/Agentic Layer/pm1-continuation/quantum/kaggle/out/pm1-qcc-invsqrt-stages-20261025-1/stages/stage_isolation.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261025T081359-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "QCC stage-isolation kernel on Kaggle (exact per-stage Toffolis: normalize 120, qrom 191, horner_1 360, horner_0 623, denormalize 300, fwd sum 1594, full 3178 incl. 10-Toffoli init_and/del_and asymmetry) + sweep2 estimator fix (tof/2 -> tof, n_rot f-4; validated to 9 digits on T1) + re-rank on Kaggle (A=9 #1 at 582559, only 1.4% under T1) + RUN_LOG time-order reorder + packet NEXT correction."
+}

@@ -1,0 +1,15 @@
+{
+  "id": "2026-10-01-subagent-reconcile-compaction-recurrence",
+  "timestamp": "2026-10-01T07:25:00+08:00",
+  "category": "subagent-compaction-recurrence",
+  "severity": "low",
+  "what_went_wrong": [
+    "Attempted to reconcile librarian session lib-1 after consuming its research result; the close-out task spawned as fresh session lib-3 and died instantly with 'Session too large to compact - context exceeds model limit even after stripping media'",
+    "This is the same signature as NCR-2026-09-28-SUBAGENT-COMPACTION-001 (still OPEN) — compaction failures persist and fresh-session spawns are flaky, not just pre-existing large sessions",
+    "A prior no-task_id attempt (lib-2) spawned a redundant session instead of resuming lib-1"
+  ],
+  "impact": "Zero impact on the deliverable: lib-1's research was received, integrated into the payments advisory, written to trace research-cokro-genmodel.pm1 (verified) and filed to MemPalace. lib-1/lib-2 remain 'completed, unreconciled' on the board; per board sentinel, completed sessions are reusable regardless",
+  "lesson": "Do not spawn reconcile-only sessions — each attempt risks a new errored session. Reconciliation of already-consumed results is cosmetic; stop after one failed attempt. Always pass task_id when resuming (lib-2 miss spawned a duplicate)",
+  "action_taken": "Ceased reconciliation attempts; NCR-2026-09-28 remains open with this as recurrence evidence",
+  "recorded_by": "orchestrator"
+}

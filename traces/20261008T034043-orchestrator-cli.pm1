@@ -1,0 +1,35 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261008T034043-orchestrator-cli",
+  "timestamp": "2026-10-08T03:40:43.174511+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 0,
+  "key_files": [
+    "src/engine/ai-coder.ts",
+    "src/patient/schema.ts",
+    "src/engine/state-store.ts",
+    "src/engine/medical-records.ts",
+    "src/engine/world.ts",
+    "src/api/rest.ts",
+    "tests/ai-coder.test.ts",
+    "docs/adr/ADR-018-ai-medical-coder.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261008T034043-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........................--.-..-.........................................-.--...-",
+  "action": "ADR-018 AI Medical Coder: ICD validator, DRG assigner, completeness scorer, 4-coder learning engine. 12 tests pass. 47 files, 363 tests total. Kernel v5 on Kaggle."
+}

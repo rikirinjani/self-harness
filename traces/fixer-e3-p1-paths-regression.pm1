@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "fixer-e3-p1-paths-regression",
+  "timestamp": "2026-10-19T04:04:48.648140+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\scripts\\verify_p1_paths.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "fixer-e3-p1-paths-regression",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................................................-.--...-........................................-.--...-",
+  "action": "Fixed scripts/verify_p1_paths.py (T3 stub raise fix, T4 patch _embed_query_uncached under real cached embed_query, T5 fake-lancedb reconnect test, T6 (q_emb,k) signatures); suite passes 23/23 exit 0; py_compile OK; committed d5de409 on eng/opencode-backlog-2026-10"
+}

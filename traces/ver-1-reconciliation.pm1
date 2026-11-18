@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "ver-1-reconciliation",
+  "timestamp": "2026-09-26T22:05:47.995779+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 0,
+  "tool_calls": 4,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\2026-09-27-pass-layer1-api-parity.json",
+    "C:\\Users\\think\\.opencode\\skills\\repair_ver_record.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ver-1-reconciliation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........................-.--...-........-.--...-........................................-.--...-",
+  "action": "Reconciliation of verifier session ver-1 (ses_f20761999ffeap344PiKk0DOdy): verified its two artifacts exist (trace verify-layer1-api-parity.pm1; QMS record 2026-09-27-pass-layer1-api-parity.json), integrated its APPROVE verdict into VER-P0-2-LAYER1-ABSTAIN-001 http_path_addendum, P0-CLOSURE-REPORT sec3, PRE-PRODUCTION-TODO G6 note, and G6-READINESS-2026-09-27 finding resolution. Found the QMS record malformed (UTF-8 BOM + missing closing brace, truncated after notes string); applied format-only repairs via repair_ver_record.py (BOM stripped, brace appended, verifier content byte-preserved, json.load validated: ver_id VER-2026-0927-APIPARITY, result pass). ver-1 could not be resumed to fix its own artifact (completed/unreconciled sessions are not resumable); lead-side correction documented. Outcome partial: the sub-agent's recording duty required lead-side repair."
+}

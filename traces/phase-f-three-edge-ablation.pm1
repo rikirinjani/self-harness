@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "phase-f-three-edge-ablation",
+  "timestamp": "2026-09-21T07:08:38.230306+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "docs/experiments/PHASE-F-DEFECT-ABLATION.md",
+    "scripts/phase-f-ablation.ts",
+    "experiment-results/phase-f-ablation/ablation-results.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "phase-f-three-edge-ablation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Phase F three-edge causal ablation (diagnostic only). 8 ablations x 6 seeds = 48 deterministic runs, H=20, CPU, 47.3s. Method: removed targeted handler from sector INSTANCE (engine reads record.sector.handlers at world-engine.ts:70) - production source untouched. Q1 CLIMATE EDGE: STRONGLY ISOLATED - A0 CO2 8.89e7..1.62e8 saturating tick4 vs A1 CO2=3.23e2 all seeds never saturating (=exact baseline trajectory). Q2 TECH EDGE: STRONGLY ISOLATED AND INDEPENDENT - A1 (climate ablated, tech active) reproduces A0 exactly (11/11 nations at ceiling, first sat tick 5); A2 and A12 -> 0; A13 -> 11/11. Q3 SEVERITY->GDP: PARTIALLY ISOLATED - A3 restores GDP to 5.46e13..6.88e13 with 0 floor hits while CO2 still 2.70e8 and severity 30.8; outcome separable, trigger is climate-downstream. Q4 INTERACTION: MATERIAL FEEDBACK - A3 CO2 2.70e8 is ~2x A0 1.36e8 because ablating severity->GDP keeps the economy large so larger gdpDeltas feed the climate edge; A23 2.58e8 same. Chain climate->CO2->anomaly->severity->GDP->economy size->gdpDelta->emissions. Q5 A4 STABLE across all 6 seeds. SEVERITY (G): no clamp needed - under A1 anomaly 0.612-0.618 -> severity 0-4.9 (intended range); problem is solely upstream runaway. Jev (4 sets, 23 questions): agrees all 3 ablations isolate edges; Q1 1.92 conf .87; Q2 1.70 conf .55; Q3 only PARTIAL conf 0.06; Q4 partial; KE caveat slightly understates; tech INDEPENDENT 1.75; severity edge DOWNSTREAM 0.07 conf .89; no severity clamp 2.00 conf .99; systematic fix 1.98 conf .97; corrected model only 'partially ready' 0.83. REMAINING CONFOUNDERS: irreducible feedback loop, uncontrolled geopolitics relations edge, SENTINEL NEARLY INSENSITIVE (supplyStress 0.492 in EVERY ablation incl catastrophic A0; occ 0.534 vs 0.542), single horizon/CO2 level, non-instantiated sectors. Report: docs/experiments/PHASE-F-DEFECT-ABLATION.md. CORRECTED MODEL READY: NO. PHASE F RERUN ELIGIBLE: NO. No production coupling modified, no frozen artifact modified, no rerun, no GPU."
+}

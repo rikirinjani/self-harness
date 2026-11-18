@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "fixer-g2-close",
+  "timestamp": "2026-10-11T23:48:49.994599+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "fixer-g2-close",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................................................................................................-.--...-",
+  "action": "Session close (G2 tool-build lane): received stop from orchestrator. Verified retrace scanner clean (3713 traces, 0 untraced project files) and crashlog clean (no active checkpoint). No files modified, no code changes this session. Lane closed cleanly."
+}

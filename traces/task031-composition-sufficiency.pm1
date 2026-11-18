@@ -1,0 +1,37 @@
+{
+  "pm1_version": 1,
+  "session_id": "task031-composition-sufficiency",
+  "timestamp": "2026-09-21T07:55:40.744320+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1200,
+  "tool_calls": 18,
+  "key_files": [
+    "morse/experiments/pm1-rx/TASK_031_PROTOCOL.md",
+    "morse/experiments/pm1-rx/TASK_031_PREFLIGHT.md",
+    "morse/experiments/pm1-rx/TASK_031_RESULTS.md",
+    "morse/experiments/pm1-rx/TASK_031_DIAGNOSTIC.md",
+    "morse/experiments/pm1-rx/task031_state_manifest.json",
+    "morse/experiments/pm1-rx/task031_atom_provenance.json",
+    "morse/experiments/pm1-rx/task031_oracle_results.json",
+    "morse/experiments/pm1-rx/task031_transition_matrix.json",
+    "morse/experiments/pm1-rx/scripts/task031/run_task031.py",
+    "morse/experiments/pm1-rx/scripts/task031/tests/test_task031.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task031-composition-sufficiency",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "Task 031 complete: offline composition sufficiency test using frozen Task029/030 artifacts and unchanged shadow oracle. Primary T-partial cells b0,b1,b4; accepted controls b7,b9. Built T exact selected, M selected+missing authoritative atoms with provenance, R complete authoritative reference states. Transition: b0 PARTIAL->ACCEPTED (L3 .3333->1), b1 PARTIAL->PARTIAL (L3 .25->.75), b4 PARTIAL->ACCEPTED (.5->1). Controls b7/b9 remained ACCEPTED under M/R. Aggregate retrieval-complete 2/3, persistent composition failure 1/3, accepted-control regressions 0. 11 tests pass. No Jev, producers, models, Matcher, Judge, RuleD, or threshold changes."
+}

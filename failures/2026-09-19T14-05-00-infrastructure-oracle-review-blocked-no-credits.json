@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-09-19T14:05:00Z",
+  "category": "infrastructure",
+  "severity": "medium",
+  "slug": "oracle-review-blocked-no-credits-ke-design",
+  "agent": "orchestrator",
+  "task": "Independent adversarial review of KE reconciliation + corrected-experiment design",
+  "what_went_wrong": "Delegation of the adversarial review to @oracle failed immediately with 'You have no credits remaining. Add credits to continue using the API.' The review was not performed.",
+  "root_cause": "API billing/credit exhaustion for the oracle model provider. Not a task-scoping, context, or role error.",
+  "what_was_done_wrong": "Nothing in the task itself. However, the design was authored and is pending an independent review that the environment cannot currently provide; the turn must not be represented as 'reviewed'.",
+  "impact": "docs/experiments/CORRECTED-COUNTERFACTUAL-DESIGN.md and docs/experiments/EXP-001-SERIES-RECONCILIATION.md remain unreviewed by an independent specialist. They are marked PROPOSED / NOT APPROVED, so no downstream action is gated on a false 'reviewed' status. No execution occurred.",
+  "corrective_action": "Retry the @oracle adversarial review once API credits are restored. Do not reissue the identical task until then (it would fail identically). Do not substitute a self-review for the independent review; if a self-review is performed it must be labelled as such and not counted as independent verification.",
+  "prevention": "Check provider credit/quota before dispatching a review that gates a costly run. Keep design docs explicitly marked PROPOSED until an independent review is actually recorded.",
+  "trace": "C:/Users/think/self-harness/traces/ke-reconciliation-and-design.pm1"
+}

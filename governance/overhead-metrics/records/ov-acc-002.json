@@ -1,0 +1,16 @@
+{
+  "schema": "overhead.v1",
+  "record_id": "ov-acc-002",
+  "task_id": "verify-rules-adoption",
+  "type": "acceptance",
+  "decision": "APPROVE",
+  "revision": "RULES.md@5ee347ac",
+  "suite_id": "l3-governance-adoption",
+  "reviewer_id": "ver-2",
+  "rationale": "Rule 3 pointer correct with no leftover table; Rule 11 appended verbatim (103-line ordinal comparison, one cosmetic quote normalization); no contradictions with Rules 1-10; ROLE-MATRIX adoption conditions satisfied.",
+  "evidence_uri": "self-harness/governance/degraded-modes/RULES-degraded-ops.md",
+  "independent": true,
+  "tests_passed": true,
+  "correct": true,
+  "observation_complete": true
+}

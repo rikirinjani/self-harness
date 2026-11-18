@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "lovastatin-curated",
+  "timestamp": "2026-09-25T07:22:44.857729+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 30,
+  "key_files": [
+    "rag-queries/extract_l3.py api/drugs.json rag-queries/l3_output/_backups/drugs_20260925_lovastatin_pre.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "lovastatin-curated",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "Curated lovastatin (6th major statin) from LanceDB RAG index + NCBI EUtils with PMID provenance; fixed null-safety crash in build_l3_queries (half_life_h None broke '<' compare); 24-query harvest scored via --reparse with EUtils refetch (relevance 23.6->76%); merged 89/89 with zero other-drug changes; commit ea2d3f4 pushed"
+}

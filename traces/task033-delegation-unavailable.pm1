@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "task033-delegation-unavailable",
+  "timestamp": "2026-09-21T08:33:31.438878+00:00",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\self-harness\\failures\\2026-09-21-task033-delegation-unavailable.json"
+  ],
+  "failure": {
+    "category": "external",
+    "severity": "low"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task033-delegation-unavailable",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................-.--...-........................................-.--...-........................-.--...-........-.--...-",
+  "action": "Task033 explorer dispatch ses_f3cef201efferYIuMsIQJ36RUE failed before returning work: Insufficient account funds. Error reconciled; no specialist review claimed, no retry. Direct bounded offline audit used instead."
+}

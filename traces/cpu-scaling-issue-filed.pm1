@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "cpu-scaling-issue-filed",
+  "timestamp": "2026-10-02T20:40:43.003498+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "Deers-Rock/src/engine/ai-doctor.ts",
+    "Deers-Rock/scripts/kaggle-longrun/validate-bounded.mjs"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "cpu-scaling-issue-filed",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "100k Kaggle validation declared infeasible after 7.5h+ RUNNING vs ~1h estimate (superlinear CPU wall; Lane 2 local evidence: per-500-tick 3s->241s past tick 4000, 8k run >20min). Decisive action: pushed 10k-tick validation kernel (deers-rock-bounded-10k-validation, every ADR-004 gate still exercised - discharge horizon 4320, pruning steady state 6.5k, crash-resume at 5k); filed CPU-scaling issue with code evidence (ai-doctor.ts per-encounter full scans of 4 order maps, O(activeEncounters x totalOrders)) and measured timings; flagged live-deployment impact (setInterval 1s falls behind once per-tick >1s). 100k kernel dies naturally at Kaggle 12h limit (no CLI cancel; harmless). Next: 10k result ~1-3h, then staging decision; scaling fix is separate backlog."
+}

@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "l2-run-evidence-capture",
+  "timestamp": "2026-10-02T03:15:05.095193+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 20,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\capture_run_evidence.py",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\mint_records.py",
+    "C:\\Users\\think\\Project_v2\\Somnium-runev\\tools\\run-evidence.py",
+    "C:\\Users\\think\\Project_v2\\Somnium-runev\\tools\\evidence-governance.conf",
+    "C:\\Users\\think\\Project_v2\\Somnium-runev\\.github\\workflows\\run-evidence-capture.yml",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\2026-10-02T03-15-00-VER-L2-GATE-INSTALL-001.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "l2-run-evidence-capture",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "run-evidence.py exercised end-to-end on Kaggle Linux (fcntl, git 2.47.3): record kaggle-capture-001.json produced for c7b0543 (schema 1, base_is_ancestor, worktree clean, exit 0, content-addressed outputs, fingerprint); 3 task iterations (dirty-check byproduct fix, Kaggle CLI nested-path download workaround via flat tarball); PR #2 opened with run-evidence tooling; QMS VER-L2-GATE-INSTALL-001 filed"
+}

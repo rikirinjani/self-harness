@@ -1,0 +1,12 @@
+{
+  "id": "20260922-task034-latency-nondeterminism",
+  "task": "TASK-034",
+  "category": "determinism-defect",
+  "severity": "high",
+  "what_went_wrong": "guardrail_decision_latency_ns recorded wall-clock nanoseconds and was serialized into REPLAY_RESULTS and METRICS, so two identical replays produced different bytes — violating the hard requirement of byte-identical double replay.",
+  "root_cause": "Non-deterministic time source leaked into offline deterministic output path; empty_metrics/finalize_metrics did not force-null the field.",
+  "impact": "Double-run hash mismatch on first comparison attempt.",
+  "fix": "Set guardrail_decision_latency_ns to null in every offline serialized location (per-decision, per-arm, aggregate, empty_metrics, finalize_metrics). Metric definition updated: null offline; populated only in live timing runs. Removed time import from runner.",
+  "verification": "Double-run REPLAY byte_equal=true; SHA256 3BC63BAFBCF183BD1A719B17854B5536BBB501A29A76F5F1B0E4C70D3E4E359E; 26/26 admission tests pass.",
+  "status": "closed"
+}

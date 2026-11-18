@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-gpu-quota-oct10-test",
+  "timestamp": "2026-10-10T02:01:14.341563+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\kaggle\\pm1\\results\\phase2-sweep\\summary.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-gpu-quota-oct10-test",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "GPU quota Oct 10 confirmed. Ran B2-notice on Kaggle T4x2 with gemma4:26b-a4b. Results show model not following base policy (BUYing at hop 1 instead of HOLD). Root cause: instruction compliance issue with this model/quantization. Need to try gemma4:9b or adjust prompt. Modal also tested - facts_line stripped. Both paths have issues. Paper deadline Nov 12 still pending B2 completion."
+}

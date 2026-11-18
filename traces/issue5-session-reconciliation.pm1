@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "issue5-session-reconciliation",
+  "timestamp": "2026-10-05T08:32:10.356489+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "issue5-session-reconciliation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................................................................-.--...-",
+  "action": "Reconciled fix-1 (context error — handled directly by orchestrator), ver-1 APPROVE, ora-1 (context error — verifier coverage sufficient). Issue #5 closed."
+}

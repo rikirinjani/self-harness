@@ -1,0 +1,41 @@
+{
+  "ts": "2026-10-02T12:59:00Z",
+  "task": "Lane A Modal GPU judge 200-pair agreement gate",
+  "agent": "implementer",
+  "outcome": "recovered_to_pass",
+  "category": "modal-run-launch-incidents",
+  "incidents": [
+    {
+      "id": "A1",
+      "what": "First `modal run` died instantly: 'charmap codec can't encode U+2713' writing progress glyphs to a Start-Process redirected stdout on Windows ANSI codepage.",
+      "root_cause": "Spawned modal CLI without forcing UTF-8 stdio; PowerShell redirection uses system ANSI codepage which cannot encode modal's checkmark glyph.",
+      "what_i_did_wrong": "Did not set PYTHONUTF8/PYTHONIOENCODING before the first spawn even though modal's rich output is known to use non-ASCII glyphs.",
+      "fix": "Set PYTHONUTF8=1 and PYTHONIOENCODING=utf-8 before Start-Process; subsequent runs clean."
+    },
+    {
+      "id": "A2",
+      "what": "Container crash-loop ~14 min: run_gate failed at import with IndexError on ROOT = AB_PLAN.parents[1].",
+      "root_cause": "Modal mounts only judge_app.py in the container (/root/judge_app.py), so the deep parents chain does not exist there; module-level path math assumed the full repo layout.",
+      "what_i_did_wrong": "Computed repo-relative paths at module scope without guarding for the container's single-file mount; no local import smoke test of the module under a shallow mount.",
+      "fix": "Guarded ROOT computation (parents[1] if available else AB_PLAN); re-run dispatched successfully."
+    },
+    {
+      "id": "A3",
+      "what": "Three duplicate `modal run` processes were spawned concurrently (pids 8632/4784/7268) during failed launch attempts.",
+      "root_cause": "The execution harness kills the wrapper PowerShell after each Start-Process command (reporting 'ChildProcess.kill') but Start-Process had already fired, so each 'failed' command still launched a real modal run; I did not verify spawn uniqueness between retries.",
+      "what_i_did_wrong": "Retried the spawn without first checking whether a previous attempt had already started a process; risked 3x GPU spend and log-file handle collisions.",
+      "fix": "Killed all three duplicates, stopped their stray ephemeral apps, verified a single process via WMI command line before proceeding."
+    },
+    {
+      "id": "A4",
+      "what": "Lane A watchdog entry auto-closed ~2 min after every launch despite the app being visible; also one launch entry was lost to a ledger read-modify-write race.",
+      "root_cause": "Shared eval/ab_plan/modal_watchdog.py list_apps() regex expects `app-...` IDs but modal 1.5 emits `ap-...`, so it parses zero rows -> every lane counts as 'no app' -> auto-close; additionally no_app_polls[lane] is not reset on relaunch, so a relaunched lane closes on the very next watch poll. A concurrent watch-loop save can clobber a fresh launch entry (stale-ledger overwrite).",
+      "what_i_did_wrong": "Nothing in my code; but I initially misread the symptom as my app name being truncated. Recorded here because the workarounds (relaunch every cycle) weakened spend accounting for my lane (gaps between close and relaunch are not counted).",
+      "fix": "Applied the protocol's prescribed remedy (relaunch + re-verify whenever A not OPEN) for the whole run; did NOT edit the shared watchdog (outside my writable envelope). RECOMMEND orchestrator fixes: parse `ap-` IDs, reset no_app_polls on launch, and make ledger updates read-modify-write safe.",
+      "severity": "medium",
+      "affects_other_lanes": true
+    }
+  ],
+  "impact": "No gate data was corrupted; gate completed with 200/200 valid judgments. Cost impact: ~14 min wasted crash-loop GPU time plus ~$0.1-0.2 of uncounted/closed-lane Modal time; duplicate spawns were killed before dispatching work (only one run reached the judging phase).",
+  "verification": "eval/ab_plan/modal_judge/verify_gate.py ALL ASSERTIONS PASSED; independent metric recompute matches gate_report.json."
+}

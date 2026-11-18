@@ -1,0 +1,24 @@
+# Override: MinIO images are no longer pullable (MinIO dropped public distribution).
+# Replace the `minio` service with SeaweedFS, which implements the S3 API.
+# Same hostname (`minio`) so MINIO_ENDPOINT in other services keeps working.
+services:
+  minio:
+    image: chrislusf/seaweedfs:latest
+    entrypoint: ["sh", "-c"]
+    command:
+      - "weed server -dir=/data -s3 -s3.port=9000"
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD}
+    ports:
+      - "19000:9000"
+      - "19001:9333"   # SeaweedFS master UI
+    volumes:
+      - minio_data:/data
+    networks:
+      - chatbot-net
+    healthcheck:
+      test: ["CMD-SHELL", "curl -sf http://localhost:9333/cluster/status || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10

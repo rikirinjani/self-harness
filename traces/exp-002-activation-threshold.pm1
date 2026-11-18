@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "exp-002-activation-threshold",
+  "timestamp": "2026-09-21T05:09:57.847205+00:00",
+  "agent": "exp-002",
+  "outcome": "pass",
+  "duration_s": 302,
+  "tool_calls": 0,
+  "key_files": [
+    "src/experiment/experiments/exp-002-activation-threshold.ts",
+    "docs/experiments/EXP-002-RESULTS.md",
+    "experiment-results/exp-002/exp-002-results.json",
+    "experiment-results/exp-002/activation-curve.csv"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "exp-002-activation-threshold",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------.........................--...--........................-.--...-........................................-.--...-",
+  "action": "EXP-002 Phase 1: Pathway activation threshold study. Config-based CO2 ladder (280 vs 400/800/1200). 10 seeds, H=50, 40 runs. Activation: 50%/40%/90% at CO2=400/800/1200. Practical threshold ~1000-1200. 95% not reached (N=10). Results: Research Track 2."
+}

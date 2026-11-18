@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "librarian-resend-research-fail",
+  "timestamp": "2026-09-28T09:44:33.290487+00:00",
+  "agent": "librarian",
+  "outcome": "fail",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {
+    "category": "infrastructure",
+    "severity": "low"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "librarian-resend-research-fail",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "..........--.--.........-.--...-........................................................................-.--...-........-.--...-",
+  "action": "Resend research dispatch failed: 4th identical 'Session too large to compact' deterministic failure (ses_f18a6ccbdffeVMskiju0AjWyaM). Reconciled via failure record 2026-09-28-infrastructure-librarian-session-compaction-limit.json. Research redone directly by orchestrator from resend.com primary docs."
+}

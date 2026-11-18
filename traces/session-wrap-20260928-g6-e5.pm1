@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "session-wrap-20260928-g6-e5",
+  "timestamp": "2026-09-28T01:05:00.358617+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "Project_v2/LocalNotebook/rag-service/G6-E5-REPORT.md",
+    "Project_v2/LocalNotebook/rag-service/data/g6_e5_seeded_results.json",
+    "Project_v2/LocalNotebook/rag-service/scripts/g6_e5_seed.py",
+    "Project_v2/LocalNotebook/rag-service/scripts/g6_e5_monitor.py",
+    "Project_v2/LocalNotebook/rag-service/scripts/verify_g6_e5.py",
+    "Agentic Layer/qms/records/verifications/VER-G6-E5-001.json",
+    "self-harness/failures/20260928-041647-implementation-defect-e5-monitor-spurious-a.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "session-wrap-20260928-g6-e5",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................--.-..-.........................................-.--...-",
+  "action": "G6-E5 session wrap: E5 PASS - 14/14 seeded cases exact-match, 8/8 harness steps, E1/E2/E4 regressions green, ver-1 APPROVE (VER-G6-E5-001), monitor defect found+fixed (events_evaluable gate), failure record closed, retrace clean, MemPalace 154 drawers filed. Stopped before E6/G8 per spec."
+}

@@ -1,0 +1,9 @@
+﻿{
+    "slug":  "gemini-free-tier-image",
+    "root_cause":  "Assumed Gemini API free tier included image models; actual: all 4 Nano Banana models return quota limit=0/day on free tier (image gen is paid-only since ~2026)",
+    "timestamp":  "2026-09-26T04:05:00Z",
+    "severity":  "low",
+    "what_i_did_wrong":  "Committed to free-Gemini route and built banana_gen.py before verifying free-tier quota existed",
+    "recovery":  "Pivoted to user\u0027s Replicate credentials; found gemini-2.5-flash-image + gpt-image-2.5 models hosted there; 4/4 smoke pass",
+    "category":  "wrong-approach"
+}

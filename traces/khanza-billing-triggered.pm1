@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "khanza-billing-triggered",
+  "timestamp": "2026-10-10T05:44:31.133191+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 120,
+  "key_files": [
+    "trigger_billing.py",
+    "dr_khanza_adapter_v7.py",
+    "clean_all_dr.sql",
+    "fix_orphans.sql"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "khanza-billing-triggered",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........---..-..........-.--...-........................................-.--...-",
+  "action": "Triggered Khanza billing for 177 DR visits: 177 rawat_jl_dr procedures (Rp 60K consult each), 209 detail_pemberian_obat drug lines (capped at Rp 25K/unit, qty max 5), 3031 billing rows. Total revenue: Rp 107.7M (reg Rp 1.77M, doctor Rp 10.62M, procedure Rp 10.62M, drugs Rp 84.7M). 0 orphans. DB size 261MB on VPS #2."
+}

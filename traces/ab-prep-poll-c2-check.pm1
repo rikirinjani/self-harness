@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "ab-prep-poll-c2-check",
+  "timestamp": "2026-09-22T22:07:46.686555+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 320,
+  "tool_calls": 4,
+  "key_files": [
+    "scripts/ab_embed_supervisor.sh",
+    "eval/ab_plan/embed_cost_table.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ab-prep-poll-c2-check",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---.........................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "5min poll: supervisor alive waiting bge-large; large embeds 26-28%; qwen3 c0 at 3264/125k; c2 pid missing from pgrep - investigating"
+}

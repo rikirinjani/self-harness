@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "r001-r500-report",
+  "timestamp": "2026-09-16T03:56:28.386309+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 7,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "r001-r500-report",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........................................................-.--...-",
+  "action": "Extracted R001-R500 report: 424 R-IDs found in audit logs (R1-R500 range), 347 resolved (81.8%), 77 unresolved (18.2%). Generated full table + outstanding list. Unresolved breakdown: ~20 are conversational fragments/thanks (R100, R114, R125, R132, R138, R190, R219, R272, R449), ~15 are duplicate re-asks of answered questions (R115-R122 SERKOM Apoteker x6, R194-R196 ukom kapan x3), ~40 are genuine pending questions needing admin answers"
+}

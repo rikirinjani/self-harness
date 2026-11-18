@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "fixer-b1b2-audit",
+  "timestamp": "2026-10-12T05:45:03.335178+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 420,
+  "tool_calls": 6,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "fixer-b1b2-audit",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--.........................--...--........-.--...-........................................................-.--...-",
+  "action": "Read-only audit of Stage B rungs B1/B2 in live run dir Bseries_20261012T045027Z (no writes to results/, run_all.sh untouched, no SQL DDL/DML). Evidence pulled with line numbers: three-count/charge-delta logs (zero gaps, GAP-plumbing confirmed in tool sources), sampled-form CSVs (19/19 and 54/54 samples, drift 0.0000 both), manifest sha256s, telemetry json/md (datadir, latencies, labels), consumer OK lines, 0-byte general logs, B3 in-flight confirmed (consumer_B3.log 2.29MB growing, heartbeat fresh, dr-bench active). Findings: 4 under-labeled entities (stale billing rows_est, empty general_log capture, lifetime-scoped InnoDB counters unlabeled, empty top_diagnoses result) + Oct-only reconcile scope asymmetry."
+}

@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "kaggle-astra-blender-turntable",
+  "timestamp": "2026-09-26T03:01:55.668788+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 780,
+  "tool_calls": 14,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\blender_render_task.py",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\out4\\astra-blender-ship\\4\\gpt-6-astra\\3229405\\renderjob\\frame_00.png",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\out4\\astra-blender-ship\\4\\gpt-6-astra\\3229405\\renderjob\\turntable.gif"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kaggle-astra-blender-turntable",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "v4 of astra-blender-ship: all three goals in one run, first try, score 1.0 (7/7 asserts), \\.23, 3m12s. (1) Game wiring: extracted exact ship polygon from neon_dodge.html drawShip - hull (0,-19)(14,15)(0,9)(-14,15) with tail V-notch, cockpit triangle, palette #0d182b/#65fff2/#ff71c5/#bc13fe - embedded as Blender unit-space spec. (2) Higher fidelity: 512x512, 48 smp, compositor FOG_GLOW bloom (spec_glare=True), bevel+autonormal, 3-point neon lighting. (3) Multi-frame: 12-frame 30-degree turntable frame_00..11 PNGs + task-side PIL turntable.gif (512x512, 12 frames, 90ms, loop=0, 1.47MB) - all retrieved via kaggle b t download (5.72MB total). Denoise force-off patch still applied."
+}

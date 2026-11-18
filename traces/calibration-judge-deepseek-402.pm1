@@ -1,0 +1,35 @@
+{
+  "pm1_version": 1,
+  "session_id": "calibration-judge-deepseek-402",
+  "timestamp": "2026-09-21T08:58:23.981684+00:00",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "duration_s": 520,
+  "tool_calls": 8,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\calibration_judge.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\calibration\\2026-09-21T08-47-45\\judge_raw.jsonl",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\calibration\\2026-09-21T08-47-45\\judge_scores.json",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\calibration\\2026-09-21T08-47-45\\metrics.json",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\calibration\\2026-09-21T08-47-45\\manifest.json"
+  ],
+  "failure": {
+    "category": "infrastructure",
+    "severity": "high"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "calibration-judge-deepseek-402",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................-.--...-.........--...--........-.--...-........--.-..-..........................--...--........-.--...-",
+  "action": "Built and ran eval/calibration_judge.py for the 126-candidate DeepSeek Flash calibration gate. Script verified end-to-end (126/126 join, parser robustness, kappa/MAE sanity on synthetic perfect and biased inputs), but all 126 live API calls returned HTTP 402 Insufficient Balance after 4 retries each. Confirmed account-wide with a single direct probe. No frozen artifacts modified. Calibration gate NOT met; awaiting account top-up."
+}

@@ -1,0 +1,14 @@
+﻿{
+  "timestamp": "2026-09-16T15:30:37",
+  "category": "infrastructure",
+  "severity": "medium",
+  "slug": "mempalace-write-blocked-009c",
+  "task": "PM-1-RX 009C matcher repair - session close filing",
+  "what_failed": "mempalace_checkpoint and mempalace_add_drawer both returned: MCP error -32001: Peer MCP writer active; this server is read-only for mutating tools.",
+  "root_cause": "Another process holds the MemPalace write lock. The MCP server correctly refuses mutating tools while a peer writer is active. This is contention, not data loss and not a defect in the content being filed.",
+  "impact": "Rule 10 (archive into MemPalace) is NOT satisfied for this session. The knowledge content for 009C exists only in the repo artifacts, the PM-1 trace, and the QMS records.",
+  "what_i_did_wrong": "Nothing in the filing itself. Two attempts were made (one checkpoint with 9 items, one single add_drawer) and then retrying stopped, per the maximum-retry rule.",
+  "mitigation": "Content is fully preserved elsewhere and is reproducible: experiments/pm1-rx/TASK_009C_MATCHER_AUDIT.md, TASK_009C_MATCHER_DESIGN.md, matcher_test_report.md, matcher_calibration.json; PM-1 trace C:/Users/think/self-harness/traces/pm1-009c-matcher-repair-2026-09-16.pm1; QMS VER-2026-009C and REQ-2026-009C.",
+  "follow_up": "Re-file the 009C drawers into wing 'morse' / room 'pm1-rx-009c' once the peer writer releases the lock. The payload is the full text of this record's task description plus the eight MemPalace items composed during the checkpoint attempt.",
+  "retry_policy": "Do NOT retry within this session. Retry in a later session when no peer writer is active."
+}

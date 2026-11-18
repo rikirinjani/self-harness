@@ -1,0 +1,36 @@
+{
+  "pm1_version": 1,
+  "session_id": "session-wrap-20260927-glm",
+  "timestamp": "2026-09-27T09:01:18.291612+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 9000,
+  "tool_calls": 60,
+  "key_files": [
+    "C:\\Users\\think\\.config\\opencode\\opencode.jsonc",
+    "C:\\Users\\think\\.config\\opencode\\oh-my-opencode-slim.json",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\20260925-pass-iyan-removal.json",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\20260926-pass-poco-m3-debloat.json",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\remove-vbcable.ps1",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\glm_burst.py",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle_activity.py",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle_activity2.py",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\swarm_split.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "session-wrap-20260927-glm",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "Session wrap 2026-09-27. Tasks: (1) token usage post-restart - controlled one-shot 22,229 vs 23,315 MCP-off baseline = no regression, interactive first call 65k = base + session context; GLM ajianaz router confirmed zero prompt caching so full context re-bills every turn. (2) VB-Audio Virtual Cable fully removed (pnputil remove-device + delete-driver oem55.inf, required UAC elevation after non-admin shell failed). (3) Speaker distortion diagnosis: headphones clean + long-standing + normal 48k/16-bit format + no audio driver errors -> isolated to internal speaker path, hardware most likely, user declined enhancement-disable test. (4) GLM quota monitoring: 200 healthy (90% free) then 429 escalation 21 -> 102 -> 205 min penalty tiers. (5) Burst forensics: 14.66M window drain from two sessions - PM-1 part4 parent on glm-5-turbo 7.84M (53%) + Bible v2 gap completion implementer on glm-5.1 6.65M (45%); corrected the 'subagent swarm' framing since most subagents route via non-ajianaz providers. USER DECISION: GLM burn intentional (PM-1 part4 deliberately on glm-5-turbo), no preset change, no repoint. Gates: retrace clean (0 untraced project files). Crashlog intentionally not completed - pm1-continuation-t2 Vultr pilot checkpoint still pending per earlier user WAIT."
+}

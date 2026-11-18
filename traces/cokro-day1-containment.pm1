@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "cokro-day1-containment",
+  "timestamp": "2026-10-01T08:16:57.238341+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2700,
+  "tool_calls": 30,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\api_server.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\auth.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "cokro-day1-containment",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "Day-1 containment executed per Astra review: api_server.py (ask gates: 500-char limit, KILL_GEN kill switch file, 15/h/IP rate limit verified 15x200+429, 4 concurrent inflight cap, PMID digits-only validation kills Lance filter injection, contact Resend call moved off event loop via asyncio.to_thread); auth.py (per-email 3/h + per-IP 10/h request throttles, 5-fail OTP challenge invalidation, dev_otp fail-closed via AUTH_ALLOW_DEV=1 opt-in - discovered and closed a LIVE dev_otp exposure on VPS: RESEND_API_KEY was never in VPS .env so /api/auth/request had been returning OTPs in responses; sign-in now 503 until user adds key). Infra: sshd 10-hardening.conf (password+root login OFF, verified BatchMode rejected), nginx :80 no longer proxies app (444 + ACME only), ufw 443 restricted to 22 Cloudflare ranges (direct origin 443/80 verified blocked from outside, CF path 200), controlled reboot applied libc6/apparmor updates, all services active post-reboot. Backups: *.bak-20261001 on VPS. Real ask smoke: 3 docs + 859-char clinical answer."
+}

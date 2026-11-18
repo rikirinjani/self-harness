@@ -1,0 +1,11 @@
+﻿{
+    "slug":  "mempalace-drawer-unavailable-cli",
+    "category":  "tooling",
+    "root_cause":  "RULES.md Rule 10 mandates mempalace_mempalace_add_drawer, which is an MCP tool; this session is shell-only and the mempalace CLI exposes no add-drawer subcommand (checked main help + palace subcommand).",
+    "agent":  "fixer",
+    "what_was_done_wrong":  "Could not complete the MemPalace filing step for the deers-rock P1-6 Option A task; did not fabricate a drawer directly in palace storage to avoid a synthetic record (Rule 4).",
+    "timestamp":  "2026-10-02T06:55:11+07:00",
+    "remediation":  "File the drawer via an MCP-connected session; content summary is preserved in STATE.md and PM-1 trace deers-rock-p1-6-option-a.",
+    "severity":  "low",
+    "outcome":  "unresolved-workaround-none"
+}

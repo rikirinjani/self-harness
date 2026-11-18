@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "r4-battery-f1-f7",
+  "timestamp": "2026-10-13T09:24:57.629378+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\r4_reprice.sh",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\r4_bat1.sh",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\r4_bat2.sh",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\r4_bat3.sh",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\r4_bat4.sh",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\build_dr_charge_ledger_onbox.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "r4-battery-f1-f7",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........................--.-..-.........................................-.--...-",
+  "action": "R4 battery faults #1-#7 executed on-box: F1 databarang mutation detected by charge_delta UNEXPLAINED then restored; F2 unmappable drug injected (dpo+ledger) -> three_count GAP + charge_delta UNEXPLAINED, cleaned; F3-F7 (reg_without_billing, duplicate_billing, quantity_off_by_one, tax_rounding, missing_month 2027/02) all DETECTED with named reason codes and restored to gates-green. billing_baseline table created (1464593 rows sum 34895128580). dr_tariff seeded (685 rows). A1 sandbox builder run died silently mid-rebuild (no OOM, no traceback) - investigating before relaunch."
+}

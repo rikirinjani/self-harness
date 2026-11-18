@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "agnes-subs-provider-added",
+  "timestamp": "2026-10-05T08:23:47.183289+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 420,
+  "tool_calls": 7,
+  "key_files": [
+    "C:\\Users\\think\\.config\\opencode\\opencode.jsonc"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "agnes-subs-provider-added",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Added Agnes AI Token Plan subscription as a separate provider agnes-ai-subs, deliberately kept distinct from the PAYG agnes-ai entry. Verified key works with real generation (HTTP 200, 'SUBSCRIPTION' output, 293 in/20 out tokens). Confirmed from AgnesAI TOKEN_PLAN_FAQ.md that key types use SEPARATE limit pools: Token Plan text RPM is 1000 actual vs free 20, and text quotas are counted per REQUEST - Starter 1500/5h, Plus 7500/5h, Pro 30000/5h (weekly caps also apply). Crucially the FAQ states multiple keys of the same type share one pool but different key types do NOT, so PAYG and subs keys are genuinely independent quotas - hence the separate provider entry rather than an alias. Set UTIM_AGNES_SUBS_KEY at persistent User scope (52 chars, cpk- prefix). Verified opencode debug config loads both agnes-ai and agnes-ai-subs with all 4 models each."
+}

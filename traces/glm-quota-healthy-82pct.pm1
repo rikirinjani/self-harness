@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "glm-quota-healthy-82pct",
+  "timestamp": "2026-09-28T02:55:19.715558+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 45,
+  "tool_calls": 1,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "glm-quota-healthy-82pct",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................-.--...-........-.--...-........................................................-.--...-",
+  "action": "GLM ajianaz quota check: HTTP 200. Window started 02:24 UTC, used 2,652,395 (17.7%), remaining 12,347,605 (82.3%), window ends 07:24 UTC. Key valid to 2026-10-25. Lifetime 154.8M tokens / 1,001 requests. Lockout fully decayed, window pressure normal."
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "overhead.v1",
+  "record_id": "ov-task-001",
+  "task_id": "kaggle-fix-run",
+  "type": "task",
+  "pair_id": "pair-none",
+  "task_class": "review-remediation",
+  "revision": "stack-bundle",
+  "suite_id": "astra-fix-round",
+  "implementer_id": "gpt-6-astra",
+  "mode": "delegated",
+  "status": "completed",
+  "accounting_complete": true,
+  "started_at": "2026-10-02T00:47:51Z",
+  "ended_at": "2026-10-02T01:02:40Z",
+  "duration_seconds": 889.0,
+  "cost_usd": 2.66,
+  "human_seconds": null,
+  "input_tokens": 28784,
+  "output_tokens": 47479,
+  "context_tokens": null
+}

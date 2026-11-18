@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261005T015134-orchestrator-cli",
+  "timestamp": "2026-10-05T01:51:34.124205+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 25,
+  "key_files": [
+    "src/engine/drug-catalog.ts,src/engine/central-supply.ts,src/engine/pharmacy-knowledge.ts,tests/central-supply.test.ts,docs/adr/ADR-011-runner-tuning.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261005T015134-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "ADR-012 BPOM drug expansion: 82 new drugs added (175 total), allergens/contraindications/doses/interactions for all. Live box: tick 7341, 1023 outcomes (+55%), 4 deceased (first mortality). All 189 tests pass."
+}

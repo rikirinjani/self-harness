@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-09-26T15:26:00Z",
+  "category": "resource-exhaustion",
+  "severity": "medium",
+  "title": "Kaggle AI daily quota depleted — reconcile run aborted, resumed after midnight UTC",
+  "agent": "coordinator",
+  "task": "kala-three-doc-reconcile",
+  "what_happened": "Version 2 (est $2.21983), version 3 (est $2.01983, cap 16000), version 4 (est $2.01983, retry at 15:00 UTC) all failed with openai.PermissionDeniedError 403: 'max estimated cost exceeds available quota (based on max_output_tokens)'. Prior same-day runs (bible audit ~$1.36, cleanup ~$1.45, reconcile v1 ~$2.12) had consumed the daily budget (~$4.9 total) — first failure at 14:39 UTC, ~7 min after v1 completed. An ERRORED task cannot be re-run (only COMPLETED tasks can), so each retry required a fresh push creating new versions.",
+  "root_cause": "Daily LLM proxy quota exhausted by cumulative same-day usage. Quota cadence unknown to us at failure time (librarian research errored); user later confirmed it resets at midnight UTC.",
+  "what_i_did_wrong": "Launched three expensive same-day runs without checking remaining quota margin; kept retrying within the same quota day (v3, v4) instead of stopping after the pattern was clear (input portion fixed $1.21983, output $50/M, no :00-hourly reset observed).",
+  "corrective_action": "Stopped retries per user instruction. Task parked at version 4 (Errored); task_reconcile.py already correct (digest fixed, cap 16000). Resume plan written to kaggle-ai/RESUME-PLAN.md — single push after 00:05 UTC, poll, download, verify, records. Tomorrow: do quota math before pushing (est = input + output; keep est under fresh-day budget), avoid re-push loops when 403 pattern is established.",
+  "cost": "2 wasted push attempts (v3, v4) — no model charges (failed reservation), but version history noise."
+}

@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "sentinel-observability-diagnostic",
+  "timestamp": "2026-09-21T07:28:04.601250+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "docs/experiments/SENTINEL-OBSERVABILITY-DIAGNOSTIC.md",
+    "scripts/sentinel-observability.ts",
+    "experiment-results/sentinel-observability/sensitivity-results.json",
+    "src/sectors/deers-rock-adapter.ts"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "sentinel-observability-diagnostic",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Sentinel observability diagnostic. ANSWER: macro->sentinel pathway is WIRED BUT LARGELY NON-TRANSMISSIVE. Adapter supplies admissionMultiplier 1.3 but DR quantizes at 1.5 (markov.js floor(baseAdmit*mult), baseAdmit in {0,1,2}) -> ZERO effect; supplies supplyChainPressure 0.4 but DR restock threshold is 0.6 (central-supply.js effectiveMin) -> ZERO effect. Measured sweeps: admission 1.0/1.1/1.3 IDENTICAL (occ 0.5420), 1.5 -> 0.5725, 2.0 -> 0.6031; pressure 0.0/0.2/0.4 IDENTICAL (supplyStress 0.4918), 0.6+ -> 0.0060. Only ONE channel effective: activeDisasterType -> scenario.js severity HARDCODED 0.6 -> icuOcc 0.0357->0.0714. Adapter-equivalent packet reproduces observation EXACTLY (occ 0.5344, supplyStress 0.4921 vs observed 0.534/0.492). IMPLEMENTATION DEFECT CONFIRMED: diagnosisWeightOverrides computed/populated/returned but NEVER consumed (zero refs both repos), Jev conf 0.96. Climate severity NEVER read by adapter. supplyStress INAPPROPRIATE as primary endpoint (Jev 1.87 conf 0.80) - inventory depletion + restock sawtooth at DR tick%50, identical for KE ticks 1-14 then step at tick 15. mortalityPressure=0 always; admissionSurge needs occ>0.9, max 0.603. H=20 NOT too short for occupancy (delta 0.0305 at H5 growing to 0.0916 at H40). Jev: invariance IS expected from mechanics (1.93 conf 0.89); interface scale mismatch primary cause (1.68); calibration study REQUIRED before redesign (1.87 conf 0.81). UNRECONCILED: KE calls admission threshold an interface defect, Jev calls it a model-sensitivity limit (0.43). Report: docs/experiments/SENTINEL-OBSERVABILITY-DIAGNOSTIC.md. PHASE F RERUN ELIGIBLE: NO. Nothing patched."
+}

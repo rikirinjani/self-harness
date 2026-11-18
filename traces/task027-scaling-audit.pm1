@@ -1,0 +1,32 @@
+{
+  "pm1_version": 1,
+  "session_id": "task027-scaling-audit",
+  "timestamp": "2026-09-21T05:59:43.580885+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 0,
+  "key_files": [
+    "morse/experiments/pm1-rx/TASK_027_SCALING_AUDIT.md",
+    "morse/experiments/pm1-rx/TASK_027_3B_VS_7B_MATRIX.json",
+    "morse/experiments/pm1-rx/TASK_027_CELL_ACCOUNTING.json",
+    "morse/experiments/pm1-rx/TASK_027_FIELD_COMPARISON.json",
+    "morse/experiments/pm1-rx/TASK_027_QA.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task027-scaling-audit",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........................--.-..-.........................................-.--...-",
+  "action": "Task 027: 7B completion & scaling audit. 35/40 cells scored. Rule D: 12.5% -> 37.1% (2.97x). Task misidentification: 27.8% -> 18.6%. Core fields improved dramatically (objective -80.6pp, current_task_status -60.1pp). 7B strictly safer (0 contradictions, 100% parse). Matcher F1 flat (0.127->0.122)."
+}

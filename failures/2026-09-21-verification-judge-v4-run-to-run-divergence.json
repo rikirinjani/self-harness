@@ -1,0 +1,11 @@
+{
+  "category": "verification",
+  "severity": "medium",
+  "root_cause": "The NVIDIA-hosted deepseek-ai/deepseek-v4.1-flash reasoning model is not deterministic at temperature 0 on this ordinal task. Independent model sampling produces different grades for a subset of candidates, and intermittently returns empty or non-JSON content that consumes a retry budget.",
+  "what_actually_happened": "Three identical v4 runs over the frozen 126 candidates diverged: 19/126 candidates (15.08%) were non-unanimous; max pairwise divergence 11.11%. This is above the task's 5% stability threshold and noisier than the earlier v2 rubric (8.73%). Schema validity also failed transiently in one run (rerun2 125/126: an empty/malformed response survived 6 retries). Per-tier weighted kappa is unstable run-to-run: rerun1 0.500, rerun2 0.5545, rerun3 0.3333.",
+  "impact": "Individual calibration runs do not reliably clear the gate. Only the 3-run majority-vote consensus passes every amended row. A single-run judge would produce unstable graded-relevance metrics (nDCG@10, Recall@20) in the downstream A/B benchmark, since a ~15% grade-flip rate propagates into ~2 percentage points of metric movement.",
+  "recovery": "Grade the A/B set with the majority vote of 3 runs, not one run, and report the 15.08% divergence as an uncertainty band. If tighter stability is needed, estimate the metric variance by repeating a subset of A/B queries and reporting a confidence interval, or evaluate a different judge model on the same frozen set.",
+  "mitigation_made": "The runner (eval/calibration_judge.py) now persists each successful record to judge_records.partial.jsonl and supports --resume, so a killed or timed-out run does not lose completed work. Retries raised to 6 and per-call timeout to 90s.",
+  "task": "Harden Judge Rubric & Re-Calibrate",
+  "evidence": "C:/Users/think/Project_v2/LocalNotebook/rag-service/eval/calibration/bias_report.json (divergence block)"
+}

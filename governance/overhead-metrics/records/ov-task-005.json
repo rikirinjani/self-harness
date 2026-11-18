@@ -1,0 +1,22 @@
+{
+  "schema": "overhead.v1",
+  "record_id": "ov-task-005",
+  "task_id": "verify-rules-adoption",
+  "type": "task",
+  "pair_id": "pair-none",
+  "task_class": "verification",
+  "revision": "RULES.md@5ee347ac",
+  "suite_id": "l3-governance-adoption",
+  "implementer_id": "verifier",
+  "mode": "delegated",
+  "status": "completed",
+  "accounting_complete": false,
+  "started_at": "2026-10-02T03:20:00Z",
+  "ended_at": "2026-10-02T03:25:00Z",
+  "duration_seconds": 300.0,
+  "cost_usd": null,
+  "human_seconds": null,
+  "input_tokens": null,
+  "output_tokens": null,
+  "context_tokens": null
+}

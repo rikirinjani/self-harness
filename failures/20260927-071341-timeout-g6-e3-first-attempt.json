@@ -1,0 +1,13 @@
+{
+  "ts": "2026-09-27T07:13:41Z",
+  "category": "timeout",
+  "slug": "g6-e3-first-attempt",
+  "severity": "medium",
+  "task": "g6-e3-production-canary",
+  "agent": "orchestrator",
+  "what_happened": "First full E3 run (scripts/run_g6_e3.py, 57 probes x 3 runs against the 28.4M S3 LanceDB index) was killed by the 1,800,000 ms (30 min) execution timeout mid-run-1. Canary freeze, L1 precheck (9/9 + 0/48) and index open had succeeded; the run was progressing through slow retrievals.",
+  "root_cause": "Underestimated per-query cost: production qmod.search_abstracts() reconnects to S3 LanceDB per call, and each cold search takes ~40 s (measured: cold 39.79 s, warm 0.46 s, reconnect 41.69 s). 48 retrievable probes x 3 runs = 144 searches ~= 100 min, far beyond the 30 min budget. Secondary: stdout was block-buffered so progress was not observable from the outside.",
+  "what_i_did_wrong": "Launched a ~100-minute job under a 30-minute timeout without first timing a single production-path retrieval end-to-end; only micro-benchmarks (connect/open/count/explain) had been timed. Also launched without -u or per-query progress output, so the timeout left no evidence of how far it got.",
+  "fix_applied": "Hardened scripts/run_g6_e3.py: (1) per-query try/except so a single failure records an error event instead of killing the run; (2) per-query flushed progress prints; (3) per-run checkpoint to data/g6_e3_results.partial.json; (4) acceptance check extended with retrieval_errors_total == 0; (5) rerun uses `python -u` with a 7,800,000 ms (130 min) timeout. Partial event store from the aborted attempt deleted before rerun so acceptance line count (171) stays exact.",
+  "impact": "Run-level only: no data corruption, no production effect (dedicated event store data/g6_events_e3.jsonl), no code outside scripts/run_g6_e3.py touched."
+}

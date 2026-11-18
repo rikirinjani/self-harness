@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "task015-complete",
+  "timestamp": "2026-09-17T23:08:08.646193+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 5400,
+  "tool_calls": 60,
+  "key_files": [
+    "experiments/pm1-rx/TASK_015_RESULTS.md",
+    "experiments/pm1-rx/pilot_v2_runner.py",
+    "experiments/pm1-rx/results/pilot_v3/cells/"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task015-complete",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........-.--...-........................................-.--...-",
+  "action": "Task 015 COMPLETE: 40/40 cells executed on Vultr. Fixed runner resume bug (commit e5250af) that caused infinite retry loop on terminal failures. 36 SCORED, 4 F-PARSE (b3_A, b4_A, b7_A, b8_B). Per-arm micro-F1: A=0.0500, B=0.0323, C=0.0000, F=0.0253. Totals TP=4 FN=150 FP=156. Stage wall time 5775.8s (96.3min). Final commit 43b25f0. All 40 cell artifacts in repo."
+}

@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260919T051255-orchestrator-cli",
+  "timestamp": "2026-09-19T05:12:55.738625+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 15,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\morse\\experiments\\pm1-rx\\TASK_024_GATE2_REPORT.md",
+    "C:\\Users\\think\\Agentic Layer\\morse\\experiments\\pm1-rx\\scripts\\probe_timing.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260919T051255-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Gate 2/3 verification: model qwen2.5:3b verified on Vultr, endpoint working, consumer prompt unchanged, JSON parsing confirmed, runtime estimate updated to 3.5-4.5 hours"
+}

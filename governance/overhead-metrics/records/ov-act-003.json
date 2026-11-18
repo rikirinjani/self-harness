@@ -1,0 +1,13 @@
+{
+  "schema": "overhead.v1",
+  "record_id": "ov-act-003",
+  "task_id": "gate-install-orchestrator",
+  "type": "activity",
+  "category": "reporting",
+  "duration_seconds": 300.0,
+  "cost_usd": null,
+  "human_seconds": null,
+  "input_tokens": null,
+  "output_tokens": null,
+  "context_tokens": null
+}

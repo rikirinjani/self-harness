@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "ab-prep-supervisor-launch",
+  "timestamp": "2026-09-22T22:02:04.882597+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 45,
+  "tool_calls": 5,
+  "key_files": [
+    "scripts/ab_embed_supervisor.sh",
+    "eval/ab_plan/AB_PLAN.md",
+    "eval/ab_plan/embed_cost_table.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ab-prep-supervisor-launch",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................-.--...-........-.--...-........-.--...-........................................-.--...-",
+  "action": "Launched ab_embed_supervisor.sh detached (pid 324292); confirmed waiting on bge-large embed; all 7 modal clients still running"
+}

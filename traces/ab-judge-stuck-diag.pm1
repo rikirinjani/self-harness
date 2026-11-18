@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "ab-judge-stuck-diag",
+  "timestamp": "2026-09-23T05:08:44.799619+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ab-judge-stuck-diag",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................................................................-.--...-",
+  "action": "Inspect full_judge PID 340308 state/fds/network after 2min with no partial writes"
+}

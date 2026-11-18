@@ -1,0 +1,35 @@
+{
+  "pm1_version": 1,
+  "session_id": "g6-e1-instrumentation",
+  "timestamp": "2026-09-26T22:34:15.304273+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 1800,
+  "tool_calls": 24,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\request_events.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\api_server.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\query_lancedb_fulltext.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\scripts\\verify_g6_e1.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\G6-E1-REPORT.md",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\PRE-PRODUCTION-TODO.md",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\VER-G6-E1-001.json",
+    "C:\\Users\\think\\.opencode\\skills\\g6_e1_baseline.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "g6-e1-instrumentation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "G6-E1 append-only instrumentation (authorized IMPLEMENT AND VERIFY E1 ONLY): built request_events.py (schema g6-events/1, one terminal JSONL event per request, emit() never raises, 10MB rotation keeping 5 archives, kill switch + env overrides, verify_store/stats introspection, errors.log fallback); instrumented all 3 CLI exits and all 4 HTTP exits; privacy = query hash+length only, no raw text/auth material. Test suite scripts/verify_g6_e1.py T1-T9 + baseline ALL PASS (append-only sentinel, retention cap 5/5 with policy expiry, kill switch, failure safety via blocker path, abstain zero-downstream on both entry points, timeout->502+error event, CLI/HTTP key-set parity, privacy byte-scan, prior Layer-1 suites green under active instrumentation). Baseline: 1357.3us/emit, 489B/event. One mid-run fix: rotation test expectation corrected (retention deletion is policy, not rewrite; archive names made collision-proof). Independent verifier (ver-1 reused) APPROVE, no REJECT defects; its one required follow-up (this trace) now filed; E2 backlog noted (errors.log content assertions, T8 all-stores structural scan, single-writer lock consideration). Records: VER-G6-E1-001, G6-E1-REPORT.md, TODO G6 line E1 DONE. No thresholds, no alerting, no Layer-1/algorithm change, no LLM, no G8."
+}

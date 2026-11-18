@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "exp-002-audit-rng-contamination",
+  "timestamp": "2026-09-21T05:34:51.997392+00:00",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "docs/experiments/EXP-002-AUDIT-REPORT.md",
+    "experiment-results/exp-002/exp-002-results.json",
+    "src/experiment/experiments/exp-002-activation-threshold.ts"
+  ],
+  "failure": {
+    "category": "paired-design-defect",
+    "severity": "critical"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "exp-002-audit-rng-contamination",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................-.--...-........................................-.--...-........................................-.--...-",
+  "action": "EXP-002 Phase A audit: CRITICAL DEFECT found. RNG contamination breaks paired design. Control and intervention share RNG instance; CO2 divergence cascades through all sectors. 4/10 seeds show identical outputs across CO2=280/400/800. Activation rate measures RNG sensitivity, not pathway activation. Phase B BLOCKED."
+}

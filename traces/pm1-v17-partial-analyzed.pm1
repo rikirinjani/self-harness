@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-v17-partial-analyzed",
+  "timestamp": "2026-10-04T02:05:53.090954+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\analyze_b2_partial2.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-v17-partial-analyzed",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "v17 CANCELLED at ~9h (session cap/limit), 8/24 chains recovered - and they are the golden 8: ALL trial-1 h250 chains across every K cell. Findings at h250 t1: (1) P-full INERT at every K (3/3 cells, 0 post-K compliance, ~200-240 failures each) - explicit target field vetoes the notice K-independently; (2) P-pos COMPLIES at every K (3/3, recall 1.000, immediate adoption preK dominant 2) - notice-only target info wins; (3) NEW WRINKLE: P-postarget SPLIT - K=10 complies (241/241) but K=50 INERT (0/201, 200 failures) - K-dependent or n=1 noise, needs t2; (4) failure counts track arm behavior (compliant ~10-51, inert ~200-240). Remaining 16 chains: t2 sweep + K150-t1-P-postarget + h50s. Quota: ~9h used of fresh 30h, ~21h remain - resume fits. Proposal: update seed dataset with 8 recovered, fresh session resumes 16 missing (~9-15h) possibly split across 2 sessions via skip-completed."
+}

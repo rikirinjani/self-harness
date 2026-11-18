@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "glm-quota-429-102min",
+  "timestamp": "2026-09-27T05:02:42.155022+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 60,
+  "tool_calls": 1,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "glm-quota-429-102min",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "GLM ajianaz quota recheck: HTTP 429, Retry-After 6130s (~102 min) - a much longer penalty tier than prior 21-26 min windows. Between the healthy check (90% / 13.5M remaining, window to 06:43 UTC) and now, the full remaining quota was consumed in a burst, implying a heavy multi-agent or runaway workload rather than steady interactive use (no-cache-discount router re-bills full context per call). Recommended: switch active preset to deepseek (has prompt caching) to unblock work; wait out 102 min without polling; audit window usage after reset to identify the burst source."
+}

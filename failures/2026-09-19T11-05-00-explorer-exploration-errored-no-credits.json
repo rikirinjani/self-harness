@@ -1,0 +1,11 @@
+{
+  "id": "ses_f3def5173ffetY1In4NAO1nTf9",
+  "agent": "explorer",
+  "objective": "Explore experiment infrastructure",
+  "status": "error",
+  "result": "Session error: Insufficient account funds",
+  "failure_category": "infrastructure",
+  "failure_severity": "low",
+  "reconciliation": "Not recoverable. Continuing infrastructure recon directly via orchestrator.",
+  "timestamp": "2026-09-19T11:05:00Z"
+}

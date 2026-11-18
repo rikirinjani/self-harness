@@ -1,0 +1,37 @@
+{
+  "pm1_version": 1,
+  "session_id": "ce-hashfix-kaggle-verification",
+  "timestamp": "2026-10-02T06:06:35.684970+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3600,
+  "tool_calls": 70,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\ce-fix\\kernel.py",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\ce-fix\\kernel-metadata.json",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\ce-fix\\inject.py",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\ce-fix\\wt\\src\\core\\hash.ts",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\ce-fix\\wt\\src\\poc\\hash-proto.test.ts",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\ce-fix\\wt\\src\\poc\\hash-probe.ts",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\ce-fix\\wt\\src\\poc\\max-soak.ts",
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\ce-fix\\output4\\RESULTS.md",
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\Agentic Layer\\qms\\records\\verifications\\2026-10-02-060000-VER-2026-002-hash-fix-kaggle.json",
+    "C:\\Users\\think\\Project_v2\\Causality Engine\\Agentic Layer\\qms\\records\\nonconformities\\2026-10-02-012000-ncr-hashing-proto-key.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ce-hashfix-kaggle-verification",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "Authored+verified NCR-2026-001 __proto__ hash fix end-to-end on Kaggle: fix-1 authored fix+regression test+probe/soak harness in worktree (752/752 local); orchestrator built base64-embedded Kaggle kernel after 4 subagent spawn failures; kernel v4 PASSED all 12 gates (defect live pre-fix collides=true, eliminated post-fix collides=false, zero drift 3 seeds, 752/752 tests, 19.83M-tick soak); VER-2026-002 filed, NCR-2026-001 resolved"
+}

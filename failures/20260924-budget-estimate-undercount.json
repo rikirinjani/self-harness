@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-09-24T09:40:00.000000+00:00",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "category": "process",
+  "severity": "medium",
+  "summary": "Local token-based budget estimate undercounted actual Vultr SI spend by ~2x ($11.05 estimated vs $22.65 actual dashboard) for the main 19,632-call judge run",
+  "root_cause": "budget_guard.py / budget_status.json estimate sums prompt_tokens and completion_tokens from partial records using list rates ($0.15/$0.60 per 1M). The dashboard total matches those same list rates exactly, so the per-record token fields captured locally undercount real billed tokens (likely missing/partial usage on some records and/or uncounted reasoning tokens). The estimate was treated as billing truth when it is not.",
+  "impact": "A ~$11 underestimate on a $30 budget; the $20 cap was effectively exceeded without the guard tripping. Detected only by reading the Vultr dashboard.",
+  "what_went_wrong": "I reported '$11.0458 of $20' as spend and used it as the budget basis for the BM25 leg estimate. It was an estimate from local records, not billed usage. I should have labelled it as an estimate and reconciled against the provider dashboard before treating it as ground truth.",
+  "corrective_action": "Treat provider dashboards as billing ground truth; label local sums as estimates. Saved reference eval/ab_plan/vultr_si_deepseek_pricing.json. Recorded ~$0.00115/call at the observed mix for forward forecasts.",
+  "trace_id": "bm25-new-pairs-delta / bm25-judge-complete"
+}

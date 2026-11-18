@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "glm-depleted-257min",
+  "timestamp": "2026-09-28T08:10:37.897654+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 40,
+  "tool_calls": 1,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "glm-depleted-257min",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................-.--...-........-.--...-........................................................-.--...-",
+  "action": "GLM ajianaz depleted again as predicted: HTTP 429, Retry-After 15421s (~257 min / 4.3h), free ~12:15 UTC. Fifth lockout today, longest yet - escalation pattern 21 -> 102 -> 205 -> 191 -> 257 min. Cycle: reset -> ~30 min heavy drain -> lockout -> wait. Root cause unchanged (parallel workloads re-billing full context, no cache discount); all mitigations declined by user, no config changes made."
+}

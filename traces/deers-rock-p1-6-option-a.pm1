@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "deers-rock-p1-6-option-a",
+  "timestamp": "2026-10-01T23:53:08.055022+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 32,
+  "key_files": [
+    "src/engine/charge-generator.ts",
+    "src/engine/finance.ts",
+    "src/engine/lab.ts",
+    "src/engine/radiology.ts",
+    "src/engine/surgery.ts",
+    "src/engine/ai-pharmacy.ts",
+    "STATE.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "deers-rock-p1-6-option-a",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........................---..-...........--...--........--.-..-.........................................-.--...-",
+  "action": "P1-6 Option A: added appendCharge() mutate-in-place variant in charge-generator.ts and switched all 6 generateCharge call sites (finance x2, lab, radiology, surgery, ai-pharmacy w/ lazy per-pass copy). Determinism gate PASS: journal.jsonl + snapshots.jsonl SHA-256 byte-identical pre/post, metrics incl chargesSha256 identical. p95 576.8ms->69.2-88.4ms (target <100 met), max 1689->592-945ms (residual = tick-1000 journalExportAndPurge, Option D out of scope). lint exit 0; targeted vitest 36/36 pass exit 0."
+}

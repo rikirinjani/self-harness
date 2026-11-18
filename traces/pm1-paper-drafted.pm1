@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-paper-drafted",
+  "timestamp": "2026-09-30T20:06:45.563510+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\kaggle\\GEMMA_PAPER_WRITEUP.md",
+    "C:\\Users\\think\\self-harness\\failures\\2026-09-30-paper-oc-lane-unavailable.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-paper-drafted",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "PAPER DRAFTED (coordinator fallback - paper-oc lane dead: model 'opencode/deepseek-v4-flash-free' delisted, failure-recorded 2026-09-30-paper-oc-lane-unavailable.json): kaggle/GEMMA_PAPER_WRITEUP.md, 1203 words (cap 1500), all required sections (Title/Subtitle/Abstract/Intro/Methods/Results/Limitations/Related/Reproducibility/References), every key number verified present against PAPER_MATERIALS (18.1x/15.2x C economics, 7.6-7.7x C-win, 6.1x C-oc, 9/12 vs 23/24 inhibition dissociation, 78,724/82,000 P baselines, 44+->12/12 case study, 7.7% empty-content, \\ offline infra, arXiv:2607.02770 + 2412.19437 + 2210.03629 citations). Submission steps handed to user: paste into Kaggle Writeup editor, make runner kernel public + attach, submit before Nov 12 23:59 UTC. First-publication sequencing preserved (arXiv after)."
+}

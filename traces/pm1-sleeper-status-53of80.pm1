@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-sleeper-status-53of80",
+  "timestamp": "2026-09-27T20:31:22.243093+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-sleeper-status-53of80",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................................................................-.--...-",
+  "action": "Routine status poll of sleeper run: PID 3488 alive, 53/80 run files complete, now in chain-02 K=150 t1 cells (C-win h250 written 21:10). Error log clean. Pace ~7 min/run -> ETA ~00:20 local for remaining 27 runs. Cost tracking ~.07 spent of ~.64 approved (linear from .39@24). C-oc shows compact=12 matching chain-01 pattern; P+FACTS input constant at 114.5k as designed (bounded packet)."
+}

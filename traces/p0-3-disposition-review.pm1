@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "p0-3-disposition-review",
+  "timestamp": "2026-09-26T15:48:04.221418+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\VER-P0-3-LAYER2-ANNOTATION-001.json",
+    "C:\\Users\\think\\.opencode\\skills\\l2_p0_3_report.json",
+    "C:\\Users\\think\\.opencode\\skills\\l2_disposition_data.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "p0-3-disposition-review",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........................-.--...-........................................-.--...-",
+  "action": "P0-3 disposition review (analysis only, no code/experiments). Evidence: premise coverage across 4 configs never >=80% (v1 4/6, v2 2/6, v3 3/6, P0-3 2/6; max 0.667); scope reaches 7/8 (0.875) only under v1 which over-fires INSUFFICIENT on 24/30 controls. Same-prompt v3 vs P0-3: 3 label flips at temp 0 with inputs held constant (prompt/model/provider/temp/context/max_tokens) -> attributable to provider/model nondeterminism with concurrency (4 vs 1 worker) as the only unexcluded observable factor. False-warning 0-5pct; cost 0.000611 USD/query; p50 3530ms p95 6402ms; 0pct failures on Vultr SI (NVIDIA unresponsive). Recommendation: PARK Layer 2 (not abandon); premise mode not viable as-is; scope mode blocked by INSUFFICIENT trade-off + instability; P0-4 blocked (no independent value until scope reaches target+stability); quantify nondeterminism before any enablement."
+}

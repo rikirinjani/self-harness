@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-10T22:56:26.3810573+07:00",
+  "category": "infrastructure",
+  "severity": "high",
+  "slug": "modal-endpoint-quota-depleted",
+  "task": "Paired SWE viability pilot (48 calls, 24 states x 2 arms) on Modal Dedicated Endpoint",
+  "what_happened": "Modal workspace quota nearly depleted/over quota. Recreated Gemma-4-26B-A4B endpoint (ep-JpPaPjXevZUx8s8MxqNLPi): reported 'live' but proxy returned 503 'no upstreams available' for 25+ min; stopped it. Created DeepSeek-V4.1-Flash endpoint (ep-7i1Ih2FzvuLOwuYExaEGNq): stuck in 'provisioning' for 35+ min, never served a single 200; stopped it on user order. Zero pilot calls completed. Old original endpoint backend (pre-existing app) was already gone before this session's work: URL proxyed but app stopped.",
+  "root_cause": "Modal quota exhaustion prevented new endpoint containers from scheduling. Endpoint status transitions (live/provisioning) did not reflect actual capacity. The pre-existing Gemma endpoint deployment was deleted/stopped in a prior session, so its URL was a dead proxy.",
+  "cost_impact": "Unknown exact GPU spend during provisioning attempts; user reports account near/at quota limit. Vultr budget untouched ($44 remaining). Pilot script designed but never executed.",
+  "what_i_did_wrong": "Recreated a second large-model endpoint without first checking workspace quota. Kept polling a dead endpoint for 25+ min before pivoting. Did not verify quota before provisioning.",
+  "recovery": "Both endpoints stopped (permanent). Pilot script (swe_paired_pilot.py) is complete and frozen; design valid; can run on Vultr deepseek-v4.1-flash (~$0.10-0.30 for 48 calls) or any OpenAI-compatible endpoint when Modal quota resets.",
+  "files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\swe_paired_pilot.py",
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\results\\swe-paired-pilot\\"
+  ]
+}

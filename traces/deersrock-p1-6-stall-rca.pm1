@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "deersrock-p1-6-stall-rca",
+  "timestamp": "2026-10-01T14:36:26.352527+00:00",
+  "agent": "oracle",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\tick-probe.mjs"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "deersrock-p1-6-stall-rca",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........-.-.-.-........................................................-.--...-........................................-.--...-",
+  "action": "GH#1 P1-6 root-cause: 1.9s HTTP stall is NOT the SQLite journal (10% CPU); it is generateCharge per-charge full Map copy (67.7% CPU, charge-generator.ts:30) + unbounded unpaid charges map (21,840 @ tick 1000, never marked paid -> cleanup.ts:54 predicate dead). Evidence: CPU profile + no-journal baseline still stalls 1.45s; temporal.test.ts header already documented 800-tick~2s superlinear growth. Ranked fixes proposed; no repo files edited (probe artifacts in temp only)."
+}

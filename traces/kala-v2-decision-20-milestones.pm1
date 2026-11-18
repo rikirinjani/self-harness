@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "kala-v2-decision-20-milestones",
+  "timestamp": "2026-09-27T04:02:07.730393+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 200,
+  "tool_calls": 5,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\kaggle-ai\\kala_v2_decisions.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kala-v2-decision-20-milestones",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Decision session: user ruled DECISION#20 (milestones): 47 written/48 submitted convention, three distinct completion milestones, Edric's line fixed to selection sitting. Proceeding to #22 comms/Keeper mandate."
+}

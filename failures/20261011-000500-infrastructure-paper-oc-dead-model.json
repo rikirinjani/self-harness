@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-10-11T00:05:00Z",
+  "category": "infrastructure",
+  "severity": "medium",
+  "slug": "paper-oc-dead-model-dispatch-failure",
+  "what_happened": "Dispatch of paper-oc (paper revision lane) failed with: 'Model not found: opencode/deepseek-v4-flash-free'. Parallel librarian dispatch (ses_ed7c5dfb1ffehAKYMw3B2iR57M) failed with 'Session too large to compact - context exceeds model limit even after stripping media'.",
+  "root_cause": "1) oh-my-opencode-slim.json pins paper-oc (and several other agents at lines 497/505/517/525) to model 'opencode/deepseek-v4-flash-free', which no longer exists in the provider registry (suggested: ling-3.0-flash-fin-free, ling-3.1-flash-free, mimo-v2.6-flash-free). 2) The librarian session exceeded its model context limit before producing output — session scope/context too large for one dispatch.",
+  "what_i_did_wrong": "Dispatched a lane without pre-checking that the agent's configured model resolves. Sent a single large research prompt to librarian instead of splitting into smaller bounded slots.",
+  "remediation": "Update paper-oc model in oh-my-opencode-slim.json to a resolvable model; re-dispatch paper revision (fresh session — errored sessions are not reusable). Split librarian reference research into two narrower bounded dispatches or reduce scope per dispatch. Write pm1-trace for the recovery task.",
+  "files_affected": [
+    "C:\\Users\\think\\.config\\opencode\\oh-my-opencode-slim.json"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1all-consolidation",
+  "timestamp": "2026-09-23T09:28:34.347558+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 45,
+  "key_files": [
+    "C:\\Users\\think\\PM1_ALL\\README.md",
+    "C:\\Users\\think\\PM1_ALL\\MANIFEST.json",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\2026-09-23-pass-pm1all-consolidation.json",
+    "C:\\Users\\think\\self-harness\\failures\\2026-09-23-implementation-defect-pm1all-pm1og-double-nest.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1all-consolidation",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "Gathered all PM-1 and derivative assets into C:\\Users\\think\\PM1_ALL in 6 separated subfolders (01_PM-1_Original, 02_PM-1_RX, 03_PM-1_Protocol, 04_PM1_OG, 05_Traces_and_Evidence, 06_Source_Repos). Scanned Agentic Layer + project + project_v2 + home-level extras (PM1_OG, Downloads, Documents, Desktop, temp, self-harness, .config/opencode, .local/bin). COPY mode, originals untouched. 118,954 files / 8,413.3 MB / 354.7s / 0 copy errors. Verified PASS: 6/6 source-dest tree comparisons byte-exact + 15/15 landmarks. QMS VER-2026-09-23-PM1ALL-001 filed; low-severity PM1_OG double-nest defect self-caught, fixed, re-verified."
+}

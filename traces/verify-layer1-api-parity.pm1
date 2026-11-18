@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "verify-layer1-api-parity",
+  "timestamp": "2026-09-26T22:01:51.417213+00:00",
+  "agent": "verifier",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 7,
+  "key_files": [
+    "Agentic Layer/qms/records/verifications/"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "verify-layer1-api-parity",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........................................-.--...-........-.--...-........................................-.--...-",
+  "action": "L2 verification of Layer-1 abstention gate integration into rag-service /api/ask: read api_server.py (gate at top of ask, asyncio.to_thread, exact abstain shape, no other endpoint changes), layer1_abstain.py (deterministic, unmodified per mtime 9/26 vs change window 9/27), verify_layer1_api_parity.py (sentinel-monitored HTTP abstain test, real-query passthrough test, CLI regression subprocess), CLI gate parity in query_lancedb_fulltext.py main(); confirmed no eval/Layer-2 imports; verdict APPROVE. No project files modified. QMS verification record to follow; MemPalace filing left to lead."
+}

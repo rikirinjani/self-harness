@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-10-03T06:22:00Z",
+  "category": "delegation",
+  "severity": "medium",
+  "slug": "imp1-adr004-remediation-timeout-2",
+  "agent": "orchestrator",
+  "specialist": "imp-1 / implementer / ses_f03ca17d2ffe0irHDxUnaDBxKN",
+  "task": "Resume: finish ADR-004 remediation (ADR amendment + test + verify + commit)",
+  "what_happened": "Second consecutive dispatch to imp-1 returned 'Provider response headers timed out after 300000ms'. No response headers received.",
+  "root_cause": "Provider/infrastructure timeout on the model backend, repeated. Not a task or code failure.",
+  "partial_work_state": "Unchanged from the first timeout: src/engine/journal.ts and scripts/kaggle-longrun/validate-bounded.mjs remain modified and correct; ADR amendment, test, verification, and commit still not done.",
+  "recovery": "Stopped retrying the imp-1 lane (Rule 11.3: stop the failed lane). Orchestrator completes the bounded remainder directly (ADR amendment + test + tsc/tests + commit), then dispatches ver-1 for independent review.",
+  "evidence": "Two identical provider timeout errors; git working tree unchanged between attempts.",
+  "rule": "Rule 2 (record failures) + Rule 11.3 (delegation failure: stop failed lane, retain error, record failure)"
+}

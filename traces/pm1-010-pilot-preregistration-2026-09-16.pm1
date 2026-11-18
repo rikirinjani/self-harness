@@ -1,0 +1,41 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-010-pilot-preregistration-2026-09-16",
+  "timestamp": "2026-09-16T09:14:02.414055+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3300,
+  "tool_calls": 38,
+  "key_files": [
+    "experiments/pm1-rx/TASK_010_INSTRUMENT_CONTRACT.md",
+    "experiments/pm1-rx/TASK_010_RESEARCH_QUESTION.md",
+    "experiments/pm1-rx/TASK_010_POPULATION_SAMPLING.md",
+    "experiments/pm1-rx/TASK_010_ARMS.md",
+    "experiments/pm1-rx/TASK_010_REFERENCE_CONSTRUCTION.md",
+    "experiments/pm1-rx/TASK_010_ENDPOINTS.md",
+    "experiments/pm1-rx/TASK_010_FAILURE_TAXONOMY.md",
+    "experiments/pm1-rx/TASK_010_ANTI_CONTAMINATION.md",
+    "experiments/pm1-rx/TASK_010_EXECUTION_PLAN.md",
+    "experiments/pm1-rx/TASK_010_COMPUTATIONAL_BUDGET.md",
+    "experiments/pm1-rx/TASK_010_PREREGISTRATION.md",
+    "experiments/pm1-rx/TASK_010_SELF_AUDIT.md",
+    "experiments/pm1-rx/TASK_010_RESULT.md",
+    "experiments/pm1-rx/TASK_010_PROGRESS.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-010-pilot-preregistration-2026-09-16",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........--.-..-.........................................-.--...-",
+  "action": "TASK 010 COMPLETE. Committed d7afc3a on pm1-rx-v14 (14 files, 2679 insertions). VERDICT: PROTOCOL READY WITH LIMITATIONS. Pilot NOT executed. PHASE 0: verified repo=morse branch=pm1-rx-v14 HEAD=90cec75, freeze tag pm1-rx-confirmatory-001-final -> 8304262 unchanged, 009C commit 90cec75 present, matcher+calibration artifacts present, no pilot for the new instrument exists. Historical hashes verified: pilot_009a_results.json 7D4DB221, pilot_a_results.json B2522BA8, pilot_a_run.log B5BD52C6, pilot_009b_results.json 4AB78343, pilot_009b_run.log 2EC643D8. FINDING: pilot_boundaries.json (35e42b8e), pilot_009a.log, f_capability_results.json are NOT local and NOT git-tracked - they live on Vultr; recorded as a protocol constraint. PHASE 1: extracted the frozen 009C contract verbatim (matcher version, 8-field atom schema, 7 verdicts+weights, CONTRADICTORY precedence, thresholds 0.60/0.75/0.30, 22/22 calibration cases, selection rule, 5 limitations, test evidence). Documentary discrepancy found and recorded, not fixed: design doc prose says 1053 triples, authoritative JSON says 1014 (13x13x6). PHASE 2: froze the research question as a MEASUREMENT question (not ranking): does a consumer given only a task-relative projection preserve the actionable state the reference extractor identifies as required, as measured by the frozen atomic matcher, and how does that differ across arms. Hypotheses H1-H4 falsification-oriented; no superiority claim permitted. PHASE 3: boundary methodology preserved EXACTLY from shadow_boundaries.py (thresholds 6.0h/20/8000/3/25/64K, four historical quirks preserved as facts, deterministic selection rule). PROTOCOL CHANGE REQUIRING REVIEW: NOT INVOKED. N=10 boundaries x 4 arms = 40 cells; new set written to a NEW artifact pilot_010_boundaries.json, hashed, never overwriting the historical set. PHASE 4: arms A/B/C/F frozen verbatim from shadow_producers.py; mechanical F!=C distinction documented; identical matcher treatment; F1/F2/F3 capability variants excluded. PHASE 5: reference pipeline frozen (10 steps, R1/R2/R3 filters with recorded rejections, per-field cap 8, dedup 0.8); hard contamination barrier (consumer output is an input to the matcher, never to the reference extractor); no human adjudication (accepted limitation); extractor version+hash frozen at REFERENCE FREEZE. PHASE 6: primary endpoint L3v2 = sum of atom weights / total atoms (exactly score_reconstruction_v2().L3), threshold 0.80 inherited; 9 secondary endpoints; no-collapse rule for verdict categories; within-boundary paired contrasts, session-clustered CIs, Holm-Bonferroni over 6 contrasts. PHASE 7: 10 operational failure classes with explicit exclusion/arm-count/termination/rerun/review semantics; F-PARSE and F-CONSUMER are scientific observations (attributed not excluded); F-REFERENCE/F-MATCHER/F-SAFETY stop the pilot; hardened F6 stop rule; prohibited reclassifications. PHASE 8: AC1-AC12 anti-contamination rules; permitted monitoring limited to operational health; outcome inspection before QUALITY GATES prohibited for design purposes. PHASE 9: 9-stage execution plan, 15-artifact registry with schema/provenance/hash, append-only JSONL keyed by (boundary_id, arm), hash-verified partial reuse, no silent regeneration. PHASE 10: budget grounded in MEASURED 009B figures extracted from pilot_009b_results.json (40 cells: producer 82000 prompt/12409 output tokens/2216.7s; consumer 17044/5802/533.5s; total 45.8 min wall); ~124K tokens,  on Vultr CPU + Ollama qwen2.5:3b; no GPU assumed; DeepSeek balance flagged as PRE-FLIGHT check; timeouts frozen (producer 300s, consumer 120s, stage 2h, global 6h); COMPUTATIONALLY FEASIBLE, no unregistered reduction. PHASE 11: 26-section pre-registration (pm1-shadow/2.0). PHASE 12: adversarial self-audit - delegation to oracle BLOCKED AGAIN (OpenAI platform credits exhausted, ora-1 errored unreconciled, failure record written); review executed by the authoring session with the independence loss DISCLOSED (limitation L18). 12 mandated questions answered + 6 additional findings: 8 fixes applied BEFORE the protocol commit (Q1 protocol-document hash freeze gate G11; Q3 runner hash-pinning + gate G6; Q8 per-arm failure rates + BIAS-SUSPECT flag >10pp; Q9 manifest-held per-record SHA256; Q10 first-success-wins; Q11 seven local historical artifact hashes at PRE-FLIGHT; Q12 context-window recording + actual prompt tokens + >=90% budget_truncation flag + F-CONTEXT split input-overflow-no-rerun; D1 unscorable cells atom_total==0 excluded and counted; D3 valid-pair counts <3 UNDERPOWERED; D4 cross-pilot comparison prohibited; D5 representation validation at ARM GENERATION; D6 leakage gate G7 mechanism via producer-input transcript SHA256). 5 findings classified as REMAINING LIMITATIONS (quantifier asymmetry Q6, reference false negatives Q7, producer behaviour Q5, enforcement ceiling Q3, threshold scale-transfer D2). One edit-tool failure during patching (non-ASCII chars broke oldString matching) - diagnosed, retried once via a bounded Python patch script with loud assertions, verified all 6 probes present. PHASE 13: full harness suite 402 passed 0 failed (93.87s); TASK_010_RESULT.md written; 19 limitations recorded L1-L19; exact next action = execute Stage 1 PRE-FLIGHT in a NEW session. HISTORICAL ARTIFACTS UNCHANGED: matcher and calibration files untouched, 009A/009B not rescored, no real pilot run, live database not accessed."
+}

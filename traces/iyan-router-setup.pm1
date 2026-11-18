@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "iyan-router-setup",
+  "timestamp": "2026-09-25T01:15:02.967225+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\.config\\opencode\\opencode.jsonc"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "iyan-router-setup",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "Added iyan-router provider (routers.iyantama.tech/v1) to opencode.jsonc with 17 verified working models (bn/claude-sonnet-4-5, bn/glm-5, bn/deepseek-v4.1-flash, bn/qwen-3-8-max etc). Stored key as Windows User env var UTIM_IYAN_KEY (47 chars). Excluded 5 upstream-broken models. Validated JSONC parses (11 providers, 17 iyan models) and verified end-to-end: resolved key from registry, live chat call to bn/glm-5 returned 200. Third-party router caveat noted."
+}

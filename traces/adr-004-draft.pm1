@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "adr-004-draft",
+  "timestamp": "2026-10-02T10:41:01.435299+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "Deers-Rock/docs/adr/ADR-004-bounded-state-durable-scheduling.md",
+    "Deers-Rock/scripts/kaggle-longrun/validate-bounded.mjs"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "adr-004-draft",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Drafted ADR-004 (bounded state + durable scheduling) at docs/adr/ADR-004 + Kaggle long-run validation script scripts/kaggle-longrun/validate-bounded.mjs. Grounded in code: snapshot cadence/purge constants, saveSnapshot field audit (agent/referral ARE serialized - ADR-003 premise stale), LOS 3-7 days (discharge NOT a bug), no charge-ID linkage in finance, EXPORT_INTERVAL 500, morgue cap precedent. Self-review pass after oracle lane context-overflow: corrected two overstatements - (1) journalReplay has zero callers in src (boot never replays post-snapshot rows), (2) resume reseeds RNG from original seed so trajectory-identity across restarts was never a property; D1 now claims structural fidelity only. Design: A1 persist-queue-in-snapshot recommended, tick-threshold pruning env-gated default-OFF, old-DB compat via format version, verification incl. restart-kill test + 100k-tick Kaggle run. Files uncommitted pending design decision."
+}

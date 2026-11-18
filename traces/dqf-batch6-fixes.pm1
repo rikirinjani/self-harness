@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-batch6-fixes",
+  "timestamp": "2026-09-29T19:40:23.102026+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2700,
+  "tool_calls": 22,
+  "key_files": [
+    "rag-queries/l3_query_templates.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-batch6-fixes",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Batch-6: applied re-assessment findings - anticoagulant GI coalesce (gi_bleeding_risk), pregnancy negation guard (_norm_preg), concerns reuse pregnancy/lactation normalizers (_norm_lact) + Category D warning, null half-life concern suppression, statin NNT neutral 5.0 fallback, PPI DDI dedupe, pain_type none guard, special/selectivity null guards, H2RA >50 boundary, CYP decimals, bradycardia template removal. Verified: grid 352/0, both suites pass, smoke 18/18, 14 spot checks pass. Committed 667fd49 and pushed"
+}

@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-10-11T00:20:00Z",
+  "category": "infrastructure",
+  "severity": "medium",
+  "slug": "paper-oc-dead-model-and-librarian-context-overflow",
+  "what_happened": "Round 1: pap-1 failed 'Model not found: opencode/deepseek-v4-flash-free'; lib-1 failed 'Session too large to compact - context exceeds model limit even after stripping media'. Round 2 (after editing oh-my-opencode-slim.json paper-oc model to opencode/mimo-v2.6-flash-free): pap-2 failed with the SAME old model error, proving agent config is not hot-reloaded (documented in customize-opencode skill: config loads once at startup). lib-2 and lib-3 (fresh sessions, much smaller prompts) failed with the SAME overflow error — so the librarian failure is structural, not prompt-size: librarian's model in the active 'glm' preset is glm-ajianaz/glm-5.3, whose session initial context (system prompt + tool schemas) appears to exceed its reported context limit, or the ajianaz endpoint changed today.",
+  "what_i_did_wrong": "1) Dispatched pap-1 without pre-checking the agent's configured model resolves. 2) After editing config, re-dispatched pap-2 immediately without accounting for the documented no-hot-reload behavior — wasted a dispatch. 3) Sent lib-1 as one large research prompt, then assumed prompt-size was the cause; lib-2/lib-3 proved it structural only after two more failed dispatches (should have diagnosed the model/config before retrying twice).",
+  "root_cause": "1) oh-my-opencode-slim.json paper-oc (and 4 other agents) pinned to removed model opencode/deepseek-v4-flash-free. 2) Active OMO preset 'glm' pins librarian to glm-ajianaz/glm-5.3, which cannot host the librarian session context. 3) opencode does not hot-reload agent config — both fixes require an opencode restart before dispatches can succeed.",
+  "remediation_applied": "paper-oc -> opencode/mimo-v2.6-flash-free (5 agent entries fixed); librarian (glm preset) -> opencode/mimo-v2.6-flash-free. Both pending restart.",
+  "remediation_pending": "User restarts opencode; then re-dispatch paper-oc revision + librarian citation research as fresh sessions (errored sessions are not reusable).",
+  "files_affected": [
+    "C:\\Users\\think\\.config\\opencode\\oh-my-opencode-slim.json"
+  ]
+}

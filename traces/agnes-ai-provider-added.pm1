@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "agnes-ai-provider-added",
+  "timestamp": "2026-10-03T14:11:24.745829+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 6,
+  "key_files": [
+    "C:\\Users\\think\\.config\\opencode\\opencode.jsonc"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "agnes-ai-provider-added",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Added Agnes AI provider to opencode.jsonc following the existing {env:UTIM_*} pattern used by all 11 other providers - key never written into the JSON. Researched Agnes AI first (did not guess base URL): confirmed real Singapore-based OpenAI-compatible gateway at https://apihub.agnes-ai.com/v1, models agnes-3.0-flash / 2.5-pro-alpha / 2.5-flash / 2.0-flash (512K ctx). Set UTIM_AGNES_KEY at persistent User scope (51 chars). Verified: opencode's own 'debug config' parser loads the block cleanly; live POST to /v1/chat/completions returned HTTP 200 with a valid completion. One false alarm during validation: my own comment-strip regex mangled the https:// URL in  and made ConvertFrom-Json fail - pre-edit file failed identically, proving the config was never broken. Noted to user the key was pasted in plaintext and should be rotated if this session is ever committed."
+}

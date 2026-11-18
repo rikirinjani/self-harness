@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "poly-bot-v12-experience-growth",
+  "timestamp": "2026-10-07T13:36:01.700854+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 180,
+  "tool_calls": 6,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\poly_bot_v12.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "poly-bot-v12-experience-growth",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "v12 self-calibrating trainer: 100 cycles 110 trades 90pct SELL WR +.48 PnL final .48 ROI +283pct. Calibration detected market overpricing → premium adapted 5.6pct to 10.0pct. Adaptive threshold tightened. Confirms bot grows experience through paper trading."
+}

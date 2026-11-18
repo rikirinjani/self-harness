@@ -1,0 +1,34 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-sleeper-implement-smoke",
+  "timestamp": "2026-09-27T08:30:04.700134+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 5400,
+  "tool_calls": 45,
+  "key_files": [
+    "Agentic Layer/pm1-continuation/harness/sleeper.py",
+    "Agentic Layer/pm1-continuation/harness/runner.py",
+    "Agentic Layer/pm1-continuation/harness/arms.py",
+    "Agentic Layer/pm1-continuation/harness/core.py",
+    "Agentic Layer/pm1-continuation/run_pilot.py",
+    "Agentic Layer/pm1-continuation/PROTOCOL_SLEEPER.md",
+    "self-harness/failures/2026-09-27-sleeper-vacuous-binding-design.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-sleeper-implement-smoke",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "Implemented V0.7-s sleeper experiment (sleeper.py + runner/arms/core patches + --sleeper CLI): caught vacuous-binding design flaw in dry-run (flat master schedule -> BUY-forbid never binds; T2 chains 1-2 quality task degenerate HOLD-always, tokens unaffected), redesigned as REGULATORY TARGET OVERRIDE (L seed-derived != base; notice sole carrier); smoke \\.034: P recall 0.0 vs informed arms 1.0, finding F1 no-inhibition (early adoption), gate rescoped; protocol v2 addendum; full 80-run launch next"
+}

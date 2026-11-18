@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "abort-run-bot-restored",
+  "timestamp": "2026-09-15T08:18:17.928229+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 120,
+  "tool_calls": 6,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "abort-run-bot-restored",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Abort run per user request: bot restored to stable state — all dist files now present (webhook-server.js, sidecar.js, types.js, user-transcript.js were missing after partial scp during connection resets), bot restarted successfully (PID 4757, 4 channels, schedulers running). Deployed changes that ARE live: SIPA regex now matches bare 'sip' word (fixes R335 gap), jurisdiction preambles active, per-user history, /reopen command. Remaining work deferred to after 22:00: full dist re-verify"
+}

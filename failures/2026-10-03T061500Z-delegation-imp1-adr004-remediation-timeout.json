@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-10-03T06:15:00Z",
+  "category": "delegation",
+  "severity": "medium",
+  "slug": "imp1-adr004-remediation-timeout",
+  "agent": "orchestrator",
+  "specialist": "imp-1 / implementer / ses_f03ca17d2ffe0irHDxUnaDBxKN",
+  "task": "ADR-004 remediation: tune bounded-state config + fix validation gate",
+  "what_happened": "The imp-1 dispatch returned 'Provider response headers timed out after 300000ms' (5 min, no response headers). The session had already modified two files before the timeout.",
+  "root_cause": "Provider/infrastructure timeout on the model backend — not a task or code failure. No response headers were received within the 300s limit.",
+  "partial_work_state": {
+    "modified_uncommitted": [
+      "src/engine/journal.ts — snapshotRetentionCount() added (env DR_SNAPSHOT_RETENTION, default 5), used in journalPurge",
+      "scripts/kaggle-longrun/validate-bounded.mjs — PROFILE=1 heap fields + gc(); tuned env defaults DR_PRUNE_TTL_CHARGES=1000 / DR_SNAPSHOT_RETENTION=3 recorded in report config; per-tick discharge tracking (dischargedAfterResume); gate dischargeContinuity = crashed===null && dischargedAfterResume>0"
+    ],
+    "not_done": [
+      "docs/adr/ADR-004-bounded-state-durable-scheduling.md Amendment 1 section",
+      "test for snapshotRetentionCount()",
+      "tsc + full test suite verification",
+      "git commit"
+    ]
+  },
+  "recovery": "Resumed imp-1 by alias with a narrowed scope (finish ADR + test + verify + commit only; do not redo the two modified files). If the provider times out again, complete the remainder directly and record the second failure.",
+  "evidence": "git status showed M src/engine/journal.ts and M scripts/kaggle-longrun/validate-bounded.mjs; diff inspected and matches spec.",
+  "rule": "Rule 2 (record failures) + Rule 11.3 (delegation failure: stop failed lane, retain error, record failure)"
+}

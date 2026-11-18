@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "re1-frozen-restore",
+  "timestamp": "2026-09-19T13:58:32.115334+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 30,
+  "tool_calls": 0,
+  "key_files": [
+    "experiment-results/dr-counterfactual/runs.json",
+    "experiment-results/dr-counterfactual/summary.json",
+    "experiment-results/wwii-counterfactual/p003-calibrated-runs.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "re1-frozen-restore",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................-.--...-........................-.--...-........................................-.--...-",
+  "action": "R-1: Restored 15 frozen-evidence tracked files to HEAD (e9d0fed). Verified runs.json 14424 lines, summary.json 6524 lines, p003 77591 lines, p004 1567 lines. Only 3 intentional analysis code files remain modified."
+}

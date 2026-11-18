@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-09-28T10:20:00+07:00",
+  "category": "code",
+  "slug": "contact-endpoint-unboundlocalerror",
+  "agent": "orchestrator",
+  "task": "Implement POST /api/contact in api_server.py (Contact Us form-to-email via Resend)",
+  "what_went_wrong": "First implementation raised UnboundLocalError on _contact_hits inside the handler (module-level dict read + reassigned without 'global' declaration) -> HTTP 500 on every valid payload. A secondary process issue compounded it: two stale api_server processes (pids 2356, 7164, both started 17:17:13) held port 8000, with the listener running pre-fix code, so the post-fix re-test still returned 500 and the traceback displayed line content from the edited file while executing the old compiled frame - misleading diagnosis.",
+  "root_cause": "1) Missing 'global' declaration for module-level mutable state mutated in a handler; written without scope check. 2) Local test harness did not verify which process was listening on the test port, so tests ran against a stale instance.",
+  "what_i_actually_did_wrong": "Shipped the handler without reviewing scope rules for the rate-limit dict, then trusted a re-test that never validated the listener identity - wasted a diagnostic cycle on a phantom 'fix didn't apply' theory.",
+  "fix": "Added 'global _contact_hits' (api_server.py:354); killed pids 2356/7164; confirmed port free; restarted one clean venv instance; re-tested: 503 not-configured and 429 rate-limit both as specified.",
+  "lesson": "Before any endpoint test: assert exactly one listener on the port and confirm its start time post-dates the last code edit. Review scope declarations on first write of module-level mutable state.",
+  "severity": "minor",
+  "caught_before_production": true
+}

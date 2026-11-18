@@ -1,0 +1,16 @@
+{
+  "schema": "overhead.v1",
+  "record_id": "ov-acc-001",
+  "task_id": "verify-codeowners",
+  "type": "acceptance",
+  "decision": "APPROVE",
+  "revision": "e8e699d12b77144ec3253a6d8baa20a807f44614",
+  "suite_id": "l2-acceptance-gate-install",
+  "reviewer_id": "ver-1",
+  "rationale": "Single-file CODEOWNERS diff verified adversarially; 4-command evidence logs coherent with fresh dist/ emission; 348 tests passed.",
+  "evidence_uri": "evidence-store/outputs/e8e699d12b77144ec3253a6d8baa20a807f44614/test.log",
+  "independent": true,
+  "tests_passed": true,
+  "correct": true,
+  "observation_complete": true
+}

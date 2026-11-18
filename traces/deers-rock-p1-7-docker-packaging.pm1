@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "deers-rock-p1-7-docker-packaging",
+  "timestamp": "2026-10-01T14:30:31.636121+00:00",
+  "agent": "fixer",
+  "outcome": "pass",
+  "duration_s": 480,
+  "tool_calls": 24,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\Dockerfile",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\docker-compose.yml",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\.dockerignore"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "deers-rock-p1-7-docker-packaging",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--.........................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "GH issue #1 P1-7 packaging: added Dockerfile (multi-stage node:22-slim; build=npm ci+npm run build; runtime=npm ci --omit=dev + dist/ + public/ + LICENSE; USER node; ENV DATA_DIR=/data; EXPOSE 3000; CMD node dist/cli/index.js up 3000, PORT env override), docker-compose.yml (host 3000->3000, named volume deers-rock-data:/data holding world-journal.db + exports per cli/index.ts DATA_DIR logic), .dockerignore (node_modules, dist, .git, *.db*, docs, tests, zenodo-package, etc). Docker NOT installed on host -> no image build claimed; static verification: every COPY source exists in repo, dist tree mirrors src 1:1 incl dist/cli/index.js, src has zero dev-only imports so --omit=dev suffices (better-sqlite3 is sole runtime dep), live smoke on node v22.23.2 with DATA_DIR=temp: GET /api/status HTTP 200, GET / HTTP 200 text/html, state written only under DATA_DIR, empty stderr. Note: pre-existing unrelated dirty file M src/api/rest.ts (28 insertions) - not touched by this lane. MemPalace add_drawer MCP tool unavailable in env (CLI 3.6.0 lacks subcommand); knowledge captured in this trace action instead."
+}

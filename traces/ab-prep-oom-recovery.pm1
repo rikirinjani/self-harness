@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "ab-prep-oom-recovery",
+  "timestamp": "2026-09-22T21:52:26.087920+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 600,
+  "tool_calls": 30,
+  "key_files": [
+    "scripts/modal_embed.py",
+    "eval/eval_ab_retrieval.py",
+    "eval/ab_plan/embed_cost_table.json",
+    "eval/ab_plan/AB_PLAN.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ab-prep-oom-recovery",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-..........--...--.........--...--........-.--...-........................................-.--...-",
+  "action": "Diagnosed dual OOM: VPS 3.3Gi killed retrieval (BM25); Modal L4 qwen3 OOM at batch 96. Patched skip-bm25 on VPS; reworked modal_embed for corpus slices + merge; failure record filed"
+}

@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "kaggle-10k-verdict-fail-diagnosed",
+  "timestamp": "2026-10-03T05:22:37.097549+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "Deers-Rock/src/engine/cleanup.ts",
+    "Deers-Rock/scripts/kaggle-longrun/validate-bounded.mjs"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kaggle-10k-verdict-fail-diagnosed",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........................................-.--...-........................................-.--...-",
+  "action": "10k Kaggle validation VERDICT: FAIL (2/4 gates) - fully diagnosable thanks to v2 hardening. No crash (crashed:null, all 10000 ticks ran). PASSED: dischargeContinuity (90 ED-discharged at tick 1000), pruningEvidence (charges peaked 136k @tick6000 then declined to 104k @10000 - pruning engaged and working, though steady state higher than the 56k naive estimate and not yet plateaued). FAILED: rssCeiling (max 641.9MB vs 450 - spike at the tick-5000 CRASH-RESUME sample, the exact live-incident mechanism now measured: snapshot save+load JSON parse transiently doubles memory; baseline after ~480-640MB), journalCeiling (441.8MB vs 300 - monotonic, arithmetic = 5 retained snapshots x ~85MB state JSON). D1 durable queue PROVEN in-run: queueLen 131-137 stable across the crash-resume boundary. KEY DISCOVERY: 90 discharged encounters at tick 1000 vanished by tick 2000 - cleanup.ts deletes non-active encounters (Lane 2 noted cleanup only prunes non-active), which reframes issue #3 live evidence: the 3422/3422-active observation was likely normal cleanup behavior, NOT proof discharges stopped; queue-loss defect itself remains real (code+tests). Implication: even flags-ON, a 10k-tick state cannot resume under a 512M cap; staging needs tighter TTLs and/or snapshot retention 5->3, then a shorter re-validation."
+}

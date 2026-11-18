@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "task033-session-wrap",
+  "timestamp": "2026-09-21T08:35:52.087578+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "morse/experiments/pm1-rx/task033_hashes.json",
+    "morse/experiments/pm1-rx/traces/task033-contrastive-retrieval.pm1"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task033-session-wrap",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........................................-.--...-........................................-.--...-",
+  "action": "Session wrap Task033: candidate gate prevented execution. Offline audit/test evidence and STOP reports sealed, primary PM1 trace inspected and copied to project traces, QMS requirement/verification linked, gate and external-dispatch failures recorded, MemPalace finding filed. No scientific discrimination results; Task032 unchanged. Explorer error returned no work and is reconciled as failed dispatch without reuse."
+}

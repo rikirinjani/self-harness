@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "ab-prep-recon-dispatch",
+  "timestamp": "2026-09-22T20:25:34.104602+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 900,
+  "tool_calls": 35,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\NEXT-TASK-AB-PREP.md",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\scripts\\modal_embed.py",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\scripts\\bge-base_meta.json",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\ab_results\\2026-09-19T01-05-11\\results.json",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\ab_results\\2026-09-19T01-05-11\\calibration_candidates.json",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\eval\\ab_results\\2026-09-19T01-05-11\\bge-base_meta.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "ab-prep-recon-dispatch",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-.........---..-...........--...--........--.-..-.........................................-.--...-",
+  "action": "A/B prep recon complete: located modal_embed.py on VPS /root/cokro-eval (never in git), scp'd it + frozen run 2026-09-19T01-05-11 (results.json 11.5MB, 300 queries x 20 docs, bge-base only, no query text inside; queries live in docs/eval-queries-full.txt 336 lines -> 300 queries) + bge-base_meta.json (7044s/500K docs) to local. Verified VPS eval_ab_retrieval.py has --precomputed-dir, Modal volume cokro-eval-data exists with embeddings/ + subcorpus_v2.parquet, Modal CLI authed on VPS. Identified timeout=7200 too tight (bge-base took 7044s). Both specialist dispatches for Lane A/B failed on upstream insufficient funds — switching to orchestrator-direct execution, failure recorded."
+}

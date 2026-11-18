@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "remove-curated-trap-entries",
+  "timestamp": "2026-09-15T07:44:27.965167+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 240,
+  "tool_calls": 5,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "remove-curated-trap-entries",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........................................................-.--...-",
+  "action": "Root-caused bad curated match: 'Selamat siang, gimana cara urus STR seumur hidup' matched trap curated entry 'Cara urus' -> vague reply 'Mohon sejawat dapat memperjelas...'. The trap entry was created by an admin /edit on a vague question and over-matches any 'cara urus' query. Removed 3 trap entries (Cara urus, Situ waras?, Apa ini) from curated.json (136->133), restarted bot. STR seumur hidup question will now fall through to LLM flow with jurisdiction preamble"
+}

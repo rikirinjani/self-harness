@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "fail-mcp-disable-dupkey",
+  "timestamp": "2026-09-25T07:57:53.102046+00:00",
+  "agent": "orchestrator",
+  "outcome": "fail",
+  "duration_s": 60,
+  "tool_calls": 4,
+  "key_files": [
+    "C:\\Users\\think\\.config\\opencode\\opencode.jsonc"
+  ],
+  "failure": {
+    "category": "logic-error",
+    "severity": "low"
+  },
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "fail-mcp-disable-dupkey",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................-.--...-........--.-..-.........-.--...-........-.--...-........................-.--...-........-.--...-",
+  "action": "Wrong approach on first MCP-disable pass: inserted 'enabled': false immediately after each server opener without checking for an existing 'enabled': true at object end. JSON duplicate-key last-wins kept all 10 servers enabled; validator reported enabled=True and mcp list still showed connected. Root cause: failed to read the full object before editing. Fixed by removing the 10 inserts and flipping the existing flags."
+}

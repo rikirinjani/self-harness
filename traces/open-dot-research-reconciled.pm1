@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "open-dot-research-reconciled",
+  "timestamp": "2026-10-04T04:37:09.291006+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 4,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "open-dot-research-reconciled",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........................................................-.--...-",
+  "action": "Reconciled librarian lane lib-2 (reused session ses_efe4e8b52ffeux272mcoh3DLBF) for the open-dot repo question. Independently verified the two load-bearing claims via GitHub API: (1) license field is null and /main/LICENSE returns 404 -> confirms the repo is NOT legally open source despite its 'Open-source' description; (2) metadata matches the librarian's report exactly - created 2026-09-29T16:34:16Z, last push 2026-09-30T13:08:59Z, 527 stars, 74 forks, TypeScript, single-description 'Mac app, OpenAI + Composio'. Confirmed sub-agent trace present (open-dot-research.pm1). Unverified and passed through as such: the README's claim that OpenAI launched Dots on 2026-09-29, and the composio-community <-> Composio.dev corporate relationship. No project files modified."
+}

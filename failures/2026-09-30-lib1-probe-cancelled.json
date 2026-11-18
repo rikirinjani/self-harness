@@ -1,0 +1,12 @@
+﻿{
+  "id": "2026-09-30-lib1-probe-cancelled",
+  "category": "process-superseded",
+  "severity": "low",
+  "detected": "2026-09-30",
+  "summary": "Librarian session lib-1 (verify Gemma 4 alt hosting options) errored/was cancelled when the user interrupted with a redirect to the free Kaggle T4x2 option mid-dispatch. The objective was immediately re-covered by a fresh, better-scoped session (lib-2), whose report was accepted verbatim and drove the implementation.",
+  "root_cause": "orchestrator dispatched a broad multi-option probe in the same turn the user narrowed scope; the in-flight task was cancelled on redirect",
+  "what_i_did_wrong": "Dispatched the librarian before the user had settled the option set; a one-line scope confirmation first would have avoided the wasted lane.",
+  "impact": "None - no data lost; lib-2 delivered the full comparison; decisions made on lib-2.",
+  "corrective_action": "Note taken: for open-ended exploration, confirm scope bounds with the user before dispatching specialist lanes. Board label persists (no orchestrator-side clear tool); substantively reconciled here.",
+  "status": "closed - superseded by lib-2"
+}

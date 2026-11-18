@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-009b-pre-d2-2026-09-16",
+  "timestamp": "2026-09-16T00:48:05.344596+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 30,
+  "key_files": [
+    "experiments/pm1-rx/harness/pm1rx/shadow_boundaries.py",
+    "experiments/pm1-rx/harness/pm1rx/shadow_safety.py",
+    "experiments/pm1-rx/harness/tests/test_shadow_boundaries.py",
+    "experiments/pm1-rx/TASK_009B_PRE_D2_AUDIT.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-009b-pre-d2-2026-09-16",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "TASK 009B-PRE D2 complete. Recovered historical extract_boundaries.py (sha CF857039...) and safety_checks.py (sha DDD68856...) from AppData Temp; no repo copies existed. Versioned as harness/pm1rx/shadow_boundaries.py (find_boundaries/select_boundaries/extract_and_select + CLI) and harness/pm1rx/shadow_safety.py (6 structured checks). Recovered thresholds as historical facts: MIN_GAP_HOURS=6.0, MIN_PRIOR_ASSISTANT_TURNS=20, MIN_TOKENS=8000, MIN_POST_ASSISTANT_TURNS=3, MIN_SESSION_MESSAGES=25, TOKEN_CAP=64000, CHARS_PER_TOKEN=4, TARGET_N=10. Documented 5 historical quirks preserved exactly: post-boundary turn count INCLUSIVE of boundary message; transcript tail-cap; protocol criterion 5 (no compaction +/-2 turns) documented but NEVER implemented; criterion 7 implicit; one-per-session applies to first pass only. DETERMINISTIC REGENERATION TEST: BYTE-IDENTICAL - re-ran recovered procedure against live DB read-only (mode=ro), 447 candidates now vs 462 at extraction, selected set/order/SHA256 identical to historical 35e42b8e...7044c7. Verified all 10 historical sessions have unchanged pre-boundary message sets (COUNT==COUNT WHERE time_created<boundary_time). Historical artifact untouched. Added 28 tests (thresholds, criteria, exclusions, cap, selection, regeneration invariant). Full suite 262 passed (234+28), no regressions. Wrote TASK_009B_PRE_D2_AUDIT.md. Verdict: RESOLVED. Fixed 2 defects in my own recovery code during testing (_ts NameError; fixture message-count errors). No inference. No live-state modification."
+}

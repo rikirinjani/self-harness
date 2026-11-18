@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "kala-worldv3-splice",
+  "timestamp": "2026-09-29T19:58:08.313163+00:00",
+  "agent": "fixer",
+  "outcome": "partial",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "kaggle-ai\\kala_v2_draft.md",
+    "kaggle-ai\\kala_world_v3.md",
+    "kaggle-ai\\kala_v2_draft_pre_worldv3.md",
+    "kaggle-ai\\kala_v2_changelog.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "kala-worldv3-splice",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........--...--........--.-..-.........................................-.--...-........................................-.--...-",
+  "action": "Integrated World Bible v3 WORLD-01..10 into kala_v2_draft.md (single-region splice, anchors matched uniquely, seams byte-identical; PRESSURE-LEDGER absorbed into WORLD-08); backup kala_v2_draft_pre_worldv3.md; changelog WORLD-V3 line appended. Structural checks pass (WORLD-01..10 x1, CHAR-01 x1, PRESSURE-LEDGER 0, kyerke 0) but mitsudomoe=5 and word-boundary magic/enchanted/sorcery=4 remain -- all pre-existing OUTSIDE the replaced region (META-01 rules lines, Kael Mura refs), not introduced by splice; reported, not self-fixed per spec"
+}

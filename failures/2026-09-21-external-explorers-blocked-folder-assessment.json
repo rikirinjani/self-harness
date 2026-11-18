@@ -1,0 +1,8 @@
+{
+  "category": "external-dependency-blocked",
+  "severity": "low",
+  "root_cause": "Both delegated explorer lanes failed because the upstream specialist service reported insufficient account funds.",
+  "actual_effect": "No specialist summaries were returned.",
+  "recovery": "Completed a read-only direct inventory using directory listings and targeted README, manifest, governance, RAG, pharmacy, and engine files. A broad Jev grep was stopped by output-size limits; no files were modified.",
+  "task": "Assess Agentic Layer and Project_v2 folders"
+}

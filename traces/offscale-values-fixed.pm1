@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "offscale-values-fixed",
+  "timestamp": "2026-09-25T05:32:07.559168+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 8,
+  "key_files": [
+    "api/drugs.json rag-queries/l3_output/_backups/drugs_20260925_offscale_pre.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "offscale-values-fixed",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Fixed 8 off-scale curated L3 values. Removed stale legacy renal_risk=0 from 4 statins (undeclared dimension; real signal in renal_safety). Set to null the legitimate-but-unscored dims: pravastatin/pitavastatin hepatic_risk, cimetidine cdi_risk+pneumonia_risk (null=not-scored, vs 0=false no-risk). No values invented. Verified JSON valid, 88 drugs intact, zero remaining off-scale, real signals preserved. Commit a728bac pushed."
+}

@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "adr004-amend1-review",
+  "timestamp": "2026-10-03T13:14:50.809739+00:00",
+  "agent": "reviewer",
+  "outcome": "pass",
+  "duration_s": 240,
+  "tool_calls": 12,
+  "key_files": [
+    "src/engine/journal.ts",
+    "scripts/kaggle-longrun/validate-bounded.mjs",
+    "tests/snapshot.test.ts",
+    "docs/adr/ADR-004-bounded-state-durable-scheduling.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "adr004-amend1-review",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........--------........................--.-..-.........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Independent review adr004-amend1-remediation 16b0513..a9568db: diff SHA F4D52598 inspected hunk-by-hunk; tsc exit 0; vitest 26 files/189 tests exit 0; retention/gate/amendment gates all PASS; verdict APPROVE, 6 non-blocking findings"
+}

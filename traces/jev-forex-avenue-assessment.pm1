@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "jev-forex-avenue-assessment",
+  "timestamp": "2026-09-24T09:14:39.243306+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 600,
+  "tool_calls": 12,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "jev-forex-avenue-assessment",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........................................................-.--...-",
+  "action": "Assessed forex as an alternative venue for a Jev-driven trading bot, after the crypto conclusion. FINDINGS: (1) COST: retail FX round-trip is ~0.74-1.1 bps (EURUSD ECN all-in ~0.8 pips = 0.1 pip raw spread + ~0.7 pip RT commission; spread-only standard ~1.2 pips all-in; IC Markets publishes 0.1 pip average EURUSD). That is ~15-20x CHEAPER than crypto spot round-trip (PEPE maker 15 bps, BTCUSDT taker 20 bps) - good for DIRECTIONAL strategies. (2) BUT FX MARKET-MAKING IS WORSE THAN CRYPTO: the raw spread you could capture is only ~0.09 bps (0.1 pip) with NO maker rebate on retail FX, while the commission is ~0.65 bps RT -> net negative. The crypto design only worked because PEPE's spread (23 bps) exceeded the round-trip maker fee (15 bps) - that spread/fee ratio does not exist in retail FX majors. (3) EDGE: unchanged; Jev has no measured directional edge (AUC 0.475-0.503). At the original's ~30s horizon FX is noise; documented FX premia live at much longer horizons - currency momentum 6-10% p.a. at ~1-month holding and carry ~0.58%/month (BIS/Menkhoff-Sarno-Schmeling-Schrimpf), which are cross-sectional/portfolio strategies, not per-pair 30-second up/down calls. (4) BASE RATE: retail FX is documented as WORSE than the crypto prior - ESMA 74-89% of retail CFD accounts lose; KNF Poland 2021-2025 70.6-79.1% lose; 49 EU/FCA brokers average 71.0% lose (range 51-81%); AMF France 89% of 14,799 clients lost over 4 years; academic studies find <1% of persistent day traders reliably profitable. Algorithmic/EA traders are not exempt: ~70-80% lose over multi-year periods; a minority (15-25%) sustain 15-50%/yr. (5) PRIOR ART: GitHub search for Jev + forex/FX/currencies returns NOTHING - no Jev FX bot exists publicly, so there is no demonstrated result to copy (and no evidence it works). (6) EXTRA COSTS: FX adds swap/overnight financing (~-10/lot/night on EURUSD, more on gold/exotics) plus broker execution/last-look risk, which spot crypto does not have. CONCLUSION: switching venue does not fix the binding constraint (no edge); FX helps directional strategies on cost but hurts market-making; any FX attempt must target a horizon where a documented premium exists and be pre-registered/validated before capital, exactly as we did for crypto. Delegation unavailable (librarian lane failing with 'Insufficient account funds'), so performed directly."
+}

@@ -1,0 +1,40 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-009b-complete-2026-09-16",
+  "timestamp": "2026-09-16T03:55:26.679590+00:00",
+  "agent": "orchestrator",
+  "outcome": "partial",
+  "duration_s": 14400,
+  "tool_calls": 85,
+  "key_files": [
+    "experiments/pm1-rx/TASK_009B_RESULT.md",
+    "experiments/pm1-rx/TASK_009B_ORACLE_DESIGN.md",
+    "experiments/pm1-rx/oracle_calibration.json",
+    "experiments/pm1-rx/f_compliance_calibration.json",
+    "experiments/pm1-rx/pilot_009b_results.json",
+    "experiments/pm1-rx/pilot_009b_run.log",
+    "experiments/pm1-rx/harness/pm1rx/reference_v2.py",
+    "experiments/pm1-rx/harness/pm1rx/f_variants.py",
+    "experiments/pm1-rx/harness/pm1rx/shadow_oracle.py",
+    "experiments/pm1-rx/harness/pm1rx/shadow_coverage.py",
+    "experiments/pm1-rx/harness/tests/test_reference_v2_calibration.py",
+    "experiments/pm1-rx/harness/tests/test_009b_sanity_and_invariance.py",
+    "experiments/pm1-rx/harness/tests/test_009b_f_compliance.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-009b-complete-2026-09-16",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................--.-..-..........-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "TASK 009B COMPLETE. Committed b941215 on pm1-rx-v14. VERDICT: VALIDATION FAIL (one instrument defect remains, recorded not repaired per protocol). Phases 1-2: oracle target semantics frozen before implementation (TASK_009B_ORACLE_DESIGN.md, R1 actionability + R2 currency + R3 non-derivation). Phase 3: planted calibration 23/23 PASS (new currency-aware reference_v2.py extractor; 10 planted cases; stability/determinism/independence). Phase 4: full-transcript sanity gate PASS (pre-registered floor L3>=0.8 reusing Exp001 G5 threshold; planted case A scores 1.0). D3 invariant: representation invariance 11/11 PASS (field-name incl. authority-key example via semantic fallback, C-vs-canonical, ordering, formatting, coverage gate, no arm param, omissions detected). Phase 5-6: F behavioral compliance 11/11 PASS (empty fields, omissions, stale, validity, flooding detected; schema compliance alone shown insufficient; F-vs-C CASE A/B pass). Phase 7: capability test 15 runs zero-cost - MODEL_CAPABILITY_LIMITATION accepted (3B extracts content but cannot assign to fields: commitments empty 15/15 across all 3 prompt variants; field-scoped recall F1=0.650 F2=0.850 F3=0.800; content recall 0.750; compliant 0/15). Phase 8: real-data pilot EXECUTED 10 boundaries 40/40 executions 45m50s zero-cost - reference repair confirmed on real data (3-6 required items vs 19-29 in 009A, rejections recorded). DEFECT DISCOVERED AND STOPPED PER PROTOCOL: F6 containment matcher strictness - verified case b2 where a semantically faithful consumer reconstruction scores 0.4 forward overlap (below 0.5) because it compressed the trailing fragment; control shows close paraphrases score 0.72/0.87. Same defect class as D3 but reference-side. NOT repaired after seeing real-data outcomes per the no-retroactive-changes rule. Phase 9 safety all pass. Suite 345 passed no regressions. Exp001 unchanged, historical artifacts unchanged. Deliverables: TASK_009B_RESULT.md, TASK_009B_ORACLE_DESIGN.md, oracle_calibration.json, f_compliance_calibration.json, pilot_009b_results.json, pilot_009b_run.log, reference_v2.py, f_variants.py, 3 test files. No paid replication. No Task 010. Next decision external."
+}

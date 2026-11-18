@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "opencode-eng-backlog-2026-10-session",
+  "timestamp": "2026-10-19T08:47:44.440030+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "rag-service/api_server.py",
+    "rag-service/scripts/verify_p1_paths.py",
+    "rag-service/INDEX-CACHE-FEASIBILITY-2026-10.md",
+    "rag-service/OPENCODE-REPORT-ENG-2026-10.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "opencode-eng-backlog-2026-10-session",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................................................-.--...-........................................-.--...-",
+  "action": "Executed OPENCODE-HANDOFF-ENG-2026-10 end-to-end on branch eng/opencode-backlog-2026-10: E1 independent RC 51c81051 verifier pass (identity recomputed two ways), E2 bounded retrieval executor + single-flight + fail-fast (opt-in RETRIEVAL_MAX_WORKERS), E3 verify_p1_paths suite 23/23, E4 /api/status error-category hardening + frontend fields, E5 cokro-api.service refresh + drop-in README + nginx audit + manifest known_gap fix, E6 analyze_retrieve_log.py + fixtures, E7 index-cache feasibility doc + Kaggle CPU kernel cokro-e7-idx-bench (COMPLETE, p50 15-16ms local vs 7-15s S3 cold), E8 rerank thread measurement + ranked causes, E9 eval_ab_metrics cp1252 fix, E10 bm25_judge field restore + unit check, E11 top-3 recall diagnosis (partial), OPENCODE-REPORT-ENG-2026-10.md committed; final: 5 suites + verify_p1_paths all exit 0 at HEAD, manifest rebuilt (RC 84da4882c78f)"
+}

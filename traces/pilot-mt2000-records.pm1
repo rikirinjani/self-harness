@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "pilot-mt2000-records",
+  "timestamp": "2026-10-10T23:46:26.596091+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 8,
+  "key_files": [
+    "qms/records/verifications/VER-2026-10-11-SWE-TOOL-PILOT-MT2000-001.json",
+    "RUN_REGISTRY.md",
+    "results/swe-tool-pilot-findings.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pilot-mt2000-records",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........-.--...-........-.--...-........................................-.--...-",
+  "action": "Wrote QMS verification VER-2026-10-11-SWE-TOOL-PILOT-MT2000-001, RUN_REGISTRY COMPLETE entry for SWE-TOOL-PILOT-MT2000, and results/swe-tool-pilot-findings.md summary of the 800-vs-2000 budget-control verdict."
+}

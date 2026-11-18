@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "task015-protocol-v3",
+  "timestamp": "2026-09-17T07:49:18.273024+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 30,
+  "key_files": [
+    "experiments/pm1-rx/TASK_015_PROTOCOL_V3.md",
+    "experiments/pm1-rx/TASK_015_V2_V3_DIFF.md",
+    "experiments/pm1-rx/TASK_015_V3_CHANGE_MAP.md",
+    "experiments/pm1-rx/TASK_015_PROGRESS.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "task015-protocol-v3",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "Task 015 Phase I: protocol-version determination and V3 amendment. Read established change-control format (SPEC_REVISION_001/002, MEASUREMENT_REPAIR_003, V1_V2_DIFF). Determined V3 REQUIRED under V2 §24.2. Created TASK_015_V3_CHANGE_MAP.md (clause-by-clause), TASK_015_PROTOCOL_V3.md (changes-only amendment), TASK_015_V2_V3_DIFF.md. 8 scientific changes (D1/D2/D3), 2 documentary, 4 clarifications, 1 non-change. V2, prior revisions, Task 014 artifacts, frozen scientific files verified unchanged. Commits e310cc6, f2db928. No runner, no inference."
+}

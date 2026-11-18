@@ -1,0 +1,37 @@
+{
+  "pm1_version": 1,
+  "session_id": "dqf-e1-l3-fetch-batch6",
+  "timestamp": "2026-09-26T22:15:38.152106+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 22,
+  "key_files": [
+    "rag-queries/batch6_sentences.json",
+    "rag-queries/batch6_current.json",
+    "rag-queries/kaggle_batch6_triage.py",
+    "rag-queries/l3_output/_summary.json",
+    "rag-queries/l3_output/warfarin_l3_profile.json",
+    "rag-queries/l3_output/apixaban_l3_profile.json",
+    "rag-queries/l3_output/rivaroxaban_l3_profile.json",
+    "rag-queries/l3_output/edoxaban_l3_profile.json",
+    "rag-queries/l3_output/dabigatran_l3_profile.json",
+    "rag-queries/l3_output/enoxaparin_l3_profile.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "dqf-e1-l3-fetch-batch6",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........--.-..-.........--.-..-.........................................-.--...-",
+  "action": "E1 L3 fetch: HF RAG endpoint 503, used documented --eutils-first fallback; 48/48 NCBI queries OK across 6 anticoagulants; profiles written; built batch6 triage input (42 groups/313 sentences, keywords parsed from the Anticoagulant scorer block, per-group desc), batch6_current.json provisional scores, kaggle_batch6_triage.py clone; local prompt-format smoke 42/42; pushed 8fd32c0; raw GitHub URL verified HTTP 200/42 groups. Finding: rule scorer saturates (warfarin 7x3; renal_clearance_dependence=3 false positive from cohort-exclusion text), 4 empty evidence cells -- not merged, left to triage+adjudication"
+}

@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "agent-model-config-fix",
+  "timestamp": "2026-10-11T00:05:02.379112+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 300,
+  "tool_calls": 20,
+  "key_files": [
+    "C:\\Users\\think\\.config\\opencode\\oh-my-opencode-slim.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "agent-model-config-fix",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Fixed dead agent models: paper-oc + 4 other agents moved from removed opencode/deepseek-v4-flash-free to opencode/mimo-v2.6-flash-free; librarian in active glm preset moved off glm-ajianaz/glm-5.3 (context overflow on every fresh session). Validated JSONC parses, 0 dead refs. pap-1/2 and lib-1/2/3 errored (not reusable) — 5 dispatches lost to config staleness; failure record written. Config not hot-reloaded: opencode restart required before paper-oc/librarian lanes can run."
+}

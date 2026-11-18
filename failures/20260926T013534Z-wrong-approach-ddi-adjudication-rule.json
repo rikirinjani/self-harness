@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-09-26T01:35:34Z",
+  "category": "wrong-approach",
+  "severity": "low",
+  "task": "Batch-3 ddi evidence-pool adjudication (DQF)",
+  "what_went_wrong": "First version of the adjudication rule had an inverted v2==1 branch: `final = new if (v2s == 1)` would have taken the clean-pool value when the cell-level LLM said score 1 — and since the clean-pool value for valsartan was 2, it would have RAISED valsartan from 1 back to 2, silently undoing the double-confirmed FP fix applied earlier in the session (commit 8833a86).",
+  "root_cause": "Rule expressed as a conditional assignment without a worked test case; the intended semantics ('LLM says no-evidence → final = 1') was encoded as ('LLM says no-evidence → use keyword pool value'). Caught by manually walking the rule against known cells (valsartan, pravastatin) before executing the apply.",
+  "impact": "None — caught and corrected before any write to api/drugs.json. Verified post-fix: valsartan unchanged (current=1, no drop applied).",
+  "corrective_action": "Rule corrected to `if v2s == 1: final = 1 else final = max(1, min(clean, current))`. Adjudication rules are now always validated against at least one known-answer cell before running against production data.",
+  "evidence": "rag-queries/ddi_rescore.json (results + rule fields); QMS 20260925-pass-ddi-evidence-triage-apply.json decisions; MemPalace drawer projects/dqf-ddi-evidence-triage"
+}

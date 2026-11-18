@@ -1,0 +1,26 @@
+{
+  "pm1_version": 1,
+  "session_id": "research-jev-fast-compaction",
+  "timestamp": "2026-09-21T06:28:16.352022+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 8,
+  "key_files": [],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "research-jev-fast-compaction",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-..........-.--...-........................................................-.--...-",
+  "action": "Research: evaluated TypeSafe Jev + tamaratran/fast-jev-compaction repo against PM-1 pm1-rx needs. Verified: TypeSafe AI real (exited stealth 2026-09-15, \\ seed DCVC, founder Diogo Almeida ex-OpenAI RLHF). Jev = System One Model, typed probabilistic answers (noul/choice/score), no string generation, 64K ctx/32K state, \\.042 per 1M input tokens, output free, 70-500ms. Repo: MIT, zero runtime deps, 30 commits, v0.2.0, 5.5k stars. Read src/types.ts, request.ts, client.ts, compact.ts. Core: 2 noul questions per tool call (keep call? keep result verbatim?), threshold 0.5 -> keep/drop_result/drop_call; never rewrites text, only deletes; fitState progressive truncation to 25k tokens; falls back to built-in summary. Assessed 5 integration candidates for PM-1: (A) Jev ChoiceQuestion as Judge replacement for 6-verdict atom scoring, (B) noul per-atom support scorer, (C) fitState pattern for producer timeout fix, (D) delete-not-rewrite as Arm design validation, (E) typed-question consumer architecture to test Task 028 bottleneck C. Did NOT run code or make API calls. No project files modified."
+}

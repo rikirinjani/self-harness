@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "poly-bot-live-trading",
+  "timestamp": "2026-10-07T07:20:09.420187+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 900,
+  "tool_calls": 30,
+  "key_files": [
+    "C:\\Users\\think\\AppData\\Local\\Temp\\opencode\\poly_bot_v8.py"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "poly-bot-live-trading",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--........-.--...-........................................-.--...-",
+  "action": "Built and ran crypto arbitrage bot on Polymarket. Connected to CLOB, found 6 tradable markets with 26-40% edges. Trading blocked due to geo-restriction (Singapore). Paper trading works. Bot code ready for deployment in unrestricted region."
+}

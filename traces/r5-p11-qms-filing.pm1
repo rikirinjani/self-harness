@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "r5-p11-qms-filing",
+  "timestamp": "2026-10-20T01:39:12.974594+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 60,
+  "tool_calls": 2,
+  "key_files": [
+    "khanza-r5/records/qms/VER-2026-10-19-DR-KHANZA-R5-P11-001.json",
+    "Agentic Layer/qms/records/verifications/VER-2026-10-19-DR-KHANZA-R5-P11-001.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "r5-p11-qms-filing",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................--.-..-.........-.--...-........-.--...-........................................-.--...-",
+  "action": "Filed the P11 QMS verification into the central register: copied khanza-r5/records/qms/VER-2026-10-19-DR-KHANZA-R5-P11-001.json to 'Agentic Layer/qms/records/verifications/' (destination did not exist; SHA-256 of source and copy identical). No content change; result remains PARTIAL with the AC-9 and unfreeze open items."
+}

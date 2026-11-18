@@ -1,0 +1,28 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1-s2-cancelled-partial",
+  "timestamp": "2026-10-01T18:59:55.879574+00:00",
+  "agent": "coordinator",
+  "outcome": "pass",
+  "duration_s": 0,
+  "tool_calls": 0,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\pm1-continuation\\RUN_REGISTRY.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1-s2-cancelled-partial",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........-....---........................................................-.--...-........................................-.--...-",
+  "action": "S2 (B2 sweep v11) CANCELLED at ~14.8h wall (quota-exhaustion kill likely - usage jumped to 26.36/30h). Recovered 16/24 chains from session output (all trial-1 + K010t2/K050t2-partial/K150t1 h250s). Missing 8: K010t2 h50 x3, K050t2 P-pos/P-postarget h250 + h50 x3... (enumerated: B-t2 P-pos/P-postarget h250 x1cell, C-t2 x3, D-t2 x3). Quota: 3.64h remains to Sat 2026-10-03 00:00 UTC reset. Resume design: seed recovered files via Kaggle dataset + notebook copy step (skip-completed picks up the rest) - UNTESTED path, needs validation. Proposal: Friday mini-resume (3 missing h50s, ~1.2h, fits with margin, validates resume machinery) then post-reset session for the 5 remaining h250s (~5h) + B3a/B3b per plan. Awaiting user go."
+}

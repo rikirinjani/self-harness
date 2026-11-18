@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "20261003T145247-orchestrator-cli",
+  "timestamp": "2026-10-03T14:52:47.805903+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 480,
+  "tool_calls": 12,
+  "key_files": [
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\2026-10-03-pass-deers-rock-adr004-harness-fidelity.json",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\docs\\adr\\evidence\\ADR-004-6k-profile\\longrun-report.json",
+    "C:\\Users\\think\\Project_v2\\Deers-Rock\\docs\\adr\\evidence\\ADR-004-6k-profile\\validation.log"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20261003T145247-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........--.-..-.........-.--...-........................................-.--...-",
+  "action": "Harness-fidelity review reconciled: ver-1 APPROVE bound to 906f245 (diff sha 3A076CF4..., both smokes reproduced, tsc 0, 26/189); F1 fixed by extracting the real 6k report from the stdout log (37AC4909...) after my copy error preserved a 200-tick smoke instead; 6k evidence archived into docs/adr/evidence/ADR-004-6k-profile (commit 0ab82fb, pushed); QMS record written via shell after two write-tool schema rejections; local 10k true-peak forecast launched WMI-detached (PID 3568, PROFILE unset, plain node - same methodology as Kaggle)"
+}

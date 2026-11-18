@@ -1,0 +1,31 @@
+{
+  "pm1_version": 1,
+  "session_id": "20260918T200121-orchestrator-cli",
+  "timestamp": "2026-09-18T20:01:21.292603+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 783,
+  "tool_calls": 0,
+  "key_files": [
+    "morse/experiments/pm1-rx/pilot_v2_runner_kaggle.py",
+    "morse/experiments/pm1-rx/aggregate_14b.py",
+    "morse/experiments/pm1-rx/PILOT_CROSS_MODEL_COMPARISON.md",
+    "morse/experiments/pm1-rx/results/pilot_v3_14b/cells/*.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "20260918T200121-orchestrator-cli",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--........................-.--...-........................................-.--...-",
+  "action": "14B pilot complete. 40/40 cells scored. Grand F1=0.023, tp=5, fn=167, fp=256. Cross-model comparison: 3B(0.013) vs 7B(0.012) vs 14B(0.023). Model size is not the bottleneck."
+}

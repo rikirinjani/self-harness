@@ -1,0 +1,29 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1all-groupA-deletion",
+  "timestamp": "2026-09-23T10:26:52.036457+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 420,
+  "tool_calls": 30,
+  "key_files": [
+    "C:\\Users\\think\\PM1_ALL\\DELETE_LIST.md",
+    "C:\\Users\\think\\Agentic Layer\\qms\\records\\verifications\\2026-09-23-pass-pm1all-groupA-deletion.json"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1all-groupA-deletion",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................--...--.........--...--........-.--...-........................................-.--...-",
+  "action": "Executed user-approved Group A deletion of 7 original PM-1 locations (8033.8 MB / 117053 files): morse, pm1-trading-benchmark (robocopy empty-mirror rc=2 long-path safe), Agentic Layer pm-adapter, project pm-adapter, PM1_OG, project_v2 self-harness, transcript. Verified 7/7 gone, Group B 4/4 retained, KEEP-live 9/9 intact, disk 26.3 to 34.4 GB (+8.1), PM1_ALL CLEAN 7958 files 5 bundles, pm1-trace smoke ok via repointed path, retrace trace-clean. QMS 2026-09-23-pass-pm1all-groupA-deletion filed; DELETE_LIST stamped and committed 2974352."
+}

@@ -1,0 +1,42 @@
+{
+  "pm1_version": 1,
+  "session_id": "cokro-web-p0-fix",
+  "timestamp": "2026-09-29T13:34:39.657616+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 2400,
+  "tool_calls": 70,
+  "key_files": [
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\web\\src\\lib\\config.ts",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\web\\src\\lib\\api.ts",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\web\\src\\lib\\auth.ts",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\web\\src\\lib\\stubs.ts",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\web\\src\\components\\quota-meter.tsx",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\web\\src\\components\\evidence.tsx",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\web\\src\\components\\header.tsx",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\web\\src\\app\\ask\\content.tsx",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\web\\src\\app\\answer\\content.tsx",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\web\\src\\app\\paper\\content.tsx",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\web\\src\\app\\auth\\content.tsx",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\web\\src\\app\\account\\page.tsx",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\web\\src\\app\\contact\\content.tsx",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\web\\src\\app\\page.tsx",
+    "C:\\Users\\think\\Project_v2\\LocalNotebook\\rag-service\\web\\tailwind.config.js"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "cokro-web-p0-fix",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": "........................................---..-...........--...--.........--...--........................................-.--...-",
+  "action": "Implemented all 8 P0 items from Astra's Cokro web-UI review directly (lanes suspended): new lib/config.ts apiBase() centralized across api/auth/contact; bearer token on /api/ask+/api/paper; UserQuota server-backed meters replacing fake 12/50+13/50; EvidenceStrip relabeled retrieved vs cited with support/dispute removed from component+interface+stubs; answer page per-PMID citation buttons, instant drawer with loading row, seq+closeDrawer stale guard, focus/Escape/Tab-trap, z-[60]; friendlyError 401/429/5xx/network copy with working Retry on ask/answer/paper and no default Sample query (empty state, zero API calls); inert controls removed/wired (feedback block, paper download+Upgrade, account fake cards+payment history, home/auth pricing CTAs, CitationBead span fallback); mojibake repaired (24 runs across page.tsx+paper/content.tsx); tailwind inktext.muted -> var(--text-muted) #5F7078; dev_otp UI removed, magic-link URL scrubbed, code input focused. Verified: 2 clean next builds, static string assertions (5 false positives triaged), playwright smoke 30/30 incl race cases; 1 defect found+fixed (stale drawer reopen, failure record 2026-09-29-code-answer-drawer-stale-reopen); QMS VER-COKRO-WEB-P0-001 written."
+}

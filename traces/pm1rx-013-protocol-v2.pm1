@@ -1,0 +1,33 @@
+{
+  "pm1_version": 1,
+  "session_id": "pm1rx-013-protocol-v2",
+  "timestamp": "2026-09-16T20:17:07.355462+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 3600,
+  "tool_calls": 40,
+  "key_files": [
+    "experiments/pm1-rx/TASK_013_PROTOCOL_V2.md",
+    "experiments/pm1-rx/TASK_013_EVIDENCE_LEDGER.md",
+    "experiments/pm1-rx/TASK_013_V1_V2_DIFF.md",
+    "experiments/pm1-rx/TASK_013_ADVERSARIAL_REVIEW.md",
+    "experiments/pm1-rx/TASK_013_PROGRESS.md",
+    "experiments/pm1-rx/TASK_013_RESULT.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "pm1rx-013-protocol-v2",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-.........--...--........--.-..-.........................................-.--...-",
+  "action": "PM-1-RX Task 013: Protocol V2 frozen. 15 operational changes, 0 scientific changes. New PRE-FLIGHT with real-prompt latency probe. Producer timeout derived from Task 012 measurements. Independent inference/receipt/parsing timestamps. Per-cell state machine. Stage 72000s, Global 86400s. 12/12 adversarial PASS. Commit b8f9af7."
+}

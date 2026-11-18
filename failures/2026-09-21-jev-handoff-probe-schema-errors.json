@@ -1,0 +1,8 @@
+{
+  "category": "execution-input-error",
+  "severity": "low",
+  "root_cause": "The initial Jev probe used shell heredoc syntax in PowerShell, then supplied choice criteria as a list and omitted the required label-description mapping.",
+  "actual_effect": "The first probe attempt did not execute; the next two API requests returned HTTP 422 validation errors.",
+  "recovery": "Moved the probe to a temporary Python file and corrected choice.criteria to a label-to-description object. The final three-candidate probe returned HTTP 200 responses.",
+  "task": "Use Jev to review JEV-HANDOFF.md"
+}

@@ -1,0 +1,30 @@
+{
+  "pm1_version": 1,
+  "session_id": "session-wrap-jev-crypto-trader",
+  "timestamp": "2026-09-24T10:10:09.355528+00:00",
+  "agent": "orchestrator",
+  "outcome": "pass",
+  "duration_s": 21600,
+  "tool_calls": 120,
+  "key_files": [
+    "C:\\Users\\think\\jev-crypto-trader\\STATE.md",
+    "C:\\Users\\think\\jev-crypto-trader\\research\\fx\\PRE_REGISTRATION.md",
+    "C:\\Users\\think\\jev-crypto-trader\\research\\fx\\REPORT.md"
+  ],
+  "failure": {},
+  "encoding": "morse",
+  "n_states": 1,
+  "state_width": 8,
+  "failsafe": {
+    "session_id": "session-wrap-jev-crypto-trader",
+    "status": "ACTIVE",
+    "total_encodes": 1,
+    "total_errors": 0,
+    "total_corrected": 0,
+    "fallback_count": 0,
+    "error_rate_rolling": 0.0,
+    "failure_ids": []
+  },
+  "pm1": ".........................................-.-.-.-........---..-..........-.--...-........................................-.--...-",
+  "action": "Session wrap for the jev-crypto-trader workstream. Six tasks completed and recorded: (1) fixed the dashboard client-side exception (remote .env.production had NEXT_PUBLIC_SSE_URL with a trailing 'n' baked into the chunk so new EventSource threw during hydration; hardened useFeed, added error/global-error boundaries, verified via headless CDP); (2) diagnosed the -18% P&L as 95% fees (feesUsd 171.98 of pnl -180.38) caused by quoting every tick at 10 bps on a 1-tick-spread market, and applied a realistic maker fee plus an edge gate; (3) researched the original jarrodwatts/jev-trader repo (Monad/Kuru on-chain MON-USDC post-only maker, gas-only cost, ~7 bps spread, SPEC says 'the model is not trying to be profitable'); (4) replaced the edge gate with a faithful venue port to PEPEUSDT (23 bps spread vs 15 bps round-trip cost) with real tick size, venue cost model (FEE_BPS + COST_PER_ORDER_USD), upIn10, a corrected prompt, and adaptive price precision, moving P&L from -18.0% to marginally positive; (5) searched the Jev community/GitHub for any money-maker (none verified; every measured Jev trading system loses; a pre-registered study found AUC 0.475); (6) assessed FX and ran our own pre-registered FX study (35,770 decisions, AUC 0.4912, 95% CI [0.4825,0.4992], positive control 1.000, momentum baseline 0.4931) concluding Jev has no directional edge in FX either. Final state: jev-crypto-trader.service and jev-dashboard.service both active on the VPS; PILOT dirs cleaned; no stray processes; project STATE.md written at C:/Users/think/jev-crypto-trader/STATE.md; the global C:/Users/think/.opencode/STATE.md belongs to a different project and was deliberately left untouched. Records this session: traces fix-dashboard-client-exception, jev-fee-model-and-edge-gate, jev-trader-original-repo-research, jev-faithful-venue-port-pepe, jev-community-money-maker-search, jev-forex-avenue-assessment, jev-fx-preregistered-study plus this session wrap; QMS VER-2026-010..014; failure records for the dashboard config defect and for the librarian lane failing with 'Insufficient account funds' four times; MemPalace wing jev-crypto-trader. Retrace clean."
+}
